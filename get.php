@@ -69,7 +69,7 @@ foreach ($configsList as $source => $configs) {
         echo str_repeat(" ", $totalConfigs - $tempCounter);
         echo "] $percentage%";
         $tempCounter++;
-        if (is_valid($config) && $key <= 9 ) {
+        if (is_valid($config) && $key <= 15) {
             $type = detect_type($config);
             $configHash = $configsHash[$type];
             $configIp = $configsIp[$type];
@@ -105,8 +105,15 @@ foreach ($configsList as $source => $configs) {
 
 foreach ($locationBased as $location => $configs) {
     $tempConfig = implode("\n", $configs);
-    file_put_contents("subscriptions/location/normal/" . $location, $tempConfig);
-    file_put_contents("subscriptions/location/base64/" . base64_encode($tempConfig));
+    $base64TempConfig = base64_encode($tempConfig);
+    file_put_contents(
+        "subscriptions/location/normal/" . $location,
+        $tempConfig
+    );
+    file_put_contents(
+        "subscriptions/location/base64/" . $location,
+        $base64TempConfig
+    );
 }
 
 file_put_contents("config.txt", implode("\n", $finalOutput));
