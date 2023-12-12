@@ -63,15 +63,34 @@ foreach ($deduplicateArray as $key => $deduplicate) {
     // Add the config to the final output
     $finalOutput[] = $encodedConfig;
 }
+$tempConfig = implode("\n", $finalOutput);
+$base64TempConfig = base64_encode($tempConfig);
 
 // Write the final output to the config file
-file_put_contents("config.txt", implode("\n", $finalOutput));
+file_put_contents("config.txt", $tempConfig);
 // Write the final output to the subscriptions/xray/normal/mix file
-file_put_contents("subscriptions/xray/normal/mix", implode("\n", $finalOutput));
+file_put_contents("subscriptions/xray/normal/mix", $tempConfig);
 // Write the final output to the subscriptions/xray/base64/mix file, encoded in base64
+file_put_contents("subscriptions/xray/base64/mix", $base64TempConfig);
+// Convert the base64 encoded string to Singbox format and write it to a file
 file_put_contents(
-    "subscriptions/xray/base64/mix",
-    implode("\n", base64_encode($finalOutput))
+    "subscriptions/singbox/mix.json",
+    toSingbox($base64TempConfigs)
+);
+// Convert the base64 encoded string to Clash format and write it to a file
+file_put_contents(
+    "subscriptions/clash/mix.yaml",
+    toClash($base64TempConfigs, "clash")
+);
+// Convert the base64 encoded string to Meta format and write it to a file
+file_put_contents(
+    "subscriptions/meta/mix.yaml",
+    toClash($base64TempConfigs, "meta")
+);
+// Convert the base64 encoded string to Surfboard format and write it to a file
+file_put_contents(
+    "subscriptions/surfboard/mix",
+    toClash($base64TempConfigs, "surfboard")
 );
 
 // Print "done!" to the console
