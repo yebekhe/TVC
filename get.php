@@ -287,6 +287,7 @@ foreach ($sourcesArray as $source => $types) {
     }
 }
 $finalOutput = [];
+$locationBased = [];
 $needleArray = ["amp%3B"];
 $replaceArray = [""];
 $configsHash = [
@@ -347,9 +348,20 @@ foreach ($configsList as $source => $configs) {
                 $replaceArray,
                 $encodedConfig
             );
+            $locationBased[$configLocation][] = str_replace(
+                $needleArray,
+                $replaceArray,
+                $encodedConfig
+            );
         }
     }
     $tempSource++;
+}
+
+foreach ($locationBased as $location => $configs) {
+    $tempConfig = implode("\n", $configs);
+    file_put_contents("subscriptions/locations/normal/" . $location, $tempConfig);
+    file_put_contents("subscriptions/locations/base64/" . base64_encode($tempConfig));
 }
 
 file_put_contents("config.txt", implode("\n", $finalOutput));
