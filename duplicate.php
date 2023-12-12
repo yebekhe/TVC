@@ -185,8 +185,8 @@ foreach ($deduplicateArray as $key => $deduplicate) {
     $encodedConfig = reparseConfig($decodedConfig, $configType);
     $finalOutput[] = $encodedConfig;
 }
-
-file_put_contents("config.txt", implode("\n", $finalOutput));
+unlink("config.txt");
+file_put_contents("subscription/normal/mix", implode("\n", $finalOutput));
 
 echo "done!";
 
