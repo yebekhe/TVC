@@ -75,22 +75,22 @@ file_put_contents("subscriptions/xray/base64/mix", $base64TempConfig);
 // Convert the base64 encoded string to Singbox format and write it to a file
 file_put_contents(
     "subscriptions/singbox/mix.json",
-    toSingbox($base64TempConfigs)
+    toSingbox($base64TempConfig)
 );
 // Convert the base64 encoded string to Clash format and write it to a file
 file_put_contents(
     "subscriptions/clash/mix.yaml",
-    toClash($base64TempConfigs, "clash")
+    toClash($base64TempConfig, "clash")
 );
 // Convert the base64 encoded string to Meta format and write it to a file
 file_put_contents(
     "subscriptions/meta/mix.yaml",
-    toClash($base64TempConfigs, "meta")
+    toClash($base64TempConfig, "meta")
 );
 // Convert the base64 encoded string to Surfboard format and write it to a file
 file_put_contents(
     "subscriptions/surfboard/mix",
-    toClash($base64TempConfigs, "surfboard")
+    toClash($base64TempConfig, "surfboard")
 );
 
 // Print "done!" to the console
