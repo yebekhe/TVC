@@ -75,4 +75,4 @@ file_put_contents(
 );
 
 // Print "done!" to the console
-echo "done!";
+echo "Removing Duplicates Done!\n";
