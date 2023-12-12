@@ -185,7 +185,8 @@ foreach ($deduplicateArray as $key => $deduplicate) {
     $encodedConfig = reparseConfig($decodedConfig, $configType);
     $finalOutput[] = $encodedConfig;
 }
-unlink("config.txt");
+
+file_put_contents("config.txt", implode("\n", $finalOutput));
 file_put_contents("subscription/xray/normal/mix", implode("\n", $finalOutput));
 file_put_contents("subscription/xray/base64/mix", implode("\n", base64_encode($finalOutput)));
 
