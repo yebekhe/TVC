@@ -24,6 +24,15 @@ function detect_type($input)
     }
 }
 
+function is_reality($input)
+{
+    $type = detect_type($input);
+    if (stripos($input, "reality") !== false && $type === "vless") {
+        return true;
+    }
+    return false;
+}
+
 $configsArray = explode("\n", file_get_contents("config.txt"));
 
 $sortArray = [];
@@ -31,6 +40,9 @@ $sortArray = [];
 foreach($configsArray as $config) {
     $configType = detect_type($config);
     $sortArray[$configType][] = $config;
+    if ($configType === "vless" && is_reality($config)) {
+        $sortArray["reality"][] = $config;
+    }
 }
 
 foreach ($sortArray as $type => $sort) {
