@@ -91,12 +91,13 @@ foreach($configsArray as $config) {
 foreach ($sortArray as $type => $sort) {
     if ($type !== "") {
         $tempConfigs = implode("\n", $sort);
+        $base64TempConfigs = base64_encode($tempConfigs);
         file_put_contents("subscriptions/xray/normal/" . $type, $tempConfigs);
-        file_put_contents("subscriptions/xray/base64/" . $type, base64_encode($tempConfigs));
-        file_put_contents("subscriptions/singbox/" . $type . ".json", toSingbox($tempConfigs));
-        file_put_contents("subscriptions/clash/" . $type . ".yaml", toClash($tempConfigs, "clash"));
-        file_put_contents("subscriptions/meta/" . $type . ".yaml", toClash($tempConfigs, "meta"));
-        file_put_contents("subscriptions/surfboard/" . $type, toClash($tempConfigs, "surfboard"));
+        file_put_contents("subscriptions/xray/base64/" . $type, $base64TempConfigs);
+        file_put_contents("subscriptions/singbox/" . $type . ".json", toSingbox($base64TempConfigs));
+        file_put_contents("subscriptions/clash/" . $type . ".yaml", toClash($base64TempConfigs, "clash"));
+        file_put_contents("subscriptions/meta/" . $type . ".yaml", toClash($base64TempConfigs, "meta"));
+        file_put_contents("subscriptions/surfboard/" . $type, toClash($base64TempConfigs, "surfboard"));
     }
 }
 
