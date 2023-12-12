@@ -360,8 +360,8 @@ foreach ($configsList as $source => $configs) {
 
 foreach ($locationBased as $location => $configs) {
     $tempConfig = implode("\n", $configs);
-    file_put_contents("subscriptions/locations/normal/" . $location, $tempConfig);
-    file_put_contents("subscriptions/locations/base64/" . base64_encode($tempConfig));
+    file_put_contents("subscriptions/location/normal/" . $location, $tempConfig);
+    file_put_contents("subscriptions/location/base64/" . base64_encode($tempConfig));
 }
 
 file_put_contents("config.txt", implode("\n", $finalOutput));
