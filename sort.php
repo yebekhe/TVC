@@ -76,7 +76,7 @@ function toClash(
 }
 
 
-$configsArray = explode("\n", file_get_contents("subscription/normal/mix"));
+$configsArray = explode("\n", file_get_contents("subscription/xray/normal/mix"));
 
 $sortArray = [];
 
