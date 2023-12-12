@@ -1,19 +1,27 @@
 <?php
+// Enable error reporting
 ini_set("display_errors", 1);
 ini_set("display_startup_errors", 1);
 error_reporting(E_ERROR | E_PARSE);
 
+// Include the functions file
 require "functions.php";
 
+// Fetch the JSON data from the API and decode it into an associative array
 $sourcesArray = json_decode(
     file_get_contents("https://api.yebekhe.link/tvc-channels/channels.json"),
     true
 );
+
+// Count the total number of sources
 $totalSources = count($sourcesArray);
 $tempCounter = 1;
 
+// Initialize an empty array to store the configurations
 $configsList = [];
 echo "Fetching Configs\n";
+
+// Loop through each source in the sources array
 foreach ($sourcesArray as $source => $types) {
     // Calculate the percentage complete
     $percentage = ($tempCounter / $totalSources) * 100;
@@ -24,6 +32,8 @@ foreach ($sourcesArray as $source => $types) {
     echo str_repeat(" ", $totalSources - $tempCounter);
     echo "] $percentage%";
     $tempCounter++;
+    
+    // Fetch the data from the source
     $tempData = file_get_contents("https://t.me/s/" . $source);
     $type = implode("|", $types);
     $tempExtract = extractLinksByType($tempData, $type);
@@ -31,10 +41,14 @@ foreach ($sourcesArray as $source => $types) {
         $configsList[$source] = $tempExtract;
     }
 }
+
+// Initialize an empty array to store the final output
 $finalOutput = [];
 $locationBased = [];
 $needleArray = ["amp%3B"];
 $replaceArray = [""];
+
+// Define the hash and IP keys for each type of configuration
 $configsHash = [
     "vmess" => "ps",
     "vless" => "hash",
@@ -55,10 +69,14 @@ $configsIp = [
 echo "\nProcessing Configs\n";
 $totalSources = count($configsList);
 $tempSource = 1;
+
+// Loop through each source in the configs list
 foreach ($configsList as $source => $configs) {
     $totalConfigs = count($configs);
     $tempCounter = 1;
     echo "\n" . strval($tempSource) . "/" . strval($totalSources) . "\n";
+
+    // Loop through each config in the configs array
     foreach ($configs as $key => $config) {
         // Calculate the percentage complete
         $percentage = ($tempCounter / $totalConfigs) * 100;
@@ -69,6 +87,8 @@ foreach ($configsList as $source => $configs) {
         echo str_repeat(" ", $totalConfigs - $tempCounter);
         echo "] $percentage%";
         $tempCounter++;
+
+        // If the config is valid and the key is less than or equal to 15
         if (is_valid($config) && $key <= 15) {
             $type = detect_type($config);
             $configHash = $configsHash[$type];
@@ -78,6 +98,7 @@ foreach ($configsList as $source => $configs) {
                 ip_info($decodedConfig[$configIp])->country ?? "XX";
             $configFlag =
                 $configLocation === "XX" ? "🏳️" : getFlags($configLocation);
+            $source = $source === "iP_CF" ? "FAKEOFTVC" : $source;
             $decodedConfig[$configHash] =
                 $configFlag .
                 $configLocation .
@@ -103,6 +124,7 @@ foreach ($configsList as $source => $configs) {
     $tempSource++;
 }
 
+// Loop through each location in the location-based array
 foreach ($locationBased as $location => $configs) {
     $tempConfig = implode("\n", $configs);
     $base64TempConfig = base64_encode($tempConfig);
@@ -116,6 +138,7 @@ foreach ($locationBased as $location => $configs) {
     );
 }
 
+// Write the final output to a file
 file_put_contents("config.txt", implode("\n", $finalOutput));
 
 echo "done!";
