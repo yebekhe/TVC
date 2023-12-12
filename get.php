@@ -141,4 +141,4 @@ foreach ($locationBased as $location => $configs) {
 // Write the final output to a file
 file_put_contents("config.txt", implode("\n", $finalOutput));
 
-echo "done!";
+echo "\nGetting Configs Done!\n";
