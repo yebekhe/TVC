@@ -157,7 +157,7 @@ function configParse($input)
             "params" => $params,
             "hash" => isset($parsedUrl["fragment"])
                 ? $parsedUrl["fragment"]
-                : "",
+                : "TVC",
         ];
 
         if ($configType === "tuic") {
@@ -168,13 +168,16 @@ function configParse($input)
         return $output;
     } elseif ($configType === "ss") {
         $url = parse_url($input);
+        if (isBase64($url["user"])) {
+            $url["user"] = base64_decode($url["user"]);
+        }
         list($encryption_method, $password) = explode(
             ":",
-            base64_decode($url["user"])
+            $url["user"]
         );
         $server_address = $url["host"];
         $server_port = $url["port"];
-        $name = isset($url["fragment"]) ? urldecode($url["fragment"]) : null;
+        $name = isset($url["fragment"]) ? urldecode($url["fragment"]) : "TVC";
         $server = [
             "encryption_method" => $encryption_method,
             "password" => $password,
@@ -263,6 +266,15 @@ function is_reality($input)
     if (stripos($input, "reality") !== false && $type === "vless") {
         return true;
     }
+    return false;
+}
+
+function isBase64($input)
+{
+    if (base64_encode(base64_decode($input)) === $input) {
+        return true;
+    }
+
     return false;
 }
 
