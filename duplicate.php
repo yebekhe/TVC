@@ -187,8 +187,8 @@ foreach ($deduplicateArray as $key => $deduplicate) {
 }
 
 file_put_contents("config.txt", implode("\n", $finalOutput));
-file_put_contents("subscription/xray/normal/mix", implode("\n", $finalOutput));
-file_put_contents("subscription/xray/base64/mix", implode("\n", base64_encode($finalOutput)));
+file_put_contents("subscriptions/xray/normal/mix", implode("\n", $finalOutput));
+file_put_contents("subscriptions/xray/base64/mix", implode("\n", base64_encode($finalOutput)));
 
 echo "done!";
 
