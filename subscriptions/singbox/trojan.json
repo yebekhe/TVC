@@ -105,16 +105,514 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "🇫🇷FR | trojan | @PrivateVPNs | 0 | 1",
+                "🇫🇷FR | trojan | @PrivateVPNs | 1 | 2",
+                "🇬🇧GB | trojan | @PrivateVPNs | 2 | 3",
+                "🇬🇧GB | trojan | @PrivateVPNs | 3 | 4",
+                "🇮🇪IE | trojan | @PrivateVPNs | 4 | 5",
+                "🇮🇪IE | trojan | @PrivateVPNs | 5 | 6",
+                "🇸🇪SE | trojan | @PrivateVPNs | 6 | 7",
+                "🇸🇪SE | trojan | @PrivateVPNs | 7 | 8",
+                "🇩🇪DE | trojan | @PrivateVPNs | 8 | 9",
+                "🇩🇪DE | trojan | @PrivateVPNs | 9 | 10",
+                "🇫🇷FR | trojan | @DirectVPN | 0 | 11",
+                "🇬🇧GB | trojan | @DirectVPN | 1 | 12",
+                "🇬🇧GB | trojan | @DirectVPN | 2 | 13",
+                "🇮🇪IE | trojan | @DirectVPN | 3 | 14",
+                "🇮🇪IE | trojan | @DirectVPN | 4 | 15",
+                "🇸🇪SE | trojan | @DirectVPN | 5 | 16",
+                "🇩🇪DE | trojan | @DirectVPN | 6 | 17",
+                "🇫🇷FR | trojan | @DirectVPN | 7 | 18",
+                "🇬🇧GB | trojan | @DirectVPN | 8 | 19",
+                "🇮🇪IE | trojan | @DirectVPN | 9 | 20",
+                "🇺🇸US | trojan | @yaney_01 | 1 | 21",
+                "🇩🇪DE | trojan | @iP_CF | 1 | 22"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇫🇷FR | trojan | @PrivateVPNs | 0 | 1",
+                "🇫🇷FR | trojan | @PrivateVPNs | 1 | 2",
+                "🇬🇧GB | trojan | @PrivateVPNs | 2 | 3",
+                "🇬🇧GB | trojan | @PrivateVPNs | 3 | 4",
+                "🇮🇪IE | trojan | @PrivateVPNs | 4 | 5",
+                "🇮🇪IE | trojan | @PrivateVPNs | 5 | 6",
+                "🇸🇪SE | trojan | @PrivateVPNs | 6 | 7",
+                "🇸🇪SE | trojan | @PrivateVPNs | 7 | 8",
+                "🇩🇪DE | trojan | @PrivateVPNs | 8 | 9",
+                "🇩🇪DE | trojan | @PrivateVPNs | 9 | 10",
+                "🇫🇷FR | trojan | @DirectVPN | 0 | 11",
+                "🇬🇧GB | trojan | @DirectVPN | 1 | 12",
+                "🇬🇧GB | trojan | @DirectVPN | 2 | 13",
+                "🇮🇪IE | trojan | @DirectVPN | 3 | 14",
+                "🇮🇪IE | trojan | @DirectVPN | 4 | 15",
+                "🇸🇪SE | trojan | @DirectVPN | 5 | 16",
+                "🇩🇪DE | trojan | @DirectVPN | 6 | 17",
+                "🇫🇷FR | trojan | @DirectVPN | 7 | 18",
+                "🇬🇧GB | trojan | @DirectVPN | 8 | 19",
+                "🇮🇪IE | trojan | @DirectVPN | 9 | 20",
+                "🇺🇸US | trojan | @yaney_01 | 1 | 21",
+                "🇩🇪DE | trojan | @iP_CF | 1 | 22"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
+        },
+        {
+            "tag": "🇫🇷FR | trojan | @PrivateVPNs | 0 | 1",
+            "type": "trojan",
+            "server": "15.237.92.26",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | trojan | @PrivateVPNs | 1 | 2",
+            "type": "trojan",
+            "server": "15.236.191.135",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | trojan | @PrivateVPNs | 2 | 3",
+            "type": "trojan",
+            "server": "18.171.64.144",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | trojan | @PrivateVPNs | 3 | 4",
+            "type": "trojan",
+            "server": "18.171.79.96",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 4 | 5",
+            "type": "trojan",
+            "server": "99.81.46.175",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 5 | 6",
+            "type": "trojan",
+            "server": "52.30.37.152",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | trojan | @PrivateVPNs | 6 | 7",
+            "type": "trojan",
+            "server": "51.21.24.211",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | trojan | @PrivateVPNs | 7 | 8",
+            "type": "trojan",
+            "server": "51.21.41.6",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | trojan | @PrivateVPNs | 8 | 9",
+            "type": "trojan",
+            "server": "18.199.11.186",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | trojan | @PrivateVPNs | 9 | 10",
+            "type": "trojan",
+            "server": "18.199.11.234",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | trojan | @DirectVPN | 0 | 11",
+            "type": "trojan",
+            "server": "13.37.66.21",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | trojan | @DirectVPN | 1 | 12",
+            "type": "trojan",
+            "server": "18.170.156.123",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | trojan | @DirectVPN | 2 | 13",
+            "type": "trojan",
+            "server": "18.170.245.143",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇪IE | trojan | @DirectVPN | 3 | 14",
+            "type": "trojan",
+            "server": "34.241.106.165",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇪IE | trojan | @DirectVPN | 4 | 15",
+            "type": "trojan",
+            "server": "54.76.194.189",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | trojan | @DirectVPN | 5 | 16",
+            "type": "trojan",
+            "server": "51.20.102.82",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | trojan | @DirectVPN | 6 | 17",
+            "type": "trojan",
+            "server": "18.197.193.197",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | trojan | @DirectVPN | 7 | 18",
+            "type": "trojan",
+            "server": "35.181.201.140",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | trojan | @DirectVPN | 8 | 19",
+            "type": "trojan",
+            "server": "52.56.122.94",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇪IE | trojan | @DirectVPN | 9 | 20",
+            "type": "trojan",
+            "server": "54.247.173.195",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | trojan | @yaney_01 | 1 | 21",
+            "type": "trojan",
+            "server": "141.193.68.81",
+            "server_port": 443,
+            "password": "29ea82cf-f956-42b2-a5dc-35feea39e7ff",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇩🇪DE | trojan | @iP_CF | 1 | 22",
+            "type": "trojan",
+            "server": "5.104.108.120",
+            "server_port": 443,
+            "password": "b8810c0b-f0a8-4bc3-baff-7e7ffb85a08c",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "20-24-33-134.nhost.00cdn.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
             "tag": "direct",

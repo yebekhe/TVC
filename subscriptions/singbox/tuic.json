@@ -105,16 +105,217 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "🇳🇱NL | tuic | @EUT_VPN | 0 | 1",
+                "🇺🇸US | tuic | @EUT_VPN | 2 | 2",
+                "🇺🇸US | tuic | @EUT_VPN | 3 | 3",
+                "🇺🇸US | tuic | @EUT_VPN | 4 | 4",
+                "🇺🇸US | tuic | @EUT_VPN | 5 | 5",
+                "🇳🇱NL | tuic | @irancpi_vpn | 0 | 6",
+                "🇨🇦CA | tuic | @azadi_az_inja_migzare | 6 | 7",
+                "🇺🇸US | tuic | @azadi_az_inja_migzare | 7 | 8"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇳🇱NL | tuic | @EUT_VPN | 0 | 1",
+                "🇺🇸US | tuic | @EUT_VPN | 2 | 2",
+                "🇺🇸US | tuic | @EUT_VPN | 3 | 3",
+                "🇺🇸US | tuic | @EUT_VPN | 4 | 4",
+                "🇺🇸US | tuic | @EUT_VPN | 5 | 5",
+                "🇳🇱NL | tuic | @irancpi_vpn | 0 | 6",
+                "🇨🇦CA | tuic | @azadi_az_inja_migzare | 6 | 7",
+                "🇺🇸US | tuic | @azadi_az_inja_migzare | 7 | 8"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
+        },
+        {
+            "tag": "🇳🇱NL | tuic | @EUT_VPN | 0 | 1",
+            "type": "tuic",
+            "server": "209.250.254.198",
+            "server_port": 443,
+            "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
+            "password": null,
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "telegramEUT-VPN.ddns.net",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸US | tuic | @EUT_VPN | 2 | 2",
+            "type": "tuic",
+            "server": "108.181.22.239",
+            "server_port": 19988,
+            "uuid": "485ce799-da5f-46e8-a82b-8ef322d8602f",
+            "password": null,
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "telegramEUT-VPN.ddns.net",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸US | tuic | @EUT_VPN | 3 | 3",
+            "type": "tuic",
+            "server": "108.181.22.205",
+            "server_port": 50987,
+            "uuid": "d6214437-e1b5-4334-9090-8f66b78bea89",
+            "password": null,
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "telegramEUT-VPN.ddns.net",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸US | tuic | @EUT_VPN | 4 | 4",
+            "type": "tuic",
+            "server": "108.181.22.239",
+            "server_port": 12980,
+            "uuid": "ea8be14e-f82a-43ae-90b2-e110a7c7e164",
+            "password": null,
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "telegramEUT-VPN.ddns.net",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸US | tuic | @EUT_VPN | 5 | 5",
+            "type": "tuic",
+            "server": "108.181.24.7",
+            "server_port": 23450,
+            "uuid": "3618921b-adeb-4bd3-a2a0-f98b72a674b1",
+            "password": null,
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "telegramEUT-VPN.ddns.net",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🇳🇱NL | tuic | @irancpi_vpn | 0 | 6",
+            "type": "tuic",
+            "server": "hdfyhys2.cpionline.co",
+            "server_port": 26288,
+            "uuid": "628e821d-5151-48d6-8af3-e89cd74e6f4d",
+            "password": null,
+            "congestion_control": "cubic",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "hdfyhys2.cpionline.co",
+                "insecure": false,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🇨🇦CA | tuic | @azadi_az_inja_migzare | 6 | 7",
+            "type": "tuic",
+            "server": "149.248.51.37",
+            "server_port": 443,
+            "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
+            "password": null,
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "telegramEUT-VPN.ddns.net",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸US | tuic | @azadi_az_inja_migzare | 7 | 8",
+            "type": "tuic",
+            "server": "108.181.22.155",
+            "server_port": 12255,
+            "uuid": "ed6a538a-6e66-4f21-a769-4b389bb2f3ab",
+            "password": null,
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "telegramEUT-VPN.ddns.net",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
         },
         {
             "tag": "direct",
