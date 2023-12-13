@@ -118,23 +118,45 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
+  - {"name":"🇩🇪DE | trojan | @PrivateVPNs | 9 | 0️⃣1️⃣","type":"trojan","server":"18.199.11.234","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - 
+  - 
+  - {"name":"🇩🇪DE | trojan | @DirectVPN | 6 | 0️⃣4️⃣","type":"trojan","server":"18.197.193.197","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - 
+  - 
+  - 
+  - 
+  - {"name":"🇦🇺AU | vmess | @ConfigsHUB | 1 | 1️⃣1️⃣","type":"vmess","server":"arshatheblackb00k6extortionpippa.arshaproplus.cf","port":"8443","cipher":"auto","uuid":"0c63b0a2-ae35-4543-8000-91a45b0b925d","alterId":"0","tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵JP | vmess | @ConfigsHUB | 2 | 1️⃣2️⃣","type":"vmess","server":"64.176.59.68","port":"59350","cipher":"auto","uuid":"5821ac21-8e3f-4c8b-832d-a55190c944e9","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇩🇪DE | trojan | @PrivateVPNs | 9 | 0️⃣1️⃣'
+      - '🇩🇪DE | trojan | @DirectVPN | 6 | 0️⃣4️⃣'
+      - '🇦🇺AU | vmess | @ConfigsHUB | 1 | 1️⃣1️⃣'
+      - '🇯🇵JP | vmess | @ConfigsHUB | 2 | 1️⃣2️⃣'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - '🇩🇪DE | trojan | @PrivateVPNs | 9 | 0️⃣1️⃣'
+      - '🇩🇪DE | trojan | @DirectVPN | 6 | 0️⃣4️⃣'
+      - '🇦🇺AU | vmess | @ConfigsHUB | 1 | 1️⃣1️⃣'
+      - '🇯🇵JP | vmess | @ConfigsHUB | 2 | 1️⃣2️⃣'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇩🇪DE | trojan | @PrivateVPNs | 9 | 0️⃣1️⃣'
+      - '🇩🇪DE | trojan | @DirectVPN | 6 | 0️⃣4️⃣'
+      - '🇦🇺AU | vmess | @ConfigsHUB | 1 | 1️⃣1️⃣'
+      - '🇯🇵JP | vmess | @ConfigsHUB | 2 | 1️⃣2️⃣'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
