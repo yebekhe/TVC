@@ -206,7 +206,7 @@ function reparseConfig($configArray, $configType)
         $url .= $configArray["hostname"];
         $url .= addPort($configArray);
         $url .= addParams($configArray);
-        $url .= addHash($configArray);
+        $url .= urlencode(addHash($configArray));
         return $url;
     } elseif ($configType === "ss") {
         $user = base64_encode(
