@@ -63,13 +63,15 @@ foreach ($deduplicateArray as $key => $deduplicate) {
     // Add the config to the final output
     $finalOutput[] = $encodedConfig;
 }
-$tempConfig = implode("\n", $finalOutput);
-$base64TempConfig = base64_encode($tempConfig);
 
 // Write the final output to the config file
-file_put_contents("config.txt", $tempConfig);
+file_put_contents("config.txt", implode("\n", $finalOutput));
+
+$tempConfig = urldecode(implode("\n", $finalOutput));
+$base64TempConfig = base64_encode($tempConfig);
+
 // Write the final output to the subscriptions/xray/normal/mix file
-file_put_contents("subscriptions/xray/normal/mix", urldecode($tempConfig));
+file_put_contents("subscriptions/xray/normal/mix", $tempConfig);
 // Write the final output to the subscriptions/xray/base64/mix file, encoded in base64
 file_put_contents("subscriptions/xray/base64/mix", $base64TempConfig);
 // Convert the base64 encoded string to Singbox format and write it to a file
