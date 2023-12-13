@@ -214,7 +214,7 @@ function reparseConfig($configArray, $configType)
         );
         $url = "ss://$user@{$configArray["server_address"]}:{$configArray["server_port"]}";
         if (!empty($configArray["name"])) {
-            $url .= "#" . $configArray["name"];
+            $url .= "#" . urlencode($configArray["name"]);
         }
         return $url;
     }
@@ -255,7 +255,7 @@ function addHash($obj)
 {
     $url = "";
     if (isset($obj["hash"]) && $obj["hash"] !== "") {
-        $url .= "#" . $obj["hash"];
+        $url .= "#" . urlencode($obj["hash"]);
     }
     return $url;
 }
