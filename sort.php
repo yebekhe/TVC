@@ -42,21 +42,27 @@ foreach ($sortArray as $type => $sort) {
             "subscriptions/singbox/" . $type . ".json",
             toSingbox($base64TempConfigs)
         );
-        // Convert the base64 encoded string to Clash format and write it to a file
-        file_put_contents(
-            "subscriptions/clash/" . $type . ".yaml",
-            toClash($base64TempConfigs, "clash")
-        );
-        // Convert the base64 encoded string to Meta format and write it to a file
-        file_put_contents(
-            "subscriptions/meta/" . $type . ".yaml",
-            toClash($base64TempConfigs, "meta")
-        );
-        // Convert the base64 encoded string to Surfboard format and write it to a file
-        file_put_contents(
-            "subscriptions/surfboard/" . $type,
-            toClash($base64TempConfigs, "surfboard")
-        );
+
+        if (in_array($type, ["vmess", "trojan", "ss"])) {
+            // Convert the base64 encoded string to Clash format and write it to a file
+            file_put_contents(
+                "subscriptions/clash/" . $type . ".yaml",
+                toClash($base64TempConfigs, "clash")
+            );
+            // Convert the base64 encoded string to Surfboard format and write it to a file
+            file_put_contents(
+                "subscriptions/surfboard/" . $type,
+                toClash($base64TempConfigs, "surfboard")
+            );
+        }
+
+        if (in_array($type, ["vmess", "vless", "reality", "trojan", "ss"])) {
+            // Convert the base64 encoded string to Meta format and write it to a file
+            file_put_contents(
+                "subscriptions/meta/" . $type . ".yaml",
+                toClash($base64TempConfigs, "meta")
+            );
+        }
     }
 }
 
