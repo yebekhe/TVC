@@ -122,8 +122,6 @@ proxies:
   - 
   - 
   - 
-  - {"name":"🇺🇸US | trojan | @DirectVPN | 7 | 0️⃣5️⃣","type":"trojan","server":"3.133.72.219","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
-  - 
   - 
   - 
 proxy-groups:
@@ -132,20 +130,17 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | trojan | @DirectVPN | 7 | 0️⃣5️⃣'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | trojan | @DirectVPN | 7 | 0️⃣5️⃣'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇺🇸US | trojan | @DirectVPN | 7 | 0️⃣5️⃣'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
