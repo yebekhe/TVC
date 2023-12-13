@@ -126,7 +126,7 @@ foreach ($configsList as $source => $configs) {
 
 // Loop through each location in the location-based array
 foreach ($locationBased as $location => $configs) {
-    $tempConfig = implode("\n", $configs);
+    $tempConfig = urldecode(implode("\n", $configs));
     $base64TempConfig = base64_encode($tempConfig);
     file_put_contents(
         "subscriptions/location/normal/" . $location,
