@@ -294,7 +294,6 @@ function toSingbox(
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
     $result = curl_exec($ch);
-    sleep(5);
     curl_close($ch);
 
     return $result;
@@ -316,7 +315,6 @@ function toClash(
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
     $result = curl_exec($ch);
-    sleep(5);
     curl_close($ch);
 
     return $result;
