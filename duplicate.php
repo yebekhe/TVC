@@ -74,11 +74,6 @@ $base64TempConfig = base64_encode($tempConfig);
 file_put_contents("subscriptions/xray/normal/mix", $tempConfig);
 // Write the final output to the subscriptions/xray/base64/mix file, encoded in base64
 file_put_contents("subscriptions/xray/base64/mix", $base64TempConfig);
-// Convert the base64 encoded string to Singbox format and write it to a file
-file_put_contents(
-    "subscriptions/singbox/mix.json",
-    toSingbox($base64TempConfig)
-);
 // Convert the base64 encoded string to Clash format and write it to a file
 file_put_contents(
     "subscriptions/clash/mix.yaml",
