@@ -157,7 +157,7 @@ function configParse($input)
             "params" => $params,
             "hash" => isset($parsedUrl["fragment"])
                 ? $parsedUrl["fragment"]
-                : "TVC" . getRandomName(),,
+                : "TVC" . getRandomName(),
         ];
 
         if ($configType === "tuic") {
