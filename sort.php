@@ -37,11 +37,6 @@ foreach ($sortArray as $type => $sort) {
             "subscriptions/xray/base64/" . $type,
             $base64TempConfigs
         );
-        // Convert the base64 encoded string to Singbox format and write it to a file
-        file_put_contents(
-            "subscriptions/singbox/" . $type . ".json",
-            toSingbox($base64TempConfigs)
-        );
 
         if (in_array($type, ["vmess", "trojan", "ss"])) {
             // Convert the base64 encoded string to Clash format and write it to a file
