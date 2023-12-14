@@ -1,84 +1,11 @@
 <?php
+// Enable error reporting
+ini_set("display_errors", 1);
+ini_set("display_startup_errors", 1);
+error_reporting(E_ERROR | E_PARSE);
 
-function detect_type($input)
-{
-    if (substr($input, 0, 8) === "vmess://") {
-        return "vmess";
-    } elseif (substr($input, 0, 8) === "vless://") {
-        return "vless";
-    } elseif (substr($input, 0, 9) === "trojan://") {
-        return "trojan";
-    } elseif (substr($input, 0, 5) === "ss://") {
-        return "ss";
-    } elseif (substr($input, 0, 7) === "tuic://") {
-        return "tuic";
-    } elseif (
-        substr($input, 0, 6) === "hy2://" ||
-        substr($input, 0, 12) === "hysteria2://"
-    ) {
-        return "hy2";
-    } 
-    
-  return null;
-}
-
-function configParse($input)
-{
-    $configType = detect_type($input);
-    if ($configType === "vmess") {
-        $vmess_data = substr($input, 8);
-        $decoded_data = json_decode(base64_decode($vmess_data), true);
-        return $decoded_data;
-    } elseif (
-        $configType === "vless" ||
-        $configType === "trojan" ||
-        $configType === "tuic" ||
-        $configType === "hy2"
-    ) {
-        $parsedUrl = parse_url($input);
-        $params = [];
-        if (isset($parsedUrl["query"])) {
-            parse_str($parsedUrl["query"], $params);
-        }
-        $output = [
-            "protocol" => $configType,
-            "username" => isset($parsedUrl["user"]) ? $parsedUrl["user"] : "",
-            "hostname" => isset($parsedUrl["host"]) ? $parsedUrl["host"] : "",
-            "port" => isset($parsedUrl["port"]) ? $parsedUrl["port"] : "",
-            "params" => $params,
-            "hash" => isset($parsedUrl["fragment"])
-                ? $parsedUrl["fragment"]
-                : "TVC",
-        ];
-
-        if ($configType === "tuic") {
-            $output["pass"] = isset($parsedUrl["pass"])
-                ? $parsedUrl["pass"]
-                : "";
-        }
-        return $output;
-    } elseif ($configType === "ss") {
-        $url = parse_url($input);
-        if (isBase64($url["user"])) {
-            $url["user"] = base64_decode($url["user"]);
-        }
-        list($encryption_method, $password) = explode(
-            ":",
-            $url["user"]
-        );
-        $server_address = $url["host"];
-        $server_port = $url["port"];
-        $name = isset($url["fragment"]) ? urldecode($url["fragment"]) : "TVC";
-        $server = [
-            "encryption_method" => $encryption_method,
-            "password" => $password,
-            "server_address" => $server_address,
-            "server_port" => $server_port,
-            "name" => $name,
-        ];
-        return $server;
-    }
-}
+// Include the functions file
+require "functions.php";
 
 function processWsPath($input)
 {
@@ -400,9 +327,6 @@ function toSingbox ($input) {
 function processConvertion ($base64ConfigsList, $configsName = "Created By YeBeKhe") {
     $configsArray = explode("\n", base64_decode($base64ConfigsList));
     $structure = json_decode(file_get_contents('structure.json'), true);
-    $outbounds = $structure['outbound'];
-    $manualOutbound = $outbounds[0];
-    $urltestOutbound = $outbounds[1];
     foreach ($configsArray as $config) {
         $toSingbox = toSingbox($config);
         if (!is_null($toSingbox)) {
