@@ -120,23 +120,38 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇮🇪IE | trojan | @PrivateVPNs | 0 | 0️⃣1️⃣","type":"trojan","server":"54.170.21.134","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - {"name":"🇩🇪DE | trojan | @FAKEOFTVC | 2 | 0️⃣9️⃣","type":"trojan","server":"5.104.108.120","port":443,"udp":false,"password":"b8810c0b-f0a8-4bc3-baff-7e7ffb85a08c","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"20-24-33-134.nhost.00cdn.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇮🇪IE | trojan | @PrivateVPNs | 0 | 0️⃣1️⃣'
+      - '🇩🇪DE | trojan | @FAKEOFTVC | 2 | 0️⃣9️⃣'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - '🇮🇪IE | trojan | @PrivateVPNs | 0 | 0️⃣1️⃣'
+      - '🇩🇪DE | trojan | @FAKEOFTVC | 2 | 0️⃣9️⃣'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇮🇪IE | trojan | @PrivateVPNs | 0 | 0️⃣1️⃣'
+      - '🇩🇪DE | trojan | @FAKEOFTVC | 2 | 0️⃣9️⃣'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
