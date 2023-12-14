@@ -157,7 +157,7 @@ function configParse($input)
             "params" => $params,
             "hash" => isset($parsedUrl["fragment"])
                 ? $parsedUrl["fragment"]
-                : "TVC",
+                : "TVC" . getRandomName(),,
         ];
 
         if ($configType === "tuic") {
@@ -177,7 +177,7 @@ function configParse($input)
         );
         $server_address = $url["host"];
         $server_port = $url["port"];
-        $name = isset($url["fragment"]) ? urldecode($url["fragment"]) : "TVC";
+        $name = isset($url["fragment"]) ? urldecode($url["fragment"]) : "TVC" . getRandomName();
         $server = [
             "encryption_method" => $encryption_method,
             "password" => $password,
@@ -278,23 +278,15 @@ function isBase64($input)
     return false;
 }
 
-function toClash(
-    $configs,
-    $type
-) {
-    $url = "https://api.yebekhe.link/convertor/clash/index.php";
+function getRandomName() {
+    $alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    $name = '';
+    for ($i = 0; $i < 10; $i++) {
+      // Get a random letter from the alphabet
+      $randomLetter = $alphabet[rand(0, strlen($alphabet) - 1)];
+      // Add the letter to the name string
+      $name .= $randomLetter;
+    }
+    return $name;
+  }
 
-    $data = [
-        "config" => $configs,
-        "type" => $type,
-    ];
-
-    $ch = curl_init($url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
-    $result = curl_exec($ch);
-    curl_close($ch);
-
-    return $result;
-}
