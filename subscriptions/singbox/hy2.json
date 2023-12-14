@@ -1,8 +1,8 @@
-//profile-title: base64:Q09OVkVSVEVEIEJZIFRWQw==
+//profile-title: base64:VFZDIHwgaHky
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
-//support-url: https://t.me/v2raycollector
-//profile-web-page-url: https://github.com/yebekhe/TelegramV2rayCollector
+//support-url: https://t.me/V2rayCollector
+//profile-web-page-url: https://t.me/V2rayCollectorBot
 
 {
     "log": {
@@ -23,13 +23,13 @@
     "dns": {
         "servers": [
             {
-                "address": "tcp:\/\/95.85.95.85",
+                "address": "tcp:\/\/185.228.168.9",
                 "address_resolver": "dns-direct",
                 "strategy": "ipv4_only",
                 "tag": "dns-remote"
             },
             {
-                "address": "tcp:\/\/95.85.95.85",
+                "address": "tcp:\/\/185.228.168.9",
                 "address_resolver": "dns-local",
                 "detour": "direct",
                 "strategy": "ipv4_only",
@@ -106,25 +106,41 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | hy2 | @EUT_VPN | 8 | 1",
-                "🇺🇸US | hy2 | @EUT_VPN | 9 | 2",
-                "🇬🇧GB | hy2 | @EUT_VPN | 10 | 3"
+                "🇫🇷FR | hy2 | @EUT_VPN | 8",
+                "🇺🇸US | hy2 | @EUT_VPN | 9",
+                "🇬🇧GB | hy2 | @EUT_VPN | 10"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | hy2 | @EUT_VPN | 8 | 1",
-                "🇺🇸US | hy2 | @EUT_VPN | 9 | 2",
-                "🇬🇧GB | hy2 | @EUT_VPN | 10 | 3"
+                "🇫🇷FR | hy2 | @EUT_VPN | 8",
+                "🇺🇸US | hy2 | @EUT_VPN | 9",
+                "🇬🇧GB | hy2 | @EUT_VPN | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
         },
         {
-            "tag": "🇫🇷FR | hy2 | @EUT_VPN | 8 | 1",
+            "tag": "direct",
+            "type": "direct"
+        },
+        {
+            "tag": "bypass",
+            "type": "direct"
+        },
+        {
+            "tag": "block",
+            "type": "block"
+        },
+        {
+            "tag": "dns-out",
+            "type": "dns"
+        },
+        {
+            "tag": "🇫🇷FR | hy2 | @EUT_VPN | 8",
             "type": "hysteria2",
             "server": "45.76.44.57",
             "server_port": 443,
@@ -147,7 +163,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | hy2 | @EUT_VPN | 9 | 2",
+            "tag": "🇺🇸US | hy2 | @EUT_VPN | 9",
             "type": "hysteria2",
             "server": "15.204.49.157",
             "server_port": 4434,
@@ -170,7 +186,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | hy2 | @EUT_VPN | 10 | 3",
+            "tag": "🇬🇧GB | hy2 | @EUT_VPN | 10",
             "type": "hysteria2",
             "server": "64.176.191.187",
             "server_port": 443,
@@ -191,22 +207,6 @@
                     "h3"
                 ]
             }
-        },
-        {
-            "tag": "direct",
-            "type": "direct"
-        },
-        {
-            "tag": "bypass",
-            "type": "direct"
-        },
-        {
-            "tag": "block",
-            "type": "block"
-        },
-        {
-            "tag": "dns-out",
-            "type": "dns"
         }
     ],
     "route": {

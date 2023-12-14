@@ -1,8 +1,8 @@
-//profile-title: base64:Q09OVkVSVEVEIEJZIFRWQw==
+//profile-title: base64:VFZDIHwgdHVpYw==
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
-//support-url: https://t.me/v2raycollector
-//profile-web-page-url: https://github.com/yebekhe/TelegramV2rayCollector
+//support-url: https://t.me/V2rayCollector
+//profile-web-page-url: https://t.me/V2rayCollectorBot
 
 {
     "log": {
@@ -23,13 +23,13 @@
     "dns": {
         "servers": [
             {
-                "address": "tcp:\/\/95.85.95.85",
+                "address": "tcp:\/\/185.228.168.9",
                 "address_resolver": "dns-direct",
                 "strategy": "ipv4_only",
                 "tag": "dns-remote"
             },
             {
-                "address": "tcp:\/\/95.85.95.85",
+                "address": "tcp:\/\/185.228.168.9",
                 "address_resolver": "dns-local",
                 "detour": "direct",
                 "strategy": "ipv4_only",
@@ -106,38 +106,53 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | tuic | @EUT_VPN | 0 | 1",
-                "🇺🇸US | tuic | @EUT_VPN | 2 | 2",
-                "🇺🇸US | tuic | @EUT_VPN | 3 | 3",
-                "🇺🇸US | tuic | @EUT_VPN | 4 | 4",
-                "🇺🇸US | tuic | @EUT_VPN | 5 | 5",
-                "🇨🇦CA | tuic | @EUT_VPN | 6 | 6",
-                "🇺🇸US | tuic | @EUT_VPN | 7 | 7",
-                "🇳🇱NL | tuic | @irancpi_vpn | 0 | 8",
-                "🇹🇷TR | tuic | @V2rayCollectorDonate | 10 | 9"
+                "🇳🇱NL | tuic | @EUT_VPN | 0",
+                "🇺🇸US | tuic | @EUT_VPN | 2",
+                "🇺🇸US | tuic | @EUT_VPN | 3",
+                "🇺🇸US | tuic | @EUT_VPN | 4",
+                "🇺🇸US | tuic | @EUT_VPN | 5",
+                "🇨🇦CA | tuic | @EUT_VPN | 6",
+                "🇺🇸US | tuic | @EUT_VPN | 7",
+                "🇳🇱NL | tuic | @irancpi_vpn | 0",
+                "🇹🇷TR | tuic | @V2rayCollectorDonate | 4"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | tuic | @EUT_VPN | 0 | 1",
-                "🇺🇸US | tuic | @EUT_VPN | 2 | 2",
-                "🇺🇸US | tuic | @EUT_VPN | 3 | 3",
-                "🇺🇸US | tuic | @EUT_VPN | 4 | 4",
-                "🇺🇸US | tuic | @EUT_VPN | 5 | 5",
-                "🇨🇦CA | tuic | @EUT_VPN | 6 | 6",
-                "🇺🇸US | tuic | @EUT_VPN | 7 | 7",
-                "🇳🇱NL | tuic | @irancpi_vpn | 0 | 8",
-                "🇹🇷TR | tuic | @V2rayCollectorDonate | 10 | 9"
+                "🇳🇱NL | tuic | @EUT_VPN | 0",
+                "🇺🇸US | tuic | @EUT_VPN | 2",
+                "🇺🇸US | tuic | @EUT_VPN | 3",
+                "🇺🇸US | tuic | @EUT_VPN | 4",
+                "🇺🇸US | tuic | @EUT_VPN | 5",
+                "🇨🇦CA | tuic | @EUT_VPN | 6",
+                "🇺🇸US | tuic | @EUT_VPN | 7",
+                "🇳🇱NL | tuic | @irancpi_vpn | 0",
+                "🇹🇷TR | tuic | @V2rayCollectorDonate | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
         },
         {
-            "tag": "🇳🇱NL | tuic | @EUT_VPN | 0 | 1",
-            "type": "tuic",
+            "tag": "direct",
+            "type": "direct"
+        },
+        {
+            "tag": "bypass",
+            "type": "direct"
+        },
+        {
+            "tag": "block",
+            "type": "block"
+        },
+        {
+            "tag": "dns-out",
+            "type": "dns"
+        },
+        {
+            "tag": "🇳🇱NL | tuic | @EUT_VPN | 0",
             "server": "209.250.254.198",
             "server_port": 443,
             "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
@@ -159,8 +174,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | tuic | @EUT_VPN | 2 | 2",
-            "type": "tuic",
+            "tag": "🇺🇸US | tuic | @EUT_VPN | 2",
             "server": "108.181.22.239",
             "server_port": 19988,
             "uuid": "485ce799-da5f-46e8-a82b-8ef322d8602f",
@@ -182,8 +196,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | tuic | @EUT_VPN | 3 | 3",
-            "type": "tuic",
+            "tag": "🇺🇸US | tuic | @EUT_VPN | 3",
             "server": "108.181.22.205",
             "server_port": 50987,
             "uuid": "d6214437-e1b5-4334-9090-8f66b78bea89",
@@ -205,8 +218,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | tuic | @EUT_VPN | 4 | 4",
-            "type": "tuic",
+            "tag": "🇺🇸US | tuic | @EUT_VPN | 4",
             "server": "108.181.22.239",
             "server_port": 12980,
             "uuid": "ea8be14e-f82a-43ae-90b2-e110a7c7e164",
@@ -228,8 +240,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | tuic | @EUT_VPN | 5 | 5",
-            "type": "tuic",
+            "tag": "🇺🇸US | tuic | @EUT_VPN | 5",
             "server": "108.181.24.7",
             "server_port": 23450,
             "uuid": "3618921b-adeb-4bd3-a2a0-f98b72a674b1",
@@ -251,8 +262,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | tuic | @EUT_VPN | 6 | 6",
-            "type": "tuic",
+            "tag": "🇨🇦CA | tuic | @EUT_VPN | 6",
             "server": "149.248.51.37",
             "server_port": 443,
             "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
@@ -274,8 +284,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | tuic | @EUT_VPN | 7 | 7",
-            "type": "tuic",
+            "tag": "🇺🇸US | tuic | @EUT_VPN | 7",
             "server": "108.181.22.155",
             "server_port": 12255,
             "uuid": "ed6a538a-6e66-4f21-a769-4b389bb2f3ab",
@@ -297,8 +306,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | tuic | @irancpi_vpn | 0 | 8",
-            "type": "tuic",
+            "tag": "🇳🇱NL | tuic | @irancpi_vpn | 0",
             "server": "hdfyhys2.cpionline.co",
             "server_port": 26288,
             "uuid": "628e821d-5151-48d6-8af3-e89cd74e6f4d",
@@ -320,8 +328,7 @@
             }
         },
         {
-            "tag": "🇹🇷TR | tuic | @V2rayCollectorDonate | 10 | 9",
-            "type": "tuic",
+            "tag": "🇹🇷TR | tuic | @V2rayCollectorDonate | 4",
             "server": "185.113.223.104",
             "server_port": 9823,
             "uuid": "f2ac5977-a4bd-4d09-9ae8-48d0e7c48013",
@@ -341,22 +348,6 @@
                     "spdy\/3.1"
                 ]
             }
-        },
-        {
-            "tag": "direct",
-            "type": "direct"
-        },
-        {
-            "tag": "bypass",
-            "type": "direct"
-        },
-        {
-            "tag": "block",
-            "type": "block"
-        },
-        {
-            "tag": "dns-out",
-            "type": "dns"
         }
     ],
     "route": {
