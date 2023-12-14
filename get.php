@@ -32,7 +32,7 @@ foreach ($sourcesArray as $source => $types) {
     echo str_repeat(" ", $totalSources - $tempCounter);
     echo "] $percentage%";
     $tempCounter++;
-    
+
     // Fetch the data from the source
     $tempData = file_get_contents("https://t.me/s/" . $source);
     $type = implode("|", $types);
@@ -110,16 +110,18 @@ foreach ($configsList as $source => $configs) {
                 " | " .
                 strval($key);
             $encodedConfig = reparseConfig($decodedConfig, $type);
-            $finalOutput[] = str_replace(
-                $needleArray,
-                $replaceArray,
-                $encodedConfig
-            );
-            $locationBased[$configLocation][] = str_replace(
-                $needleArray,
-                $replaceArray,
-                $encodedConfig
-            );
+            if (substr($encodedConfig, 0, 10) !== "ss://Og==@") {
+                $finalOutput[] = str_replace(
+                    $needleArray,
+                    $replaceArray,
+                    $encodedConfig
+                );
+                $locationBased[$configLocation][] = str_replace(
+                    $needleArray,
+                    $replaceArray,
+                    $encodedConfig
+                );
+            }
         }
     }
     $tempSource++;
