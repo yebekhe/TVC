@@ -106,23 +106,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | hy2 | @EUT_VPN | 6 | 1",
-                "🇺🇸US | hy2 | @EUT_VPN | 7 | 2"
+                "🇫🇷FR | hy2 | @EUT_VPN | 10 | 1",
+                "🇺🇸US | hy2 | @EUT_VPN | 11 | 2",
+                "🇬🇧GB | hy2 | @EUT_VPN | 12 | 3"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | hy2 | @EUT_VPN | 6 | 1",
-                "🇺🇸US | hy2 | @EUT_VPN | 7 | 2"
+                "🇫🇷FR | hy2 | @EUT_VPN | 10 | 1",
+                "🇺🇸US | hy2 | @EUT_VPN | 11 | 2",
+                "🇬🇧GB | hy2 | @EUT_VPN | 12 | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
         },
         {
-            "tag": "🇫🇷FR | hy2 | @EUT_VPN | 6 | 1",
+            "tag": "🇫🇷FR | hy2 | @EUT_VPN | 10 | 1",
             "type": "hysteria2",
             "server": "45.76.44.57",
             "server_port": 443,
@@ -145,7 +147,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | hy2 | @EUT_VPN | 7 | 2",
+            "tag": "🇺🇸US | hy2 | @EUT_VPN | 11 | 2",
             "type": "hysteria2",
             "server": "15.204.49.157",
             "server_port": 4434,
@@ -162,6 +164,29 @@
                 "disable_sni": false,
                 "server_name": "ushy2.sharecentre.online",
                 "insecure": false,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇬🇧GB | hy2 | @EUT_VPN | 12 | 3",
+            "type": "hysteria2",
+            "server": "64.176.191.187",
+            "server_port": 443,
+            "up_mbps": 0,
+            "down_mbps": 0,
+            "password": "f40b1e441addaec3",
+            "network": "tcp",
+            "obfs": {
+                "type": "salamander",
+                "password": "2db7b42a"
+            },
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "google.co",
+                "insecure": true,
                 "alpn": [
                     "h3"
                 ]

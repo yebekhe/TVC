@@ -118,38 +118,23 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - 
-  - {"name":"🇮🇪IE | trojan | @PrivateVPNs | 4 | 0️⃣2️⃣","type":"trojan","server":"54.74.114.206","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
-  - 
-  - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 11 | 0️⃣4️⃣","type":"trojan","server":"13.38.200.183","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
-  - 
-  - 
-  - 
-  - 
-  - 
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇮🇪IE | trojan | @PrivateVPNs | 4 | 0️⃣2️⃣'
-      - '🇫🇷FR | trojan | @PrivateVPNs | 11 | 0️⃣4️⃣'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇮🇪IE | trojan | @PrivateVPNs | 4 | 0️⃣2️⃣'
-      - '🇫🇷FR | trojan | @PrivateVPNs | 11 | 0️⃣4️⃣'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇮🇪IE | trojan | @PrivateVPNs | 4 | 0️⃣2️⃣'
-      - '🇫🇷FR | trojan | @PrivateVPNs | 11 | 0️⃣4️⃣'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
