@@ -74,21 +74,6 @@ $base64TempConfig = base64_encode($tempConfig);
 file_put_contents("subscriptions/xray/normal/mix", $tempConfig);
 // Write the final output to the subscriptions/xray/base64/mix file, encoded in base64
 file_put_contents("subscriptions/xray/base64/mix", $base64TempConfig);
-// Convert the base64 encoded string to Clash format and write it to a file
-file_put_contents(
-    "subscriptions/clash/mix.yaml",
-    toClash($base64TempConfig, "clash")
-);
-// Convert the base64 encoded string to Meta format and write it to a file
-file_put_contents(
-    "subscriptions/meta/mix.yaml",
-    toClash($base64TempConfig, "meta")
-);
-// Convert the base64 encoded string to Surfboard format and write it to a file
-file_put_contents(
-    "subscriptions/surfboard/mix",
-    toClash($base64TempConfig, "surfboard")
-);
 
 // Print "done!" to the console
 echo "Removing Duplicates Done!\n";
