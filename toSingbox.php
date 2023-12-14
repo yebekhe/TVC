@@ -169,6 +169,7 @@ function vlessToSingbox ($input) {
     ) 
     {
         $configResult["tls"]["reality"] = setReality($decodeConfig);
+        $configResult['flow'] = "xtls-rprx-vision";
         if (
             is_null($decodeConfig["params"]["pbk"]) or
             $decodeConfig["params"]["pbk"] === ""
