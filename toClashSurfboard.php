@@ -169,7 +169,13 @@ function ssToClash($input)
     if (!is_string($decodedConfig["password"])) {
         return null;
     }
-    if ($decodedConfig["encryption_method"] === "2022-blake3-aes-256-gcm") return null;
+    $encryptionMethodes = [
+        "chacha20-ietf-poly1305",
+        "aes-256-gcm"
+    ];
+    if (!in_array($decodedConfig["encryption_method"], $encryptionMethodes)) {
+        return null;
+    }
 
     $shadowsocksTemplate = [
         "name" => urldecode($decodedConfig["name"]),
@@ -186,6 +192,13 @@ function ssToSurfboard($input)
 {
     $decodedConfig = configParse($input);
     if ($decodedConfig["encryption_method"] === "2022-blake3-aes-256-gcm") {
+        return null;
+    }
+    $encryptionMethodes = [
+        "chacha20-ietf-poly1305",
+        "aes-256-gcm"
+    ];
+    if (!in_array($decodedConfig["encryption_method"], $encryptionMethodes)) {
         return null;
     }
     $shadowsocksTemplate =
