@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇬🇧GB | hy2 | @EUT_VPN | 44",
-                "🇫🇷FR | hy2 | @EUT_VPN | 47"
+                "🇫🇷FR | hy2 | @EUT_VPN | 47",
+                "🇸🇪SE | hy2 | @azadi_az_inja_migzare | 16"
             ]
         },
         {
@@ -115,7 +116,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇬🇧GB | hy2 | @EUT_VPN | 44",
-                "🇫🇷FR | hy2 | @EUT_VPN | 47"
+                "🇫🇷FR | hy2 | @EUT_VPN | 47",
+                "🇸🇪SE | hy2 | @azadi_az_inja_migzare | 16"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -177,6 +179,29 @@
                 "enabled": true,
                 "disable_sni": false,
                 "server_name": "telegramEUT-VPN.ddns.net",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇸🇪SE | hy2 | @azadi_az_inja_migzare | 16",
+            "type": "hysteria2",
+            "server": "195.128.240.251",
+            "server_port": 80,
+            "up_mbps": 0,
+            "down_mbps": 0,
+            "password": "RhBlRjqD5I97szf87gQR662r6cV5yOK2",
+            "network": "tcp",
+            "obfs": {
+                "type": "salamander",
+                "password": "8w4jlX268iItraZSsWibq5gW0ZB1N0h2"
+            },
+            "tls": {
+                "enabled": true,
+                "disable_sni": true,
+                "server_name": "",
                 "insecure": true,
                 "alpn": [
                     "h3"
