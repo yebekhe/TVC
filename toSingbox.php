@@ -302,6 +302,8 @@ function hy2ToSingbox ($input) {
         "password" => $decodedConfig["params"]["obfs-password"],
     ];
 
+    if (is_null($configResult["obfs"]["password"]) || empty($configResult["obfs"]["password"])) return null;
+
     $configResult["tls"] = [
         "enabled" => true,
         "disable_sni" => isset($decodedConfig["params"]["sni"]) ? false : true,
