@@ -169,6 +169,7 @@ function ssToClash($input)
     if (!is_string($decodedConfig["password"])) {
         return null;
     }
+    if ($decodedConfig["encryption_method"] === "2022-blake3-aes-256-gcm") return null;
 
     $shadowsocksTemplate = [
         "name" => urldecode($decodedConfig["name"]),
