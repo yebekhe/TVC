@@ -248,6 +248,7 @@ function tuicToSingbox ($input) {
     $decodedConfig = configParse($input);
     $configResult = [
         "tag" => urldecode($decodedConfig["hash"]),
+        "type" => "tuic",
         "server" => $decodedConfig["hostname"],
         "server_port" => intval($decodedConfig["port"]),
         "uuid" => $decodedConfig["username"],
