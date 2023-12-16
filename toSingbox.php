@@ -139,7 +139,7 @@ function vmessToSingbox ($input) {
 function vlessToSingbox ($input) {
     $decodedConfig = configParse($input);
     $configResult = [
-        "tag" => $decodedConfig["hash"],
+        "tag" => urldecode($decodedConfig["hash"]),
         "type" => "vless",
         "server" => $decodedConfig["hostname"],
         "server_port" => intval($decodedConfig["port"]),
