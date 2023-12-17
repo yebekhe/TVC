@@ -120,7 +120,6 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇨🇦CA | trojan | @V2rayCollectorDonate | 19","type":"trojan","server":"cf.network383.online","port":8443,"udp":false,"password":"8Ka1hu4r3g","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"amsb.carfin.tech"}
   - {"name":"🇮🇪IE | trojan | @PrivateVPNs | 3","type":"trojan","server":"34.240.196.248","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇮🇪IE | trojan | @PrivateVPNs | 4","type":"trojan","server":"52.212.86.19","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇬🇧GB | trojan | @PrivateVPNs | 5","type":"trojan","server":"3.10.123.166","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
@@ -151,8 +150,6 @@ proxies:
   - {"name":"🇮🇪IE | trojan | @DirectVPN | 16","type":"trojan","server":"46.51.132.223","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇬🇧GB | trojan | @DirectVPN | 17","type":"trojan","server":"35.176.63.116","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇸🇬SG | trojan | @oneclickvpnkeys | 0","type":"trojan","server":"185.230.245.213","port":3306,"udp":false,"password":"d07a02a06191c99f","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"n2.gladns.com"}
-  - {"name":"🇩🇪DE | trojan | @ConfigsHUB | 9","type":"trojan","server":"18.153.251.145","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
-  - {"name":"🇫🇷FR | trojan | @ConfigsHUB | 10","type":"trojan","server":"35.181.221.2","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇫🇷FR | trojan | @FAKEOFTVC | 6","type":"trojan","server":"52.47.213.61","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
 proxy-groups:
   - name: MANUAL
@@ -160,7 +157,6 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇨🇦CA | trojan | @V2rayCollectorDonate | 19'
       - '🇮🇪IE | trojan | @PrivateVPNs | 3'
       - '🇮🇪IE | trojan | @PrivateVPNs | 4'
       - '🇬🇧GB | trojan | @PrivateVPNs | 5'
@@ -191,8 +187,6 @@ proxy-groups:
       - '🇮🇪IE | trojan | @DirectVPN | 16'
       - '🇬🇧GB | trojan | @DirectVPN | 17'
       - '🇸🇬SG | trojan | @oneclickvpnkeys | 0'
-      - '🇩🇪DE | trojan | @ConfigsHUB | 9'
-      - '🇫🇷FR | trojan | @ConfigsHUB | 10'
       - '🇫🇷FR | trojan | @FAKEOFTVC | 6'
   - name: URL-TEST
     type: url-test
@@ -200,7 +194,6 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇨🇦CA | trojan | @V2rayCollectorDonate | 19'
       - '🇮🇪IE | trojan | @PrivateVPNs | 3'
       - '🇮🇪IE | trojan | @PrivateVPNs | 4'
       - '🇬🇧GB | trojan | @PrivateVPNs | 5'
@@ -231,15 +224,12 @@ proxy-groups:
       - '🇮🇪IE | trojan | @DirectVPN | 16'
       - '🇬🇧GB | trojan | @DirectVPN | 17'
       - '🇸🇬SG | trojan | @oneclickvpnkeys | 0'
-      - '🇩🇪DE | trojan | @ConfigsHUB | 9'
-      - '🇫🇷FR | trojan | @ConfigsHUB | 10'
       - '🇫🇷FR | trojan | @FAKEOFTVC | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇨🇦CA | trojan | @V2rayCollectorDonate | 19'
       - '🇮🇪IE | trojan | @PrivateVPNs | 3'
       - '🇮🇪IE | trojan | @PrivateVPNs | 4'
       - '🇬🇧GB | trojan | @PrivateVPNs | 5'
@@ -270,8 +260,6 @@ proxy-groups:
       - '🇮🇪IE | trojan | @DirectVPN | 16'
       - '🇬🇧GB | trojan | @DirectVPN | 17'
       - '🇸🇬SG | trojan | @oneclickvpnkeys | 0'
-      - '🇩🇪DE | trojan | @ConfigsHUB | 9'
-      - '🇫🇷FR | trojan | @ConfigsHUB | 10'
       - '🇫🇷FR | trojan | @FAKEOFTVC | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
