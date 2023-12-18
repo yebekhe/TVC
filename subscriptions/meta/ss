@@ -138,7 +138,6 @@ proxies:
   - {"name":"🇬🇧GB | ss | @FAKEOFTVC | 2","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | ss | @FAKEOFTVC | 3","type":"ss","server":"series-a2.samanehha.co","port":443,"password":"mps3FwmDjLrWaOVg","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇱NL | ss | @FAKEOFTVC | 6","type":"ss","server":"45.87.153.246","port":6199,"password":"f7EI0dGWQM42T8gwN9CZIj","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇭🇰HK | ss | @proxy_mtm | 6","type":"ss","server":"185.74.222.246","port":47894,"password":"638faed1-41cd-442e-bcf2-72f4644200b0","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -163,7 +162,6 @@ proxy-groups:
       - '🇬🇧GB | ss | @FAKEOFTVC | 2'
       - '🇬🇧GB | ss | @FAKEOFTVC | 3'
       - '🇳🇱NL | ss | @FAKEOFTVC | 6'
-      - '🇭🇰HK | ss | @proxy_mtm | 6'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -188,7 +186,6 @@ proxy-groups:
       - '🇬🇧GB | ss | @FAKEOFTVC | 2'
       - '🇬🇧GB | ss | @FAKEOFTVC | 3'
       - '🇳🇱NL | ss | @FAKEOFTVC | 6'
-      - '🇭🇰HK | ss | @proxy_mtm | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -212,7 +209,6 @@ proxy-groups:
       - '🇬🇧GB | ss | @FAKEOFTVC | 2'
       - '🇬🇧GB | ss | @FAKEOFTVC | 3'
       - '🇳🇱NL | ss | @FAKEOFTVC | 6'
-      - '🇭🇰HK | ss | @proxy_mtm | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
