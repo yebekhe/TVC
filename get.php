@@ -126,6 +126,10 @@ foreach ($configsList as $source => $configs) {
     }
     $tempSource++;
 }
+deleteFolder("subscriptions/location/normal");
+deleteFolder("subscriptions/location/base64");
+mkdir("subscriptions/location/normal");
+mkdir("subscriptions/location/base64");
 
 // Loop through each location in the location-based array
 foreach ($locationBased as $location => $configs) {
