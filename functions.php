@@ -290,3 +290,13 @@ function getRandomName() {
     return $name;
   }
 
+function deleteFolder($folder) {
+    if (!is_dir($folder)) {
+        return;
+    }
+    $files = glob($folder . '/*');
+    foreach ($files as $file) {
+        is_dir($file) ? deleteFolder($file) : unlink($file);
+    }
+    rmdir($folder);
+}
