@@ -332,7 +332,10 @@ function toSingbox ($input) {
         "hy2" => "hy2ToSingbox",
         "ss" => "ssToSingbox",
     ];
-    return $functionsArray[$configType]($input);
+    if (array_key_exists($configType, $functionsArray)) {
+        return $functionsArray[$configType]($input);
+    }
+    return null;
 }
 
 function processConvertion ($base64ConfigsList, $configsName = "Created By YeBeKhe") {
