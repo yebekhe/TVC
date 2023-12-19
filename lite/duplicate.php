@@ -5,7 +5,7 @@ ini_set("display_startup_errors", 1);
 error_reporting(E_ERROR | E_PARSE);
 
 // Include the functions file
-require "lite/functions.php";
+require "functions.php";
 
 // Define the hash for each config type
 $configsHash = [
@@ -18,7 +18,7 @@ $configsHash = [
 ];
 
 // Read the config file and split it into an array by newline
-$configsArray = explode("\n", file_get_contents("lite/config.txt"));
+$configsArray = explode("\n", file_get_contents("config.txt"));
 
 // Initialize arrays to store deduplicated configs and their names
 $deduplicateArray = [];
@@ -66,15 +66,21 @@ foreach ($deduplicateArray as $key => $deduplicate) {
 }
 
 // Write the final output to the config file
-file_put_contents("lite/config.txt", implode("\n", $finalOutput));
+file_put_contents("config.txt", implode("\n", $finalOutput));
 
 $tempConfig = hiddifyHeader("TVC | MIX") . urldecode(implode("\n", $finalOutput));
 $base64TempConfig = base64_encode($tempConfig);
 
+if (!file_exists("subscriptions/xray/normal/mix")) {
+    mkdir('subscriptions');
+    mkdir('subscriptions/xray');
+    mkdir('subscriptions/xray/normal');
+    mkdir('subscriptions/xray/base64');
+}
 // Write the final output to the subscriptions/xray/normal/mix file
-file_put_contents("lite/subscriptions/xray/normal/mix", $tempConfig);
+file_put_contents("subscriptions/xray/normal/mix", $tempConfig);
 // Write the final output to the subscriptions/xray/base64/mix file, encoded in base64
-file_put_contents("lite/subscriptions/xray/base64/mix", $base64TempConfig);
+file_put_contents("subscriptions/xray/base64/mix", $base64TempConfig);
 
 // Print "done!" to the console
 echo "Removing Duplicates Done!\n";
