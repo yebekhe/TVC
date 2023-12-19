@@ -5,7 +5,7 @@ ini_set("display_startup_errors", 1);
 error_reporting(E_ERROR | E_PARSE);
 
 // Include the functions file
-require "lite/functions.php";
+require "functions.php";
 function processWsPath($input)
 {
     if (strpos($input, "/") === 0) {
@@ -869,12 +869,12 @@ function processConvertion($base64ConfigsList, $outboundType)
 }
 
 $directoryOfFiles = [
-    "lite/subscriptions/xray/base64/mix",
-    "lite/subscriptions/xray/base64/vmess",
-    "lite/subscriptions/xray/base64/vless",
-    "lite/subscriptions/xray/base64/reality",
-    "lite/subscriptions/xray/base64/trojan",
-    "lite/subscriptions/xray/base64/ss",
+    "subscriptions/xray/base64/mix",
+    "subscriptions/xray/base64/vmess",
+    "subscriptions/xray/base64/vless",
+    "subscriptions/xray/base64/reality",
+    "subscriptions/xray/base64/trojan",
+    "subscriptions/xray/base64/ss",
 ];
 
 foreach ($directoryOfFiles as $directory) {
@@ -888,7 +888,7 @@ foreach ($directoryOfFiles as $directory) {
     foreach ($outputTypes as $outputType => $configsTypeArray) {
         if (in_array($configsType, $configsTypeArray)) {
             file_put_contents(
-                "lite/subscriptions/" .
+                "subscriptions/" .
                     $outputType .
                     "/" .
                     explode("/", $directory)[3],
