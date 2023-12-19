@@ -5,7 +5,7 @@ ini_set("display_startup_errors", 1);
 error_reporting(E_ERROR | E_PARSE);
 
 // Include the functions file
-require "functions.php";
+require "lite/functions.php";
 
 function processWsPath($input)
 {
