@@ -68,7 +68,7 @@ foreach ($deduplicateArray as $key => $deduplicate) {
     // Add the config to the final output
     $finalOutput[] = $encodedConfig;
 
-    $sourceUsername = str_replace(["%20", "@"], ["", ""], explode("|", $namesArray[$key])[3]);
+    $sourceUsername = str_replace(["%20", "@"], ["", ""], explode("|", $namesArray[$key])[2]);
 
     $configsFullData[$key]["channel"]["username"]  = $sourceUsername;
     $configsFullData[$key]["channel"]["title"] = $channelsAssets[$sourceUsername]['title'];
