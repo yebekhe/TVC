@@ -5,7 +5,7 @@ ini_set("display_startup_errors", 1);
 error_reporting(E_ERROR | E_PARSE);
 
 // Include the functions file
-require "lite/functions.php";
+require "functions.php";
 
 // Fetch the JSON data from the API and decode it into an associative array
 $sourcesArray = json_decode(
@@ -126,26 +126,26 @@ foreach ($configsList as $source => $configs) {
     }
     $tempSource++;
 }
-deleteFolder("lite/subscriptions/location/normal");
-deleteFolder("lite/subscriptions/location/base64");
-mkdir("lite/subscriptions/location/normal");
-mkdir("lite/subscriptions/location/base64");
+deleteFolder("subscriptions/location/normal");
+deleteFolder("subscriptions/location/base64");
+mkdir("subscriptions/location/normal");
+mkdir("subscriptions/location/base64");
 
 // Loop through each location in the location-based array
 foreach ($locationBased as $location => $configs) {
     $tempConfig = urldecode(implode("\n", $configs));
     $base64TempConfig = base64_encode($tempConfig);
     file_put_contents(
-        "lite/subscriptions/location/normal/" . $location,
+        "subscriptions/location/normal/" . $location,
         $tempConfig
     );
     file_put_contents(
-        "lite/subscriptions/location/base64/" . $location,
+        "subscriptions/location/base64/" . $location,
         $base64TempConfig
     );
 }
 
 // Write the final output to a file
-file_put_contents("lite/config.txt", implode("\n", $finalOutput));
+file_put_contents("config.txt", implode("\n", $finalOutput));
 
 echo "\nGetting Configs Done!\n";
