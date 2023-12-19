@@ -5,7 +5,7 @@ ini_set("display_startup_errors", 1);
 error_reporting(E_ERROR | E_PARSE);
 
 // Include the functions file
-require "lite/functions.php";
+require "functions.php";
 
 function processWsPath($input)
 {
@@ -340,7 +340,7 @@ function toSingbox ($input) {
 
 function processConvertion ($base64ConfigsList, $configsName = "Created By YeBeKhe") {
     $configsArray = explode("\n", base64_decode($base64ConfigsList));
-    $structure = json_decode(file_get_contents('lite/structure.json'), true);
+    $structure = json_decode(file_get_contents('structure.json'), true);
     foreach ($configsArray as $config) {
         $toSingbox = toSingbox($config);
         if (!is_null($toSingbox)) {
@@ -360,20 +360,20 @@ function processConvertion ($base64ConfigsList, $configsName = "Created By YeBeK
 }
 
 $directoryOfFiles = [
-    "lite/subscriptions/xray/base64/mix",
-    "lite/subscriptions/xray/base64/vmess",
-    "lite/subscriptions/xray/base64/vless",
-    "lite/subscriptions/xray/base64/reality",
-    "lite/subscriptions/xray/base64/tuic",
-    "lite/subscriptions/xray/base64/hy2",
-    "lite/subscriptions/xray/base64/ss",
+    "subscriptions/xray/base64/mix",
+    "subscriptions/xray/base64/vmess",
+    "subscriptions/xray/base64/vless",
+    "subscriptions/xray/base64/reality",
+    "subscriptions/xray/base64/tuic",
+    "subscriptions/xray/base64/hy2",
+    "subscriptions/xray/base64/ss",
 ];
 
 foreach ($directoryOfFiles as $directory) {
     $configsName = "TVC | " . strtoupper(explode("/", $directory)[3]);
     $configsData = file_get_contents($directory);
     $convertionResult = processConvertion($configsData, $configsName);
-    file_put_contents("lite/subscriptions/singbox/" . explode("/", $directory)[3] . ".json", $convertionResult);
+    file_put_contents("subscriptions/singbox/" . explode("/", $directory)[3] . ".json", $convertionResult);
 }
 
 echo "Convertion To Singbox Done!\n";
