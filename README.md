@@ -1,27 +1,10 @@
 # V2ray Collector
 
-<h1>Project Upgraded to version 2 and only accessible through Telegram bot: <a href="https://t.me/v2raycollectorbot">TVC BOT</a>.</h1>
-
 <p align="center">
-  <a href="https://t.me/v2raycollectorbot">
-    <img src="https://img.shields.io/badge/Telegram_Bot-@v2raycollectorbot-darkblue?style=flat&logo=telegram" alt="Telegram Bot">
-  </a>
-  <a href="https://scrutinizer-ci.com/g/yebekhe/TelegramV2rayCollector/build-status/main">
-    <img src="https://scrutinizer-ci.com/g/yebekhe/TelegramV2rayCollector/badges/build.png?b=main" alt="Build Status">
-  </a>
-  <a href="https://scrutinizer-ci.com/code-intelligence">
-    <img src="https://scrutinizer-ci.com/g/yebekhe/TelegramV2rayCollector/badges/code-intelligence.svg?b=main" alt="Code Intelligence Status">
-  </a>
-  <a href="https://scrutinizer-ci.com/g/yebekhe/TelegramV2rayCollector/?branch=main">
-    <img src="https://img.shields.io/scrutinizer/quality/g/yebekhe/TelegramV2rayCollector?style=flat&logo=scrutinizerci" alt="Scrutinizer Code Quality">
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/github/languages/top/yebekhe/TelegramV2rayCollector?color=5D6D7E" alt="Github Top Language">
-  <img src="https://img.shields.io/github/license/yebekhe/TelegramV2rayCollector?color=5D6D7E" alt="GitHub license">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/yebekhe/TelegramV2rayCollector">
-  <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/t/yebekhe/TelegramV2rayCollector">
+  <img src="https://img.shields.io/github/languages/top/yebekhe/TVC?color=5D6D7E" alt="Github Top Language">
+  <img src="https://img.shields.io/github/license/yebekhe/TVC?color=5D6D7E" alt="GitHub license">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/yebekhe/TVC">
+  <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/t/yebekhe/TVC">
 </p>
 
 <p align="center">
