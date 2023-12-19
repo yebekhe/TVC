@@ -30,7 +30,7 @@ foreach ($sortArray as $type => $sort) {
     // If the type is not empty
     if ($type !== "") {
         // Join the configurations into a string, encode it to base64, and write it to a file
-        $tempConfigs = implode("\n", $sort);
+        $tempConfigs = hiddifyHeader("TVC | " . strtoupper($type)) . implode("\n", $sort);
         $base64TempConfigs = base64_encode($tempConfigs);
         file_put_contents("subscriptions/xray/normal/" . $type, $tempConfigs);
         file_put_contents(
