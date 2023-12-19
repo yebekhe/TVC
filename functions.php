@@ -300,3 +300,12 @@ function deleteFolder($folder) {
     }
     rmdir($folder);
 }
+
+function tehran_time()
+{
+    date_default_timezone_set("Asia/Tehran");
+    $tehran_time = time();
+    $formatted_time = date("Y-m-d H:i:s", $tehran_time);
+
+    return $formatted_time;
+}
