@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇸🇪SE | hy2 | @EUT_VPN | 6",
                 "🇫🇷FR | hy2 | @EUT_VPN | 7",
                 "🇬🇧GB | hy2 | @EUT_VPN | 8"
             ]
@@ -114,6 +115,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇸🇪SE | hy2 | @EUT_VPN | 6",
                 "🇫🇷FR | hy2 | @EUT_VPN | 7",
                 "🇬🇧GB | hy2 | @EUT_VPN | 8"
             ],
@@ -136,6 +138,29 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇸🇪SE | hy2 | @EUT_VPN | 6",
+            "type": "hysteria2",
+            "server": "195.128.240.251",
+            "server_port": 80,
+            "up_mbps": 0,
+            "down_mbps": 0,
+            "password": "RhBlRjqD5I97szf87gQR662r6cV5yOK2",
+            "network": "tcp",
+            "obfs": {
+                "type": "salamander",
+                "password": "8w4jlX268iItraZSsWibq5gW0ZB1N0h2"
+            },
+            "tls": {
+                "enabled": true,
+                "disable_sni": true,
+                "server_name": "",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
         },
         {
             "tag": "🇫🇷FR | hy2 | @EUT_VPN | 7",
