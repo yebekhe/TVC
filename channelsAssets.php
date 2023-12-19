@@ -31,7 +31,7 @@ foreach ($sourcesArray as $source => $types) {
     file_put_contents("channelsData/logos/" . $source . ".jpg", file_get_contents($image_match[1]));
     
     // Build the channel data array
-    $channelArray[$source]['types'] = $data_array;
+    $channelArray[$source]['types'] = $types;
     $channelArray[$source]['title'] = $title_match[1];
     $channelArray[$source]['logo'] = "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/channelsData/logos/" . $source . ".jpg";
 }
