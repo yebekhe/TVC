@@ -119,7 +119,7 @@
                 "🇨🇦CA | vless | @ARv2ray | 13",
                 "🇨🇷CR | vless | @shh_proxy | 17",
                 "🇮🇷IR | vless | @free_v2rayyy | 7",
-                "🇨🇷CR | vless | @lightning6 | 19",
+                "🇺🇸US | vless | @lightning6 | 19",
                 "🇨🇦CA | vless | @V2rayNGmat | 3",
                 "🇨🇦CA | vless | @vpn_xw | 12",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -152,17 +152,18 @@
                 "🇨🇦CA | vless | @MsV2ray | 27",
                 "🇨🇦CA | vless | @v2ray1_ng | 10",
                 "🇮🇷IR | vless | @vless_vmess | 8",
+                "🇨🇦CA | vless | @V2RayTz | 18",
                 "🇬🇧GB | ss | @VmessProtocol | 13",
                 "🇸🇪SE | vless | @DailyV2RY | 148",
                 "🏳️XX | vless | @sinabigo | 0",
                 "🇮🇷IR | vless | @SafeNet_Server | 7",
                 "🇨🇦CA | vless | @lrnbymaa | 3",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 18",
-                "🇨🇦CA | vless | @ConfigsHUB | 7",
+                "🇩🇪DE | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @proxystore11 | 17",
                 "🇨🇳CN | vmess | @yaney_01 | 14",
                 "🇨🇦CA | vless | @free1_vpn | 5",
-                "🇭🇰HK | vmess | @Hope_Net | 11",
+                "🇨🇳CN | vmess | @Hope_Net | 9",
                 "🏳️XX | vless | @fnet00 | 8",
                 "🇨🇦CA | vless | @polproxy | 26",
                 "🇮🇷IR | vmess | @MrV2Ray | 7",
@@ -205,7 +206,7 @@
                 "🇨🇦CA | vless | @ARv2ray | 13",
                 "🇨🇷CR | vless | @shh_proxy | 17",
                 "🇮🇷IR | vless | @free_v2rayyy | 7",
-                "🇨🇷CR | vless | @lightning6 | 19",
+                "🇺🇸US | vless | @lightning6 | 19",
                 "🇨🇦CA | vless | @V2rayNGmat | 3",
                 "🇨🇦CA | vless | @vpn_xw | 12",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -238,17 +239,18 @@
                 "🇨🇦CA | vless | @MsV2ray | 27",
                 "🇨🇦CA | vless | @v2ray1_ng | 10",
                 "🇮🇷IR | vless | @vless_vmess | 8",
+                "🇨🇦CA | vless | @V2RayTz | 18",
                 "🇬🇧GB | ss | @VmessProtocol | 13",
                 "🇸🇪SE | vless | @DailyV2RY | 148",
                 "🏳️XX | vless | @sinabigo | 0",
                 "🇮🇷IR | vless | @SafeNet_Server | 7",
                 "🇨🇦CA | vless | @lrnbymaa | 3",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 18",
-                "🇨🇦CA | vless | @ConfigsHUB | 7",
+                "🇩🇪DE | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @proxystore11 | 17",
                 "🇨🇳CN | vmess | @yaney_01 | 14",
                 "🇨🇦CA | vless | @free1_vpn | 5",
-                "🇭🇰HK | vmess | @Hope_Net | 11",
+                "🇨🇳CN | vmess | @Hope_Net | 9",
                 "🏳️XX | vless | @fnet00 | 8",
                 "🇨🇦CA | vless | @polproxy | 26",
                 "🇮🇷IR | vmess | @MrV2Ray | 7",
@@ -700,7 +702,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @lightning6 | 19",
+            "tag": "🇺🇸US | vless | @lightning6 | 19",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.mamd.sbs",
             "server_port": 2083,
@@ -1628,6 +1630,37 @@
             }
         },
         {
+            "tag": "🇨🇦CA | vless | @V2RayTz | 18",
+            "type": "vless",
+            "server": "Join.V2RayTz.sbs",
+            "server_port": 8443,
+            "uuid": "9c56bb34-0193-40e0-ad1a-3f2c5a3b7e22",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "join2.servernet.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇬🇧GB | ss | @VmessProtocol | 13",
             "type": "shadowsocks",
             "server": "series-a1.samanehha.co",
@@ -1750,12 +1783,12 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇦CA | vless | @ConfigsHUB | 7",
+            "tag": "🇩🇪DE | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "Www.speedtest.net",
-            "server_port": 2083,
-            "uuid": "650513e5-1862-4af2-9bbc-f20ed0057650",
-            "flow": "",
+            "server": "49.13.155.144",
+            "server_port": 443,
+            "uuid": "ItsLegendaryking",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1764,20 +1797,25 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "Vip.hsza.site",
+                "server_name": "www.philharmonie-konstanz.de",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ZZRALSM9EwhVDwcpSHJFR2w7mGw6B83ENeBqKfyzL3Y",
+                    "short_id": "e52a853d"
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/TelegramHosseinStore_Za",
-                "headers": {
-                    "Host": "Vip.hsza.site"
-                }
+                "type": "grpc",
+                "service_name": "Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_ServersTelegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1860,11 +1898,11 @@
             }
         },
         {
-            "tag": "🇭🇰HK | vmess | @Hope_Net | 11",
+            "tag": "🇨🇳CN | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "081d1aad-rwcsg0-1n7jq.bn.p5pv.com",
+            "server": "103.184.45.180",
             "server_port": 80,
-            "uuid": "4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d",
+            "uuid": "dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1877,7 +1915,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/blue",
                 "headers": {
                     "Host": ""
                 }
