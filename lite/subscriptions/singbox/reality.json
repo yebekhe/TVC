@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇳🇱NL | vless | @Helix_Servers | 6",
+                "🇩🇪DE | vless | @EliV2ray | 15",
                 "🇸🇪SE | vless | @reality_daily | 2",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @melov2ray | 7",
@@ -135,6 +136,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇳🇱NL | vless | @Helix_Servers | 6",
+                "🇩🇪DE | vless | @EliV2ray | 15",
                 "🇸🇪SE | vless | @reality_daily | 2",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @melov2ray | 7",
@@ -208,6 +210,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @EliV2ray | 15",
+            "type": "vless",
+            "server": "49.12.192.107",
+            "server_port": 2096,
+            "uuid": "f9f89381-7aa4-4c1f-8ce5-4e0e15453d90",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "OVCexPrzOMdpDzigcnRe-Ufilj4qQe2bXA-LAT---jo",
+                    "short_id": "e46a1eae"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
