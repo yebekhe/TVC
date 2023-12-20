@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
                 "🇬🇷GR | vmess | @oneclickvpnkeys | 8",
@@ -115,7 +114,7 @@
                 "🇨🇦CA | vmess | @Hope_Net | 3",
                 "🇮🇷IR | vmess | @MrV2Ray | 7",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇨🇦CA | vmess | @forwardv2ray | 18",
+                "🇯🇵JP | vmess | @forwardv2ray | 19",
                 "🇩🇪DE | vmess | @eliya_chiter0 | 5"
             ]
         },
@@ -123,7 +122,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
                 "🇬🇷GR | vmess | @oneclickvpnkeys | 8",
@@ -132,7 +130,7 @@
                 "🇨🇦CA | vmess | @Hope_Net | 3",
                 "🇮🇷IR | vmess | @MrV2Ray | 7",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇨🇦CA | vmess | @forwardv2ray | 18",
+                "🇯🇵JP | vmess | @forwardv2ray | 19",
                 "🇩🇪DE | vmess | @eliya_chiter0 | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -154,40 +152,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
-            "type": "vmess",
-            "server": "104.17.43.105",
-            "server_port": 8443,
-            "uuid": "tell:@adcell",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "5.gazverma.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "join @celebriteshop,@celebriteshop, @celebriteshop, @celebriteshop",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🇫🇷FR | vmess | @v2ray_outlineir | 0",
@@ -381,11 +345,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @forwardv2ray | 18",
+            "tag": "🇯🇵JP | vmess | @forwardv2ray | 19",
             "type": "vmess",
-            "server": "cf.network383.online",
-            "server_port": 2087,
-            "uuid": "49aa04d4-24b0-423a-9794-b19fd42a2b99",
+            "server": "154.92.9.122",
+            "server_port": 80,
+            "uuid": "023c9d68-d3bc-4a5d-9568-0edb64fcddea",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -396,22 +360,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "fracukayi0pixif.carfin.tech",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "@apt_mahdi",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/023c9d68",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
