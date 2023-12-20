@@ -115,8 +115,10 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🏳️XX | vless | @v2logy | 15",
                 "🇹🇷TR | vless | @V2rayCollectorDonate | 19",
+                "🇪🇸ES | vless | @ProxyForOpeta | 4",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 14",
+                "🇩🇪DE | vless | @v2ray_swhil | 12",
                 "🇩🇪DE | vless | @MTConfig | 24",
                 "🏳️XX | vless | @fnet00 | 8",
                 "🇩🇪DE | vless | @Capital_NET | 57",
@@ -141,8 +143,10 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🏳️XX | vless | @v2logy | 15",
                 "🇹🇷TR | vless | @V2rayCollectorDonate | 19",
+                "🇪🇸ES | vless | @ProxyForOpeta | 4",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 14",
+                "🇩🇪DE | vless | @v2ray_swhil | 12",
                 "🇩🇪DE | vless | @MTConfig | 24",
                 "🏳️XX | vless | @fnet00 | 8",
                 "🇩🇪DE | vless | @Capital_NET | 57",
@@ -477,6 +481,42 @@
             }
         },
         {
+            "tag": "🇪🇸ES | vless | @ProxyForOpeta | 4",
+            "type": "vless",
+            "server": "opeta.creery.org",
+            "server_port": 443,
+            "uuid": "8ee9bb79-35a7-4115-ad52-99d4d87af4d6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AVqn1SdgqFtI5MPyAjqNQi5DsKBCTQ5LZ9b1A24ZSUw",
+                    "short_id": "fada3f06"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@proxyforopeta",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇩🇪DE | vless | @ShadowSocks_s | 1",
             "type": "vless",
             "server": "78.47.225.52",
@@ -543,6 +583,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "----------telegram:funza--------------------telegram:funza----------telegram:funza----------telegram:funza----------telegram:funza----------telegram:funza",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @v2ray_swhil | 12",
+            "type": "vless",
+            "server": "titaniom.official.mmdtitaniom.com",
+            "server_port": 443,
+            "uuid": "46a7b4fd-16c3-4e6b-ff02-973d69b9eec6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "myOyTs6wtYgOioDwSzMCIUNRuq6l6I7ciLUqfusSTmY",
+                    "short_id": "6fa697ff"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
