@@ -118,7 +118,7 @@
                 "🇩🇪DE | vless | @frev2ray | 19",
                 "🇨🇦CA | vless | @ARv2ray | 15",
                 "🇨🇷CR | vless | @shh_proxy | 17",
-                "🇨🇦CA | vless | @rxv2ray | 24",
+                "🇨🇦CA | vless | @rxv2ray | 22",
                 "🇮🇷IR | vless | @free_v2rayyy | 7",
                 "🇨🇷CR | vless | @lightning6 | 19",
                 "🇨🇦CA | vless | @V2rayNGmat | 2",
@@ -154,10 +154,11 @@
                 "🇨🇦CA | vless | @MehradLearn | 8",
                 "🇮🇷IR | vless | @SafeNet_Server | 7",
                 "🇨🇦CA | vless | @lrnbymaa | 3",
+                "🇮🇷IR | vless | @ConfigsHUB | 18",
                 "🏳️XX | vless | @proxystore11 | 18",
                 "🇨🇦CA | vless | @free1_vpn | 4",
                 "🏳️XX | vless | @fnet00 | 8",
-                "🇨🇦CA | vless | @polproxy | 26",
+                "🇺🇸US | vless | @polproxy | 26",
                 "🇨🇷CR | vless | @v2rayng_vpnrog | 13",
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🇨🇦CA | vless | @Capoit | 7",
@@ -194,7 +195,7 @@
                 "🇩🇪DE | vless | @frev2ray | 19",
                 "🇨🇦CA | vless | @ARv2ray | 15",
                 "🇨🇷CR | vless | @shh_proxy | 17",
-                "🇨🇦CA | vless | @rxv2ray | 24",
+                "🇨🇦CA | vless | @rxv2ray | 22",
                 "🇮🇷IR | vless | @free_v2rayyy | 7",
                 "🇨🇷CR | vless | @lightning6 | 19",
                 "🇨🇦CA | vless | @V2rayNGmat | 2",
@@ -230,10 +231,11 @@
                 "🇨🇦CA | vless | @MehradLearn | 8",
                 "🇮🇷IR | vless | @SafeNet_Server | 7",
                 "🇨🇦CA | vless | @lrnbymaa | 3",
+                "🇮🇷IR | vless | @ConfigsHUB | 18",
                 "🏳️XX | vless | @proxystore11 | 18",
                 "🇨🇦CA | vless | @free1_vpn | 4",
                 "🏳️XX | vless | @fnet00 | 8",
-                "🇨🇦CA | vless | @polproxy | 26",
+                "🇺🇸US | vless | @polproxy | 26",
                 "🇨🇷CR | vless | @v2rayng_vpnrog | 13",
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🇨🇦CA | vless | @Capoit | 7",
@@ -659,7 +661,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @rxv2ray | 24",
+            "tag": "🇨🇦CA | vless | @rxv2ray | 22",
             "type": "vless",
             "server": "tel.RxV2ray.space",
             "server_port": 2053,
@@ -1681,6 +1683,20 @@
             }
         },
         {
+            "tag": "🇮🇷IR | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "test-srv1.megaazarakhsh.site",
+            "server_port": 40375,
+            "uuid": "4cf850f7-078e-4809-8b1a-6a9d9471fe8e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🏳️XX | vless | @proxystore11 | 18",
             "type": "vless",
             "server": "proxystore11.ddns.net",
@@ -1779,7 +1795,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @polproxy | 26",
+            "tag": "🇺🇸US | vless | @polproxy | 26",
             "type": "vless",
             "server": "All.Tlgram-Polproxy.space",
             "server_port": 2087,
@@ -1929,9 +1945,9 @@
         {
             "tag": "🇨🇦CA | vless | @forwardv2ray | 17",
             "type": "vless",
-            "server": "de.MsV2ray.sbs",
-            "server_port": 2083,
-            "uuid": "7fac0e66-13a0-443f-fd7a-8c0b027e4632",
+            "server": "104.31.16.36",
+            "server_port": 443,
+            "uuid": "376b9861-2fc6-4647-959c-18185cd9c95a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1941,7 +1957,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "de.MsV2ray.sbs",
+                "server_name": "lmn39.sbs",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1950,11 +1966,11 @@
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/fflsws",
+                "headers": {
+                    "Host": "lmn39.sbs"
+                }
             }
         },
         {
