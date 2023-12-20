@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | vless | @EliV2ray | 16",
+                "🇬🇧GB | vless | @EliV2ray | 15",
                 "🇹🇷TR | vless | @reality_daily | 7",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @melov2ray | 7",
@@ -114,14 +114,16 @@
                 "🇩🇪DE | vless | @ARv2ray | 14",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🏳️XX | vless | @v2logy | 15",
-                "🇪🇸ES | vless | @ProxyForOpeta | 4",
+                "🇪🇸ES | vless | @ProxyForOpeta | 3",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 14",
                 "🇩🇪DE | vless | @MTConfig | 24",
+                "🇩🇪DE | vless | @ConfigsHUB | 17",
                 "🏳️XX | vless | @fnet00 | 8",
                 "🇩🇪DE | vless | @Capital_NET | 57",
+                "🇩🇪DE | vless | @flyv2ray | 20",
                 "🏳️XX | vless | @kiava | 13",
-                "🇩🇪DE | vless | @proxy_mtm | 23",
+                "🇩🇪DE | vless | @proxy_mtm | 27",
                 "🇨🇦CA | vless | @vpn_go67 | 22",
                 "🇩🇪DE | vless | @GozargahVPN | 15",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
@@ -132,7 +134,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | vless | @EliV2ray | 16",
+                "🇬🇧GB | vless | @EliV2ray | 15",
                 "🇹🇷TR | vless | @reality_daily | 7",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @melov2ray | 7",
@@ -140,14 +142,16 @@
                 "🇩🇪DE | vless | @ARv2ray | 14",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🏳️XX | vless | @v2logy | 15",
-                "🇪🇸ES | vless | @ProxyForOpeta | 4",
+                "🇪🇸ES | vless | @ProxyForOpeta | 3",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 14",
                 "🇩🇪DE | vless | @MTConfig | 24",
+                "🇩🇪DE | vless | @ConfigsHUB | 17",
                 "🏳️XX | vless | @fnet00 | 8",
                 "🇩🇪DE | vless | @Capital_NET | 57",
+                "🇩🇪DE | vless | @flyv2ray | 20",
                 "🏳️XX | vless | @kiava | 13",
-                "🇩🇪DE | vless | @proxy_mtm | 23",
+                "🇩🇪DE | vless | @proxy_mtm | 27",
                 "🇨🇦CA | vless | @vpn_go67 | 22",
                 "🇩🇪DE | vless | @GozargahVPN | 15",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
@@ -174,7 +178,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | vless | @EliV2ray | 16",
+            "tag": "🇬🇧GB | vless | @EliV2ray | 15",
             "type": "vless",
             "server": "176.58.120.163",
             "server_port": 443,
@@ -448,7 +452,7 @@
             }
         },
         {
-            "tag": "🇪🇸ES | vless | @ProxyForOpeta | 4",
+            "tag": "🇪🇸ES | vless | @ProxyForOpeta | 3",
             "type": "vless",
             "server": "opeta.creery.org",
             "server_port": 443,
@@ -592,6 +596,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @ConfigsHUB | 17",
+            "type": "vless",
+            "server": "116.203.149.241",
+            "server_port": 443,
+            "uuid": "1596e7f0-2106-468f-e2b0-93f19e83bd0c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "e4IUXUTGjvLr5OLzzJWP8Sw1TeTCfLEuDw4WtJ2dWnM",
+                    "short_id": "a18472f7"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🏳️XX | vless | @fnet00 | 8",
             "type": "vless",
             "server": "kamyarservers.ddns.net",
@@ -657,6 +697,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @flyv2ray | 20",
+            "type": "vless",
+            "server": "49.13.53.137",
+            "server_port": 443,
+            "uuid": "7bae8768-b725-4190-9cd4-2eedd5f63bfa",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0h2SZ3BIbcYUzJth9DH2XmRvibbDULonQAVhWHZHfEM",
+                    "short_id": "f5361167"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🏳️XX | vless | @kiava | 13",
             "type": "vless",
             "server": "ec61.kiava.fun",
@@ -686,7 +762,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @proxy_mtm | 23",
+            "tag": "🇩🇪DE | vless | @proxy_mtm | 27",
             "type": "vless",
             "server": "116.203.149.241",
             "server_port": 443,
