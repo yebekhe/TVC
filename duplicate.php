@@ -73,7 +73,7 @@ foreach ($deduplicateArray as $key => $deduplicate) {
     $configsFullData[$key]["channel"]["username"]  = $sourceUsername;
     $configsFullData[$key]["channel"]["title"] = $channelsAssets[$sourceUsername]['title'];
     $configsFullData[$key]["channel"]["logo"] = $channelsAssets[$sourceUsername]['logo'];
-    $configsFullData[$key]['type'] = $configType;
+    $configsFullData[$key]['type'] = $configType === 'vless' && is_reality($encodedConfig) ? 'reality' : $configType;
     $configsFullData[$key]["config"] = $encodedConfig;
 
 }
