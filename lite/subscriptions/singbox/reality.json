@@ -120,6 +120,7 @@
                 "🏳️XX | vless | @fnet00 | 8",
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🇩🇪DE | vless | @FreakConfig | 16",
+                "🇹🇷TR | vless | @IRN_VPN | 1",
                 "🏳️XX | vless | @kiava | 13",
                 "🇩🇪DE | vless | @proxy_mtm | 13",
                 "🇨🇦CA | vless | @vpn_go67 | 22",
@@ -146,6 +147,7 @@
                 "🏳️XX | vless | @fnet00 | 8",
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🇩🇪DE | vless | @FreakConfig | 16",
+                "🇹🇷TR | vless | @IRN_VPN | 1",
                 "🏳️XX | vless | @kiava | 13",
                 "🇩🇪DE | vless | @proxy_mtm | 13",
                 "🇨🇦CA | vless | @vpn_go67 | 22",
@@ -651,6 +653,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@flyv2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇹🇷TR | vless | @IRN_VPN | 1",
+            "type": "vless",
+            "server": "185.113.223.241",
+            "server_port": 45642,
+            "uuid": "79f22f32-a38e-47af-b0d5-3ba624d988cc",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "O0rpXml2K3csUEoVf-52FxmioxVIFbWoX-DilOJQaTA",
+                    "short_id": "963cc820"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@IRN_VPN,@IRN_VPN,@IRN_VPN,@IRN_VPN,@IRN_VPN",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
