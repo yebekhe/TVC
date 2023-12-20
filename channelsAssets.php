@@ -33,7 +33,7 @@ foreach ($sourcesArray as $source => $types) {
     // Build the channel data array
     $channelArray[$source]['types'] = $types;
     $channelArray[$source]['title'] = $title_match[1];
-    $channelArray[$source]['logo'] = "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/channelsData/logos/" . $source . ".jpg";
+    $channelArray[$source]['logo'] = "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/" . $source . ".jpg";
 }
 
 // Save the channel data array as JSON
