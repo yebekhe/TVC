@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | vless | @EliV2ray | 15",
+                "🇬🇧GB | vless | @EliV2ray | 15",
                 "🇹🇷TR | vless | @reality_daily | 7",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @melov2ray | 7",
@@ -130,7 +130,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | vless | @EliV2ray | 15",
+                "🇬🇧GB | vless | @EliV2ray | 15",
                 "🇹🇷TR | vless | @reality_daily | 7",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @melov2ray | 7",
@@ -170,11 +170,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | vless | @EliV2ray | 15",
+            "tag": "🇬🇧GB | vless | @EliV2ray | 15",
             "type": "vless",
-            "server": "49.12.192.107",
-            "server_port": 2096,
-            "uuid": "f9f89381-7aa4-4c1f-8ce5-4e0e15453d90",
+            "server": "176.58.120.163",
+            "server_port": 443,
+            "uuid": "Pub",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -184,7 +184,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "sourceforge.net",
+                "server_name": "canva.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -193,16 +193,16 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "OVCexPrzOMdpDzigcnRe-Ufilj4qQe2bXA-LAT---jo",
-                    "short_id": "e46a1eae"
+                    "public_key": "u5qEgSi6U_kQsAEZ2WSNsHfV_Ogw7T06-nplCUINtBE",
+                    "short_id": ""
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "ZEDMODEON",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "http",
+                "host": [
+                    "canva.com"
+                ],
+                "path": "\/Pub"
             }
         },
         {
