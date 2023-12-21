@@ -116,6 +116,7 @@
                 "🏳️XX | vless | @v2logy | 16",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 29",
                 "🇫🇮FI | vless | @V2rayCollectorDonate | 19",
+                "🇪🇸ES | vless | @ProxyForOpeta | 3",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 15",
                 "🇪🇪EE | vless | @v2ray1_ng | 9",
@@ -148,6 +149,7 @@
                 "🏳️XX | vless | @v2logy | 16",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 29",
                 "🇫🇮FI | vless | @V2rayCollectorDonate | 19",
+                "🇪🇸ES | vless | @ProxyForOpeta | 3",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 15",
                 "🇪🇪EE | vless | @v2ray1_ng | 9",
@@ -462,9 +464,9 @@
         {
             "tag": "🇩🇪DE | vless | @azadi_az_inja_migzare | 29",
             "type": "vless",
-            "server": "49.13.113.114",
-            "server_port": 8443,
-            "uuid": "8c8bb03a-0476-4f47-94c9-5f25f97f22ba",
+            "server": "139.162.144.195",
+            "server_port": 2083,
+            "uuid": "38c1db58-0b97-40fe-a857-2119443872bf",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -474,7 +476,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "amazoon.namavaa.online",
+                "server_name": "canva.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -483,8 +485,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-                    "short_id": ""
+                    "public_key": "AoVVD-FGx5-IC2fwjqH3B_0M3T-muzmULO73sw4BLGw",
+                    "short_id": "3eddc513f64c2104"
                 }
             }
         },
@@ -519,6 +521,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@Everyday_VPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇪🇸ES | vless | @ProxyForOpeta | 3",
+            "type": "vless",
+            "server": "opeta.creery.org",
+            "server_port": 443,
+            "uuid": "8ee9bb79-35a7-4115-ad52-99d4d87af4d6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AVqn1SdgqFtI5MPyAjqNQi5DsKBCTQ5LZ9b1A24ZSUw",
+                    "short_id": "fada3f06"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@proxyforopeta",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
