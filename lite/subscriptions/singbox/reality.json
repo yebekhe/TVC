@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | vless | @EliV2ray | 15",
                 "🇹🇷TR | vless | @reality_daily | 7",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @melov2ray | 7",
@@ -136,7 +135,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | vless | @EliV2ray | 15",
                 "🇹🇷TR | vless | @reality_daily | 7",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @melov2ray | 7",
@@ -180,42 +178,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇬🇧GB | vless | @EliV2ray | 15",
-            "type": "vless",
-            "server": "176.58.120.163",
-            "server_port": 443,
-            "uuid": "Pub",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "canva.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "u5qEgSi6U_kQsAEZ2WSNsHfV_Ogw7T06-nplCUINtBE",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "http",
-                "host": [
-                    "canva.com"
-                ],
-                "path": "\/Pub"
-            }
         },
         {
             "tag": "🇹🇷TR | vless | @reality_daily | 7",
