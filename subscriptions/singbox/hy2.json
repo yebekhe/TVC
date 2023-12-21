@@ -106,18 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇸🇪SE | hy2 | @EUT_VPN | 8",
-                "🇫🇷FR | hy2 | @EUT_VPN | 9",
-                "🇬🇧GB | hy2 | @EUT_VPN | 10"
+                "🇸🇪SE | hy2 | @EUT_VPN | 8"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇸🇪SE | hy2 | @EUT_VPN | 8",
-                "🇫🇷FR | hy2 | @EUT_VPN | 9",
-                "🇬🇧GB | hy2 | @EUT_VPN | 10"
+                "🇸🇪SE | hy2 | @EUT_VPN | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -156,52 +152,6 @@
                 "enabled": true,
                 "disable_sni": true,
                 "server_name": "",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇫🇷FR | hy2 | @EUT_VPN | 9",
-            "type": "hysteria2",
-            "server": "45.76.44.57",
-            "server_port": 443,
-            "up_mbps": 0,
-            "down_mbps": 0,
-            "password": "f40b1e441addaec3",
-            "network": "tcp",
-            "obfs": {
-                "type": "salamander",
-                "password": "2db7b42a"
-            },
-            "tls": {
-                "enabled": true,
-                "disable_sni": false,
-                "server_name": "telegramEUT-VPN.ddns.net",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇬🇧GB | hy2 | @EUT_VPN | 10",
-            "type": "hysteria2",
-            "server": "64.176.191.187",
-            "server_port": 443,
-            "up_mbps": 0,
-            "down_mbps": 0,
-            "password": "f40b1e441addaec3",
-            "network": "tcp",
-            "obfs": {
-                "type": "salamander",
-                "password": "2db7b42a"
-            },
-            "tls": {
-                "enabled": true,
-                "disable_sni": false,
-                "server_name": "google.co",
                 "insecure": true,
                 "alpn": [
                     "h3"
