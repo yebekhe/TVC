@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🇨🇦CA | vless | @Helix_Servers | 6",
                 "🇹🇷TR | vless | @reality_daily | 7",
-                "🇮🇪IE | vless | @VlessConfig | 14",
+                "🇬🇧GB | vless | @VlessConfig | 17",
                 "🇨🇷CR | vless | @VPNCUSTOMIZE | 27",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @melov2ray | 7",
@@ -158,6 +158,7 @@
                 "🇩🇪DE | vless | @Outlinev2rayNG | 15",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 12",
                 "🇩🇪DE | vless | @Capital_NET | 57",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇦🇹AT | vless | @FAKEOFTVC | 5",
                 "🇨🇦CA | vless | @mehrosaboran | 4",
                 "🏳️XX | vless | @kiava | 13",
@@ -177,7 +178,7 @@
             "outbounds": [
                 "🇨🇦CA | vless | @Helix_Servers | 6",
                 "🇹🇷TR | vless | @reality_daily | 7",
-                "🇮🇪IE | vless | @VlessConfig | 14",
+                "🇬🇧GB | vless | @VlessConfig | 17",
                 "🇨🇷CR | vless | @VPNCUSTOMIZE | 27",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @melov2ray | 7",
@@ -227,6 +228,7 @@
                 "🇩🇪DE | vless | @Outlinev2rayNG | 15",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 12",
                 "🇩🇪DE | vless | @Capital_NET | 57",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇦🇹AT | vless | @FAKEOFTVC | 5",
                 "🇨🇦CA | vless | @mehrosaboran | 4",
                 "🏳️XX | vless | @kiava | 13",
@@ -320,9 +322,9 @@
             }
         },
         {
-            "tag": "🇮🇪IE | vless | @VlessConfig | 14",
+            "tag": "🇬🇧GB | vless | @VlessConfig | 17",
             "type": "vless",
-            "server": "46.137.2.172",
+            "server": "35.177.77.94",
             "server_port": 22222,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -1806,6 +1808,37 @@
                     "enabled": true,
                     "public_key": "yvST7IS7c400DGyW4HwHI2c2ZrV8znWHZGV8jbiz4Wo",
                     "short_id": "8911ac48"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "104.25.233.226",
+            "server_port": 443,
+            "uuid": "6e34f2c5-6c71-4010-c292-10d05ef4a9a2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "current.ircp.online",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "current.ircp.online"
                 }
             }
         },
