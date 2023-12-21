@@ -114,7 +114,7 @@
                 "🇨🇦CA | vmess | @Hope_Net | 13",
                 "🇮🇷IR | vmess | @MrV2Ray | 7",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇩🇪DE | vmess | @eliya_chiter0 | 5"
+                "🇫🇷FR | vmess | @eliya_chiter0 | 4"
             ]
         },
         {
@@ -129,7 +129,7 @@
                 "🇨🇦CA | vmess | @Hope_Net | 13",
                 "🇮🇷IR | vmess | @MrV2Ray | 7",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇩🇪DE | vmess | @eliya_chiter0 | 5"
+                "🇫🇷FR | vmess | @eliya_chiter0 | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -326,11 +326,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vmess | @eliya_chiter0 | 5",
+            "tag": "🇫🇷FR | vmess | @eliya_chiter0 | 4",
             "type": "vmess",
-            "server": "91.107.172.128",
-            "server_port": 3350,
-            "uuid": "2bf900ac-909a-4610-dc18-86a3a136b286",
+            "server": "51.159.70.15",
+            "server_port": 10001,
+            "uuid": "6356ddde-9540-11ee-a018-dbb296bff7e7",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -340,6 +340,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vpnjantit",
+                "headers": {
+                    "Host": "ftp.debian.org"
+                }
             }
         }
     ],
