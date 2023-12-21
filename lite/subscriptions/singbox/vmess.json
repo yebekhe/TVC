@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🏳️XX | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
@@ -116,7 +115,7 @@
                 "🇬🇧GB | vmess | @Hope_Net | 13",
                 "🇮🇷IR | vmess | @MrV2Ray | 7",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇩🇪DE | vmess | @forwardv2ray | 19",
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 4"
             ]
         },
@@ -124,7 +123,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🏳️XX | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
@@ -134,7 +132,7 @@
                 "🇬🇧GB | vmess | @Hope_Net | 13",
                 "🇮🇷IR | vmess | @MrV2Ray | 7",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇩🇪DE | vmess | @forwardv2ray | 19",
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -156,30 +154,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🏳️XX | vmess | @V2rayCollectorDonate | 19",
-            "type": "vmess",
-            "server": "::ffff:67a0:cc8d",
-            "server_port": 8880,
-            "uuid": "@V2Group7",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/@v2group7",
-                "headers": {
-                    "Host": ""
-                }
-            }
         },
         {
             "tag": "🇫🇷FR | vmess | @v2ray_outlineir | 0",
@@ -373,11 +347,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vmess | @forwardv2ray | 19",
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 18",
             "type": "vmess",
-            "server": "Germany.meberplus.site",
-            "server_port": 4000,
-            "uuid": "718daa77-ec1c-4c3a-b9ff-65e4cce4b483",
+            "server": "tel.lepingshop.top",
+            "server_port": 2096,
+            "uuid": "db4c9e81-7906-451c-bc24-4a3b22572f3d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -387,6 +361,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "telma2.lepingshop.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@telmavpn--@lepingshop",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
