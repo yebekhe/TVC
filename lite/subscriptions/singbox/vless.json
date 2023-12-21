@@ -139,7 +139,6 @@
                 "🇨🇦CA | vless | @v2rayngvpn | 5",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 14",
                 "🇨🇦CA | vless | @ShadowProxy66 | 68",
-                "🇨🇦CA | vless | @ServerNett | 16",
                 "🇨🇦CA | vless | @Proxy_PJ | 1",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇩🇪DE | vless | @v2ray_swhil | 16",
@@ -151,7 +150,7 @@
                 "🏳️XX | vless | @sinabigo | 0",
                 "🇨🇷CR | vless | @SafeNet_Server | 7",
                 "🇨🇦CA | vless | @lrnbymaa | 5",
-                "🇨🇦CA | vless | @ConfigsHUB | 15",
+                "🇨🇦CA | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @proxystore11 | 18",
                 "🇨🇦CA | vless | @free1_vpn | 3",
                 "🏳️XX | vless | @fnet00 | 8",
@@ -210,7 +209,6 @@
                 "🇨🇦CA | vless | @v2rayngvpn | 5",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 14",
                 "🇨🇦CA | vless | @ShadowProxy66 | 68",
-                "🇨🇦CA | vless | @ServerNett | 16",
                 "🇨🇦CA | vless | @Proxy_PJ | 1",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇩🇪DE | vless | @v2ray_swhil | 16",
@@ -222,7 +220,7 @@
                 "🏳️XX | vless | @sinabigo | 0",
                 "🇨🇷CR | vless | @SafeNet_Server | 7",
                 "🇨🇦CA | vless | @lrnbymaa | 5",
-                "🇨🇦CA | vless | @ConfigsHUB | 15",
+                "🇨🇦CA | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @proxystore11 | 18",
                 "🇨🇦CA | vless | @free1_vpn | 3",
                 "🏳️XX | vless | @fnet00 | 8",
@@ -1266,37 +1264,6 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @ServerNett | 16",
-            "type": "vless",
-            "server": "join2.servernet.cfd",
-            "server_port": 8443,
-            "uuid": "5bf081b7-64fc-4c3e-a9c0-d1a4ca86e7f6",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "join2.servernet.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🇨🇦CA | vless | @Proxy_PJ | 1",
             "type": "vless",
             "server": "w1.sylar8.eu.org",
@@ -1638,11 +1605,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @ConfigsHUB | 15",
+            "tag": "🇨🇦CA | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "104.18.202.212",
-            "server_port": 2096,
-            "uuid": "6e743941-1ca9-44d3-ce90-49418a8fc414",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "vpn_xw",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1652,7 +1619,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "fl.ZoV2ray.cfd",
+                "server_name": "meters-warehouse-band-principal.trycloudflare.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1661,11 +1628,11 @@
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "meters-warehouse-band-principal.trycloudflare.com"
+                }
             }
         },
         {
