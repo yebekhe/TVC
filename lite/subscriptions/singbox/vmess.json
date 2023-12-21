@@ -246,9 +246,9 @@
         {
             "tag": "🇨🇦CA | vmess | @Hope_Net | 13",
             "type": "vmess",
-            "server": "tl.iranray.online",
-            "server_port": 8080,
-            "uuid": "b3c20911-126d-4c30-bd32-10152bf0b593",
+            "server": "rf.rafalion.ir",
+            "server_port": 8443,
+            "uuid": "0198fa0c-221c-427c-8ab0-3a4829e73078",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -258,6 +258,16 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             },
             "transport": {
                 "type": "ws",
