@@ -124,10 +124,10 @@
                 "🇨🇷CR | vless | @DigiV2ray | 18",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 8",
                 "🇨🇦CA | vless | @proxy_kafee | 0",
-                "🇩🇪DE | vless | @V2raysFree | 11",
+                "🇨🇦CA | vless | @V2raysFree | 13",
                 "🏳️XX | vless | @v2logy | 15",
                 "🇬🇧GB | vless | @servermomo | 8",
-                "🇨🇦CA | vless | @azadi_az_inja_migzare | 28",
+                "🇩🇪DE | vless | @azadi_az_inja_migzare | 29",
                 "🇳🇱NL | vless | @V2rayCollectorDonate | 19",
                 "🇪🇸ES | vless | @ProxyForOpeta | 4",
                 "🇨🇷CR | vless | @V2rayNGn | 22",
@@ -142,7 +142,6 @@
                 "🇨🇦CA | vless | @ShadowProxy66 | 68",
                 "🇨🇦CA | vless | @Proxy_PJ | 1",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
-                "🇩🇪DE | vless | @v2ray_swhil | 16",
                 "🇨🇦CA | vless | @MsV2ray | 18",
                 "🇺🇸US | vless | @v2ray1_ng | 9",
                 "🇩🇪DE | vless | @MTConfig | 24",
@@ -159,10 +158,10 @@
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🇩🇪DE | vless | @flyv2ray | 20",
                 "🇦🇹AT | vless | @FAKEOFTVC | 7",
-                "🇨🇦CA | vless | @mehrosaboran | 4",
+                "🇺🇸US | vless | @mehrosaboran | 4",
                 "🏳️XX | vless | @kiava | 13",
                 "🇩🇪DE | vless | @proxy_mtm | 27",
-                "🇨🇦CA | vless | @vpn_go67 | 22",
+                "🇺🇸US | vless | @vpn_go67 | 22",
                 "🏳️XX | vless | @kingofilter | 13",
                 "🇩🇪DE | vless | @GozargahVPN | 16",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
@@ -193,10 +192,10 @@
                 "🇨🇷CR | vless | @DigiV2ray | 18",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 8",
                 "🇨🇦CA | vless | @proxy_kafee | 0",
-                "🇩🇪DE | vless | @V2raysFree | 11",
+                "🇨🇦CA | vless | @V2raysFree | 13",
                 "🏳️XX | vless | @v2logy | 15",
                 "🇬🇧GB | vless | @servermomo | 8",
-                "🇨🇦CA | vless | @azadi_az_inja_migzare | 28",
+                "🇩🇪DE | vless | @azadi_az_inja_migzare | 29",
                 "🇳🇱NL | vless | @V2rayCollectorDonate | 19",
                 "🇪🇸ES | vless | @ProxyForOpeta | 4",
                 "🇨🇷CR | vless | @V2rayNGn | 22",
@@ -211,7 +210,6 @@
                 "🇨🇦CA | vless | @ShadowProxy66 | 68",
                 "🇨🇦CA | vless | @Proxy_PJ | 1",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
-                "🇩🇪DE | vless | @v2ray_swhil | 16",
                 "🇨🇦CA | vless | @MsV2ray | 18",
                 "🇺🇸US | vless | @v2ray1_ng | 9",
                 "🇩🇪DE | vless | @MTConfig | 24",
@@ -228,10 +226,10 @@
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🇩🇪DE | vless | @flyv2ray | 20",
                 "🇦🇹AT | vless | @FAKEOFTVC | 7",
-                "🇨🇦CA | vless | @mehrosaboran | 4",
+                "🇺🇸US | vless | @mehrosaboran | 4",
                 "🏳️XX | vless | @kiava | 13",
                 "🇩🇪DE | vless | @proxy_mtm | 27",
-                "🇨🇦CA | vless | @vpn_go67 | 22",
+                "🇺🇸US | vless | @vpn_go67 | 22",
                 "🏳️XX | vless | @kingofilter | 13",
                 "🇩🇪DE | vless | @GozargahVPN | 16",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
@@ -831,17 +829,34 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @V2raysFree | 11",
+            "tag": "🇨🇦CA | vless | @V2raysFree | 13",
             "type": "vless",
-            "server": "159.89.1.24",
-            "server_port": 11003,
-            "uuid": "c5247247-ddda-4650-9270-4fd41b14f88a",
+            "server": "wireless50---join.outline-vpn.cloud",
+            "server_port": 443,
+            "uuid": "9bc90ddf-b865-47cc-9f97-9d5ea3bca89f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vl31.rnd.biz.id",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "vl31.rnd.biz.id"
+                }
             }
         },
         {
@@ -905,12 +920,12 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @azadi_az_inja_migzare | 28",
+            "tag": "🇩🇪DE | vless | @azadi_az_inja_migzare | 29",
             "type": "vless",
-            "server": "mrz.hydrashop.cfd",
+            "server": "49.13.113.114",
             "server_port": 8443,
-            "uuid": "9ddbec68-30ce-48d0-943a-e9f4d2b8d322",
-            "flow": "",
+            "uuid": "8c8bb03a-0476-4f47-94c9-5f25f97f22ba",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -919,19 +934,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "snn.hydrashop.cfd",
+                "server_name": "amazoon.namavaa.online",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "snn.hydrashop.cfd"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
                 }
             }
         },
@@ -1330,42 +1343,6 @@
                 "headers": {
                     "Host": "963C1F6A-8485-443a-a386-4E6D34A64dc8.MRvi.ONline"
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @v2ray_swhil | 16",
-            "type": "vless",
-            "server": "titaniom.official.mmdtitaniom.com",
-            "server_port": 443,
-            "uuid": "46a7b4fd-16c3-4e6b-ff02-973d69b9eec6",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sourceforge.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "myOyTs6wtYgOioDwSzMCIUNRuq6l6I7ciLUqfusSTmY",
-                    "short_id": "6fa697ff"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -1848,7 +1825,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @mehrosaboran | 4",
+            "tag": "🇺🇸US | vless | @mehrosaboran | 4",
             "type": "vless",
             "server": "104.18.202.212",
             "server_port": 8443,
@@ -1944,7 +1921,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @vpn_go67 | 22",
+            "tag": "🇺🇸US | vless | @vpn_go67 | 22",
             "type": "vless",
             "server": "public.alpanel.top",
             "server_port": 1403,
