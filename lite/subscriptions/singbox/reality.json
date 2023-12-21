@@ -121,6 +121,7 @@
                 "🇪🇪EE | vless | @v2ray1_ng | 9",
                 "🇩🇪DE | vless | @MTConfig | 24",
                 "🇩🇪DE | vless | @DailyV2RY | 147",
+                "🇹🇷TR | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @fnet00 | 8",
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🇩🇪DE | vless | @Capoit | 7",
@@ -153,6 +154,7 @@
                 "🇪🇪EE | vless | @v2ray1_ng | 9",
                 "🇩🇪DE | vless | @MTConfig | 24",
                 "🇩🇪DE | vless | @DailyV2RY | 147",
+                "🇹🇷TR | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @fnet00 | 8",
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🇩🇪DE | vless | @Capoit | 7",
@@ -699,6 +701,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@V2ray_Alpha",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇹🇷TR | vless | @ConfigsHUB | 19",
+            "type": "vless",
+            "server": "trs.v2shield.cloud",
+            "server_port": 51183,
+            "uuid": "57185d94-c287-4763-b787-3ba6a00642f8",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "e_lo4HeL-LU6RbRbl3kb3wZF2U_xnZWHfoXjeDH-R34",
+                    "short_id": "cbc3c06a"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "\/kinsta_service",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
