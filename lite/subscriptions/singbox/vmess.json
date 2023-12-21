@@ -113,7 +113,7 @@
                 "🇩🇪DE | vmess | @ShadowProxy66 | 70",
                 "🏳️XX | vmess | @vless_vmess | 8",
                 "🇨🇳CN | vmess | @yaney_01 | 14",
-                "🇨🇳CN | vmess | @Hope_Net | 13",
+                "🇨🇦CA | vmess | @Hope_Net | 13",
                 "🇮🇷IR | vmess | @MrV2Ray | 7",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 4"
@@ -130,7 +130,7 @@
                 "🇩🇪DE | vmess | @ShadowProxy66 | 70",
                 "🏳️XX | vmess | @vless_vmess | 8",
                 "🇨🇳CN | vmess | @yaney_01 | 14",
-                "🇨🇳CN | vmess | @Hope_Net | 13",
+                "🇨🇦CA | vmess | @Hope_Net | 13",
                 "🇮🇷IR | vmess | @MrV2Ray | 7",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 4"
@@ -299,11 +299,11 @@
             }
         },
         {
-            "tag": "🇨🇳CN | vmess | @Hope_Net | 13",
+            "tag": "🇨🇦CA | vmess | @Hope_Net | 13",
             "type": "vmess",
-            "server": "sh-cn-1.dnspro.icu",
-            "server_port": 20025,
-            "uuid": "13ef5f2c-d002-36a2-9e96-a13d5e3ae03b",
+            "server": "heleneski.ravenxer.top",
+            "server_port": 443,
+            "uuid": "79d74902-afce-4e49-b309-551f4b5fb850",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -314,11 +314,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "heleneski.ravenxer.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/iso",
+                "path": "\/",
                 "headers": {
-                    "Host": "sh-cn-1.dnspro.icu"
+                    "Host": "heleneski.ravenxer.top"
                 }
             }
         },
