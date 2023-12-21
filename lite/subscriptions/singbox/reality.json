@@ -109,10 +109,12 @@
                 "🇮🇷IR | vless | @Helix_Servers | 11",
                 "🇸🇪SE | vless | @reality_daily | 7",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
+                "🇩🇪DE | vless | @frev2ray | 17",
                 "🇩🇪DE | vless | @ARv2ray | 14",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🏳️XX | vless | @v2logy | 15",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 29",
+                "🇳🇱NL | vless | @V2rayCollectorDonate | 19",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 14",
                 "🇪🇪EE | vless | @v2ray1_ng | 9",
@@ -121,7 +123,6 @@
                 "🇬🇧GB | vless | @Outlinev2rayNG | 17",
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🏳️XX | vless | @flyv2ray | 18",
-                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🏳️XX | vless | @kiava | 14",
                 "🇩🇪DE | vless | @proxy_mtm | 10",
                 "🇨🇦CA | vless | @vpn_go67 | 22",
@@ -137,10 +138,12 @@
                 "🇮🇷IR | vless | @Helix_Servers | 11",
                 "🇸🇪SE | vless | @reality_daily | 7",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
+                "🇩🇪DE | vless | @frev2ray | 17",
                 "🇩🇪DE | vless | @ARv2ray | 14",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🏳️XX | vless | @v2logy | 15",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 29",
+                "🇳🇱NL | vless | @V2rayCollectorDonate | 19",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 14",
                 "🇪🇪EE | vless | @v2ray1_ng | 9",
@@ -149,7 +152,6 @@
                 "🇬🇧GB | vless | @Outlinev2rayNG | 17",
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🏳️XX | vless | @flyv2ray | 18",
-                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🏳️XX | vless | @kiava | 14",
                 "🇩🇪DE | vless | @proxy_mtm | 10",
                 "🇨🇦CA | vless | @vpn_go67 | 22",
@@ -273,6 +275,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @frev2ray | 17",
+            "type": "vless",
+            "server": "m70.miox.sbs",
+            "server_port": 38819,
+            "uuid": "55f028c5-1a19-4f70-a8a3-7e2baa6a48a4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "m70.miox.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5F2GVwZC05RQPWPzZ7Fx-DIF1_UzV507XGTTBy00oi8",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Frev2ray:",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -405,6 +443,35 @@
                     "enabled": true,
                     "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | vless | @V2rayCollectorDonate | 19",
+            "type": "vless",
+            "server": "46.249.49.221",
+            "server_port": 443,
+            "uuid": "848NbONh5qciCyOMDwV5Ih",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "googletagmanager.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "IMZpchqfbkPNOSh1RaTukv2bzAP1_Mds15nUsbgStUw",
+                    "short_id": "2ca91f01ffe165ef"
                 }
             }
         },
@@ -684,42 +751,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@flyv2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @forwardv2ray | 19",
-            "type": "vless",
-            "server": "de2.melov2ray.shop",
-            "server_port": 8443,
-            "uuid": "8117614e-c86c-42fe-b9f6-095516b953e6",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "amd.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "JFF7UiEyUrJO6TQLwFAupZJ56jTUR_DBEoVn8aSURXE",
-                    "short_id": "621afd4d"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
