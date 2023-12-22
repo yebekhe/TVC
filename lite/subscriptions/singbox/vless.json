@@ -118,7 +118,7 @@
                 "🇺🇸US | vless | @shh_proxy | 17",
                 "🇳🇱NL | vless | @Lockey_vpn | 18",
                 "🇨🇦CA | vless | @free_v2rayyy | 9",
-                "🇨🇷CR | vless | @lightning6 | 19",
+                "🇺🇸US | vless | @lightning6 | 19",
                 "🇮🇷IR | vless | @V2rayNGmat | 0",
                 "🇨🇦CA | vless | @vpn_xw | 11",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -150,6 +150,7 @@
                 "🇩🇪DE | vless | @DailyV2RY | 147",
                 "🇨🇦CA | vless | @MehradLearn | 10",
                 "🇨🇷CR | vless | @SafeNet_Server | 9",
+                "🇨🇦CA | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @proxystore11 | 18",
                 "🇨🇦CA | vless | @free1_vpn | 4",
                 "🏳️XX | vless | @fnet00 | 10",
@@ -191,7 +192,7 @@
                 "🇺🇸US | vless | @shh_proxy | 17",
                 "🇳🇱NL | vless | @Lockey_vpn | 18",
                 "🇨🇦CA | vless | @free_v2rayyy | 9",
-                "🇨🇷CR | vless | @lightning6 | 19",
+                "🇺🇸US | vless | @lightning6 | 19",
                 "🇮🇷IR | vless | @V2rayNGmat | 0",
                 "🇨🇦CA | vless | @vpn_xw | 11",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -223,6 +224,7 @@
                 "🇩🇪DE | vless | @DailyV2RY | 147",
                 "🇨🇦CA | vless | @MehradLearn | 10",
                 "🇨🇷CR | vless | @SafeNet_Server | 9",
+                "🇨🇦CA | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @proxystore11 | 18",
                 "🇨🇦CA | vless | @free1_vpn | 4",
                 "🏳️XX | vless | @fnet00 | 10",
@@ -643,7 +645,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @lightning6 | 19",
+            "tag": "🇺🇸US | vless | @lightning6 | 19",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.mamd.sbs",
             "server_port": 2083,
@@ -1591,6 +1593,37 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@VPNCUSTOMIZE",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @ConfigsHUB | 19",
+            "type": "vless",
+            "server": "all.globalnetvpn.site",
+            "server_port": 2096,
+            "uuid": "fd048b86-e415-4900-aa32-3eae5d50c8cc",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "global.globalnetvpn.site",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@global_net_vpn",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
