@@ -358,6 +358,7 @@ function toClashSurfboard($input, $outboundType)
             "surfboard" => "ssToSurfboard",
         ],
     ];
+    
     return $functionsArray[$configType][$outboundType]($input);
 }
 
@@ -842,7 +843,7 @@ function extractNames($input, $outputType)
     return $configsName;
 }
 
-function processConvertion($base64ConfigsList, $outboundType)
+function processConvertion($base64ConfigsList, $outboundType, $surfboardUrl = '')
 {
     $configsArray = explode("\n", base64_decode($base64ConfigsList));
     $proxies = "";
@@ -853,7 +854,7 @@ function processConvertion($base64ConfigsList, $outboundType)
         }
     }
     $configsName = extractNames($proxies, $outboundType);
-    $configsHeader = configsHeader($outboundType);
+    $configsHeader = configsHeader($outboundType, $surfboardUrl);
     $configsProxyGroup = configsProxyGroup($outboundType);
     $configsProxyRules = configsProxyRules($outboundType);
 
@@ -887,6 +888,7 @@ foreach ($directoryOfFiles as $directory) {
     $configsType = explode("/", $directory)[3];
     foreach ($outputTypes as $outputType => $configsTypeArray) {
         if (in_array($configsType, $configsTypeArray)) {
+            $surfboardUrl = $outboundType === "surfboard" ? 'https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/surfboard/' . $configsType : "";
             file_put_contents(
                 "subscriptions/" .
                     $outputType .
@@ -895,7 +897,7 @@ foreach ($directoryOfFiles as $directory) {
                 str_replace(
                     "\\",
                     "",
-                    processConvertion($configsData, $outputType)
+                    processConvertion($configsData, $outputType, $surfboardUrl)
                 )
             );
         }
