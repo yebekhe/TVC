@@ -125,7 +125,8 @@
                 "🇸🇪SE | vless | @kingofilter | 14",
                 "🇩🇪DE | vless | @GozargahVPN | 18",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
-                "🇺🇸US | vless | @FoXrayIran | 7"
+                "🇺🇸US | vless | @FoXrayIran | 7",
+                "🇩🇪DE | vless | @IBv2ray | 13"
             ]
         },
         {
@@ -151,7 +152,8 @@
                 "🇸🇪SE | vless | @kingofilter | 14",
                 "🇩🇪DE | vless | @GozargahVPN | 18",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
-                "🇺🇸US | vless | @FoXrayIran | 7"
+                "🇺🇸US | vless | @FoXrayIran | 7",
+                "🇩🇪DE | vless | @IBv2ray | 13"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -853,6 +855,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "join-channel-foxrayiran-join-channel-foxrayiran-join-channel-foxrayiran-join-channel-foxrayiran-join-channel-foxrayiran-join-channel-foxrayiran",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @IBv2ray | 13",
+            "type": "vless",
+            "server": "159.69.107.97",
+            "server_port": 2096,
+            "uuid": "82992eb8-c5a0-483d-bcf0-a830aa59eab7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "JiFmcB_LrEuwE9tOx-_QOKJcxmRGU0ff0m5vU4MSRT8",
+                    "short_id": "48028167"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
