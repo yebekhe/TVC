@@ -162,10 +162,9 @@
                 "🇳🇱NL | vless | @FreakConfig | 14",
                 "🇨🇭CH | vless | @IRN_VPN | 14",
                 "🇩🇪DE | vless | @flyv2ray | 18",
-                "🇨🇦CA | vless | @forwardv2ray | 16",
+                "🇩🇪DE | vless | @forwardv2ray | 5",
                 "🇨🇦CA | vless | @FAKEOFTVC | 7",
                 "🇨🇦CA | vless | @https_config_injector | 11",
-                "🇩🇪DE | vless | @mehrosaboran | 6",
                 "🏳️XX | vless | @kiava | 14",
                 "🇨🇷CR | vless | @proxy_mtm | 8",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -174,7 +173,7 @@
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
                 "🇺🇸US | vless | @FoXrayIran | 7",
-                "🇨🇦CA | vless | @IBv2ray | 20"
+                "🇺🇸US | vless | @IBv2ray | 20"
             ]
         },
         {
@@ -237,10 +236,9 @@
                 "🇳🇱NL | vless | @FreakConfig | 14",
                 "🇨🇭CH | vless | @IRN_VPN | 14",
                 "🇩🇪DE | vless | @flyv2ray | 18",
-                "🇨🇦CA | vless | @forwardv2ray | 16",
+                "🇩🇪DE | vless | @forwardv2ray | 5",
                 "🇨🇦CA | vless | @FAKEOFTVC | 7",
                 "🇨🇦CA | vless | @https_config_injector | 11",
-                "🇩🇪DE | vless | @mehrosaboran | 6",
                 "🏳️XX | vless | @kiava | 14",
                 "🇨🇷CR | vless | @proxy_mtm | 8",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -249,7 +247,7 @@
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
                 "🇺🇸US | vless | @FoXrayIran | 7",
-                "🇨🇦CA | vless | @IBv2ray | 20"
+                "🇺🇸US | vless | @IBv2ray | 20"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -1517,7 +1515,7 @@
             "type": "vless",
             "server": "all.vipxali.cfd",
             "server_port": 2083,
-            "uuid": "6e366d9e-b59d-46a0-b68b-943da89114d7",
+            "uuid": "8b7c2a9a-f626-4c5e-a56b-2ecd382dc44e",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1948,12 +1946,12 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 16",
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 5",
             "type": "vless",
-            "server": "all.vipxali.cfd",
-            "server_port": 2083,
-            "uuid": "9b5dd301-e7f0-45d9-b098-5d8da184664f",
-            "flow": "",
+            "server": "78.46.135.92",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1962,17 +1960,22 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "fe.XsV2ray.cfd",
+                "server_name": "greenpepper.ir",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "f2VMCg-h5n6WZlyajvAhCDCHeA5p1H0iNAKiVGQh8yE",
+                    "short_id": "571ed73b"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -2038,42 +2041,6 @@
                 "headers": {
                     "Host": "current.ircp.online"
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @mehrosaboran | 6",
-            "type": "vless",
-            "server": "116.203.149.241",
-            "server_port": 443,
-            "uuid": "1596e7f0-2106-468f-e2b0-93f19e83bd0c",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "greenpepper.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "JYFrn4MJLzIx9jeYhpmtcgk0KoP2_HKukaRBEO6VCiU",
-                    "short_id": "a18472f7"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -2319,7 +2286,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @IBv2ray | 20",
+            "tag": "🇺🇸US | vless | @IBv2ray | 20",
             "type": "vless",
             "server": "104.18.202.212",
             "server_port": 2096,
