@@ -110,15 +110,14 @@
                 "🇹🇷TR | vless | @reality_daily | 6",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
-                "🏳️XX | vless | @v2logy | 16",
                 "🇪🇸ES | vless | @ProxyForOpeta | 4",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 15",
                 "🇩🇪DE | vless | @v2ray_swhil | 17",
+                "🏳️XX | vless | @VmessProtocol | 17",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🇩🇪DE | vless | @Capoit | 7",
-                "🇩🇪DE | vless | @FreakConfig | 14",
                 "🏳️XX | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 22",
                 "🇩🇪DE | vless | @GozargahVPN | 17",
@@ -134,15 +133,14 @@
                 "🇹🇷TR | vless | @reality_daily | 6",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
-                "🏳️XX | vless | @v2logy | 16",
                 "🇪🇸ES | vless | @ProxyForOpeta | 4",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 15",
                 "🇩🇪DE | vless | @v2ray_swhil | 17",
+                "🏳️XX | vless | @VmessProtocol | 17",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🇩🇪DE | vless | @Capoit | 7",
-                "🇩🇪DE | vless | @FreakConfig | 14",
                 "🏳️XX | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 22",
                 "🇩🇪DE | vless | @GozargahVPN | 17",
@@ -307,35 +305,6 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @v2logy | 16",
-            "type": "vless",
-            "server": "re11.v2logy.xyz",
-            "server_port": 443,
-            "uuid": "35748630-559e-4899-8673-b48683852a29",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.sourceforge.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "18bwecL3fjLIXq1hsg-ec_a01gV63dFRpWCYnjacI3k",
-                    "short_id": "5a036005"
-                }
-            }
-        },
-        {
             "tag": "🇪🇸ES | vless | @ProxyForOpeta | 4",
             "type": "vless",
             "server": "opeta.creery.org",
@@ -480,6 +449,42 @@
             }
         },
         {
+            "tag": "🏳️XX | vless | @VmessProtocol | 17",
+            "type": "vless",
+            "server": "[2a01:4f8:1c1b:1da1::1]",
+            "server_port": 443,
+            "uuid": "1bfa6d4b-f95b-4a2d-bd87-05506f65e32c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "reJqUPF75qXRn-LfdbaelvMvlFBp4RchoVvmY7ois3c",
+                    "short_id": "37aa606c"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Everyday_VPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🏳️XX | vless | @fnet00 | 10",
             "type": "vless",
             "server": "kamyarservers.ddns.net",
@@ -575,42 +580,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@V2ray_Alpha",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @FreakConfig | 14",
-            "type": "vless",
-            "server": "49.12.192.107",
-            "server_port": 2096,
-            "uuid": "f9f89381-7aa4-4c1f-8ce5-4e0e15453d90",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sourceforge.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "OVCexPrzOMdpDzigcnRe-Ufilj4qQe2bXA-LAT---jo",
-                    "short_id": "e46a1eae"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
