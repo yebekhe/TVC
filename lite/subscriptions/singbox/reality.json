@@ -109,7 +109,6 @@
                 "🇮🇷IR | vless | @Helix_Servers | 11",
                 "🇹🇷TR | vless | @reality_daily | 6",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
-                "🇬🇧GB | vless | @ARv2ray | 14",
                 "🇩🇪DE | vless | @Lockey_vpn | 18",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @V2rayCollectorDonate | 19",
@@ -121,6 +120,7 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🇩🇪DE | vless | @Capoit | 7",
+                "🇩🇪DE | vless | @forwardv2ray | 8",
                 "🏳️XX | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 22",
                 "🇩🇪DE | vless | @GozargahVPN | 17",
@@ -135,7 +135,6 @@
                 "🇮🇷IR | vless | @Helix_Servers | 11",
                 "🇹🇷TR | vless | @reality_daily | 6",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
-                "🇬🇧GB | vless | @ARv2ray | 14",
                 "🇩🇪DE | vless | @Lockey_vpn | 18",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @V2rayCollectorDonate | 19",
@@ -147,6 +146,7 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 57",
                 "🇩🇪DE | vless | @Capoit | 7",
+                "🇩🇪DE | vless | @forwardv2ray | 8",
                 "🏳️XX | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 22",
                 "🇩🇪DE | vless | @GozargahVPN | 17",
@@ -269,42 +269,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇬🇧GB | vless | @ARv2ray | 14",
-            "type": "vless",
-            "server": "3.9.104.147",
-            "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "deb.debian.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "jGV0kJtzLFBz6OXCU4kBzIo0cNps2Xsqf0Dxzlk-M20",
-                    "short_id": "28d7e262"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -687,6 +651,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@V2ray_Alpha",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 8",
+            "type": "vless",
+            "server": "162.55.37.113",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "9N0pYe0hF3r9IWw5MgfPm_GOS8suTK3_RSxSYOKTWjE",
+                    "short_id": "f030f40f"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
