@@ -119,6 +119,7 @@
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 15",
                 "🇩🇪DE | vless | @V2RayTz | 19",
                 "🇩🇪DE | vless | @DailyV2RY | 104",
+                "🇹🇷TR | vless | @ConfigsHUB | 18",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 56",
                 "🇩🇪DE | vless | @Capoit | 11",
@@ -148,6 +149,7 @@
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 15",
                 "🇩🇪DE | vless | @V2RayTz | 19",
                 "🇩🇪DE | vless | @DailyV2RY | 104",
+                "🇹🇷TR | vless | @ConfigsHUB | 18",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 56",
                 "🇩🇪DE | vless | @Capoit | 11",
@@ -621,6 +623,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@Everyday_VPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇹🇷TR | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "212.64.215.192",
+            "server_port": 1111,
+            "uuid": "fc11c3e4-f9bd-49e2-e429-b57871685a1d",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bankmellat.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SXBPiSkf-iSlXJxNO5yZwWLMXpiYBDrPXY2kBomPK30",
+                    "short_id": "949fb61c"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false

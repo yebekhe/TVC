@@ -160,7 +160,7 @@
                 "🇨🇦CA | vless | @MehradLearn | 7",
                 "🇨🇦CA | vless | @SafeNet_Server | 11",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇬🇷GR | vless | @ConfigsHUB | 19",
+                "🇹🇷TR | vless | @ConfigsHUB | 18",
                 "🇨🇳CN | vmess | @yaney_01 | 14",
                 "🇨🇦CA | vless | @free1_vpn | 6",
                 "🇨🇷CR | vmess | @Hope_Net | 16",
@@ -246,7 +246,7 @@
                 "🇨🇦CA | vless | @MehradLearn | 7",
                 "🇨🇦CA | vless | @SafeNet_Server | 11",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇬🇷GR | vless | @ConfigsHUB | 19",
+                "🇹🇷TR | vless | @ConfigsHUB | 18",
                 "🇨🇳CN | vmess | @yaney_01 | 14",
                 "🇨🇦CA | vless | @free1_vpn | 6",
                 "🇨🇷CR | vmess | @Hope_Net | 16",
@@ -1853,24 +1853,39 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇬🇷GR | vless | @ConfigsHUB | 19",
+            "tag": "🇹🇷TR | vless | @ConfigsHUB | 18",
             "type": "vless",
-            "server": "gr2-vless.sshmax.xyz",
-            "server_port": 80,
-            "uuid": "e4da920e-37b4-4fb9-9b64-788f25dc68fd",
-            "flow": "",
+            "server": "212.64.215.192",
+            "server_port": 1111,
+            "uuid": "fc11c3e4-f9bd-49e2-e429-b57871685a1d",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/vless",
-                "headers": {
-                    "Host": "gr2-vless.sshmax.xyz"
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bankmellat.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SXBPiSkf-iSlXJxNO5yZwWLMXpiYBDrPXY2kBomPK30",
+                    "short_id": "949fb61c"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN,@V2NET_IRAN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -2200,10 +2215,10 @@
         {
             "tag": "🇨🇦CA | vless | @FreakConfig | 10",
             "type": "vless",
-            "server": "104.21.50.49",
-            "server_port": 2053,
-            "uuid": "06e87d4a-314d-4651-af86-d4f55624159a",
-            "flow": "xtls-rprx-vision",
+            "server": "104.18.202.232",
+            "server_port": 443,
+            "uuid": "4291f2c0-887c-4a39-b74c-aa8c0b755650",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -2212,7 +2227,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "bia-code-v2.alphav.top",
+                "server_name": "pr.valivali.top",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -2222,7 +2237,7 @@
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@V2ray_Alpha @V2ray_Alpha @V2ray_Alpha",
+                "service_name": "@vmesskhodam",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
