@@ -151,7 +151,7 @@
                 "🇨🇦CA | vless | @Proxy_PJ | 1",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇨🇷CR | vless | @v2ray_swhil | 17",
-                "🇨🇷CR | vless | @proxyymeliii | 18",
+                "🇨🇷CR | vless | @proxyymeliii | 16",
                 "🇨🇦CA | vless | @MsV2ray | 13",
                 "🇨🇦CA | vless | @v2ray1_ng | 8",
                 "🏳️XX | vmess | @vless_vmess | 8",
@@ -160,7 +160,7 @@
                 "🇨🇦CA | vless | @DailyV2RY | 140",
                 "🇨🇦CA | vless | @MehradLearn | 9",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 18",
-                "🇨🇷CR | vless | @ConfigsHUB | 16",
+                "🇨🇦CA | vless | @ConfigsHUB | 16",
                 "🇨🇳CN | vmess | @yaney_01 | 14",
                 "🇨🇷CR | vmess | @Hope_Net | 16",
                 "🇨🇦CA | vless | @VPNCLOP | 0",
@@ -238,7 +238,7 @@
                 "🇨🇦CA | vless | @Proxy_PJ | 1",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇨🇷CR | vless | @v2ray_swhil | 17",
-                "🇨🇷CR | vless | @proxyymeliii | 18",
+                "🇨🇷CR | vless | @proxyymeliii | 16",
                 "🇨🇦CA | vless | @MsV2ray | 13",
                 "🇨🇦CA | vless | @v2ray1_ng | 8",
                 "🏳️XX | vmess | @vless_vmess | 8",
@@ -247,7 +247,7 @@
                 "🇨🇦CA | vless | @DailyV2RY | 140",
                 "🇨🇦CA | vless | @MehradLearn | 9",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 18",
-                "🇨🇷CR | vless | @ConfigsHUB | 16",
+                "🇨🇦CA | vless | @ConfigsHUB | 16",
                 "🇨🇳CN | vmess | @yaney_01 | 14",
                 "🇨🇷CR | vmess | @Hope_Net | 16",
                 "🇨🇦CA | vless | @VPNCLOP | 0",
@@ -1542,11 +1542,11 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @proxyymeliii | 18",
+            "tag": "🇨🇷CR | vless | @proxyymeliii | 16",
             "type": "vless",
-            "server": "V2ray.motorcycles",
-            "server_port": 2087,
-            "uuid": "7a705576-967e-4425-aed0-45fe16524337",
+            "server": "All.SHHPROXY.monster",
+            "server_port": 443,
+            "uuid": "9803169e-d7c6-495d-850f-6d78a88a2d00",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1556,7 +1556,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "FreeV2rayng.SHHPROXY.monster",
+                "server_name": "FreeV2rayng.SHHPROXY.motorcycles",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1565,11 +1565,11 @@
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "FreeV2rayng.SHHPROXY.monster"
-                }
+                "type": "grpc",
+                "service_name": "@Shh_Proxy,@Shh_Proxy",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1786,11 +1786,11 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇷CR | vless | @ConfigsHUB | 16",
+            "tag": "🇨🇦CA | vless | @ConfigsHUB | 16",
             "type": "vless",
-            "server": "190.93.246.241",
-            "server_port": 2096,
-            "uuid": "4d770f75-877f-42c2-d5a4-b643694280d1",
+            "server": "space.globalnetvpn.info",
+            "server_port": 8443,
+            "uuid": "9dcb0e41-93a3-4442-b040-e45601b6ac08",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1800,7 +1800,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "mt.AntiV2ray.site",
+                "server_name": "global.globalnetvpn.site",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1810,7 +1810,7 @@
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2",
+                "service_name": "@global_net_vpn",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
