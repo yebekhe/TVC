@@ -118,7 +118,6 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇬🇧GB | ss | @V2rayCollectorDonate | 19","type":"ss","server":"uk.fanqiecloud.top","port":24504,"password":"9718396a-f078-4a51-a38d-69b12f80cfaa","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇸🇪SE | trojan | @PrivateVPNs | 18","type":"trojan","server":"51.20.156.148","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇸🇪SE | trojan | @DirectVPN | 18","type":"trojan","server":"51.21.111.194","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
@@ -129,6 +128,7 @@ proxies:
   - {"name":"🇨🇷CR | vmess | @Hope_Net | 16","type":"vmess","server":"190.93.246.119","port":"80","cipher":"auto","uuid":"b7fdc31a-3f0b-45f1-aa0e-d5d883ac5c4e","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/QUeMEWutZAndOVVMwhRJqh28","headers":{"host":"m.iranspeed.shop"}}}
   - {"name":"🇮🇷IR | vmess | @MrV2Ray | 7","type":"vmess","server":"158.58.188.21","port":"17008","cipher":"auto","uuid":"895db088-8973-4111-ad59-6429df2dd780","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 9","type":"vmess","server":"v2line.telegram.channel.1371.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"443","cipher":"auto","uuid":"540bfb2c-2b26-4154-b5be-55d08bf40add","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":""}}}
+  - {"name":"🇨🇦CA | vmess | @forwardv2ray | 18","type":"vmess","server":"162.159.138.110","port":"2052","cipher":"auto","uuid":"1628151c-3b79-4f24-aa66-1dd2f8740d69","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mg_cdn.yunjisuan.cf"}}}
   - {"name":"🇺🇸US | vmess | @eliya_chiter0 | 3","type":"vmess","server":"198.23.254.24","port":"43380","cipher":"auto","uuid":"120dfc06-593d-4b80-a299-0f03e800e307","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
@@ -136,7 +136,6 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇬🇧GB | ss | @V2rayCollectorDonate | 19'
       - '🇸🇪SE | trojan | @PrivateVPNs | 18'
       - '🇸🇪SE | trojan | @DirectVPN | 18'
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
@@ -147,6 +146,7 @@ proxy-groups:
       - '🇨🇷CR | vmess | @Hope_Net | 16'
       - '🇮🇷IR | vmess | @MrV2Ray | 7'
       - '🇺🇸US | vmess | @v2Line | 9'
+      - '🇨🇦CA | vmess | @forwardv2ray | 18'
       - '🇺🇸US | vmess | @eliya_chiter0 | 3'
   - name: URL-TEST
     type: url-test
@@ -154,7 +154,6 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇬🇧GB | ss | @V2rayCollectorDonate | 19'
       - '🇸🇪SE | trojan | @PrivateVPNs | 18'
       - '🇸🇪SE | trojan | @DirectVPN | 18'
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
@@ -165,13 +164,13 @@ proxy-groups:
       - '🇨🇷CR | vmess | @Hope_Net | 16'
       - '🇮🇷IR | vmess | @MrV2Ray | 7'
       - '🇺🇸US | vmess | @v2Line | 9'
+      - '🇨🇦CA | vmess | @forwardv2ray | 18'
       - '🇺🇸US | vmess | @eliya_chiter0 | 3'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇬🇧GB | ss | @V2rayCollectorDonate | 19'
       - '🇸🇪SE | trojan | @PrivateVPNs | 18'
       - '🇸🇪SE | trojan | @DirectVPN | 18'
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
@@ -182,6 +181,7 @@ proxy-groups:
       - '🇨🇷CR | vmess | @Hope_Net | 16'
       - '🇮🇷IR | vmess | @MrV2Ray | 7'
       - '🇺🇸US | vmess | @v2Line | 9'
+      - '🇨🇦CA | vmess | @forwardv2ray | 18'
       - '🇺🇸US | vmess | @eliya_chiter0 | 3'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
