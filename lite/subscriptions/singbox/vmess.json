@@ -190,9 +190,9 @@
         {
             "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
             "type": "vmess",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "2de7cd7b-a51a-441b-ed18-aef636198bc9",
+            "server": "heleneski.ravenxer.top",
+            "server_port": 2096,
+            "uuid": "c99de061-8231-4e3c-abe2-13b5560fc39c",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -203,11 +203,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "heleneski.ravenxer.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/@vpn_whal,@vpn_whal",
+                "path": "\/",
                 "headers": {
-                    "Host": ""
+                    "Host": "heleneski.ravenxer.top"
                 }
             }
         },
