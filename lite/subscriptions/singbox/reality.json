@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇹🇷TR | vless | @reality_daily | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇩🇪DE | vless | @Lockey_vpn | 15",
@@ -134,6 +135,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇹🇷TR | vless | @reality_daily | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇩🇪DE | vless | @Lockey_vpn | 15",
@@ -176,6 +178,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇹🇷TR | vless | @reality_daily | 4",
+            "type": "vless",
+            "server": "83.217.9.129",
+            "server_port": 2052,
+            "uuid": "583a3278-4f0a-4233-bfce-dd4a7e9f8018",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.who.int",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "LcxFmCYFy0l5706ZebAS5Bu7JucNpP0HV6ainy3uGlw",
+                    "short_id": "776c6e61"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
@@ -824,7 +855,7 @@
             "type": "vless",
             "server": "91.107.190.232",
             "server_port": 443,
-            "uuid": "---GozargahVPN----",
+            "uuid": "----GozargahVPN----",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
