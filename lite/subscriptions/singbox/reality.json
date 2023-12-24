@@ -106,15 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇷IR | vless | @Helix_Servers | 11",
-                "🇹🇷TR | vless | @reality_daily | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
+                "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇩🇪DE | vless | @Lockey_vpn | 15",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @v2logy | 17",
                 "🏳️XX | vless | @ProxyForOpeta | 6",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
+                "🇩🇪DE | vless | @v2rayNG_Matsuri | 15",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 15",
+                "🇸🇪SE | vless | @VmessProtocol | 14",
                 "🇩🇪DE | vless | @DailyV2RY | 80",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 56",
@@ -133,15 +134,16 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇷IR | vless | @Helix_Servers | 11",
-                "🇹🇷TR | vless | @reality_daily | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
+                "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇩🇪DE | vless | @Lockey_vpn | 15",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @v2logy | 17",
                 "🏳️XX | vless | @ProxyForOpeta | 6",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
+                "🇩🇪DE | vless | @v2rayNG_Matsuri | 15",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 15",
+                "🇸🇪SE | vless | @VmessProtocol | 14",
                 "🇩🇪DE | vless | @DailyV2RY | 80",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 56",
@@ -176,71 +178,6 @@
             "type": "dns"
         },
         {
-            "tag": "🇮🇷IR | vless | @Helix_Servers | 11",
-            "type": "vless",
-            "server": "87.107.102.248",
-            "server_port": 2053,
-            "uuid": "08a3e093-b2ad-4052-8b26-edd462c344db",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdn.discordapp.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "xyz",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇹🇷TR | vless | @reality_daily | 4",
-            "type": "vless",
-            "server": "83.217.9.129",
-            "server_port": 2052,
-            "uuid": "583a3278-4f0a-4233-bfce-dd4a7e9f8018",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.who.int",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "LcxFmCYFy0l5706ZebAS5Bu7JucNpP0HV6ainy3uGlw",
-                    "short_id": "776c6e61"
-                }
-            }
-        },
-        {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
             "type": "vless",
             "server": "78.47.67.130",
@@ -271,6 +208,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @ARv2ray | 13",
+            "type": "vless",
+            "server": "167.235.150.254",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "deb.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "t83-J2ZN8HutdUPmqt6yPOUlE5FFG0B_Ru6-TbfNRwA",
+                    "short_id": "1786f597a2dce0f1"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -457,6 +430,35 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @v2rayNG_Matsuri | 15",
+            "type": "vless",
+            "server": "abaddons.uk",
+            "server_port": 24855,
+            "uuid": "778a7501-20cb-4fc8-8d14-555e79c8b9ed",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "discord.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "njqHW3AIPF_H7yO-ntABsOc6kLhCQwfzE1P6zZXgcms",
+                    "short_id": "618d5867"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | vless | @FalconPolV2rayNG | 15",
             "type": "vless",
             "server": "49.13.159.122",
@@ -490,6 +492,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇸🇪SE | vless | @VmessProtocol | 14",
+            "type": "vless",
+            "server": "16.16.241.43",
+            "server_port": 8443,
+            "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.mozorg.moz.works",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "sZEnqZD-cr50JoFFTfq9tl8e6SWQoSTBmHBq94hxN0g",
+                    "short_id": "3c"
+                }
             }
         },
         {
