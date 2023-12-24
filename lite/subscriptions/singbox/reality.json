@@ -120,6 +120,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 56",
                 "🇩🇪DE | vless | @Capoit | 5",
                 "🇫🇮FI | vless | @flyv2ray | 18",
+                "🇩🇪DE | vless | @forwardv2ray | 18",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇩🇪DE | vless | @proxy_mtm | 9",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -147,6 +148,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 56",
                 "🇩🇪DE | vless | @Capoit | 5",
                 "🇫🇮FI | vless | @flyv2ray | 18",
+                "🇩🇪DE | vless | @forwardv2ray | 18",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇩🇪DE | vless | @proxy_mtm | 9",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -653,6 +655,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "5.75.213.198",
+            "server_port": 2096,
+            "uuid": "a833584f-c5f1-4b2c-8f7e-8a7fd896822a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "jeJlKIykDoOH-iLFVuCP7T9YZZxzQZuddSWGJtaOjxI",
+                    "short_id": "75049ef0"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
