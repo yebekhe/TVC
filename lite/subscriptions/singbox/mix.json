@@ -172,6 +172,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 11",
                 "🇹🇷TR | vless | @IRN_VPN | 2",
                 "🇫🇮FI | vless | @flyv2ray | 17",
+                "🇨🇦CA | vless | @forwardv2ray | 17",
                 "🇨🇦CA | vless | @FAKEOFTVC | 6",
                 "🇨🇦CA | vless | @mehrosaboran | 6",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -256,6 +257,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 11",
                 "🇹🇷TR | vless | @IRN_VPN | 2",
                 "🇫🇮FI | vless | @flyv2ray | 17",
+                "🇨🇦CA | vless | @forwardv2ray | 17",
                 "🇨🇦CA | vless | @FAKEOFTVC | 6",
                 "🇨🇦CA | vless | @mehrosaboran | 6",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -1706,9 +1708,9 @@
         {
             "tag": "🇨🇦CA | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "ir.ifi1.shopiiiiing.cfd",
+            "server": "ir.ig3.shopiiiiing.cfd",
             "server_port": 80,
-            "uuid": "34190107-f315-4ddf-d6d4-7f9f87af715b",
+            "uuid": "1265968a-26c0-42e5-bf1d-8857a4f5cddb",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1720,7 +1722,7 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "ir.ifi1.shopiiiiing.cfd"
+                    "Host": "ir.ig3.shopiiiiing.cfd"
                 }
             }
         },
@@ -2165,6 +2167,37 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 17",
+            "type": "vless",
+            "server": "104.21.19.124",
+            "server_port": 2087,
+            "uuid": "884f9b2c-f0c5-44dd-a68e-3e39ce93bb39",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cf-wkrs-pages-vless-aoy.pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/https:\/\/www.udomain.hk\/sc\/customer\/case-study?_gl",
+                "headers": {
+                    "Host": "cf-wkrs-pages-vless-aoy.pages.dev"
+                }
             }
         },
         {
