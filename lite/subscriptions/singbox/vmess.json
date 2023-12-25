@@ -106,10 +106,11 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🏳️XX | vmess | @V2rayCollectorDonate | 19",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇻🇳VN | vmess | @mftizi | 18",
                 "🇫🇷FR | vmess | @oneclickvpnkeys | 8",
+                "🇸🇪SE | vmess | @ConfigsHUB | 17",
                 "🇨🇷CR | vmess | @Hope_Net | 16",
                 "🇮🇷IR | vmess | @MrV2Ray | 8",
                 "🇺🇸US | vmess | @v2Line | 9",
@@ -120,10 +121,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🏳️XX | vmess | @V2rayCollectorDonate | 19",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇻🇳VN | vmess | @mftizi | 18",
                 "🇫🇷FR | vmess | @oneclickvpnkeys | 8",
+                "🇸🇪SE | vmess | @ConfigsHUB | 17",
                 "🇨🇷CR | vmess | @Hope_Net | 16",
                 "🇮🇷IR | vmess | @MrV2Ray | 8",
                 "🇺🇸US | vmess | @v2Line | 9",
@@ -150,10 +152,10 @@
             "type": "dns"
         },
         {
-            "tag": "🏳️XX | vmess | @V2rayCollectorDonate | 19",
+            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
             "type": "vmess",
-            "server": "[2602:294:0:f5:1234:4321:dc1e:1]",
-            "server_port": 8080,
+            "server": "www.visa.com",
+            "server_port": 443,
             "uuid": "548760e0-2de5-437d-a8ac-2b32b80424a8",
             "security": "auto",
             "alter_id": 0,
@@ -165,11 +167,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "involved-theoretical-purse-cool.trycloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/548760e0-2de5-437d-a8ac-2b32b80424a8-vm",
                 "headers": {
-                    "Host": "[2602:294:0:f5:1234:4321:dc1e:1]"
+                    "Host": "involved-theoretical-purse-cool.trycloudflare.com"
                 }
             }
         },
@@ -220,6 +232,23 @@
             "server": "146.59.147.250",
             "server_port": 29776,
             "uuid": "82447abf-dcb9-408a-9ca6-79e0a7698d08",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇸🇪SE | vmess | @ConfigsHUB | 17",
+            "type": "vmess",
+            "server": "16.171.13.95",
+            "server_port": 43921,
+            "uuid": "e209e3e9-e690-40d7-a19f-e7c46eb5decc",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
