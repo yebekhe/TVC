@@ -116,6 +116,7 @@
                 "🇸🇪SE | vless | @VmessProtocol | 16",
                 "🇩🇪DE | vless | @VPNCLOP | 0",
                 "🏳️XX | vless | @fnet00 | 10",
+                "🇩🇪DE | vless | @Outlinev2rayNG | 13",
                 "🇩🇪DE | vless | @Capital_NET | 56",
                 "🇩🇪DE | vless | @Capoit | 5",
                 "🏳️XX | vless | @forwardv2ray | 19",
@@ -141,6 +142,7 @@
                 "🇸🇪SE | vless | @VmessProtocol | 16",
                 "🇩🇪DE | vless | @VPNCLOP | 0",
                 "🏳️XX | vless | @fnet00 | 10",
+                "🇩🇪DE | vless | @Outlinev2rayNG | 13",
                 "🇩🇪DE | vless | @Capital_NET | 56",
                 "🇩🇪DE | vless | @Capoit | 5",
                 "🏳️XX | vless | @forwardv2ray | 19",
@@ -512,6 +514,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@configMs",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @Outlinev2rayNG | 13",
+            "type": "vless",
+            "server": "5.75.213.145",
+            "server_port": 5071,
+            "uuid": "6064ecd8-88bf-49aa-9bc1-3c891f3ebf94",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "autodiscover.greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "OMBq7DleUnrvuR-S5gc2Zh8vGZovNmRpv1MSdBk47Go",
+                    "short_id": "57019b85"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "--------telegram:funza--------telegram:funza--------telegram:funza--------telegram:funza--------telegram:funza--------telegram:funza--------telegram:funza--------telegram:funza--------telegram:funza",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
