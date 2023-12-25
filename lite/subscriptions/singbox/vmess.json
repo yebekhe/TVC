@@ -108,11 +108,13 @@
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇻🇳VN | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 9",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+                "🇮🇷IR | vmess | @ConfigsHUB | 19",
                 "🇨🇷CR | vmess | @Hope_Net | 16",
                 "🇮🇷IR | vmess | @MrV2Ray | 7",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇬🇧GB | vmess | @eliya_chiter0 | 2"
+                "🇺🇸US | vmess | @forwardv2ray | 19",
+                "🇫🇷FR | vmess | @eliya_chiter0 | 1"
             ]
         },
         {
@@ -121,11 +123,13 @@
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇻🇳VN | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 9",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+                "🇮🇷IR | vmess | @ConfigsHUB | 19",
                 "🇨🇷CR | vmess | @Hope_Net | 16",
                 "🇮🇷IR | vmess | @MrV2Ray | 7",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇬🇧GB | vmess | @eliya_chiter0 | 2"
+                "🇺🇸US | vmess | @forwardv2ray | 19",
+                "🇫🇷FR | vmess | @eliya_chiter0 | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -189,7 +193,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 9",
+            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
             "type": "vmess",
             "server": "daqehwiv.site",
             "server_port": 443,
@@ -219,6 +223,33 @@
                 "path": "\/kwhmvws",
                 "headers": {
                     "Host": "daqehwiv.site"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇷IR | vmess | @ConfigsHUB | 19",
+            "type": "vmess",
+            "server": "1.neper.xyz",
+            "server_port": 8443,
+            "uuid": "898d9349-111a-4c40-af7d-be519e3a7534",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
@@ -305,11 +336,45 @@
             }
         },
         {
-            "tag": "🇬🇧GB | vmess | @eliya_chiter0 | 2",
+            "tag": "🇺🇸US | vmess | @forwardv2ray | 19",
             "type": "vmess",
-            "server": "51.75.162.199",
-            "server_port": 61570,
-            "uuid": "e6aab1e0-ede0-47c3-b01c-f34a498db838",
+            "server": "198.41.202.5",
+            "server_port": 443,
+            "uuid": "9b68a517-388b-4f51-b4c4-c16c2f94886a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ipnon.boredhot.cloud",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ipnon.boredhot.cloud",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇷FR | vmess | @eliya_chiter0 | 1",
+            "type": "vmess",
+            "server": "146.59.147.250",
+            "server_port": 29776,
+            "uuid": "82447abf-dcb9-408a-9ca6-79e0a7698d08",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
