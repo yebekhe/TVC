@@ -1,52 +1,122 @@
-# V2ray Collector
+# جمع‌آوری‌کننده V2ray
+
+
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/yebekhe/TVC?color=5D6D7E" alt="Github Top Language">
-  <img src="https://img.shields.io/github/license/yebekhe/TVC?color=5D6D7E" alt="GitHub license">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/yebekhe/TVC">
-  <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/t/yebekhe/TVC">
+  <b>این پروژه فقط برای استفاده شخصی و یادگیری از پروژه اصلی فورک شده و کلیه امتیاز ها برای پروژه اصلی می باشد.!</b>
 </p>
+
+## دریاف لینک های اشتراک:
+
+
+
 
 <p align="center">
-  <b>This project is intended for educational purposes only. Any other use of it, including commercial, personal, or non-educational use, is not accepted!</b>
+<p align="center">
+  <b>نسخه سبک.!</b>
 </p>
+ا
 
-<p align="center">This is a PHP script that collects V2Ray Configs from various Channels and saves them to different Subscription files based on their protocol type (SHADOWSOCKS, VLESS, VMESS, TROJAN, TUIC and HYSTERIA2).</p>
+| Core | VMess | VLess | Tuic | Hysteria2 |
+| --- | --- | --- | --- | --- |
+| نسخه سبک | [لینک VMess](https://raw.githubusercontent.com/mostafa5804/mosi/main/lite/subscriptions/xray/normal/vmess) | [لینک VLess](https://raw.githubusercontent.com/mostafa5804/mosi/main/lite/subscriptions/xray/normal/vless) | [لینک Tuic](https://raw.githubusercontent.com/mostafa5804/mosi/main/lite/subscriptions/xray/normal/tuic) | [لینک Hysteria2](https://raw.githubusercontent.com/mostafa5804/mosi/main/lite/subscriptions/xray/normal/hy2) |
 
-## Instructions & Usage
 
-To use this project, simply import the subscription links into your preferred client. Ensure that your client supports at least SHADOWSOCKS, VLESS, VMESS, TROJAN, TUIC and HYSTERIA2.
 
-You can access the project's subscription links through our Telegram bot: [TVC BOT](https://t.me/V2rayCollectorBot) or use Tables bellow.
+<p align="center">
+  <b>نسخه کامل!</b>
+</p>
+ا
 
-| Core | Mix |
+| Core | VMess | VLess | Tuic | Hysteria2 |
+| --- | --- | --- | --- | --- |
+| نسخه کامل | [لینک VMess](https://raw.githubusercontent.com/mostafa5804/mosi/main/subscriptions/xray/normal/vmess) | [لینک VLess](https://raw.githubusercontent.com/mostafa5804/mosi/subscriptions/xray/normal/vless) |  [لینک Tuic](https://raw.githubusercontent.com/mostafa5804/mosi/main/subscriptions/xray/normal/tuic) | [لینک Hysteria2](https://raw.githubusercontent.com/mostafa5804/mosi/main/subscriptions/xray/normal/hy2) |
+
+
+
+<p align="center">
+  <b>این لینک اشتراک هم بسیار عالی و مناسب می باشد -لینک اشتراک پرسرعت و پیشنهادی</b>
+</p>
+ا
+
+| Core | Mix| 
 | --- | --- | 
-| Xray | [Group Mix Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/normal/mix) |
-| Xray (Base64) | [Group Mix Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/base64/mix) |
-| Singbox | [Group Mix Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/singbox/mix.json) |
-| Clash | [Group Mix Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/clash/mix) |
-| Clash.Meta | [Group Mix Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/meta/mix) | 
-| Surfboard | [Group Mix Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/surfboard/mix) |
+| نسخه پیشنهادی| [لینک اشتراک](https://api.yebekhe.link/shervin/) | 
 
-| Core | VMess | VLess | Reality | Trojan | Shadowsocks | Tuic | Hysteria2 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Xray | [VMess Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/normal/vmess) | [VLess Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/normal/vless) | [Reality Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/normal/reality) | [Trojan Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/normal/trojan) | [Shadowsocks Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/normal/ss) | [Tuic Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/normal/tuic) | [Hysteria2 Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/normal/hy2) |
-| Xray (Base64) | [VMess Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/base64/vmess) | [VLess Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/base64/vless) | [Reality Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/base64/reality) | [Trojan Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/base64/trojan) | [Shadowsocks Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/base64/ss) | [Tuic Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/base64/tuic) | [Hysteria2 Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/base64/hy2) |
-| Singbox | [VMess Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/singbox/vmess.json) | [VLess Link](hhttps://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/singbox/vless.json) | [Reality Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/singbox/reality.json) | [Trojan Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/singbox/trojan.json) | [Shadowsocks Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/singbox/ss.json) | [Tuic Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/singbox/tuic.json) | [Hysteria2 Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/singbox/hy3.json) |
-| Clash | [VMess Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/clash/vmess) | VLess Not Supported | Reality Not Supported | [Trojan Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/clash/trojan) | [Shadowsocks Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/clash/ss) | Tuic Not Supported | Hysteria2 Not Supported |
-| Clash.Meta | [VMess Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/meta/vmess) | [VLess Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/meta/vless) | [Reality Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/meta/reality) | [Trojan Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/meta/trojan) | [Shadowsocks Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/meta/ss) | Tuic Not Supported  | Hysteria2 Not Supported  |
-| Surfboard | [VMess Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/surfboard/vmess) | VLess Not Supported  | Reality Not Supported  | [Trojan Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/surfboard/trojan) | [Shadowsocks Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/surfboard/ss) | Tuic Not Supported  | Hysteria2 Not Supported  |
 
-## Node Sources
+</p>
 
-This project currently utilizes Channels as the source of v2ray nodes.
+## دانلود نرم افزار های پیشنهادی
+برای استفاده از این پروژه، فقط لینک‌های اشتراک را در کلاینت ترجیحی خود وارد کنید. اطمینان حاصل کنید که کلاینت شما حداقل از پروتکل‌های SHADOWSOCKS، VLESS، VMESS، TROJAN، TUIC و HYSTERIA2 پشتیبانی می‌کند.
+میتونید از برنامه های زیر جهت استفاده از لینک های اشتراک استفاده کنید:
 
-You can access the Channels list through our Telegram bot: [TVC BOT](https://t.me/V2rayCollectorBot).
 
-## Contribution
+## hiddify-next (نسخه پیشنهادی)
+<table>
+    <thead align=left>
+        <tr>
+            <th>OS</th>
+            <th>Download</th>
+        </tr>
+    </thead>
+    <tbody align=left>
+        <tr>
+        <td>Android</td><td>
+            <a href="https://play.google.com/store/apps/details?id=app.hiddify.com"><img width=150px src="https://github.com/hiddify/hiddify-next/blob/main/docs/google-play-badge.png"></a><br>
+            <a href="https://github.com/hiddify/hiddify-next/releases/latest/download/hiddify-android-universal.apk"><img src="https://img.shields.io/badge/APK-Universal-044d29.svg?logo=github"></a><br>
+            <a href="https://github.com/hiddify/hiddify-next/releases/latest/download/hiddify-android-arm64.apk"><img src="https://img.shields.io/badge/APK-ARMv8-168039.svg?logo=github"></a><br>
+            <a href="https://github.com/hiddify/hiddify-next/releases/latest/download/hiddify-android-arm7.apk"><img src="https://img.shields.io/badge/APK-ARMv7-45bf55.svg?logo=github"></a><br>
+            <a href="https://github.com/hiddify/hiddify-next/releases/latest/download/hiddify-android-x86_64.apk"><img src="https://img.shields.io/badge/APK-x64-96ed89.svg?logo=github"></a>
+        </td>
+        </tr>
+        <tr>
+            <td>Windows</td>
+            <td><a href="https://github.com/hiddify/hiddify-next/releases/latest/download/hiddify-windows-x64-setup.zip"><img src="https://img.shields.io/badge/Setup-x64-0078d7.svg?logo=github"></a><br>
+            <a href="https://github.com/hiddify/hiddify-next/releases/latest/download/hiddify-windows-x64-portable.zip"><img src="https://img.shields.io/badge/Portable-x64-2d7d9a.svg?logo=github"></a>
+        </td>
+        </tr>
+        <tr>
+            <td>macOS</td>
+            <td><a href="https://github.com/hiddify/hiddify-next/releases/latest/download/hiddify-macos-universal.zip"><img src="https://img.shields.io/badge/DMG-Universal-ea005e.svg?logo=github"></a></td>
+        </tr>
+        <tr>
+            <td>Linux</td>
+            <td><a href="https://github.com/hiddify/hiddify-next/releases/latest/download/hiddify-linux-x64.zip"><img src="https://img.shields.io/badge/AppImage-x64-f84e29.svg?logo=github"> </a></td>
+        </tr>
+    </tbody>
+</table>
 
-If you have a Channel and you want to add it to this project or you know Channels that can be used in this project, you can ask for addition in the Issues section or in our [Telegram group](https://t.me/V2rayCollectorGroup).
 
-## License
+</div>
 
-This project is licensed under the AGPL-3.0 license - see the LICENSE file for details.
+
+## NekoBox (اندروید)
+
+
+[GitHub Releases 下载](https://github.com/Matsuridayo/NekoBoxForAndroid/releases)
+
+[Google Play](https://play.google.com/store/apps/details?id=moe.nb4a)
+
+
+## NekoRay / NekoBox For PC (نسخه پیشنهادی جهت ویندوز)
+
+فرمت قابل حمل، بدون نصب. برای دانلود باینری های از پیش کامپایل شده به Releases بروید، آنها را باز کرده و از آنها استفاده کنید.
+
+[![GitHub All Releases](https://img.shields.io/github/downloads/Matsuridayo/nekoray/total?label=downloads-total&logo=github&style=flat-square)](https://github.com/Matsuridayo/nekoray/releases)
+
+[Download](https://github.com/Matsuridayo/nekoray/releases)
+
+## منابع
+
+نسخه اصلی این پروزه رو می‌توانید به لینک‌های اشتراک پروژه از طریق ربات تلگرام  دسترسی پیدا کنید: [ربات TVC](https://t.me/V2rayCollectorBot) یا  [صفحه پروژه TVC](https://github.com/yebekhe/TVC)  استفاده کنید.
+در حال حاضر این پروژه از کانال‌ها به عنوان منبع نودهای v2ray استفاده می‌کند.
+
+
+##
+## مجوز
+
+این پروژه تحت مجوز AGPL-3.0 ارائه شده است - جزئیات را در فایل LICENSE ببینید.
+
+
+
+1
