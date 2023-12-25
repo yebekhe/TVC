@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇫🇷FR | trojan | @PrivateVPNs | 14 = trojan, 13.36.23.221, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
-🇬🇧GB | trojan | @DirectVPN | 14 = trojan, 13.41.160.177, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
-🇨🇦CA | trojan | @ConfigsHUB | 19 = trojan, 1eovhk66etg.servecounterstrike.com, 8443, password = qbkjBPVx1j, udp-delay = true, skip-cert-verify = false, sni = AkakAlLams.moOkomeIlz.homeS, ws = false
+🇩🇪DE | trojan | @PrivateVPNs | 17 = trojan, 18.157.189.147, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
+🇫🇷FR | trojan | @DirectVPN | 17 = trojan, 13.39.143.164, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 14,🇬🇧GB | trojan | @DirectVPN | 14,🇨🇦CA | trojan | @ConfigsHUB | 19
-URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 14,🇬🇧GB | trojan | @DirectVPN | 14,🇨🇦CA | trojan | @ConfigsHUB | 19
-FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 14,🇬🇧GB | trojan | @DirectVPN | 14,🇨🇦CA | trojan | @ConfigsHUB | 19
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | trojan | @PrivateVPNs | 17,🇫🇷FR | trojan | @DirectVPN | 17
+URL-TEST = url-test,🇩🇪DE | trojan | @PrivateVPNs | 17,🇫🇷FR | trojan | @DirectVPN | 17
+FALLBACK = fallback,🇩🇪DE | trojan | @PrivateVPNs | 17,🇫🇷FR | trojan | @DirectVPN | 17
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
