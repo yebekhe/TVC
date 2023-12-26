@@ -106,20 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | tuic | @TUICity | 0",
-                "🏳️XX | tuic | @TUICity | 1",
-                "🇺🇸US | tuic | @TUICity | 2",
-                "🏳️XX | tuic | @TUICity | 11"
+                "🇺🇸US | tuic | @TUICity | 1",
+                "🏳️XX | tuic | @TUICity | 2",
+                "🇺🇸US | tuic | @TUICity | 3",
+                "🇺🇸US | tuic | @TUICity | 4"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | tuic | @TUICity | 0",
-                "🏳️XX | tuic | @TUICity | 1",
-                "🇺🇸US | tuic | @TUICity | 2",
-                "🏳️XX | tuic | @TUICity | 11"
+                "🇺🇸US | tuic | @TUICity | 1",
+                "🏳️XX | tuic | @TUICity | 2",
+                "🇺🇸US | tuic | @TUICity | 3",
+                "🇺🇸US | tuic | @TUICity | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,7 +142,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | tuic | @TUICity | 0",
+            "tag": "🇺🇸US | tuic | @TUICity | 1",
             "type": "tuic",
             "server": "64.110.25.10",
             "server_port": 11227,
@@ -165,7 +165,7 @@
             }
         },
         {
-            "tag": "🏳️XX | tuic | @TUICity | 1",
+            "tag": "🏳️XX | tuic | @TUICity | 2",
             "type": "tuic",
             "server": "[2602:294:0:f5:1234:4321:dc1e:1]",
             "server_port": 28029,
@@ -188,7 +188,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | tuic | @TUICity | 2",
+            "tag": "🇺🇸US | tuic | @TUICity | 3",
             "type": "tuic",
             "server": "108.181.22.239",
             "server_port": 45600,
@@ -211,12 +211,12 @@
             }
         },
         {
-            "tag": "🏳️XX | tuic | @TUICity | 11",
+            "tag": "🇺🇸US | tuic | @TUICity | 4",
             "type": "tuic",
-            "server": "[2a02:180:6:1::559]",
-            "server_port": 17412,
-            "uuid": "e79ff713-c339-4640-9767-e6fd5d5f6c34",
-            "password": "e79ff713-c339-4640-9767-e6fd5d5f6c34",
+            "server": "108.181.22.155",
+            "server_port": 12255,
+            "uuid": "ed6a538a-6e66-4f21-a769-4b389bb2f3ab",
+            "password": "dongtaiwang",
             "congestion_control": "bbr",
             "udp_relay_mode": "native",
             "zero_rtt_handshake": false,
@@ -224,8 +224,8 @@
             "network": "tcp",
             "tls": {
                 "enabled": true,
-                "disable_sni": false,
-                "server_name": "telegramEUT-VPN.ddns.net",
+                "disable_sni": true,
+                "server_name": "",
                 "insecure": true,
                 "alpn": [
                     "h3",
