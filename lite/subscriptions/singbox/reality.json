@@ -111,14 +111,13 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇮🇷IR | vless | @V2rayCollectorDonate | 19",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
+                "🇩🇪DE | vless | @customv2ray | 11",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 12",
                 "🇩🇪DE | vless | @v2ray_swhil | 19",
-                "🇺🇸US | vless | @DailyV2RY | 58",
-                "🇸🇪SE | vless | @ConfigsHUB | 19",
+                "🇨🇦CA | vless | @DailyV2RY | 58",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 56",
                 "🇩🇪DE | vless | @Capoit | 9",
-                "🇩🇪DE | vless | @FreakConfig | 7",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇸🇪SE | vless | @kingofilter | 18",
@@ -137,14 +136,13 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇮🇷IR | vless | @V2rayCollectorDonate | 19",
                 "🇩🇪DE | vless | @ShadowSocks_s | 1",
+                "🇩🇪DE | vless | @customv2ray | 11",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 12",
                 "🇩🇪DE | vless | @v2ray_swhil | 19",
-                "🇺🇸US | vless | @DailyV2RY | 58",
-                "🇸🇪SE | vless | @ConfigsHUB | 19",
+                "🇨🇦CA | vless | @DailyV2RY | 58",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 56",
                 "🇩🇪DE | vless | @Capoit | 9",
-                "🇩🇪DE | vless | @FreakConfig | 7",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇸🇪SE | vless | @kingofilter | 18",
@@ -354,6 +352,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @customv2ray | 11",
+            "type": "vless",
+            "server": "23.88.116.162",
+            "server_port": 443,
+            "uuid": "c084e53f-c642-4339-b163-0f972a2893b7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_IvMhkNpZ8Y58pMlkI0WdDymFJFpSuWGguAh3Z9gkh8",
+                    "short_id": "b1f54cff"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇩🇪DE | vless | @FalconPolV2rayNG | 12",
             "type": "vless",
             "server": "49.13.53.137",
@@ -426,7 +460,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @DailyV2RY | 58",
+            "tag": "🇨🇦CA | vless | @DailyV2RY | 58",
             "type": "vless",
             "server": "104.26.15.16",
             "server_port": 2083,
@@ -459,35 +493,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇸🇪SE | vless | @ConfigsHUB | 19",
-            "type": "vless",
-            "server": "13.48.129.158",
-            "server_port": 8443,
-            "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "coinmarketcap.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "S5v2QvqWHCZflAQMbFA7530BuQX9f_Ya-onUuUgbFkQ",
-                    "short_id": "fe"
-                }
             }
         },
         {
@@ -586,42 +591,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @FreakConfig | 7",
-            "type": "vless",
-            "server": "5.75.213.198",
-            "server_port": 2096,
-            "uuid": "a833584f-c5f1-4b2c-8f7e-8a7fd896822a",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sourceforge.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "jeJlKIykDoOH-iLFVuCP7T9YZZxzQZuddSWGJtaOjxI",
-                    "short_id": "75049ef0"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
