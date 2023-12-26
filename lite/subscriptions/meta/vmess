@@ -126,7 +126,6 @@ proxies:
   - {"name":"🇨🇷CR | vmess | @Hope_Net | 16","type":"vmess","server":"190.93.246.119","port":"80","cipher":"auto","uuid":"b7fdc31a-3f0b-45f1-aa0e-d5d883ac5c4e","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/QUeMEWutZAndOVVMwhRJqh28","headers":{"host":"m.iranspeed.shop"}}}
   - {"name":"🇮🇷IR | vmess | @MrV2Ray | 5","type":"vmess","server":"158.58.188.22","port":"28367","cipher":"auto","uuid":"12c211ad-19d3-4caf-953b-7900bc404195","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 9","type":"vmess","server":"v2line.telegram.channel.1371.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"443","cipher":"auto","uuid":"540bfb2c-2b26-4154-b5be-55d08bf40add","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":""}}}
-  - {"name":"🇩🇪DE | vmess | @forwardv2ray | 18","type":"vmess","server":"141.95.75.148","port":"443","cipher":"auto","uuid":"ce76d32e-3bc7-4a4f-bf2c-abddb893bed7","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -139,7 +138,6 @@ proxy-groups:
       - '🇨🇷CR | vmess | @Hope_Net | 16'
       - '🇮🇷IR | vmess | @MrV2Ray | 5'
       - '🇺🇸US | vmess | @v2Line | 9'
-      - '🇩🇪DE | vmess | @forwardv2ray | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -152,7 +150,6 @@ proxy-groups:
       - '🇨🇷CR | vmess | @Hope_Net | 16'
       - '🇮🇷IR | vmess | @MrV2Ray | 5'
       - '🇺🇸US | vmess | @v2Line | 9'
-      - '🇩🇪DE | vmess | @forwardv2ray | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -164,7 +161,6 @@ proxy-groups:
       - '🇨🇷CR | vmess | @Hope_Net | 16'
       - '🇮🇷IR | vmess | @MrV2Ray | 5'
       - '🇺🇸US | vmess | @v2Line | 9'
-      - '🇩🇪DE | vmess | @forwardv2ray | 18'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
