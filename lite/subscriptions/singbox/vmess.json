@@ -114,7 +114,6 @@
                 "🇨🇷CR | vmess | @Hope_Net | 16",
                 "🇮🇷IR | vmess | @MrV2Ray | 5",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇬🇧GB | vmess | @forwardv2ray | 18",
                 "🇳🇱NL | vmess | @eliya_chiter0 | 0"
             ]
         },
@@ -130,7 +129,6 @@
                 "🇨🇷CR | vmess | @Hope_Net | 16",
                 "🇮🇷IR | vmess | @MrV2Ray | 5",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇬🇧GB | vmess | @forwardv2ray | 18",
                 "🇳🇱NL | vmess | @eliya_chiter0 | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -231,11 +229,11 @@
         {
             "tag": "🇨🇳CN | vmess | @ConfigsHUB | 17",
             "type": "vmess",
-            "server": "120.233.43.37",
-            "server_port": 52629,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "server": "yes.cnmjcn.net",
+            "server_port": 16626,
+            "uuid": "c2c76420-257f-492a-b20f-6560f3bfa78d",
             "security": "auto",
-            "alter_id": 64,
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -243,6 +241,13 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "yes.cnmjcn.net"
+                }
             }
         },
         {
@@ -322,40 +327,6 @@
             "transport": {
                 "type": "ws",
                 "path": "\/racevpn",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇬🇧GB | vmess | @forwardv2ray | 18",
-            "type": "vmess",
-            "server": "172.99.190.109",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
                 "headers": {
                     "Host": ""
                 }
