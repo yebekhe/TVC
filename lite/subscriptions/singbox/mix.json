@@ -171,7 +171,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 8",
                 "🇹🇷TR | vless | @IRN_VPN | 3",
                 "🇫🇮FI | vless | @flyv2ray | 15",
-                "🏳️XX | vmess | @forwardv2ray | 13",
+                "🇺🇸US | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @FAKEOFTVC | 5",
                 "🇺🇸US | vless | @mehrosaboran | 11",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -256,7 +256,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 8",
                 "🇹🇷TR | vless | @IRN_VPN | 3",
                 "🇫🇮FI | vless | @flyv2ray | 15",
-                "🏳️XX | vmess | @forwardv2ray | 13",
+                "🇺🇸US | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @FAKEOFTVC | 5",
                 "🇺🇸US | vless | @mehrosaboran | 11",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -1705,9 +1705,9 @@
         {
             "tag": "🇨🇦CA | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "172.67.68.23",
-            "server_port": 2053,
-            "uuid": "fc77986a-ca2d-4072-b8a1-7fd16c470752",
+            "server": "ir.ig1.shopiiiiing.cfd",
+            "server_port": 80,
+            "uuid": "04611f7d-717b-4c92-b4f7-f49095d1986f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1715,22 +1715,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "Daily_Configs.DarkMood.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "ir.ig1.shopiiiiing.cfd"
+                }
             }
         },
         {
@@ -2098,16 +2088,13 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @forwardv2ray | 13",
-            "type": "vmess",
-            "server": "mci.mosi.mosipro.ml",
-            "server_port": 443,
-            "uuid": "9A8E326F-9463-42E7-8560-C8FA9EF4D035",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇺🇸US | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "104.18.202.209",
+            "server_port": 2096,
+            "uuid": "5c9a50b1-b004-473c-a047-7dd0a2b1c09d",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -2115,7 +2102,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "Dusseldorf.kotick.site",
+                "server_name": "isra.zedmodeon.top",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -2124,11 +2111,11 @@
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/speedtest",
-                "headers": {
-                    "Host": "Dusseldorf.kotick.site"
-                }
+                "type": "grpc",
+                "service_name": "@ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
