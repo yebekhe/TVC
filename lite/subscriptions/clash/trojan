@@ -118,9 +118,9 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 18","type":"trojan","server":"13.37.110.33","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
-  - {"name":"🇬🇧GB | trojan | @DirectVPN | 18","type":"trojan","server":"18.169.98.94","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
-  - {"name":"🇩🇪DE | trojan | @forwardv2ray | 18","type":"trojan","server":"3.67.17.109","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 18","type":"trojan","server":"52.47.212.150","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇬🇧GB | trojan | @DirectVPN | 18","type":"trojan","server":"13.43.133.93","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇰🇷KR | trojan | @yaney_01 | 10","type":"trojan","server":"64.110.90.224","port":40004,"udp":false,"password":"57edfecf-5694-4a34-8072-54a4f0636a62","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +129,7 @@ proxy-groups:
       - FALLBACK
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
       - '🇬🇧GB | trojan | @DirectVPN | 18'
-      - '🇩🇪DE | trojan | @forwardv2ray | 18'
+      - '🇰🇷KR | trojan | @yaney_01 | 10'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,7 +138,7 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
       - '🇬🇧GB | trojan | @DirectVPN | 18'
-      - '🇩🇪DE | trojan | @forwardv2ray | 18'
+      - '🇰🇷KR | trojan | @yaney_01 | 10'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -146,7 +146,7 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
       - '🇬🇧GB | trojan | @DirectVPN | 18'
-      - '🇩🇪DE | trojan | @forwardv2ray | 18'
+      - '🇰🇷KR | trojan | @yaney_01 | 10'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
