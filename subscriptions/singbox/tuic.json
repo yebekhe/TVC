@@ -106,20 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | tuic | @TUICity | 1",
-                "🏳️XX | tuic | @TUICity | 2",
                 "🇺🇸US | tuic | @TUICity | 3",
-                "🇺🇸US | tuic | @TUICity | 4"
+                "🇺🇸US | tuic | @TUICity | 5",
+                "🏳️XX | tuic | @TUICity | 6",
+                "🇺🇸US | tuic | @TUICity | 8"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | tuic | @TUICity | 1",
-                "🏳️XX | tuic | @TUICity | 2",
                 "🇺🇸US | tuic | @TUICity | 3",
-                "🇺🇸US | tuic | @TUICity | 4"
+                "🇺🇸US | tuic | @TUICity | 5",
+                "🏳️XX | tuic | @TUICity | 6",
+                "🇺🇸US | tuic | @TUICity | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,52 +140,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇺🇸US | tuic | @TUICity | 1",
-            "type": "tuic",
-            "server": "64.110.25.10",
-            "server_port": 11227,
-            "uuid": "764b539f-2d3c-4772-9731-5ebf6984af98",
-            "password": "dongtaiwang.com",
-            "congestion_control": "bbr",
-            "udp_relay_mode": "native",
-            "zero_rtt_handshake": false,
-            "heartbeat": "10s",
-            "network": "tcp",
-            "tls": {
-                "enabled": true,
-                "disable_sni": false,
-                "server_name": "bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3",
-                    "spdy\/3.1"
-                ]
-            }
-        },
-        {
-            "tag": "🏳️XX | tuic | @TUICity | 2",
-            "type": "tuic",
-            "server": "[2602:294:0:f5:1234:4321:dc1e:1]",
-            "server_port": 28029,
-            "uuid": "548760e0-2de5-437d-a8ac-2b32b80424a8",
-            "password": "548760e0-2de5-437d-a8ac-2b32b80424a8",
-            "congestion_control": "bbr",
-            "udp_relay_mode": "native",
-            "zero_rtt_handshake": false,
-            "heartbeat": "10s",
-            "network": "tcp",
-            "tls": {
-                "enabled": true,
-                "disable_sni": false,
-                "server_name": "www.bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3",
-                    "spdy\/3.1"
-                ]
-            }
         },
         {
             "tag": "🇺🇸US | tuic | @TUICity | 3",
@@ -211,7 +165,53 @@
             }
         },
         {
-            "tag": "🇺🇸US | tuic | @TUICity | 4",
+            "tag": "🇺🇸US | tuic | @TUICity | 5",
+            "type": "tuic",
+            "server": "64.110.25.10",
+            "server_port": 11227,
+            "uuid": "764b539f-2d3c-4772-9731-5ebf6984af98",
+            "password": "dongtaiwang.com",
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🏳️XX | tuic | @TUICity | 6",
+            "type": "tuic",
+            "server": "[2602:294:0:f5:1234:4321:dc1e:1]",
+            "server_port": 28029,
+            "uuid": "548760e0-2de5-437d-a8ac-2b32b80424a8",
+            "password": "548760e0-2de5-437d-a8ac-2b32b80424a8",
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "www.bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸US | tuic | @TUICity | 8",
             "type": "tuic",
             "server": "108.181.22.155",
             "server_port": 12255,
