@@ -122,6 +122,7 @@ dns:
 proxies:
   - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 14","type":"trojan","server":"15.188.249.175","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇬🇧GB | trojan | @DirectVPN | 14","type":"trojan","server":"18.171.118.32","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇸🇪SE | trojan | @V2RayTz | 19","type":"trojan","server":"13.53.99.132","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇰🇷KR | trojan | @yaney_01 | 11","type":"trojan","server":"64.110.90.224","port":40004,"udp":false,"password":"57edfecf-5694-4a34-8072-54a4f0636a62","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
@@ -131,6 +132,7 @@ proxy-groups:
       - FALLBACK
       - '🇫🇷FR | trojan | @PrivateVPNs | 14'
       - '🇬🇧GB | trojan | @DirectVPN | 14'
+      - '🇸🇪SE | trojan | @V2RayTz | 19'
       - '🇰🇷KR | trojan | @yaney_01 | 11'
   - name: URL-TEST
     type: url-test
@@ -140,6 +142,7 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 14'
       - '🇬🇧GB | trojan | @DirectVPN | 14'
+      - '🇸🇪SE | trojan | @V2RayTz | 19'
       - '🇰🇷KR | trojan | @yaney_01 | 11'
   - name: FALLBACK
     type: fallback
@@ -148,6 +151,7 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 14'
       - '🇬🇧GB | trojan | @DirectVPN | 14'
+      - '🇸🇪SE | trojan | @V2RayTz | 19'
       - '🇰🇷KR | trojan | @yaney_01 | 11'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
