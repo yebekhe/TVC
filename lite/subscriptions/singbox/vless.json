@@ -116,7 +116,7 @@
                 "🇨🇦CA | vless | @ARv2ray | 14",
                 "🇺🇸US | vless | @Lockey_vpn | 12",
                 "🇮🇷IR | vless | @free_v2rayyy | 10",
-                "🇺🇸US | vless | @lightning6 | 19",
+                "🇨🇷CR | vless | @lightning6 | 19",
                 "🇮🇷IR | vless | @V2rayNGmat | 0",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 14",
@@ -142,11 +142,11 @@
                 "🇨🇦CA | vless | @MsV2ray | 11",
                 "🇨🇦CA | vless | @v2ray1_ng | 7",
                 "🇮🇷IR | vless | @vless_vmess | 6",
-                "🇳🇱NL | vless | @MTConfig | 22",
+                "🇨🇦CA | vless | @MTConfig | 22",
                 "🇨🇦CA | vless | @VmessProtocol | 18",
                 "🇨🇦CA | vless | @SafeNet_Server | 7",
                 "🇨🇦CA | vless | @lrnbymaa | 9",
-                "🇨🇦CA | vless | @ConfigsHUB | 17",
+                "🇩🇪DE | vless | @ConfigsHUB | 12",
                 "🏳️XX | vless | @proxystore11 | 20",
                 "🇨🇦CA | vless | @free1_vpn | 0",
                 "🏳️XX | vless | @fnet00 | 10",
@@ -182,7 +182,7 @@
                 "🇨🇦CA | vless | @ARv2ray | 14",
                 "🇺🇸US | vless | @Lockey_vpn | 12",
                 "🇮🇷IR | vless | @free_v2rayyy | 10",
-                "🇺🇸US | vless | @lightning6 | 19",
+                "🇨🇷CR | vless | @lightning6 | 19",
                 "🇮🇷IR | vless | @V2rayNGmat | 0",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 14",
@@ -208,11 +208,11 @@
                 "🇨🇦CA | vless | @MsV2ray | 11",
                 "🇨🇦CA | vless | @v2ray1_ng | 7",
                 "🇮🇷IR | vless | @vless_vmess | 6",
-                "🇳🇱NL | vless | @MTConfig | 22",
+                "🇨🇦CA | vless | @MTConfig | 22",
                 "🇨🇦CA | vless | @VmessProtocol | 18",
                 "🇨🇦CA | vless | @SafeNet_Server | 7",
                 "🇨🇦CA | vless | @lrnbymaa | 9",
-                "🇨🇦CA | vless | @ConfigsHUB | 17",
+                "🇩🇪DE | vless | @ConfigsHUB | 12",
                 "🏳️XX | vless | @proxystore11 | 20",
                 "🇨🇦CA | vless | @free1_vpn | 0",
                 "🏳️XX | vless | @fnet00 | 10",
@@ -557,7 +557,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @lightning6 | 19",
+            "tag": "🇨🇷CR | vless | @lightning6 | 19",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.mamd.sbs",
             "server_port": 2083,
@@ -1285,7 +1285,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vless | @MTConfig | 22",
+            "tag": "🇨🇦CA | vless | @MTConfig | 22",
             "type": "vless",
             "server": "all.vipxali.cfd",
             "server_port": 2083,
@@ -1399,24 +1399,39 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @ConfigsHUB | 17",
+            "tag": "🇩🇪DE | vless | @ConfigsHUB | 12",
             "type": "vless",
-            "server": "bia-to4.unlimiteddev.shop",
-            "server_port": 80,
-            "uuid": "2fe94856-bdfd-4f0c-a132-4f109c6a487a",
-            "flow": "",
+            "server": "49.13.124.151",
+            "server_port": 443,
+            "uuid": "c084e53f-c642-4339-b163-0f972a2893b7",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "bia-to4.unlimiteddev.shop"
+            "tls": {
+                "enabled": true,
+                "server_name": "dnschecker.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "X1Gl3O9WLISBaisIPXJke8QXmwVN1yOJ4keD6X6Ydj8",
+                    "short_id": "b1f54cff"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
