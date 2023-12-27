@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇸🇪SE | vless | @reality_daily | 1",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇦CA | vless | @azadi_az_inja_migzare | 10",
@@ -117,9 +118,8 @@
                 "🇩🇪DE | vless | @Capital_NET | 56",
                 "🇩🇪DE | vless | @Capoit | 9",
                 "🇸🇪SE | vless | @kiava | 14",
-                "🇺🇸US | vless | @vpn_go67 | 23",
+                "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇸🇪SE | vless | @kingofilter | 18",
-                "🇩🇪DE | vless | @GozargahVPN | 18",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
                 "🇺🇸US | vless | @FoXrayIran | 7",
                 "🇸🇪SE | vless | @IBv2ray | 8"
@@ -129,6 +129,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇸🇪SE | vless | @reality_daily | 1",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇦CA | vless | @azadi_az_inja_migzare | 10",
@@ -140,9 +141,8 @@
                 "🇩🇪DE | vless | @Capital_NET | 56",
                 "🇩🇪DE | vless | @Capoit | 9",
                 "🇸🇪SE | vless | @kiava | 14",
-                "🇺🇸US | vless | @vpn_go67 | 23",
+                "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇸🇪SE | vless | @kingofilter | 18",
-                "🇩🇪DE | vless | @GozargahVPN | 18",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
                 "🇺🇸US | vless | @FoXrayIran | 7",
                 "🇸🇪SE | vless | @IBv2ray | 8"
@@ -166,6 +166,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇸🇪SE | vless | @reality_daily | 1",
+            "type": "vless",
+            "server": "77.91.84.45",
+            "server_port": 22,
+            "uuid": "d81c2e50-245e-4754-95e0-54ac5efa8ffc",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speed.cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "wqMk4x4xYwx6DEx9nEmQogaW49BmPb6RehHpy3x93xI",
+                    "short_id": "0b69113e6bae9604"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
@@ -536,7 +565,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @vpn_go67 | 23",
+            "tag": "🇨🇦CA | vless | @vpn_go67 | 23",
             "type": "vless",
             "server": "public.alpanel.top",
             "server_port": 1403,
@@ -598,42 +627,6 @@
                     "public_key": "OzX5HJ5bS-V3lo1ioQ2xuic7tmjC8TcVE4t--r3JW1k",
                     "short_id": "3c"
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @GozargahVPN | 18",
-            "type": "vless",
-            "server": "91.107.190.232",
-            "server_port": 443,
-            "uuid": "573ed609-b957-4fd2-eb88-d04dce8fd680",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mihanyas.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "oNw70MueB6_w0854UW3t-qcV7IcEPFuia5UJjYGXxFE",
-                    "short_id": "f6"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Telegram:---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
