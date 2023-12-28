@@ -107,12 +107,13 @@
             "outbounds": [
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
-                "🇨🇳CN | vmess | @mftizi | 18",
+                "🇹🇼TW | vmess | @mftizi | 18",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 9",
+                "🏳️XX | vmess | @yaney_01 | 10",
                 "🇨🇷CR | vmess | @Hope_Net | 16",
                 "🇮🇷IR | vmess | @MrV2Ray | 3",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇯🇵JP | vmess | @forwardv2ray | 9",
+                "🇳🇱NL | vmess | @forwardv2ray | 18",
                 "🇳🇱NL | vmess | @eliya_chiter0 | 0"
             ]
         },
@@ -121,12 +122,13 @@
             "type": "urltest",
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
-                "🇨🇳CN | vmess | @mftizi | 18",
+                "🇹🇼TW | vmess | @mftizi | 18",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 9",
+                "🏳️XX | vmess | @yaney_01 | 10",
                 "🇨🇷CR | vmess | @Hope_Net | 16",
                 "🇮🇷IR | vmess | @MrV2Ray | 3",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇯🇵JP | vmess | @forwardv2ray | 9",
+                "🇳🇱NL | vmess | @forwardv2ray | 18",
                 "🇳🇱NL | vmess | @eliya_chiter0 | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -167,13 +169,13 @@
             }
         },
         {
-            "tag": "🇨🇳CN | vmess | @mftizi | 18",
+            "tag": "🇹🇼TW | vmess | @mftizi | 18",
             "type": "vmess",
-            "server": "112.29.94.23",
-            "server_port": 53300,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "server": "tc11.twtc.dynu.net",
+            "server_port": 443,
+            "uuid": "50dc3ad3-70ce-4f3a-b9f1-8494bcf97362",
             "security": "auto",
-            "alter_id": 64,
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -181,6 +183,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vbub1",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
@@ -198,6 +217,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🏳️XX | vmess | @yaney_01 | 10",
+            "type": "vmess",
+            "server": "mehdi2.forwardv2raytelegramchannel.fun",
+            "server_port": 443,
+            "uuid": "c2cb6d93-316f-48de-b36f-fd61e6f4ed47",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mehdi2.forwardv2raytelegramchannel.fun",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@FORWARDV2RAY",
+                "headers": {
+                    "Host": "mehdi2.forwardv2raytelegramchannel.fun"
+                }
             }
         },
         {
@@ -283,13 +336,13 @@
             }
         },
         {
-            "tag": "🇯🇵JP | vmess | @forwardv2ray | 9",
+            "tag": "🇳🇱NL | vmess | @forwardv2ray | 18",
             "type": "vmess",
-            "server": "167.179.111.237",
-            "server_port": 14935,
-            "uuid": "e961894f-8e90-472f-98d3-09402e4be453",
+            "server": "188.114.97.1",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -297,6 +350,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "odelia.autos",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "odelia.autos"
+                }
             }
         },
         {

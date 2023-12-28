@@ -116,10 +116,10 @@
                 "🇮🇷IR | vless | @DailyV2RY | 35",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 56",
+                "🇩🇪DE | vless | @mehrosaboran | 11",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇫🇮FI | vless | @proxy_mtm | 9",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
-                "🇸🇪SE | vless | @kingofilter | 19",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
                 "🇺🇸US | vless | @FoXrayIran | 7",
                 "🇸🇪SE | vless | @IBv2ray | 8"
@@ -139,10 +139,10 @@
                 "🇮🇷IR | vless | @DailyV2RY | 35",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 56",
+                "🇩🇪DE | vless | @mehrosaboran | 11",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇫🇮FI | vless | @proxy_mtm | 9",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
-                "🇸🇪SE | vless | @kingofilter | 19",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
                 "🇺🇸US | vless | @FoXrayIran | 7",
                 "🇸🇪SE | vless | @IBv2ray | 8"
@@ -379,8 +379,8 @@
         {
             "tag": "🇸🇪SE | vless | @v2rayNG_Matsuri | 6",
             "type": "vless",
-            "server": "13.50.243.209",
-            "server_port": 8443,
+            "server": "13.48.85.75",
+            "server_port": 3074,
             "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
@@ -400,7 +400,7 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "imMc9JMOdHsxpSZZXVawNr50W_fweMC7_6W0RtjG_R0",
+                    "public_key": "8POWwHRXJNL8UelgV-0v2-QbQm1syrW193I1F3t67ms",
                     "short_id": "fe"
                 }
             }
@@ -497,6 +497,42 @@
                     "public_key": "yvST7IS7c400DGyW4HwHI2c2ZrV8znWHZGV8jbiz4Wo",
                     "short_id": "8911ac48"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @mehrosaboran | 11",
+            "type": "vless",
+            "server": "49.13.124.151",
+            "server_port": 443,
+            "uuid": "c084e53f-c642-4339-b163-0f972a2893b7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dnschecker.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Jo0rfkBNwALKA0dd67wZD4utLK_jeNjM-SatrqN87BA",
+                    "short_id": "b1f54cff"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -598,35 +634,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇸🇪SE | vless | @kingofilter | 19",
-            "type": "vless",
-            "server": "13.51.254.68",
-            "server_port": 8443,
-            "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.makers.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "OzX5HJ5bS-V3lo1ioQ2xuic7tmjC8TcVE4t--r3JW1k",
-                    "short_id": "3c"
-                }
             }
         },
         {
