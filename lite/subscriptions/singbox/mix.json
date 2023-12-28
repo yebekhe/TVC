@@ -106,7 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | vless | @XsV2ray | 15",
+                "🇳🇱NL | vless | @XsV2ray | 15",
+                "🇹🇷TR | vless | @reality_daily | 4",
                 "🇫🇷FR | vless | @VlessConfig | 14",
                 "🇨🇷CR | vless | @VPNCUSTOMIZE | 25",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
@@ -145,10 +146,10 @@
                 "🇨🇦CA | vless | @MsV2ray | 11",
                 "🇨🇦CA | vless | @v2ray1_ng | 7",
                 "🇮🇷IR | vless | @vless_vmess | 6",
-                "🇨🇦CA | vless | @MTConfig | 22",
+                "🇳🇱NL | vless | @MTConfig | 22",
                 "🇳🇱NL | vless | @V2RayTz | 18",
                 "🇨🇦CA | vless | @VmessProtocol | 18",
-                "🇩🇪DE | vmess | @DailyV2RY | 43",
+                "🇸🇪SE | vless | @DailyV2RY | 38",
                 "🇨🇦CA | vless | @SafeNet_Server | 7",
                 "🇨🇦CA | vless | @lrnbymaa | 9",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
@@ -166,7 +167,7 @@
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @Capoit | 11",
                 "🇹🇷TR | vless | @IRN_VPN | 3",
-                "🇨🇦CA | vless | @forwardv2ray | 19",
+                "🇨🇷CR | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 3",
                 "🇺🇸US | vless | @mehrosaboran | 12",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -185,7 +186,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | vless | @XsV2ray | 15",
+                "🇳🇱NL | vless | @XsV2ray | 15",
+                "🇹🇷TR | vless | @reality_daily | 4",
                 "🇫🇷FR | vless | @VlessConfig | 14",
                 "🇨🇷CR | vless | @VPNCUSTOMIZE | 25",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
@@ -224,10 +226,10 @@
                 "🇨🇦CA | vless | @MsV2ray | 11",
                 "🇨🇦CA | vless | @v2ray1_ng | 7",
                 "🇮🇷IR | vless | @vless_vmess | 6",
-                "🇨🇦CA | vless | @MTConfig | 22",
+                "🇳🇱NL | vless | @MTConfig | 22",
                 "🇳🇱NL | vless | @V2RayTz | 18",
                 "🇨🇦CA | vless | @VmessProtocol | 18",
-                "🇩🇪DE | vmess | @DailyV2RY | 43",
+                "🇸🇪SE | vless | @DailyV2RY | 38",
                 "🇨🇦CA | vless | @SafeNet_Server | 7",
                 "🇨🇦CA | vless | @lrnbymaa | 9",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
@@ -245,7 +247,7 @@
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @Capoit | 11",
                 "🇹🇷TR | vless | @IRN_VPN | 3",
-                "🇨🇦CA | vless | @forwardv2ray | 19",
+                "🇨🇷CR | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 3",
                 "🇺🇸US | vless | @mehrosaboran | 12",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -280,7 +282,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | vless | @XsV2ray | 15",
+            "tag": "🇳🇱NL | vless | @XsV2ray | 15",
             "type": "vless",
             "server": "all.vipxali.cfd",
             "server_port": 2083,
@@ -308,6 +310,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇹🇷TR | vless | @reality_daily | 4",
+            "type": "vless",
+            "server": "83.217.9.129",
+            "server_port": 2052,
+            "uuid": "d13848c8-1a01-4528-b7c3-29df2487386e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.who.int",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "gx5W59k3eliDd9I8IYLg8x05x_gcY0j8sie5_MpTSw0",
+                    "short_id": "746a7866"
+                }
             }
         },
         {
@@ -1348,7 +1379,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @MTConfig | 22",
+            "tag": "🇳🇱NL | vless | @MTConfig | 22",
             "type": "vless",
             "server": "all.vipxali.cfd",
             "server_port": 2083,
@@ -1441,20 +1472,32 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vmess | @DailyV2RY | 43",
-            "type": "vmess",
-            "server": "royalgamer.royalping.xyz",
-            "server_port": 12345,
-            "uuid": "8a1ea91d-f4d7-4844-8182-27bc066320e9",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇸🇪SE | vless | @DailyV2RY | 38",
+            "type": "vless",
+            "server": "13.53.141.198",
+            "server_port": 8443,
+            "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "coinmarketcap.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "eD-dZclnspJMXtLdNL865lMA6penluAz0vTjom4Bpys",
+                    "short_id": "fe"
+                }
             }
         },
         {
@@ -1522,9 +1565,9 @@
         {
             "tag": "🇨🇦CA | vless | @ConfigsHUB | 18",
             "type": "vless",
-            "server": "e.outlinekey.online",
-            "server_port": 443,
-            "uuid": "0e4c8803-af61-4c67-b803-e2cc7651aaed",
+            "server": "maz.maznet.cfd",
+            "server_port": 2087,
+            "uuid": "e123a614-5b1b-44c5-9767-ec0ed5dd8446",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1534,7 +1577,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "uni.outlinekey.online",
+                "server_name": "join10.maznet.cfd",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1544,7 +1587,7 @@
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@Outlinev2rayNG,@Outlinev2rayNG",
+                "service_name": "@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -1925,11 +1968,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 19",
+            "tag": "🇨🇷CR | vless | @forwardv2ray | 19",
             "type": "vless",
-            "server": "104.21.28.62",
+            "server": "190.93.246.241",
             "server_port": 443,
-            "uuid": "b9ad895b-12ac-40fc-a5ac-a5b2a1285001",
+            "uuid": "9085fb59-f4b0-453e-a509-a8673c35c549",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1939,7 +1982,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "3k.pureboy.eu.org",
+                "server_name": "7478866808.devar.cfd",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1948,11 +1991,11 @@
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "3k.pureboy.eu.org"
-                }
+                "type": "grpc",
+                "service_name": "31447461",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
