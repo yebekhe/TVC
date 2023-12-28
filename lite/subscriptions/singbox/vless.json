@@ -118,7 +118,7 @@
                 "🇨🇦CA | vless | @ARv2ray | 13",
                 "🇺🇸US | vless | @Lockey_vpn | 12",
                 "🇮🇷IR | vless | @free_v2rayyy | 10",
-                "🇺🇸US | vless | @lightning6 | 19",
+                "🇨🇷CR | vless | @lightning6 | 19",
                 "🇮🇷IR | vless | @V2rayNGmat | 0",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 14",
@@ -136,6 +136,7 @@
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 6",
                 "🇨🇦CA | vless | @v2rayngvpn | 10",
                 "🇨🇦CA | vless | @ShadowProxy66 | 79",
+                "🇨🇦CA | vless | @ServerNett | 16",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇨🇷CR | vless | @proxyymeliii | 23",
                 "🇨🇦CA | vless | @MsV2ray | 11",
@@ -145,9 +146,8 @@
                 "🇨🇦CA | vless | @V2RayTz | 18",
                 "🇩🇪DE | vless | @VmessProtocol | 18",
                 "🇩🇪DE | vless | @DailyV2RY | 18",
-                "🇨🇦CA | vless | @SafeNet_Server | 7",
+                "🇨🇦CA | vless | @SafeNet_Server | 8",
                 "🇨🇦CA | vless | @lrnbymaa | 9",
-                "🇺🇸US | vless | @ConfigsHUB | 18",
                 "🏳️XX | vless | @proxystore11 | 20",
                 "🇨🇦CA | vless | @free1_vpn | 0",
                 "🏳️XX | vless | @fnet00 | 10",
@@ -185,7 +185,7 @@
                 "🇨🇦CA | vless | @ARv2ray | 13",
                 "🇺🇸US | vless | @Lockey_vpn | 12",
                 "🇮🇷IR | vless | @free_v2rayyy | 10",
-                "🇺🇸US | vless | @lightning6 | 19",
+                "🇨🇷CR | vless | @lightning6 | 19",
                 "🇮🇷IR | vless | @V2rayNGmat | 0",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 14",
@@ -203,6 +203,7 @@
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 6",
                 "🇨🇦CA | vless | @v2rayngvpn | 10",
                 "🇨🇦CA | vless | @ShadowProxy66 | 79",
+                "🇨🇦CA | vless | @ServerNett | 16",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇨🇷CR | vless | @proxyymeliii | 23",
                 "🇨🇦CA | vless | @MsV2ray | 11",
@@ -212,9 +213,8 @@
                 "🇨🇦CA | vless | @V2RayTz | 18",
                 "🇩🇪DE | vless | @VmessProtocol | 18",
                 "🇩🇪DE | vless | @DailyV2RY | 18",
-                "🇨🇦CA | vless | @SafeNet_Server | 7",
+                "🇨🇦CA | vless | @SafeNet_Server | 8",
                 "🇨🇦CA | vless | @lrnbymaa | 9",
-                "🇺🇸US | vless | @ConfigsHUB | 18",
                 "🏳️XX | vless | @proxystore11 | 20",
                 "🇨🇦CA | vless | @free1_vpn | 0",
                 "🏳️XX | vless | @fnet00 | 10",
@@ -349,7 +349,7 @@
         {
             "tag": "🇮🇪IE | vless | @VlessConfig | 17",
             "type": "vless",
-            "server": "54.228.157.36",
+            "server": "79.125.85.86",
             "server_port": 22222,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -611,11 +611,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @lightning6 | 19",
+            "tag": "🇨🇷CR | vless | @lightning6 | 19",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.mamd.sbs",
             "server_port": 2083,
-            "uuid": "6b55db99-519e-47c8-c6cf-49c9d3ad6422",
+            "uuid": "92eb54bf-f413-4948-81da-9ef3310ef987",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1113,6 +1113,37 @@
             }
         },
         {
+            "tag": "🇨🇦CA | vless | @ServerNett | 16",
+            "type": "vless",
+            "server": "join2.servernet.cfd",
+            "server_port": 8443,
+            "uuid": "dba4c2aa-451b-443c-83d8-29ea2c2655ed",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "join2.servernet.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @Qv2rayDONATED | 6",
             "type": "vless",
             "server": "104.18.190.52",
@@ -1361,7 +1392,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @SafeNet_Server | 7",
+            "tag": "🇨🇦CA | vless | @SafeNet_Server | 8",
             "type": "vless",
             "server": "172.67.170.103",
             "server_port": 443,
@@ -1419,37 +1450,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "edgu.pureboy.eu.org"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | vless | @ConfigsHUB | 18",
-            "type": "vless",
-            "server": "V2ray.motorcycles",
-            "server_port": 2087,
-            "uuid": "157ba68e-5739-46d1-9417-cf99bbc59793",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "FreeV2rayng.SHHPROXY.monster",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "FreeV2rayng.SHHPROXY.monster"
                 }
             }
         },
