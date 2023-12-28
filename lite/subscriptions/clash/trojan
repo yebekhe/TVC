@@ -120,6 +120,7 @@ dns:
 proxies:
   - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 15","type":"trojan","server":"13.38.153.130","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇫🇷FR | trojan | @DirectVPN | 15","type":"trojan","server":"15.236.160.203","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇺🇸US | trojan | @ConfigsHUB | 19","type":"trojan","server":"162.251.82.187","port":443,"udp":false,"password":"0986edf1-982a-42c3-9ed1-ca97c5a83070","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cloudflare.saghy.online"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +129,7 @@ proxy-groups:
       - FALLBACK
       - '🇫🇷FR | trojan | @PrivateVPNs | 15'
       - '🇫🇷FR | trojan | @DirectVPN | 15'
+      - '🇺🇸US | trojan | @ConfigsHUB | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -136,6 +138,7 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 15'
       - '🇫🇷FR | trojan | @DirectVPN | 15'
+      - '🇺🇸US | trojan | @ConfigsHUB | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -143,6 +146,7 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 15'
       - '🇫🇷FR | trojan | @DirectVPN | 15'
+      - '🇺🇸US | trojan | @ConfigsHUB | 19'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
