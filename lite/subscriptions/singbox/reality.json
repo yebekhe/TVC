@@ -115,6 +115,7 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇸🇪SE | vless | @Outlinev2rayNG | 13",
                 "🇩🇪DE | vless | @Capital_NET | 56",
+                "🇫🇮FI | vless | @forwardv2ray | 16",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇫🇮FI | vless | @proxy_mtm | 9",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -137,6 +138,7 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇸🇪SE | vless | @Outlinev2rayNG | 13",
                 "🇩🇪DE | vless | @Capital_NET | 56",
+                "🇫🇮FI | vless | @forwardv2ray | 16",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇫🇮FI | vless | @proxy_mtm | 9",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -466,6 +468,42 @@
                     "public_key": "yvST7IS7c400DGyW4HwHI2c2ZrV8znWHZGV8jbiz4Wo",
                     "short_id": "8911ac48"
                 }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | vless | @forwardv2ray | 16",
+            "type": "vless",
+            "server": "3bia-to3.unlimiteddev.shop",
+            "server_port": 443,
+            "uuid": "64dd6270-7fad-484a-afec-6df13640f847",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "RKhU0jZMW9XxQafA0IL3_Zukqa68SNTZgZDIAG4k0i0",
+                    "short_id": "a80c6877"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@UnlimitedDev",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
