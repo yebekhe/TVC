@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇹🇷TR | vless | @reality_daily | 6",
+                "🇹🇷TR | vless | @reality_daily | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @v2logy | 21",
@@ -116,7 +116,6 @@
                 "🇩🇪DE | vless | @VmessProtocol | 18",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 56",
-                "🇩🇪DE | vless | @Capoit | 7",
                 "🇫🇮FI | vless | @flyv2ray | 16",
                 "🇩🇪DE | vless | @mehrosaboran | 12",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -130,7 +129,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇹🇷TR | vless | @reality_daily | 6",
+                "🇹🇷TR | vless | @reality_daily | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @v2logy | 21",
@@ -140,7 +139,6 @@
                 "🇩🇪DE | vless | @VmessProtocol | 18",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇩🇪DE | vless | @Capital_NET | 56",
-                "🇩🇪DE | vless | @Capoit | 7",
                 "🇫🇮FI | vless | @flyv2ray | 16",
                 "🇩🇪DE | vless | @mehrosaboran | 12",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -170,11 +168,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇹🇷TR | vless | @reality_daily | 6",
+            "tag": "🇹🇷TR | vless | @reality_daily | 4",
             "type": "vless",
             "server": "83.217.9.129",
-            "server_port": 22,
-            "uuid": "ddcdb444-6e3a-4d89-a28a-74b3c8515bf7",
+            "server_port": 2052,
+            "uuid": "6fdb8833-63d4-491e-b97c-66b4c464041f",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -184,7 +182,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "speed.cloudflare.com",
+                "server_name": "www.who.int",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -502,42 +500,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @Capoit | 7",
-            "type": "vless",
-            "server": "49.13.124.151",
-            "server_port": 443,
-            "uuid": "c084e53f-c642-4339-b163-0f972a2893b7",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dnschecker.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "zLT3k44cVEspfMclf37wHGgBQkmlybgbbgwCVxrADns",
-                    "short_id": "b1f54cff"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🇫🇮FI | vless | @flyv2ray | 16",
             "type": "vless",
             "server": "37.27.21.47",
@@ -612,9 +574,9 @@
         {
             "tag": "🇸🇪SE | vless | @kiava | 14",
             "type": "vless",
-            "server": "13.48.6.186",
+            "server": "13.50.234.177",
             "server_port": 8443,
-            "uuid": "78a21ddc-dc26-4a8a-85fd-9ec5d8729955",
+            "uuid": "c6d1260e-d2dd-4e52-a265-2d0c731aa607",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -633,8 +595,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "EtKL2w9pJYnEtpbtTRGg6gsaEVX-8lF_u68rSZtPATM",
-                    "short_id": "34"
+                    "public_key": "JPlLkQeDaKrCtUpyDTZ3ELAXgdPNqAKASTcKIqTJ8UU",
+                    "short_id": "a0"
                 }
             }
         },
