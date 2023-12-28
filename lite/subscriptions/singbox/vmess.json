@@ -110,11 +110,11 @@
                 "🇨🇳CN | vmess | @mftizi | 18",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 11",
                 "🇩🇪DE | vmess | @DailyV2RY | 43",
-                "🇯🇵JP | vmess | @ConfigsHUB | 13",
                 "🇨🇷CR | vmess | @Hope_Net | 16",
                 "🇮🇷IR | vmess | @MrV2Ray | 4",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇳🇱NL | vmess | @eliya_chiter0 | 0"
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
+                "🇺🇸US | vmess | @eliya_chiter0 | 0"
             ]
         },
         {
@@ -125,11 +125,11 @@
                 "🇨🇳CN | vmess | @mftizi | 18",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 11",
                 "🇩🇪DE | vmess | @DailyV2RY | 43",
-                "🇯🇵JP | vmess | @ConfigsHUB | 13",
                 "🇨🇷CR | vmess | @Hope_Net | 16",
                 "🇮🇷IR | vmess | @MrV2Ray | 4",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇳🇱NL | vmess | @eliya_chiter0 | 0"
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
+                "🇺🇸US | vmess | @eliya_chiter0 | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -227,23 +227,6 @@
             }
         },
         {
-            "tag": "🇯🇵JP | vmess | @ConfigsHUB | 13",
-            "type": "vmess",
-            "server": "64.176.47.200",
-            "server_port": 29414,
-            "uuid": "4d5e8aa2-0641-4323-e92c-2c061cdc8e34",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇨🇷CR | vmess | @Hope_Net | 16",
             "type": "vmess",
             "server": "190.93.246.119",
@@ -326,7 +309,41 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vmess | @eliya_chiter0 | 0",
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "172.67.183.110",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "waynn.makeup",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "waynn.makeup"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | vmess | @eliya_chiter0 | 0",
             "type": "vmess",
             "server": "188.114.96.58",
             "server_port": 443,
