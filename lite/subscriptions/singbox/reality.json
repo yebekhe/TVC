@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇹🇷TR | vless | @reality_daily | 6",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇫🇮FI | vless | @v2logy | 20",
@@ -114,7 +113,6 @@
                 "🇩🇪DE | vless | @customv2ray | 11",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 6",
                 "🇩🇪DE | vless | @v2ray_swhil | 21",
-                "🇩🇪DE | vless | @ConfigsHUB | 12",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇸🇪SE | vless | @Outlinev2rayNG | 15",
                 "🇩🇪DE | vless | @Capital_NET | 56",
@@ -132,7 +130,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇹🇷TR | vless | @reality_daily | 6",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇫🇮FI | vless | @v2logy | 20",
@@ -140,7 +137,6 @@
                 "🇩🇪DE | vless | @customv2ray | 11",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 6",
                 "🇩🇪DE | vless | @v2ray_swhil | 21",
-                "🇩🇪DE | vless | @ConfigsHUB | 12",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇸🇪SE | vless | @Outlinev2rayNG | 15",
                 "🇩🇪DE | vless | @Capital_NET | 56",
@@ -172,35 +168,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇹🇷TR | vless | @reality_daily | 6",
-            "type": "vless",
-            "server": "83.217.9.129",
-            "server_port": 22,
-            "uuid": "bdd27ce3-4c4c-4d98-b595-976443eb8097",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "speed.cloudflare.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "gx5W59k3eliDd9I8IYLg8x05x_gcY0j8sie5_MpTSw0",
-                    "short_id": "746a7866"
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
@@ -437,42 +404,6 @@
                     "enabled": true,
                     "public_key": "JYFrn4MJLzIx9jeYhpmtcgk0KoP2_HKukaRBEO6VCiU",
                     "short_id": "a18472f7"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @ConfigsHUB | 12",
-            "type": "vless",
-            "server": "49.13.124.151",
-            "server_port": 443,
-            "uuid": "c084e53f-c642-4339-b163-0f972a2893b7",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dnschecker.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "X1Gl3O9WLISBaisIPXJke8QXmwVN1yOJ4keD6X6Ydj8",
-                    "short_id": "b1f54cff"
                 }
             },
             "transport": {
