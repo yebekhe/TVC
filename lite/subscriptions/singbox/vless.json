@@ -135,12 +135,13 @@
                 "🇨🇦CA | vless | @vmessorg | 84",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 5",
                 "🇨🇦CA | vless | @v2rayngvpn | 10",
-                "🇨🇷CR | vless | @FalconPolV2rayNG | 9",
+                "🇳🇱NL | vless | @FalconPolV2rayNG | 9",
                 "🇨🇦CA | vless | @ShadowProxy66 | 80",
                 "🇨🇦CA | vless | @ServerNett | 13",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇨🇦CA | vless | @v2ray_swhil | 20",
                 "🇨🇦CA | vless | @MsV2ray | 10",
+                "🇫🇮FI | vless | @v2ray1_ng | 2",
                 "🇮🇷IR | vless | @vless_vmess | 6",
                 "🇨🇦CA | vless | @MTConfig | 22",
                 "🇺🇸US | vless | @V2RayTz | 15",
@@ -155,7 +156,6 @@
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇨🇦CA | vless | @Capoit | 8",
                 "🇩🇪DE | vless | @flyv2ray | 15",
-                "🇺🇸US | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @mehrosaboran | 14",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇷CR | vless | @proxy_mtm | 24",
@@ -199,12 +199,13 @@
                 "🇨🇦CA | vless | @vmessorg | 84",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 5",
                 "🇨🇦CA | vless | @v2rayngvpn | 10",
-                "🇨🇷CR | vless | @FalconPolV2rayNG | 9",
+                "🇳🇱NL | vless | @FalconPolV2rayNG | 9",
                 "🇨🇦CA | vless | @ShadowProxy66 | 80",
                 "🇨🇦CA | vless | @ServerNett | 13",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇨🇦CA | vless | @v2ray_swhil | 20",
                 "🇨🇦CA | vless | @MsV2ray | 10",
+                "🇫🇮FI | vless | @v2ray1_ng | 2",
                 "🇮🇷IR | vless | @vless_vmess | 6",
                 "🇨🇦CA | vless | @MTConfig | 22",
                 "🇺🇸US | vless | @V2RayTz | 15",
@@ -219,7 +220,6 @@
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇨🇦CA | vless | @Capoit | 8",
                 "🇩🇪DE | vless | @flyv2ray | 15",
-                "🇺🇸US | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @mehrosaboran | 14",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇷CR | vless | @proxy_mtm | 24",
@@ -1083,7 +1083,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @FalconPolV2rayNG | 9",
+            "tag": "🇳🇱NL | vless | @FalconPolV2rayNG | 9",
             "type": "vless",
             "server": "all.trvipp.site",
             "server_port": 443,
@@ -1256,6 +1256,42 @@
                 "headers": {
                     "Host": "ws.MsV2ray.sbs"
                 }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | vless | @v2ray1_ng | 2",
+            "type": "vless",
+            "server": "65.21.240.250",
+            "server_port": 443,
+            "uuid": "a0562dec-26ac-43d4-ba1d-785c334e644f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dnschecker.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mVJz9PJm59WzeNEn5c1HnzL4XjAfaNA3T99AW_LEAhc",
+                    "short_id": "fada4f5f"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1451,9 +1487,9 @@
         {
             "tag": "🇨🇷CR | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "190.93.246.241",
-            "server_port": 2096,
-            "uuid": "ef9e70de-6792-4251-8f5c-91ff37f131ea",
+            "server": "all.vpncustomize.cam",
+            "server_port": 443,
+            "uuid": "d1675afb-440c-42a4-9a0b-69fa1ce7899a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1463,7 +1499,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "signal-alpha.nv10.sbs",
+                "server_name": "FreeV2rayng.VPNCUSTOMIZE.online",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1472,11 +1508,11 @@
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/Telegram: @V2ray_Alpha",
-                "headers": {
-                    "Host": "signal-alpha.nv10.sbs"
-                }
+                "type": "grpc",
+                "service_name": "‌@VPNCUSTOMIZE",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1668,37 +1704,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇺🇸US | vless | @forwardv2ray | 18",
-            "type": "vless",
-            "server": "signal-srv3.nv10.sbs",
-            "server_port": 8443,
-            "uuid": "520bb6ba-b207-4f20-b0dd-8250893461f2",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "signal-alpha.nv10.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram: @V2ray_Alpha",
-                "headers": {
-                    "Host": "signal-alpha.nv10.sbs"
-                }
             }
         },
         {
