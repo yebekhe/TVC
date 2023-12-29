@@ -125,6 +125,7 @@ proxies:
   - {"name":"🇨🇦CA | vmess | @Hope_Net | 7","type":"vmess","server":"tl.iranray.online","port":"8080","cipher":"auto","uuid":"b3c20911-126d-4c30-bd32-10152bf0b593","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tl.iranray.online"}}}
   - {"name":"🇮🇷IR | vmess | @MrV2Ray | 0","type":"vmess","server":"85.9.106.116","port":"38527","cipher":"auto","uuid":"85025172-374b-48cb-b10b-8c95f3c1e874","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 9","type":"vmess","server":"v2line.telegram.channel.1371.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"443","cipher":"auto","uuid":"540bfb2c-2b26-4154-b5be-55d08bf40add","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":""}}}
+  - {"name":"🇨🇦CA | vmess | @forwardv2ray | 18","type":"vmess","server":"2bbiozh7wbc.servecounterstrike.com","port":"2083","cipher":"auto","uuid":"9e9b80f1-5555-4f7d-a209-d23b9d9dc047","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/snsk","headers":{"host":"PAneljadid.mookoMEilz.homes"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -138,6 +139,7 @@ proxy-groups:
       - '🇨🇦CA | vmess | @Hope_Net | 7'
       - '🇮🇷IR | vmess | @MrV2Ray | 0'
       - '🇺🇸US | vmess | @v2Line | 9'
+      - '🇨🇦CA | vmess | @forwardv2ray | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -151,6 +153,7 @@ proxy-groups:
       - '🇨🇦CA | vmess | @Hope_Net | 7'
       - '🇮🇷IR | vmess | @MrV2Ray | 0'
       - '🇺🇸US | vmess | @v2Line | 9'
+      - '🇨🇦CA | vmess | @forwardv2ray | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -163,6 +166,7 @@ proxy-groups:
       - '🇨🇦CA | vmess | @Hope_Net | 7'
       - '🇮🇷IR | vmess | @MrV2Ray | 0'
       - '🇺🇸US | vmess | @v2Line | 9'
+      - '🇨🇦CA | vmess | @forwardv2ray | 18'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
