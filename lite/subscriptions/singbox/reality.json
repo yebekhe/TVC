@@ -112,9 +112,10 @@
                 "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇫🇮FI | vless | @v2logy | 20",
-                "🇹🇷TR | vless | @V2rayCollector | 1",
+                "🇹🇷TR | vless | @V2rayCollector | 2",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 6",
                 "🏳️XX | vless | @fnet00 | 10",
+                "🇩🇪DE | vless | @v2rayng_vpnrog | 11",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇩🇪DE | vless | @flyv2ray | 16",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -133,9 +134,10 @@
                 "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇫🇮FI | vless | @v2logy | 20",
-                "🇹🇷TR | vless | @V2rayCollector | 1",
+                "🇹🇷TR | vless | @V2rayCollector | 2",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 6",
                 "🏳️XX | vless | @fnet00 | 10",
+                "🇩🇪DE | vless | @v2rayng_vpnrog | 11",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇩🇪DE | vless | @flyv2ray | 16",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -373,7 +375,7 @@
             }
         },
         {
-            "tag": "🇹🇷TR | vless | @V2rayCollector | 1",
+            "tag": "🇹🇷TR | vless | @V2rayCollector | 2",
             "type": "vless",
             "server": "84.32.230.81",
             "server_port": 443,
@@ -468,6 +470,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@configMs",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @v2rayng_vpnrog | 11",
+            "type": "vless",
+            "server": "139.59.136.133",
+            "server_port": 443,
+            "uuid": "cb4a0005-db1f-42ab-a21a-714ea85ba4b1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HnLAHoRfNHI9tPnB0FK874U8YjFc9pgZUDcd3ULQh10",
+                    "short_id": "8e4c9a47"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
