@@ -120,6 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇮🇷IR | vmess | @V2rayCollectorDonate | 15","type":"vmess","server":"server.cactusrobot.ir","port":"8622","cipher":"auto","uuid":"5cbe808e-ab39-4c5c-bdc0-29923780610b","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇹🇼TW | vmess | @mftizi | 18","type":"vmess","server":"b24.ntbq.dynu.net","port":"443","cipher":"auto","uuid":"b0912b17-b2d2-4c53-9d53-710f6c88251a","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/b24","headers":{"host":"b24.ntbq.dynu.net"}}}
   - {"name":"🇩🇪DE | vmess | @oneclickvpnkeys | 10","type":"vmess","server":"45.77.52.194","port":"39159","cipher":"auto","uuid":"12bfd84f-6654-4cc3-816b-a9fa93daec05","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
@@ -134,6 +135,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇮🇷IR | vmess | @V2rayCollectorDonate | 15'
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇹🇼TW | vmess | @mftizi | 18'
       - '🇩🇪DE | vmess | @oneclickvpnkeys | 10'
@@ -148,6 +150,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇮🇷IR | vmess | @V2rayCollectorDonate | 15'
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇹🇼TW | vmess | @mftizi | 18'
       - '🇩🇪DE | vmess | @oneclickvpnkeys | 10'
@@ -161,6 +164,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇮🇷IR | vmess | @V2rayCollectorDonate | 15'
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇹🇼TW | vmess | @mftizi | 18'
       - '🇩🇪DE | vmess | @oneclickvpnkeys | 10'
