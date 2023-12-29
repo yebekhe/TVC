@@ -143,17 +143,18 @@
                 "🇨🇦CA | vless | @v2ray1_ng | 0",
                 "🇮🇷IR | vless | @vless_vmess | 6",
                 "🇨🇦CA | vless | @MTConfig | 22",
-                "🇨🇷CR | vless | @V2RayTz | 19",
+                "🇳🇱NL | vless | @V2RayTz | 19",
                 "🇨🇦CA | vless | @VmessProtocol | 17",
                 "🇨🇦CA | vless | @MehradLearn | 8",
                 "🇨🇦CA | vless | @SafeNet_Server | 9",
                 "🇨🇦CA | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @proxystore11 | 19",
-                "🏳️XX | vless | @fnet00 | 11",
+                "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 44",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇩🇪DE | vless | @Capoit | 6",
                 "🇩🇪DE | vless | @flyv2ray | 13",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇨🇦CA | vless | @mehrosaboran | 18",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -206,17 +207,18 @@
                 "🇨🇦CA | vless | @v2ray1_ng | 0",
                 "🇮🇷IR | vless | @vless_vmess | 6",
                 "🇨🇦CA | vless | @MTConfig | 22",
-                "🇨🇷CR | vless | @V2RayTz | 19",
+                "🇳🇱NL | vless | @V2RayTz | 19",
                 "🇨🇦CA | vless | @VmessProtocol | 17",
                 "🇨🇦CA | vless | @MehradLearn | 8",
                 "🇨🇦CA | vless | @SafeNet_Server | 9",
                 "🇨🇦CA | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @proxystore11 | 19",
-                "🏳️XX | vless | @fnet00 | 11",
+                "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 44",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇩🇪DE | vless | @Capoit | 6",
                 "🇩🇪DE | vless | @flyv2ray | 13",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇨🇦CA | vless | @mehrosaboran | 18",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -1295,11 +1297,11 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @V2RayTz | 19",
+            "tag": "🇳🇱NL | vless | @V2RayTz | 19",
             "type": "vless",
-            "server": "190.93.247.155",
+            "server": "188.114.96.0",
             "server_port": 443,
-            "uuid": "f1c5ff5a-114e-4206-8712-9162b691d4a6",
+            "uuid": "f527e0af-7fbe-4ca9-bb7d-8c054cf264a6",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1309,7 +1311,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "shhV2ray.DIGTALCITY.xyz",
+                "server_name": "cdn10.gsmvp.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1318,11 +1320,11 @@
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "@Shh_Proxy,@Shh_Proxy",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/tbplws",
+                "headers": {
+                    "Host": "cdn10.gsmvp.com"
+                }
             }
         },
         {
@@ -1421,9 +1423,9 @@
         {
             "tag": "🇨🇦CA | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "104.31.16.36",
+            "server": "ip1.naylon.top",
             "server_port": 443,
-            "uuid": "376b9861-2fc6-4647-959c-18185cd9c95a",
+            "uuid": "75a82dd7-35a2-4d7f-b091-35fdf01d4198",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1433,7 +1435,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "lmn37.sbs",
+                "server_name": "bbbb.dating-game-single.top",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1443,9 +1445,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/fflsws",
+                "path": "\/",
                 "headers": {
-                    "Host": "lmn37.sbs"
+                    "Host": "bbbb.dating-game-single.top"
                 }
             }
         },
@@ -1481,7 +1483,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @fnet00 | 11",
+            "tag": "🏳️XX | vless | @fnet00 | 10",
             "type": "vless",
             "server": "kamyarservers.ddns.net",
             "server_port": 443,
@@ -1650,6 +1652,37 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@flyv2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "pashm.config-rayegan-nufilter.space",
+            "server_port": 8443,
+            "uuid": "2a9f216d-78fe-4d72-d82f-6174b38247d7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pashm.config-rayegan-nufilter.space",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
