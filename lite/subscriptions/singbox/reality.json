@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇹🇷TR | vless | @reality_daily | 5",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇮🇷IR | vless | @frev2ray | 12",
                 "🇩🇪DE | vless | @ARv2ray | 13",
@@ -128,7 +127,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇹🇷TR | vless | @reality_daily | 5",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇮🇷IR | vless | @frev2ray | 12",
                 "🇩🇪DE | vless | @ARv2ray | 13",
@@ -164,35 +162,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇹🇷TR | vless | @reality_daily | 5",
-            "type": "vless",
-            "server": "83.217.9.129",
-            "server_port": 2052,
-            "uuid": "88ffe2b0-a828-48ff-abef-5b3508693383",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.who.int",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "eVScC98SbhLdsUmzJ3yUfaY2p5YOXrXSKU4wlt_AuDM",
-                    "short_id": "736a796b"
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
