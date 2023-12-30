@@ -148,17 +148,17 @@
                 "🇨🇦CA | vless | @MsV2ray | 10",
                 "🇨🇦CA | vless | @v2ray1_ng | 0",
                 "🇮🇷IR | vless | @vless_vmess | 6",
-                "🇨🇷CR | vless | @MTConfig | 22",
+                "🇨🇦CA | vless | @MTConfig | 22",
                 "🇳🇱NL | vless | @V2RayTz | 19",
                 "🇨🇦CA | vless | @VmessProtocol | 17",
-                "🇩🇪DE | vmess | @DailyV2RY | 48",
+                "🇺🇸US | vless | @DailyV2RY | 50",
                 "🇨🇦CA | vless | @MehradLearn | 8",
                 "🇨🇦CA | vless | @SafeNet_Server | 9",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 18",
                 "🏳️XX | vmess | @ConfigsHUB | 19",
                 "🏳️XX | vless | @proxystore11 | 19",
                 "🏳️XX | vmess | @yaney_01 | 10",
-                "🇨🇦CA | vmess | @Hope_Net | 8",
+                "🇫🇷FR | vmess | @Hope_Net | 9",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 44",
                 "🏳️XX | vless | @Capital_NET | 54",
@@ -225,17 +225,17 @@
                 "🇨🇦CA | vless | @MsV2ray | 10",
                 "🇨🇦CA | vless | @v2ray1_ng | 0",
                 "🇮🇷IR | vless | @vless_vmess | 6",
-                "🇨🇷CR | vless | @MTConfig | 22",
+                "🇨🇦CA | vless | @MTConfig | 22",
                 "🇳🇱NL | vless | @V2RayTz | 19",
                 "🇨🇦CA | vless | @VmessProtocol | 17",
-                "🇩🇪DE | vmess | @DailyV2RY | 48",
+                "🇺🇸US | vless | @DailyV2RY | 50",
                 "🇨🇦CA | vless | @MehradLearn | 8",
                 "🇨🇦CA | vless | @SafeNet_Server | 9",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 18",
                 "🏳️XX | vmess | @ConfigsHUB | 19",
                 "🏳️XX | vless | @proxystore11 | 19",
                 "🏳️XX | vmess | @yaney_01 | 10",
-                "🇨🇦CA | vmess | @Hope_Net | 8",
+                "🇫🇷FR | vmess | @Hope_Net | 9",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 44",
                 "🏳️XX | vless | @Capital_NET | 54",
@@ -1421,7 +1421,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @MTConfig | 22",
+            "tag": "🇨🇦CA | vless | @MTConfig | 22",
             "type": "vless",
             "server": "all.vipxali.cfd",
             "server_port": 2083,
@@ -1514,20 +1514,34 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vmess | @DailyV2RY | 48",
-            "type": "vmess",
-            "server": "royalgamer.royalping.xyz",
-            "server_port": 12345,
-            "uuid": "cef5d277-8a1e-47d4-ab59-85c962b13ef5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇺🇸US | vless | @DailyV2RY | 50",
+            "type": "vless",
+            "server": "104.18.202.209",
+            "server_port": 8443,
+            "uuid": "412e4938-ef81-407e-ab53-9224b1f0e36d",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vpnbigbang-mtn-mci.iranilove.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "vpnbigbang-mtn-mci.iranilove.top"
+                }
             }
         },
         {
@@ -1685,11 +1699,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 8",
+            "tag": "🇫🇷FR | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "104.27.102.105",
-            "server_port": 8080,
-            "uuid": "Telegram-V2ray_alpha",
+            "server": "fr-full.privateip.net",
+            "server_port": 443,
+            "uuid": "cfb3682f-b59f-4fb3-a84b-835825a85b77",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1700,11 +1714,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/racevpn",
                 "headers": {
-                    "Host": ""
+                    "Host": "fr-full.privateip.net"
                 }
             }
         },

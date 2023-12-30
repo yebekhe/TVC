@@ -110,10 +110,9 @@
                 "🇹🇼TW | vmess | @mftizi | 18",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 12",
                 "🇮🇷IR | vmess | @customv2ray | 13",
-                "🇩🇪DE | vmess | @DailyV2RY | 48",
                 "🏳️XX | vmess | @ConfigsHUB | 19",
                 "🏳️XX | vmess | @yaney_01 | 10",
-                "🇨🇦CA | vmess | @Hope_Net | 8",
+                "🇫🇷FR | vmess | @Hope_Net | 9",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇳🇱NL | vmess | @eliya_chiter0 | 0"
             ]
@@ -126,10 +125,9 @@
                 "🇹🇼TW | vmess | @mftizi | 18",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 12",
                 "🇮🇷IR | vmess | @customv2ray | 13",
-                "🇩🇪DE | vmess | @DailyV2RY | 48",
                 "🏳️XX | vmess | @ConfigsHUB | 19",
                 "🏳️XX | vmess | @yaney_01 | 10",
-                "🇨🇦CA | vmess | @Hope_Net | 8",
+                "🇫🇷FR | vmess | @Hope_Net | 9",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇳🇱NL | vmess | @eliya_chiter0 | 0"
             ],
@@ -239,23 +237,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vmess | @DailyV2RY | 48",
-            "type": "vmess",
-            "server": "royalgamer.royalping.xyz",
-            "server_port": 12345,
-            "uuid": "cef5d277-8a1e-47d4-ab59-85c962b13ef5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🏳️XX | vmess | @ConfigsHUB | 19",
             "type": "vmess",
             "server": null,
@@ -307,11 +288,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 8",
+            "tag": "🇫🇷FR | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "104.27.102.105",
-            "server_port": 8080,
-            "uuid": "Telegram-V2ray_alpha",
+            "server": "fr-full.privateip.net",
+            "server_port": 443,
+            "uuid": "cfb3682f-b59f-4fb3-a84b-835825a85b77",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -322,11 +303,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/racevpn",
                 "headers": {
-                    "Host": ""
+                    "Host": "fr-full.privateip.net"
                 }
             }
         },
