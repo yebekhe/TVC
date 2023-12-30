@@ -13,10 +13,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇸🇪SE | trojan | @PrivateVPNs | 18 = trojan, 13.49.45.123, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
 🇸🇪SE | trojan | @DirectVPN | 18 = trojan, 51.21.70.48, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
+🇵🇱PL | trojan | @ConfigsHUB | 19 = trojan, dr3-cheonandlosttalisman.sonicstar.buzz, 10991, password = 1T-Me-DarkVPNpro, udp-delay = true, skip-cert-verify = false, sni = flutter.dev, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇸🇪SE | trojan | @PrivateVPNs | 18,🇸🇪SE | trojan | @DirectVPN | 18
-URL-TEST = url-test,🇸🇪SE | trojan | @PrivateVPNs | 18,🇸🇪SE | trojan | @DirectVPN | 18
-FALLBACK = fallback,🇸🇪SE | trojan | @PrivateVPNs | 18,🇸🇪SE | trojan | @DirectVPN | 18
+MANUAL = select,URL-TEST,FALLBACK,🇸🇪SE | trojan | @PrivateVPNs | 18,🇸🇪SE | trojan | @DirectVPN | 18,🇵🇱PL | trojan | @ConfigsHUB | 19
+URL-TEST = url-test,🇸🇪SE | trojan | @PrivateVPNs | 18,🇸🇪SE | trojan | @DirectVPN | 18,🇵🇱PL | trojan | @ConfigsHUB | 19
+FALLBACK = fallback,🇸🇪SE | trojan | @PrivateVPNs | 18,🇸🇪SE | trojan | @DirectVPN | 18,🇵🇱PL | trojan | @ConfigsHUB | 19
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
