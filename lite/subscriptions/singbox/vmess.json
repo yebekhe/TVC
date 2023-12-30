@@ -110,13 +110,13 @@
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 11",
                 "🇮🇷IR | vmess | @customv2ray | 13",
-                "🏳️XX | vmess | @ConfigsHUB | 18",
                 "🏳️XX | vmess | @yaney_01 | 10",
-                "🇨🇳CN | vmess | @Hope_Net | 8",
+                "🇸🇬SG | vmess | @Hope_Net | 7",
                 "🇮🇷IR | vmess | @MrV2Ray | 1",
                 "🇺🇸US | vmess | @v2Line | 9",
+                "🏳️XX | vmess | @forwardv2ray | 17",
                 "🇬🇧GB | vmess | @kingofilter | 14",
-                "🇳🇱NL | vmess | @eliya_chiter0 | 0"
+                "🇺🇸US | vmess | @eliya_chiter0 | 0"
             ]
         },
         {
@@ -127,13 +127,13 @@
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 11",
                 "🇮🇷IR | vmess | @customv2ray | 13",
-                "🏳️XX | vmess | @ConfigsHUB | 18",
                 "🏳️XX | vmess | @yaney_01 | 10",
-                "🇨🇳CN | vmess | @Hope_Net | 8",
+                "🇸🇬SG | vmess | @Hope_Net | 7",
                 "🇮🇷IR | vmess | @MrV2Ray | 1",
                 "🇺🇸US | vmess | @v2Line | 9",
+                "🏳️XX | vmess | @forwardv2ray | 17",
                 "🇬🇧GB | vmess | @kingofilter | 14",
-                "🇳🇱NL | vmess | @eliya_chiter0 | 0"
+                "🇺🇸US | vmess | @eliya_chiter0 | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -238,23 +238,6 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @ConfigsHUB | 18",
-            "type": "vmess",
-            "server": null,
-            "server_port": 0,
-            "uuid": null,
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🏳️XX | vmess | @yaney_01 | 10",
             "type": "vmess",
             "server": "mehdi2.forwardv2raytelegramchannel.fun",
@@ -289,13 +272,13 @@
             }
         },
         {
-            "tag": "🇨🇳CN | vmess | @Hope_Net | 8",
+            "tag": "🇸🇬SG | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "112.28.208.10",
-            "server_port": 45055,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "server": "sg3-full.privateip.net",
+            "server_port": 443,
+            "uuid": "c363eba3-5c64-4843-b71c-3a0bd227944b",
             "security": "auto",
-            "alter_id": 64,
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -303,6 +286,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sg3-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/RACEVPN",
+                "headers": {
+                    "Host": "sg3-full.privateip.net"
+                }
             }
         },
         {
@@ -364,6 +364,23 @@
             }
         },
         {
+            "tag": "🏳️XX | vmess | @forwardv2ray | 17",
+            "type": "vmess",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇬🇧GB | vmess | @kingofilter | 14",
             "type": "vmess",
             "server": "51.75.162.199",
@@ -381,7 +398,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vmess | @eliya_chiter0 | 0",
+            "tag": "🇺🇸US | vmess | @eliya_chiter0 | 0",
             "type": "vmess",
             "server": "188.114.96.58",
             "server_port": 443,
