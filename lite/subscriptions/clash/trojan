@@ -118,8 +118,8 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇮🇪IE | trojan | @PrivateVPNs | 16","type":"trojan","server":"54.76.71.207","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
-  - {"name":"🇸🇪SE | trojan | @DirectVPN | 16","type":"trojan","server":"13.51.8.211","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇮🇪IE | trojan | @PrivateVPNs | 16","type":"trojan","server":"52.19.31.33","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇩🇪DE | trojan | @DirectVPN | 16","type":"trojan","server":"18.198.37.227","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -127,7 +127,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇮🇪IE | trojan | @PrivateVPNs | 16'
-      - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇩🇪DE | trojan | @DirectVPN | 16'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,14 +135,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇮🇪IE | trojan | @PrivateVPNs | 16'
-      - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇩🇪DE | trojan | @DirectVPN | 16'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇮🇪IE | trojan | @PrivateVPNs | 16'
-      - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇩🇪DE | trojan | @DirectVPN | 16'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
