@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇸🇪SE | vless | @reality_daily | 2",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @frev2ray | 11",
                 "🇯🇵JP | vless | @free_v2rayyy | 11",
@@ -115,6 +116,7 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇩🇪DE | vless | @FreakConfig | 11",
+                "🇫🇮FI | vless | @forwardv2ray | 19",
                 "🇸🇪SE | vless | @kiava | 15",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
@@ -125,6 +127,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇸🇪SE | vless | @reality_daily | 2",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @frev2ray | 11",
                 "🇯🇵JP | vless | @free_v2rayyy | 11",
@@ -134,6 +137,7 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇩🇪DE | vless | @FreakConfig | 11",
+                "🇫🇮FI | vless | @forwardv2ray | 19",
                 "🇸🇪SE | vless | @kiava | 15",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
@@ -158,6 +162,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇸🇪SE | vless | @reality_daily | 2",
+            "type": "vless",
+            "server": "77.91.84.45",
+            "server_port": 22,
+            "uuid": "5d5b8fac-39cd-41a7-af9a-ccc86943b1a5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speed.cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Jw_grvGNJiNAo4zkQo_OfeGq1TaPKV09zObwwZo8XWM",
+                    "short_id": "6cbc51ae6c3703f2"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
@@ -452,6 +485,42 @@
                     "enabled": true,
                     "public_key": "Jo0rfkBNwALKA0dd67wZD4utLK_jeNjM-SatrqN87BA",
                     "short_id": "b1f54cff"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇮FI | vless | @forwardv2ray | 19",
+            "type": "vless",
+            "server": "95.216.142.231",
+            "server_port": 443,
+            "uuid": "cf2ce827-129a-4d6f-ab9b-123b117e482d",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "--7y7O392SsxLLdl7sCNoXuE8bdWSpIKNUIH3_cTpVI",
+                    "short_id": "1b27a6b1"
                 }
             },
             "transport": {
