@@ -116,6 +116,7 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇩🇪DE | vless | @FreakConfig | 11",
+                "🇫🇷FR | vless | @forwardv2ray | 17",
                 "🇸🇪SE | vless | @kiava | 15",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
@@ -136,6 +137,7 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇩🇪DE | vless | @FreakConfig | 11",
+                "🇫🇷FR | vless | @forwardv2ray | 17",
                 "🇸🇪SE | vless | @kiava | 15",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇳🇴NO | vless | @Good_V2rayy | 2",
@@ -488,6 +490,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇷FR | vless | @forwardv2ray | 17",
+            "type": "vless",
+            "server": "98.66.160.227",
+            "server_port": 29494,
+            "uuid": "f89dfd86-7994-46ed-8846-6ea38f76a4dd",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dnschecker.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "NSzxLt7w8kfyxl7C4kjH3Mg7mxW1UZKiTNI_3SsddBU",
+                    "short_id": "86ee9777"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@enani5",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
