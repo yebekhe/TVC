@@ -13,11 +13,10 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇩🇪DE | trojan | @PrivateVPNs | 18 = trojan, 3.64.140.173, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
 🇬🇧GB | trojan | @DirectVPN | 18 = trojan, 18.132.66.28, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
-🇨🇦CA | trojan | @VmessProtocol | 19 = trojan, tgju.org, 443, password = e240a3b5-5bb3-4400-ae61-03fadfa6be45, udp-delay = true, skip-cert-verify = false, sni = allahi.qurani.shop, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | trojan | @PrivateVPNs | 18,🇬🇧GB | trojan | @DirectVPN | 18,🇨🇦CA | trojan | @VmessProtocol | 19
-URL-TEST = url-test,🇩🇪DE | trojan | @PrivateVPNs | 18,🇬🇧GB | trojan | @DirectVPN | 18,🇨🇦CA | trojan | @VmessProtocol | 19
-FALLBACK = fallback,🇩🇪DE | trojan | @PrivateVPNs | 18,🇬🇧GB | trojan | @DirectVPN | 18,🇨🇦CA | trojan | @VmessProtocol | 19
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | trojan | @PrivateVPNs | 18,🇬🇧GB | trojan | @DirectVPN | 18
+URL-TEST = url-test,🇩🇪DE | trojan | @PrivateVPNs | 18,🇬🇧GB | trojan | @DirectVPN | 18
+FALLBACK = fallback,🇩🇪DE | trojan | @PrivateVPNs | 18,🇬🇧GB | trojan | @DirectVPN | 18
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
