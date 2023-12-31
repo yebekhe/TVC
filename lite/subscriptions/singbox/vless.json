@@ -155,11 +155,12 @@
                 "🇫🇷FR | vless | @v2rayng_vpnrog | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇩🇪DE | vless | @flyv2ray | 15",
+                "🇫🇷FR | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 6",
                 "🇨🇷CR | vless | @mehrosaboran | 16",
                 "🇸🇪SE | vless | @kiava | 15",
                 "🇨🇦CA | vless | @proxy_mtm | 20",
-                "🇨🇦CA | vless | @vpn_go67 | 23",
+                "🇺🇸US | vless | @vpn_go67 | 23",
                 "🇸🇪SE | vless | @kingofilter | 15",
                 "🏳️XX | vless | @GozargahVPN | 16",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
@@ -220,11 +221,12 @@
                 "🇫🇷FR | vless | @v2rayng_vpnrog | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇩🇪DE | vless | @flyv2ray | 15",
+                "🇫🇷FR | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 6",
                 "🇨🇷CR | vless | @mehrosaboran | 16",
                 "🇸🇪SE | vless | @kiava | 15",
                 "🇨🇦CA | vless | @proxy_mtm | 20",
-                "🇨🇦CA | vless | @vpn_go67 | 23",
+                "🇺🇸US | vless | @vpn_go67 | 23",
                 "🇸🇪SE | vless | @kingofilter | 15",
                 "🏳️XX | vless | @GozargahVPN | 16",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
@@ -1433,9 +1435,9 @@
         {
             "tag": "🇨🇦CA | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "de.MsV2ray.sbs",
-            "server_port": 2087,
-            "uuid": "9fac0e66-13a0-443f-fd7a-8c0b027e4632",
+            "server": "172.67.216.162",
+            "server_port": 443,
+            "uuid": "376b9861-2fc6-4647-959c-18185cd9c95a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1445,7 +1447,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "de.MsV2ray.sbs",
+                "server_name": "lmn59.sbs",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1454,11 +1456,11 @@
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/fflsws",
+                "headers": {
+                    "Host": "lmn59.sbs"
+                }
             }
         },
         {
@@ -1699,6 +1701,30 @@
             }
         },
         {
+            "tag": "🇫🇷FR | vless | @forwardv2ray | 19",
+            "type": "vless",
+            "server": "fr2-full.privateip.net",
+            "server_port": 443,
+            "uuid": "3b55f37d-5e1a-4c76-b1ac-2925d0acbd30",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr2-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @FAKEOFTVC | 6",
             "type": "vless",
             "server": "162.159.8.55",
@@ -1821,7 +1847,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @vpn_go67 | 23",
+            "tag": "🇺🇸US | vless | @vpn_go67 | 23",
             "type": "vless",
             "server": "public.alpanel.top",
             "server_port": 1403,
