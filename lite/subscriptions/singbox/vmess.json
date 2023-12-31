@@ -110,10 +110,12 @@
                 "🇷🇺RU | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 7",
                 "🇮🇷IR | vmess | @customv2ray | 15",
+                "🇨🇦CA | vmess | @ConfigsHUB | 16",
                 "🏳️XX | vmess | @yaney_01 | 10",
-                "🇺🇸US | vmess | @Hope_Net | 12",
+                "🇨🇦CA | vmess | @Hope_Net | 12",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
                 "🇺🇸US | vmess | @v2Line | 9",
+                "🏳️XX | vmess | @forwardv2ray | 17",
                 "🇳🇱NL | vmess | @eliya_chiter0 | 0"
             ]
         },
@@ -125,10 +127,12 @@
                 "🇷🇺RU | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 7",
                 "🇮🇷IR | vmess | @customv2ray | 15",
+                "🇨🇦CA | vmess | @ConfigsHUB | 16",
                 "🏳️XX | vmess | @yaney_01 | 10",
-                "🇺🇸US | vmess | @Hope_Net | 12",
+                "🇨🇦CA | vmess | @Hope_Net | 12",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
                 "🇺🇸US | vmess | @v2Line | 9",
+                "🏳️XX | vmess | @forwardv2ray | 17",
                 "🇳🇱NL | vmess | @eliya_chiter0 | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -195,9 +199,9 @@
         {
             "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 7",
             "type": "vmess",
-            "server": "172.67.229.13",
-            "server_port": 80,
-            "uuid": "7300c5af-8657-48ea-ba35-4cc1176c5220",
+            "server": "104.27.102.105",
+            "server_port": 8080,
+            "uuid": "Telegram-V2ray_alpha",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -210,7 +214,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/RO4vpgRqVSLPRRQi97uOJujdeO",
+                "path": "\/",
                 "headers": {
                     "Host": ""
                 }
@@ -231,6 +235,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @ConfigsHUB | 16",
+            "type": "vmess",
+            "server": "104.16.217.241",
+            "server_port": 2096,
+            "uuid": "f326ca1d-ae09-4dac-d7bf-076486b21e63",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "telma4.lepingshop.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@telmavpn--@lepingshop",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -268,7 +306,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @Hope_Net | 12",
+            "tag": "🇨🇦CA | vmess | @Hope_Net | 12",
             "type": "vmess",
             "server": "v4.cfnode.eu.org",
             "server_port": 8080,
@@ -347,6 +385,23 @@
                 "headers": {
                     "Host": ""
                 }
+            }
+        },
+        {
+            "tag": "🏳️XX | vmess | @forwardv2ray | 17",
+            "type": "vmess",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
