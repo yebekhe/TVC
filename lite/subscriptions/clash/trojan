@@ -119,7 +119,8 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | trojan | @PrivateVPNs | 16","type":"trojan","server":"3.65.229.181","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
-  - {"name":"🇸🇪SE | trojan | @DirectVPN | 16","type":"trojan","server":"16.170.190.143","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇸🇪SE | trojan | @DirectVPN | 16","type":"trojan","server":"13.48.202.31","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇯🇵JP | trojan | @kingofilter | 15","type":"trojan","server":"54.168.244.142","port":3306,"udp":false,"password":"d07a02a06191c99f","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"n2.gladns.com"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +129,7 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | trojan | @PrivateVPNs | 16'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇯🇵JP | trojan | @kingofilter | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -136,6 +138,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | trojan | @PrivateVPNs | 16'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇯🇵JP | trojan | @kingofilter | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -143,6 +146,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | trojan | @PrivateVPNs | 16'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇯🇵JP | trojan | @kingofilter | 15'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
