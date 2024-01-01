@@ -141,6 +141,7 @@
                 "🏳️XX | vless | @FalconPolV2rayNG | 4",
                 "🇨🇦CA | vless | @ServerNett | 11",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
+                "🇺🇸US | vless | @proxyymeliii | 14",
                 "🇨🇦CA | vless | @MsV2ray | 9",
                 "🇨🇦CA | vless | @v2ray1_ng | 2",
                 "🇮🇷IR | vless | @vless_vmess | 5",
@@ -150,7 +151,7 @@
                 "🇨🇦CA | vless | @SafeNet_Server | 8",
                 "🇨🇦CA | vless | @lrnbymaa | 10",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 18",
-                "🇳🇱NL | vmess | @ConfigsHUB | 19",
+                "🇯🇵JP | vmess | @ConfigsHUB | 18",
                 "🏳️XX | vless | @proxystore11 | 18",
                 "🇸🇬SG | vmess | @Hope_Net | 14",
                 "🏳️XX | vless | @fnet00 | 10",
@@ -161,14 +162,13 @@
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @Capoit | 6",
-                "🏳️XX | vmess | @forwardv2ray | 18",
+                "🏳️XX | vmess | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 4",
-                "🇺🇸US | vless | @mehrosaboran | 10",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @nofiltering2 | 15",
                 "🇫🇮FI | vless | @proxy_mtm | 8",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
-                "🇩🇪DE | ss | @kingofilter | 14",
+                "🇬🇧GB | ss | @kingofilter | 13",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇺🇸US | vmess | @eliya_chiter0 | 6",
                 "🇺🇸US | vless | @FoXrayIran | 6",
@@ -215,6 +215,7 @@
                 "🏳️XX | vless | @FalconPolV2rayNG | 4",
                 "🇨🇦CA | vless | @ServerNett | 11",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
+                "🇺🇸US | vless | @proxyymeliii | 14",
                 "🇨🇦CA | vless | @MsV2ray | 9",
                 "🇨🇦CA | vless | @v2ray1_ng | 2",
                 "🇮🇷IR | vless | @vless_vmess | 5",
@@ -224,7 +225,7 @@
                 "🇨🇦CA | vless | @SafeNet_Server | 8",
                 "🇨🇦CA | vless | @lrnbymaa | 10",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 18",
-                "🇳🇱NL | vmess | @ConfigsHUB | 19",
+                "🇯🇵JP | vmess | @ConfigsHUB | 18",
                 "🏳️XX | vless | @proxystore11 | 18",
                 "🇸🇬SG | vmess | @Hope_Net | 14",
                 "🏳️XX | vless | @fnet00 | 10",
@@ -235,14 +236,13 @@
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @Capoit | 6",
-                "🏳️XX | vmess | @forwardv2ray | 18",
+                "🏳️XX | vmess | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 4",
-                "🇺🇸US | vless | @mehrosaboran | 10",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @nofiltering2 | 15",
                 "🇫🇮FI | vless | @proxy_mtm | 8",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
-                "🇩🇪DE | ss | @kingofilter | 14",
+                "🇬🇧GB | ss | @kingofilter | 13",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇺🇸US | vmess | @eliya_chiter0 | 6",
                 "🇺🇸US | vless | @FoXrayIran | 6",
@@ -1232,6 +1232,37 @@
             }
         },
         {
+            "tag": "🇺🇸US | vless | @proxyymeliii | 14",
+            "type": "vless",
+            "server": "All.SHHPROXY.monster",
+            "server_port": 443,
+            "uuid": "b86e3330-c1f5-47da-971a-f2c0ea9bb1d0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "shhV2ray.DIGTALCITY.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Shh_Proxy,@Shh_Proxy",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @MsV2ray | 9",
             "type": "vless",
             "server": "de.MsV2ray.sbs",
@@ -1461,11 +1492,11 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇳🇱NL | vmess | @ConfigsHUB | 19",
+            "tag": "🇯🇵JP | vmess | @ConfigsHUB | 18",
             "type": "vmess",
-            "server": "188.114.97.10",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "jp.takeshi.wiki",
+            "server_port": 80,
+            "uuid": "59517e0b-ae1c-41d3-9c44-c44cea6f7546",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1476,21 +1507,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "odelia.autos",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/takeshi.wiki",
                 "headers": {
-                    "Host": "odelia.autos"
+                    "Host": "jp.takeshi.wiki"
                 }
             }
         },
@@ -1804,7 +1825,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @forwardv2ray | 18",
+            "tag": "🏳️XX | vmess | @forwardv2ray | 19",
             "type": "vmess",
             "server": null,
             "server_port": 0,
@@ -1846,37 +1867,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇺🇸US | vless | @mehrosaboran | 10",
-            "type": "vless",
-            "server": "173.245.58.31",
-            "server_port": 443,
-            "uuid": "30c6a5ec-3de5-4eec-afe6-e9a13e1a30cb",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dash.zedmodeon.fun",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -2015,12 +2005,12 @@
             }
         },
         {
-            "tag": "🇩🇪DE | ss | @kingofilter | 14",
+            "tag": "🇬🇧GB | ss | @kingofilter | 13",
             "type": "shadowsocks",
-            "server": "passconf.xyz",
-            "server_port": 8080,
+            "server": "series-a1.samanehha.co",
+            "server_port": 443,
             "method": "chacha20-ietf-poly1305",
-            "password": "qGjmI8WQlF0tfhDbkLqGdN",
+            "password": "W74XFALLLuw6m5IA",
             "plugin": "",
             "plugin_opts": ""
         },
