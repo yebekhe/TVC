@@ -123,12 +123,13 @@
                 "🇨🇷CR | vless | @lightning6 | 19",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 16",
+                "🇩🇪DE | vless | @V2raysFree | 14",
                 "🇨🇦CA | vless | @v2logy | 18",
                 "🇮🇷IR | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇨🇷CR | vless | @V2rayNGn | 25",
                 "🇨🇦CA | vless | @UnlimitedDev | 7",
-                "🇨🇦CA | vless | @vmessorg | 23",
+                "🇨🇦CA | vless | @vmessorg | 24",
                 "🇨🇦CA | vless | @v2rayNG_Matsuri | 10",
                 "🇨🇦CA | vless | @v2rayngvpn | 9",
                 "🏳️XX | vless | @FalconPolV2rayNG | 4",
@@ -150,6 +151,7 @@
                 "🇨🇷CR | vless | @v2rayng_vpnrog | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇨🇦CA | vless | @Capoit | 6",
+                "🇨🇦CA | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 4",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @nofiltering2 | 15",
@@ -181,12 +183,13 @@
                 "🇨🇷CR | vless | @lightning6 | 19",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 16",
+                "🇩🇪DE | vless | @V2raysFree | 14",
                 "🇨🇦CA | vless | @v2logy | 18",
                 "🇮🇷IR | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇨🇷CR | vless | @V2rayNGn | 25",
                 "🇨🇦CA | vless | @UnlimitedDev | 7",
-                "🇨🇦CA | vless | @vmessorg | 23",
+                "🇨🇦CA | vless | @vmessorg | 24",
                 "🇨🇦CA | vless | @v2rayNG_Matsuri | 10",
                 "🇨🇦CA | vless | @v2rayngvpn | 9",
                 "🏳️XX | vless | @FalconPolV2rayNG | 4",
@@ -208,6 +211,7 @@
                 "🇨🇷CR | vless | @v2rayng_vpnrog | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇨🇦CA | vless | @Capoit | 6",
+                "🇨🇦CA | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 4",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @nofiltering2 | 15",
@@ -783,6 +787,20 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @V2raysFree | 14",
+            "type": "vless",
+            "server": "46.101.208.161",
+            "server_port": 43690,
+            "uuid": "f2b9bbfb-7c92-4723-a60f-453d2c474258",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @v2logy | 18",
             "type": "vless",
             "server": "okok.turk.coffee",
@@ -901,7 +919,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @vmessorg | 23",
+            "tag": "🇨🇦CA | vless | @vmessorg | 24",
             "type": "vless",
             "server": "bia_to1.vmessorg.shop",
             "server_port": 80,
@@ -1524,6 +1542,27 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 19",
+            "type": "vless",
+            "server": "cdnjs.com",
+            "server_port": 8080,
+            "uuid": "20a3c960-a9ef-4227-baff-f28406ece4dc",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "cdnjs.com"
+                }
             }
         },
         {
