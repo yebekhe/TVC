@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | vless | @EliV2ray | 10",
+                "🇫🇷FR | vless | @EliV2ray | 12",
                 "🇸🇬SG | vless | @reality_daily | 0",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @frev2ray | 11",
@@ -114,6 +114,8 @@
                 "🇯🇵JP | vless | @free_v2rayyy | 11",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇫🇮FI | vless | @prrofile_purple | 169",
+                "🇸🇪SE | vless | @V2RayTz | 14",
+                "🇮🇷IR | vless | @DailyV2RY | 46",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇩🇪DE | vless | @flyv2ray | 19",
@@ -128,7 +130,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | vless | @EliV2ray | 10",
+                "🇫🇷FR | vless | @EliV2ray | 12",
                 "🇸🇬SG | vless | @reality_daily | 0",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @frev2ray | 11",
@@ -136,6 +138,8 @@
                 "🇯🇵JP | vless | @free_v2rayyy | 11",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇫🇮FI | vless | @prrofile_purple | 169",
+                "🇸🇪SE | vless | @V2RayTz | 14",
+                "🇮🇷IR | vless | @DailyV2RY | 46",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇩🇪DE | vless | @flyv2ray | 19",
@@ -166,7 +170,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | vless | @EliV2ray | 10",
+            "tag": "🇫🇷FR | vless | @EliV2ray | 12",
             "type": "vless",
             "server": "98.66.160.227",
             "server_port": 29494,
@@ -439,6 +443,64 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇸🇪SE | vless | @V2RayTz | 14",
+            "type": "vless",
+            "server": "16.16.126.54",
+            "server_port": 5222,
+            "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "coinmarketcap.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "9phXvxA9Bm7NTIjBAc97fm330uFeMl-dMqM63XYnvH0",
+                    "short_id": "1db3"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇷IR | vless | @DailyV2RY | 46",
+            "type": "vless",
+            "server": "185.143.234.81",
+            "server_port": 8443,
+            "uuid": "92fcc431-a963-4864-aa73-222fa961271c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "smyujfjdday.page.in",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "edge"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7KU9RAppo9b-I3CQdQhBqXQ8eaKPxgF0A67MA4OY7w4",
+                    "short_id": "b57c9c13"
+                }
             }
         },
         {
