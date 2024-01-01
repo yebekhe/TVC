@@ -131,6 +131,7 @@ proxies:
   - {"name":"🇫🇷FR | vless | @v2rayng_vpnrog | 10","type":"vless","server":"deragv2ray.net","port":17693,"udp":true,"uuid":"1b90efcb-891c-4eb5-a653-34d2e2c15466","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"mihanyas.ir","grpc-opts":{"grpc-service-name":"@deragv2ray,@deragv2ray,@deragv2ray"},"reality-opts":{"public-key":"AKoaNVYZJyC4_pM320wz2IijClB0jlw8276E4n-YC1I","short-id":"98cb4588"}}
   - {"name":"🇩🇪DE | vless | @flyv2ray | 19","type":"vless","server":"128.140.86.66","port":443,"udp":true,"uuid":"c084e53f-c642-4339-b163-0f972a2893b7","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"ftp.debian.org","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"jHJQ1xZ72Rk9I29I2V57mfK0hWYw5MLUzJpuu0z-B1Q","short-id":"b1f54cff"}}
   - {"name":"🇸🇪SE | vless | @kiava | 15","type":"vless","server":"13.53.165.234","port":8443,"udp":true,"uuid":"f553d0ca-701d-4f95-90e9-2851d055291e","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"www.makers.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"094zlJ4_U2mSayM41OD2TN5oEFVtQa9j1GeiHSs55BY","short-id":"3c"}}
+  - {"name":"🇸🇪SE | vless | @kingofilter | 17","type":"vless","server":"16.170.40.168","port":8443,"udp":true,"uuid":"f553d0ca-701d-4f95-90e9-2851d055291e","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"www.makers.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"dnpn5fETMfKuYviGyeS4ab6lfHIAagZuYzwEePaFsAg","short-id":"3c"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -148,6 +149,7 @@ proxy-groups:
       - '🇫🇷FR | vless | @v2rayng_vpnrog | 10'
       - '🇩🇪DE | vless | @flyv2ray | 19'
       - '🇸🇪SE | vless | @kiava | 15'
+      - '🇸🇪SE | vless | @kingofilter | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -165,6 +167,7 @@ proxy-groups:
       - '🇫🇷FR | vless | @v2rayng_vpnrog | 10'
       - '🇩🇪DE | vless | @flyv2ray | 19'
       - '🇸🇪SE | vless | @kiava | 15'
+      - '🇸🇪SE | vless | @kingofilter | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -181,6 +184,7 @@ proxy-groups:
       - '🇫🇷FR | vless | @v2rayng_vpnrog | 10'
       - '🇩🇪DE | vless | @flyv2ray | 19'
       - '🇸🇪SE | vless | @kiava | 15'
+      - '🇸🇪SE | vless | @kingofilter | 17'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
