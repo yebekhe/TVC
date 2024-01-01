@@ -121,7 +121,7 @@
                 "🇨🇦CA | vless | @Lockey_vpn | 8",
                 "🇨🇦CA | vless | @rxv2ray | 20",
                 "🇨🇦CA | vless | @free_v2rayyy | 11",
-                "🇺🇸US | vless | @lightning6 | 17",
+                "🇨🇷CR | vless | @lightning6 | 17",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 14",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 14",
@@ -155,7 +155,7 @@
                 "🇨🇦CA | vless | @SafeNet_Server | 10",
                 "🇨🇦CA | vless | @lrnbymaa | 10",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 18",
-                "🏳️XX | vmess | @ConfigsHUB | 16",
+                "🏳️XX | vmess | @ConfigsHUB | 18",
                 "🏳️XX | vless | @proxystore11 | 18",
                 "🇬🇧GB | vmess | @Hope_Net | 13",
                 "🏳️XX | vless | @fnet00 | 10",
@@ -166,7 +166,7 @@
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @Capoit | 5",
                 "🇺🇸US | vless | @FreakConfig | 9",
-                "🇸🇪SE | vless | @forwardv2ray | 18",
+                "🇳🇱NL | vmess | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 3",
                 "🇺🇸US | vless | @mehrosaboran | 6",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -201,7 +201,7 @@
                 "🇨🇦CA | vless | @Lockey_vpn | 8",
                 "🇨🇦CA | vless | @rxv2ray | 20",
                 "🇨🇦CA | vless | @free_v2rayyy | 11",
-                "🇺🇸US | vless | @lightning6 | 17",
+                "🇨🇷CR | vless | @lightning6 | 17",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 14",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 14",
@@ -235,7 +235,7 @@
                 "🇨🇦CA | vless | @SafeNet_Server | 10",
                 "🇨🇦CA | vless | @lrnbymaa | 10",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 18",
-                "🏳️XX | vmess | @ConfigsHUB | 16",
+                "🏳️XX | vmess | @ConfigsHUB | 18",
                 "🏳️XX | vless | @proxystore11 | 18",
                 "🇬🇧GB | vmess | @Hope_Net | 13",
                 "🏳️XX | vless | @fnet00 | 10",
@@ -246,7 +246,7 @@
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @Capoit | 5",
                 "🇺🇸US | vless | @FreakConfig | 9",
-                "🇸🇪SE | vless | @forwardv2ray | 18",
+                "🇳🇱NL | vmess | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 3",
                 "🇺🇸US | vless | @mehrosaboran | 6",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -762,7 +762,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @lightning6 | 17",
+            "tag": "🇨🇷CR | vless | @lightning6 | 17",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.mamd.sbs",
             "server_port": 2083,
@@ -1608,7 +1608,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🏳️XX | vmess | @ConfigsHUB | 16",
+            "tag": "🏳️XX | vmess | @ConfigsHUB | 18",
             "type": "vmess",
             "server": null,
             "server_port": 0,
@@ -1927,13 +1927,16 @@
             }
         },
         {
-            "tag": "🇸🇪SE | vless | @forwardv2ray | 18",
-            "type": "vless",
-            "server": "13.53.71.226",
-            "server_port": 5222,
-            "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
+            "tag": "🇳🇱NL | vmess | @forwardv2ray | 19",
+            "type": "vmess",
+            "server": "188.114.96.58",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 1,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -1941,17 +1944,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "coinmarketcap.com",
+                "server_name": "",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "5CfXJestJOMyrVAZ6v772ByJHvROXbCwEKQoXBnB61I",
-                    "short_id": "1db3"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": ""
                 }
             }
         },

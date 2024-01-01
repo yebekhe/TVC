@@ -112,10 +112,11 @@
                 "🇨🇦CA | vmess | @prrofile_purple | 169",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇮🇷IR | vmess | @ShadowProxy66 | 39",
-                "🏳️XX | vmess | @ConfigsHUB | 16",
+                "🏳️XX | vmess | @ConfigsHUB | 18",
                 "🇬🇧GB | vmess | @Hope_Net | 13",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
                 "🇺🇸US | vmess | @v2Line | 9",
+                "🇳🇱NL | vmess | @forwardv2ray | 19",
                 "🇺🇸US | vmess | @eliya_chiter0 | 6"
             ]
         },
@@ -129,10 +130,11 @@
                 "🇨🇦CA | vmess | @prrofile_purple | 169",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇮🇷IR | vmess | @ShadowProxy66 | 39",
-                "🏳️XX | vmess | @ConfigsHUB | 16",
+                "🏳️XX | vmess | @ConfigsHUB | 18",
                 "🇬🇧GB | vmess | @Hope_Net | 13",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
                 "🇺🇸US | vmess | @v2Line | 9",
+                "🇳🇱NL | vmess | @forwardv2ray | 19",
                 "🇺🇸US | vmess | @eliya_chiter0 | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -279,7 +281,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @ConfigsHUB | 16",
+            "tag": "🏳️XX | vmess | @ConfigsHUB | 18",
             "type": "vmess",
             "server": null,
             "server_port": 0,
@@ -365,6 +367,40 @@
             "transport": {
                 "type": "ws",
                 "path": "\/racevpn",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | vmess | @forwardv2ray | 19",
+            "type": "vmess",
+            "server": "188.114.96.58",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 1,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
                 "headers": {
                     "Host": ""
                 }
