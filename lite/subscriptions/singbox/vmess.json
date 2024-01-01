@@ -109,9 +109,9 @@
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇷🇺RU | vmess | @mftizi | 18",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 11",
-                "🇨🇦CA | vmess | @prrofile_purple | 169",
+                "🇨🇦CA | vmess | @prrofile_purple | 178",
                 "🇮🇷IR | vmess | @customv2ray | 15",
-                "🇮🇳IN | vmess | @Hope_Net | 14",
+                "🇳🇱NL | vmess | @Hope_Net | 14",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇺🇸US | vmess | @eliya_chiter0 | 6"
@@ -124,9 +124,9 @@
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇷🇺RU | vmess | @mftizi | 18",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 11",
-                "🇨🇦CA | vmess | @prrofile_purple | 169",
+                "🇨🇦CA | vmess | @prrofile_purple | 178",
                 "🇮🇷IR | vmess | @customv2ray | 15",
-                "🇮🇳IN | vmess | @Hope_Net | 14",
+                "🇳🇱NL | vmess | @Hope_Net | 14",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇺🇸US | vmess | @eliya_chiter0 | 6"
@@ -217,7 +217,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @prrofile_purple | 169",
+            "tag": "🇨🇦CA | vmess | @prrofile_purple | 178",
             "type": "vmess",
             "server": "104.27.102.105",
             "server_port": 8080,
@@ -258,11 +258,11 @@
             }
         },
         {
-            "tag": "🇮🇳IN | vmess | @Hope_Net | 14",
+            "tag": "🇳🇱NL | vmess | @Hope_Net | 14",
             "type": "vmess",
-            "server": "129.154.228.4",
-            "server_port": 8085,
-            "uuid": "587da4bb-a799-418e-ab50-2cb5f632c691",
+            "server": "nl-full.privateip.net",
+            "server_port": 443,
+            "uuid": "6930f7e2-0649-4cd0-b5e8-d533472ca478",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -273,11 +273,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "nl-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/vmess",
+                "path": "\/racevpn",
                 "headers": {
-                    "Host": ""
+                    "Host": "nl-full.privateip.net"
                 }
             }
         },
