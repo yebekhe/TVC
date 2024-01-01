@@ -106,18 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | tuic | @TUICity | 5",
-                "🏳️XX | tuic | @TUICity | 6",
-                "🇺🇸US | tuic | @TUICity | 7"
+                "🇩🇪DE | tuic | @TUICity | 7",
+                "🏳️XX | tuic | @TUICity | 8",
+                "🇺🇸US | tuic | @TUICity | 9",
+                "🇺🇸US | tuic | @TUICity | 11"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | tuic | @TUICity | 5",
-                "🏳️XX | tuic | @TUICity | 6",
-                "🇺🇸US | tuic | @TUICity | 7"
+                "🇩🇪DE | tuic | @TUICity | 7",
+                "🏳️XX | tuic | @TUICity | 8",
+                "🇺🇸US | tuic | @TUICity | 9",
+                "🇺🇸US | tuic | @TUICity | 11"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,12 +142,12 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | tuic | @TUICity | 5",
+            "tag": "🇩🇪DE | tuic | @TUICity | 7",
             "type": "tuic",
-            "server": "64.110.25.10",
-            "server_port": 11227,
-            "uuid": "764b539f-2d3c-4772-9731-5ebf6984af98",
-            "password": "dongtaiwang.com",
+            "server": "95.179.167.38",
+            "server_port": 443,
+            "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
+            "password": "e7b1c11f0d40cc95",
             "congestion_control": "bbr",
             "udp_relay_mode": "native",
             "zero_rtt_handshake": false,
@@ -154,7 +156,7 @@
             "tls": {
                 "enabled": true,
                 "disable_sni": false,
-                "server_name": "bing.com",
+                "server_name": "www.apple.com",
                 "insecure": true,
                 "alpn": [
                     "h3",
@@ -163,7 +165,7 @@
             }
         },
         {
-            "tag": "🏳️XX | tuic | @TUICity | 6",
+            "tag": "🏳️XX | tuic | @TUICity | 8",
             "type": "tuic",
             "server": "[2602:294:0:f5:1234:4321:dc1e:1]",
             "server_port": 28029,
@@ -186,7 +188,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | tuic | @TUICity | 7",
+            "tag": "🇺🇸US | tuic | @TUICity | 9",
             "type": "tuic",
             "server": "108.181.22.239",
             "server_port": 45600,
@@ -201,6 +203,29 @@
                 "enabled": true,
                 "disable_sni": false,
                 "server_name": "www.virustotal.com",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸US | tuic | @TUICity | 11",
+            "type": "tuic",
+            "server": "64.110.25.10",
+            "server_port": 11227,
+            "uuid": "764b539f-2d3c-4772-9731-5ebf6984af98",
+            "password": "dongtaiwang.com",
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "bing.com",
                 "insecure": true,
                 "alpn": [
                     "h3",
