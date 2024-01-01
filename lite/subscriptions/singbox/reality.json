@@ -107,7 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇫🇷FR | vless | @EliV2ray | 10",
-                "🇵🇱PL | vless | @reality_daily | 1",
+                "🇸🇬SG | vless | @reality_daily | 0",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @frev2ray | 11",
                 "🇯🇵JP | vless | @free_v2rayyy | 11",
@@ -127,7 +127,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇫🇷FR | vless | @EliV2ray | 10",
-                "🇵🇱PL | vless | @reality_daily | 1",
+                "🇸🇬SG | vless | @reality_daily | 0",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @frev2ray | 11",
                 "🇯🇵JP | vless | @free_v2rayyy | 11",
@@ -198,12 +198,12 @@
             }
         },
         {
-            "tag": "🇵🇱PL | vless | @reality_daily | 1",
+            "tag": "🇸🇬SG | vless | @reality_daily | 0",
             "type": "vless",
-            "server": "51.77.38.99",
-            "server_port": 22,
-            "uuid": "ef3432df-5250-405e-896a-5320f0fbcbbe",
-            "flow": "xtls-rprx-vision",
+            "server": "darksideofmoon.sooshiant.link",
+            "server_port": 2083,
+            "uuid": "d222aee4-239e-47b6-81d7-21e3d8ef07ba",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -212,17 +212,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "speed.cloudflare.com",
+                "server_name": "darksideofmoon.sooshiant.link",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "lsoV8kOqm0eJh_H2mmB_gKo63vc3dfcc1NZZNB-Oekc",
-                    "short_id": "6e5df2f1dfa942d6"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "darksideofmoon.sooshiant.link"
                 }
             }
         },
