@@ -137,7 +137,7 @@
                 "🇨🇦CA | vless | @v2rayngvpn | 9",
                 "🏳️XX | vless | @FalconPolV2rayNG | 6",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
-                "🇳🇱NL | vless | @proxyymeliii | 17",
+                "🇺🇸US | vless | @proxyymeliii | 18",
                 "🇨🇦CA | vless | @MsV2ray | 9",
                 "🇨🇦CA | vless | @v2ray1_ng | 2",
                 "🇮🇷IR | vless | @vless_vmess | 5",
@@ -152,6 +152,7 @@
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇨🇦CA | vless | @Capoit | 5",
                 "🇩🇪DE | vless | @flyv2ray | 18",
+                "🏳️XX | vless | @forwardv2ray | 13",
                 "🇨🇦CA | vless | @FAKEOFTVC | 3",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇨🇦CA | vless | @mehrosaboran | 6",
@@ -199,7 +200,7 @@
                 "🇨🇦CA | vless | @v2rayngvpn | 9",
                 "🏳️XX | vless | @FalconPolV2rayNG | 6",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
-                "🇳🇱NL | vless | @proxyymeliii | 17",
+                "🇺🇸US | vless | @proxyymeliii | 18",
                 "🇨🇦CA | vless | @MsV2ray | 9",
                 "🇨🇦CA | vless | @v2ray1_ng | 2",
                 "🇮🇷IR | vless | @vless_vmess | 5",
@@ -214,6 +215,7 @@
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇨🇦CA | vless | @Capoit | 5",
                 "🇩🇪DE | vless | @flyv2ray | 18",
+                "🏳️XX | vless | @forwardv2ray | 13",
                 "🇨🇦CA | vless | @FAKEOFTVC | 3",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇨🇦CA | vless | @mehrosaboran | 6",
@@ -1159,17 +1161,34 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vless | @proxyymeliii | 17",
+            "tag": "🇺🇸US | vless | @proxyymeliii | 18",
             "type": "vless",
-            "server": "156.253.5.223",
-            "server_port": 19024,
-            "uuid": "5b507d88-f082-4b7b-8b33-41541d5498dd",
+            "server": "All.SHHPROXY.monster",
+            "server_port": 443,
+            "uuid": "4d167b93-b85b-4c97-88fd-af56a072bbbf",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "shhV2ray.DIGTALCITY.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Shh_Proxy,@Shh_Proxy",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1587,6 +1606,37 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🏳️XX | vless | @forwardv2ray | 13",
+            "type": "vless",
+            "server": "join---------to.U_CONFINGVPN",
+            "server_port": 8443,
+            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "baipiao1.curly-train.pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "baipiao1.curly-train.pages.dev"
+                }
             }
         },
         {
