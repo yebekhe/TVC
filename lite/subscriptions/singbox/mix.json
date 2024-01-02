@@ -106,10 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | vless | @EliV2ray | 14",
                 "🇩🇪DE | vless | @NIM_VPN_ir | 0",
                 "🇨🇦CA | vless | @XsV2ray | 15",
-                "🇹🇷TR | vless | @reality_daily | 0",
                 "🇬🇧GB | vless | @VlessConfig | 15",
                 "🇨🇷CR | vless | @VPNCUSTOMIZE | 22",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
@@ -155,9 +153,9 @@
                 "🇨🇦CA | vless | @SafeNet_Server | 9",
                 "🇨🇦CA | vless | @lrnbymaa | 11",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 18",
-                "🇨🇦CA | vless | @ConfigsHUB | 14",
+                "🇨🇦CA | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @proxystore11 | 18",
-                "🏳️XX | vmess | @Hope_Net | 13",
+                "🇫🇮FI | vmess | @Hope_Net | 13",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 44",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
@@ -167,8 +165,7 @@
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇨🇷CR | vless | @FreakConfig | 7",
-                "🇬🇧GB | ss | @forwardv2ray | 18",
-                "🇫🇮FI | vmess | @FAKEOFTVC | 4",
+                "🏳️XX | vmess | @forwardv2ray | 18",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇫🇮FI | vless | @nofiltering2 | 15",
                 "🇫🇮FI | vless | @proxy_mtm | 8",
@@ -183,10 +180,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | vless | @EliV2ray | 14",
                 "🇩🇪DE | vless | @NIM_VPN_ir | 0",
                 "🇨🇦CA | vless | @XsV2ray | 15",
-                "🇹🇷TR | vless | @reality_daily | 0",
                 "🇬🇧GB | vless | @VlessConfig | 15",
                 "🇨🇷CR | vless | @VPNCUSTOMIZE | 22",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
@@ -232,9 +227,9 @@
                 "🇨🇦CA | vless | @SafeNet_Server | 9",
                 "🇨🇦CA | vless | @lrnbymaa | 11",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 18",
-                "🇨🇦CA | vless | @ConfigsHUB | 14",
+                "🇨🇦CA | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @proxystore11 | 18",
-                "🏳️XX | vmess | @Hope_Net | 13",
+                "🇫🇮FI | vmess | @Hope_Net | 13",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 44",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
@@ -244,8 +239,7 @@
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇨🇷CR | vless | @FreakConfig | 7",
-                "🇬🇧GB | ss | @forwardv2ray | 18",
-                "🇫🇮FI | vmess | @FAKEOFTVC | 4",
+                "🏳️XX | vmess | @forwardv2ray | 18",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇫🇮FI | vless | @nofiltering2 | 15",
                 "🇫🇮FI | vless | @proxy_mtm | 8",
@@ -274,42 +268,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇫🇷FR | vless | @EliV2ray | 14",
-            "type": "vless",
-            "server": "98.66.160.227",
-            "server_port": 29494,
-            "uuid": "f89dfd86-7994-46ed-8846-6ea38f76a4dd",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dnschecker.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "NSzxLt7w8kfyxl7C4kjH3Mg7mxW1UZKiTNI_3SsddBU",
-                    "short_id": "86ee9777"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@enani5",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🇩🇪DE | vless | @NIM_VPN_ir | 0",
@@ -371,35 +329,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇹🇷TR | vless | @reality_daily | 0",
-            "type": "vless",
-            "server": "83.217.9.129",
-            "server_port": 22,
-            "uuid": "9aa2a965-2157-4fad-be0e-eb8f8ca8646b",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "speed.cloudflare.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "vxiOQMd5FENxKt4Iij5xvkaxGgH01SRcUR0zrHmrBx0",
-                    "short_id": "6e36707a"
-                }
             }
         },
         {
@@ -1657,11 +1586,11 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇦CA | vless | @ConfigsHUB | 14",
+            "tag": "🇨🇦CA | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "de.MsV2ray.sbs",
-            "server_port": 2087,
-            "uuid": "9fac0e66-13a0-443f-fd7a-8c0b027e4632",
+            "server": "icook.hk",
+            "server_port": 8443,
+            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1671,7 +1600,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "de.MsV2ray.sbs",
+                "server_name": "edgood.king361.cf",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1680,11 +1609,11 @@
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "edgood.king361.cf"
+                }
             }
         },
         {
@@ -1719,11 +1648,11 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @Hope_Net | 13",
+            "tag": "🇫🇮FI | vmess | @Hope_Net | 13",
             "type": "vmess",
-            "server": null,
-            "server_port": 0,
-            "uuid": null,
+            "server": "cmd.moeinrayan.xyz",
+            "server_port": 8080,
+            "uuid": "f6716e42-a761-4b5b-a14f-812137f3617b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -2011,21 +1940,11 @@
             }
         },
         {
-            "tag": "🇬🇧GB | ss | @forwardv2ray | 18",
-            "type": "shadowsocks",
-            "server": "series-a1.samanehha.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "W74XFALLLuw6m5IA",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇫🇮FI | vmess | @FAKEOFTVC | 4",
+            "tag": "🏳️XX | vmess | @forwardv2ray | 18",
             "type": "vmess",
-            "server": "cmd.moeinrayan.xyz",
-            "server_port": 8080,
-            "uuid": "f6716e42-a761-4b5b-a14f-812137f3617b",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -2040,7 +1959,7 @@
         {
             "tag": "🇸🇪SE | vless | @kiava | 14",
             "type": "vless",
-            "server": "16.170.168.4",
+            "server": "16.170.40.168",
             "server_port": 8443,
             "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
             "flow": "xtls-rprx-vision",
@@ -2061,7 +1980,7 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "JWpQpVZi8RwFZtxTCKiZVKWRmkOA2htJ5nNnAgbIIw0",
+                    "public_key": "dnpn5fETMfKuYviGyeS4ab6lfHIAagZuYzwEePaFsAg",
                     "short_id": "3c"
                 }
             }
