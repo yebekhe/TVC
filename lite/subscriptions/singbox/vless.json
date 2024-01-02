@@ -122,8 +122,8 @@
                 "🇨🇷CR | vless | @V2rayNGmat | 1",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 16",
-                "🇨🇦CA | vless | @DarkTeam_VPN | 17",
-                "TVChvgqnguhgt",
+                "🇨🇦CA | vless | @DarkTeam_VPN | 20",
+                "TVCzyrcoexdlx",
                 "🇮🇷IR | vless | @V2raysFree | 12",
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇳🇱NL | vless | @servermomo | 14",
@@ -147,7 +147,6 @@
                 "🏳️XX | vless | @MTConfig | 21",
                 "🇸🇪SE | vless | @V2RayTz | 16",
                 "🇨🇦CA | vless | @VmessProtocol | 16",
-                "🇨🇦CA | vless | @DailyV2RY | 11",
                 "🇨🇦CA | vless | @MehradLearn | 10",
                 "🇸🇪SE | vless | @SafeNet_Server | 8",
                 "🇨🇦CA | vless | @lrnbymaa | 11",
@@ -160,6 +159,7 @@
                 "🇨🇦CA | vless | @Capoit | 4",
                 "🇨🇷CR | vless | @FreakConfig | 11",
                 "🇹🇷TR | vless | @flyv2ray | 20",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 20",
@@ -190,8 +190,8 @@
                 "🇨🇷CR | vless | @V2rayNGmat | 1",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 16",
-                "🇨🇦CA | vless | @DarkTeam_VPN | 17",
-                "TVChvgqnguhgt",
+                "🇨🇦CA | vless | @DarkTeam_VPN | 20",
+                "TVCzyrcoexdlx",
                 "🇮🇷IR | vless | @V2raysFree | 12",
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇳🇱NL | vless | @servermomo | 14",
@@ -215,7 +215,6 @@
                 "🏳️XX | vless | @MTConfig | 21",
                 "🇸🇪SE | vless | @V2RayTz | 16",
                 "🇨🇦CA | vless | @VmessProtocol | 16",
-                "🇨🇦CA | vless | @DailyV2RY | 11",
                 "🇨🇦CA | vless | @MehradLearn | 10",
                 "🇸🇪SE | vless | @SafeNet_Server | 8",
                 "🇨🇦CA | vless | @lrnbymaa | 11",
@@ -228,6 +227,7 @@
                 "🇨🇦CA | vless | @Capoit | 4",
                 "🇨🇷CR | vless | @FreakConfig | 11",
                 "🇹🇷TR | vless | @flyv2ray | 20",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 20",
@@ -767,7 +767,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @DarkTeam_VPN | 17",
+            "tag": "🇨🇦CA | vless | @DarkTeam_VPN | 20",
             "type": "vless",
             "server": "104.21.28.62",
             "server_port": 443,
@@ -798,7 +798,7 @@
             }
         },
         {
-            "tag": "TVChvgqnguhgt",
+            "tag": "TVCzyrcoexdlx",
             "type": "vless",
             "server": "",
             "server_port": 0,
@@ -1450,27 +1450,6 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @DailyV2RY | 11",
-            "type": "vless",
-            "server": "cdnjs.com",
-            "server_port": 8880,
-            "uuid": "e0f52d31-566b-437d-9961-1865e38d10fb",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "cdnjs.com"
-                }
-            }
-        },
-        {
             "tag": "🇨🇦CA | vless | @MehradLearn | 10",
             "type": "vless",
             "server": "172.67.170.103",
@@ -1810,6 +1789,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Dr.Phone",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 19",
+            "type": "vless",
+            "server": "moftinet.eryhoihuuu.sbs",
+            "server_port": 443,
+            "uuid": "f65813de-f855-41cd-96d3-6f53d6186ff3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "36mhDE4VbNovmhh-wU0nxz-g2KBOmqk6Yyf-87uxGTU",
+                    "short_id": "4457d5d0"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Moftinet  @Moftinet  @Moftinet @Moftinet",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false

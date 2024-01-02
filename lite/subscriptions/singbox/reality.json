@@ -118,6 +118,7 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇹🇷TR | vless | @flyv2ray | 20",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
@@ -139,6 +140,7 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇹🇷TR | vless | @flyv2ray | 20",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
@@ -562,6 +564,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Dr.Phone",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 19",
+            "type": "vless",
+            "server": "moftinet.eryhoihuuu.sbs",
+            "server_port": 443,
+            "uuid": "f65813de-f855-41cd-96d3-6f53d6186ff3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "36mhDE4VbNovmhh-wU0nxz-g2KBOmqk6Yyf-87uxGTU",
+                    "short_id": "4457d5d0"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Moftinet  @Moftinet  @Moftinet @Moftinet",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
