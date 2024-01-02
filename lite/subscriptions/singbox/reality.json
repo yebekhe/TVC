@@ -110,12 +110,12 @@
                 "🇨🇦CA | vless | @frev2ray | 11",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @v2logy | 18",
+                "🇸🇪SE | vless | @v2rayNG_Matsuri | 19",
                 "🏳️XX | vless | @MTConfig | 21",
                 "🇸🇪SE | vless | @V2RayTz | 16",
                 "🇸🇪SE | vless | @SafeNet_Server | 8",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
-                "🇺🇸US | vless | @FreakConfig | 13",
                 "🇹🇷TR | vless | @flyv2ray | 20",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -130,12 +130,12 @@
                 "🇨🇦CA | vless | @frev2ray | 11",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @v2logy | 18",
+                "🇸🇪SE | vless | @v2rayNG_Matsuri | 19",
                 "🏳️XX | vless | @MTConfig | 21",
                 "🇸🇪SE | vless | @V2RayTz | 16",
                 "🇸🇪SE | vless | @SafeNet_Server | 8",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
-                "🇺🇸US | vless | @FreakConfig | 13",
                 "🇹🇷TR | vless | @flyv2ray | 20",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -299,6 +299,35 @@
             }
         },
         {
+            "tag": "🇸🇪SE | vless | @v2rayNG_Matsuri | 19",
+            "type": "vless",
+            "server": "13.50.226.168",
+            "server_port": 8080,
+            "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "coinmarketcap.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "9phXvxA9Bm7NTIjBAc97fm330uFeMl-dMqM63XYnvH0",
+                    "short_id": "1db3"
+                }
+            }
+        },
+        {
             "tag": "🏳️XX | vless | @MTConfig | 21",
             "type": "vless",
             "server": "tel-xsv2ray.xalixv2ray.space",
@@ -459,42 +488,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@flyv2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇺🇸US | vless | @FreakConfig | 13",
-            "type": "vless",
-            "server": "5.161.119.12",
-            "server_port": 25365,
-            "uuid": "e9ae9f30-9522-4b54-a7d1-11c41b65d301",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.discord.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "1WHCPlcsI7qVUpmxlbahj4YLkqYwKilO-zm_rBKe11w",
-                    "short_id": "1fad820d"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
