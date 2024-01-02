@@ -115,7 +115,8 @@
                 "🇸🇪SE | vless | @SafeNet_Server | 8",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
-                "🏳️XX | vless | @FreakConfig | 7",
+                "🇺🇸US | vless | @FreakConfig | 13",
+                "🇹🇷TR | vless | @flyv2ray | 20",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
@@ -134,7 +135,8 @@
                 "🇸🇪SE | vless | @SafeNet_Server | 8",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
-                "🏳️XX | vless | @FreakConfig | 7",
+                "🇺🇸US | vless | @FreakConfig | 13",
+                "🇹🇷TR | vless | @flyv2ray | 20",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
@@ -463,11 +465,11 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @FreakConfig | 7",
+            "tag": "🇺🇸US | vless | @FreakConfig | 13",
             "type": "vless",
-            "server": "::ffff:5.75.204.51",
-            "server_port": 34782,
-            "uuid": "40abc17b-b527-4163-9bc5-30615b0592a0",
+            "server": "5.161.119.12",
+            "server_port": 25365,
+            "uuid": "e9ae9f30-9522-4b54-a7d1-11c41b65d301",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -477,7 +479,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "kodular.io",
+                "server_name": "www.discord.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -486,9 +488,52 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "IbSV9OnRyp0C7t5HuUpapZ6Z3HEVd0m7P8D5Wb4olBM",
-                    "short_id": "22e9d71e"
+                    "public_key": "1WHCPlcsI7qVUpmxlbahj4YLkqYwKilO-zm_rBKe11w",
+                    "short_id": "1fad820d"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇹🇷TR | vless | @flyv2ray | 20",
+            "type": "vless",
+            "server": "tk.dwv2ray.site",
+            "server_port": 443,
+            "uuid": "76408ff4-d39d-44a7-9666-78b88fb4c18f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "eSq2viks3QTjVd77cFKfenQfxAL2JBxoJX9xxblcsno",
+                    "short_id": "7b6e4dd3"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Dr.Phone",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
