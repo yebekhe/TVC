@@ -115,7 +115,7 @@
                 "🇨🇦CA | vmess | @Hope_Net | 14",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇫🇮FI | vmess | @FAKEOFTVC | 4",
+                "🇳🇱NL | vmess | @forwardv2ray | 19",
                 "🇮🇳IN | vmess | @eliya_chiter0 | 7"
             ]
         },
@@ -132,7 +132,7 @@
                 "🇨🇦CA | vmess | @Hope_Net | 14",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇫🇮FI | vmess | @FAKEOFTVC | 4",
+                "🇳🇱NL | vmess | @forwardv2ray | 19",
                 "🇮🇳IN | vmess | @eliya_chiter0 | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -374,11 +374,11 @@
             }
         },
         {
-            "tag": "🇫🇮FI | vmess | @FAKEOFTVC | 4",
+            "tag": "🇳🇱NL | vmess | @forwardv2ray | 19",
             "type": "vmess",
-            "server": "speed.novinweb.shop",
-            "server_port": 8080,
-            "uuid": "b80d3e4a-6721-4274-b580-9e1c649137fc",
+            "server": "188.114.98.0",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -388,6 +388,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "odelia.autos",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "odelia.autos"
+                }
             }
         },
         {
