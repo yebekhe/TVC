@@ -136,7 +136,7 @@
                 "🇨🇦CA | vless | @prrofile_purple | 169",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇨🇦CA | vless | @UnlimitedDev | 5",
-                "🏳️XX | vless | @vmessorg | 23",
+                "🏳️XX | vless | @vmessorg | 27",
                 "🇨🇦CA | vless | @v2rayNG_Matsuri | 20",
                 "🇳🇱NL | vless | @v2rayngvpn | 8",
                 "🏳️XX | vless | @FalconPolV2rayNG | 4",
@@ -165,7 +165,7 @@
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🏳️XX | vless | @FreakConfig | 7",
-                "🇨🇾CY | vmess | @forwardv2ray | 17",
+                "🇩🇪DE | vless | @forwardv2ray | 18",
                 "🇫🇮FI | vmess | @FAKEOFTVC | 4",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 8",
@@ -212,7 +212,7 @@
                 "🇨🇦CA | vless | @prrofile_purple | 169",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇨🇦CA | vless | @UnlimitedDev | 5",
-                "🏳️XX | vless | @vmessorg | 23",
+                "🏳️XX | vless | @vmessorg | 27",
                 "🇨🇦CA | vless | @v2rayNG_Matsuri | 20",
                 "🇳🇱NL | vless | @v2rayngvpn | 8",
                 "🏳️XX | vless | @FalconPolV2rayNG | 4",
@@ -241,7 +241,7 @@
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🏳️XX | vless | @FreakConfig | 7",
-                "🇨🇾CY | vmess | @forwardv2ray | 17",
+                "🇩🇪DE | vless | @forwardv2ray | 18",
                 "🇫🇮FI | vmess | @FAKEOFTVC | 4",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 8",
@@ -1145,11 +1145,11 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @vmessorg | 23",
+            "tag": "🏳️XX | vless | @vmessorg | 27",
             "type": "vless",
-            "server": "bia_to1.vmessorg.shop",
+            "server": "join_bede1.vmessorg.shop",
             "server_port": 80,
-            "uuid": "da41196f-8cb2-4796-9572-64ebc71272aa",
+            "uuid": "74066694-8094-493e-b183-5c6d967743de",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1161,7 +1161,7 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "bia_to1.vmessorg.shop"
+                    "Host": "join_bede1.vmessorg.shop"
                 }
             }
         },
@@ -1463,9 +1463,9 @@
         {
             "tag": "🇨🇦CA | vless | @VmessProtocol | 14",
             "type": "vless",
-            "server": "104.18.202.212",
-            "server_port": 2053,
-            "uuid": "e07b673a-9b23-4c86-a0b6-0b06219d8b66",
+            "server": "104.25.70.57",
+            "server_port": 443,
+            "uuid": "a0cdf51b-e97d-4e87-9976-ed272b617c09",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1475,7 +1475,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "profile.joinzedmodeon.top",
+                "server_name": "vi117.vipsaparat.store",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1484,11 +1484,11 @@
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "@ZEDMODEON",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/apiapp",
+                "headers": {
+                    "Host": "vi117.vipsaparat.store"
+                }
             }
         },
         {
@@ -1933,27 +1933,39 @@
             }
         },
         {
-            "tag": "🇨🇾CY | vmess | @forwardv2ray | 17",
-            "type": "vmess",
-            "server": "195.85.59.161",
-            "server_port": 2082,
-            "uuid": "6311f05b-5207-4ce6-86ea-ebe8d9811491",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "91.107.145.20",
+            "server_port": 443,
+            "uuid": "0af504e4-c413-481d-93e3-3d6b202818ab",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
+            "tls": {
+                "enabled": true,
+                "server_name": "www.eset.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "WgGOO19UFi19MfxHmbEgE_2PKgUansNnysBCdu7LHVw",
+                    "short_id": "615da235"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "eset",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
