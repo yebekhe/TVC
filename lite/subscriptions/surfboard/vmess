@@ -12,15 +12,13 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇷🇺RU | vmess | @mftizi | 18 = vmess, 103.113.68.233, 80, username = fddb3781-7e15-4731-a933-94db110b4bbc, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"", skip-cert-verify = true, tfo = false
-🇭🇰HK | vmess | @Hope_Net | 17 = vmess, hkcn2.s2fjeyeeyafe.bond, 80, username = 65d79be3-7327-45f8-86fc-bd7f27948eec, ws = true, tls = 1, vmess-aead = false, ws-path = /zh-cn, ws-headers = Host:"hkcn2.s2fjeyeeyafe.bond", skip-cert-verify = true, tfo = false
 🇮🇷IR | vmess | @MrV2Ray | 2 = vmess, 85.9.106.117, 57721, username = 0b3143e1-c24d-42f5-8562-f4041d7b7360, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 9 = vmess, v2line.telegram.channel.1371.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 443, username = 540bfb2c-2b26-4154-b5be-55d08bf40add, ws = true, tls = 1, vmess-aead = true, ws-path = /racevpn, ws-headers = Host:"", skip-cert-verify = true, tfo = false
-🇳🇱NL | vmess | @forwardv2ray | 18 = vmess, 188.114.97.7, 443, username = 7046F423-0E3B-4C77-A4A6-F6177AEB5099, ws = true, tls = 1, vmess-aead = true, ws-path = /speedtest, ws-headers = Host:"kansas.gafn.online", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @eliya_chiter0 | 6 = vmess, 173.245.59.99, 443, username = a407ba33-b69f-405d-9156-fe38edcf78d7, ws = true, tls = 1, vmess-aead = true, ws-path = /fBB9TuCG0IPgGqmgbWQRdvK, ws-headers = Host:"vip.osalizx.cfd", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇷🇺RU | vmess | @mftizi | 18,🇭🇰HK | vmess | @Hope_Net | 17,🇮🇷IR | vmess | @MrV2Ray | 2,🇺🇸US | vmess | @v2Line | 9,🇳🇱NL | vmess | @forwardv2ray | 18,🇺🇸US | vmess | @eliya_chiter0 | 6
-URL-TEST = url-test,🇷🇺RU | vmess | @mftizi | 18,🇭🇰HK | vmess | @Hope_Net | 17,🇮🇷IR | vmess | @MrV2Ray | 2,🇺🇸US | vmess | @v2Line | 9,🇳🇱NL | vmess | @forwardv2ray | 18,🇺🇸US | vmess | @eliya_chiter0 | 6
-FALLBACK = fallback,🇷🇺RU | vmess | @mftizi | 18,🇭🇰HK | vmess | @Hope_Net | 17,🇮🇷IR | vmess | @MrV2Ray | 2,🇺🇸US | vmess | @v2Line | 9,🇳🇱NL | vmess | @forwardv2ray | 18,🇺🇸US | vmess | @eliya_chiter0 | 6
+MANUAL = select,URL-TEST,FALLBACK,🇷🇺RU | vmess | @mftizi | 18,🇮🇷IR | vmess | @MrV2Ray | 2,🇺🇸US | vmess | @v2Line | 9,🇺🇸US | vmess | @eliya_chiter0 | 6
+URL-TEST = url-test,🇷🇺RU | vmess | @mftizi | 18,🇮🇷IR | vmess | @MrV2Ray | 2,🇺🇸US | vmess | @v2Line | 9,🇺🇸US | vmess | @eliya_chiter0 | 6
+FALLBACK = fallback,🇷🇺RU | vmess | @mftizi | 18,🇮🇷IR | vmess | @MrV2Ray | 2,🇺🇸US | vmess | @v2Line | 9,🇺🇸US | vmess | @eliya_chiter0 | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
