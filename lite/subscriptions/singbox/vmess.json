@@ -111,7 +111,9 @@
                 "🇺🇸US | vmess | @oneclickvpnkeys | 12",
                 "🇨🇦CA | vmess | @prrofile_purple | 178",
                 "🇮🇷IR | vmess | @customv2ray | 15",
-                "🇰🇷KR | vmess | @Hope_Net | 14",
+                "🇨🇦CA | vmess | @v2ray1_ng | 2",
+                "🏳️XX | vmess | @ConfigsHUB | 18",
+                "🇭🇰HK | vmess | @Hope_Net | 13",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇺🇸US | vmess | @eliya_chiter0 | 6"
@@ -126,7 +128,9 @@
                 "🇺🇸US | vmess | @oneclickvpnkeys | 12",
                 "🇨🇦CA | vmess | @prrofile_purple | 178",
                 "🇮🇷IR | vmess | @customv2ray | 15",
-                "🇰🇷KR | vmess | @Hope_Net | 14",
+                "🇨🇦CA | vmess | @v2ray1_ng | 2",
+                "🏳️XX | vmess | @ConfigsHUB | 18",
+                "🇭🇰HK | vmess | @Hope_Net | 13",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇺🇸US | vmess | @eliya_chiter0 | 6"
@@ -258,11 +262,11 @@
             }
         },
         {
-            "tag": "🇰🇷KR | vmess | @Hope_Net | 14",
+            "tag": "🇨🇦CA | vmess | @v2ray1_ng | 2",
             "type": "vmess",
-            "server": "211.177.40.235",
-            "server_port": 30001,
-            "uuid": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+            "server": "104.27.102.105",
+            "server_port": 8080,
+            "uuid": "Telegram-V2ray_alpha",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -273,22 +277,53 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "p3.chigua.tk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/vmess",
+                "path": "\/",
                 "headers": {
-                    "Host": "p3.chigua.tk"
+                    "Host": ""
                 }
+            }
+        },
+        {
+            "tag": "🏳️XX | vmess | @ConfigsHUB | 18",
+            "type": "vmess",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇭🇰HK | vmess | @Hope_Net | 13",
+            "type": "vmess",
+            "server": "8.218.73.227",
+            "server_port": 58641,
+            "uuid": "4821f5d8-dc31-4bb4-811c-8babcb8aec1a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "http",
+                "host": [
+                    "8.218.73.227"
+                ],
+                "path": "\/"
             }
         },
         {
