@@ -112,10 +112,10 @@
                 "🇨🇦CA | vmess | @prrofile_purple | 178",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇨🇦CA | vmess | @v2ray1_ng | 2",
-                "🇭🇰HK | vmess | @Hope_Net | 13",
+                "🏳️XX | vmess | @ConfigsHUB | 19",
+                "🇨🇦CA | vmess | @Hope_Net | 12",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇨🇦CA | vmess | @forwardv2ray | 18",
                 "🇺🇸US | vmess | @eliya_chiter0 | 6"
             ]
         },
@@ -129,10 +129,10 @@
                 "🇨🇦CA | vmess | @prrofile_purple | 178",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇨🇦CA | vmess | @v2ray1_ng | 2",
-                "🇭🇰HK | vmess | @Hope_Net | 13",
+                "🏳️XX | vmess | @ConfigsHUB | 19",
+                "🇨🇦CA | vmess | @Hope_Net | 12",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇨🇦CA | vmess | @forwardv2ray | 18",
                 "🇺🇸US | vmess | @eliya_chiter0 | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -286,11 +286,28 @@
             }
         },
         {
-            "tag": "🇭🇰HK | vmess | @Hope_Net | 13",
+            "tag": "🏳️XX | vmess | @ConfigsHUB | 19",
             "type": "vmess",
-            "server": "8.218.73.227",
-            "server_port": 58641,
-            "uuid": "4821f5d8-dc31-4bb4-811c-8babcb8aec1a",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @Hope_Net | 12",
+            "type": "vmess",
+            "server": "cn.azhz.eu.org",
+            "server_port": 443,
+            "uuid": "170857b0-d361-416d-be41-5112f4d21950",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -301,12 +318,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "suggesting-mesh-tanzania-bradford.trycloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
-                "type": "http",
-                "host": [
-                    "8.218.73.227"
-                ],
-                "path": "\/"
+                "type": "ws",
+                "path": "\/argox-vm",
+                "headers": {
+                    "Host": "suggesting-mesh-tanzania-bradford.trycloudflare.com"
+                }
             }
         },
         {
@@ -364,40 +391,6 @@
                 "path": "\/racevpn",
                 "headers": {
                     "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vmess | @forwardv2ray | 18",
-            "type": "vmess",
-            "server": "172.67.164.184",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 1,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "alvvin.click",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "alvvin.click"
                 }
             }
         },
