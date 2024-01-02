@@ -108,12 +108,13 @@
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
-                "🇮🇩ID | vmess | @oneclickvpnkeys | 11",
+                "🇮🇩ID | vmess | @oneclickvpnkeys | 12",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
                 "🏳️XX | vmess | @Hope_Net | 12",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 9",
+                "🇨🇦CA | vmess | @forwardv2ray | 17",
                 "🇫🇮FI | vmess | @FAKEOFTVC | 5"
             ]
         },
@@ -123,12 +124,13 @@
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
-                "🇮🇩ID | vmess | @oneclickvpnkeys | 11",
+                "🇮🇩ID | vmess | @oneclickvpnkeys | 12",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
                 "🏳️XX | vmess | @Hope_Net | 12",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 9",
+                "🇨🇦CA | vmess | @forwardv2ray | 17",
                 "🇫🇮FI | vmess | @FAKEOFTVC | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -203,7 +205,7 @@
             }
         },
         {
-            "tag": "🇮🇩ID | vmess | @oneclickvpnkeys | 11",
+            "tag": "🇮🇩ID | vmess | @oneclickvpnkeys | 12",
             "type": "vmess",
             "server": "beon.jawaadalahkunci.my.id",
             "server_port": 80,
@@ -347,6 +349,30 @@
             "transport": {
                 "type": "ws",
                 "path": "\/racevpn",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 17",
+            "type": "vmess",
+            "server": "104.27.102.105",
+            "server_port": 8080,
+            "uuid": "Telegram-V2ray_alpha",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
                 "headers": {
                     "Host": ""
                 }
