@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | vless | @EliV2ray | 14",
                 "🇩🇪DE | vless | @NIM_VPN_ir | 0",
                 "🇨🇦CA | vless | @XsV2ray | 15",
                 "🇹🇷TR | vless | @reality_daily | 0",
@@ -122,11 +123,11 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 16",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 17",
-                "TVCchyowzjsvw",
+                "TVCwcknmtqhwu",
                 "🇮🇷IR | vless | @V2raysFree | 12",
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇳🇱NL | vless | @servermomo | 14",
-                "🇮🇷IR | vless | @V2rayCollector | 0",
+                "🇮🇷IR | vless | @V2rayCollector | 1",
                 "🇨🇦CA | vless | @azadi_az_inja_migzare | 11",
                 "🇵🇱PL | vless | @V2rayCollectorDonate | 19",
                 "🏳️XX | vless | @ProxyForOpeta | 0",
@@ -170,7 +171,7 @@
                 "🇨🇦CA | vless | @Capoit | 4",
                 "🇨🇷CR | vless | @FreakConfig | 11",
                 "🇹🇷TR | vless | @flyv2ray | 20",
-                "🇨🇦CA | vless | @forwardv2ray | 18",
+                "🇨🇷CR | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 20",
@@ -187,6 +188,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | vless | @EliV2ray | 14",
                 "🇩🇪DE | vless | @NIM_VPN_ir | 0",
                 "🇨🇦CA | vless | @XsV2ray | 15",
                 "🇹🇷TR | vless | @reality_daily | 0",
@@ -203,11 +205,11 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 16",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 17",
-                "TVCchyowzjsvw",
+                "TVCwcknmtqhwu",
                 "🇮🇷IR | vless | @V2raysFree | 12",
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇳🇱NL | vless | @servermomo | 14",
-                "🇮🇷IR | vless | @V2rayCollector | 0",
+                "🇮🇷IR | vless | @V2rayCollector | 1",
                 "🇨🇦CA | vless | @azadi_az_inja_migzare | 11",
                 "🇵🇱PL | vless | @V2rayCollectorDonate | 19",
                 "🏳️XX | vless | @ProxyForOpeta | 0",
@@ -251,7 +253,7 @@
                 "🇨🇦CA | vless | @Capoit | 4",
                 "🇨🇷CR | vless | @FreakConfig | 11",
                 "🇹🇷TR | vless | @flyv2ray | 20",
-                "🇨🇦CA | vless | @forwardv2ray | 18",
+                "🇨🇷CR | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 20",
@@ -282,6 +284,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | vless | @EliV2ray | 14",
+            "type": "vless",
+            "server": "91.107.138.78",
+            "server_port": 50000,
+            "uuid": "e98ce689-eb18-4901-9bd2-85c6ee44231e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "uzbo.ro",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "wRuMbGZN9HJQovIq-bPSA0wEO0MhT7CgLY8GpB5GUWI",
+                    "short_id": "82757821"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "f",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @NIM_VPN_ir | 0",
@@ -788,7 +826,7 @@
             }
         },
         {
-            "tag": "TVCchyowzjsvw",
+            "tag": "TVCwcknmtqhwu",
             "type": "vless",
             "server": "",
             "server_port": 0,
@@ -883,7 +921,7 @@
             }
         },
         {
-            "tag": "🇮🇷IR | vless | @V2rayCollector | 0",
+            "tag": "🇮🇷IR | vless | @V2rayCollector | 1",
             "type": "vless",
             "server": "185.88.152.108",
             "server_port": 7007,
@@ -1571,9 +1609,9 @@
         {
             "tag": "🇨🇦CA | vless | @DailyV2RY | 11",
             "type": "vless",
-            "server": "serv.Drs.lol",
-            "server_port": 2083,
-            "uuid": "69b5e1f0-1844-489a-aa3f-68ffd3e4aee3",
+            "server": "cdnjs.com",
+            "server_port": 8880,
+            "uuid": "e0f52d31-566b-437d-9961-1865e38d10fb",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1581,21 +1619,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "Panel.Drs.lol",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram: @V2ray_Alpha",
+                "path": "\/",
                 "headers": {
-                    "Host": "Panel.Drs.lol"
+                    "Host": "cdnjs.com"
                 }
             }
         },
@@ -1856,9 +1884,9 @@
         {
             "tag": "🇨🇦CA | vless | @Outlinev2rayNG | 13",
             "type": "vless",
-            "server": "e.outlinekey.online",
-            "server_port": 443,
-            "uuid": "944d2985-ab26-4736-b53e-b872344f99d7",
+            "server": "okok.turk.coffee",
+            "server_port": 80,
+            "uuid": "28480359-fca8-449e-9dcd-51911e20d333",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1866,22 +1894,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "uni.outlinekey.online",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "@Outlinev2rayNG,@Outlinev2rayNG",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/,Turk",
+                "headers": {
+                    "Host": "okok.turk.coffee"
+                }
             }
         },
         {
@@ -2064,11 +2082,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
+            "tag": "🇨🇷CR | vless | @forwardv2ray | 19",
             "type": "vless",
-            "server": "full.5g-speed.online",
-            "server_port": 8443,
-            "uuid": "0de08cb3-7338-4eed-b729-2ef61caed73c",
+            "server": "190.93.247.14",
+            "server_port": 443,
+            "uuid": "6e34f2c5-6c71-4010-c292-10d05ef4a9a2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2078,7 +2096,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "v2.5g-speed.online",
+                "server_name": "current.ircp.online",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -2087,11 +2105,11 @@
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "Telegram:@v2flex",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "current.ircp.online"
+                }
             }
         },
         {
