@@ -107,14 +107,14 @@
             "outbounds": [
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
-                "🇷🇺RU | vmess | @mftizi | 18",
+                "🇹🇼TW | vmess | @mftizi | 18",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 10",
-                "🇨🇦CA | vmess | @prrofile_purple | 178",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇫🇮FI | vmess | @Hope_Net | 13",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇺🇸US | vmess | @FAKEOFTVC | 4",
+                "🏳️XX | vmess | @forwardv2ray | 9",
+                "🇨🇦CA | vmess | @FAKEOFTVC | 4",
                 "🇬🇧GB | vmess | @kingofilter | 17"
             ]
         },
@@ -123,14 +123,14 @@
             "type": "urltest",
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
-                "🇷🇺RU | vmess | @mftizi | 18",
+                "🇹🇼TW | vmess | @mftizi | 18",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 10",
-                "🇨🇦CA | vmess | @prrofile_purple | 178",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇫🇮FI | vmess | @Hope_Net | 13",
                 "🇮🇷IR | vmess | @MrV2Ray | 2",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇺🇸US | vmess | @FAKEOFTVC | 4",
+                "🏳️XX | vmess | @forwardv2ray | 9",
+                "🇨🇦CA | vmess | @FAKEOFTVC | 4",
                 "🇬🇧GB | vmess | @kingofilter | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -171,11 +171,11 @@
             }
         },
         {
-            "tag": "🇷🇺RU | vmess | @mftizi | 18",
+            "tag": "🇹🇼TW | vmess | @mftizi | 18",
             "type": "vmess",
-            "server": "103.113.68.233",
-            "server_port": 80,
-            "uuid": "fddb3781-7e15-4731-a933-94db110b4bbc",
+            "server": "b23.ntbq.dynu.net",
+            "server_port": 443,
+            "uuid": "d607492b-9880-4788-8ace-f6c066e3e3c4",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -186,11 +186,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "b23.ntbq.dynu.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/vmess",
+                "path": "\/b23",
                 "headers": {
-                    "Host": ""
+                    "Host": "b23.ntbq.dynu.net"
                 }
             }
         },
@@ -199,30 +209,6 @@
             "type": "vmess",
             "server": "173.245.58.34",
             "server_port": 2052,
-            "uuid": "Telegram-V2ray_alpha",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vmess | @prrofile_purple | 178",
-            "type": "vmess",
-            "server": "104.27.102.105",
-            "server_port": 8080,
             "uuid": "Telegram-V2ray_alpha",
             "security": "auto",
             "alter_id": 0,
@@ -335,7 +321,24 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @FAKEOFTVC | 4",
+            "tag": "🏳️XX | vmess | @forwardv2ray | 9",
+            "type": "vmess",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @FAKEOFTVC | 4",
             "type": "vmess",
             "server": "cn.azhz.eu.org",
             "server_port": 443,
