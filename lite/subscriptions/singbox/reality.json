@@ -106,8 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | vless | @ipV2Ray | 19",
-                "🇺🇸US | vless | @frev2ray | 11",
+                "🇹🇷TR | vless | @reality_daily | 0",
+                "🇨🇦CA | vless | @frev2ray | 11",
                 "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @v2logy | 18",
@@ -126,8 +126,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | vless | @ipV2Ray | 19",
-                "🇺🇸US | vless | @frev2ray | 11",
+                "🇹🇷TR | vless | @reality_daily | 0",
+                "🇨🇦CA | vless | @frev2ray | 11",
                 "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @v2logy | 18",
@@ -162,11 +162,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
+            "tag": "🇹🇷TR | vless | @reality_daily | 0",
             "type": "vless",
-            "server": "49.13.124.151",
-            "server_port": 443,
-            "uuid": "c084e53f-c642-4339-b163-0f972a2893b7",
+            "server": "83.217.9.129",
+            "server_port": 22,
+            "uuid": "d0ec432e-1f61-4232-b6d7-4a9c8722a962",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -176,29 +176,22 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "dnschecker.org",
+                "server_name": "speed.cloudflare.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "69nVIHd16xsKwb-OWlKM-qNE-T-0kjZD59zBgrvHDAQ",
-                    "short_id": "b1f54cff"
+                    "public_key": "KOgeIcWtuMJnTsRT3KgjyTQaieZPikCCiI3XZeIMrxE",
+                    "short_id": "346b3063"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
-            "tag": "🇺🇸US | vless | @frev2ray | 11",
+            "tag": "🇨🇦CA | vless | @frev2ray | 11",
             "type": "vless",
             "server": "v20.cuvr.cfd",
             "server_port": 2053,
