@@ -111,11 +111,11 @@
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @frev2ray | 11",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
+                "🇩🇪DE | vless | @v2logy | 18",
                 "🏳️XX | vless | @MTConfig | 21",
                 "🇩🇪DE | vless | @DailyV2RY | 27",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
-                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇫🇮FI | vless | @nofiltering2 | 15",
                 "🇫🇮FI | vless | @proxy_mtm | 8",
@@ -132,11 +132,11 @@
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @frev2ray | 11",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
+                "🇩🇪DE | vless | @v2logy | 18",
                 "🏳️XX | vless | @MTConfig | 21",
                 "🇩🇪DE | vless | @DailyV2RY | 27",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
-                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇫🇮FI | vless | @nofiltering2 | 15",
                 "🇫🇮FI | vless | @proxy_mtm | 8",
@@ -337,6 +337,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @v2logy | 18",
+            "type": "vless",
+            "server": "moftinet.eryhoihuuu.sbs",
+            "server_port": 443,
+            "uuid": "f65813de-f855-41cd-96d3-6f53d6186ff3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "moftinet.eryhoihuuu.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "36mhDE4VbNovmhh-wU0nxz-g2KBOmqk6Yyf-87uxGTU",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Moftinet",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🏳️XX | vless | @MTConfig | 21",
             "type": "vless",
             "server": "tel-xsv2ray.xalixv2ray.space",
@@ -468,42 +504,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@flyv2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @forwardv2ray | 19",
-            "type": "vless",
-            "server": "116.203.184.23",
-            "server_port": 2096,
-            "uuid": "c76903f0-bc18-42e8-b026-20fd8fddb777",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sourceforge.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "zN9DTHpP4CCxpOw4abbvFkQTSIir7Fr9Dl1Uxd3j1BM",
-                    "short_id": "27e75589"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
