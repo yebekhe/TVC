@@ -108,11 +108,10 @@
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 8",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
                 "🇨🇦CA | vmess | @v2ray1_ng | 4",
-                "🇺🇸US | vmess | @ConfigsHUB | 19",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
-                "🇮🇷IR | vmess | @Hope_Net | 14",
+                "🇺🇸US | vmess | @Hope_Net | 14",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇳🇱NL | vmess | @nofiltering2 | 12",
                 "🇮🇳IN | vmess | @eliya_chiter0 | 8"
@@ -124,11 +123,10 @@
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 8",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
                 "🇨🇦CA | vmess | @v2ray1_ng | 4",
-                "🇺🇸US | vmess | @ConfigsHUB | 19",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
-                "🇮🇷IR | vmess | @Hope_Net | 14",
+                "🇺🇸US | vmess | @Hope_Net | 14",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇳🇱NL | vmess | @nofiltering2 | 12",
                 "🇮🇳IN | vmess | @eliya_chiter0 | 8"
@@ -205,13 +203,13 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vmess | @oneclickvpnkeys | 8",
+            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
             "type": "vmess",
-            "server": "49.13.160.61",
-            "server_port": 20952,
-            "uuid": "5d6894b8-0736-449b-f44c-9ad4dab7e6f9",
+            "server": "172.67.207.114",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -219,6 +217,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ophelia.mom",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "ophelia.mom"
+                }
             }
         },
         {
@@ -246,23 +261,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @ConfigsHUB | 19",
-            "type": "vmess",
-            "server": "45.61.186.99",
-            "server_port": 8080,
-            "uuid": "ff2e1bc0-f6b0-5457-93a0-bab28599d4be",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇭🇰HK | vmess | @yaney_01 | 10",
             "type": "vmess",
             "server": "38.47.204.198",
@@ -280,13 +278,13 @@
             }
         },
         {
-            "tag": "🇮🇷IR | vmess | @Hope_Net | 14",
+            "tag": "🇺🇸US | vmess | @Hope_Net | 14",
             "type": "vmess",
-            "server": "test1.techno2.pw",
-            "server_port": 35047,
-            "uuid": "e3dae503-bf6e-49b4-e350-c0b316459d41",
+            "server": "74.217.182.116",
+            "server_port": 443,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 64,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -294,6 +292,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/path\/1689673828070",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
