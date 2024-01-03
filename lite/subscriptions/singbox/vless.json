@@ -122,7 +122,7 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 16",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 17",
-                "TVCozattpqjml",
+                "TVCsawsomnwlu",
                 "🇮🇷IR | vless | @V2raysFree | 12",
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇳🇱NL | vless | @servermomo | 14",
@@ -155,9 +155,10 @@
                 "🇨🇦CA | vless | @Outlinev2rayNG | 13",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 7",
                 "🏳️XX | vless | @Capital_NET | 54",
-                "🇨🇦CA | vless | @Capoit | 4",
+                "🇨🇦CA | vless | @Capoit | 3",
                 "🇨🇷CR | vless | @FreakConfig | 11",
                 "🇹🇷TR | vless | @flyv2ray | 20",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 20",
@@ -189,7 +190,7 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 16",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 17",
-                "TVCozattpqjml",
+                "TVCsawsomnwlu",
                 "🇮🇷IR | vless | @V2raysFree | 12",
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇳🇱NL | vless | @servermomo | 14",
@@ -222,9 +223,10 @@
                 "🇨🇦CA | vless | @Outlinev2rayNG | 13",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 7",
                 "🏳️XX | vless | @Capital_NET | 54",
-                "🇨🇦CA | vless | @Capoit | 4",
+                "🇨🇦CA | vless | @Capoit | 3",
                 "🇨🇷CR | vless | @FreakConfig | 11",
                 "🇹🇷TR | vless | @flyv2ray | 20",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 20",
@@ -760,7 +762,7 @@
             }
         },
         {
-            "tag": "TVCozattpqjml",
+            "tag": "TVCsawsomnwlu",
             "type": "vless",
             "server": "",
             "server_port": 0,
@@ -1661,11 +1663,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @Capoit | 4",
+            "tag": "🇨🇦CA | vless | @Capoit | 3",
             "type": "vless",
-            "server": "cdnjs.com",
-            "server_port": 8880,
-            "uuid": "db559f5a-fb84-4363-8072-2fdaeaa059a5",
+            "server": "tel.ipV2Ray.fun",
+            "server_port": 2087,
+            "uuid": "e1309527-7b9e-4276-b75a-583967e638de",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1673,12 +1675,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "cdnjs.com"
+            "tls": {
+                "enabled": true,
+                "server_name": "tm.ipV2Ray.fun",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1746,6 +1758,37 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "104.31.16.183",
+            "server_port": 443,
+            "uuid": "6e34f2c5-6c71-4010-c292-10d05ef4a9a2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fragment.iraniancp.click",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "fragment.iraniancp.click"
+                }
             }
         },
         {
