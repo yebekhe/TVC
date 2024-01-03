@@ -111,8 +111,9 @@
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 8",
                 "🇮🇷IR | vmess | @v2ray1_ng | 4",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
-                "🇨🇦CA | vmess | @Hope_Net | 14",
+                "🇳🇱NL | vmess | @Hope_Net | 14",
                 "🇺🇸US | vmess | @v2Line | 9",
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
                 "🇮🇳IN | vmess | @eliya_chiter0 | 8"
             ]
         },
@@ -125,8 +126,9 @@
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 8",
                 "🇮🇷IR | vmess | @v2ray1_ng | 4",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
-                "🇨🇦CA | vmess | @Hope_Net | 14",
+                "🇳🇱NL | vmess | @Hope_Net | 14",
                 "🇺🇸US | vmess | @v2Line | 9",
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
                 "🇮🇳IN | vmess | @eliya_chiter0 | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -252,11 +254,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 14",
+            "tag": "🇳🇱NL | vmess | @Hope_Net | 14",
             "type": "vmess",
-            "server": "series-v1.samanehha.co",
-            "server_port": 80,
-            "uuid": "0b65bb06-6b28-487a-8e3c-820dda51e977",
+            "server": "188.114.97.7",
+            "server_port": 443,
+            "uuid": "13940EC5-B5D0-487A-98F4-B71F93D1E1EA",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -267,11 +269,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "kansas.gafn.online",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/dT9s3HqgZeD3eApzDAfhOHq",
+                "path": "\/speedtest",
                 "headers": {
-                    "Host": ""
+                    "Host": "kansas.gafn.online"
                 }
             }
         },
@@ -304,6 +316,30 @@
             "transport": {
                 "type": "ws",
                 "path": "\/racevpn",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "104.27.102.105",
+            "server_port": 8080,
+            "uuid": "Telegram-V2ray_alpha",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
                 "headers": {
                     "Host": ""
                 }
