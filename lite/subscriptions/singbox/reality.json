@@ -108,6 +108,7 @@
                 "URL-TEST",
                 "🇹🇷TR | vless | @reality_daily | 0",
                 "🇨🇦CA | vless | @frev2ray | 10",
+                "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 15",
@@ -128,6 +129,7 @@
             "outbounds": [
                 "🇹🇷TR | vless | @reality_daily | 0",
                 "🇨🇦CA | vless | @frev2ray | 10",
+                "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 15",
@@ -224,6 +226,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇸🇪SE | vless | @Lockey_vpn | 5",
+            "type": "vless",
+            "server": "16.16.107.118",
+            "server_port": 8443,
+            "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "coinmarketcap.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_4Ukq3SSuUFBQNhE9YO2ktEwwN0FP-SRAYy3D81a0XQ",
+                    "short_id": "fe"
+                }
             }
         },
         {
