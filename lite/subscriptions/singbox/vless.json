@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🇨🇦CA | vless | @XsV2ray | 15",
                 "🇹🇷TR | vless | @reality_daily | 0",
-                "🇸🇪SE | vless | @VlessConfig | 16",
+                "🇩🇪DE | vless | @VlessConfig | 14",
                 "🇨🇦CA | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @melov2ray | 5",
                 "🇨🇦CA | vless | @V2pedia | 6",
@@ -155,17 +155,17 @@
                 "🇫🇮FI | vless | @Outlinev2rayNG | 14",
                 "🇨🇷CR | vless | @v2rayng_vpnrog | 4",
                 "🏳️XX | vless | @Capital_NET | 52",
-                "🇨🇦CA | vless | @Capoit | 7",
+                "🇨🇦CA | vless | @Capoit | 3",
                 "🏳️XX | vless | @FreakConfig | 11",
                 "🇨🇦CA | vless | @flyv2ray | 19",
-                "🇫🇮FI | vless | @forwardv2ray | 12",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 6",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @proxy_mtm | 11",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
-                "🇨🇦CA | vless | @kingofilter | 14",
+                "🏳️XX | vless | @kingofilter | 13",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇺🇸US | vless | @FoXrayIran | 6"
             ]
@@ -176,7 +176,7 @@
             "outbounds": [
                 "🇨🇦CA | vless | @XsV2ray | 15",
                 "🇹🇷TR | vless | @reality_daily | 0",
-                "🇸🇪SE | vless | @VlessConfig | 16",
+                "🇩🇪DE | vless | @VlessConfig | 14",
                 "🇨🇦CA | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @melov2ray | 5",
                 "🇨🇦CA | vless | @V2pedia | 6",
@@ -223,17 +223,17 @@
                 "🇫🇮FI | vless | @Outlinev2rayNG | 14",
                 "🇨🇷CR | vless | @v2rayng_vpnrog | 4",
                 "🏳️XX | vless | @Capital_NET | 52",
-                "🇨🇦CA | vless | @Capoit | 7",
+                "🇨🇦CA | vless | @Capoit | 3",
                 "🏳️XX | vless | @FreakConfig | 11",
                 "🇨🇦CA | vless | @flyv2ray | 19",
-                "🇫🇮FI | vless | @forwardv2ray | 12",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 6",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @proxy_mtm | 11",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
-                "🇨🇦CA | vless | @kingofilter | 14",
+                "🏳️XX | vless | @kingofilter | 13",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇺🇸US | vless | @FoXrayIran | 6"
             ],
@@ -318,9 +318,9 @@
             }
         },
         {
-            "tag": "🇸🇪SE | vless | @VlessConfig | 16",
+            "tag": "🇩🇪DE | vless | @VlessConfig | 14",
             "type": "vless",
-            "server": "13.51.232.69",
+            "server": "3.66.112.12",
             "server_port": 22222,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -1398,9 +1398,9 @@
         {
             "tag": "🇨🇦CA | vless | @SafeNet_Server | 10",
             "type": "vless",
-            "server": "104.21.59.125",
-            "server_port": 80,
-            "uuid": "e1a928be-e289-4aef-b92e-4106fabdf42f",
+            "server": "3k.pureboy.eu.org",
+            "server_port": 443,
+            "uuid": "b9ad895b-12ac-40fc-a5ac-a5b2a1285001",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1408,11 +1408,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "3k.pureboy.eu.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "104.21.59.125"
+                    "Host": "3k.pureboy.eu.org"
                 }
             }
         },
@@ -1651,11 +1661,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @Capoit | 7",
+            "tag": "🇨🇦CA | vless | @Capoit | 3",
             "type": "vless",
-            "server": "tel.ipV2Ray.fun",
-            "server_port": 2087,
-            "uuid": "e1309527-7b9e-4276-b75a-583967e638de",
+            "server": "V2.VPN-MIKEY.cfd",
+            "server_port": 443,
+            "uuid": "b00821fb-495a-4ad4-be67-fdd59b7dbb0b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1665,7 +1675,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tm.ipV2Ray.fun",
+                "server_name": "V2ray.VPN-MIKEY.cfd",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1675,7 +1685,7 @@
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@ipV2Ray",
+                "service_name": "@Vpn_Mikey،@Vpn_Mikey",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -1732,12 +1742,12 @@
             }
         },
         {
-            "tag": "🇫🇮FI | vless | @forwardv2ray | 12",
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
             "type": "vless",
-            "server": "65.109.10.202",
+            "server": "V2.VPN-MIKEY.cfd",
             "server_port": 443,
-            "uuid": "fa86036b-fe46-467c-e359-749e4d996f6b",
-            "flow": "xtls-rprx-vision",
+            "uuid": "5e9e0c7f-0be0-4202-9b8c-1925b07e9703",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1746,22 +1756,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "greenpepper.ir",
+                "server_name": "V2ray.VPN-MIKEY.cfd",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "bQRpqXfAw9Bcch4xSBTPNZBFNGflTvDjrHqBqDU3F1E",
-                    "short_id": "1b27a6b1"
+                    "fingerprint": "chrome"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@ipV2Ray",
+                "service_name": "@Vpn_Mikey،@Vpn_Mikey",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -1957,11 +1962,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @kingofilter | 14",
+            "tag": "🏳️XX | vless | @kingofilter | 13",
             "type": "vless",
-            "server": "upload.ir",
-            "server_port": 80,
-            "uuid": "a89c9199-0b1d-4470-f3ea-94725589deb8",
+            "server": "kv.randwicks.shop",
+            "server_port": 2083,
+            "uuid": "66dbd4c7-6866-4527-b923-d064431c8524",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1969,11 +1974,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "kv.randwicks.shop",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/action_page.php",
                 "headers": {
-                    "Host": "upload.ir"
+                    "Host": "kv.randwicks.shop"
                 }
             }
         },
