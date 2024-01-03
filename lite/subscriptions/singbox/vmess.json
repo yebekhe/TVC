@@ -106,13 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
                 "🇨🇷CR | vmess | @oneclickvpnkeys | 9",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇨🇦CA | vmess | @DailyV2RY | 11",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
-                "🇨🇾CY | vmess | @Hope_Net | 16",
+                "🇨🇦CA | vmess | @Hope_Net | 15",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇮🇳IN | vmess | @eliya_chiter0 | 7"
@@ -122,13 +123,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
                 "🇨🇷CR | vmess | @oneclickvpnkeys | 9",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇨🇦CA | vmess | @DailyV2RY | 11",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
-                "🇨🇾CY | vmess | @Hope_Net | 16",
+                "🇨🇦CA | vmess | @Hope_Net | 15",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇮🇳IN | vmess | @eliya_chiter0 | 7"
@@ -152,6 +154,40 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
+            "type": "vmess",
+            "server": "104.21.91.134",
+            "server_port": 2096,
+            "uuid": "b103ed71-abb4-4ea9-9533-0b117a294cda",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "shahdad26.darknesstime.online",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇫🇷FR | vmess | @v2ray_outlineir | 0",
@@ -287,11 +323,11 @@
             }
         },
         {
-            "tag": "🇨🇾CY | vmess | @Hope_Net | 16",
+            "tag": "🇨🇦CA | vmess | @Hope_Net | 15",
             "type": "vmess",
-            "server": "195.85.59.161",
-            "server_port": 2082,
-            "uuid": "6311f05b-5207-4ce6-86ea-ebe8d9811491",
+            "server": "nody.ir",
+            "server_port": 2052,
+            "uuid": "f682bf4b-44ca-4b37-87a2-75e448cdfeb4",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -304,7 +340,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/public",
                 "headers": {
                     "Host": ""
                 }
