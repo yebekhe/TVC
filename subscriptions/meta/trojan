@@ -120,10 +120,10 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇺🇸US | trojan | @V2rayCollectorDonate | 5","type":"trojan","server":"ironone.libertasiran.cloud","port":443,"udp":false,"password":"LibertasF","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ironone.libertasiran.cloud"}
+  - {"name":"🇨🇦CA | trojan | @V2rayCollectorDonate | 5","type":"trojan","server":"ironone.libertasiran.cloud","port":443,"udp":false,"password":"LibertasF","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ironone.libertasiran.cloud"}
   - {"name":"🇮🇷IR | trojan | @V2rayCollectorDonate | 8","type":"trojan","server":"213.176.1.122","port":34970,"udp":false,"password":"HyZOgWDnXj","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"soft98.ir"}
   - {"name":"🇨🇦CA | trojan | @V2rayCollectorDonate | 14","type":"trojan","server":"ironone.libertasiran.cloud","port":443,"udp":false,"password":"xaafTz903F","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ironone.libertasiran.cloud"}
-  - {"name":"🇺🇸US | trojan | @V2rayCollectorDonate | 16","type":"trojan","server":"172.66.47.74","port":443,"udp":false,"password":"8ca98c98-fb0b-4007-a6e8-c8294e546763","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"s10.xyzquant.cloud"}
+  - {"name":"🇨🇦CA | trojan | @V2rayCollectorDonate | 16","type":"trojan","server":"172.66.47.74","port":443,"udp":false,"password":"8ca98c98-fb0b-4007-a6e8-c8294e546763","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"s10.xyzquant.cloud"}
   - {"name":"🇮🇪IE | trojan | @PrivateVPNs | 1","type":"trojan","server":"63.34.100.82","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇬🇧GB | trojan | @PrivateVPNs | 2","type":"trojan","server":"3.11.159.24","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇬🇧GB | trojan | @PrivateVPNs | 3","type":"trojan","server":"18.132.55.231","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
@@ -155,16 +155,17 @@ proxies:
   - {"name":"🇬🇧GB | trojan | @DirectVPN | 14","type":"trojan","server":"3.8.230.26","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇫🇷FR | trojan | @DirectVPN | 15","type":"trojan","server":"13.38.177.225","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇩🇪DE | trojan | @yaney_01 | 7","type":"trojan","server":"www.casperco.online","port":993,"udp":false,"password":"74811f39-8f69-4334-9e0f-a8a25d7413c1","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇺🇸US | trojan | @forwardv2ray | 10","type":"trojan","server":"series-v1.samanehha.co","port":443,"udp":false,"password":"0b65bb06-6b28-487a-8e3c-820dda51e977","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"series-v1.samanehha.co"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | trojan | @V2rayCollectorDonate | 5'
+      - '🇨🇦CA | trojan | @V2rayCollectorDonate | 5'
       - '🇮🇷IR | trojan | @V2rayCollectorDonate | 8'
       - '🇨🇦CA | trojan | @V2rayCollectorDonate | 14'
-      - '🇺🇸US | trojan | @V2rayCollectorDonate | 16'
+      - '🇨🇦CA | trojan | @V2rayCollectorDonate | 16'
       - '🇮🇪IE | trojan | @PrivateVPNs | 1'
       - '🇬🇧GB | trojan | @PrivateVPNs | 2'
       - '🇬🇧GB | trojan | @PrivateVPNs | 3'
@@ -196,16 +197,17 @@ proxy-groups:
       - '🇬🇧GB | trojan | @DirectVPN | 14'
       - '🇫🇷FR | trojan | @DirectVPN | 15'
       - '🇩🇪DE | trojan | @yaney_01 | 7'
+      - '🇺🇸US | trojan | @forwardv2ray | 10'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | trojan | @V2rayCollectorDonate | 5'
+      - '🇨🇦CA | trojan | @V2rayCollectorDonate | 5'
       - '🇮🇷IR | trojan | @V2rayCollectorDonate | 8'
       - '🇨🇦CA | trojan | @V2rayCollectorDonate | 14'
-      - '🇺🇸US | trojan | @V2rayCollectorDonate | 16'
+      - '🇨🇦CA | trojan | @V2rayCollectorDonate | 16'
       - '🇮🇪IE | trojan | @PrivateVPNs | 1'
       - '🇬🇧GB | trojan | @PrivateVPNs | 2'
       - '🇬🇧GB | trojan | @PrivateVPNs | 3'
@@ -237,15 +239,16 @@ proxy-groups:
       - '🇬🇧GB | trojan | @DirectVPN | 14'
       - '🇫🇷FR | trojan | @DirectVPN | 15'
       - '🇩🇪DE | trojan | @yaney_01 | 7'
+      - '🇺🇸US | trojan | @forwardv2ray | 10'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇺🇸US | trojan | @V2rayCollectorDonate | 5'
+      - '🇨🇦CA | trojan | @V2rayCollectorDonate | 5'
       - '🇮🇷IR | trojan | @V2rayCollectorDonate | 8'
       - '🇨🇦CA | trojan | @V2rayCollectorDonate | 14'
-      - '🇺🇸US | trojan | @V2rayCollectorDonate | 16'
+      - '🇨🇦CA | trojan | @V2rayCollectorDonate | 16'
       - '🇮🇪IE | trojan | @PrivateVPNs | 1'
       - '🇬🇧GB | trojan | @PrivateVPNs | 2'
       - '🇬🇧GB | trojan | @PrivateVPNs | 3'
@@ -277,6 +280,7 @@ proxy-groups:
       - '🇬🇧GB | trojan | @DirectVPN | 14'
       - '🇫🇷FR | trojan | @DirectVPN | 15'
       - '🇩🇪DE | trojan | @yaney_01 | 7'
+      - '🇺🇸US | trojan | @forwardv2ray | 10'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
