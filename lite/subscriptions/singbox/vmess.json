@@ -106,15 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
                 "🇨🇷CR | vmess | @oneclickvpnkeys | 9",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇨🇦CA | vmess | @DailyV2RY | 11",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
-                "🇨🇦CA | vmess | @Hope_Net | 15",
-                "🇮🇷IR | vmess | @MrV2Ray | 0",
+                "🇯🇵JP | vmess | @Hope_Net | 16",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇮🇳IN | vmess | @eliya_chiter0 | 7"
             ]
@@ -123,15 +121,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
                 "🇨🇷CR | vmess | @oneclickvpnkeys | 9",
                 "🇮🇷IR | vmess | @customv2ray | 15",
                 "🇨🇦CA | vmess | @DailyV2RY | 11",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
-                "🇨🇦CA | vmess | @Hope_Net | 15",
-                "🇮🇷IR | vmess | @MrV2Ray | 0",
+                "🇯🇵JP | vmess | @Hope_Net | 16",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇮🇳IN | vmess | @eliya_chiter0 | 7"
             ],
@@ -154,40 +150,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
-            "type": "vmess",
-            "server": "172.66.47.74",
-            "server_port": 443,
-            "uuid": "8ca98c98-fb0b-4007-a6e8-c8294e546763",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "s10.xyzquant.cloud",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/CUFr48ESBORi4fyf8bW",
-                "headers": {
-                    "Host": "s10.xyzquant.cloud"
-                }
-            }
         },
         {
             "tag": "🇫🇷FR | vmess | @v2ray_outlineir | 0",
@@ -323,11 +285,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 15",
+            "tag": "🇯🇵JP | vmess | @Hope_Net | 16",
             "type": "vmess",
-            "server": "nody.ir",
-            "server_port": 2052,
-            "uuid": "f682bf4b-44ca-4b37-87a2-75e448cdfeb4",
+            "server": "jp-full.privateip.net",
+            "server_port": 443,
+            "uuid": "56941a54-a867-4c85-b920-f754e409b35c",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -338,35 +300,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/public",
-                "headers": {
-                    "Host": ""
+            "tls": {
+                "enabled": true,
+                "server_name": "jp-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "🇮🇷IR | vmess | @MrV2Ray | 0",
-            "type": "vmess",
-            "server": "85.9.106.116",
-            "server_port": 41362,
-            "uuid": "2ce9ad82-34c4-46e4-9c2e-5e523c17e689",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/RACEVPN",
                 "headers": {
-                    "Host": ""
+                    "Host": "jp-full.privateip.net"
                 }
             }
         },
