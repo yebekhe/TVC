@@ -106,12 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 8",
                 "🇮🇷IR | vmess | @v2ray1_ng | 3",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
-                "🇭🇰HK | vmess | @Hope_Net | 15",
+                "🇨🇦CA | vmess | @Hope_Net | 15",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇮🇳IN | vmess | @eliya_chiter0 | 8"
             ]
@@ -120,12 +121,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 8",
                 "🇮🇷IR | vmess | @v2ray1_ng | 3",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
-                "🇭🇰HK | vmess | @Hope_Net | 15",
+                "🇨🇦CA | vmess | @Hope_Net | 15",
                 "🇺🇸US | vmess | @v2Line | 9",
                 "🇮🇳IN | vmess | @eliya_chiter0 | 8"
             ],
@@ -148,6 +150,40 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
+            "type": "vmess",
+            "server": "d35bxjwkxbcj56bkk.freegamesonline.tech",
+            "server_port": 443,
+            "uuid": "ce1bfd0f-81c3-4286-9a6a-3db6179a53ec",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dar.gigikala.site",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ea0d469b-6259-43a7-9136-f41714deba35",
+                "headers": {
+                    "Host": "dar.gigikala.site"
+                }
+            }
         },
         {
             "tag": "🇫🇷FR | vmess | @v2ray_outlineir | 0",
@@ -252,11 +288,11 @@
             }
         },
         {
-            "tag": "🇭🇰HK | vmess | @Hope_Net | 15",
+            "tag": "🇨🇦CA | vmess | @Hope_Net | 15",
             "type": "vmess",
-            "server": "8.210.203.189",
-            "server_port": 37309,
-            "uuid": "74cdcc28-a0bc-421f-bd15-c6a6e401b523",
+            "server": "104.27.102.105",
+            "server_port": 8080,
+            "uuid": "Telegram-V2ray_alpha",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -268,11 +304,11 @@
                 "max_streams": 32
             },
             "transport": {
-                "type": "http",
-                "host": [
-                    "8.210.203.189"
-                ],
-                "path": "\/"
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
