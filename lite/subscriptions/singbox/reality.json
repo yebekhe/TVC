@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | vless | @EliV2ray | 15",
                 "🇹🇷TR | vless | @reality_daily | 0",
                 "🇨🇦CA | vless | @frev2ray | 10",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -117,6 +116,7 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇹🇷TR | vless | @flyv2ray | 20",
+                "🇸🇪SE | vless | @forwardv2ray | 15",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
@@ -126,7 +126,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | vless | @EliV2ray | 15",
                 "🇹🇷TR | vless | @reality_daily | 0",
                 "🇨🇦CA | vless | @frev2ray | 10",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -137,6 +136,7 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 54",
                 "🇹🇷TR | vless | @flyv2ray | 20",
+                "🇸🇪SE | vless | @forwardv2ray | 15",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
@@ -160,42 +160,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | vless | @EliV2ray | 15",
-            "type": "vless",
-            "server": "91.107.138.78",
-            "server_port": 50000,
-            "uuid": "e98ce689-eb18-4901-9bd2-85c6ee44231e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "uzbo.ro",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "wRuMbGZN9HJQovIq-bPSA0wEO0MhT7CgLY8GpB5GUWI",
-                    "short_id": "82757821"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "f",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🇹🇷TR | vless | @reality_daily | 0",
@@ -534,6 +498,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇸🇪SE | vless | @forwardv2ray | 15",
+            "type": "vless",
+            "server": "13.53.136.70",
+            "server_port": 443,
+            "uuid": "2c59ff33-916d-459b-a4c0-8b7432c4c3bb",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "coinmarketcap.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "GZt6O3FfzD3tYRI1COk9crT6sKFmdCzG-kow-lG0N1s",
+                    "short_id": "1db3"
+                }
             }
         },
         {
