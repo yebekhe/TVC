@@ -127,6 +127,7 @@ proxies:
   - {"name":"🏳️XX | vless | @fnet00 | 10","type":"vless","server":"kamyarservers.ddns.net","port":443,"udp":true,"uuid":"682149af-d7ba-416b-92fe-871fffcaaab1","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"mihanyas.ir","grpc-opts":{"grpc-service-name":"@configMs"},"reality-opts":{"public-key":"bl_WgZJU4-XnjnZ1HWu6tAWaz8rvdgy2pGmaFpOgcQ0","short-id":"0960546b"}}
   - {"name":"🏳️XX | vless | @Capital_NET | 52","type":"vless","server":"zhina.abiiidar.tech","port":443,"udp":true,"uuid":"9bf8930d-878a-420b-bbf5-44a9e4b5b86d","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"www.tradingview.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"90WvSEDjTWdVj1U5JPXphB6VZ4ojR42tZN7PuEeRqXM","short-id":"dc838e556e8a86bd"}}
   - {"name":"🇩🇪DE | vless | @Capoit | 3","type":"vless","server":"78.46.225.217","port":443,"udp":true,"uuid":"715f9ba2-23dc-4e0b-ae34-35500faeaac9","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"greenpepper.ir","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"AZfZHX5fRg4dbfz0qyjH6sPo_YaHY-bEua5hhL7RTQE","short-id":"27f6104f"}}
+  - {"name":"🇸🇪SE | vless | @forwardv2ray | 17","type":"vless","server":"5.42.86.225","port":2053,"udp":true,"uuid":"45d1d34d-b089-418d-8cd2-223492be539e","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"pantercon.net","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"1yjMDe_3ZcrJDc4fGqWPmy-udJRLW502p2EjplmCWx8","short-id":"76753364"}}
   - {"name":"🇸🇪SE | vless | @kiava | 14","type":"vless","server":"16.16.127.187","port":8443,"udp":true,"uuid":"f553d0ca-701d-4f95-90e9-2851d055291e","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"www.mozorg.moz.works","flow":"xtls-rprx-vision","reality-opts":{"public-key":"JW62LlQFh50HHYcoaLWE_GQ5ugqNve7OX7IeLcBeXyI","short-id":"3c"}}
 proxy-groups:
   - name: MANUAL
@@ -141,6 +142,7 @@ proxy-groups:
       - '🏳️XX | vless | @fnet00 | 10'
       - '🏳️XX | vless | @Capital_NET | 52'
       - '🇩🇪DE | vless | @Capoit | 3'
+      - '🇸🇪SE | vless | @forwardv2ray | 17'
       - '🇸🇪SE | vless | @kiava | 14'
   - name: URL-TEST
     type: url-test
@@ -155,6 +157,7 @@ proxy-groups:
       - '🏳️XX | vless | @fnet00 | 10'
       - '🏳️XX | vless | @Capital_NET | 52'
       - '🇩🇪DE | vless | @Capoit | 3'
+      - '🇸🇪SE | vless | @forwardv2ray | 17'
       - '🇸🇪SE | vless | @kiava | 14'
   - name: FALLBACK
     type: fallback
@@ -168,6 +171,7 @@ proxy-groups:
       - '🏳️XX | vless | @fnet00 | 10'
       - '🏳️XX | vless | @Capital_NET | 52'
       - '🇩🇪DE | vless | @Capoit | 3'
+      - '🇸🇪SE | vless | @forwardv2ray | 17'
       - '🇸🇪SE | vless | @kiava | 14'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
