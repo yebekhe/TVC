@@ -157,19 +157,21 @@
                 "🇨🇦CA | vless | @SafeNet_Server | 9",
                 "🇨🇦CA | vless | @lrnbymaa | 11",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 16",
+                "🇺🇸US | vless | @ConfigsHUB | 17",
                 "🇨🇷CR | vless | @proxystore11 | 12",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
                 "🇸🇪SE | vless | @free1_vpn | 0",
-                "🇨🇦CA | vmess | @Hope_Net | 12",
+                "🇨🇦CA | vmess | @Hope_Net | 10",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 41",
                 "🇨🇦CA | vless | @Outlinev2rayNG | 13",
                 "🇫🇮FI | vless | @v2rayng_vpnrog | 5",
                 "🏳️XX | vless | @Capital_NET | 52",
-                "🇺🇸US | vmess | @v2Line | 8",
+                "🇺🇸US | vmess | @v2Line | 9",
                 "🇩🇪DE | vless | @Capoit | 1",
                 "🏳️XX | vless | @FreakConfig | 11",
                 "🇨🇦CA | vless | @flyv2ray | 19",
+                "🇨🇦CA | trojan | @forwardv2ray | 18",
                 "🇮🇷IR | vmess | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 8",
@@ -239,19 +241,21 @@
                 "🇨🇦CA | vless | @SafeNet_Server | 9",
                 "🇨🇦CA | vless | @lrnbymaa | 11",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 16",
+                "🇺🇸US | vless | @ConfigsHUB | 17",
                 "🇨🇷CR | vless | @proxystore11 | 12",
                 "🇭🇰HK | vmess | @yaney_01 | 10",
                 "🇸🇪SE | vless | @free1_vpn | 0",
-                "🇨🇦CA | vmess | @Hope_Net | 12",
+                "🇨🇦CA | vmess | @Hope_Net | 10",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 41",
                 "🇨🇦CA | vless | @Outlinev2rayNG | 13",
                 "🇫🇮FI | vless | @v2rayng_vpnrog | 5",
                 "🏳️XX | vless | @Capital_NET | 52",
-                "🇺🇸US | vmess | @v2Line | 8",
+                "🇺🇸US | vmess | @v2Line | 9",
                 "🇩🇪DE | vless | @Capoit | 1",
                 "🏳️XX | vless | @FreakConfig | 11",
                 "🇨🇦CA | vless | @flyv2ray | 19",
+                "🇨🇦CA | trojan | @forwardv2ray | 18",
                 "🇮🇷IR | vmess | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 8",
@@ -1698,12 +1702,43 @@
         {
             "tag": "🇺🇸US | ss | @OutlineVpnOfficial | 16",
             "type": "shadowsocks",
-            "server": "www.outline.network.ak1988.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
+            "server": "www.outline.network.ak1989.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
             "server_port": 2443,
-            "method": "2022-blake3-aes-256-gcm",
-            "password": "2a2QOvselXyVSJKlm8B5xdNROPXusODrODVse9wsCMo=",
+            "method": "aes-256-gcm",
+            "password": "slkiJLsW+2c9UiX0XvxISMvfiZWr53MjDqx1DuAC1VE=",
             "plugin": "",
             "plugin_opts": ""
+        },
+        {
+            "tag": "🇺🇸US | vless | @ConfigsHUB | 17",
+            "type": "vless",
+            "server": "google.com",
+            "server_port": 443,
+            "uuid": "f4c92351-2216-457a-88a1-abb15595b3c2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "6711675491.yadakii.store",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "32536746",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇨🇷CR | vless | @proxystore11 | 12",
@@ -1783,11 +1818,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 12",
+            "tag": "🇨🇦CA | vmess | @Hope_Net | 10",
             "type": "vmess",
-            "server": "162.159.135.42",
-            "server_port": 443,
-            "uuid": "12e08256-da5d-4b1c-aeca-8c973ccceef8",
+            "server": "nody.ir",
+            "server_port": 2052,
+            "uuid": "f682bf4b-44ca-4b37-87a2-75e448cdfeb4",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1798,19 +1833,9 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/Falling42gcsdenode",
+                "path": "\/public",
                 "headers": {
                     "Host": ""
                 }
@@ -1970,7 +1995,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @v2Line | 8",
+            "tag": "🇺🇸US | vmess | @v2Line | 9",
             "type": "vmess",
             "server": "v2line.telegram.channel.1373.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
             "server_port": 443,
@@ -2086,6 +2111,35 @@
                 "path": "\/",
                 "headers": {
                     "Host": "xio.vpnxw.eu.org"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | trojan | @forwardv2ray | 18",
+            "type": "trojan",
+            "server": "zula.ir",
+            "server_port": 2087,
+            "password": "6t3TUKrRLp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "top.jd-vpn.shop",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "top.jd-vpn.shop"
                 }
             }
         },
