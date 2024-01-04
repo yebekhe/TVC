@@ -12,13 +12,13 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇩🇪DE | vmess | @oneclickvpnkeys | 6 = vmess, 95.164.89.225, 38153, username = 70a694c8-ba65-4d1d-942d-4fc489da1b5f, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
-🇺🇸US | vmess | @Hope_Net | 14 = vmess, ingress-i2.iivvppnn.info, 38106, username = 79386685-16da-327c-9e14-aa6d702d86bc, ws = true, tls = , vmess-aead = false, ws-path = /hls/cctv5phd.m3u8, ws-headers = Host:"www.ivpnpro.net", skip-cert-verify = true, tfo = false
+🇨🇦CA | vmess | @Hope_Net | 13 = vmess, 23.227.38.40, 443, username = 17b2a313-37a0-4945-a8e4-e63375506b4a, ws = true, tls = 1, vmess-aead = false, ws-path = /A2DJOPFT, ws-headers = Host:"lg10.cfcdn1.xyz", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 7 = vmess, v2line.telegram.channel.1377.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = 788744c4-968d-4263-a38b-f2952bf12db2, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ee1.xv2ray.net", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @eliya_chiter0 | 4 = vmess, metrix.ir, 2052, username = f682bf4b-44ca-4b37-87a2-75e448cdfeb4, ws = true, tls = , vmess-aead = true, ws-path = /public, ws-headers = Host:"de2.biqibao.site", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | vmess | @oneclickvpnkeys | 6,🇺🇸US | vmess | @Hope_Net | 14,🇺🇸US | vmess | @v2Line | 7,🇨🇦CA | vmess | @eliya_chiter0 | 4
-URL-TEST = url-test,🇩🇪DE | vmess | @oneclickvpnkeys | 6,🇺🇸US | vmess | @Hope_Net | 14,🇺🇸US | vmess | @v2Line | 7,🇨🇦CA | vmess | @eliya_chiter0 | 4
-FALLBACK = fallback,🇩🇪DE | vmess | @oneclickvpnkeys | 6,🇺🇸US | vmess | @Hope_Net | 14,🇺🇸US | vmess | @v2Line | 7,🇨🇦CA | vmess | @eliya_chiter0 | 4
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | vmess | @oneclickvpnkeys | 6,🇨🇦CA | vmess | @Hope_Net | 13,🇺🇸US | vmess | @v2Line | 7,🇨🇦CA | vmess | @eliya_chiter0 | 4
+URL-TEST = url-test,🇩🇪DE | vmess | @oneclickvpnkeys | 6,🇨🇦CA | vmess | @Hope_Net | 13,🇺🇸US | vmess | @v2Line | 7,🇨🇦CA | vmess | @eliya_chiter0 | 4
+FALLBACK = fallback,🇩🇪DE | vmess | @oneclickvpnkeys | 6,🇨🇦CA | vmess | @Hope_Net | 13,🇺🇸US | vmess | @v2Line | 7,🇨🇦CA | vmess | @eliya_chiter0 | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
