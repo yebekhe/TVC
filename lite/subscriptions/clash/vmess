@@ -119,8 +119,8 @@ dns:
 
 proxies:
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇩🇪DE | vmess | @oneclickvpnkeys | 6","type":"vmess","server":"95.164.89.225","port":"38153","cipher":"auto","uuid":"70a694c8-ba65-4d1d-942d-4fc489da1b5f","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
-  - {"name":"🇨🇦CA | vmess | @Hope_Net | 13","type":"vmess","server":"metrix.ir","port":"2052","cipher":"auto","uuid":"f682bf4b-44ca-4b37-87a2-75e448cdfeb4","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/public","headers":{"host":"de2.biqibao.site"}}}
+  - {"name":"🇨🇦CA | vmess | @oneclickvpnkeys | 7","type":"vmess","server":"172.66.46.59","port":"2087","cipher":"auto","uuid":"08ec6a06-8c15-4069-a781-8c725a30b7e7","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":""}}
+  - {"name":"🇨🇦CA | vmess | @Hope_Net | 13","type":"vmess","server":"198.57.27.212","port":"22324","cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇸US | vmess | @v2Line | 7","type":"vmess","server":"v2line.telegram.channel.1377.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"788744c4-968d-4263-a38b-f2952bf12db2","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ee1.xv2ray.net"}}}
 proxy-groups:
   - name: MANUAL
@@ -129,7 +129,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
-      - '🇩🇪DE | vmess | @oneclickvpnkeys | 6'
+      - '🇨🇦CA | vmess | @oneclickvpnkeys | 7'
       - '🇨🇦CA | vmess | @Hope_Net | 13'
       - '🇺🇸US | vmess | @v2Line | 7'
   - name: URL-TEST
@@ -139,7 +139,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
-      - '🇩🇪DE | vmess | @oneclickvpnkeys | 6'
+      - '🇨🇦CA | vmess | @oneclickvpnkeys | 7'
       - '🇨🇦CA | vmess | @Hope_Net | 13'
       - '🇺🇸US | vmess | @v2Line | 7'
   - name: FALLBACK
@@ -148,7 +148,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
-      - '🇩🇪DE | vmess | @oneclickvpnkeys | 6'
+      - '🇨🇦CA | vmess | @oneclickvpnkeys | 7'
       - '🇨🇦CA | vmess | @Hope_Net | 13'
       - '🇺🇸US | vmess | @v2Line | 7'
 rules:
