@@ -11,13 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇷🇺RU | vmess | @Hope_Net | 12 = vmess, 45.136.244.181, 80, username = a25881f3-967f-3265-bc7f-9e66857b016b, ws = true, tls = , vmess-aead = false, ws-path = /fr-unlimitxxx, ws-headers = Host:"45.136.244.181", skip-cert-verify = true, tfo = false
+🇩🇪DE | vmess | @oneclickvpnkeys | 6 = vmess, 95.164.89.225, 38153, username = 70a694c8-ba65-4d1d-942d-4fc489da1b5f, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇷🇺RU | vmess | @Hope_Net | 14 = vmess, 45.136.244.181, 80, username = a25881f3-967f-3265-bc7f-9e66857b016b, ws = true, tls = , vmess-aead = false, ws-path = /fr-unlimitxxx, ws-headers = Host:"45.136.244.181", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 8 = vmess, v2line.telegram.channel.1375.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 443, username = 20042f24-d169-4086-a5a9-85bdc76bfb5b, ws = true, tls = 1, vmess-aead = true, ws-path = /racevpn, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇮🇳IN | vmess | @eliya_chiter0 | 8 = vmess, 129.154.228.4, 8084, username = f49ed5da-ce2e-4e38-a723-31acf6cd96f9, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"eliya_chiter0", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇷🇺RU | vmess | @Hope_Net | 12,🇺🇸US | vmess | @v2Line | 8,🇮🇳IN | vmess | @eliya_chiter0 | 8
-URL-TEST = url-test,🇷🇺RU | vmess | @Hope_Net | 12,🇺🇸US | vmess | @v2Line | 8,🇮🇳IN | vmess | @eliya_chiter0 | 8
-FALLBACK = fallback,🇷🇺RU | vmess | @Hope_Net | 12,🇺🇸US | vmess | @v2Line | 8,🇮🇳IN | vmess | @eliya_chiter0 | 8
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | vmess | @oneclickvpnkeys | 6,🇷🇺RU | vmess | @Hope_Net | 14,🇺🇸US | vmess | @v2Line | 8,🇮🇳IN | vmess | @eliya_chiter0 | 8
+URL-TEST = url-test,🇩🇪DE | vmess | @oneclickvpnkeys | 6,🇷🇺RU | vmess | @Hope_Net | 14,🇺🇸US | vmess | @v2Line | 8,🇮🇳IN | vmess | @eliya_chiter0 | 8
+FALLBACK = fallback,🇩🇪DE | vmess | @oneclickvpnkeys | 6,🇷🇺RU | vmess | @Hope_Net | 14,🇺🇸US | vmess | @v2Line | 8,🇮🇳IN | vmess | @eliya_chiter0 | 8
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
