@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🏳️XX | vless | @MTConfig | 21",
@@ -117,7 +116,6 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @Capoit | 1",
                 "🏳️XX | vless | @FreakConfig | 13",
-                "🇯🇵JP | vless | @forwardv2ray | 12",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
@@ -127,7 +125,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🏳️XX | vless | @MTConfig | 21",
@@ -138,7 +135,6 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @Capoit | 1",
                 "🏳️XX | vless | @FreakConfig | 13",
-                "🇯🇵JP | vless | @forwardv2ray | 12",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
@@ -162,42 +158,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | vless | @ARv2ray | 13",
-            "type": "vless",
-            "server": "116.203.13.160",
-            "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "s101.divarcdn.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "nRjZ53N_MvPeCiQEnfXWDexCFyO9OIsIOKj-ia3KdEg",
-                    "short_id": "e0e14f80"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🇸🇪SE | vless | @Lockey_vpn | 5",
@@ -522,42 +482,6 @@
                     "public_key": "IbSV9OnRyp0C7t5HuUpapZ6Z3HEVd0m7P8D5Wb4olBM",
                     "short_id": "22e9d71e"
                 }
-            }
-        },
-        {
-            "tag": "🇯🇵JP | vless | @forwardv2ray | 12",
-            "type": "vless",
-            "server": "172.233.93.217",
-            "server_port": 11111,
-            "uuid": "0e547848-f740-4b7c-a080-d2847e7c1c5e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "eset.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "8aMXKT81fQvKs6rTuixmmyJOEkwwMUm7kdsygJgBOAY",
-                    "short_id": "468b52bd"
-                }
-            },
-            "transport": {
-                "type": "http",
-                "host": [
-                    "eset.com"
-                ],
-                "path": "\/WWWpnjjshsiWww"
             }
         },
         {
