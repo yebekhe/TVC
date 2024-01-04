@@ -14,13 +14,14 @@ DIRECT = direct
 🇫🇷FR | trojan | @PrivateVPNs | 15 = trojan, 15.188.28.194, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
 🇫🇷FR | trojan | @DirectVPN | 15 = trojan, 15.237.21.18, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
 🇺🇸US | ss | @OutlineVpnOfficial | 17 = ss, www.outline.network.ak1991.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 8443, encrypt-method = aes-256-gcm, password = f47e3706-883a-482e-8062-388a2c5ff00e
-🇨🇦CA | vmess | @ConfigsHUB | 19 = vmess, chetori.rafalion.ir, 2087, username = 7f22b9b7-0b5c-4171-911c-3f1a1987679c, ws = true, tls = 1, vmess-aead = true, ws-path = T.me/RaFaV2ray  |  rafav2ray@gmail.com, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇨🇦CA | vmess | @ConfigsHUB | 8 = vmess, 104.21.28.62, 443, username = 0d9776dd-e12e-4a5e-9bf2-8cceb1b502f1, ws = true, tls = 1, vmess-aead = true, ws-path = /vmess, ws-headers = Host:"pt1-vmess.sshmax.xyz", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 8 = vmess, v2line.telegram.channel.1377.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = 788744c4-968d-4263-a38b-f2952bf12db2, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ee1.xv2ray.net", skip-cert-verify = true, tfo = false
+🇨🇦CA | vmess | @forwardv2ray | 18 = vmess, 172.67.203.169, 8880, username = 4b5e4565-322f-4223-a891-78a84f189726, ws = true, tls = , vmess-aead = true, ws-path = /9sTFt5L554kPVWmuJ2k8baS4bEY83PZ66xb4twoBBtsiMPK2b, ws-headers = Host:"fra.yj2022.gq", skip-cert-verify = true, tfo = false
 🇩🇪DE | ss | @kingofilter | 18 = ss, passconf.xyz, 8080, encrypt-method = chacha20-ietf-poly1305, password = qGjmI8WQlF0tfhDbkLqGdN
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇨🇦CA | vmess | @ConfigsHUB | 19,🇺🇸US | vmess | @v2Line | 8,🇩🇪DE | ss | @kingofilter | 18
-URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇨🇦CA | vmess | @ConfigsHUB | 19,🇺🇸US | vmess | @v2Line | 8,🇩🇪DE | ss | @kingofilter | 18
-FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇨🇦CA | vmess | @ConfigsHUB | 19,🇺🇸US | vmess | @v2Line | 8,🇩🇪DE | ss | @kingofilter | 18
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇨🇦CA | vmess | @ConfigsHUB | 8,🇺🇸US | vmess | @v2Line | 8,🇨🇦CA | vmess | @forwardv2ray | 18,🇩🇪DE | ss | @kingofilter | 18
+URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇨🇦CA | vmess | @ConfigsHUB | 8,🇺🇸US | vmess | @v2Line | 8,🇨🇦CA | vmess | @forwardv2ray | 18,🇩🇪DE | ss | @kingofilter | 18
+FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇨🇦CA | vmess | @ConfigsHUB | 8,🇺🇸US | vmess | @v2Line | 8,🇨🇦CA | vmess | @forwardv2ray | 18,🇩🇪DE | ss | @kingofilter | 18
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
