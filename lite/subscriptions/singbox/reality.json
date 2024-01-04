@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇹🇷TR | vless | @reality_daily | 0",
                 "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -128,7 +127,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇹🇷TR | vless | @reality_daily | 0",
                 "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -164,35 +162,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇹🇷TR | vless | @reality_daily | 0",
-            "type": "vless",
-            "server": "83.217.9.129",
-            "server_port": 22,
-            "uuid": "9a9bcd1c-b3dc-4d8a-b8ec-f61f52400f4f",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "speed.cloudflare.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "jCflSc9BksUtRBcimFJkNtHEF1F888OUGnJ7HA_VlHE",
-                    "short_id": "7a343936"
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | vless | @ARv2ray | 13",
