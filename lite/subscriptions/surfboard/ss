@@ -12,10 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇺🇸US | ss | @OutlineVpnOfficial | 17 = ss, www.outline.network.ak1991.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 8443, encrypt-method = aes-256-gcm, password = f47e3706-883a-482e-8062-388a2c5ff00e
+🇩🇪DE | ss | @kingofilter | 18 = ss, passconf.xyz, 8080, encrypt-method = chacha20-ietf-poly1305, password = qGjmI8WQlF0tfhDbkLqGdN
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | ss | @OutlineVpnOfficial | 17
-URL-TEST = url-test,🇺🇸US | ss | @OutlineVpnOfficial | 17
-FALLBACK = fallback,🇺🇸US | ss | @OutlineVpnOfficial | 17
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇩🇪DE | ss | @kingofilter | 18
+URL-TEST = url-test,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇩🇪DE | ss | @kingofilter | 18
+FALLBACK = fallback,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇩🇪DE | ss | @kingofilter | 18
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

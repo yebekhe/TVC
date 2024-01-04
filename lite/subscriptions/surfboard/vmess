@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇨🇦CA | vmess | @V2rayCollectorDonate | 19 = vmess, 172.67.204.84, 8880, username = 9d077283-1cb2-45f5-bfb5-ac9352a8cd87, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"psnsisnsidbbh.libraryriazi.sbs", skip-cert-verify = true, tfo = false
 🇨🇳CN | vmess | @Hope_Net | 13 = vmess, v01.gutingting.com, 30035, username = ff255344-3ca0-40d6-b768-eb196f81429d, ws = true, tls = , vmess-aead = true, ws-path = /aceamedv, ws-headers = Host:"v01.gutingting.com", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 8 = vmess, v2line.telegram.channel.1377.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = 788744c4-968d-4263-a38b-f2952bf12db2, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ee1.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @V2rayCollectorDonate | 19,🇨🇳CN | vmess | @Hope_Net | 13,🇺🇸US | vmess | @v2Line | 8
-URL-TEST = url-test,🇨🇦CA | vmess | @V2rayCollectorDonate | 19,🇨🇳CN | vmess | @Hope_Net | 13,🇺🇸US | vmess | @v2Line | 8
-FALLBACK = fallback,🇨🇦CA | vmess | @V2rayCollectorDonate | 19,🇨🇳CN | vmess | @Hope_Net | 13,🇺🇸US | vmess | @v2Line | 8
+MANUAL = select,URL-TEST,FALLBACK,🇨🇳CN | vmess | @Hope_Net | 13,🇺🇸US | vmess | @v2Line | 8
+URL-TEST = url-test,🇨🇳CN | vmess | @Hope_Net | 13,🇺🇸US | vmess | @v2Line | 8
+FALLBACK = fallback,🇨🇳CN | vmess | @Hope_Net | 13,🇺🇸US | vmess | @v2Line | 8
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
