@@ -149,7 +149,7 @@
                 "🇨🇦CA | vless | @sinabigo | 1",
                 "🇨🇦CA | vless | @SafeNet_Server | 9",
                 "🇨🇦CA | vless | @lrnbymaa | 11",
-                "🇨🇦CA | vless | @ConfigsHUB | 19",
+                "🇸🇪SE | vless | @ConfigsHUB | 19",
                 "🇨🇷CR | vless | @proxystore11 | 12",
                 "🇸🇪SE | vless | @free1_vpn | 0",
                 "🏳️XX | vless | @fnet00 | 10",
@@ -160,8 +160,8 @@
                 "🇩🇪DE | vless | @Capoit | 1",
                 "🏳️XX | vless | @FreakConfig | 11",
                 "🇨🇦CA | vless | @flyv2ray | 19",
-                "🇨🇦CA | vless | @forwardv2ray | 18",
-                "🇨🇦CA | vless | @https_config_injector | 14",
+                "🇺🇸US | vless | @forwardv2ray | 14",
+                "🇺🇸US | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 8",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @proxy_mtm | 14",
@@ -217,7 +217,7 @@
                 "🇨🇦CA | vless | @sinabigo | 1",
                 "🇨🇦CA | vless | @SafeNet_Server | 9",
                 "🇨🇦CA | vless | @lrnbymaa | 11",
-                "🇨🇦CA | vless | @ConfigsHUB | 19",
+                "🇸🇪SE | vless | @ConfigsHUB | 19",
                 "🇨🇷CR | vless | @proxystore11 | 12",
                 "🇸🇪SE | vless | @free1_vpn | 0",
                 "🏳️XX | vless | @fnet00 | 10",
@@ -228,8 +228,8 @@
                 "🇩🇪DE | vless | @Capoit | 1",
                 "🏳️XX | vless | @FreakConfig | 11",
                 "🇨🇦CA | vless | @flyv2ray | 19",
-                "🇨🇦CA | vless | @forwardv2ray | 18",
-                "🇨🇦CA | vless | @https_config_injector | 14",
+                "🇺🇸US | vless | @forwardv2ray | 14",
+                "🇺🇸US | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 8",
                 "🇸🇪SE | vless | @kiava | 14",
                 "🇨🇦CA | vless | @proxy_mtm | 14",
@@ -1501,11 +1501,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @ConfigsHUB | 19",
+            "tag": "🇸🇪SE | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "bia-to2.unlimiteddev.shop",
-            "server_port": 80,
-            "uuid": "ea5fa5d6-5100-4453-9a09-69cb133179a0",
+            "server": "176.97.77.32",
+            "server_port": 443,
+            "uuid": "2c8efaa2-dfa1-44bb-9e14-5ad363dc88f5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1513,11 +1513,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "ov2.gooldeneaglee.eu.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "bia-to2.unlimiteddev.shop"
+                    "Host": "ov2.gooldeneaglee.eu.org"
                 }
             }
         },
@@ -1821,11 +1831,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
+            "tag": "🇺🇸US | vless | @forwardv2ray | 14",
             "type": "vless",
-            "server": "star--join.outline-vpn.cloud",
+            "server": "google.com",
             "server_port": 443,
-            "uuid": "b9ad895b-12ac-40fc-a5ac-a5b2a1285001",
+            "uuid": "8e6edb4b-d60f-48ed-b352-c9c45fdb022e",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1835,7 +1845,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "3k.pureboy.eu.org",
+                "server_name": "8693466548.yadakii.store",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1844,15 +1854,15 @@
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/?ed",
-                "headers": {
-                    "Host": "3k.pureboy.eu.org"
-                }
+                "type": "grpc",
+                "service_name": "48557845",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @https_config_injector | 14",
+            "tag": "🇺🇸US | vless | @https_config_injector | 14",
             "type": "vless",
             "server": "104.21.28.62",
             "server_port": 443,
