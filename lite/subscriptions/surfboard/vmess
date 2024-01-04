@@ -11,11 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇨🇦CA | vmess | @V2rayCollectorDonate | 19 = vmess, 172.66.47.74, 443, username = 8ca98c98-fb0b-4007-a6e8-c8294e546763, ws = true, tls = 1, vmess-aead = true, ws-path = /CUFr48ESBORi4fyf8bW, ws-headers = Host:"s10.xyzquant.cloud", skip-cert-verify = true, tfo = false
+🇨🇦CA | vmess | @Hope_Net | 14 = vmess, us.he.01.nekocloud.cn, 19043, username = 9c2b64eb-03d8-3cc7-9ba6-2e25002f59b5, ws = true, tls = , vmess-aead = true, ws-path = /catnet, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 8 = vmess, v2line.telegram.channel.1377.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = 788744c4-968d-4263-a38b-f2952bf12db2, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ee1.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | vmess | @v2Line | 8
-URL-TEST = url-test,🇺🇸US | vmess | @v2Line | 8
-FALLBACK = fallback,🇺🇸US | vmess | @v2Line | 8
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @V2rayCollectorDonate | 19,🇨🇦CA | vmess | @Hope_Net | 14,🇺🇸US | vmess | @v2Line | 8
+URL-TEST = url-test,🇨🇦CA | vmess | @V2rayCollectorDonate | 19,🇨🇦CA | vmess | @Hope_Net | 14,🇺🇸US | vmess | @v2Line | 8
+FALLBACK = fallback,🇨🇦CA | vmess | @V2rayCollectorDonate | 19,🇨🇦CA | vmess | @Hope_Net | 14,🇺🇸US | vmess | @v2Line | 8
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

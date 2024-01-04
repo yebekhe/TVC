@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
                 "🇭🇰HK | vmess | @yaney_01 | 11",
@@ -119,6 +120,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇹🇼TW | vmess | @mftizi | 18",
                 "🇭🇰HK | vmess | @yaney_01 | 11",
@@ -146,6 +148,40 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
+            "type": "vmess",
+            "server": "172.66.47.74",
+            "server_port": 443,
+            "uuid": "8ca98c98-fb0b-4007-a6e8-c8294e546763",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "s10.xyzquant.cloud",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/CUFr48ESBORi4fyf8bW",
+                "headers": {
+                    "Host": "s10.xyzquant.cloud"
+                }
+            }
         },
         {
             "tag": "🇫🇷FR | vmess | @v2ray_outlineir | 0",
@@ -201,9 +237,9 @@
         {
             "tag": "🇨🇦CA | vmess | @Hope_Net | 14",
             "type": "vmess",
-            "server": "104.27.102.105",
-            "server_port": 8080,
-            "uuid": "Telegram-V2ray_alpha",
+            "server": "us.he.01.nekocloud.cn",
+            "server_port": 19043,
+            "uuid": "9c2b64eb-03d8-3cc7-9ba6-2e25002f59b5",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -216,7 +252,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/catnet",
                 "headers": {
                     "Host": ""
                 }
