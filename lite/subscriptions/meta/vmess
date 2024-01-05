@@ -125,6 +125,7 @@ proxies:
   - {"name":"🇬🇧GB | vmess | @oneclickvpnkeys | 6","type":"vmess","server":"95.164.69.27","port":"80","cipher":"auto","uuid":"cd4a6d0d-4b26-4ee1-8a42-c2878b5c3b2a","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"internet.life.com.by"}}}
   - {"name":"🇸🇪SE | vmess | @Hope_Net | 11","type":"vmess","server":"16.171.13.95","port":"43921","cipher":"auto","uuid":"e209e3e9-e690-40d7-a19f-e7c46eb5decc","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇸US | vmess | @v2Line | 7","type":"vmess","server":"v2line.telegram.channel.1379.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"443","cipher":"auto","uuid":"7db50a2b-70d8-4b91-a850-8ad577f25ef7","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":""}}}
+  - {"name":"🇨🇦CA | vmess | @forwardv2ray | 19","type":"vmess","server":"172.66.46.59","port":"2087","cipher":"auto","uuid":"08ec6a06-8c15-4069-a781-8c725a30b7e7","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"multi"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -136,6 +137,7 @@ proxy-groups:
       - '🇬🇧GB | vmess | @oneclickvpnkeys | 6'
       - '🇸🇪SE | vmess | @Hope_Net | 11'
       - '🇺🇸US | vmess | @v2Line | 7'
+      - '🇨🇦CA | vmess | @forwardv2ray | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -147,6 +149,7 @@ proxy-groups:
       - '🇬🇧GB | vmess | @oneclickvpnkeys | 6'
       - '🇸🇪SE | vmess | @Hope_Net | 11'
       - '🇺🇸US | vmess | @v2Line | 7'
+      - '🇨🇦CA | vmess | @forwardv2ray | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -157,6 +160,7 @@ proxy-groups:
       - '🇬🇧GB | vmess | @oneclickvpnkeys | 6'
       - '🇸🇪SE | vmess | @Hope_Net | 11'
       - '🇺🇸US | vmess | @v2Line | 7'
+      - '🇨🇦CA | vmess | @forwardv2ray | 19'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
