@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇨🇦CA | trojan | @V2rayCollectorDonate | 19 = trojan, 172.66.47.74, 443, password = 8ca98c98-fb0b-4007-a6e8-c8294e546763, udp-delay = true, skip-cert-verify = false, sni = s10.xyzquant.cloud, ws = false
-🇸🇪SE | trojan | @PrivateVPNs | 18 = trojan, 13.48.34.198, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
-🇸🇪SE | trojan | @DirectVPN | 18 = trojan, 13.48.254.244, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
+🇩🇪DE | trojan | @PrivateVPNs | 18 = trojan, 3.66.116.35, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
+🇩🇪DE | trojan | @DirectVPN | 18 = trojan, 3.76.139.65, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇸🇪SE | trojan | @PrivateVPNs | 18,🇸🇪SE | trojan | @DirectVPN | 18
-URL-TEST = url-test,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇸🇪SE | trojan | @PrivateVPNs | 18,🇸🇪SE | trojan | @DirectVPN | 18
-FALLBACK = fallback,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇸🇪SE | trojan | @PrivateVPNs | 18,🇸🇪SE | trojan | @DirectVPN | 18
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | trojan | @PrivateVPNs | 18,🇩🇪DE | trojan | @DirectVPN | 18
+URL-TEST = url-test,🇩🇪DE | trojan | @PrivateVPNs | 18,🇩🇪DE | trojan | @DirectVPN | 18
+FALLBACK = fallback,🇩🇪DE | trojan | @PrivateVPNs | 18,🇩🇪DE | trojan | @DirectVPN | 18
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
