@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🇺🇸US | vless | @EliV2ray | 13",
                 "🇨🇦CA | vless | @v2_team | 18",
-                "🇨🇷CR | vless | @XsV2ray | 13",
+                "🇺🇸US | vless | @XsV2ray | 13",
                 "🇫🇷FR | vless | @VlessConfig | 15",
                 "🏳️XX | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @melov2ray | 5",
@@ -120,7 +120,7 @@
                 "🇺🇸US | vless | @V2rayNGmat | 1",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 15",
-                "🇨🇦CA | vless | @DarkTeam_VPN | 20",
+                "🇨🇦CA | vless | @DarkTeam_VPN | 17",
                 "🇨🇦CA | vless | @V2raysFree | 15",
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇨🇦CA | vless | @V2rayCollector | 1",
@@ -154,7 +154,6 @@
                 "🏳️XX | vless | @Capoit | 3",
                 "🇺🇸US | vless | @FreakConfig | 9",
                 "🇮🇷IR | vless | @flyv2ray | 14",
-                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇺🇸US | vless | @mehrosaboran | 13",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -171,7 +170,7 @@
             "outbounds": [
                 "🇺🇸US | vless | @EliV2ray | 13",
                 "🇨🇦CA | vless | @v2_team | 18",
-                "🇨🇷CR | vless | @XsV2ray | 13",
+                "🇺🇸US | vless | @XsV2ray | 13",
                 "🇫🇷FR | vless | @VlessConfig | 15",
                 "🏳️XX | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @melov2ray | 5",
@@ -183,7 +182,7 @@
                 "🇺🇸US | vless | @V2rayNGmat | 1",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 15",
-                "🇨🇦CA | vless | @DarkTeam_VPN | 20",
+                "🇨🇦CA | vless | @DarkTeam_VPN | 17",
                 "🇨🇦CA | vless | @V2raysFree | 15",
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇨🇦CA | vless | @V2rayCollector | 1",
@@ -217,7 +216,6 @@
                 "🏳️XX | vless | @Capoit | 3",
                 "🇺🇸US | vless | @FreakConfig | 9",
                 "🇮🇷IR | vless | @flyv2ray | 14",
-                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇺🇸US | vless | @mehrosaboran | 13",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -308,7 +306,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @XsV2ray | 13",
+            "tag": "🇺🇸US | vless | @XsV2ray | 13",
             "type": "vless",
             "server": "all.vipxali.cfd",
             "server_port": 2083,
@@ -678,11 +676,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @DarkTeam_VPN | 20",
+            "tag": "🇨🇦CA | vless | @DarkTeam_VPN | 17",
             "type": "vless",
-            "server": "104.16.45.12",
-            "server_port": 443,
-            "uuid": "60813b9d-aa0e-4a5c-88b8-ed231058e82a",
+            "server": "www.zula.ir",
+            "server_port": 8443,
+            "uuid": "f6ba58ec-d11d-4c98-8572-84936bd72aa3",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -692,7 +690,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "pages.20230619.love",
+                "server_name": "Fin.Melobigg.Site",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -701,11 +699,11 @@
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "pages.20230619.love"
-                }
+                "type": "grpc",
+                "service_name": "me",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1653,27 +1651,6 @@
                 "path": "\/opeta",
                 "headers": {
                     "Host": "minecraft.opeta.cfd"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
-            "type": "vless",
-            "server": "late.turk.coffee",
-            "server_port": 8880,
-            "uuid": "7710457e-0831-4ae7-b005-7df8cf8558a5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/,Turk",
-                "headers": {
-                    "Host": "late.turk.coffee"
                 }
             }
         },
