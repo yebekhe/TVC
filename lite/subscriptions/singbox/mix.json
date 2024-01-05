@@ -125,7 +125,7 @@
                 "🇨🇦CA | vless | @servermomo | 14",
                 "🇮🇷IR | vless | @V2rayCollector | 2",
                 "🇨🇷CR | vless | @azadi_az_inja_migzare | 13",
-                "🇨🇦CA | vless | @V2rayCollectorDonate | 19",
+                "🇩🇪DE | tuic | @V2rayCollectorDonate | 19",
                 "🇨🇷CR | vless | @V2rayNGn | 24",
                 "🇩🇪DE | trojan | @PrivateVPNs | 18",
                 "🇬🇧GB | trojan | @DirectVPN | 18",
@@ -163,8 +163,8 @@
                 "🇺🇸US | vmess | @v2Line | 7",
                 "🇨🇷CR | vless | @Capoit | 2",
                 "🏳️XX | vless | @flyv2ray | 14",
-                "🇺🇸US | vmess | @forwardv2ray | 19",
-                "🇮🇷IR | vmess | @FAKEOFTVC | 3",
+                "🇩🇪DE | vless | @forwardv2ray | 18",
+                "🇺🇸US | tuic | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 11",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -200,7 +200,7 @@
                 "🇨🇦CA | vless | @servermomo | 14",
                 "🇮🇷IR | vless | @V2rayCollector | 2",
                 "🇨🇷CR | vless | @azadi_az_inja_migzare | 13",
-                "🇨🇦CA | vless | @V2rayCollectorDonate | 19",
+                "🇩🇪DE | tuic | @V2rayCollectorDonate | 19",
                 "🇨🇷CR | vless | @V2rayNGn | 24",
                 "🇩🇪DE | trojan | @PrivateVPNs | 18",
                 "🇬🇧GB | trojan | @DirectVPN | 18",
@@ -238,8 +238,8 @@
                 "🇺🇸US | vmess | @v2Line | 7",
                 "🇨🇷CR | vless | @Capoit | 2",
                 "🏳️XX | vless | @flyv2ray | 14",
-                "🇺🇸US | vmess | @forwardv2ray | 19",
-                "🇮🇷IR | vmess | @FAKEOFTVC | 3",
+                "🇩🇪DE | vless | @forwardv2ray | 18",
+                "🇺🇸US | tuic | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 11",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -854,34 +854,26 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @V2rayCollectorDonate | 19",
-            "type": "vless",
-            "server": "172.66.47.74",
+            "tag": "🇩🇪DE | tuic | @V2rayCollectorDonate | 19",
+            "type": "tuic",
+            "server": "136.244.88.153",
             "server_port": 443,
-            "uuid": "8ca98c98-fb0b-4007-a6e8-c8294e546763",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
+            "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
+            "password": "e7b1c11f0d40cc95",
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
             "tls": {
                 "enabled": true,
-                "server_name": "s10.xyzquant.cloud",
-                "insecure": true,
                 "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "6eenmFpWJ6RknrPH6qK9",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "server_name": "www.apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
             }
         },
         {
@@ -1856,44 +1848,62 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @forwardv2ray | 19",
-            "type": "vmess",
-            "server": "198.41.202.5",
-            "server_port": 2052,
-            "uuid": "Telegram-V2ray_alpha",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "kamyarservers.camdvr.org",
+            "server_port": 443,
+            "uuid": "6f5d7ed2-cfdf-43a9-9b3e-4cb20d0afb29",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
+            "tls": {
+                "enabled": true,
+                "server_name": "mihanyas.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bl_WgZJU4-XnjnZ1HWu6tAWaz8rvdgy2pGmaFpOgcQ0",
+                    "short_id": "0960546b"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@configMs",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
-            "tag": "🇮🇷IR | vmess | @FAKEOFTVC | 3",
-            "type": "vmess",
-            "server": "ser52.gsmxssh.com",
-            "server_port": 20554,
-            "uuid": "5d0b61a0-64fc-4a9f-e4bc-50ecdbc37623",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            "tag": "🇺🇸US | tuic | @FAKEOFTVC | 1",
+            "type": "tuic",
+            "server": "108.181.22.155",
+            "server_port": 12255,
+            "uuid": "ed6a538a-6e66-4f21-a769-4b389bb2f3ab",
+            "password": "dongtaiwang",
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "telegram-IP_CF-Cloud",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
             }
         },
         {
