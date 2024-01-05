@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | tuic | @FAKEOFTVC | 1"
+                "🇺🇸US | tuic | @FAKEOFTVC | 1",
+                "🇺🇸US | tuic | @TUICity | 27"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | tuic | @FAKEOFTVC | 1"
+                "🇺🇸US | tuic | @FAKEOFTVC | 1",
+                "🇺🇸US | tuic | @TUICity | 27"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -151,6 +153,29 @@
                 "enabled": true,
                 "disable_sni": false,
                 "server_name": "telegram-IP_CF-Cloud",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸US | tuic | @TUICity | 27",
+            "type": "tuic",
+            "server": "108.181.22.239",
+            "server_port": 45600,
+            "uuid": "4576f920-975b-4ab4-b53a-bdcfa623124d",
+            "password": "dongtaiwang.com",
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "www.virustotal.com",
                 "insecure": true,
                 "alpn": [
                     "h3",
