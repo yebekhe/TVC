@@ -118,7 +118,7 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 15",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 20",
-                "🇩🇪DE | vless | @v2logy | 17",
+                "🇩🇪DE | vless | @v2logy | 18",
                 "🇳🇱NL | vless | @servermomo | 14",
                 "🇮🇷IR | vless | @V2rayCollector | 2",
                 "🇨🇷CR | vless | @azadi_az_inja_migzare | 13",
@@ -151,7 +151,7 @@
                 "🇨🇦CA | vless | @lrnbymaa | 12",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
                 "🇨🇦CA | vless | @v2ray_vpn_ir | 0",
-                "🏳️XX | vmess | @ConfigsHUB | 12",
+                "🇨🇦CA | trojan | @ConfigsHUB | 13",
                 "🇨🇷CR | vless | @proxystore11 | 14",
                 "🇭🇰HK | vmess | @yaney_01 | 11",
                 "🇷🇺RU | vmess | @Hope_Net | 12",
@@ -161,7 +161,9 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇺🇸US | vmess | @v2Line | 7",
                 "🇩🇪DE | vless | @Capoit | 3",
+                "🇩🇪DE | vless | @FreakConfig | 12",
                 "🇸🇬SG | vless | @flyv2ray | 16",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇮🇷IR | vmess | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 9",
@@ -192,7 +194,7 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 15",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 20",
-                "🇩🇪DE | vless | @v2logy | 17",
+                "🇩🇪DE | vless | @v2logy | 18",
                 "🇳🇱NL | vless | @servermomo | 14",
                 "🇮🇷IR | vless | @V2rayCollector | 2",
                 "🇨🇷CR | vless | @azadi_az_inja_migzare | 13",
@@ -225,7 +227,7 @@
                 "🇨🇦CA | vless | @lrnbymaa | 12",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
                 "🇨🇦CA | vless | @v2ray_vpn_ir | 0",
-                "🏳️XX | vmess | @ConfigsHUB | 12",
+                "🇨🇦CA | trojan | @ConfigsHUB | 13",
                 "🇨🇷CR | vless | @proxystore11 | 14",
                 "🇭🇰HK | vmess | @yaney_01 | 11",
                 "🇷🇺RU | vmess | @Hope_Net | 12",
@@ -235,7 +237,9 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇺🇸US | vmess | @v2Line | 7",
                 "🇩🇪DE | vless | @Capoit | 3",
+                "🇩🇪DE | vless | @FreakConfig | 12",
                 "🇸🇬SG | vless | @flyv2ray | 16",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇮🇷IR | vmess | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 9",
@@ -645,11 +649,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @v2logy | 17",
+            "tag": "🇩🇪DE | vless | @v2logy | 18",
             "type": "vless",
             "server": "moftinet.eryhoihuuu.sbs",
             "server_port": 443,
-            "uuid": "578c5ab2-fde6-4949-b1fc-37ba31d9b33c",
+            "uuid": "c6b85ec3-7aa3-46b5-bfc8-b188a5bdb3fd",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1499,20 +1503,25 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @ConfigsHUB | 12",
-            "type": "vmess",
-            "server": null,
-            "server_port": 0,
-            "uuid": null,
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇨🇦CA | trojan | @ConfigsHUB | 13",
+            "type": "trojan",
+            "server": "35.182.28.167",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
@@ -1790,6 +1799,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @FreakConfig | 12",
+            "type": "vless",
+            "server": "116.203.184.23",
+            "server_port": 2096,
+            "uuid": "c76903f0-bc18-42e8-b026-20fd8fddb777",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "zN9DTHpP4CCxpOw4abbvFkQTSIir7Fr9Dl1Uxd3j1BM",
+                    "short_id": "27e75589"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇸🇬SG | vless | @flyv2ray | 16",
             "type": "vless",
             "server": "206.238.236.11",
@@ -1818,6 +1863,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 19",
+            "type": "vless",
+            "server": "51.75.86.63",
+            "server_port": 443,
+            "uuid": "974d4696-a900-4d44-b627-9833b8a7b27a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "flightradar24.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "edge"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UDABcxpKzAYkuyE4pmST0OSzEUJpQNuSgYIKcgppeh8",
+                    "short_id": "d73382b02fa94fc2"
+                }
             }
         },
         {
