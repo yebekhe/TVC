@@ -106,12 +106,11 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇷IR | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇱🇹LT | vmess | @mftizi | 18",
                 "🇬🇧GB | vmess | @oneclickvpnkeys | 6",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
-                "🇺🇸US | vmess | @Hope_Net | 11",
+                "🇺🇸US | vmess | @Hope_Net | 10",
                 "🇺🇸US | vmess | @v2Line | 7",
                 "🇮🇷IR | vmess | @FAKEOFTVC | 2",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 3"
@@ -121,12 +120,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇷IR | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇱🇹LT | vmess | @mftizi | 18",
                 "🇬🇧GB | vmess | @oneclickvpnkeys | 6",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
-                "🇺🇸US | vmess | @Hope_Net | 11",
+                "🇺🇸US | vmess | @Hope_Net | 10",
                 "🇺🇸US | vmess | @v2Line | 7",
                 "🇮🇷IR | vmess | @FAKEOFTVC | 2",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 3"
@@ -150,40 +148,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇮🇷IR | vmess | @V2rayCollectorDonate | 19",
-            "type": "vmess",
-            "server": "arv65.nvme.fun",
-            "server_port": 443,
-            "uuid": "167c83ed-363f-4aa9-89de-d24297b6d8a1",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "arv65.nvme.fun",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/JVNqX9dXix",
-                "headers": {
-                    "Host": "arv65.nvme.fun"
-                }
-            }
         },
         {
             "tag": "🇫🇷FR | vmess | @v2ray_outlineir | 0",
@@ -275,7 +239,31 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @Hope_Net | 11",
+            "tag": "🇺🇸US | vmess | @Hope_Net | 10",
+            "type": "vmess",
+            "server": "38.59.243.133",
+            "server_port": 80,
+            "uuid": "58c76d75-563c-4694-84c4-a798d55e90ed",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | vmess | @v2Line | 7",
             "type": "vmess",
             "server": "v2line.telegram.channel.1381.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
             "server_port": 80,
@@ -295,40 +283,6 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "il1.xv2ray.net"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | vmess | @v2Line | 7",
-            "type": "vmess",
-            "server": "v2line.telegram.channel.1379.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
-            "server_port": 443,
-            "uuid": "7db50a2b-70d8-4b91-a850-8ad577f25ef7",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/racevpn",
-                "headers": {
-                    "Host": ""
                 }
             }
         },
