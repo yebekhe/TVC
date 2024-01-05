@@ -163,7 +163,7 @@
                 "🇺🇸US | vmess | @v2Line | 7",
                 "🇨🇷CR | vless | @Capoit | 2",
                 "🇨🇦CA | vless | @flyv2ray | 14",
-                "🇬🇧GB | vmess | @forwardv2ray | 11",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇺🇸US | tuic | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇨🇦CA | vless | @mehrosaboran | 11",
@@ -172,7 +172,6 @@
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇩🇪DE | ss | @kingofilter | 18",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
-                "🇨🇦CA | vmess | @eliya_chiter0 | 3",
                 "🇺🇸US | vless | @FoXrayIran | 6"
             ]
         },
@@ -237,7 +236,7 @@
                 "🇺🇸US | vmess | @v2Line | 7",
                 "🇨🇷CR | vless | @Capoit | 2",
                 "🇨🇦CA | vless | @flyv2ray | 14",
-                "🇬🇧GB | vmess | @forwardv2ray | 11",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇺🇸US | tuic | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇨🇦CA | vless | @mehrosaboran | 11",
@@ -246,7 +245,6 @@
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇩🇪DE | ss | @kingofilter | 18",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
-                "🇨🇦CA | vmess | @eliya_chiter0 | 3",
                 "🇺🇸US | vless | @FoXrayIran | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -1897,20 +1895,24 @@
             }
         },
         {
-            "tag": "🇬🇧GB | vmess | @forwardv2ray | 11",
-            "type": "vmess",
-            "server": "51.75.162.199",
-            "server_port": 61570,
-            "uuid": "e6aab1e0-ede0-47c3-b01c-f34a498db838",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 19",
+            "type": "vless",
+            "server": "45.147.7.28",
+            "server_port": 443,
+            "uuid": "4a2ceb7e-ad17-4195-8d7a-881322e5aa93",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/telegram:@Bed0nemarz:@uciranir",
+                "headers": {
+                    "Host": "45.147.7.28"
+                }
             }
         },
         {
@@ -1970,9 +1972,9 @@
         {
             "tag": "🇨🇦CA | vless | @mehrosaboran | 11",
             "type": "vless",
-            "server": "104.27.102.105",
-            "server_port": 2053,
-            "uuid": "5febbe48-3b81-44dd-93ce-b81bbb71ee52",
+            "server": "172.66.47.74",
+            "server_port": 2096,
+            "uuid": "c5c2a168-0a42-4796-a484-4bcd69d40c45",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1982,7 +1984,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ghazal.boredhot.cloud",
+                "server_name": "www.zedmodeon1.online",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1991,11 +1993,11 @@
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "ghazal.boredhot.cloud"
-                }
+                "type": "grpc",
+                "service_name": "TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -2106,30 +2108,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vmess | @eliya_chiter0 | 3",
-            "type": "vmess",
-            "server": "104.27.102.105",
-            "server_port": 8080,
-            "uuid": "Telegram-V2ray_alpha",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {

@@ -154,6 +154,7 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇨🇷CR | vless | @Capoit | 2",
                 "🇨🇦CA | vless | @flyv2ray | 14",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇨🇦CA | vless | @mehrosaboran | 11",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -215,6 +216,7 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇨🇷CR | vless | @Capoit | 2",
                 "🇨🇦CA | vless | @flyv2ray | 14",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇨🇦CA | vless | @mehrosaboran | 11",
                 "🇸🇪SE | vless | @kiava | 14",
@@ -1670,6 +1672,27 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 19",
+            "type": "vless",
+            "server": "45.147.7.28",
+            "server_port": 443,
+            "uuid": "4a2ceb7e-ad17-4195-8d7a-881322e5aa93",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/telegram:@Bed0nemarz:@uciranir",
+                "headers": {
+                    "Host": "45.147.7.28"
+                }
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @https_config_injector | 15",
             "type": "vless",
             "server": "104.21.28.62",
@@ -1703,9 +1726,9 @@
         {
             "tag": "🇨🇦CA | vless | @mehrosaboran | 11",
             "type": "vless",
-            "server": "104.27.102.105",
-            "server_port": 2053,
-            "uuid": "5febbe48-3b81-44dd-93ce-b81bbb71ee52",
+            "server": "172.66.47.74",
+            "server_port": 2096,
+            "uuid": "c5c2a168-0a42-4796-a484-4bcd69d40c45",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1715,7 +1738,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ghazal.boredhot.cloud",
+                "server_name": "www.zedmodeon1.online",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1724,11 +1747,11 @@
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "ghazal.boredhot.cloud"
-                }
+                "type": "grpc",
+                "service_name": "TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
