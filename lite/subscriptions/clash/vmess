@@ -119,6 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇷🇺RU | vmess | @Hope_Net | 12","type":"vmess","server":"45.136.244.181","port":80,"cipher":"auto","uuid":"a25881f3-967f-3265-bc7f-9e66857b016b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/fr-unlimitxxx","headers":{"host":"45.136.244.181"}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 7","type":"vmess","server":"v2line.telegram.channel.1379.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"443","cipher":"auto","uuid":"7db50a2b-70d8-4b91-a850-8ad577f25ef7","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":""}}}
 proxy-groups:
   - name: MANUAL
@@ -127,6 +128,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
+      - '🇷🇺RU | vmess | @Hope_Net | 12'
       - '🇺🇸US | vmess | @v2Line | 7'
   - name: URL-TEST
     type: url-test
@@ -135,6 +137,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
+      - '🇷🇺RU | vmess | @Hope_Net | 12'
       - '🇺🇸US | vmess | @v2Line | 7'
   - name: FALLBACK
     type: fallback
@@ -142,6 +145,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
+      - '🇷🇺RU | vmess | @Hope_Net | 12'
       - '🇺🇸US | vmess | @v2Line | 7'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
