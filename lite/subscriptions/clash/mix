@@ -118,6 +118,7 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
+  - {"name":"🇨🇦CA | trojan | @V2rayCollectorDonate | 19","type":"trojan","server":"ironone.libertasiran.cloud","port":443,"udp":false,"password":"LibertasLibertas","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ironone.libertasiran.cloud"}
   - {"name":"🇬🇧GB | trojan | @PrivateVPNs | 15","type":"trojan","server":"18.132.224.33","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇬🇧GB | trojan | @DirectVPN | 15","type":"trojan","server":"35.178.123.47","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
@@ -125,7 +126,7 @@ proxies:
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak1993.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"vxMDYoKuEHdnEmjtC2sM8k25EAsXahnC/Xb8D9p5krg=","cipher":"aes-256-gcm"}
   - {"name":"🇸🇪SE | vmess | @Hope_Net | 10","type":"vmess","server":"16.171.13.95","port":"43921","cipher":"auto","uuid":"e209e3e9-e690-40d7-a19f-e7c46eb5decc","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇸US | vmess | @v2Line | 7","type":"vmess","server":"v2line.telegram.channel.1379.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"443","cipher":"auto","uuid":"7db50a2b-70d8-4b91-a850-8ad577f25ef7","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":""}}}
-  - {"name":"🇺🇸US | vmess | @forwardv2ray | 17","type":"vmess","server":"38.59.243.133","port":80,"cipher":"auto","uuid":"58c76d75-563c-4694-84c4-a798d55e90ed","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
+  - {"name":"🇫🇷FR | ss | @forwardv2ray | 19","type":"ss","server":"149.202.82.172","port":5600,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
   - {"name":"🇩🇪DE | ss | @kingofilter | 18","type":"ss","server":"passconf.xyz","port":8080,"password":"qGjmI8WQlF0tfhDbkLqGdN","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -133,6 +134,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇨🇦CA | trojan | @V2rayCollectorDonate | 19'
       - '🇬🇧GB | trojan | @PrivateVPNs | 15'
       - '🇬🇧GB | trojan | @DirectVPN | 15'
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
@@ -140,7 +142,7 @@ proxy-groups:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇸🇪SE | vmess | @Hope_Net | 10'
       - '🇺🇸US | vmess | @v2Line | 7'
-      - '🇺🇸US | vmess | @forwardv2ray | 17'
+      - '🇫🇷FR | ss | @forwardv2ray | 19'
       - '🇩🇪DE | ss | @kingofilter | 18'
   - name: URL-TEST
     type: url-test
@@ -148,6 +150,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇨🇦CA | trojan | @V2rayCollectorDonate | 19'
       - '🇬🇧GB | trojan | @PrivateVPNs | 15'
       - '🇬🇧GB | trojan | @DirectVPN | 15'
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
@@ -155,13 +158,14 @@ proxy-groups:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇸🇪SE | vmess | @Hope_Net | 10'
       - '🇺🇸US | vmess | @v2Line | 7'
-      - '🇺🇸US | vmess | @forwardv2ray | 17'
+      - '🇫🇷FR | ss | @forwardv2ray | 19'
       - '🇩🇪DE | ss | @kingofilter | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇨🇦CA | trojan | @V2rayCollectorDonate | 19'
       - '🇬🇧GB | trojan | @PrivateVPNs | 15'
       - '🇬🇧GB | trojan | @DirectVPN | 15'
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
@@ -169,7 +173,7 @@ proxy-groups:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇸🇪SE | vmess | @Hope_Net | 10'
       - '🇺🇸US | vmess | @v2Line | 7'
-      - '🇺🇸US | vmess | @forwardv2ray | 17'
+      - '🇫🇷FR | ss | @forwardv2ray | 19'
       - '🇩🇪DE | ss | @kingofilter | 18'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve

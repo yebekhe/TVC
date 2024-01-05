@@ -13,11 +13,10 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇱🇹LT | vmess | @mftizi | 18 = vmess, 94.131.14.177, 80, username = 2c5fee13-f08b-4ba8-86db-27dd51cb9781, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 7 = vmess, v2line.telegram.channel.1379.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 443, username = 7db50a2b-70d8-4b91-a850-8ad577f25ef7, ws = true, tls = 1, vmess-aead = true, ws-path = /racevpn, ws-headers = Host:"", skip-cert-verify = true, tfo = false
-🇺🇸US | vmess | @forwardv2ray | 17 = vmess, 38.59.243.133, 80, username = 58c76d75-563c-4694-84c4-a798d55e90ed, ws = true, tls = , vmess-aead = false, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇱🇹LT | vmess | @mftizi | 18,🇺🇸US | vmess | @v2Line | 7,🇺🇸US | vmess | @forwardv2ray | 17
-URL-TEST = url-test,🇱🇹LT | vmess | @mftizi | 18,🇺🇸US | vmess | @v2Line | 7,🇺🇸US | vmess | @forwardv2ray | 17
-FALLBACK = fallback,🇱🇹LT | vmess | @mftizi | 18,🇺🇸US | vmess | @v2Line | 7,🇺🇸US | vmess | @forwardv2ray | 17
+MANUAL = select,URL-TEST,FALLBACK,🇱🇹LT | vmess | @mftizi | 18,🇺🇸US | vmess | @v2Line | 7
+URL-TEST = url-test,🇱🇹LT | vmess | @mftizi | 18,🇺🇸US | vmess | @v2Line | 7
+FALLBACK = fallback,🇱🇹LT | vmess | @mftizi | 18,🇺🇸US | vmess | @v2Line | 7
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
