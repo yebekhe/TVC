@@ -122,11 +122,10 @@ dns:
 proxies:
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇱🇹LT | vmess | @mftizi | 18","type":"vmess","server":"94.131.14.177","port":"80","cipher":"auto","uuid":"2c5fee13-f08b-4ba8-86db-27dd51cb9781","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":""}}}
-  - {"name":"🇬🇧GB | vmess | @oneclickvpnkeys | 7","type":"vmess","server":"95.164.69.27","port":"80","cipher":"auto","uuid":"cd4a6d0d-4b26-4ee1-8a42-c2878b5c3b2a","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"internet.life.com.by"}}}
+  - {"name":"🇬🇧GB | vmess | @oneclickvpnkeys | 8","type":"vmess","server":"95.164.69.27","port":"80","cipher":"auto","uuid":"cd4a6d0d-4b26-4ee1-8a42-c2878b5c3b2a","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"internet.life.com.by"}}}
   - {"name":"🇨🇳CN | vmess | @yaney_01 | 10","type":"vmess","server":"cm1.awslcn.info","port":"25258","cipher":"auto","uuid":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cm1.awslcn.info"}}}
   - {"name":"🇦🇺AU | vmess | @Hope_Net | 10","type":"vmess","server":"au-full.privateip.net","port":"443","cipher":"auto","uuid":"db373721-55aa-4ad2-9c33-855377ad289f","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN","headers":{"host":""}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 7","type":"vmess","server":"v2line.telegram.channel.1381.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"224a1664-6b67-4a57-9cb3-d8e9139dbb38","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"il1.xv2ray.net"}}}
-  - {"name":"🇰🇿KZ | vmess | @forwardv2ray | 19","type":"vmess","server":"kz-v2ray.ipracevpn.com","port":"8443","cipher":"auto","uuid":"48b10b02-2c60-4323-bc65-a11b15144745","alterId":"0","tls":true,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -135,11 +134,10 @@ proxy-groups:
       - FALLBACK
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇱🇹LT | vmess | @mftizi | 18'
-      - '🇬🇧GB | vmess | @oneclickvpnkeys | 7'
+      - '🇬🇧GB | vmess | @oneclickvpnkeys | 8'
       - '🇨🇳CN | vmess | @yaney_01 | 10'
       - '🇦🇺AU | vmess | @Hope_Net | 10'
       - '🇺🇸US | vmess | @v2Line | 7'
-      - '🇰🇿KZ | vmess | @forwardv2ray | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -148,11 +146,10 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇱🇹LT | vmess | @mftizi | 18'
-      - '🇬🇧GB | vmess | @oneclickvpnkeys | 7'
+      - '🇬🇧GB | vmess | @oneclickvpnkeys | 8'
       - '🇨🇳CN | vmess | @yaney_01 | 10'
       - '🇦🇺AU | vmess | @Hope_Net | 10'
       - '🇺🇸US | vmess | @v2Line | 7'
-      - '🇰🇿KZ | vmess | @forwardv2ray | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -160,11 +157,10 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇱🇹LT | vmess | @mftizi | 18'
-      - '🇬🇧GB | vmess | @oneclickvpnkeys | 7'
+      - '🇬🇧GB | vmess | @oneclickvpnkeys | 8'
       - '🇨🇳CN | vmess | @yaney_01 | 10'
       - '🇦🇺AU | vmess | @Hope_Net | 10'
       - '🇺🇸US | vmess | @v2Line | 7'
-      - '🇰🇿KZ | vmess | @forwardv2ray | 19'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
