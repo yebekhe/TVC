@@ -121,6 +121,7 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 15",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 20",
+                "🇨🇦CA | vless | @V2raysFree | 15",
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇨🇦CA | vless | @V2rayCollector | 1",
                 "🇨🇷CR | vless | @azadi_az_inja_migzare | 15",
@@ -155,7 +156,7 @@
                 "🇨🇦CA | vless | @v2ray_vpn_ir | 0",
                 "🇨🇷CR | vless | @proxystore11 | 14",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
-                "🇨🇦CA | vmess | @Hope_Net | 9",
+                "🇫🇷FR | vmess | @Hope_Net | 10",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 38",
                 "🏳️XX | vless | @Capital_NET | 52",
@@ -172,7 +173,6 @@
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇨🇦CA | vless | @kingofilter | 17",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
-                "🇫🇷FR | vmess | @eliya_chiter0 | 1",
                 "🇺🇸US | vless | @FoXrayIran | 6",
                 "🇺🇸US | tuic | @TUICity | 27"
             ]
@@ -196,6 +196,7 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 15",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 20",
+                "🇨🇦CA | vless | @V2raysFree | 15",
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇨🇦CA | vless | @V2rayCollector | 1",
                 "🇨🇷CR | vless | @azadi_az_inja_migzare | 15",
@@ -230,7 +231,7 @@
                 "🇨🇦CA | vless | @v2ray_vpn_ir | 0",
                 "🇨🇷CR | vless | @proxystore11 | 14",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
-                "🇨🇦CA | vmess | @Hope_Net | 9",
+                "🇫🇷FR | vmess | @Hope_Net | 10",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 38",
                 "🏳️XX | vless | @Capital_NET | 52",
@@ -247,7 +248,6 @@
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇨🇦CA | vless | @kingofilter | 17",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
-                "🇫🇷FR | vmess | @eliya_chiter0 | 1",
                 "🇺🇸US | vless | @FoXrayIran | 6",
                 "🇺🇸US | tuic | @TUICity | 27"
             ],
@@ -729,6 +729,37 @@
                 "path": "\/",
                 "headers": {
                     "Host": "pages.20230619.love"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @V2raysFree | 15",
+            "type": "vless",
+            "server": "zula.ir",
+            "server_port": 443,
+            "uuid": "86e61772-22d0-405c-bbc9-0a9cc3deb0de",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ss1.v2vpnchannel.website",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless",
+                "headers": {
+                    "Host": "ss1.v2vpnchannel.website"
                 }
             }
         },
@@ -1614,11 +1645,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 9",
+            "tag": "🇫🇷FR | vmess | @Hope_Net | 10",
             "type": "vmess",
-            "server": "104.27.102.105",
-            "server_port": 8080,
-            "uuid": "Telegram-V2ray_alpha",
+            "server": "172.232.44.241",
+            "server_port": 8081,
+            "uuid": "13c67541-4a42-434d-b158-e4c5730b1d09",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1628,13 +1659,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
@@ -1853,9 +1877,9 @@
         {
             "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
             "type": "vless",
-            "server": "104.21.28.62",
-            "server_port": 443,
-            "uuid": "b9ad895b-12ac-40fc-a5ac-a5b2a1285001",
+            "server": "late.turk.coffee",
+            "server_port": 8880,
+            "uuid": "7710457e-0831-4ae7-b005-7df8cf8558a5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1863,21 +1887,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "3k.pureboy.eu.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/,Turk",
                 "headers": {
-                    "Host": "3k.pureboy.eu.org"
+                    "Host": "late.turk.coffee"
                 }
             }
         },
@@ -2071,23 +2085,6 @@
             "uuid": "ee1a886f-05ba-4407-bdd1-efdb4daac2f6",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇫🇷FR | vmess | @eliya_chiter0 | 1",
-            "type": "vmess",
-            "server": "172.232.44.241",
-            "server_port": 8081,
-            "uuid": "13c67541-4a42-434d-b158-e4c5730b1d09",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
