@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | tuic | @V2rayCollectorDonate | 5",
                 "🇺🇸US | tuic | @FAKEOFTVC | 0",
                 "🇩🇪DE | tuic | @TUICity | 12",
                 "🏳️XX | tuic | @TUICity | 13",
@@ -117,6 +118,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | tuic | @V2rayCollectorDonate | 5",
                 "🇺🇸US | tuic | @FAKEOFTVC | 0",
                 "🇩🇪DE | tuic | @TUICity | 12",
                 "🏳️XX | tuic | @TUICity | 13",
@@ -142,6 +144,29 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | tuic | @V2rayCollectorDonate | 5",
+            "type": "tuic",
+            "server": "136.244.88.153",
+            "server_port": 443,
+            "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
+            "password": "e7b1c11f0d40cc95",
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "www.apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
         },
         {
             "tag": "🇺🇸US | tuic | @FAKEOFTVC | 0",
