@@ -151,10 +151,10 @@
                 "🇨🇦CA | vless | @lrnbymaa | 12",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
                 "🇨🇦CA | vless | @v2ray_vpn_ir | 0",
-                "🇨🇦CA | trojan | @ConfigsHUB | 13",
+                "🏳️XX | vmess | @ConfigsHUB | 15",
                 "🇨🇷CR | vless | @proxystore11 | 14",
                 "🇭🇰HK | vmess | @yaney_01 | 11",
-                "🇷🇺RU | vmess | @Hope_Net | 12",
+                "🇫🇷FR | vmess | @Hope_Net | 11",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 38",
                 "🇫🇮FI | vless | @v2rayng_vpnrog | 4",
@@ -163,7 +163,6 @@
                 "🇩🇪DE | vless | @Capoit | 3",
                 "🇩🇪DE | vless | @FreakConfig | 12",
                 "🇸🇬SG | vless | @flyv2ray | 16",
-                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇮🇷IR | vmess | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 9",
@@ -227,10 +226,10 @@
                 "🇨🇦CA | vless | @lrnbymaa | 12",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
                 "🇨🇦CA | vless | @v2ray_vpn_ir | 0",
-                "🇨🇦CA | trojan | @ConfigsHUB | 13",
+                "🏳️XX | vmess | @ConfigsHUB | 15",
                 "🇨🇷CR | vless | @proxystore11 | 14",
                 "🇭🇰HK | vmess | @yaney_01 | 11",
-                "🇷🇺RU | vmess | @Hope_Net | 12",
+                "🇫🇷FR | vmess | @Hope_Net | 11",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 38",
                 "🇫🇮FI | vless | @v2rayng_vpnrog | 4",
@@ -239,7 +238,6 @@
                 "🇩🇪DE | vless | @Capoit | 3",
                 "🇩🇪DE | vless | @FreakConfig | 12",
                 "🇸🇬SG | vless | @flyv2ray | 16",
-                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇮🇷IR | vmess | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 9",
@@ -1503,25 +1501,20 @@
             }
         },
         {
-            "tag": "🇨🇦CA | trojan | @ConfigsHUB | 13",
-            "type": "trojan",
-            "server": "35.182.28.167",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
+            "tag": "🏳️XX | vmess | @ConfigsHUB | 15",
+            "type": "vmess",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trj.rollingnext.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {
@@ -1573,11 +1566,11 @@
             }
         },
         {
-            "tag": "🇷🇺RU | vmess | @Hope_Net | 12",
+            "tag": "🇫🇷FR | vmess | @Hope_Net | 11",
             "type": "vmess",
-            "server": "45.136.244.181",
-            "server_port": 80,
-            "uuid": "a25881f3-967f-3265-bc7f-9e66857b016b",
+            "server": "172.232.44.241",
+            "server_port": 8081,
+            "uuid": "13c67541-4a42-434d-b158-e4c5730b1d09",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1587,13 +1580,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/fr-unlimitxxx",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
@@ -1863,35 +1849,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @forwardv2ray | 19",
-            "type": "vless",
-            "server": "51.75.86.63",
-            "server_port": 443,
-            "uuid": "974d4696-a900-4d44-b627-9833b8a7b27a",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "flightradar24.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "edge"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "UDABcxpKzAYkuyE4pmST0OSzEUJpQNuSgYIKcgppeh8",
-                    "short_id": "d73382b02fa94fc2"
-                }
             }
         },
         {
