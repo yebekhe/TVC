@@ -108,10 +108,11 @@
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇱🇹LT | vmess | @mftizi | 18",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 5",
+                "🇺🇸US | vmess | @oneclickvpnkeys | 7",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
-                "🇮🇩ID | vmess | @Hope_Net | 8",
-                "🇺🇸US | vmess | @v2Line | 7",
+                "🇺🇸US | vmess | @Hope_Net | 7",
+                "🇺🇸US | vmess | @v2Line | 6",
+                "🇯🇵JP | vmess | @forwardv2ray | 19",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 1"
             ]
         },
@@ -121,10 +122,11 @@
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇱🇹LT | vmess | @mftizi | 18",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 5",
+                "🇺🇸US | vmess | @oneclickvpnkeys | 7",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
-                "🇮🇩ID | vmess | @Hope_Net | 8",
-                "🇺🇸US | vmess | @v2Line | 7",
+                "🇺🇸US | vmess | @Hope_Net | 7",
+                "🇺🇸US | vmess | @v2Line | 6",
+                "🇯🇵JP | vmess | @forwardv2ray | 19",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -189,11 +191,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vmess | @oneclickvpnkeys | 5",
+            "tag": "🇺🇸US | vmess | @oneclickvpnkeys | 7",
             "type": "vmess",
-            "server": "49.13.160.61",
-            "server_port": 20952,
-            "uuid": "5d6894b8-0736-449b-f44c-9ad4dab7e6f9",
+            "server": "198.41.202.5",
+            "server_port": 2052,
+            "uuid": "Telegram-V2ray_alpha",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -203,6 +205,13 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
@@ -230,11 +239,11 @@
             }
         },
         {
-            "tag": "🇮🇩ID | vmess | @Hope_Net | 8",
+            "tag": "🇺🇸US | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "id-full.privateip.net",
-            "server_port": 443,
-            "uuid": "8e18d5b7-84d9-428d-92bb-0e859c7ffb24",
+            "server": "192.227.174.7",
+            "server_port": 18332,
+            "uuid": "8c400a5f-dc8b-4197-92ed-098d5fa7e214",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -244,31 +253,14 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "id-full.privateip.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/RACEVPN",
-                "headers": {
-                    "Host": "id-full.privateip.net"
-                }
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @v2Line | 7",
+            "tag": "🇺🇸US | vmess | @v2Line | 6",
             "type": "vmess",
-            "server": "v2line.telegram.channel.1383.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
+            "server": "v2line.telegram.channel.1385.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
             "server_port": 443,
-            "uuid": "bd32bdcc-1655-463d-bd85-392b61deadc2",
+            "uuid": "fcc2ad21-1f6e-4ba3-8275-70d2e5915490",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -292,6 +284,30 @@
             "transport": {
                 "type": "ws",
                 "path": "\/racevpn",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇯🇵JP | vmess | @forwardv2ray | 19",
+            "type": "vmess",
+            "server": "jp.takeshi.wiki",
+            "server_port": 80,
+            "uuid": "803b8c6b-192e-4500-a919-485566f8e058",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/takeshi.wiki",
                 "headers": {
                     "Host": ""
                 }
