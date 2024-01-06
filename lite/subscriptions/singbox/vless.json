@@ -114,7 +114,7 @@
                 "🇨🇦CA | vless | @V2pedia | 6",
                 "🇺🇸US | vless | @frev2ray | 6",
                 "🇸🇪SE | vless | @ARv2ray | 14",
-                "🇺🇸US | vless | @shh_proxy | 17",
+                "🇨🇷CR | vless | @shh_proxy | 17",
                 "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇨🇷CR | vless | @lightning6 | 17",
                 "🇺🇸US | vless | @V2rayNGmat | 1",
@@ -141,6 +141,7 @@
                 "🇨🇦CA | vless | @MsV2ray | 9",
                 "🇨🇦CA | vless | @v2ray1_ng | 2",
                 "🇩🇪DE | vless | @MTConfig | 21",
+                "🇩🇪DE | vless | @V2RayTz | 18",
                 "🇨🇦CA | vless | @VmessProtocol | 21",
                 "🇨🇦CA | vless | @DailyV2RY | 121",
                 "🇨🇦CA | vless | @sinabigo | 2",
@@ -154,7 +155,8 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇺🇸US | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @FreakConfig | 8",
-                "🇨🇷CR | vless | @flyv2ray | 12",
+                "🇺🇸US | vless | @flyv2ray | 12",
+                "🇫🇮FI | vless | @forwardv2ray | 14",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇺🇸US | vless | @mehrosaboran | 17",
                 "🇸🇪SE | vless | @kiava | 15",
@@ -178,7 +180,7 @@
                 "🇨🇦CA | vless | @V2pedia | 6",
                 "🇺🇸US | vless | @frev2ray | 6",
                 "🇸🇪SE | vless | @ARv2ray | 14",
-                "🇺🇸US | vless | @shh_proxy | 17",
+                "🇨🇷CR | vless | @shh_proxy | 17",
                 "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇨🇷CR | vless | @lightning6 | 17",
                 "🇺🇸US | vless | @V2rayNGmat | 1",
@@ -205,6 +207,7 @@
                 "🇨🇦CA | vless | @MsV2ray | 9",
                 "🇨🇦CA | vless | @v2ray1_ng | 2",
                 "🇩🇪DE | vless | @MTConfig | 21",
+                "🇩🇪DE | vless | @V2RayTz | 18",
                 "🇨🇦CA | vless | @VmessProtocol | 21",
                 "🇨🇦CA | vless | @DailyV2RY | 121",
                 "🇨🇦CA | vless | @sinabigo | 2",
@@ -218,7 +221,8 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇺🇸US | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @FreakConfig | 8",
-                "🇨🇷CR | vless | @flyv2ray | 12",
+                "🇺🇸US | vless | @flyv2ray | 12",
+                "🇫🇮FI | vless | @forwardv2ray | 14",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇺🇸US | vless | @mehrosaboran | 17",
                 "🇸🇪SE | vless | @kiava | 15",
@@ -493,7 +497,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @shh_proxy | 17",
+            "tag": "🇨🇷CR | vless | @shh_proxy | 17",
             "type": "vless",
             "server": "V2ray.motorcycles",
             "server_port": 2087,
@@ -1273,6 +1277,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @V2RayTz | 18",
+            "type": "vless",
+            "server": "70-Join.V2RayTz.sbs",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "JoRjk3fFZzW6kbEk5G6s5BwgLvsTvOoTASBmHBNuUWg",
+                    "short_id": "efcbc2ac"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @VmessProtocol | 21",
             "type": "vless",
             "server": "104.18.202.209",
@@ -1637,7 +1677,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @flyv2ray | 12",
+            "tag": "🇺🇸US | vless | @flyv2ray | 12",
             "type": "vless",
             "server": "V2ray.motorcycles",
             "server_port": 2087,
@@ -1665,6 +1705,42 @@
                 "headers": {
                     "Host": "SHHPROXY.snappfoodd.site"
                 }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | vless | @forwardv2ray | 14",
+            "type": "vless",
+            "server": "footlo.argha-v2pedia.monster",
+            "server_port": 443,
+            "uuid": "6ad624f4-c1e0-4911-e3fd-f0e9d797991b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tuyacn.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "muEtUEPnEMopCqdrhYWMzzwBsAfjZ_NV1m-AnO1byxk",
+                    "short_id": "da"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
