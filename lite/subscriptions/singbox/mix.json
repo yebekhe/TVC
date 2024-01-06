@@ -137,7 +137,7 @@
                 "🏳️XX | vless | @vmessorg | 20",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 8",
                 "🇳🇱NL | vless | @v2rayngvpn | 8",
-                "🏳️XX | vless | @FalconPolV2rayNG | 6",
+                "🇨🇦CA | vless | @FalconPolV2rayNG | 5",
                 "🇨🇦CA | vless | @ShadowProxy66 | 75",
                 "🇨🇦CA | vless | @Proxy_PJ | 0",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
@@ -146,7 +146,6 @@
                 "🇨🇦CA | vless | @MsV2ray | 9",
                 "🇨🇦CA | vless | @v2ray1_ng | 2",
                 "🇩🇪DE | vless | @MTConfig | 21",
-                "🇺🇸US | vless | @V2RayTz | 12",
                 "🇨🇦CA | vless | @VmessProtocol | 21",
                 "🇨🇦CA | vless | @DailyV2RY | 121",
                 "🇨🇦CA | vless | @sinabigo | 2",
@@ -165,7 +164,7 @@
                 "🇺🇸US | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @FreakConfig | 8",
                 "🇨🇷CR | vless | @flyv2ray | 12",
-                "🇨🇦CA | vless | @forwardv2ray | 18",
+                "🇨🇦CA | vmess | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇺🇸US | vless | @mehrosaboran | 17",
                 "🇸🇪SE | vless | @kiava | 15",
@@ -213,7 +212,7 @@
                 "🏳️XX | vless | @vmessorg | 20",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 8",
                 "🇳🇱NL | vless | @v2rayngvpn | 8",
-                "🏳️XX | vless | @FalconPolV2rayNG | 6",
+                "🇨🇦CA | vless | @FalconPolV2rayNG | 5",
                 "🇨🇦CA | vless | @ShadowProxy66 | 75",
                 "🇨🇦CA | vless | @Proxy_PJ | 0",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
@@ -222,7 +221,6 @@
                 "🇨🇦CA | vless | @MsV2ray | 9",
                 "🇨🇦CA | vless | @v2ray1_ng | 2",
                 "🇩🇪DE | vless | @MTConfig | 21",
-                "🇺🇸US | vless | @V2RayTz | 12",
                 "🇨🇦CA | vless | @VmessProtocol | 21",
                 "🇨🇦CA | vless | @DailyV2RY | 121",
                 "🇨🇦CA | vless | @sinabigo | 2",
@@ -241,7 +239,7 @@
                 "🇺🇸US | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @FreakConfig | 8",
                 "🇨🇷CR | vless | @flyv2ray | 12",
-                "🇨🇦CA | vless | @forwardv2ray | 18",
+                "🇨🇦CA | vmess | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇺🇸US | vless | @mehrosaboran | 17",
                 "🇸🇪SE | vless | @kiava | 15",
@@ -1132,17 +1130,34 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @FalconPolV2rayNG | 6",
+            "tag": "🇨🇦CA | vless | @FalconPolV2rayNG | 5",
             "type": "vless",
-            "server": "77a571fb-4fd2-4b37",
-            "server_port": 0,
-            "uuid": "",
+            "server": "3k.pureboy.eu.org",
+            "server_port": 443,
+            "uuid": "b9ad895b-12ac-40fc-a5ac-a5b2a1285001",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "3k.pureboy.eu.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "3k.pureboy.eu.org"
+                }
             }
         },
         {
@@ -1383,37 +1398,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇺🇸US | vless | @V2RayTz | 12",
-            "type": "vless",
-            "server": "77-Join.V2RayTz.sbs",
-            "server_port": 443,
-            "uuid": "1f9a988d-ca29-4762-a489-9b86c9524b55",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.ArV2ray.host",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -1907,33 +1891,26 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
-            "type": "vless",
-            "server": "172.67.174.190",
-            "server_port": 443,
-            "uuid": "29f8ad12-ea84-431b-bf32-9d3fb5cf2aa2",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 19",
+            "type": "vmess",
+            "server": "DE1.ircf.eu.ORG",
+            "server_port": 8080,
+            "uuid": "d612bbf3-14d0-4d1d-a21c-166e98a3b49c",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "w1.sylar8.eu.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/@x2rayn_vpn@x2rayn_vpn@x2rayn_vpn",
                 "headers": {
-                    "Host": "w1.sylar8.eu.org"
+                    "Host": ""
                 }
             }
         },
