@@ -111,8 +111,9 @@
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 11",
                 "🇨🇦CA | vmess | @v2ray_swhil | 17",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
-                "🇨🇦CA | vmess | @Hope_Net | 12",
+                "🇫🇷FR | vmess | @Hope_Net | 13",
                 "🇺🇸US | vmess | @v2Line | 7",
+                "🏳️XX | vmess | @forwardv2ray | 15",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 3"
             ]
         },
@@ -125,8 +126,9 @@
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 11",
                 "🇨🇦CA | vmess | @v2ray_swhil | 17",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
-                "🇨🇦CA | vmess | @Hope_Net | 12",
+                "🇫🇷FR | vmess | @Hope_Net | 13",
                 "🇺🇸US | vmess | @v2Line | 7",
+                "🏳️XX | vmess | @forwardv2ray | 15",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -273,11 +275,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 12",
+            "tag": "🇫🇷FR | vmess | @Hope_Net | 13",
             "type": "vmess",
-            "server": "104.27.102.105",
-            "server_port": 8080,
-            "uuid": "Telegram-V2ray_alpha",
+            "server": "fr-full.privateip.net",
+            "server_port": 443,
+            "uuid": "04695962-ec9f-4589-b962-263e7b55664c",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -288,11 +290,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/RACEVPN",
                 "headers": {
-                    "Host": ""
+                    "Host": "fr-full.privateip.net"
                 }
             }
         },
@@ -328,6 +340,23 @@
                 "headers": {
                     "Host": ""
                 }
+            }
+        },
+        {
+            "tag": "🏳️XX | vmess | @forwardv2ray | 15",
+            "type": "vmess",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
