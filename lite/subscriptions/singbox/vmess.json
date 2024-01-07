@@ -111,7 +111,8 @@
                 "🇺🇸US | vmess | @oneclickvpnkeys | 10",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
                 "🇨🇦CA | vmess | @Hope_Net | 10",
-                "🇺🇸US | vmess | @v2Line | 6",
+                "🇺🇸US | vmess | @v2Line | 7",
+                "🇨🇦CA | vmess | @forwardv2ray | 12",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 1"
             ]
         },
@@ -124,7 +125,8 @@
                 "🇺🇸US | vmess | @oneclickvpnkeys | 10",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
                 "🇨🇦CA | vmess | @Hope_Net | 10",
-                "🇺🇸US | vmess | @v2Line | 6",
+                "🇺🇸US | vmess | @v2Line | 7",
+                "🇨🇦CA | vmess | @forwardv2ray | 12",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -261,7 +263,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @v2Line | 6",
+            "tag": "🇺🇸US | vmess | @v2Line | 7",
             "type": "vmess",
             "server": "v2line.telegram.channel.1388.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
             "server_port": 443,
@@ -289,6 +291,30 @@
             "transport": {
                 "type": "ws",
                 "path": "\/racevpn",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 12",
+            "type": "vmess",
+            "server": "104.27.102.105",
+            "server_port": 8080,
+            "uuid": "Telegram-V2ray_alpha",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
                 "headers": {
                     "Host": ""
                 }
