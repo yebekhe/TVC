@@ -110,9 +110,8 @@
                 "🇱🇹LT | vmess | @mftizi | 18",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 10",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
-                "🇯🇵JP | vmess | @Hope_Net | 9",
+                "🇨🇦CA | vmess | @Hope_Net | 10",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇨🇦CA | vmess | @forwardv2ray | 19",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 1"
             ]
         },
@@ -124,9 +123,8 @@
                 "🇱🇹LT | vmess | @mftizi | 18",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 10",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
-                "🇯🇵JP | vmess | @Hope_Net | 9",
+                "🇨🇦CA | vmess | @Hope_Net | 10",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇨🇦CA | vmess | @forwardv2ray | 19",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -239,11 +237,11 @@
             }
         },
         {
-            "tag": "🇯🇵JP | vmess | @Hope_Net | 9",
+            "tag": "🇨🇦CA | vmess | @Hope_Net | 10",
             "type": "vmess",
-            "server": "jp.takeshi.wiki",
-            "server_port": 80,
-            "uuid": "59517e0b-ae1c-41d3-9c44-c44cea6f7546",
+            "server": "172.67.160.99",
+            "server_port": 443,
+            "uuid": "a869c557-5c7d-426f-9039-0279c16352bc",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -254,11 +252,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/takeshi.wiki",
+                "path": "\/vmessws",
                 "headers": {
-                    "Host": "jp.takeshi.wiki"
+                    "Host": ""
                 }
             }
         },
@@ -291,30 +299,6 @@
             "transport": {
                 "type": "ws",
                 "path": "\/racevpn",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vmess | @forwardv2ray | 19",
-            "type": "vmess",
-            "server": "UK2.ircf.eu.ORG",
-            "server_port": 8080,
-            "uuid": "d612bbf3-14d0-4d1d-a21c-166e98a3b49c",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/@x2rayn_vpn@x2rayn_vpn@x2rayn_vpn",
                 "headers": {
                     "Host": ""
                 }
