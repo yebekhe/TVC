@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @ARv2ray | 14",
                 "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @MTConfig | 21",
-                "🇫🇮FI | vless | @V2RayTz | 14",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 52",
-                "🇩🇪DE | vless | @flyv2ray | 12",
+                "🇩🇪DE | vless | @flyv2ray | 13",
                 "🇸🇪SE | vless | @kiava | 15",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
@@ -123,14 +123,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @ARv2ray | 14",
                 "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @MTConfig | 21",
-                "🇫🇮FI | vless | @V2RayTz | 14",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 52",
-                "🇩🇪DE | vless | @flyv2ray | 12",
+                "🇩🇪DE | vless | @flyv2ray | 13",
                 "🇸🇪SE | vless | @kiava | 15",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
@@ -154,6 +154,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
+            "type": "vless",
+            "server": "78.46.225.217",
+            "server_port": 443,
+            "uuid": "715f9ba2-23dc-4e0b-ae34-35500faeaac9",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AZfZHX5fRg4dbfz0qyjH6sPo_YaHY-bEua5hhL7RTQE",
+                    "short_id": "27f6104f"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @ARv2ray | 14",
@@ -293,42 +329,6 @@
             }
         },
         {
-            "tag": "🇫🇮FI | vless | @V2RayTz | 14",
-            "type": "vless",
-            "server": "76-Join.V2RayTz.sbs",
-            "server_port": 443,
-            "uuid": "c5f24aea-6e99-43f5-84e4-1a2e5f61e9b6",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.forcespeed.fun",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "wNfa_hcGZ5NFaHqME9Becop5-_JPLRpjngSRqRbVdy4",
-                    "short_id": "73eadb04"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🏳️XX | vless | @fnet00 | 10",
             "type": "vless",
             "server": "kamyarservers.ddns.net",
@@ -394,7 +394,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @flyv2ray | 12",
+            "tag": "🇩🇪DE | vless | @flyv2ray | 13",
             "type": "vless",
             "server": "78.46.225.217",
             "server_port": 443,
