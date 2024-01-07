@@ -112,6 +112,7 @@
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🇩🇪DE | vless | @V2RayTz | 18",
                 "🏳️XX | vless | @fnet00 | 10",
+                "🇳🇱NL | vless | @v2rayng_vpnrog | 4",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇸🇪SE | vless | @kiava | 15",
                 "🇫🇮FI | vless | @proxy_mtm | 24",
@@ -129,6 +130,7 @@
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🇩🇪DE | vless | @V2RayTz | 18",
                 "🏳️XX | vless | @fnet00 | 10",
+                "🇳🇱NL | vless | @v2rayng_vpnrog | 4",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇸🇪SE | vless | @kiava | 15",
                 "🇫🇮FI | vless | @proxy_mtm | 24",
@@ -359,6 +361,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@configMs",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇳🇱NL | vless | @v2rayng_vpnrog | 4",
+            "type": "vless",
+            "server": "188.166.21.113",
+            "server_port": 25927,
+            "uuid": "135a1aef-31b5-474e-b64c-3a44ac0df626",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "188.166.21.113",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lh8YdcKTsf3RiWwCYxk2oM-ItiOaCx5d1GHGkiNZREA",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@v2ray_fd",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
