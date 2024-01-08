@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇸🇬SG | vless | @EliV2ray | 16",
                 "🇨🇦CA | vless | @XsV2ray | 2",
                 "🇫🇷FR | vless | @VlessConfig | 17",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
@@ -113,7 +114,7 @@
                 "🇨🇦CA | vless | @frev2ray | 4",
                 "🇸🇪SE | vless | @ARv2ray | 14",
                 "🇺🇸US | vless | @shh_proxy | 17",
-                "🇸🇪SE | vless | @Lockey_vpn | 5",
+                "🇸🇪SE | vless | @Lockey_vpn | 6",
                 "🇨🇦CA | vless | @rxv2ray | 17",
                 "🇨🇦CA | vless | @free_v2rayyy | 8",
                 "🇨🇷CR | vless | @lightning6 | 24",
@@ -124,7 +125,7 @@
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇨🇦CA | vless | @V2rayCollectorDonate | 18",
                 "🇨🇦CA | vless | @ProxyForOpeta | 3",
-                "🇨🇷CR | vless | @V2rayNGn | 23",
+                "🇺🇸US | vless | @V2rayNGn | 23",
                 "🇸🇪SE | vless | @prrofile_purple | 166",
                 "🇨🇦CA | vless | @customv2ray | 15",
                 "🇨🇦CA | vless | @UnlimitedDev | 7",
@@ -152,10 +153,9 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 41",
                 "🇨🇦CA | vless | @Outlinev2rayNG | 14",
-                "🏳️XX | vless | @Capital_NET | 52",
+                "🇺🇸US | vless | @Capital_NET | 52",
                 "🇺🇸US | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 6",
-                "🇨🇦CA | vless | @forwardv2ray | 17",
                 "🇳🇱NL | vless | @FAKEOFTVC | 3",
                 "🇺🇸US | vless | @mehrosaboran | 9",
                 "🇸🇪SE | vless | @kiava | 10",
@@ -170,6 +170,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇸🇬SG | vless | @EliV2ray | 16",
                 "🇨🇦CA | vless | @XsV2ray | 2",
                 "🇫🇷FR | vless | @VlessConfig | 17",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
@@ -177,7 +178,7 @@
                 "🇨🇦CA | vless | @frev2ray | 4",
                 "🇸🇪SE | vless | @ARv2ray | 14",
                 "🇺🇸US | vless | @shh_proxy | 17",
-                "🇸🇪SE | vless | @Lockey_vpn | 5",
+                "🇸🇪SE | vless | @Lockey_vpn | 6",
                 "🇨🇦CA | vless | @rxv2ray | 17",
                 "🇨🇦CA | vless | @free_v2rayyy | 8",
                 "🇨🇷CR | vless | @lightning6 | 24",
@@ -188,7 +189,7 @@
                 "🇩🇪DE | vless | @v2logy | 18",
                 "🇨🇦CA | vless | @V2rayCollectorDonate | 18",
                 "🇨🇦CA | vless | @ProxyForOpeta | 3",
-                "🇨🇷CR | vless | @V2rayNGn | 23",
+                "🇺🇸US | vless | @V2rayNGn | 23",
                 "🇸🇪SE | vless | @prrofile_purple | 166",
                 "🇨🇦CA | vless | @customv2ray | 15",
                 "🇨🇦CA | vless | @UnlimitedDev | 7",
@@ -216,10 +217,9 @@
                 "🏳️XX | vless | @fnet00 | 10",
                 "🇨🇦CA | vless | @polproxy | 41",
                 "🇨🇦CA | vless | @Outlinev2rayNG | 14",
-                "🏳️XX | vless | @Capital_NET | 52",
+                "🇺🇸US | vless | @Capital_NET | 52",
                 "🇺🇸US | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 6",
-                "🇨🇦CA | vless | @forwardv2ray | 17",
                 "🇳🇱NL | vless | @FAKEOFTVC | 3",
                 "🇺🇸US | vless | @mehrosaboran | 9",
                 "🇸🇪SE | vless | @kiava | 10",
@@ -248,6 +248,37 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇸🇬SG | vless | @EliV2ray | 16",
+            "type": "vless",
+            "server": "206.238.236.11",
+            "server_port": 8443,
+            "uuid": "06c912d6-2727-40f5-8f26-f295dfaacf6e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yalda20230103.freedns.site",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "freevpn",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇨🇦CA | vless | @XsV2ray | 2",
@@ -283,7 +314,7 @@
         {
             "tag": "🇫🇷FR | vless | @VlessConfig | 17",
             "type": "vless",
-            "server": "13.39.215.94",
+            "server": "13.39.239.126",
             "server_port": 22222,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -467,7 +498,7 @@
             }
         },
         {
-            "tag": "🇸🇪SE | vless | @Lockey_vpn | 5",
+            "tag": "🇸🇪SE | vless | @Lockey_vpn | 6",
             "type": "vless",
             "server": "16.16.107.118",
             "server_port": 8443,
@@ -756,9 +787,9 @@
         {
             "tag": "🇨🇦CA | vless | @V2rayCollectorDonate | 18",
             "type": "vless",
-            "server": "172.67.26.210",
-            "server_port": 80,
-            "uuid": "46d0dc28-e6b6-4453-909c-c6bc90a8f5c4",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "02b98328-6c51-4f04-bbde-e4a31814d727",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -766,12 +797,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/dl\/index.php",
-                "headers": {
-                    "Host": "172.67.26.210"
+            "tls": {
+                "enabled": true,
+                "server_name": "dash.deeplir.site",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "chika",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -806,7 +847,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @V2rayNGn | 23",
+            "tag": "🇺🇸US | vless | @V2rayNGn | 23",
             "type": "vless",
             "server": "all.vpncustomize.cam",
             "server_port": 443,
@@ -1574,7 +1615,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @Capital_NET | 52",
+            "tag": "🇺🇸US | vless | @Capital_NET | 52",
             "type": "vless",
             "server": "zhina.abiiidar.tech",
             "server_port": 443,
@@ -1661,37 +1702,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "3k.pureboy.eu.org"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 17",
-            "type": "vless",
-            "server": "rose.dermalux.ir",
-            "server_port": 2053,
-            "uuid": "ffca349d-33b8-495b-8c70-0bb97ae10bcf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cm.dermalux.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "cm.dermalux.ir"
                 }
             }
         },
