@@ -111,12 +111,14 @@
                 "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @v2logy | 18",
+                "🇸🇪SE | vless | @prrofile_purple | 166",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🇸🇪SE | vless | @V2RayTz | 19",
                 "🇸🇪SE | vless | @VmessProtocol | 17",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇸🇪SE | vless | @kiava | 10",
+                "🇩🇪DE | vless | @proxy_mtm | 3",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
             ]
@@ -130,12 +132,14 @@
                 "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇩🇪DE | vless | @v2logy | 18",
+                "🇸🇪SE | vless | @prrofile_purple | 166",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🇸🇪SE | vless | @V2RayTz | 19",
                 "🇸🇪SE | vless | @VmessProtocol | 17",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇸🇪SE | vless | @kiava | 10",
+                "🇩🇪DE | vless | @proxy_mtm | 3",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
             ],
@@ -333,6 +337,35 @@
             }
         },
         {
+            "tag": "🇸🇪SE | vless | @prrofile_purple | 166",
+            "type": "vless",
+            "server": "16.16.220.210",
+            "server_port": 3074,
+            "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "coinmarketcap.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "yUroPWIXzHA8vQg4cC7kEZqwA-JOW3uA0Xlhi0uRmTQ",
+                    "short_id": "fe"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | vless | @MTConfig | 21",
             "type": "vless",
             "server": "161.35.221.251",
@@ -518,6 +551,42 @@
                     "public_key": "V6aOj8Lade9JQer_QiBOfyg2VPvCQRidgwt3OQcNX3M",
                     "short_id": "fe"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @proxy_mtm | 3",
+            "type": "vless",
+            "server": "49.12.97.39",
+            "server_port": 443,
+            "uuid": "3c332141-9f03-4ba6-9dd2-bb092ec4db82",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedq.fun",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "qAmBWJl2aO0mMoWHNNpNBAefvTmGUc5B2L4Uhxjpe0E",
+                    "short_id": "481a1d68"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
