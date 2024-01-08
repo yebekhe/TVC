@@ -110,13 +110,14 @@
                 "🇸🇪SE | vless | @ARv2ray | 14",
                 "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
+                "🇩🇪DE | vless | @v2logy | 17",
                 "🇦🇺AU | vless | @V2rayCollectorDonate | 18",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🇸🇪SE | vless | @V2RayTz | 19",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @flyv2ray | 13",
-                "🇸🇪SE | vless | @kiava | 9",
+                "🇸🇪SE | vless | @kiava | 8",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
             ]
@@ -129,13 +130,14 @@
                 "🇸🇪SE | vless | @ARv2ray | 14",
                 "🇸🇪SE | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
+                "🇩🇪DE | vless | @v2logy | 17",
                 "🇦🇺AU | vless | @V2rayCollectorDonate | 18",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🇸🇪SE | vless | @V2RayTz | 19",
                 "🏳️XX | vless | @fnet00 | 10",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @flyv2ray | 13",
-                "🇸🇪SE | vless | @kiava | 9",
+                "🇸🇪SE | vless | @kiava | 8",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇺🇸US | vless | @FoXrayIran | 6"
             ],
@@ -291,6 +293,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @v2logy | 17",
+            "type": "vless",
+            "server": "moftinet.eryhoihuuu.sbs",
+            "server_port": 443,
+            "uuid": "755c6078-fe0f-400e-a351-ea45543e65fb",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "moftinet.eryhoihuuu.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "36mhDE4VbNovmhh-wU0nxz-g2KBOmqk6Yyf-87uxGTU",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Moftinet",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -492,10 +530,10 @@
             }
         },
         {
-            "tag": "🇸🇪SE | vless | @kiava | 9",
+            "tag": "🇸🇪SE | vless | @kiava | 8",
             "type": "vless",
-            "server": "13.49.221.75",
-            "server_port": 3074,
+            "server": "16.170.209.171",
+            "server_port": 5222,
             "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
@@ -515,8 +553,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "V6aOj8Lade9JQer_QiBOfyg2VPvCQRidgwt3OQcNX3M",
-                    "short_id": "fe"
+                    "public_key": "7PL2uiKHrm9EhLoiJqhX2Cxhv2JX4qsq9txIxr0usCc",
+                    "short_id": "1db3"
                 }
             }
         },

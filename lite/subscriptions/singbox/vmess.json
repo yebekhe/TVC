@@ -113,7 +113,7 @@
                 "🇫🇷FR | vmess | @Hope_Net | 18",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 7",
-                "🏳️XX | vmess | @forwardv2ray | 19"
+                "🇫🇷FR | vmess | @eliya_chiter0 | 3"
             ]
         },
         {
@@ -127,7 +127,7 @@
                 "🇫🇷FR | vmess | @Hope_Net | 18",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 7",
-                "🏳️XX | vmess | @forwardv2ray | 19"
+                "🇫🇷FR | vmess | @eliya_chiter0 | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -234,9 +234,9 @@
         {
             "tag": "🇫🇷FR | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "172.232.44.241",
-            "server_port": 8081,
-            "uuid": "13c67541-4a42-434d-b158-e4c5730b1d09",
+            "server": "fr-full.privateip.net",
+            "server_port": 443,
+            "uuid": "04695962-ec9f-4589-b962-263e7b55664c",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -246,6 +246,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/RACEVPN",
+                "headers": {
+                    "Host": "fr-full.privateip.net"
+                }
             }
         },
         {
@@ -307,11 +324,11 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @forwardv2ray | 19",
+            "tag": "🇫🇷FR | vmess | @eliya_chiter0 | 3",
             "type": "vmess",
-            "server": null,
-            "server_port": 0,
-            "uuid": null,
+            "server": "172.232.44.241",
+            "server_port": 8081,
+            "uuid": "13c67541-4a42-434d-b158-e4c5730b1d09",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
