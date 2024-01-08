@@ -108,7 +108,8 @@
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇱🇹LT | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+                "🇩🇪DE | vmess | @oneclickvpnkeys | 7",
+                "🇨🇦CA | vmess | @ConfigsHUB | 16",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
                 "🇮🇷IR | vmess | @Hope_Net | 18",
                 "🇺🇸US | vmess | @v2Line | 7",
@@ -121,7 +122,8 @@
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇱🇹LT | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+                "🇩🇪DE | vmess | @oneclickvpnkeys | 7",
+                "🇨🇦CA | vmess | @ConfigsHUB | 16",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
                 "🇮🇷IR | vmess | @Hope_Net | 18",
                 "🇺🇸US | vmess | @v2Line | 7",
@@ -189,11 +191,28 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+            "tag": "🇩🇪DE | vmess | @oneclickvpnkeys | 7",
             "type": "vmess",
-            "server": "104.18.202.212",
-            "server_port": 80,
-            "uuid": "Telegram-V2ray_alpha",
+            "server": "49.13.160.61",
+            "server_port": 20952,
+            "uuid": "5d6894b8-0736-449b-f44c-9ad4dab7e6f9",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @ConfigsHUB | 16",
+            "type": "vmess",
+            "server": "adenc35.fixedlfoat.top",
+            "server_port": 443,
+            "uuid": "45f63e92-f782-4cac-84b8-e61cb5a5bfd0",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -204,11 +223,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "adenc35.fixedlfoat.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": ""
+                    "Host": "adenc35.fixedlfoat.top"
                 }
             }
         },
