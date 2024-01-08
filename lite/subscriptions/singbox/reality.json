@@ -114,6 +114,7 @@
                 "🇸🇪SE | vless | @prrofile_purple | 175",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🇸🇪SE | vless | @VmessProtocol | 17",
+                "🏳️XX | vless | @fnet00 | 5",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @mehrosaboran | 10",
                 "🇸🇪SE | vless | @kiava | 10",
@@ -134,6 +135,7 @@
                 "🇸🇪SE | vless | @prrofile_purple | 175",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🇸🇪SE | vless | @VmessProtocol | 17",
+                "🏳️XX | vless | @fnet00 | 5",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @mehrosaboran | 10",
                 "🇸🇪SE | vless | @kiava | 10",
@@ -426,6 +428,42 @@
                     "public_key": "hSJ9dxBiyK-r8AEJ31tQvOdEfADk8BthO-Y9N8C56Q4",
                     "short_id": "249e"
                 }
+            }
+        },
+        {
+            "tag": "🏳️XX | vless | @fnet00 | 5",
+            "type": "vless",
+            "server": "kamyarservers.ddns.net",
+            "server_port": 443,
+            "uuid": "205f3b7e-f044-454c-bac2-e452a779e128",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mihanyas.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bl_WgZJU4-XnjnZ1HWu6tAWaz8rvdgy2pGmaFpOgcQ0",
+                    "short_id": "0960546b"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@configMs",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
