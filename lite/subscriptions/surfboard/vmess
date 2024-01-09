@@ -14,12 +14,13 @@ DIRECT = direct
 🇱🇹LT | vmess | @mftizi | 18 = vmess, 94.131.14.177, 80, username = 2c5fee13-f08b-4ba8-86db-27dd51cb9781, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇳🇱NL | vmess | @oneclickvpnkeys | 9 = vmess, kom645yj.sbs, 32902, username = f7388a5e-8ae2-4e5a-bdbe-b8b29e172ec2, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @customv2ray | 16 = vmess, us2e-preventintent.v2freevpn.com, 80, username = 2a8a10fb-9ca3-367e-a234-cf09f841be4f, ws = true, tls = , vmess-aead = true, ws-path = /v103-udkjds3nay, ws-headers = Host:"us2e-preventintent.v2freevpn.com", skip-cert-verify = true, tfo = false
+🇨🇦CA | vmess | @Hope_Net | 12 = vmess, discord.com, 8080, username = 9ccdd19a-80bf-4f2d-a202-180015ba7893, ws = true, tls = , vmess-aead = true, ws-path = /@x2rayn_vpn@x2rayn_vpn@x2rayn_vpn, ws-headers = Host:"Germany.ircf.eu.org", skip-cert-verify = true, tfo = false
 🇮🇷IR | vmess | @MrV2Ray | 0 = vmess, 85.9.106.116, 45061, username = aec32fcc-4219-48e1-bbf5-7811f46b5fb8, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 7 = vmess, v2line.telegram.channel.1388.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 443, username = 2b4a8468-d9c5-4551-8f20-811d2c998dcd, ws = true, tls = 1, vmess-aead = true, ws-path = /racevpn, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇱🇹LT | vmess | @mftizi | 18,🇳🇱NL | vmess | @oneclickvpnkeys | 9,🇨🇦CA | vmess | @customv2ray | 16,🇮🇷IR | vmess | @MrV2Ray | 0,🇺🇸US | vmess | @v2Line | 7
-URL-TEST = url-test,🇱🇹LT | vmess | @mftizi | 18,🇳🇱NL | vmess | @oneclickvpnkeys | 9,🇨🇦CA | vmess | @customv2ray | 16,🇮🇷IR | vmess | @MrV2Ray | 0,🇺🇸US | vmess | @v2Line | 7
-FALLBACK = fallback,🇱🇹LT | vmess | @mftizi | 18,🇳🇱NL | vmess | @oneclickvpnkeys | 9,🇨🇦CA | vmess | @customv2ray | 16,🇮🇷IR | vmess | @MrV2Ray | 0,🇺🇸US | vmess | @v2Line | 7
+MANUAL = select,URL-TEST,FALLBACK,🇱🇹LT | vmess | @mftizi | 18,🇳🇱NL | vmess | @oneclickvpnkeys | 9,🇨🇦CA | vmess | @customv2ray | 16,🇨🇦CA | vmess | @Hope_Net | 12,🇮🇷IR | vmess | @MrV2Ray | 0,🇺🇸US | vmess | @v2Line | 7
+URL-TEST = url-test,🇱🇹LT | vmess | @mftizi | 18,🇳🇱NL | vmess | @oneclickvpnkeys | 9,🇨🇦CA | vmess | @customv2ray | 16,🇨🇦CA | vmess | @Hope_Net | 12,🇮🇷IR | vmess | @MrV2Ray | 0,🇺🇸US | vmess | @v2Line | 7
+FALLBACK = fallback,🇱🇹LT | vmess | @mftizi | 18,🇳🇱NL | vmess | @oneclickvpnkeys | 9,🇨🇦CA | vmess | @customv2ray | 16,🇨🇦CA | vmess | @Hope_Net | 12,🇮🇷IR | vmess | @MrV2Ray | 0,🇺🇸US | vmess | @v2Line | 7
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
