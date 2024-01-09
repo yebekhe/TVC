@@ -107,14 +107,15 @@
             "outbounds": [
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
-                "🇱🇹LT | vmess | @mftizi | 18",
+                "🇭🇰HK | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 6",
                 "🇨🇦CA | vmess | @customv2ray | 16",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
                 "🇨🇦CA | vmess | @Hope_Net | 12",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 7",
-                "🇳🇱NL | vmess | @FAKEOFTVC | 4",
+                "🇩🇪DE | vmess | @forwardv2ray | 19",
+                "🇺🇸US | vmess | @FAKEOFTVC | 4",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 3"
             ]
         },
@@ -123,14 +124,15 @@
             "type": "urltest",
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
-                "🇱🇹LT | vmess | @mftizi | 18",
+                "🇭🇰HK | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 6",
                 "🇨🇦CA | vmess | @customv2ray | 16",
                 "🇨🇳CN | vmess | @yaney_01 | 10",
                 "🇨🇦CA | vmess | @Hope_Net | 12",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 7",
-                "🇳🇱NL | vmess | @FAKEOFTVC | 4",
+                "🇩🇪DE | vmess | @forwardv2ray | 19",
+                "🇺🇸US | vmess | @FAKEOFTVC | 4",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -171,11 +173,11 @@
             }
         },
         {
-            "tag": "🇱🇹LT | vmess | @mftizi | 18",
+            "tag": "🇭🇰HK | vmess | @mftizi | 18",
             "type": "vmess",
-            "server": "94.131.14.177",
-            "server_port": 80,
-            "uuid": "2c5fee13-f08b-4ba8-86db-27dd51cb9781",
+            "server": "103.103.245.81",
+            "server_port": 21010,
+            "uuid": "33fef73f-cf19-4e70-b071-ddb0155a9556",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -186,11 +188,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "vn11-ji.455773.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/vmess",
+                "path": "\/",
                 "headers": {
-                    "Host": ""
+                    "Host": "vn11-ji.455773.xyz"
                 }
             }
         },
@@ -352,11 +364,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vmess | @FAKEOFTVC | 4",
+            "tag": "🇩🇪DE | vmess | @forwardv2ray | 19",
             "type": "vmess",
-            "server": "104.193.10.146",
-            "server_port": 10090,
-            "uuid": "8156a9a3-da6c-47b8-8247-939912f8762f",
+            "server": "vi.mani901.com",
+            "server_port": 37816,
+            "uuid": "eaabb468-c3aa-48c6-8e39-9246d89b1910",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -366,6 +378,30 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | vmess | @FAKEOFTVC | 4",
+            "type": "vmess",
+            "server": "104.234.11.159",
+            "server_port": 80,
+            "uuid": "48d0d388-ea9d-48f4-929c-e53d7ecb46ba",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/48d0d388",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
