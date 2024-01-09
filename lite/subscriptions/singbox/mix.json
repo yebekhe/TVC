@@ -115,8 +115,8 @@
                 "🇸🇪SE | vless | @Lockey_vpn | 6",
                 "🇨🇦CA | vless | @rxv2ray | 14",
                 "🇨🇦CA | vless | @free_v2rayyy | 8",
-                "🇺🇸US | vless | @lightning6 | 27",
-                "🇨🇷CR | vless | @V2rayNGmat | 1",
+                "🇨🇷CR | vless | @lightning6 | 27",
+                "🇺🇸US | vless | @V2rayNGmat | 1",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 13",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 20",
@@ -167,8 +167,8 @@
                 "🇺🇸US | vmess | @v2Line | 7",
                 "🇺🇸US | vless | @Capoit | 4",
                 "🇨🇦CA | vless | @FreakConfig | 9",
-                "🇺🇸US | vless | @flyv2ray | 14",
-                "🇨🇦CA | vless | @forwardv2ray | 18",
+                "🇨🇷CR | vless | @flyv2ray | 14",
+                "🇺🇸US | vless | @forwardv2ray | 19",
                 "🇺🇸US | vless | @FAKEOFTVC | 4",
                 "🇩🇪DE | vless | @mehrosaboran | 10",
                 "🇸🇪SE | vless | @kiava | 10",
@@ -193,8 +193,8 @@
                 "🇸🇪SE | vless | @Lockey_vpn | 6",
                 "🇨🇦CA | vless | @rxv2ray | 14",
                 "🇨🇦CA | vless | @free_v2rayyy | 8",
-                "🇺🇸US | vless | @lightning6 | 27",
-                "🇨🇷CR | vless | @V2rayNGmat | 1",
+                "🇨🇷CR | vless | @lightning6 | 27",
+                "🇺🇸US | vless | @V2rayNGmat | 1",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 13",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 20",
@@ -245,8 +245,8 @@
                 "🇺🇸US | vmess | @v2Line | 7",
                 "🇺🇸US | vless | @Capoit | 4",
                 "🇨🇦CA | vless | @FreakConfig | 9",
-                "🇺🇸US | vless | @flyv2ray | 14",
-                "🇨🇦CA | vless | @forwardv2ray | 18",
+                "🇨🇷CR | vless | @flyv2ray | 14",
+                "🇺🇸US | vless | @forwardv2ray | 19",
                 "🇺🇸US | vless | @FAKEOFTVC | 4",
                 "🇩🇪DE | vless | @mehrosaboran | 10",
                 "🇸🇪SE | vless | @kiava | 10",
@@ -560,7 +560,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @lightning6 | 27",
+            "tag": "🇨🇷CR | vless | @lightning6 | 27",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 2083,
@@ -591,7 +591,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @V2rayNGmat | 1",
+            "tag": "🇺🇸US | vless | @V2rayNGmat | 1",
             "type": "vless",
             "server": "V2ray.motorcycles",
             "server_port": 2087,
@@ -1956,7 +1956,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @flyv2ray | 14",
+            "tag": "🇨🇷CR | vless | @flyv2ray | 14",
             "type": "vless",
             "server": "V2ray.motorcycles",
             "server_port": 2087,
@@ -1987,11 +1987,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
+            "tag": "🇺🇸US | vless | @forwardv2ray | 19",
             "type": "vless",
-            "server": "172.67.204.84",
-            "server_port": 80,
-            "uuid": "e1a928be-e289-4aef-b92e-4106fabdf42f",
+            "server": "173.245.58.31",
+            "server_port": 443,
+            "uuid": "d3d10b6b-69a8-4a3e-d0cc-28a7b8d15c82",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1999,12 +1999,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "172.67.204.84"
+            "tls": {
+                "enabled": true,
+                "server_name": "Ak-v2rayng-ConneCtionV2ray.snakedady.link",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
