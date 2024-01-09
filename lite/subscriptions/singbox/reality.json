@@ -106,14 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇸🇪SE | vless | @Lockey_vpn | 6",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
+                "🇸🇪SE | vless | @prrofile_purple | 175",
                 "🇸🇪SE | vless | @customv2ray | 13",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 12",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🏳️XX | vless | @fnet00 | 5",
                 "🏳️XX | vless | @Capital_NET | 52",
-                "🇩🇪DE | vless | @Capoit | 8",
                 "🇸🇪SE | vless | @kiava | 10",
                 "🇩🇪DE | vless | @proxy_mtm | 32",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -124,14 +123,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇸🇪SE | vless | @Lockey_vpn | 6",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
+                "🇸🇪SE | vless | @prrofile_purple | 175",
                 "🇸🇪SE | vless | @customv2ray | 13",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 12",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🏳️XX | vless | @fnet00 | 5",
                 "🏳️XX | vless | @Capital_NET | 52",
-                "🇩🇪DE | vless | @Capoit | 8",
                 "🇸🇪SE | vless | @kiava | 10",
                 "🇩🇪DE | vless | @proxy_mtm | 32",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -156,35 +154,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇸🇪SE | vless | @Lockey_vpn | 6",
-            "type": "vless",
-            "server": "16.16.107.118",
-            "server_port": 8443,
-            "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "coinmarketcap.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "_4Ukq3SSuUFBQNhE9YO2ktEwwN0FP-SRAYy3D81a0XQ",
-                    "short_id": "fe"
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -220,6 +189,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇸🇪SE | vless | @prrofile_purple | 175",
+            "type": "vless",
+            "server": "13.49.231.227",
+            "server_port": 5222,
+            "uuid": "f553d0ca-701d-4f95-90e9-2851d055291e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "coinmarketcap.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "czZ3FHdhP1sXsHU3YOcIZukZXGq4tvaD6emtcBDyGAg",
+                    "short_id": "1db3"
+                }
             }
         },
         {
@@ -379,42 +377,6 @@
                     "public_key": "90WvSEDjTWdVj1U5JPXphB6VZ4ojR42tZN7PuEeRqXM",
                     "short_id": "dc838e556e8a86bd"
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @Capoit | 8",
-            "type": "vless",
-            "server": "49.12.97.39",
-            "server_port": 443,
-            "uuid": "3c332141-9f03-4ba6-9dd2-bb092ec4db82",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.speedq.fun",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "qAmBWJl2aO0mMoWHNNpNBAefvTmGUc5B2L4Uhxjpe0E",
-                    "short_id": "481a1d68"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
