@@ -118,8 +118,8 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 18","type":"trojan","server":"13.37.187.183","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
-  - {"name":"🇺🇸US | trojan | @DirectVPN | 18","type":"trojan","server":"44.228.224.252","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇮🇪IE | trojan | @PrivateVPNs | 16","type":"trojan","server":"63.35.41.96","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇸🇪SE | trojan | @DirectVPN | 16","type":"trojan","server":"51.21.126.173","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇮🇪IE | trojan | @V2RayTz | 19","type":"trojan","server":"191-Join.V2RayTz.sbs","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
 proxy-groups:
   - name: MANUAL
@@ -127,8 +127,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇷FR | trojan | @PrivateVPNs | 18'
-      - '🇺🇸US | trojan | @DirectVPN | 18'
+      - '🇮🇪IE | trojan | @PrivateVPNs | 16'
+      - '🇸🇪SE | trojan | @DirectVPN | 16'
       - '🇮🇪IE | trojan | @V2RayTz | 19'
   - name: URL-TEST
     type: url-test
@@ -136,16 +136,16 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇷FR | trojan | @PrivateVPNs | 18'
-      - '🇺🇸US | trojan | @DirectVPN | 18'
+      - '🇮🇪IE | trojan | @PrivateVPNs | 16'
+      - '🇸🇪SE | trojan | @DirectVPN | 16'
       - '🇮🇪IE | trojan | @V2RayTz | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇫🇷FR | trojan | @PrivateVPNs | 18'
-      - '🇺🇸US | trojan | @DirectVPN | 18'
+      - '🇮🇪IE | trojan | @PrivateVPNs | 16'
+      - '🇸🇪SE | trojan | @DirectVPN | 16'
       - '🇮🇪IE | trojan | @V2RayTz | 19'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
