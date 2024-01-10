@@ -108,13 +108,14 @@
                 "URL-TEST",
                 "🇨🇦CA | vless | @XsV2ray | 2",
                 "🇮🇪IE | vless | @VlessConfig | 18",
-                "🇺🇸US | vless | @VPNCUSTOMIZE | 22",
+                "🇨🇷CR | vless | @VPNCUSTOMIZE | 22",
                 "🏳️XX | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @melov2ray | 3",
                 "🇨🇷CR | vless | @frev2ray | 4",
                 "🇨🇷CR | vless | @ARv2ray | 13",
                 "🇨🇦CA | vless | @Lockey_vpn | 5",
                 "🇨🇦CA | vless | @free_v2rayyy | 8",
+                "🇨🇷CR | vless | @lightning6 | 25",
                 "🇺🇸US | vless | @V2rayNGmat | 1",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 16",
@@ -141,6 +142,7 @@
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @SafeNet_Server | 17",
                 "🇳🇱NL | vless | @lrnbymaa | 5",
+                "🇺🇸US | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @free1_vpn | 1",
                 "🇩🇪DE | vless | @fnet00 | 5",
                 "🇨🇦CA | vless | @polproxy | 39",
@@ -148,7 +150,7 @@
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 10",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @Capoit | 10",
-                "🇺🇸US | vless | @flyv2ray | 15",
+                "🇨🇷CR | vless | @flyv2ray | 15",
                 "🏳️XX | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 10",
                 "🇸🇪SE | vless | @kiava | 10",
@@ -166,13 +168,14 @@
             "outbounds": [
                 "🇨🇦CA | vless | @XsV2ray | 2",
                 "🇮🇪IE | vless | @VlessConfig | 18",
-                "🇺🇸US | vless | @VPNCUSTOMIZE | 22",
+                "🇨🇷CR | vless | @VPNCUSTOMIZE | 22",
                 "🏳️XX | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @melov2ray | 3",
                 "🇨🇷CR | vless | @frev2ray | 4",
                 "🇨🇷CR | vless | @ARv2ray | 13",
                 "🇨🇦CA | vless | @Lockey_vpn | 5",
                 "🇨🇦CA | vless | @free_v2rayyy | 8",
+                "🇨🇷CR | vless | @lightning6 | 25",
                 "🇺🇸US | vless | @V2rayNGmat | 1",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 16",
@@ -199,6 +202,7 @@
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @SafeNet_Server | 17",
                 "🇳🇱NL | vless | @lrnbymaa | 5",
+                "🇺🇸US | vless | @ConfigsHUB | 19",
                 "🏳️XX | vless | @free1_vpn | 1",
                 "🇩🇪DE | vless | @fnet00 | 5",
                 "🇨🇦CA | vless | @polproxy | 39",
@@ -206,7 +210,7 @@
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 10",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @Capoit | 10",
-                "🇺🇸US | vless | @flyv2ray | 15",
+                "🇨🇷CR | vless | @flyv2ray | 15",
                 "🏳️XX | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 10",
                 "🇸🇪SE | vless | @kiava | 10",
@@ -300,7 +304,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @VPNCUSTOMIZE | 22",
+            "tag": "🇨🇷CR | vless | @VPNCUSTOMIZE | 22",
             "type": "vless",
             "server": "all.vpncustomize.cam",
             "server_port": 443,
@@ -504,6 +508,37 @@
                 "headers": {
                     "Host": "3k.pureboy.eu.org"
                 }
+            }
+        },
+        {
+            "tag": "🇨🇷CR | vless | @lightning6 | 25",
+            "type": "vless",
+            "server": "LIGHTNING6-joinbede.liV2ray.xyz",
+            "server_port": 2083,
+            "uuid": "43ac71b3-815a-4dde-8570-3079304137e2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "lightning6.liV2raYz.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@LIGHTNING6",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1190,6 +1225,27 @@
             }
         },
         {
+            "tag": "🇺🇸US | vless | @ConfigsHUB | 19",
+            "type": "vless",
+            "server": "173.245.58.31",
+            "server_port": 80,
+            "uuid": "e1a928be-e289-4aef-b92e-4106fabdf42f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "173.245.58.31"
+                }
+            }
+        },
+        {
             "tag": "🏳️XX | vless | @free1_vpn | 1",
             "type": "vless",
             "server": "[::ffff:681a:f50]",
@@ -1415,7 +1471,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @flyv2ray | 15",
+            "tag": "🇨🇷CR | vless | @flyv2ray | 15",
             "type": "vless",
             "server": "V2ray.motorcycles",
             "server_port": 2087,
