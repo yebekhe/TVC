@@ -107,9 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
+                "🇩🇪DE | vless | @azadi_az_inja_migzare | 12",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🇸🇪SE | vless | @V2RayTz | 18",
                 "🏳️XX | vless | @Capital_NET | 52",
+                "🇩🇪DE | vless | @mehrosaboran | 9",
                 "🇸🇪SE | vless | @kiava | 9",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 5"
@@ -120,9 +122,11 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
+                "🇩🇪DE | vless | @azadi_az_inja_migzare | 12",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🇸🇪SE | vless | @V2RayTz | 18",
                 "🏳️XX | vless | @Capital_NET | 52",
+                "🇩🇪DE | vless | @mehrosaboran | 9",
                 "🇸🇪SE | vless | @kiava | 9",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 5"
@@ -181,6 +185,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @azadi_az_inja_migzare | 12",
+            "type": "vless",
+            "server": "free01.miraclev2ray.online",
+            "server_port": 443,
+            "uuid": "1b74db67-4a86-4f61-ab2f-72e4d38cbed0",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "free-api01.miraclev2ray.online",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8fQWsJr0l6n5x98oArx-3a1IO3elnrrHOHZorOyFSHw",
+                    "short_id": "4189a3adbea837f0"
+                }
             }
         },
         {
@@ -275,6 +308,42 @@
                     "public_key": "90WvSEDjTWdVj1U5JPXphB6VZ4ojR42tZN7PuEeRqXM",
                     "short_id": "dc838e556e8a86bd"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @mehrosaboran | 9",
+            "type": "vless",
+            "server": "195.201.17.222",
+            "server_port": 443,
+            "uuid": "9acbeae9-54ca-4b22-8761-c7980700e10a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedq.fun",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "--w7eHtwMBeksPtXq5opOv0kGocEqxPh0-fYOYPDRxM",
+                    "short_id": "c50dbf82"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
