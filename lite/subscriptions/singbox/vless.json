@@ -134,7 +134,7 @@
                 "🇳🇱NL | vless | @v2rayngvpn | 8",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇺🇸US | vless | @proxyymeliii | 18",
-                "🏳️XX | vless | @MsV2ray | 19",
+                "🏳️XX | vless | @MsV2ray | 17",
                 "🇩🇪DE | vless | @v2ray1_ng | 3",
                 "🇮🇷IR | vless | @vless_vmess | 4",
                 "🇩🇪DE | vless | @MTConfig | 21",
@@ -143,6 +143,7 @@
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @SafeNet_Server | 17",
                 "🇨🇦CA | vless | @lrnbymaa | 6",
+                "🇩🇪DE | vless | @ConfigsHUB | 18",
                 "🇨🇦CA | vless | @free1_vpn | 0",
                 "🇨🇦CA | vless | @polproxy | 36",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 12",
@@ -191,7 +192,7 @@
                 "🇳🇱NL | vless | @v2rayngvpn | 8",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇺🇸US | vless | @proxyymeliii | 18",
-                "🏳️XX | vless | @MsV2ray | 19",
+                "🏳️XX | vless | @MsV2ray | 17",
                 "🇩🇪DE | vless | @v2ray1_ng | 3",
                 "🇮🇷IR | vless | @vless_vmess | 4",
                 "🇩🇪DE | vless | @MTConfig | 21",
@@ -200,6 +201,7 @@
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @SafeNet_Server | 17",
                 "🇨🇦CA | vless | @lrnbymaa | 6",
+                "🇩🇪DE | vless | @ConfigsHUB | 18",
                 "🇨🇦CA | vless | @free1_vpn | 0",
                 "🇨🇦CA | vless | @polproxy | 36",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 12",
@@ -1018,11 +1020,11 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @MsV2ray | 19",
+            "tag": "🏳️XX | vless | @MsV2ray | 17",
             "type": "vless",
             "server": "de.MsV2ray.sbs",
-            "server_port": 2083,
-            "uuid": "9fac0e66-13a0-443f-fd7a-8c0b027e4632",
+            "server_port": 443,
+            "uuid": "-MsV2ray--MsV2ray--MsV2ray-",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1032,7 +1034,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "de.MsV2ray.sbs",
+                "server_name": "ws.MsV2ray.sbs",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1041,11 +1043,11 @@
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "ws.MsV2ray.sbs"
+                }
             }
         },
         {
@@ -1245,6 +1247,42 @@
                 "headers": {
                     "Host": "172.67.229.179"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "108.61.170.85",
+            "server_port": 46525,
+            "uuid": "7ceb763f-1c37-4a18-b08d-ddd30243e079",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cn.pjv2ray.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VwTAmge46_DZpi5LkCAkzS08Ow4pCSnkKt673PaLRy4",
+                    "short_id": "a51ec3cd"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,@sabz_v2ray:TELGRAM,",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
