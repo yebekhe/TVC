@@ -129,7 +129,6 @@ proxies:
   - {"name":"🇨🇦CA | vmess | @Hope_Net | 16","type":"vmess","server":"cname.volcengine.eu.org","port":"80","cipher":"auto","uuid":"ebc8ef6e-961d-4315-9258-46fb81605bd7","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso","headers":{"host":"ca2-amazonwebservices.volcengine.eu.org"}}}
   - {"name":"🇮🇷IR | vmess | @MrV2Ray | 0","type":"vmess","server":"85.9.106.116","port":"17623","cipher":"auto","uuid":"f9f58d36-e714-4d3a-8aa0-44dff4181aaf","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
-  - {"name":"🏳️XX | vmess | @forwardv2ray | 18","type":"vmess","server":"[2600:3c0e::f03c:94ff:fed4:d847]","port":"8080","cipher":"auto","uuid":"f4dfa747-e378-42a7-9331-b7667311f81e","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@x2rayn_vpn@x2rayn_vpn@x2rayn_vpn","headers":{"host":""}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -147,7 +146,6 @@ proxy-groups:
       - '🇨🇦CA | vmess | @Hope_Net | 16'
       - '🇮🇷IR | vmess | @MrV2Ray | 0'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🏳️XX | vmess | @forwardv2ray | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -165,7 +163,6 @@ proxy-groups:
       - '🇨🇦CA | vmess | @Hope_Net | 16'
       - '🇮🇷IR | vmess | @MrV2Ray | 0'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🏳️XX | vmess | @forwardv2ray | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -182,7 +179,6 @@ proxy-groups:
       - '🇨🇦CA | vmess | @Hope_Net | 16'
       - '🇮🇷IR | vmess | @MrV2Ray | 0'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🏳️XX | vmess | @forwardv2ray | 18'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
