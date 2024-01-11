@@ -106,12 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇭🇰HK | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 7",
                 "🇮🇷IR | vmess | @ShadowProxy66 | 10",
+                "🏳️XX | vmess | @ConfigsHUB | 19",
                 "🇰🇷KR | vmess | @yaney_01 | 9",
-                "🇨🇦CA | vmess | @Hope_Net | 16",
+                "🇺🇸US | vmess | @Hope_Net | 16",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇹🇼TW | vmess | @FAKEOFTVC | 4",
@@ -122,12 +124,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇭🇰HK | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 7",
                 "🇮🇷IR | vmess | @ShadowProxy66 | 10",
+                "🏳️XX | vmess | @ConfigsHUB | 19",
                 "🇰🇷KR | vmess | @yaney_01 | 9",
-                "🇨🇦CA | vmess | @Hope_Net | 16",
+                "🇺🇸US | vmess | @Hope_Net | 16",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇹🇼TW | vmess | @FAKEOFTVC | 4",
@@ -152,6 +156,30 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 18",
+            "type": "vmess",
+            "server": "dl3.doushimeng.com",
+            "server_port": 2082,
+            "uuid": "fff2a618-c142-45eb-b2ed-59b2500d5cfc",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/asdas",
+                "headers": {
+                    "Host": ""
+                }
+            }
         },
         {
             "tag": "🇫🇷FR | vmess | @v2ray_outlineir | 0",
@@ -246,6 +274,23 @@
             }
         },
         {
+            "tag": "🏳️XX | vmess | @ConfigsHUB | 19",
+            "type": "vmess",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇰🇷KR | vmess | @yaney_01 | 9",
             "type": "vmess",
             "server": "92.38.135.27",
@@ -280,13 +325,13 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 16",
+            "tag": "🇺🇸US | vmess | @Hope_Net | 16",
             "type": "vmess",
-            "server": "srv1.hamedgeek.sbs",
-            "server_port": 2083,
-            "uuid": "b36e93b8-21b4-4495-ac81-0109f65cb1ad",
+            "server": "198.2.208.69",
+            "server_port": 443,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 64,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -297,7 +342,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "kingofilter2.hamedgeek.sbs",
+                "server_name": "",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -307,9 +352,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/path\/1689326360096",
                 "headers": {
-                    "Host": "kingofilter2.hamedgeek.sbs"
+                    "Host": ""
                 }
             }
         },
