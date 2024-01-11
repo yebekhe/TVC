@@ -161,8 +161,8 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇩🇪DE | vless | @Capoit | 2",
-                "🇺🇸US | vless | @flyv2ray | 13",
-                "🇨🇦CA | vless | @forwardv2ray | 18",
+                "🇨🇷CR | vless | @flyv2ray | 13",
+                "🇨🇦CA | trojan | @forwardv2ray | 19",
                 "🇹🇼TW | vmess | @FAKEOFTVC | 5",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇫🇮FI | vless | @mehrosaboran | 7",
@@ -232,8 +232,8 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇩🇪DE | vless | @Capoit | 2",
-                "🇺🇸US | vless | @flyv2ray | 13",
-                "🇨🇦CA | vless | @forwardv2ray | 18",
+                "🇨🇷CR | vless | @flyv2ray | 13",
+                "🇨🇦CA | trojan | @forwardv2ray | 19",
                 "🇹🇼TW | vmess | @FAKEOFTVC | 5",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇫🇮FI | vless | @mehrosaboran | 7",
@@ -1789,7 +1789,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @flyv2ray | 13",
+            "tag": "🇨🇷CR | vless | @flyv2ray | 13",
             "type": "vless",
             "server": "V2ray.motorcycles",
             "server_port": 2087,
@@ -1820,23 +1820,31 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
-            "type": "vless",
-            "server": "104.21.59.125",
-            "server_port": 80,
-            "uuid": "e1a928be-e289-4aef-b92e-4106fabdf42f",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇨🇦CA | trojan | @forwardv2ray | 19",
+            "type": "trojan",
+            "server": "cdn-13.cdn2cdn.com",
+            "server_port": 2083,
+            "password": "qG9K8AGnn9XH5jUqeFu96g",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn13.cdn2cdn.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "104.21.59.125"
+                    "Host": "cdn13.cdn2cdn.com"
                 }
             }
         },
