@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🏳️XX | vmess | @azadi_az_inja_migzare | 6",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇭🇰HK | vmess | @mftizi | 19",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 8",
@@ -122,6 +123,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🏳️XX | vmess | @azadi_az_inja_migzare | 6",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇭🇰HK | vmess | @mftizi | 19",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 8",
@@ -152,6 +154,30 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🏳️XX | vmess | @azadi_az_inja_migzare | 6",
+            "type": "vmess",
+            "server": "[2a01:7e00::f03c:94ff:fed4:a98b]",
+            "server_port": 8080,
+            "uuid": "f4dfa747-e378-42a7-9331-b7667311f81e",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@x2rayn_vpn@x2rayn_vpn@x2rayn_vpn",
+                "headers": {
+                    "Host": ""
+                }
+            }
         },
         {
             "tag": "🇫🇷FR | vmess | @v2ray_outlineir | 0",
