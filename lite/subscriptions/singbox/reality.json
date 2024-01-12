@@ -109,6 +109,7 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇸🇪SE | vless | @prrofile_purple | 176",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 11",
+                "🇫🇮FI | vless | @FalconPolV2rayNG | 4",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🇳🇱NL | vless | @fnet00 | 4",
                 "🏳️XX | vless | @Capital_NET | 52",
@@ -125,6 +126,7 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇸🇪SE | vless | @prrofile_purple | 176",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 11",
+                "🇫🇮FI | vless | @FalconPolV2rayNG | 4",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🇳🇱NL | vless | @fnet00 | 4",
                 "🏳️XX | vless | @Capital_NET | 52",
@@ -245,6 +247,42 @@
                     "public_key": "gsv3AGo3mz1gJ7wg-9yhpQgjXPdOFuFXE40R_HMiIn0",
                     "short_id": "1db3"
                 }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | vless | @FalconPolV2rayNG | 4",
+            "type": "vless",
+            "server": "95.216.142.231",
+            "server_port": 443,
+            "uuid": "cf2ce827-129a-4d6f-ab9b-123b117e482d",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UNKeOpi3M-5MQdBFFRXhz6yY5K0881iHdA2uyupcNik",
+                    "short_id": "1b27a6b1"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
