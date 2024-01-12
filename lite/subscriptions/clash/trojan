@@ -120,6 +120,7 @@ dns:
 proxies:
   - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 15","type":"trojan","server":"15.188.98.95","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇫🇷FR | trojan | @DirectVPN | 15","type":"trojan","server":"13.36.45.2","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇺🇸US | trojan | @V2RayTz | 13","type":"trojan","server":"172.64.165.14","port":2087,"udp":false,"password":"ArV2ray","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"tag.ArV2ray.tech"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +129,7 @@ proxy-groups:
       - FALLBACK
       - '🇫🇷FR | trojan | @PrivateVPNs | 15'
       - '🇫🇷FR | trojan | @DirectVPN | 15'
+      - '🇺🇸US | trojan | @V2RayTz | 13'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -136,6 +138,7 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 15'
       - '🇫🇷FR | trojan | @DirectVPN | 15'
+      - '🇺🇸US | trojan | @V2RayTz | 13'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -143,6 +146,7 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 15'
       - '🇫🇷FR | trojan | @DirectVPN | 15'
+      - '🇺🇸US | trojan | @V2RayTz | 13'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
