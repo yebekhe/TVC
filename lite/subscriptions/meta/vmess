@@ -122,10 +122,9 @@ dns:
 proxies:
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @oneclickvpnkeys | 9","type":"vmess","server":"Discord.gg","port":"2087","cipher":"auto","uuid":"8175814f-77e9-403c-8448-a8ec830dc061","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":""}}
-  - {"name":"🇩🇪DE | vmess | @ShadowProxy66 | 10","type":"vmess","server":"94.130.168.175","port":"52203","cipher":"auto","uuid":"0d3766e5-3a61-4a8b-bf34-7e48beab2e88","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇩🇪DE | vmess | @ShadowProxy66 | 19","type":"vmess","server":"94.130.168.175","port":"52203","cipher":"auto","uuid":"0d3766e5-3a61-4a8b-bf34-7e48beab2e88","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇸US | vmess | @yaney_01 | 9","type":"vmess","server":"goodbooks.gygjggf7654e1.repl.co","port":"443","cipher":"auto","uuid":"0e42ab26-2273-4a85-9b47-bd11b9140d0d","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/0e42ab26-2273-4a85-9b47-bd11b9140d0d-vm","headers":{"host":"goodbooks.gygjggf7654e1.repl.co"}}}
   - {"name":"🇨🇭CH | vmess | @Hope_Net | 15","type":"vmess","server":"94.131.99.8","port":"47182","cipher":"auto","uuid":"81b2b630-8b6a-404f-b996-b12f13db5786","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇮🇷IR | vmess | @MrV2Ray | 0","type":"vmess","server":"85.9.106.116","port":"17623","cipher":"auto","uuid":"f9f58d36-e714-4d3a-8aa0-44dff4181aaf","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
 proxy-groups:
   - name: MANUAL
@@ -135,10 +134,9 @@ proxy-groups:
       - FALLBACK
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇨🇦CA | vmess | @oneclickvpnkeys | 9'
-      - '🇩🇪DE | vmess | @ShadowProxy66 | 10'
+      - '🇩🇪DE | vmess | @ShadowProxy66 | 19'
       - '🇺🇸US | vmess | @yaney_01 | 9'
       - '🇨🇭CH | vmess | @Hope_Net | 15'
-      - '🇮🇷IR | vmess | @MrV2Ray | 0'
       - '🇺🇸US | vmess | @v2Line | 6'
   - name: URL-TEST
     type: url-test
@@ -148,10 +146,9 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇨🇦CA | vmess | @oneclickvpnkeys | 9'
-      - '🇩🇪DE | vmess | @ShadowProxy66 | 10'
+      - '🇩🇪DE | vmess | @ShadowProxy66 | 19'
       - '🇺🇸US | vmess | @yaney_01 | 9'
       - '🇨🇭CH | vmess | @Hope_Net | 15'
-      - '🇮🇷IR | vmess | @MrV2Ray | 0'
       - '🇺🇸US | vmess | @v2Line | 6'
   - name: FALLBACK
     type: fallback
@@ -160,10 +157,9 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇨🇦CA | vmess | @oneclickvpnkeys | 9'
-      - '🇩🇪DE | vmess | @ShadowProxy66 | 10'
+      - '🇩🇪DE | vmess | @ShadowProxy66 | 19'
       - '🇺🇸US | vmess | @yaney_01 | 9'
       - '🇨🇭CH | vmess | @Hope_Net | 15'
-      - '🇮🇷IR | vmess | @MrV2Ray | 0'
       - '🇺🇸US | vmess | @v2Line | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
