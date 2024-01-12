@@ -119,6 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
+  - {"name":"🏳️XX | ss | @forwardv2ray | 18","type":"ss","server":"[2a0d:c740:3c:1::4d56:7f45]","port":47529,"password":"@GetNetworkBot","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -126,6 +127,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🏳️XX | ss | @forwardv2ray | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -133,12 +135,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🏳️XX | ss | @forwardv2ray | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🏳️XX | ss | @forwardv2ray | 18'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
