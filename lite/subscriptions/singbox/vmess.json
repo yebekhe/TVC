@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇨🇦CA | vmess | @azadi_az_inja_migzare | 6",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇳🇱NL | vmess | @oneclickvpnkeys | 9",
@@ -123,6 +124,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇨🇦CA | vmess | @azadi_az_inja_migzare | 6",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇳🇱NL | vmess | @oneclickvpnkeys | 9",
@@ -154,6 +156,40 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @azadi_az_inja_migzare | 6",
+            "type": "vmess",
+            "server": "tgju.org",
+            "server_port": 443,
+            "uuid": "562ae412-d7b5-4f1e-dd0d-82e073193b21",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pokerad.fun",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/fa",
+                "headers": {
+                    "Host": "pokerad.fun"
+                }
+            }
         },
         {
             "tag": "🇫🇷FR | vmess | @v2ray_outlineir | 0",
