@@ -107,16 +107,13 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | vless | @ipV2Ray | 18",
-                "🇩🇪DE | vless | @ARv2ray | 12",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 9",
                 "🇫🇮FI | vless | @FalconPolV2rayNG | 4",
                 "🇩🇪DE | vless | @MTConfig | 21",
-                "🇮🇷IR | vless | @DailyV2RY | 125",
                 "🇳🇱NL | vless | @fnet00 | 4",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇫🇮FI | vless | @flyv2ray | 16",
-                "🇷🇺RU | vless | @forwardv2ray | 2",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -127,16 +124,13 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | vless | @ipV2Ray | 18",
-                "🇩🇪DE | vless | @ARv2ray | 12",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 9",
                 "🇫🇮FI | vless | @FalconPolV2rayNG | 4",
                 "🇩🇪DE | vless | @MTConfig | 21",
-                "🇮🇷IR | vless | @DailyV2RY | 125",
                 "🇳🇱NL | vless | @fnet00 | 4",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇫🇮FI | vless | @flyv2ray | 16",
-                "🇷🇺RU | vless | @forwardv2ray | 2",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -192,42 +186,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @ARv2ray | 12",
-            "type": "vless",
-            "server": "18.196.167.162",
-            "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ftp.debian.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "MNmR5kSPZZL-wL2UPFU_STOO3MxLL_x64Xu1CpZnjCY",
-                    "short_id": "628862b5"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -371,42 +329,6 @@
             }
         },
         {
-            "tag": "🇮🇷IR | vless | @DailyV2RY | 125",
-            "type": "vless",
-            "server": "80.191.41.85",
-            "server_port": 8443,
-            "uuid": "3125e828-936d-414a-b1b6-5421c2d86485",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "wjwwpi.jypjvpbg.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "edge"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "r9xqYf3TXGXiuUiWewGsA2uMGgqC_WVZOn9WLojL10Q",
-                    "short_id": "9d307375"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "wjwwpi.jypjvpbg.sbs",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🇳🇱NL | vless | @fnet00 | 4",
             "type": "vless",
             "server": "85.192.40.92",
@@ -502,42 +424,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇷🇺RU | vless | @forwardv2ray | 2",
-            "type": "vless",
-            "server": "185.17.0.193",
-            "server_port": 2053,
-            "uuid": "72b5ef5f-0eb1-475c-bd78-03690c3d760a",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "discordapp.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn\/@croownvpn",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
