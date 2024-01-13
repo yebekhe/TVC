@@ -11,14 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | trojan | @PrivateVPNs | 16 = trojan, 52.57.46.229, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
-🇸🇪SE | trojan | @DirectVPN | 16 = trojan, 13.51.112.247, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
+🇬🇧GB | trojan | @V2rayCollectorDonate | 19 = trojan, uk1.test3.net, 443, password = 72d42540-b1ef-11ee-bd8f-1239d0255272, udp-delay = true, skip-cert-verify = false, ws = false
+🇫🇷FR | trojan | @PrivateVPNs | 15 = trojan, 15.236.233.109, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
+🇫🇷FR | trojan | @DirectVPN | 15 = trojan, 13.39.205.199, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
 🇨🇦CA | trojan | @VmessProtocol | 13 = trojan, cdn-13.cdn2cdn.com, 2083, password = qG9K8AGnn9XH5jUqeFu96g, udp-delay = true, skip-cert-verify = false, sni = cdn13.cdn2cdn.com, ws = false
-🇺🇸US | trojan | @ConfigsHUB | 19 = trojan, 167.68.5.183, 443, password = ddb07030-dbb9-4c91-8f48-cc782fdfcb7c, udp-delay = true, skip-cert-verify = false, sni = 6us3.pqjc.buzz, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | trojan | @PrivateVPNs | 16,🇸🇪SE | trojan | @DirectVPN | 16,🇨🇦CA | trojan | @VmessProtocol | 13,🇺🇸US | trojan | @ConfigsHUB | 19
-URL-TEST = url-test,🇩🇪DE | trojan | @PrivateVPNs | 16,🇸🇪SE | trojan | @DirectVPN | 16,🇨🇦CA | trojan | @VmessProtocol | 13,🇺🇸US | trojan | @ConfigsHUB | 19
-FALLBACK = fallback,🇩🇪DE | trojan | @PrivateVPNs | 16,🇸🇪SE | trojan | @DirectVPN | 16,🇨🇦CA | trojan | @VmessProtocol | 13,🇺🇸US | trojan | @ConfigsHUB | 19
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | trojan | @V2rayCollectorDonate | 19,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇨🇦CA | trojan | @VmessProtocol | 13
+URL-TEST = url-test,🇬🇧GB | trojan | @V2rayCollectorDonate | 19,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇨🇦CA | trojan | @VmessProtocol | 13
+FALLBACK = fallback,🇬🇧GB | trojan | @V2rayCollectorDonate | 19,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇨🇦CA | trojan | @VmessProtocol | 13
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
