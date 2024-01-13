@@ -111,11 +111,12 @@
                 "🇳🇱NL | vmess | @oneclickvpnkeys | 8",
                 "🇩🇪DE | vmess | @ShadowProxy66 | 34",
                 "🇨🇦CA | vmess | @v2ray1_ng | 5",
+                "🇳🇱NL | vmess | @ConfigsHUB | 18",
                 "🇺🇸US | vmess | @yaney_01 | 9",
                 "🇨🇭CH | vmess | @Hope_Net | 15",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇺🇸US | vmess | @forwardv2ray | 19"
+                "🇨🇦CA | vmess | @forwardv2ray | 6"
             ]
         },
         {
@@ -127,11 +128,12 @@
                 "🇳🇱NL | vmess | @oneclickvpnkeys | 8",
                 "🇩🇪DE | vmess | @ShadowProxy66 | 34",
                 "🇨🇦CA | vmess | @v2ray1_ng | 5",
+                "🇳🇱NL | vmess | @ConfigsHUB | 18",
                 "🇺🇸US | vmess | @yaney_01 | 9",
                 "🇨🇭CH | vmess | @Hope_Net | 15",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇺🇸US | vmess | @forwardv2ray | 19"
+                "🇨🇦CA | vmess | @forwardv2ray | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -246,6 +248,23 @@
             }
         },
         {
+            "tag": "🇳🇱NL | vmess | @ConfigsHUB | 18",
+            "type": "vmess",
+            "server": "172.233.32.65",
+            "server_port": 8081,
+            "uuid": "246db59f-5069-49c5-83aa-975c471e08de",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇺🇸US | vmess | @yaney_01 | 9",
             "type": "vmess",
             "server": "goodbooks.gygjggf7654e1.repl.co",
@@ -345,11 +364,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @forwardv2ray | 19",
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 6",
             "type": "vmess",
-            "server": "173.245.58.34",
-            "server_port": 2052,
-            "uuid": "Telegram-V2ray_alpha",
+            "server": "linde06.indiavideo.sbs",
+            "server_port": 443,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -360,11 +379,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "linde06.indiavideo.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": ""
+                    "Host": "linde06.indiavideo.sbs"
                 }
             }
         }
