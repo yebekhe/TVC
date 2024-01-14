@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | vless | @VPNCUSTOMIZE | 16",
+                "🇩🇪DE | vless | @VPNCUSTOMIZE | 17",
                 "🇩🇪DE | vless | @ipV2Ray | 18",
                 "🇩🇪DE | vless | @ARv2ray | 11",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -117,6 +117,7 @@
                 "🇫🇮FI | vless | @mehrosaboran | 8",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
+                "🇮🇷IR | vless | @Good_V2rayy | 1",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
             ]
         },
@@ -124,7 +125,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | vless | @VPNCUSTOMIZE | 16",
+                "🇩🇪DE | vless | @VPNCUSTOMIZE | 17",
                 "🇩🇪DE | vless | @ipV2Ray | 18",
                 "🇩🇪DE | vless | @ARv2ray | 11",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -135,6 +136,7 @@
                 "🇫🇮FI | vless | @mehrosaboran | 8",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
+                "🇮🇷IR | vless | @Good_V2rayy | 1",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -158,7 +160,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | vless | @VPNCUSTOMIZE | 16",
+            "tag": "🇩🇪DE | vless | @VPNCUSTOMIZE | 17",
             "type": "vless",
             "server": "128.140.65.160",
             "server_port": 443,
@@ -530,6 +532,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇮🇷IR | vless | @Good_V2rayy | 1",
+            "type": "vless",
+            "server": "pr.dadnetiran.xyz",
+            "server_port": 12754,
+            "uuid": "fa1661aa-a1e3-4b74-9a2d-1d4d62050bc5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "discord.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7Ig5GBzwQkBPQ-3gEPgBjTt-6N14VNcW6qgsTW2dKxA",
+                    "short_id": "02085b77"
+                }
             }
         },
         {
