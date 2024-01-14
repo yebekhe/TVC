@@ -194,9 +194,9 @@
         {
             "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 6",
             "type": "vmess",
-            "server": "tgju.org",
-            "server_port": 80,
-            "uuid": "562ae412-d7b5-4f1e-dd0d-82e073193b21",
+            "server": "104.27.62.243",
+            "server_port": 443,
+            "uuid": "6bdb5aa0-b1e8-11ee-a711-1239d0255272",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -207,12 +207,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/fa",
-                "headers": {
-                    "Host": ""
+            "tls": {
+                "enabled": true,
+                "server_name": "us5.socifiles.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "vmgrpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
