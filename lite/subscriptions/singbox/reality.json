@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | vless | @VPNCUSTOMIZE | 16",
                 "🇩🇪DE | vless | @ipV2Ray | 18",
                 "🇩🇪DE | vless | @ARv2ray | 11",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -121,6 +122,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | vless | @VPNCUSTOMIZE | 16",
                 "🇩🇪DE | vless | @ipV2Ray | 18",
                 "🇩🇪DE | vless | @ARv2ray | 11",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -152,11 +154,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | vless | @ipV2Ray | 18",
+            "tag": "🇩🇪DE | vless | @VPNCUSTOMIZE | 16",
             "type": "vless",
-            "server": "49.12.97.39",
+            "server": "128.140.65.160",
             "server_port": 443,
-            "uuid": "3c332141-9f03-4ba6-9dd2-bb092ec4db82",
+            "uuid": "---VPNCUSTOMIZE---",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -166,7 +168,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "greenpepper.ir",
+                "server_name": "mrtax.site",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -175,8 +177,37 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "9BN_LWP0U_QxM-ML5WLBFRLieQh_k7pa3QheqwMazS0",
-                    "short_id": "481a1d68"
+                    "public_key": "8hrG5vdwXHrC1qWIQuDUNXgQ1jENJuZdLtfJDvfsDFA",
+                    "short_id": "aa875d0c"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @ipV2Ray | 18",
+            "type": "vless",
+            "server": "195.201.17.222",
+            "server_port": 443,
+            "uuid": "9acbeae9-54ca-4b22-8761-c7980700e10a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedq.fun",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "--w7eHtwMBeksPtXq5opOv0kGocEqxPh0-fYOYPDRxM",
+                    "short_id": "c50dbf82"
                 }
             },
             "transport": {
