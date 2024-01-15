@@ -113,6 +113,7 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @Capoit | 4",
                 "🇩🇪DE | vless | @flyv2ray | 16",
+                "🏳️XX | vless | @forwardv2ray | 19",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
@@ -130,6 +131,7 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @Capoit | 4",
                 "🇩🇪DE | vless | @flyv2ray | 16",
+                "🏳️XX | vless | @forwardv2ray | 19",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
@@ -395,6 +397,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🏳️XX | vless | @forwardv2ray | 19",
+            "type": "vless",
+            "server": "v2logy.ddns.net",
+            "server_port": 443,
+            "uuid": "72859c41-15ac-4621-bfdf-ac4c3ac33ad4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "k6gu1t73hTdYK3PKNUwOqy2B7ZP-sek-dW2_-aGf9i4",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
