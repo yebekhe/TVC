@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇺🇸US | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 8",
@@ -122,6 +123,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇺🇸US | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 8",
@@ -152,6 +154,40 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇺🇸US | vmess | @V2rayCollectorDonate | 19",
+            "type": "vmess",
+            "server": "173.245.59.209",
+            "server_port": 443,
+            "uuid": "a0eb42f5-eed2-41ce-c574-1896a5388021",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "toll-named-executive-doctor.trycloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/uptime",
+                "headers": {
+                    "Host": "toll-named-executive-doctor.trycloudflare.com"
+                }
+            }
         },
         {
             "tag": "🇬🇧GB | vmess | @v2ray_outlineir | 0",
