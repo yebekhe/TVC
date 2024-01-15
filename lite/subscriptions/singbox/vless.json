@@ -119,7 +119,7 @@
                 "🇨🇦CA | vless | @ARv2ray | 12",
                 "🇨🇦CA | vless | @Lockey_vpn | 7",
                 "🇨🇦CA | vless | @rxv2ray | 20",
-                "🇺🇸US | vless | @lightning6 | 30",
+                "🇨🇷CR | vless | @lightning6 | 30",
                 "🇨🇷CR | vless | @V2rayNGmat | 3",
                 "🇬🇧GB | vless | @vpn_xw | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -188,7 +188,7 @@
                 "🇨🇦CA | vless | @ARv2ray | 12",
                 "🇨🇦CA | vless | @Lockey_vpn | 7",
                 "🇨🇦CA | vless | @rxv2ray | 20",
-                "🇺🇸US | vless | @lightning6 | 30",
+                "🇨🇷CR | vless | @lightning6 | 30",
                 "🇨🇷CR | vless | @V2rayNGmat | 3",
                 "🇬🇧GB | vless | @vpn_xw | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -658,7 +658,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @lightning6 | 30",
+            "tag": "🇨🇷CR | vless | @lightning6 | 30",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 2083,
@@ -1840,9 +1840,9 @@
         {
             "tag": "🇨🇦CA | vless | @forwardv2ray | 19",
             "type": "vless",
-            "server": "172.67.26.210",
-            "server_port": 80,
-            "uuid": "5d9043f7-c965-450c-8ecb-73fd8c0427c5",
+            "server": "www.unpkg.com",
+            "server_port": 443,
+            "uuid": "b9ad895b-12ac-40fc-a5ac-a5b2a1285001",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1850,11 +1850,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "3k.pureboy.eu.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "172.67.26.210"
+                    "Host": "3k.pureboy.eu.org"
                 }
             }
         },
