@@ -14,11 +14,10 @@ DIRECT = direct
 🇫🇷FR | trojan | @PrivateVPNs | 14 = trojan, 52.47.121.114, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇬🇧GB | trojan | @DirectVPN | 14 = trojan, 35.177.245.148, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
 🇨🇦CA | trojan | @VmessProtocol | 16 = trojan, cdn-13.cdn2cdn.com, 2083, password = qG9K8AGnn9XH5jUqeFu96g, udp-delay = true, skip-cert-verify = false, sni = cdn13.cdn2cdn.com, ws = false
-🇺🇸US | trojan | @ConfigsHUB | 17 = trojan, www.snappfooding.com, 2053, password = ZtNmShMXD0, udp-delay = true, skip-cert-verify = false, sni = modernfood.snappfooding.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 14,🇬🇧GB | trojan | @DirectVPN | 14,🇨🇦CA | trojan | @VmessProtocol | 16,🇺🇸US | trojan | @ConfigsHUB | 17
-URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 14,🇬🇧GB | trojan | @DirectVPN | 14,🇨🇦CA | trojan | @VmessProtocol | 16,🇺🇸US | trojan | @ConfigsHUB | 17
-FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 14,🇬🇧GB | trojan | @DirectVPN | 14,🇨🇦CA | trojan | @VmessProtocol | 16,🇺🇸US | trojan | @ConfigsHUB | 17
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 14,🇬🇧GB | trojan | @DirectVPN | 14,🇨🇦CA | trojan | @VmessProtocol | 16
+URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 14,🇬🇧GB | trojan | @DirectVPN | 14,🇨🇦CA | trojan | @VmessProtocol | 16
+FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 14,🇬🇧GB | trojan | @DirectVPN | 14,🇨🇦CA | trojan | @VmessProtocol | 16
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
