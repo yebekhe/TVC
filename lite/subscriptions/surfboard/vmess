@@ -12,11 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇦CA | vmess | @azadi_az_inja_migzare | 12 = vmess, hamrahaval.asan3a.shop, 8080, username = d72227c8-3ce1-4f24-a9fb-36fcd918f96f, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"asan3.azad2.tech", skip-cert-verify = true, tfo = false
+🇹🇷TR | vmess | @V2rayCollectorDonate | 19 = vmess, nvtyl.cfd, 24261, username = b62cc092-8c96-4ee7-9c07-574a43da6a14, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @azadi_az_inja_migzare | 12,🇺🇸US | vmess | @v2Line | 6
-URL-TEST = url-test,🇨🇦CA | vmess | @azadi_az_inja_migzare | 12,🇺🇸US | vmess | @v2Line | 6
-FALLBACK = fallback,🇨🇦CA | vmess | @azadi_az_inja_migzare | 12,🇺🇸US | vmess | @v2Line | 6
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @azadi_az_inja_migzare | 12,🇹🇷TR | vmess | @V2rayCollectorDonate | 19,🇺🇸US | vmess | @v2Line | 6
+URL-TEST = url-test,🇨🇦CA | vmess | @azadi_az_inja_migzare | 12,🇹🇷TR | vmess | @V2rayCollectorDonate | 19,🇺🇸US | vmess | @v2Line | 6
+FALLBACK = fallback,🇨🇦CA | vmess | @azadi_az_inja_migzare | 12,🇹🇷TR | vmess | @V2rayCollectorDonate | 19,🇺🇸US | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
