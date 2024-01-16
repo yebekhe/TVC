@@ -118,8 +118,8 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 18","type":"trojan","server":"35.180.145.160","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇮🇪IE | trojan | @DirectVPN | 18","type":"trojan","server":"108.128.191.227","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 18","type":"trojan","server":"13.36.148.224","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇺🇸US | trojan | @DirectVPN | 18","type":"trojan","server":"54.186.88.236","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🏳️XX | trojan | @FAKEOFTVC | 5","type":"trojan","server":"neat.oceanoflight.top","port":2083,"udp":false,"password":"87Z3xKp2eF","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"neat.oceanoflight.top"}
 proxy-groups:
   - name: MANUAL
@@ -128,7 +128,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
-      - '🇮🇪IE | trojan | @DirectVPN | 18'
+      - '🇺🇸US | trojan | @DirectVPN | 18'
       - '🏳️XX | trojan | @FAKEOFTVC | 5'
   - name: URL-TEST
     type: url-test
@@ -137,7 +137,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
-      - '🇮🇪IE | trojan | @DirectVPN | 18'
+      - '🇺🇸US | trojan | @DirectVPN | 18'
       - '🏳️XX | trojan | @FAKEOFTVC | 5'
   - name: FALLBACK
     type: fallback
@@ -145,7 +145,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
-      - '🇮🇪IE | trojan | @DirectVPN | 18'
+      - '🇺🇸US | trojan | @DirectVPN | 18'
       - '🏳️XX | trojan | @FAKEOFTVC | 5'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
