@@ -146,10 +146,9 @@
                 "🇺🇸US | vless | @v2ray1_ng | 3",
                 "🇮🇷IR | vless | @vless_vmess | 5",
                 "🇩🇪DE | vless | @MTConfig | 21",
-                "🇨🇷CR | vless | @V2RayTz | 16",
+                "🇨🇷CR | vless | @V2RayTz | 8",
                 "🇨🇦CA | vless | @VmessProtocol | 14",
                 "🇺🇸US | vless | @DailyV2RY | 165",
-                "🇨🇦CA | vless | @MehradLearn | 11",
                 "🇨🇦CA | vless | @lrnbymaa | 3",
                 "🇨🇦CA | vless | @proxystore11 | 15",
                 "🇨🇦CA | vless | @fnet00 | 9",
@@ -158,11 +157,11 @@
                 "🇨🇷CR | vless | @v2rayng_vpnrog | 11",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @flyv2ray | 17",
+                "🇨🇷CR | vless | @forwardv2ray | 17",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 12",
                 "🇸🇪SE | vless | @kiava | 5",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
-                "🇨🇦CA | vless | @kingofilter | 14",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -212,10 +211,9 @@
                 "🇺🇸US | vless | @v2ray1_ng | 3",
                 "🇮🇷IR | vless | @vless_vmess | 5",
                 "🇩🇪DE | vless | @MTConfig | 21",
-                "🇨🇷CR | vless | @V2RayTz | 16",
+                "🇨🇷CR | vless | @V2RayTz | 8",
                 "🇨🇦CA | vless | @VmessProtocol | 14",
                 "🇺🇸US | vless | @DailyV2RY | 165",
-                "🇨🇦CA | vless | @MehradLearn | 11",
                 "🇨🇦CA | vless | @lrnbymaa | 3",
                 "🇨🇦CA | vless | @proxystore11 | 15",
                 "🇨🇦CA | vless | @fnet00 | 9",
@@ -224,11 +222,11 @@
                 "🇨🇷CR | vless | @v2rayng_vpnrog | 11",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @flyv2ray | 17",
+                "🇨🇷CR | vless | @forwardv2ray | 17",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 12",
                 "🇸🇪SE | vless | @kiava | 5",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
-                "🇨🇦CA | vless | @kingofilter | 14",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -1351,11 +1349,11 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @V2RayTz | 16",
+            "tag": "🇨🇷CR | vless | @V2RayTz | 8",
             "type": "vless",
-            "server": "497-Join.V2RayTz.sbs",
+            "server": "515-Join.V2RayTz.sbs",
             "server_port": 2087,
-            "uuid": "8dab2500-8276-4d21-8973-33840dcf1f30",
+            "uuid": "166ec3c8-7de8-4849-be6c-2244abeb170c",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1430,27 +1428,6 @@
                 "path": "\/@ZEDMODEON",
                 "headers": {
                     "Host": "specific-fifteen-technique-drugs.trycloudflare.com"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vless | @MehradLearn | 11",
-            "type": "vless",
-            "server": "104.21.59.125",
-            "server_port": 80,
-            "uuid": "e1a928be-e289-4aef-b92e-4106fabdf42f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "104.21.59.125"
                 }
             }
         },
@@ -1696,6 +1673,37 @@
             }
         },
         {
+            "tag": "🇨🇷CR | vless | @forwardv2ray | 17",
+            "type": "vless",
+            "server": "V2All.gameiranvip.sbs",
+            "server_port": 8443,
+            "uuid": "0b2e3bb2-dd94-4892-a112-b52109b4093b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "V2All.gameiranvip.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@V2rayeServers@V2rayeServers",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @https_config_injector | 14",
             "type": "vless",
             "server": "162.159.25.243",
@@ -1810,27 +1818,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vless | @kingofilter | 14",
-            "type": "vless",
-            "server": "fazevpn-range-retardartinecora0012leorapurte.xoxos.gilas.name.ng",
-            "server_port": 2095,
-            "uuid": "badbbc17-e0f0-4a68-8e02-f2e827a55161",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "fazevpn-range-retardartinecora0012leorapurte.xoxos.gilas.name.ng"
-                }
             }
         },
         {
