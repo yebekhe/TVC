@@ -121,7 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇸🇪SE | trojan | @PrivateVPNs | 16","type":"trojan","server":"13.53.91.145","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇩🇪DE | trojan | @DirectVPN | 16","type":"trojan","server":"18.153.125.52","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇸🇪SE | trojan | @DirectVPN | 16","type":"trojan","server":"13.51.12.121","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🏳️XX | trojan | @FAKEOFTVC | 6","type":"trojan","server":"neat.oceanoflight.top","port":2083,"udp":false,"password":"87Z3xKp2eF","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"neat.oceanoflight.top"}
 proxy-groups:
   - name: MANUAL
@@ -130,7 +130,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇸🇪SE | trojan | @PrivateVPNs | 16'
-      - '🇩🇪DE | trojan | @DirectVPN | 16'
+      - '🇸🇪SE | trojan | @DirectVPN | 16'
       - '🏳️XX | trojan | @FAKEOFTVC | 6'
   - name: URL-TEST
     type: url-test
@@ -139,7 +139,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇸🇪SE | trojan | @PrivateVPNs | 16'
-      - '🇩🇪DE | trojan | @DirectVPN | 16'
+      - '🇸🇪SE | trojan | @DirectVPN | 16'
       - '🏳️XX | trojan | @FAKEOFTVC | 6'
   - name: FALLBACK
     type: fallback
@@ -147,7 +147,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇸🇪SE | trojan | @PrivateVPNs | 16'
-      - '🇩🇪DE | trojan | @DirectVPN | 16'
+      - '🇸🇪SE | trojan | @DirectVPN | 16'
       - '🏳️XX | trojan | @FAKEOFTVC | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
