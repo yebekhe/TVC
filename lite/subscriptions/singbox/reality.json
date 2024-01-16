@@ -108,14 +108,14 @@
                 "URL-TEST",
                 "🇫🇮FI | vless | @ipV2Ray | 18",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
-                "🇩🇪DE | vless | @prrofile_purple | 169",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 6",
+                "🇬🇧GB | vless | @proxyymeliii | 17",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @Capoit | 9",
                 "🇩🇪DE | vless | @flyv2ray | 18",
                 "🇸🇪SE | vless | @kiava | 5",
-                "🇺🇸US | vless | @vpn_go67 | 23",
+                "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
             ]
@@ -126,14 +126,14 @@
             "outbounds": [
                 "🇫🇮FI | vless | @ipV2Ray | 18",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
-                "🇩🇪DE | vless | @prrofile_purple | 169",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 6",
+                "🇬🇧GB | vless | @proxyymeliii | 17",
                 "🇩🇪DE | vless | @MTConfig | 21",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @Capoit | 9",
                 "🇩🇪DE | vless | @flyv2ray | 18",
                 "🇸🇪SE | vless | @kiava | 5",
-                "🇺🇸US | vless | @vpn_go67 | 23",
+                "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
             ],
@@ -230,35 +230,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @prrofile_purple | 169",
-            "type": "vless",
-            "server": "drow-ranger.uk",
-            "server_port": 13010,
-            "uuid": "36a59a9a-295b-49ed-b710-ce3fae74e30f",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "discord.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ZouT6u-IRVdpMKK-DRYLEohOSEc_Q-onekJ8LrudRl0",
-                    "short_id": "ec6ce007"
-                }
-            }
-        },
-        {
             "tag": "🇸🇪SE | vless | @v2rayNG_Matsuri | 6",
             "type": "vless",
             "server": "16.171.10.26",
@@ -285,6 +256,42 @@
                     "public_key": "2zSYUOism9qalRDrRZ4-Wv36T698NRi5HXvTMOxIWkI",
                     "short_id": "214229"
                 }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | vless | @proxyymeliii | 17",
+            "type": "vless",
+            "server": "46.101.10.236",
+            "server_port": 3545,
+            "uuid": "f770bc17-5f48-489d-979c-ff85a8ad5e91",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3QbHFXejUa3z6RVR-o6ACEvPHeMo_xw3g5uSl1oxLjk",
+                    "short_id": "e3d03f0e"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@adwork1ch",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -454,7 +461,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @vpn_go67 | 23",
+            "tag": "🇨🇦CA | vless | @vpn_go67 | 23",
             "type": "vless",
             "server": "public.alpanel.top",
             "server_port": 1403,
