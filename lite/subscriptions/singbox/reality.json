@@ -114,6 +114,7 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @Capoit | 9",
                 "🇩🇪DE | vless | @flyv2ray | 18",
+                "🇩🇪DE | vless | @forwardv2ray | 4",
                 "🇩🇪DE | vless | @mehrosaboran | 13",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -133,6 +134,7 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @Capoit | 9",
                 "🇩🇪DE | vless | @flyv2ray | 18",
+                "🇩🇪DE | vless | @forwardv2ray | 4",
                 "🇩🇪DE | vless | @mehrosaboran | 13",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -428,6 +430,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 4",
+            "type": "vless",
+            "server": "kamyarservers.camdvr.org",
+            "server_port": 443,
+            "uuid": "b9bec4e7-0c93-4724-91da-368e285cc5b4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pj7hhjVTqfsjNw7vIMQFwT6nzdbHLNAyUveeRhv5vw4",
+                    "short_id": "0960546b"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Fnet00",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
