@@ -114,6 +114,7 @@
                 "🇺🇸US | vmess | @yaney_01 | 10",
                 "🇨🇭CH | vmess | @Hope_Net | 15",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
                 "🇩🇪DE | vmess | @eliya_chiter0 | 3"
             ]
         },
@@ -129,6 +130,7 @@
                 "🇺🇸US | vmess | @yaney_01 | 10",
                 "🇨🇭CH | vmess | @Hope_Net | 15",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
                 "🇩🇪DE | vmess | @eliya_chiter0 | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -325,6 +327,40 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "ca2.xv2ray.net"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "104.21.15.212",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "glweidf.sbs"
                 }
             }
         },
