@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇮FI | vless | @ipV2Ray | 18",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 7",
                 "🇬🇧GB | vless | @proxyymeliii | 17",
@@ -114,7 +115,7 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @flyv2ray | 18",
                 "🇸🇪SE | vless | @kiava | 5",
-                "🇩🇪DE | vless | @proxy_mtm | 2",
+                "🇩🇪DE | vless | @proxy_mtm | 7",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -124,6 +125,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇮FI | vless | @ipV2Ray | 18",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 7",
                 "🇬🇧GB | vless | @proxyymeliii | 17",
@@ -132,7 +134,7 @@
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇩🇪DE | vless | @flyv2ray | 18",
                 "🇸🇪SE | vless | @kiava | 5",
-                "🇩🇪DE | vless | @proxy_mtm | 2",
+                "🇩🇪DE | vless | @proxy_mtm | 7",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -156,6 +158,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇮FI | vless | @ipV2Ray | 18",
+            "type": "vless",
+            "server": "65.21.58.66",
+            "server_port": 443,
+            "uuid": "ed1b1f97-db22-4df1-b6a4-5e0a3462e389",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "upmusics.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QQccw-lr9IZ5f7B5918_3LVWRwJF4Hg97ND5j78JwVU",
+                    "short_id": "7ad4bd9d"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @CUSTOMVPNSERVER | 14",
@@ -425,7 +463,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @proxy_mtm | 2",
+            "tag": "🇩🇪DE | vless | @proxy_mtm | 7",
             "type": "vless",
             "server": "128.140.43.211",
             "server_port": 443,
