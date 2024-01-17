@@ -12,12 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇸🇪SE | trojan | @PrivateVPNs | 18 = trojan, 16.170.192.205, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
-🇸🇪SE | trojan | @DirectVPN | 18 = trojan, 51.21.89.231, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
+🇩🇪DE | trojan | @DirectVPN | 18 = trojan, 3.120.194.126, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
 🇩🇪DE | trojan | @FAKEOFTVC | 5 = trojan, 3.127.185.166, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇸🇪SE | trojan | @PrivateVPNs | 18,🇸🇪SE | trojan | @DirectVPN | 18,🇩🇪DE | trojan | @FAKEOFTVC | 5
-URL-TEST = url-test,🇸🇪SE | trojan | @PrivateVPNs | 18,🇸🇪SE | trojan | @DirectVPN | 18,🇩🇪DE | trojan | @FAKEOFTVC | 5
-FALLBACK = fallback,🇸🇪SE | trojan | @PrivateVPNs | 18,🇸🇪SE | trojan | @DirectVPN | 18,🇩🇪DE | trojan | @FAKEOFTVC | 5
+MANUAL = select,URL-TEST,FALLBACK,🇸🇪SE | trojan | @PrivateVPNs | 18,🇩🇪DE | trojan | @DirectVPN | 18,🇩🇪DE | trojan | @FAKEOFTVC | 5
+URL-TEST = url-test,🇸🇪SE | trojan | @PrivateVPNs | 18,🇩🇪DE | trojan | @DirectVPN | 18,🇩🇪DE | trojan | @FAKEOFTVC | 5
+FALLBACK = fallback,🇸🇪SE | trojan | @PrivateVPNs | 18,🇩🇪DE | trojan | @DirectVPN | 18,🇩🇪DE | trojan | @FAKEOFTVC | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
