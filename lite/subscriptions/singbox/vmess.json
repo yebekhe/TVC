@@ -107,10 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇦CA | vmess | @azadi_az_inja_migzare | 10",
-                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
+                "🇺🇸US | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 7",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 0",
                 "🇺🇸US | vmess | @yaney_01 | 10",
                 "🇨🇭CH | vmess | @Hope_Net | 15",
@@ -122,10 +122,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇦CA | vmess | @azadi_az_inja_migzare | 10",
-                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
+                "🇺🇸US | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 7",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 0",
                 "🇺🇸US | vmess | @yaney_01 | 10",
                 "🇨🇭CH | vmess | @Hope_Net | 15",
@@ -176,7 +176,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
+            "tag": "🇺🇸US | vmess | @V2rayCollectorDonate | 19",
             "type": "vmess",
             "server": "very.sadnugget.shop",
             "server_port": 80,
@@ -234,11 +234,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 7",
             "type": "vmess",
-            "server": "ca-v2ray.freevmess.com",
-            "server_port": 8443,
-            "uuid": "c2b06a73-9df6-4afe-ac7c-23749045a1d6",
+            "server": "104.27.102.105",
+            "server_port": 8080,
+            "uuid": "Telegram-V2ray_alpha",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -249,14 +249,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
                 }
             }
         },
