@@ -106,28 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇹🇷TR | vmess | @azadi_az_inja_migzare | 14",
-                "🇺🇸US | vmess | @V2rayCollectorDonate | 19",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
                 "🇨🇭CH | vmess | @Hope_Net | 15",
-                "🇺🇸US | vmess | @v2Line | 6",
-                "🇨🇷CR | vmess | @kingofilter | 11"
+                "🇺🇸US | vmess | @v2Line | 6"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇹🇷TR | vmess | @azadi_az_inja_migzare | 14",
-                "🇺🇸US | vmess | @V2rayCollectorDonate | 19",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
                 "🇨🇭CH | vmess | @Hope_Net | 15",
-                "🇺🇸US | vmess | @v2Line | 6",
-                "🇨🇷CR | vmess | @kingofilter | 11"
+                "🇺🇸US | vmess | @v2Line | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -150,13 +146,13 @@
             "type": "dns"
         },
         {
-            "tag": "🇹🇷TR | vmess | @azadi_az_inja_migzare | 14",
+            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
             "type": "vmess",
-            "server": "91.228.186.161",
+            "server": "172.67.164.164",
             "server_port": 443,
-            "uuid": "56feb9a5-1be6-47a1-8ef3-adf9e600a8f2",
+            "uuid": "a1655f51-1e20-4a92-8a11-b7ca30a7a353",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -167,36 +163,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "",
+                "server_name": "afrhms07.xfixedfloat.cfd",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | vmess | @V2rayCollectorDonate | 19",
-            "type": "vmess",
-            "server": "173.245.58.65",
-            "server_port": 80,
-            "uuid": "a5324503-04bd-4ce4-a47a-e969d605a5a6",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
-                "path": "\/main",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": ""
+                    "Host": "afrhms07.xfixedfloat.cfd"
                 }
             }
         },
@@ -307,40 +286,6 @@
                 "headers": {
                     "Host": "ca2.xv2ray.net"
                 }
-            }
-        },
-        {
-            "tag": "🇨🇷CR | vmess | @kingofilter | 11",
-            "type": "vmess",
-            "server": "190.93.247.76",
-            "server_port": 8443,
-            "uuid": "_Mahanvpn_copy_naaaakonn_",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mahanvip.mahantu.top",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "mahanvip.mahantu.top",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         }
     ],
