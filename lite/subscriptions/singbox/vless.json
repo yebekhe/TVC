@@ -109,7 +109,7 @@
                 "🇨🇦CA | vless | @EliV2ray | 16",
                 "🇨🇦CA | vless | @Parsashonam | 6",
                 "🇨🇦CA | vless | @v2_team | 18",
-                "🇺🇸US | vless | @NIM_VPN_ir | 2",
+                "🇨🇷CR | vless | @NIM_VPN_ir | 2",
                 "🇺🇸US | vless | @XsV2ray | 10",
                 "🇫🇷FR | vless | @VlessConfig | 14",
                 "🇨🇦CA | vless | @ipV2Ray | 17",
@@ -141,6 +141,7 @@
                 "🇨🇦CA | vless | @ServerNett | 7",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇩🇪DE | vless | @proxyymeliii | 20",
+                "🇺🇸US | vless | @MsV2ray | 17",
                 "🇺🇸US | vless | @v2ray1_ng | 3",
                 "🇮🇷IR | vless | @vless_vmess | 8",
                 "🇺🇸US | vless | @V2RayTz | 17",
@@ -176,7 +177,7 @@
                 "🇨🇦CA | vless | @EliV2ray | 16",
                 "🇨🇦CA | vless | @Parsashonam | 6",
                 "🇨🇦CA | vless | @v2_team | 18",
-                "🇺🇸US | vless | @NIM_VPN_ir | 2",
+                "🇨🇷CR | vless | @NIM_VPN_ir | 2",
                 "🇺🇸US | vless | @XsV2ray | 10",
                 "🇫🇷FR | vless | @VlessConfig | 14",
                 "🇨🇦CA | vless | @ipV2Ray | 17",
@@ -208,6 +209,7 @@
                 "🇨🇦CA | vless | @ServerNett | 7",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇩🇪DE | vless | @proxyymeliii | 20",
+                "🇺🇸US | vless | @MsV2ray | 17",
                 "🇺🇸US | vless | @v2ray1_ng | 3",
                 "🇮🇷IR | vless | @vless_vmess | 8",
                 "🇺🇸US | vless | @V2RayTz | 17",
@@ -349,7 +351,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @NIM_VPN_ir | 2",
+            "tag": "🇨🇷CR | vless | @NIM_VPN_ir | 2",
             "type": "vless",
             "server": "all.VPNCUSTOMIZE.cam",
             "server_port": 80,
@@ -1193,6 +1195,37 @@
             }
         },
         {
+            "tag": "🇺🇸US | vless | @MsV2ray | 17",
+            "type": "vless",
+            "server": "All.MsV2ray.online",
+            "server_port": 2087,
+            "uuid": "3e6797e9-16d3-4390-91d7-3e1be61a944a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "de.MsV2ray.space",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇺🇸US | vless | @v2ray1_ng | 3",
             "type": "vless",
             "server": "173.245.58.31",
@@ -1626,9 +1659,9 @@
         {
             "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
             "type": "vless",
-            "server": "172.67.73.119",
-            "server_port": 80,
-            "uuid": "e1a928be-e289-4aef-b92e-4106fabdf42f",
+            "server": "zula.ir",
+            "server_port": 443,
+            "uuid": "7d95b74d-e1d0-4771-bc3f-65b84e791e4b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1636,12 +1669,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "172.67.73.119"
+            "tls": {
+                "enabled": true,
+                "server_name": "fin6.melobigg.site",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "me",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
