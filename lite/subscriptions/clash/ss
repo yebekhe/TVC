@@ -119,7 +119,6 @@ dns:
 
 proxies:
   - {"name":"🇦🇹AT | ss | @OutlineVpnOfficial | 15","type":"ss","server":"212.113.106.243","port":12949,"password":"P2zxXPewlV3BlfqqYiSthvtLc","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB | ss | @kingofilter | 15","type":"ss","server":"series-a2-me.samanehha.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -127,7 +126,6 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇦🇹AT | ss | @OutlineVpnOfficial | 15'
-      - '🇬🇧GB | ss | @kingofilter | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,14 +133,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇦🇹AT | ss | @OutlineVpnOfficial | 15'
-      - '🇬🇧GB | ss | @kingofilter | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇦🇹AT | ss | @OutlineVpnOfficial | 15'
-      - '🇬🇧GB | ss | @kingofilter | 15'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
