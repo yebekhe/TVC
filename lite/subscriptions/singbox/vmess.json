@@ -106,9 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇹🇷TR | vmess | @azadi_az_inja_migzare | 14",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇺🇦UA | vmess | @oneclickvpnkeys | 8",
                 "🇨🇦CA | vmess | @prrofile_purple | 174",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
                 "🇨🇭CH | vmess | @Hope_Net | 15",
@@ -119,9 +119,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇹🇷TR | vmess | @azadi_az_inja_migzare | 14",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇺🇦UA | vmess | @oneclickvpnkeys | 8",
                 "🇨🇦CA | vmess | @prrofile_purple | 174",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
                 "🇨🇭CH | vmess | @Hope_Net | 15",
@@ -146,6 +146,33 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇹🇷TR | vmess | @azadi_az_inja_migzare | 14",
+            "type": "vmess",
+            "server": "91.228.186.161",
+            "server_port": 443,
+            "uuid": "56feb9a5-1be6-47a1-8ef3-adf9e600a8f2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
             "tag": "🇬🇧GB | vmess | @v2ray_outlineir | 0",
@@ -179,33 +206,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇦UA | vmess | @oneclickvpnkeys | 8",
-            "type": "vmess",
-            "server": "45.137.155.195",
-            "server_port": 443,
-            "uuid": "49c76bcf-3a58-43df-b1d4-2bffe9ca03b5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {
