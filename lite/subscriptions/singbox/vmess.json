@@ -114,7 +114,8 @@
                 "🏳️XX | vmess | @prrofile_purple | 182",
                 "🇺🇸US | vmess | @yaney_01 | 11",
                 "🇨🇭CH | vmess | @Hope_Net | 15",
-                "🇺🇸US | vmess | @v2Line | 6"
+                "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 18"
             ]
         },
         {
@@ -129,7 +130,8 @@
                 "🏳️XX | vmess | @prrofile_purple | 182",
                 "🇺🇸US | vmess | @yaney_01 | 11",
                 "🇨🇭CH | vmess | @Hope_Net | 15",
-                "🇺🇸US | vmess | @v2Line | 6"
+                "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 18"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -339,6 +341,40 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "ca2.xv2ray.net"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "104.16.69.145",
+            "server_port": 8443,
+            "uuid": "-tel:Mahanvpn-vip2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mahanvip.mahantu.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "mahanvip.mahantu.top"
                 }
             }
         }
