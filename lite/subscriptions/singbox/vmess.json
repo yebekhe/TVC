@@ -108,10 +108,10 @@
                 "URL-TEST",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
+                "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
-                "🇨🇭CH | vmess | @Hope_Net | 15",
-                "🇺🇸US | vmess | @v2Line | 6",
-                "🇩🇰DK | vmess | @forwardv2ray | 13"
+                "🏳️XX | vmess | @Hope_Net | 14",
+                "🇺🇸US | vmess | @v2Line | 6"
             ]
         },
         {
@@ -120,10 +120,10 @@
             "outbounds": [
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
+                "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
-                "🇨🇭CH | vmess | @Hope_Net | 15",
-                "🇺🇸US | vmess | @v2Line | 6",
-                "🇩🇰DK | vmess | @forwardv2ray | 13"
+                "🏳️XX | vmess | @Hope_Net | 14",
+                "🇺🇸US | vmess | @v2Line | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -180,6 +180,40 @@
             }
         },
         {
+            "tag": "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
+            "type": "vmess",
+            "server": "hms04.xmivideo.cfd",
+            "server_port": 443,
+            "uuid": "93ea486a-bada-42a4-ac38-d088b320fa1e",
+            "security": "auto",
+            "alter_id": 1,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
             "tag": "🇨🇦CA | vmess | @yaney_01 | 13",
             "type": "vmess",
             "server": "cn.azhz.eu.org",
@@ -214,11 +248,11 @@
             }
         },
         {
-            "tag": "🇨🇭CH | vmess | @Hope_Net | 15",
+            "tag": "🏳️XX | vmess | @Hope_Net | 14",
             "type": "vmess",
-            "server": "94.131.99.8",
-            "server_port": 47182,
-            "uuid": "81b2b630-8b6a-404f-b996-b12f13db5786",
+            "server": "mci.mosi.mosipro.ml",
+            "server_port": 443,
+            "uuid": "1BBD805D-84B2-4AE2-8E0B-B9DBAAC5FCDE",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -228,6 +262,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "Dusseldorf.kotick.site",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/speedtest",
+                "headers": {
+                    "Host": "Dusseldorf.kotick.site"
+                }
             }
         },
         {
@@ -251,30 +302,6 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "ca2.xv2ray.net"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇰DK | vmess | @forwardv2ray | 13",
-            "type": "vmess",
-            "server": "89.23.86.189",
-            "server_port": 59492,
-            "uuid": "3cd1a2f0-499f-4eb0-862a-cdd0ecd821c7",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/imzcc",
-                "headers": {
-                    "Host": ""
                 }
             }
         }
