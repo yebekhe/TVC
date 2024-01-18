@@ -105,13 +105,18 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "🇫🇮FI | hy2 | @TUICity | 12",
+                "🇳🇱NL | hy2 | @TUICity | 13"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇫🇮FI | hy2 | @TUICity | 12",
+                "🇳🇱NL | hy2 | @TUICity | 13"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -131,6 +136,52 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇮FI | hy2 | @TUICity | 12",
+            "type": "hysteria2",
+            "server": "95.217.211.216",
+            "server_port": 443,
+            "up_mbps": 0,
+            "down_mbps": 0,
+            "password": "536a1e178ea00bf2",
+            "network": "tcp",
+            "obfs": {
+                "type": "salamander",
+                "password": "05462d067f21387c"
+            },
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "www.google.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇳🇱NL | hy2 | @TUICity | 13",
+            "type": "hysteria2",
+            "server": "45.32.234.211",
+            "server_port": 443,
+            "up_mbps": 0,
+            "down_mbps": 0,
+            "password": "y0qochAspE+u-HLfrip-",
+            "network": "tcp",
+            "obfs": {
+                "type": "salamander",
+                "password": "2pU!&Brls!0exuP+!4so"
+            },
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "Google.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
         }
     ],
     "route": {
