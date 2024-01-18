@@ -111,7 +111,8 @@
                 "🇸🇬SG | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
                 "🇫🇮FI | vmess | @Hope_Net | 13",
-                "🇺🇸US | vmess | @v2Line | 6"
+                "🇺🇸US | vmess | @v2Line | 6",
+                "🇳🇱NL | vmess | @forwardv2ray | 19"
             ]
         },
         {
@@ -123,7 +124,8 @@
                 "🇸🇬SG | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
                 "🇫🇮FI | vmess | @Hope_Net | 13",
-                "🇺🇸US | vmess | @v2Line | 6"
+                "🇺🇸US | vmess | @v2Line | 6",
+                "🇳🇱NL | vmess | @forwardv2ray | 19"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -282,6 +284,40 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "ca2.xv2ray.net"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | vmess | @forwardv2ray | 19",
+            "type": "vmess",
+            "server": "154.85.1.3",
+            "server_port": 443,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/path\/1683629314915",
+                "headers": {
+                    "Host": ""
                 }
             }
         }
