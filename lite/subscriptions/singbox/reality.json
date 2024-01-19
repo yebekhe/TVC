@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | vless | @ipV2Ray | 15",
+                "🇫🇮FI | vless | @FalconPolV2rayNG | 6",
                 "🇦🇺AU | vless | @Outlinev2rayNG | 14",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇸🇪SE | vless | @FAKEOFTVC | 9",
@@ -121,6 +122,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | vless | @ipV2Ray | 15",
+                "🇫🇮FI | vless | @FalconPolV2rayNG | 6",
                 "🇦🇺AU | vless | @Outlinev2rayNG | 14",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇸🇪SE | vless | @FAKEOFTVC | 9",
@@ -175,6 +177,42 @@
                     "enabled": true,
                     "public_key": "gnd39l1nb7AvsWB11yXeyv7s1vgWj5rXxcdd2qJ_LxY",
                     "short_id": "961777e2"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇮FI | vless | @FalconPolV2rayNG | 6",
+            "type": "vless",
+            "server": "37.27.4.17",
+            "server_port": 443,
+            "uuid": "02aa594a-af2e-4b35-8a17-5986ce15c7b5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.forcespeed.fun",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "FCSi3ZigbnUJZn18TvvshvRfjjlcxpH1grw87kV6mTA",
+                    "short_id": "483211d3"
                 }
             },
             "transport": {
