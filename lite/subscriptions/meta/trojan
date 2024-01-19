@@ -121,8 +121,8 @@ dns:
 
 proxies:
   - {"name":"🇨🇦CA | trojan | @V2rayCollectorDonate | 19","type":"trojan","server":"ironone.libertasiran.cloud","port":443,"udp":false,"password":"LibertasOne*****D","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ironone.libertasiran.cloud"}
-  - {"name":"🇮🇪IE | trojan | @PrivateVPNs | 16","type":"trojan","server":"52.19.65.39","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇸🇪SE | trojan | @DirectVPN | 16","type":"trojan","server":"16.16.190.131","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇮🇪IE | trojan | @PrivateVPNs | 16","type":"trojan","server":"99.80.10.242","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇩🇪DE | trojan | @DirectVPN | 16","type":"trojan","server":"3.74.59.39","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇮🇳IN | trojan | @oneclickvpnkeys | 6","type":"trojan","server":"139.84.144.10","port":443,"udp":false,"password":"f3882346f62347359ae4343f9185f7ea","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.gpt123.one"}
 proxy-groups:
   - name: MANUAL
@@ -132,7 +132,7 @@ proxy-groups:
       - FALLBACK
       - '🇨🇦CA | trojan | @V2rayCollectorDonate | 19'
       - '🇮🇪IE | trojan | @PrivateVPNs | 16'
-      - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇩🇪DE | trojan | @DirectVPN | 16'
       - '🇮🇳IN | trojan | @oneclickvpnkeys | 6'
   - name: URL-TEST
     type: url-test
@@ -142,7 +142,7 @@ proxy-groups:
     proxies:
       - '🇨🇦CA | trojan | @V2rayCollectorDonate | 19'
       - '🇮🇪IE | trojan | @PrivateVPNs | 16'
-      - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇩🇪DE | trojan | @DirectVPN | 16'
       - '🇮🇳IN | trojan | @oneclickvpnkeys | 6'
   - name: FALLBACK
     type: fallback
@@ -151,7 +151,7 @@ proxy-groups:
     proxies:
       - '🇨🇦CA | trojan | @V2rayCollectorDonate | 19'
       - '🇮🇪IE | trojan | @PrivateVPNs | 16'
-      - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇩🇪DE | trojan | @DirectVPN | 16'
       - '🇮🇳IN | trojan | @oneclickvpnkeys | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
