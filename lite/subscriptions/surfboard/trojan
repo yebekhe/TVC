@@ -11,12 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇨🇦CA | trojan | @V2rayCollectorDonate | 19 = trojan, ironone.libertasiran.cloud, 443, password = LibertasOne*****D, udp-delay = true, skip-cert-verify = false, sni = ironone.libertasiran.cloud, ws = false
 🇮🇪IE | trojan | @PrivateVPNs | 16 = trojan, 52.19.65.39, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇸🇪SE | trojan | @DirectVPN | 16 = trojan, 16.16.190.131, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇮🇳IN | trojan | @oneclickvpnkeys | 6 = trojan, 139.84.144.10, 443, password = f3882346f62347359ae4343f9185f7ea, udp-delay = true, skip-cert-verify = false, sni = www.gpt123.one, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇮🇪IE | trojan | @PrivateVPNs | 16,🇸🇪SE | trojan | @DirectVPN | 16
-URL-TEST = url-test,🇮🇪IE | trojan | @PrivateVPNs | 16,🇸🇪SE | trojan | @DirectVPN | 16
-FALLBACK = fallback,🇮🇪IE | trojan | @PrivateVPNs | 16,🇸🇪SE | trojan | @DirectVPN | 16
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇮🇪IE | trojan | @PrivateVPNs | 16,🇸🇪SE | trojan | @DirectVPN | 16,🇮🇳IN | trojan | @oneclickvpnkeys | 6
+URL-TEST = url-test,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇮🇪IE | trojan | @PrivateVPNs | 16,🇸🇪SE | trojan | @DirectVPN | 16,🇮🇳IN | trojan | @oneclickvpnkeys | 6
+FALLBACK = fallback,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇮🇪IE | trojan | @PrivateVPNs | 16,🇸🇪SE | trojan | @DirectVPN | 16,🇮🇳IN | trojan | @oneclickvpnkeys | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
