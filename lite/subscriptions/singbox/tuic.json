@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇬🇧GB | tuic | @irancpi_vpn | 0",
                 "🇺🇸US | tuic | @TUICity | 26"
             ]
         },
@@ -113,6 +114,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇬🇧GB | tuic | @irancpi_vpn | 0",
                 "🇺🇸US | tuic | @TUICity | 26"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -134,6 +136,29 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇬🇧GB | tuic | @irancpi_vpn | 0",
+            "type": "tuic",
+            "server": "64.176.186.193",
+            "server_port": 443,
+            "uuid": "d1bb3aae-ace9-4b0f-9ae5-85ab73acbb43",
+            "password": "Mahsaamini",
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": true,
+                "server_name": "",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
         },
         {
             "tag": "🇺🇸US | tuic | @TUICity | 26",
