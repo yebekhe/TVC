@@ -110,9 +110,10 @@
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇸🇬SG | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
-                "🏳️XX | vmess | @Hope_Net | 18",
+                "🇺🇸US | vmess | @Hope_Net | 18",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇳🇱NL | vmess | @FAKEOFTVC | 9",
+                "🇨🇦CA | vmess | @kingofilter | 10",
                 "🇹🇷TR | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | vmess | @ROMAX_VPN | 9"
             ]
@@ -125,9 +126,10 @@
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇸🇬SG | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
-                "🏳️XX | vmess | @Hope_Net | 18",
+                "🇺🇸US | vmess | @Hope_Net | 18",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇳🇱NL | vmess | @FAKEOFTVC | 9",
+                "🇨🇦CA | vmess | @kingofilter | 10",
                 "🇹🇷TR | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | vmess | @ROMAX_VPN | 9"
             ],
@@ -251,11 +253,11 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @Hope_Net | 18",
+            "tag": "🇺🇸US | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "acabacb-abac-caab-dbca-abaccaabbcbc",
+            "server": "52.39.18.184",
+            "server_port": 8086,
+            "uuid": "73c34477-9bbc-44a7-b480-34b78f9a4357",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -265,6 +267,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "backup-v-01.deerlovessunnyday.asia",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/data\/",
+                "headers": {
+                    "Host": "backup-v-01.deerlovessunnyday.asia"
+                }
             }
         },
         {
@@ -306,6 +325,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @kingofilter | 10",
+            "type": "vmess",
+            "server": "srv1.hamedgeek.sbs",
+            "server_port": 2083,
+            "uuid": "b36e93b8-21b4-4495-ac81-0109f65cb1ad",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kingofilter2.hamedgeek.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "kingofilter2.hamedgeek.sbs"
+                }
             }
         },
         {
