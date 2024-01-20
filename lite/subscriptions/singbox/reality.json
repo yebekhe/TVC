@@ -108,8 +108,8 @@
                 "URL-TEST",
                 "🇮🇷IR | vless | @EliV2ray | 18",
                 "🇩🇪DE | vless | @ipV2Ray | 15",
-                "🇫🇮FI | vless | @V2rayCollectorDonate | 19",
                 "🇫🇮FI | vless | @FalconPolV2rayNG | 6",
+                "🇫🇮FI | vless | @Outlinev2rayNG | 15",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇸🇪SE | vless | @kiava | 2",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -123,8 +123,8 @@
             "outbounds": [
                 "🇮🇷IR | vless | @EliV2ray | 18",
                 "🇩🇪DE | vless | @ipV2Ray | 15",
-                "🇫🇮FI | vless | @V2rayCollectorDonate | 19",
                 "🇫🇮FI | vless | @FalconPolV2rayNG | 6",
+                "🇫🇮FI | vless | @Outlinev2rayNG | 15",
                 "🏳️XX | vless | @Capital_NET | 52",
                 "🇸🇪SE | vless | @kiava | 2",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -217,42 +217,6 @@
             }
         },
         {
-            "tag": "🇫🇮FI | vless | @V2rayCollectorDonate | 19",
-            "type": "vless",
-            "server": "95.216.208.84",
-            "server_port": 443,
-            "uuid": "691a087a-f23c-4162-99f5-6d3270a08108",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.v2rayservice.store",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "GLhd4x0GDHnXcdmZ9zE3YwCcd40GWBrqXs6pJQhwVkg",
-                    "short_id": "54052ca6"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🇫🇮FI | vless | @FalconPolV2rayNG | 6",
             "type": "vless",
             "server": "37.27.4.17",
@@ -286,6 +250,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇮FI | vless | @Outlinev2rayNG | 15",
+            "type": "vless",
+            "server": "finland.notmmdg.com",
+            "server_port": 8443,
+            "uuid": "e15f76e9-870d-4237-b4f0-7d403fa9f31c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "notmmdg.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
             }
         },
         {
