@@ -118,8 +118,8 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 18","type":"trojan","server":"13.36.42.134","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇮🇪IE | trojan | @DirectVPN | 18","type":"trojan","server":"54.216.19.183","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
+  - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 18","type":"trojan","server":"35.181.179.199","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇺🇸US | trojan | @DirectVPN | 18","type":"trojan","server":"44.228.132.115","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇨🇦CA | trojan | @kingofilter | 12","type":"trojan","server":"104.17.186.227","port":443,"udp":false,"password":"Mahanvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"mahanvip.mahantu.top"}
 proxy-groups:
   - name: MANUAL
@@ -128,7 +128,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
-      - '🇮🇪IE | trojan | @DirectVPN | 18'
+      - '🇺🇸US | trojan | @DirectVPN | 18'
       - '🇨🇦CA | trojan | @kingofilter | 12'
   - name: URL-TEST
     type: url-test
@@ -137,7 +137,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
-      - '🇮🇪IE | trojan | @DirectVPN | 18'
+      - '🇺🇸US | trojan | @DirectVPN | 18'
       - '🇨🇦CA | trojan | @kingofilter | 12'
   - name: FALLBACK
     type: fallback
@@ -145,7 +145,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
-      - '🇮🇪IE | trojan | @DirectVPN | 18'
+      - '🇺🇸US | trojan | @DirectVPN | 18'
       - '🇨🇦CA | trojan | @kingofilter | 12'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
