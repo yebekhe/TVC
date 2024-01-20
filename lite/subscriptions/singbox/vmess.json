@@ -106,10 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇸🇬SG | vmess | @DeamNet_Proxy | 19",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 6",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
                 "🏳️XX | vmess | @Hope_Net | 19",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
@@ -122,10 +122,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇸🇬SG | vmess | @DeamNet_Proxy | 19",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 6",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
                 "🏳️XX | vmess | @Hope_Net | 19",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
@@ -152,6 +152,40 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
+            "type": "vmess",
+            "server": "172.67.206.124",
+            "server_port": 443,
+            "uuid": "4fa35ea4-668e-4d7b-9bbc-b83681060617",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "rlhrwtqusd.site",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/kwhmvws",
+                "headers": {
+                    "Host": "rlhrwtqusd.site"
+                }
+            }
         },
         {
             "tag": "🇬🇧GB | vmess | @v2ray_outlineir | 0",
@@ -215,40 +249,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "146.190.89.218"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 6",
-            "type": "vmess",
-            "server": "172.67.206.124",
-            "server_port": 443,
-            "uuid": "4fa35ea4-668e-4d7b-9bbc-b83681060617",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "rlhrwtqusd.site",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/kwhmvws",
-                "headers": {
-                    "Host": "rlhrwtqusd.site"
                 }
             }
         },
