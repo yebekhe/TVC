@@ -105,13 +105,16 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "🇺🇸US | hy2 | @FAKEOFTVC | 3"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇺🇸US | hy2 | @FAKEOFTVC | 3"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -131,6 +134,29 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇺🇸US | hy2 | @FAKEOFTVC | 3",
+            "type": "hysteria2",
+            "server": "66.135.28.59",
+            "server_port": 443,
+            "up_mbps": 0,
+            "down_mbps": 0,
+            "password": "f6e4b19a3110d19d",
+            "network": "tcp",
+            "obfs": {
+                "type": "salamander",
+                "password": "8c3ce17b"
+            },
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "T.me\/IP_CF",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
         }
     ],
     "route": {
