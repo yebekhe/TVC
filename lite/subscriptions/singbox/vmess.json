@@ -115,7 +115,8 @@
                 "🏳️XX | vmess | @Hope_Net | 17",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇨🇦CA | vmess | @ROMAX_VPN | 11"
+                "🇭🇰HK | vmess | @forwardv2ray | 18",
+                "🇺🇸US | vmess | @ROMAX_VPN | 11"
             ]
         },
         {
@@ -131,7 +132,8 @@
                 "🏳️XX | vmess | @Hope_Net | 17",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇨🇦CA | vmess | @ROMAX_VPN | 11"
+                "🇭🇰HK | vmess | @forwardv2ray | 18",
+                "🇺🇸US | vmess | @ROMAX_VPN | 11"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -207,11 +209,11 @@
         {
             "tag": "🇨🇳CN | vmess | @mftizi | 19",
             "type": "vmess",
-            "server": "yes.cnmjcn.net",
-            "server_port": 16618,
-            "uuid": "c2c76420-257f-492a-b20f-6560f3bfa78d",
+            "server": "112.28.208.10",
+            "server_port": 46602,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 64,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -219,21 +221,14 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
             "tag": "🇺🇸US | vmess | @DeamNet_Proxy | 19",
             "type": "vmess",
-            "server": "132.145.132.227",
-            "server_port": 37121,
-            "uuid": "93845b50-26f6-4203-f5ad-4d231d4e8f45",
+            "server": "47.88.89.106",
+            "server_port": 80,
+            "uuid": "86f8f25d-9d26-41a6-a75b-e0ef992cc74a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -246,9 +241,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/rxrsOUmNbuTJCk4izFEHWrb9qm",
                 "headers": {
-                    "Host": "132.145.132.227"
+                    "Host": "47.88.89.106"
                 }
             }
         },
@@ -386,7 +381,41 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @ROMAX_VPN | 11",
+            "tag": "🇭🇰HK | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "8.217.93.104",
+            "server_port": 443,
+            "uuid": "dcd70249-06fa-4fe7-aaed-cbba86ac125b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sptufp5n3o19imic.iwebsocket.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/stream",
+                "headers": {
+                    "Host": "sptufp5n3o19imic.iwebsocket.com"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | vmess | @ROMAX_VPN | 11",
             "type": "vmess",
             "server": "discord.gg",
             "server_port": 443,
