@@ -108,11 +108,12 @@
                 "URL-TEST",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
+                "🇯🇵JP | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
                 "🏳️XX | vmess | @Hope_Net | 17",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇭CH | vmess | @eliya_chiter0 | 2",
-                "🇨🇦CA | vmess | @ROMAX_VPN | 12"
+                "🇨🇦CA | vmess | @ROMAX_VPN | 13"
             ]
         },
         {
@@ -121,11 +122,12 @@
             "outbounds": [
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
+                "🇯🇵JP | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
                 "🏳️XX | vmess | @Hope_Net | 17",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇭CH | vmess | @eliya_chiter0 | 2",
-                "🇨🇦CA | vmess | @ROMAX_VPN | 12"
+                "🇨🇦CA | vmess | @ROMAX_VPN | 13"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -179,6 +181,30 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇯🇵JP | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "109.123.230.157",
+            "server_port": 80,
+            "uuid": "877aa2a8-5854-4cb2-9aba-4a1413a6b2de",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/takeshi.wiki",
+                "headers": {
+                    "Host": "109.123.230.157"
+                }
             }
         },
         {
@@ -274,7 +300,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @ROMAX_VPN | 12",
+            "tag": "🇨🇦CA | vmess | @ROMAX_VPN | 13",
             "type": "vmess",
             "server": "discord.gg",
             "server_port": 443,
