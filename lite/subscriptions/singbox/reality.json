@@ -108,8 +108,9 @@
                 "URL-TEST",
                 "🇸🇪SE | vless | @VmessProtocol | 12",
                 "🏳️XX | vless | @fnet00 | 14",
-                "🏳️XX | vless | @Capital_NET | 52",
+                "🇸🇪SE | vless | @Capital_NET | 51",
                 "🇫🇮FI | vless | @flyv2ray | 18",
+                "🇫🇮FI | vless | @forwardv2ray | 9",
                 "🇸🇪SE | vless | @kiava | 3",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
@@ -122,8 +123,9 @@
             "outbounds": [
                 "🇸🇪SE | vless | @VmessProtocol | 12",
                 "🏳️XX | vless | @fnet00 | 14",
-                "🏳️XX | vless | @Capital_NET | 52",
+                "🇸🇪SE | vless | @Capital_NET | 51",
                 "🇫🇮FI | vless | @flyv2ray | 18",
+                "🇫🇮FI | vless | @forwardv2ray | 9",
                 "🇸🇪SE | vless | @kiava | 3",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
@@ -215,11 +217,11 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @Capital_NET | 52",
+            "tag": "🇸🇪SE | vless | @Capital_NET | 51",
             "type": "vless",
-            "server": "zhina.abiiidar.tech",
-            "server_port": 443,
-            "uuid": "9bf8930d-878a-420b-bbf5-44a9e4b5b86d",
+            "server": "77.91.84.45",
+            "server_port": 2052,
+            "uuid": "f8198e44-c57b-413c-ad86-9944b013561f",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -229,7 +231,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.tradingview.com",
+                "server_name": "atrsun.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -238,8 +240,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "90WvSEDjTWdVj1U5JPXphB6VZ4ojR42tZN7PuEeRqXM",
-                    "short_id": "dc838e556e8a86bd"
+                    "public_key": "lfa88ptz3CMPtFPNsE108MYc4xTNIhm_DGdyvzX54AQ",
+                    "short_id": "d3414c877351cefd"
                 }
             }
         },
@@ -270,6 +272,42 @@
                     "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "short_id": ""
                 }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | vless | @forwardv2ray | 9",
+            "type": "vless",
+            "server": "65.108.157.155",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "92Kj9GV4usHG2018Yw8oHpvj6-Xl3vhHfAbZWscY-2c",
+                    "short_id": "29abbc3b43"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
