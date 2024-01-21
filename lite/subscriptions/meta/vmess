@@ -120,12 +120,12 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇨🇦CA | vmess | @V2rayCollectorDonate | 19","type":"vmess","server":"glweidf.cfd","port":"443","cipher":"auto","uuid":"1052f24e-7b09-45eb-b0c5-d858eb124192","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"glweidf.cfd"}}}
   - {"name":"🇬🇧GB | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇳CN | vmess | @mftizi | 19","type":"vmess","server":"112.28.208.10","port":"46602","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🏳️XX | vmess | @oneclickvpnkeys | 6","type":"vmess","server":"world8.freedomisnear.fun","port":"2052","cipher":"auto","uuid":"b3209459-5d66-4082-a70d-472811aff2b3","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray","headers":{"host":"world8.freedomisnear.fun"}}}
   - {"name":"🇨🇦CA | vmess | @yaney_01 | 13","type":"vmess","server":"cn.azhz.eu.org","port":"443","cipher":"none","uuid":"04e9bbe9-ad2f-4d51-bc46-8a46d0b8068a","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/juzibaipiao-vm","headers":{"host":"insights-exclusively-therefore-ds.trycloudflare.com"}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
+  - {"name":"🇨🇦CA | vmess | @eliya_chiter0 | 1","type":"vmess","server":"glweidf.cfd","port":"443","cipher":"auto","uuid":"1052f24e-7b09-45eb-b0c5-d858eb124192","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"glweidf.cfd"}}}
   - {"name":"🇨🇦CA | vmess | @ROMAX_VPN | 12","type":"vmess","server":"discord.gg","port":"443","cipher":"auto","uuid":"8b745f74-c322-48c0-b27c-cb6a1d871e86","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ae8e857abf1d","headers":{"host":"periodically-microwave-firms-abc.trycloudflare.com"}}}
 proxy-groups:
   - name: MANUAL
@@ -133,12 +133,12 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇨🇦CA | vmess | @V2rayCollectorDonate | 19'
       - '🇬🇧GB | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | vmess | @mftizi | 19'
       - '🏳️XX | vmess | @oneclickvpnkeys | 6'
       - '🇨🇦CA | vmess | @yaney_01 | 13'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇦CA | vmess | @eliya_chiter0 | 1'
       - '🇨🇦CA | vmess | @ROMAX_VPN | 12'
   - name: URL-TEST
     type: url-test
@@ -146,24 +146,24 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇨🇦CA | vmess | @V2rayCollectorDonate | 19'
       - '🇬🇧GB | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | vmess | @mftizi | 19'
       - '🏳️XX | vmess | @oneclickvpnkeys | 6'
       - '🇨🇦CA | vmess | @yaney_01 | 13'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇦CA | vmess | @eliya_chiter0 | 1'
       - '🇨🇦CA | vmess | @ROMAX_VPN | 12'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇨🇦CA | vmess | @V2rayCollectorDonate | 19'
       - '🇬🇧GB | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | vmess | @mftizi | 19'
       - '🏳️XX | vmess | @oneclickvpnkeys | 6'
       - '🇨🇦CA | vmess | @yaney_01 | 13'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇦CA | vmess | @eliya_chiter0 | 1'
       - '🇨🇦CA | vmess | @ROMAX_VPN | 12'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}

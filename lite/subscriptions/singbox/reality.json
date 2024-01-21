@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇬🇧GB | vless | @V2rayCollectorDonate | 19",
                 "🇫🇮FI | vless | @FalconPolV2rayNG | 6",
                 "🇸🇪SE | vless | @VmessProtocol | 12",
                 "🏳️XX | vless | @fnet00 | 14",
@@ -120,6 +121,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇬🇧GB | vless | @V2rayCollectorDonate | 19",
                 "🇫🇮FI | vless | @FalconPolV2rayNG | 6",
                 "🇸🇪SE | vless | @VmessProtocol | 12",
                 "🏳️XX | vless | @fnet00 | 14",
@@ -148,6 +150,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇬🇧GB | vless | @V2rayCollectorDonate | 19",
+            "type": "vless",
+            "server": "xn--mgby2ch93cpf.xn--rgb.website",
+            "server_port": 443,
+            "uuid": "71a7db14-1b6f-5aec-9e5d-9bd5f8beabab",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "xn--mgby2ch93cpf.xn--rgb.website",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QnGXBXIib_bQ1TiAq1V9CrVra0kIKIiZmu7E4lO3N2I",
+                    "short_id": "a56abbb54e4fa948"
+                }
+            }
         },
         {
             "tag": "🇫🇮FI | vless | @FalconPolV2rayNG | 6",
