@@ -107,11 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
-                "🇨🇳CN | vmess | @mftizi | 19",
+                "🇰🇷KR | vmess | @mftizi | 19",
                 "🇯🇵JP | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
                 "🏳️XX | vmess | @Hope_Net | 19",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 19",
                 "🇨🇭CH | vmess | @FAKEOFTVC | 2",
                 "🇨🇭CH | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | vmess | @ROMAX_VPN | 13"
@@ -122,11 +123,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
-                "🇨🇳CN | vmess | @mftizi | 19",
+                "🇰🇷KR | vmess | @mftizi | 19",
                 "🇯🇵JP | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | vmess | @yaney_01 | 13",
                 "🏳️XX | vmess | @Hope_Net | 19",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 19",
                 "🇨🇭CH | vmess | @FAKEOFTVC | 2",
                 "🇨🇭CH | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | vmess | @ROMAX_VPN | 13"
@@ -169,13 +171,13 @@
             }
         },
         {
-            "tag": "🇨🇳CN | vmess | @mftizi | 19",
+            "tag": "🇰🇷KR | vmess | @mftizi | 19",
             "type": "vmess",
-            "server": "112.28.208.10",
-            "server_port": 46602,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "server": "muran-kr.qrfly.me",
+            "server_port": 20254,
+            "uuid": "007be9ad-8db6-4164-fc49-49989bbcba96",
             "security": "auto",
-            "alter_id": 64,
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -183,6 +185,13 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
@@ -212,9 +221,9 @@
         {
             "tag": "🇨🇦CA | vmess | @yaney_01 | 13",
             "type": "vmess",
-            "server": "cn.azhz.eu.org",
+            "server": "162.159.153.224",
             "server_port": 443,
-            "uuid": "04e9bbe9-ad2f-4d51-bc46-8a46d0b8068a",
+            "uuid": "a8dad411-43a2-4a07-b30b-0d77bf1510f2",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -227,7 +236,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "cn.azhz.eu.org",
+                "server_name": "162.159.153.224",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -237,9 +246,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/juzibaipiao-vm",
+                "path": "\/a8dad411-43a2-4a07-b30b-0d77bf1510f2-vmess",
                 "headers": {
-                    "Host": "cn.azhz.eu.org"
+                    "Host": "162.159.153.224"
                 }
             }
         },
@@ -248,7 +257,7 @@
             "type": "vmess",
             "server": "127.0.0.1",
             "server_port": 8080,
-            "uuid": "abcacab-cbaa-aabc-acbd-cbbaccbcbaaa",
+            "uuid": "baabacc-abca-abac-bcda-babacbacccba",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -281,6 +290,30 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "ca2.xv2ray.net"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 19",
+            "type": "vmess",
+            "server": "JD-01.OnlineWebsitenet.ir",
+            "server_port": 8080,
+            "uuid": "1623b9a6-953e-469d-b38a-e1ce7407b571",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "JD-01.OnlineWebsitenet.ir"
                 }
             }
         },

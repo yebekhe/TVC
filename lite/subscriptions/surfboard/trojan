@@ -11,13 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇬🇧GB | trojan | @PrivateVPNs | 14 = trojan, 52.56.44.252, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
-🇮🇪IE | trojan | @DirectVPN | 14 = trojan, 52.19.181.112, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇫🇷FR | trojan | @PrivateVPNs | 17 = trojan, 13.36.156.228, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇬🇧GB | trojan | @DirectVPN | 17 = trojan, 18.169.174.246, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇭🇰HK | trojan | @oneclickvpnkeys | 9 = trojan, hk.zgc.su, 567, password = 94744160-abe9-44ca-b085-0f6994e1944e, udp-delay = true, skip-cert-verify = false, sni = hk.zgc.su, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | trojan | @PrivateVPNs | 14,🇮🇪IE | trojan | @DirectVPN | 14,🇭🇰HK | trojan | @oneclickvpnkeys | 9
-URL-TEST = url-test,🇬🇧GB | trojan | @PrivateVPNs | 14,🇮🇪IE | trojan | @DirectVPN | 14,🇭🇰HK | trojan | @oneclickvpnkeys | 9
-FALLBACK = fallback,🇬🇧GB | trojan | @PrivateVPNs | 14,🇮🇪IE | trojan | @DirectVPN | 14,🇭🇰HK | trojan | @oneclickvpnkeys | 9
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 17,🇬🇧GB | trojan | @DirectVPN | 17,🇭🇰HK | trojan | @oneclickvpnkeys | 9
+URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 17,🇬🇧GB | trojan | @DirectVPN | 17,🇭🇰HK | trojan | @oneclickvpnkeys | 9
+FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 17,🇬🇧GB | trojan | @DirectVPN | 17,🇭🇰HK | trojan | @oneclickvpnkeys | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
