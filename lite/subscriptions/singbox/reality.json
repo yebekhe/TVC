@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇸🇪SE | vless | @VmessProtocol | 12",
                 "🏳️XX | vless | @fnet00 | 14",
                 "🇸🇪SE | vless | @Capital_NET | 49",
@@ -121,7 +120,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇸🇪SE | vless | @VmessProtocol | 12",
                 "🏳️XX | vless | @fnet00 | 14",
                 "🇸🇪SE | vless | @Capital_NET | 49",
@@ -150,42 +148,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | vless | @ARv2ray | 13",
-            "type": "vless",
-            "server": "142.132.167.68",
-            "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.greenpepper.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "yrfacqo_BgpOTVCIPP0nG8tMzL8u8ficQukacpv5xBM",
-                    "short_id": "11e06f8d18"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🇸🇪SE | vless | @VmessProtocol | 12",
