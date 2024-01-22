@@ -11,12 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇬🇧GB | ss | @servermomo | 12 = ss, 51.142.73.20, 6961, encrypt-method = chacha20-ietf-poly1305, password = tAoWzuKvNOPrsLc4fAEOno
+🇵🇱PL | ss | @DeamNet_Proxy | 18 = ss, 51.77.53.200, 8009, encrypt-method = aes-256-gcm, password = XKFKl2rULjIp74
 🇺🇸US | ss | @OutlineVpnOfficial | 17 = ss, www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 2443, encrypt-method = aes-256-gcm, password = hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=
 🇬🇧GB | ss | @proxy_mtm | 7 = ss, series-a2-mec.samanehha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = u17T3BvpYaaiuW2c
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇬🇧GB | ss | @proxy_mtm | 7
-URL-TEST = url-test,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇬🇧GB | ss | @proxy_mtm | 7
-FALLBACK = fallback,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇬🇧GB | ss | @proxy_mtm | 7
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | ss | @servermomo | 12,🇵🇱PL | ss | @DeamNet_Proxy | 18,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇬🇧GB | ss | @proxy_mtm | 7
+URL-TEST = url-test,🇬🇧GB | ss | @servermomo | 12,🇵🇱PL | ss | @DeamNet_Proxy | 18,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇬🇧GB | ss | @proxy_mtm | 7
+FALLBACK = fallback,🇬🇧GB | ss | @servermomo | 12,🇵🇱PL | ss | @DeamNet_Proxy | 18,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇬🇧GB | ss | @proxy_mtm | 7
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
