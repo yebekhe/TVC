@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | tuic | @FAKEOFTVC | 3",
                 "🇺🇸US | tuic | @TUICity | 26"
             ]
         },
@@ -114,7 +113,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | tuic | @FAKEOFTVC | 3",
                 "🇺🇸US | tuic | @TUICity | 26"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -136,29 +134,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇺🇸US | tuic | @FAKEOFTVC | 3",
-            "type": "tuic",
-            "server": "64.110.25.10",
-            "server_port": 11227,
-            "uuid": "764b539f-2d3c-4772-9731-5ebf6984af98",
-            "password": "dongtaiwang.com",
-            "congestion_control": "bbr",
-            "udp_relay_mode": "native",
-            "zero_rtt_handshake": false,
-            "heartbeat": "10s",
-            "network": "tcp",
-            "tls": {
-                "enabled": true,
-                "disable_sni": false,
-                "server_name": "bing.com",
-                "insecure": true,
-                "alpn": [
-                    "h3",
-                    "spdy\/3.1"
-                ]
-            }
         },
         {
             "tag": "🇺🇸US | tuic | @TUICity | 26",
