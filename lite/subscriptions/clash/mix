@@ -119,13 +119,14 @@ dns:
 
 proxies:
   - {"name":"🇬🇧GB | ss | @servermomo | 12","type":"ss","server":"51.142.73.20","port":6961,"password":"tAoWzuKvNOPrsLc4fAEOno","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 18","type":"trojan","server":"13.37.9.17","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇬🇧GB | trojan | @DirectVPN | 18","type":"trojan","server":"18.171.124.136","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 18","type":"trojan","server":"15.188.133.105","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇬🇧GB | trojan | @DirectVPN | 18","type":"trojan","server":"3.11.60.100","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇬🇧GB | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳CN | vmess | @mftizi | 19","type":"vmess","server":"112.28.208.10","port":"46602","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇵🇱PL | ss | @DeamNet_Proxy | 18","type":"ss","server":"51.77.53.200","port":8008,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
-  - {"name":"🇬🇧GB | ss | @proxy_mtm | 7","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB | ss | @proxy_mtm | 8","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇨🇦CA | vmess | @ROMAX_VPN | 14","type":"vmess","server":"discord.gg","port":"443","cipher":"auto","uuid":"8b745f74-c322-48c0-b27c-cb6a1d871e86","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ae8e857abf1d","headers":{"host":"periodically-microwave-firms-abc.trycloudflare.com"}}}
 proxy-groups:
   - name: MANUAL
@@ -137,10 +138,11 @@ proxy-groups:
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
       - '🇬🇧GB | trojan | @DirectVPN | 18'
       - '🇬🇧GB | vmess | @v2ray_outlineir | 0'
+      - '🇨🇳CN | vmess | @mftizi | 19'
       - '🇵🇱PL | ss | @DeamNet_Proxy | 18'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇬🇧GB | ss | @proxy_mtm | 7'
+      - '🇬🇧GB | ss | @proxy_mtm | 8'
       - '🇨🇦CA | vmess | @ROMAX_VPN | 14'
   - name: URL-TEST
     type: url-test
@@ -152,10 +154,11 @@ proxy-groups:
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
       - '🇬🇧GB | trojan | @DirectVPN | 18'
       - '🇬🇧GB | vmess | @v2ray_outlineir | 0'
+      - '🇨🇳CN | vmess | @mftizi | 19'
       - '🇵🇱PL | ss | @DeamNet_Proxy | 18'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇬🇧GB | ss | @proxy_mtm | 7'
+      - '🇬🇧GB | ss | @proxy_mtm | 8'
       - '🇨🇦CA | vmess | @ROMAX_VPN | 14'
   - name: FALLBACK
     type: fallback
@@ -166,10 +169,11 @@ proxy-groups:
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
       - '🇬🇧GB | trojan | @DirectVPN | 18'
       - '🇬🇧GB | vmess | @v2ray_outlineir | 0'
+      - '🇨🇳CN | vmess | @mftizi | 19'
       - '🇵🇱PL | ss | @DeamNet_Proxy | 18'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇬🇧GB | ss | @proxy_mtm | 7'
+      - '🇬🇧GB | ss | @proxy_mtm | 8'
       - '🇨🇦CA | vmess | @ROMAX_VPN | 14'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
