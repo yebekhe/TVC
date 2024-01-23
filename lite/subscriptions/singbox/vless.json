@@ -118,7 +118,7 @@
                 "🇨🇦CA | vless | @ARv2ray | 13",
                 "🇨🇦CA | vless | @Lockey_vpn | 9",
                 "🇺🇸US | vless | @free_v2rayyy | 4",
-                "🇨🇷CR | vless | @lightning6 | 38",
+                "🇺🇸US | vless | @lightning6 | 38",
                 "🇨🇷CR | vless | @V2rayNGmat | 3",
                 "🇺🇸US | vless | @vpn_xw | 0",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
@@ -152,7 +152,7 @@
                 "🇸🇪SE | vless | @Capital_NET | 49",
                 "🇨🇷CR | vless | @Capoit | 9",
                 "🇨🇷CR | vless | @FreakConfig | 5",
-                "🇨🇷CR | vless | @flyv2ray | 21",
+                "🇺🇸US | vless | @flyv2ray | 21",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇷CR | vless | @mehrosaboran | 14",
                 "🇸🇪SE | vless | @kiava | 4",
@@ -183,7 +183,7 @@
                 "🇨🇦CA | vless | @ARv2ray | 13",
                 "🇨🇦CA | vless | @Lockey_vpn | 9",
                 "🇺🇸US | vless | @free_v2rayyy | 4",
-                "🇨🇷CR | vless | @lightning6 | 38",
+                "🇺🇸US | vless | @lightning6 | 38",
                 "🇨🇷CR | vless | @V2rayNGmat | 3",
                 "🇺🇸US | vless | @vpn_xw | 0",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
@@ -217,7 +217,7 @@
                 "🇸🇪SE | vless | @Capital_NET | 49",
                 "🇨🇷CR | vless | @Capoit | 9",
                 "🇨🇷CR | vless | @FreakConfig | 5",
-                "🇨🇷CR | vless | @flyv2ray | 21",
+                "🇺🇸US | vless | @flyv2ray | 21",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇷CR | vless | @mehrosaboran | 14",
                 "🇸🇪SE | vless | @kiava | 4",
@@ -604,7 +604,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @lightning6 | 38",
+            "tag": "🇺🇸US | vless | @lightning6 | 38",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 2083,
@@ -1228,8 +1228,8 @@
             "tag": "🇨🇷CR | vless | @V2RayTz | 15",
             "type": "vless",
             "server": "190.93.246.225",
-            "server_port": 2083,
-            "uuid": "6ff5cff3-b6c0-4945-de42-b72e5493e0d3",
+            "server_port": 8880,
+            "uuid": "c61c6f73-2049-4710-8515-8375ff406213",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1237,22 +1237,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "liV2helc.LIGHTNING6.IR",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "@LIGHTNING6",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/@LIGHTNING6",
+                "headers": {
+                    "Host": "190.93.246.225"
+                }
             }
         },
         {
@@ -1537,7 +1527,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @flyv2ray | 21",
+            "tag": "🇺🇸US | vless | @flyv2ray | 21",
             "type": "vless",
             "server": "V2ray.motorcycles",
             "server_port": 80,
