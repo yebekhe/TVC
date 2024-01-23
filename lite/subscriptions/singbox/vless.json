@@ -139,14 +139,13 @@
                 "🇨🇦CA | vless | @ShadowProxy66 | 53",
                 "🇨🇦CA | vless | @ServerNett | 12",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
-                "🇨🇦CA | vless | @v2ray_swhil | 24",
+                "🇨🇦CA | vless | @v2ray_swhil | 23",
                 "🇨🇦CA | vless | @proxyymeliii | 18",
                 "🇮🇷IR | vless | @vless_vmess | 4",
                 "🇨🇦CA | vless | @MTConfig | 18",
                 "🇨🇦CA | vless | @V2RayTz | 14",
                 "🇨🇷CR | vless | @DailyV2RY | 151",
                 "🇮🇷IR | vless | @sinabigo | 6",
-                "🇨🇦CA | vless | @MehradLearn | 10",
                 "🇺🇸US | vless | @lrnbymaa | 8",
                 "🇨🇦CA | vless | @proxystore11 | 20",
                 "🇺🇸US | vless | @free1_vpn | 0",
@@ -158,7 +157,7 @@
                 "🇨🇷CR | vless | @Capoit | 4",
                 "🇨🇦CA | vless | @FreakConfig | 7",
                 "🇨🇦CA | vless | @flyv2ray | 21",
-                "🇨🇦CA | vless | @forwardv2ray | 13",
+                "🇨🇦CA | vless | @forwardv2ray | 16",
                 "🇨🇦CA | vless | @FAKEOFTVC | 0",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇷CR | vless | @mehrosaboran | 15",
@@ -210,14 +209,13 @@
                 "🇨🇦CA | vless | @ShadowProxy66 | 53",
                 "🇨🇦CA | vless | @ServerNett | 12",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
-                "🇨🇦CA | vless | @v2ray_swhil | 24",
+                "🇨🇦CA | vless | @v2ray_swhil | 23",
                 "🇨🇦CA | vless | @proxyymeliii | 18",
                 "🇮🇷IR | vless | @vless_vmess | 4",
                 "🇨🇦CA | vless | @MTConfig | 18",
                 "🇨🇦CA | vless | @V2RayTz | 14",
                 "🇨🇷CR | vless | @DailyV2RY | 151",
                 "🇮🇷IR | vless | @sinabigo | 6",
-                "🇨🇦CA | vless | @MehradLearn | 10",
                 "🇺🇸US | vless | @lrnbymaa | 8",
                 "🇨🇦CA | vless | @proxystore11 | 20",
                 "🇺🇸US | vless | @free1_vpn | 0",
@@ -229,7 +227,7 @@
                 "🇨🇷CR | vless | @Capoit | 4",
                 "🇨🇦CA | vless | @FreakConfig | 7",
                 "🇨🇦CA | vless | @flyv2ray | 21",
-                "🇨🇦CA | vless | @forwardv2ray | 13",
+                "🇨🇦CA | vless | @forwardv2ray | 16",
                 "🇨🇦CA | vless | @FAKEOFTVC | 0",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇷CR | vless | @mehrosaboran | 15",
@@ -1147,11 +1145,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @v2ray_swhil | 24",
+            "tag": "🇨🇦CA | vless | @v2ray_swhil | 23",
             "type": "vless",
-            "server": "Tunelserver.myelf.me",
-            "server_port": 2087,
-            "uuid": "Tel-tunelserver",
+            "server": "zula.ir",
+            "server_port": 80,
+            "uuid": "f526e941-52ac-4d28-ba49-5ba2fc0a984b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1159,22 +1157,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "elllav.elfzx.me",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "@TUELSERVER",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/vless",
+                "headers": {
+                    "Host": "zula.ir"
+                }
             }
         },
         {
@@ -1317,37 +1305,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vless | @MehradLearn | 10",
-            "type": "vless",
-            "server": "www.unpkg.com",
-            "server_port": 443,
-            "uuid": "b9ad895b-12ac-40fc-a5ac-a5b2a1285001",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "3k.pureboy.eu.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "3k.pureboy.eu.org"
-                }
             }
         },
         {
@@ -1636,8 +1593,8 @@
         {
             "tag": "🇨🇦CA | vless | @flyv2ray | 21",
             "type": "vless",
-            "server": "Instagram.vpn.cT.arvancode.eu.Org",
-            "server_port": 443,
+            "server": "cTWCT.ARVANCOdE.EU.ORG",
+            "server_port": 2096,
             "uuid": "f4cec6cc-6177-423c-90f8-2ad9f0dd996b",
             "flow": "",
             "packet_encoding": "xudp",
@@ -1648,7 +1605,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "Iran.ir.arvancode.eu.Org",
+                "server_name": "vPNCT.ARVANCODE.EU.ORG",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1660,16 +1617,16 @@
                 "type": "ws",
                 "path": "\/bShq2qgG8GnX8zqm\/",
                 "headers": {
-                    "Host": "Iran.ir.arvancode.eu.Org"
+                    "Host": "vPNCT.ARVANCODE.EU.ORG"
                 }
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 13",
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 16",
             "type": "vless",
-            "server": "ww1.maznet.site",
-            "server_port": 8080,
-            "uuid": "e0c6ad1c-001a-4eb6-8f20-660b933747f7",
+            "server": "ubia2-join.outline-vpn.cloud",
+            "server_port": 80,
+            "uuid": "48bd4d22-e42f-4749-af6a-85ecf716c823",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1679,9 +1636,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet",
+                "path": "\/",
                 "headers": {
-                    "Host": "ww1.maznet.site"
+                    "Host": "ubia2-join.outline-vpn.cloud"
                 }
             }
         },
