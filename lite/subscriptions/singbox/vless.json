@@ -110,13 +110,13 @@
                 "🇨🇦CA | vless | @v2_team | 18",
                 "🇨🇦CA | vless | @NIM_VPN_ir | 13",
                 "🇨🇦CA | vless | @XsV2ray | 15",
-                "🇬🇧GB | vless | @VlessConfig | 18",
+                "🇮🇪IE | vless | @VlessConfig | 18",
                 "🇨🇷CR | vless | @VPNCUSTOMIZE | 18",
                 "🇨🇦CA | vless | @ipV2Ray | 15",
                 "🇨🇦CA | vless | @melov2ray | 7",
                 "🇨🇦CA | vless | @V2pedia | 10",
                 "🇺🇸US | vless | @frev2ray | 9",
-                "🇨🇦CA | vless | @ARv2ray | 13",
+                "🇨🇦CA | vless | @ARv2ray | 12",
                 "🇨🇦CA | vless | @Lockey_vpn | 9",
                 "🇺🇸US | vless | @free_v2rayyy | 3",
                 "🇨🇷CR | vless | @lightning6 | 38",
@@ -151,7 +151,7 @@
                 "🇺🇸US | vless | @free1_vpn | 0",
                 "🏳️XX | vless | @fnet00 | 14",
                 "🇨🇦CA | vless | @polproxy | 42",
-                "🇨🇷CR | vless | @Outlinev2rayNG | 7",
+                "🇨🇷CR | vless | @Outlinev2rayNG | 8",
                 "🇨🇷CR | vless | @v2rayng_vpnrog | 8",
                 "🇸🇪SE | vless | @Capital_NET | 49",
                 "🇨🇷CR | vless | @Capoit | 4",
@@ -179,13 +179,13 @@
                 "🇨🇦CA | vless | @v2_team | 18",
                 "🇨🇦CA | vless | @NIM_VPN_ir | 13",
                 "🇨🇦CA | vless | @XsV2ray | 15",
-                "🇬🇧GB | vless | @VlessConfig | 18",
+                "🇮🇪IE | vless | @VlessConfig | 18",
                 "🇨🇷CR | vless | @VPNCUSTOMIZE | 18",
                 "🇨🇦CA | vless | @ipV2Ray | 15",
                 "🇨🇦CA | vless | @melov2ray | 7",
                 "🇨🇦CA | vless | @V2pedia | 10",
                 "🇺🇸US | vless | @frev2ray | 9",
-                "🇨🇦CA | vless | @ARv2ray | 13",
+                "🇨🇦CA | vless | @ARv2ray | 12",
                 "🇨🇦CA | vless | @Lockey_vpn | 9",
                 "🇺🇸US | vless | @free_v2rayyy | 3",
                 "🇨🇷CR | vless | @lightning6 | 38",
@@ -220,7 +220,7 @@
                 "🇺🇸US | vless | @free1_vpn | 0",
                 "🏳️XX | vless | @fnet00 | 14",
                 "🇨🇦CA | vless | @polproxy | 42",
-                "🇨🇷CR | vless | @Outlinev2rayNG | 7",
+                "🇨🇷CR | vless | @Outlinev2rayNG | 8",
                 "🇨🇷CR | vless | @v2rayng_vpnrog | 8",
                 "🇸🇪SE | vless | @Capital_NET | 49",
                 "🇨🇷CR | vless | @Capoit | 4",
@@ -384,9 +384,9 @@
             }
         },
         {
-            "tag": "🇬🇧GB | vless | @VlessConfig | 18",
+            "tag": "🇮🇪IE | vless | @VlessConfig | 18",
             "type": "vless",
-            "server": "18.135.30.197",
+            "server": "54.195.100.239",
             "server_port": 22222,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -570,11 +570,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @ARv2ray | 13",
+            "tag": "🇨🇦CA | vless | @ARv2ray | 12",
             "type": "vless",
             "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "-telegram--ArV2ray--ArV2ray-",
+            "server_port": 443,
+            "uuid": "111680eb-84fb-4b07-b2dd-1af1bfbc01ff",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -582,12 +582,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/@ArV2ray,@ArV2ray,@ArV2ray",
-                "headers": {
-                    "Host": "www.speedtest.net"
+            "tls": {
+                "enabled": true,
+                "server_name": "www.ArV2ray.shop",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1484,7 +1494,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @Outlinev2rayNG | 7",
+            "tag": "🇨🇷CR | vless | @Outlinev2rayNG | 8",
             "type": "vless",
             "server": "tel.VPNCUSTOMIZE.cam",
             "server_port": 8080,
