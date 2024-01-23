@@ -109,7 +109,7 @@
                 "🇹🇷TR | vless | @V2rayCollector | 0",
                 "🇫🇷FR | vless | @DailyV2RY | 140",
                 "🏳️XX | vless | @fnet00 | 14",
-                "🇸🇪SE | vless | @Capital_NET | 49",
+                "🇫🇮FI | vless | @Capital_NET | 48",
                 "🇸🇪SE | vless | @kiava | 4",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
@@ -123,7 +123,7 @@
                 "🇹🇷TR | vless | @V2rayCollector | 0",
                 "🇫🇷FR | vless | @DailyV2RY | 140",
                 "🏳️XX | vless | @fnet00 | 14",
-                "🇸🇪SE | vless | @Capital_NET | 49",
+                "🇫🇮FI | vless | @Capital_NET | 48",
                 "🇸🇪SE | vless | @kiava | 4",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
@@ -258,11 +258,11 @@
             }
         },
         {
-            "tag": "🇸🇪SE | vless | @Capital_NET | 49",
+            "tag": "🇫🇮FI | vless | @Capital_NET | 48",
             "type": "vless",
-            "server": "77.91.84.45",
-            "server_port": 2052,
-            "uuid": "923b6576-c0d1-475b-bbcf-b92d6c8d5d88",
+            "server": "65.109.231.87",
+            "server_port": 443,
+            "uuid": "Source-ipV2Ray",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -272,18 +272,25 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "atrsun.com",
+                "server_name": "gsmarena.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "sIbwvojdOqOHRC2CGu0dD7cu3lF6eT29AfQbc2Bh1VM",
-                    "short_id": "6526ebb1beacdad2"
+                    "public_key": "MWTaO5y6KlDbY4sSfPsDuHjleTW_n__iNK7tGiPu_hQ",
+                    "short_id": "50509d19"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
