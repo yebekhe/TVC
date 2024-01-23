@@ -110,7 +110,7 @@
                 "🇨🇦CA | vless | @v2_team | 18",
                 "🇨🇦CA | vless | @NIM_VPN_ir | 11",
                 "🇨🇦CA | vless | @XsV2ray | 15",
-                "🇮🇪IE | vless | @VlessConfig | 16",
+                "🇸🇪SE | vless | @VlessConfig | 16",
                 "🏳️XX | vless | @ipV2Ray | 16",
                 "🇨🇦CA | vless | @melov2ray | 7",
                 "🇨🇦CA | vless | @V2pedia | 10",
@@ -129,10 +129,10 @@
                 "🇺🇸US | vless | @Watashi_VPN | 0",
                 "🇬🇧GB | ss | @servermomo | 12",
                 "🇹🇷TR | vless | @V2rayCollector | 0",
-                "🇨🇦CA | vless | @V2rayCollectorDonate | 19",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 2",
                 "🇨🇷CR | vless | @V2rayNGn | 17",
-                "🇮🇪IE | trojan | @PrivateVPNs | 16",
+                "🇸🇪SE | trojan | @PrivateVPNs | 16",
                 "🇩🇪DE | trojan | @DirectVPN | 16",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
@@ -167,7 +167,6 @@
                 "🇨🇷CR | vless | @Capoit | 9",
                 "🇨🇷CR | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 22",
-                "🇬🇧GB | ss | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇷CR | vless | @mehrosaboran | 14",
                 "🇸🇪SE | vless | @kiava | 4",
@@ -191,7 +190,7 @@
                 "🇨🇦CA | vless | @v2_team | 18",
                 "🇨🇦CA | vless | @NIM_VPN_ir | 11",
                 "🇨🇦CA | vless | @XsV2ray | 15",
-                "🇮🇪IE | vless | @VlessConfig | 16",
+                "🇸🇪SE | vless | @VlessConfig | 16",
                 "🏳️XX | vless | @ipV2Ray | 16",
                 "🇨🇦CA | vless | @melov2ray | 7",
                 "🇨🇦CA | vless | @V2pedia | 10",
@@ -210,10 +209,10 @@
                 "🇺🇸US | vless | @Watashi_VPN | 0",
                 "🇬🇧GB | ss | @servermomo | 12",
                 "🇹🇷TR | vless | @V2rayCollector | 0",
-                "🇨🇦CA | vless | @V2rayCollectorDonate | 19",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 2",
                 "🇨🇷CR | vless | @V2rayNGn | 17",
-                "🇮🇪IE | trojan | @PrivateVPNs | 16",
+                "🇸🇪SE | trojan | @PrivateVPNs | 16",
                 "🇩🇪DE | trojan | @DirectVPN | 16",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
@@ -248,7 +247,6 @@
                 "🇨🇷CR | vless | @Capoit | 9",
                 "🇨🇷CR | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 22",
-                "🇬🇧GB | ss | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇷CR | vless | @mehrosaboran | 14",
                 "🇸🇪SE | vless | @kiava | 4",
@@ -408,9 +406,9 @@
             }
         },
         {
-            "tag": "🇮🇪IE | vless | @VlessConfig | 16",
+            "tag": "🇸🇪SE | vless | @VlessConfig | 16",
             "type": "vless",
-            "server": "52.215.146.80",
+            "server": "51.21.114.99",
             "server_port": 22222,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -951,23 +949,36 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @V2rayCollectorDonate | 19",
-            "type": "vless",
-            "server": "free.pandavpn.tech",
-            "server_port": 80,
-            "uuid": "64d39d67-62dc-470c-a592-1d5a6ee87cb5",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
+            "type": "vmess",
+            "server": "104.21.4.6",
+            "server_port": 443,
+            "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram channel : @pandavpntc",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": "free.pandavpn.tech"
+                    "Host": "glweidf.cfd"
                 }
             }
         },
@@ -1024,9 +1035,9 @@
             }
         },
         {
-            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 16",
+            "tag": "🇸🇪SE | trojan | @PrivateVPNs | 16",
             "type": "trojan",
-            "server": "52.17.78.251",
+            "server": "13.51.49.187",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -1399,9 +1410,9 @@
         {
             "tag": "🇨🇦CA | vless | @proxyymeliii | 19",
             "type": "vless",
-            "server": "172.67.174.190",
-            "server_port": 443,
-            "uuid": "29f8ad12-ea84-431b-bf32-9d3fb5cf2aa2",
+            "server": "ubia2-join.outline-vpn.cloud",
+            "server_port": 80,
+            "uuid": "48bd4d22-e42f-4749-af6a-85ecf716c823",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1409,21 +1420,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "w1.sylar8.eu.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "w1.sylar8.eu.org"
+                    "Host": "ubia2-join.outline-vpn.cloud"
                 }
             }
         },
@@ -1879,16 +1880,6 @@
                     "Host": "vPNCT.ARVANCODE.EU.ORG"
                 }
             }
-        },
-        {
-            "tag": "🇬🇧GB | ss | @forwardv2ray | 18",
-            "type": "shadowsocks",
-            "server": "series-a2-mec.samanehha.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "u17T3BvpYaaiuW2c",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇨🇦CA | vless | @https_config_injector | 14",
