@@ -107,9 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇹🇷TR | vless | @V2rayCollector | 0",
+                "🇫🇷FR | vless | @DailyV2RY | 140",
                 "🏳️XX | vless | @fnet00 | 14",
                 "🇸🇪SE | vless | @Capital_NET | 49",
-                "🇩🇪DE | vless | @mehrosaboran | 15",
                 "🇸🇪SE | vless | @kiava | 4",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
@@ -121,9 +121,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇹🇷TR | vless | @V2rayCollector | 0",
+                "🇫🇷FR | vless | @DailyV2RY | 140",
                 "🏳️XX | vless | @fnet00 | 14",
                 "🇸🇪SE | vless | @Capital_NET | 49",
-                "🇩🇪DE | vless | @mehrosaboran | 15",
                 "🇸🇪SE | vless | @kiava | 4",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
@@ -180,6 +180,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Dr.Phone",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇷FR | vless | @DailyV2RY | 140",
+            "type": "vless",
+            "server": "max-vip-cloud-goddd.xn--6qq79vjll.online",
+            "server_port": 443,
+            "uuid": "07b1b203-ee26-4759-abb7-470b452ff514",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bf-MAst5UHNnCesm6qEygOy8QLwzFZ6L3xbVy0euaCo",
+                    "short_id": "ada064e9"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -248,42 +284,6 @@
                     "public_key": "sIbwvojdOqOHRC2CGu0dD7cu3lF6eT29AfQbc2Bh1VM",
                     "short_id": "6526ebb1beacdad2"
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @mehrosaboran | 15",
-            "type": "vless",
-            "server": "159.69.5.132",
-            "server_port": 443,
-            "uuid": "6070a8fd-9758-466a-bb7a-f26a2a7bebe7",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "greenpepper.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ZgzP0csdAJ9GR9OKtYPYH5N0o7sVilBsELr6ja_Kt14",
-                    "short_id": "2f852b0c"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
