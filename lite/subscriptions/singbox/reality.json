@@ -107,6 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇹🇷TR | vless | @V2rayCollector | 0",
+                "🇩🇪DE | vless | @v2rayNG_Matsuri | 6",
+                "🇩🇪DE | vless | @DailyV2RY | 141",
                 "🏳️XX | vless | @fnet00 | 14",
                 "🇸🇪SE | vless | @Capital_NET | 49",
                 "🇸🇪SE | vless | @kiava | 4",
@@ -120,6 +122,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇹🇷TR | vless | @V2rayCollector | 0",
+                "🇩🇪DE | vless | @v2rayNG_Matsuri | 6",
+                "🇩🇪DE | vless | @DailyV2RY | 141",
                 "🏳️XX | vless | @fnet00 | 14",
                 "🇸🇪SE | vless | @Capital_NET | 49",
                 "🇸🇪SE | vless | @kiava | 4",
@@ -178,6 +182,71 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Dr.Phone",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @v2rayNG_Matsuri | 6",
+            "type": "vless",
+            "server": "91.107.153.57",
+            "server_port": 41896,
+            "uuid": "8f172083-fb7f-40a4-b509-b0f007d7db4c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "discord.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7dyMBOW0SokLK4EstrmTezP7Jj0SUe74R5Z6tFlz8TQ",
+                    "short_id": "b1e61a21"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @DailyV2RY | 141",
+            "type": "vless",
+            "server": "209.38.180.144",
+            "server_port": 2096,
+            "uuid": "c406ff3b-7c66-41d5-96bd-a69f7f355638",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kitheath.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "W8tTIjWAQOwsyyyy8Dq2cojRSHGCwN3PumSaP0O_PjU",
+                    "short_id": "ad7bf243"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
