@@ -108,11 +108,13 @@
                 "URL-TEST",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
                 "🇨🇦CA | vmess | @customv2ray | 13",
                 "🇨🇦CA | vmess | @proxystore11 | 22",
-                "🇨🇦CA | vmess | @Hope_Net | 9",
+                "🇩🇪DE | vmess | @Hope_Net | 7",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇨🇦CA | vmess | @eliya_chiter0 | 3"
+                "🇨🇦CA | vmess | @eliya_chiter0 | 3",
+                "🇨🇦CA | vmess | @ROMAX_VPN | 15"
             ]
         },
         {
@@ -121,11 +123,13 @@
             "outbounds": [
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
                 "🇨🇦CA | vmess | @customv2ray | 13",
                 "🇨🇦CA | vmess | @proxystore11 | 22",
-                "🇨🇦CA | vmess | @Hope_Net | 9",
+                "🇩🇪DE | vmess | @Hope_Net | 7",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇨🇦CA | vmess | @eliya_chiter0 | 3"
+                "🇨🇦CA | vmess | @eliya_chiter0 | 3",
+                "🇨🇦CA | vmess | @ROMAX_VPN | 15"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -179,6 +183,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+            "type": "vmess",
+            "server": "adenc35.fixedlfoat.top",
+            "server_port": 443,
+            "uuid": "45f63e92-f782-4cac-84b8-e61cb5a5bfd0",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "adenc35.fixedlfoat.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "adenc35.fixedlfoat.top"
+                }
             }
         },
         {
@@ -240,11 +278,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 9",
+            "tag": "🇩🇪DE | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "discord.gg",
-            "server_port": 443,
-            "uuid": "8b745f74-c322-48c0-b27c-cb6a1d871e86",
+            "server": "130.61.111.167",
+            "server_port": 21872,
+            "uuid": "9a7a75d4-ab7e-4ba0-bbfa-a4acddc18084",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -254,23 +292,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "periodically-microwave-firms-abc.trycloudflare.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ae8e857abf1d",
-                "headers": {
-                    "Host": "periodically-microwave-firms-abc.trycloudflare.com"
-                }
             }
         },
         {
@@ -318,6 +339,40 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @ROMAX_VPN | 15",
+            "type": "vmess",
+            "server": "discord.gg",
+            "server_port": 443,
+            "uuid": "8b745f74-c322-48c0-b27c-cb6a1d871e86",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "periodically-microwave-firms-abc.trycloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ae8e857abf1d",
+                "headers": {
+                    "Host": "periodically-microwave-firms-abc.trycloudflare.com"
                 }
             }
         }

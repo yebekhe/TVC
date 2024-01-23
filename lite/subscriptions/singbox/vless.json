@@ -124,7 +124,7 @@
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 18",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 17",
-                "🇨🇦CA | vless | @v2logy | 16",
+                "🇨🇦CA | vless | @v2logy | 15",
                 "🇺🇸US | vless | @Watashi_VPN | 0",
                 "🇳🇱NL | vless | @servermomo | 13",
                 "🇹🇷TR | vless | @V2rayCollector | 0",
@@ -146,7 +146,7 @@
                 "🇫🇷FR | vless | @DailyV2RY | 140",
                 "🇮🇷IR | vless | @sinabigo | 6",
                 "🇺🇸US | vless | @lrnbymaa | 9",
-                "🇨🇦CA | vless | @ConfigsHUB | 18",
+                "🇳🇱NL | vless | @ConfigsHUB | 13",
                 "🏳️XX | vless | @fnet00 | 16",
                 "🇨🇦CA | vless | @polproxy | 38",
                 "🇺🇸US | vless | @Outlinev2rayNG | 11",
@@ -189,7 +189,7 @@
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 18",
                 "🇨🇦CA | vless | @DarkTeam_VPN | 17",
-                "🇨🇦CA | vless | @v2logy | 16",
+                "🇨🇦CA | vless | @v2logy | 15",
                 "🇺🇸US | vless | @Watashi_VPN | 0",
                 "🇳🇱NL | vless | @servermomo | 13",
                 "🇹🇷TR | vless | @V2rayCollector | 0",
@@ -211,7 +211,7 @@
                 "🇫🇷FR | vless | @DailyV2RY | 140",
                 "🇮🇷IR | vless | @sinabigo | 6",
                 "🇺🇸US | vless | @lrnbymaa | 9",
-                "🇨🇦CA | vless | @ConfigsHUB | 18",
+                "🇳🇱NL | vless | @ConfigsHUB | 13",
                 "🏳️XX | vless | @fnet00 | 16",
                 "🇨🇦CA | vless | @polproxy | 38",
                 "🇺🇸US | vless | @Outlinev2rayNG | 11",
@@ -770,11 +770,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @v2logy | 16",
+            "tag": "🇨🇦CA | vless | @v2logy | 15",
             "type": "vless",
-            "server": "All.MsV2ray.online",
-            "server_port": 2083,
-            "uuid": "--MsV2ray--MsV2ray--",
+            "server": "cltechip-mci.argha-v2pedia.monster",
+            "server_port": 8443,
+            "uuid": "056957ae-5e8e-4293-e521-a08c35a0b9e9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -784,7 +784,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "de.MsV2ray.space",
+                "server_name": "footlo.argha-v2pedia.monster",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -793,11 +793,11 @@
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "de.MsV2ray.space"
-                }
+                "type": "grpc",
+                "service_name": "Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1328,11 +1328,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @ConfigsHUB | 18",
+            "tag": "🇳🇱NL | vless | @ConfigsHUB | 13",
             "type": "vless",
-            "server": "test--join.outline-vpn.cloud",
-            "server_port": 443,
-            "uuid": "b75b3034-36ab-4979-beae-3d02db1b11ec",
+            "server": "port80----join.outline-vpn.cloud",
+            "server_port": 80,
+            "uuid": "e1a928be-e289-4aef-b92e-4106fabdf42f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1340,21 +1340,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "always-online1.lp-airdrop.top",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "always-online1.lp-airdrop.top"
+                    "Host": "port80----join.outline-vpn.cloud"
                 }
             }
         },
