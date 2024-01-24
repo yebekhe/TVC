@@ -120,12 +120,12 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇫🇷FR | vmess | @V2rayCollectorDonate | 19","type":"vmess","server":"172.232.49.78","port":"2082","cipher":"auto","uuid":"4c66e001-759b-4a29-9589-d925dea76410","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇬🇧GB | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇳CN | vmess | @mftizi | 19","type":"vmess","server":"112.28.208.10","port":"45055","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇹🇷TR | vmess | @ShadowProxy66 | 70","type":"vmess","server":"78.135.67.230","port":"8090","cipher":"auto","uuid":"9c3cbce4-db0a-492c-8f8e-adaafe9c5911","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @v2ray1_ng | 4","type":"vmess","server":"198.41.199.182","port":"2086","cipher":"auto","uuid":"d1cbad81-a2a1-4419-8840-f6ce09d4f864","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/main","headers":{"host":"donate.shadowbrowse.online"}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
+  - {"name":"🇨🇭CH | vmess | @forwardv2ray | 9","type":"vmess","server":"94.131.99.8","port":"47182","cipher":"auto","uuid":"81b2b630-8b6a-404f-b996-b12f13db5786","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇳🇱NL | vmess | @kingofilter | 15","type":"vmess","server":"45.136.51.175","port":"32567","cipher":"auto","uuid":"df35304b-1f31-4b0d-9d02-f70256f732f1","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇳🇱NL | vmess | @eliya_chiter0 | 4","type":"vmess","server":"188.114.98.219","port":"2086","cipher":"auto","uuid":"d1cbad81-a2a1-4419-8840-f6ce09d4f864","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/main","headers":{"host":"donate.shadowbrowse.online"}}}
 proxy-groups:
@@ -134,12 +134,12 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇷FR | vmess | @V2rayCollectorDonate | 19'
       - '🇬🇧GB | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | vmess | @mftizi | 19'
       - '🇹🇷TR | vmess | @ShadowProxy66 | 70'
       - '🇨🇦CA | vmess | @v2ray1_ng | 4'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇭CH | vmess | @forwardv2ray | 9'
       - '🇳🇱NL | vmess | @kingofilter | 15'
       - '🇳🇱NL | vmess | @eliya_chiter0 | 4'
   - name: URL-TEST
@@ -148,12 +148,12 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇷FR | vmess | @V2rayCollectorDonate | 19'
       - '🇬🇧GB | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | vmess | @mftizi | 19'
       - '🇹🇷TR | vmess | @ShadowProxy66 | 70'
       - '🇨🇦CA | vmess | @v2ray1_ng | 4'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇭CH | vmess | @forwardv2ray | 9'
       - '🇳🇱NL | vmess | @kingofilter | 15'
       - '🇳🇱NL | vmess | @eliya_chiter0 | 4'
   - name: FALLBACK
@@ -161,12 +161,12 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇫🇷FR | vmess | @V2rayCollectorDonate | 19'
       - '🇬🇧GB | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | vmess | @mftizi | 19'
       - '🇹🇷TR | vmess | @ShadowProxy66 | 70'
       - '🇨🇦CA | vmess | @v2ray1_ng | 4'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇭CH | vmess | @forwardv2ray | 9'
       - '🇳🇱NL | vmess | @kingofilter | 15'
       - '🇳🇱NL | vmess | @eliya_chiter0 | 4'
 rule-providers:
