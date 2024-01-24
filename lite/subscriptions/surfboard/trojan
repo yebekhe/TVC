@@ -14,10 +14,11 @@ DIRECT = direct
 🇬🇧GB | trojan | @PrivateVPNs | 17 = trojan, 13.42.93.32, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇺🇸US | trojan | @DirectVPN | 17 = trojan, 3.132.123.149, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
 🇨🇦CA | trojan | @v2ray1_ng | 5 = trojan, www.speedtest.net, 443, password = QWhnWaVLh0, udp-delay = true, skip-cert-verify = false, sni = maintains-newton-b-bless.trycloudflare.com, ws = false
+🇨🇦CA | trojan | @kingofilter | 12 = trojan, 172.67.204.84, 443, password = efdf7370-b84b-11ee-9e41-1239d0255272, udp-delay = true, skip-cert-verify = false, sni = de2.test3.net, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | trojan | @PrivateVPNs | 17,🇺🇸US | trojan | @DirectVPN | 17,🇨🇦CA | trojan | @v2ray1_ng | 5
-URL-TEST = url-test,🇬🇧GB | trojan | @PrivateVPNs | 17,🇺🇸US | trojan | @DirectVPN | 17,🇨🇦CA | trojan | @v2ray1_ng | 5
-FALLBACK = fallback,🇬🇧GB | trojan | @PrivateVPNs | 17,🇺🇸US | trojan | @DirectVPN | 17,🇨🇦CA | trojan | @v2ray1_ng | 5
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | trojan | @PrivateVPNs | 17,🇺🇸US | trojan | @DirectVPN | 17,🇨🇦CA | trojan | @v2ray1_ng | 5,🇨🇦CA | trojan | @kingofilter | 12
+URL-TEST = url-test,🇬🇧GB | trojan | @PrivateVPNs | 17,🇺🇸US | trojan | @DirectVPN | 17,🇨🇦CA | trojan | @v2ray1_ng | 5,🇨🇦CA | trojan | @kingofilter | 12
+FALLBACK = fallback,🇬🇧GB | trojan | @PrivateVPNs | 17,🇺🇸US | trojan | @DirectVPN | 17,🇨🇦CA | trojan | @v2ray1_ng | 5,🇨🇦CA | trojan | @kingofilter | 12
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
