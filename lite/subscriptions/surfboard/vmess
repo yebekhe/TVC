@@ -11,12 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇸🇬SG | vmess | @Hope_Net | 11 = vmess, 45.76.144.158, 52445, username = f3023754-1b95-40eb-bdf9-fc524302fb9a, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @eliya_chiter0 | 5 = vmess, zula.ir, 80, username = 9d7d97c2-d7a5-41c9-a33c-370caed71287, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"pt1-vmess.sshmax.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 5
-URL-TEST = url-test,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 5
-FALLBACK = fallback,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 5
+MANUAL = select,URL-TEST,FALLBACK,🇸🇬SG | vmess | @Hope_Net | 11,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 5
+URL-TEST = url-test,🇸🇬SG | vmess | @Hope_Net | 11,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 5
+FALLBACK = fallback,🇸🇬SG | vmess | @Hope_Net | 11,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
