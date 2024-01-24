@@ -118,8 +118,8 @@
                 "🇨🇦CA | vless | @ARv2ray | 13",
                 "🇨🇦CA | vless | @Lockey_vpn | 9",
                 "🇺🇸US | vless | @free_v2rayyy | 5",
-                "🇺🇸US | vless | @lightning6 | 41",
-                "🇨🇷CR | vless | @V2rayNGmat | 3",
+                "🇨🇷CR | vless | @lightning6 | 41",
+                "🇺🇸US | vless | @V2rayNGmat | 3",
                 "🇨🇦CA | vless | @vpn_xw | 1",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 18",
@@ -133,7 +133,7 @@
                 "🇨🇦CA | vless | @ProxyForOpeta | 2",
                 "🇺🇸US | vless | @V2rayNGn | 17",
                 "🇨🇦CA | vless | @prrofile_purple | 165",
-                "🇨🇷CR | vless | @customv2ray | 11",
+                "🇺🇸US | vless | @customv2ray | 11",
                 "🇨🇦CA | vless | @UnlimitedDev | 4",
                 "🇨🇦CA | vless | @v2rayNG_Matsuri | 5",
                 "🇺🇸US | vless | @v2rayngvpn | 17",
@@ -188,8 +188,8 @@
                 "🇨🇦CA | vless | @ARv2ray | 13",
                 "🇨🇦CA | vless | @Lockey_vpn | 9",
                 "🇺🇸US | vless | @free_v2rayyy | 5",
-                "🇺🇸US | vless | @lightning6 | 41",
-                "🇨🇷CR | vless | @V2rayNGmat | 3",
+                "🇨🇷CR | vless | @lightning6 | 41",
+                "🇺🇸US | vless | @V2rayNGmat | 3",
                 "🇨🇦CA | vless | @vpn_xw | 1",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 18",
@@ -203,7 +203,7 @@
                 "🇨🇦CA | vless | @ProxyForOpeta | 2",
                 "🇺🇸US | vless | @V2rayNGn | 17",
                 "🇨🇦CA | vless | @prrofile_purple | 165",
-                "🇨🇷CR | vless | @customv2ray | 11",
+                "🇺🇸US | vless | @customv2ray | 11",
                 "🇨🇦CA | vless | @UnlimitedDev | 4",
                 "🇨🇦CA | vless | @v2rayNG_Matsuri | 5",
                 "🇺🇸US | vless | @v2rayngvpn | 17",
@@ -544,8 +544,8 @@
             "tag": "🇨🇦CA | vless | @ARv2ray | 13",
             "type": "vless",
             "server": "www.speedtest.net",
-            "server_port": 443,
-            "uuid": "2729f66e-1275-49b8-bd45-55b2387f5bbe",
+            "server_port": 80,
+            "uuid": "-ArV2ray--ArV2ray--ArV2ray-",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -553,22 +553,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.ArV2ray.host",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/@ArV2ray,@ArV2ray,@ArV2ray",
+                "headers": {
+                    "Host": "www.speedtest.net"
+                }
             }
         },
         {
@@ -614,7 +604,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @lightning6 | 41",
+            "tag": "🇨🇷CR | vless | @lightning6 | 41",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 8880,
@@ -635,7 +625,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @V2rayNGmat | 3",
+            "tag": "🇺🇸US | vless | @V2rayNGmat | 3",
             "type": "vless",
             "server": "V2ray.motorcycles",
             "server_port": 2087,
@@ -1014,7 +1004,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @customv2ray | 11",
+            "tag": "🇺🇸US | vless | @customv2ray | 11",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 8880,
