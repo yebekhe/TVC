@@ -106,8 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | vless | @v2logy | 14",
                 "🇹🇷TR | vless | @V2rayCollector | 0",
-                "🇫🇮FI | vless | @DailyV2RY | 135",
                 "🏳️XX | vless | @fnet00 | 16",
                 "🇫🇮FI | vless | @Capital_NET | 48",
                 "🇸🇪SE | vless | @kiava | 4",
@@ -120,8 +120,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | vless | @v2logy | 14",
                 "🇹🇷TR | vless | @V2rayCollector | 0",
-                "🇫🇮FI | vless | @DailyV2RY | 135",
                 "🏳️XX | vless | @fnet00 | 16",
                 "🇫🇮FI | vless | @Capital_NET | 48",
                 "🇸🇪SE | vless | @kiava | 4",
@@ -148,6 +148,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | vless | @v2logy | 14",
+            "type": "vless",
+            "server": "49.12.209.197",
+            "server_port": 443,
+            "uuid": "b79fcb6b-5da4-494b-9ecc-d65d3ebcf7fe",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dnschecker.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vxyZGYyn1CSmVCiAmTwYpEqP331l_PSBzaiDXsqrYXc",
+                    "short_id": "961777e2"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇹🇷TR | vless | @V2rayCollector | 0",
@@ -183,35 +219,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇫🇮FI | vless | @DailyV2RY | 135",
-            "type": "vless",
-            "server": "95.217.163.167",
-            "server_port": 45312,
-            "uuid": "32ba101a-1acb-4640-8206-309114e50de6",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "discord.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "YhjMYGbGTHGzxdvju5AoM8HGrEVwkG6F5oE1Eq9XVyA",
-                    "short_id": "236cd291"
-                }
             }
         },
         {
