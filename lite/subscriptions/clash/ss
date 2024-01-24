@@ -120,6 +120,7 @@ dns:
 proxies:
   - {"name":"🇯🇵JP | ss | @DeamNet_Proxy | 19","type":"ss","server":"185.172.113.182","port":801,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
+  - {"name":"🇳🇱NL | ss | @forwardv2ray | 18","type":"ss","server":"89.19.216.18","port":8388,"password":"NC7jORVNrruV/+3+PwOJrnnOeG7n75X1","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +129,7 @@ proxy-groups:
       - FALLBACK
       - '🇯🇵JP | ss | @DeamNet_Proxy | 19'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🇳🇱NL | ss | @forwardv2ray | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -136,6 +138,7 @@ proxy-groups:
     proxies:
       - '🇯🇵JP | ss | @DeamNet_Proxy | 19'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🇳🇱NL | ss | @forwardv2ray | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -143,6 +146,7 @@ proxy-groups:
     proxies:
       - '🇯🇵JP | ss | @DeamNet_Proxy | 19'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🇳🇱NL | ss | @forwardv2ray | 18'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
