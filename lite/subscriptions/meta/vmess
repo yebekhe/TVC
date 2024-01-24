@@ -125,7 +125,6 @@ proxies:
   - {"name":"🇹🇷TR | vmess | @ShadowProxy66 | 70","type":"vmess","server":"78.135.67.230","port":"8090","cipher":"auto","uuid":"9c3cbce4-db0a-492c-8f8e-adaafe9c5911","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @Hope_Net | 5","type":"vmess","server":"172.67.200.89","port":"2087","cipher":"auto","uuid":"36999a88-c86c-4175-847a-ed046e9b04b0","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":""}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
-  - {"name":"🇳🇱NL | vmess | @kingofilter | 15","type":"vmess","server":"45.136.51.175","port":"32567","cipher":"auto","uuid":"df35304b-1f31-4b0d-9d02-f70256f732f1","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇸US | vmess | @eliya_chiter0 | 3","type":"vmess","server":"5.161.93.28","port":"8081","cipher":"auto","uuid":"8e77c5d1-6238-4ded-99ef-29b9e3559213","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
@@ -138,7 +137,6 @@ proxy-groups:
       - '🇹🇷TR | vmess | @ShadowProxy66 | 70'
       - '🇨🇦CA | vmess | @Hope_Net | 5'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇳🇱NL | vmess | @kingofilter | 15'
       - '🇺🇸US | vmess | @eliya_chiter0 | 3'
   - name: URL-TEST
     type: url-test
@@ -151,7 +149,6 @@ proxy-groups:
       - '🇹🇷TR | vmess | @ShadowProxy66 | 70'
       - '🇨🇦CA | vmess | @Hope_Net | 5'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇳🇱NL | vmess | @kingofilter | 15'
       - '🇺🇸US | vmess | @eliya_chiter0 | 3'
   - name: FALLBACK
     type: fallback
@@ -163,7 +160,6 @@ proxy-groups:
       - '🇹🇷TR | vmess | @ShadowProxy66 | 70'
       - '🇨🇦CA | vmess | @Hope_Net | 5'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇳🇱NL | vmess | @kingofilter | 15'
       - '🇺🇸US | vmess | @eliya_chiter0 | 3'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
