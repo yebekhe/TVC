@@ -108,7 +108,6 @@
                 "URL-TEST",
                 "🇫🇮FI | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @v2logy | 15",
-                "🇹🇷TR | vless | @V2rayCollector | 1",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 10",
                 "🏳️XX | vless | @fnet00 | 16",
                 "🇫🇮FI | vless | @Capital_NET | 48",
@@ -124,7 +123,6 @@
             "outbounds": [
                 "🇫🇮FI | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @v2logy | 15",
-                "🇹🇷TR | vless | @V2rayCollector | 1",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 10",
                 "🏳️XX | vless | @fnet00 | 16",
                 "🇫🇮FI | vless | @Capital_NET | 48",
@@ -220,42 +218,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇹🇷TR | vless | @V2rayCollector | 1",
-            "type": "vless",
-            "server": "84.32.230.81",
-            "server_port": 443,
-            "uuid": "0a3c1e43-7778-4737-9a27-d31103ba0bf2",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sourceforge.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "eSq2viks3QTjVd77cFKfenQfxAL2JBxoJX9xxblcsno",
-                    "short_id": "7b6e4dd3"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Dr.Phone",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
