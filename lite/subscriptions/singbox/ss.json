@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | ss | @OutlineVpnOfficial | 17"
+                "🇺🇸US | ss | @OutlineVpnOfficial | 17",
+                "🇹🇼TW | ss | @forwardv2ray | 18"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | ss | @OutlineVpnOfficial | 17"
+                "🇺🇸US | ss | @OutlineVpnOfficial | 17",
+                "🇹🇼TW | ss | @forwardv2ray | 18"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,6 +144,16 @@
             "server_port": 2443,
             "method": "aes-256-gcm",
             "password": "hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇹🇼TW | ss | @forwardv2ray | 18",
+            "type": "shadowsocks",
+            "server": "ty11.twty.dynu.net",
+            "server_port": 2203,
+            "method": "chacha20-ietf-poly1305",
+            "password": "7b039abd-ad30-4ce4-a876-0a97a3ccaf74",
             "plugin": "",
             "plugin_opts": ""
         }
