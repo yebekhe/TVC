@@ -111,9 +111,10 @@
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇺🇦UA | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 11",
-                "🇨🇦CA | vmess | @Hope_Net | 11",
+                "🏳️XX | vmess | @Hope_Net | 11",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇺🇸US | vmess | @FAKEOFTVC | 4",
+                "🇨🇦CA | vmess | @forwardv2ray | 17",
+                "🇨🇦CA | vmess | @FAKEOFTVC | 4",
                 "🇺🇸US | vmess | @eliya_chiter0 | 3"
             ]
         },
@@ -126,9 +127,10 @@
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇺🇦UA | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 11",
-                "🇨🇦CA | vmess | @Hope_Net | 11",
+                "🏳️XX | vmess | @Hope_Net | 11",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇺🇸US | vmess | @FAKEOFTVC | 4",
+                "🇨🇦CA | vmess | @forwardv2ray | 17",
+                "🇨🇦CA | vmess | @FAKEOFTVC | 4",
                 "🇺🇸US | vmess | @eliya_chiter0 | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -264,11 +266,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 11",
+            "tag": "🏳️XX | vmess | @Hope_Net | 11",
             "type": "vmess",
-            "server": "104.21.15.36",
-            "server_port": 443,
-            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+            "server": "127.0.0.1",
+            "server_port": 8080,
+            "uuid": "aabccba-caab-baac-cadb-caacbacabbcb",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -278,23 +280,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "linde06.indiavideo.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws",
-                "headers": {
-                    "Host": "linde06.indiavideo.sbs"
-                }
             }
         },
         {
@@ -322,7 +307,41 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @FAKEOFTVC | 4",
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 17",
+            "type": "vmess",
+            "server": "172.67.1.143",
+            "server_port": 443,
+            "uuid": "251780c1-1501-43b3-be2a-d144a20d479a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hdfy5autoip.foriran.trade",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Nbs2DSTSkFWe4KVnk9AHQv",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @FAKEOFTVC | 4",
             "type": "vmess",
             "server": "morad.aylo.store",
             "server_port": 443,

@@ -125,9 +125,9 @@ proxies:
   - {"name":"🇨🇳CN | vmess | @mftizi | 19","type":"vmess","server":"112.28.208.10","port":"45055","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇦UA | vmess | @DeamNet_Proxy | 19","type":"vmess","server":"45.137.155.195","port":"443","cipher":"auto","uuid":"49c76bcf-3a58-43df-b1d4-2bffe9ca03b5","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @oneclickvpnkeys | 11","type":"vmess","server":"172.67.167.220","port":"2087","cipher":"auto","uuid":"5db4c51c-7304-4f0a-bbd8-083d258c04eb","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"dfgh","grpc-mode":""}}
-  - {"name":"🇨🇦CA | vmess | @Hope_Net | 11","type":"vmess","server":"104.21.15.36","port":"443","cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
-  - {"name":"🇺🇸US | vmess | @FAKEOFTVC | 4","type":"vmess","server":"morad.aylo.store","port":"443","cipher":"auto","uuid":"f2b79a6c-8b90-4c3f-8691-069899b96612","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"deone.mohandesi.store"}}}
+  - {"name":"🇨🇦CA | vmess | @forwardv2ray | 17","type":"vmess","server":"172.67.1.143","port":"443","cipher":"chacha20-poly1305","uuid":"251780c1-1501-43b3-be2a-d144a20d479a","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"Nbs2DSTSkFWe4KVnk9AHQv","grpc-mode":""}}
+  - {"name":"🇨🇦CA | vmess | @FAKEOFTVC | 4","type":"vmess","server":"morad.aylo.store","port":"443","cipher":"auto","uuid":"f2b79a6c-8b90-4c3f-8691-069899b96612","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"deone.mohandesi.store"}}}
   - {"name":"🇺🇸US | vmess | @eliya_chiter0 | 3","type":"vmess","server":"5.161.93.28","port":"8081","cipher":"auto","uuid":"8e77c5d1-6238-4ded-99ef-29b9e3559213","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
@@ -140,9 +140,9 @@ proxy-groups:
       - '🇨🇳CN | vmess | @mftizi | 19'
       - '🇺🇦UA | vmess | @DeamNet_Proxy | 19'
       - '🇨🇦CA | vmess | @oneclickvpnkeys | 11'
-      - '🇨🇦CA | vmess | @Hope_Net | 11'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇺🇸US | vmess | @FAKEOFTVC | 4'
+      - '🇨🇦CA | vmess | @forwardv2ray | 17'
+      - '🇨🇦CA | vmess | @FAKEOFTVC | 4'
       - '🇺🇸US | vmess | @eliya_chiter0 | 3'
   - name: URL-TEST
     type: url-test
@@ -155,9 +155,9 @@ proxy-groups:
       - '🇨🇳CN | vmess | @mftizi | 19'
       - '🇺🇦UA | vmess | @DeamNet_Proxy | 19'
       - '🇨🇦CA | vmess | @oneclickvpnkeys | 11'
-      - '🇨🇦CA | vmess | @Hope_Net | 11'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇺🇸US | vmess | @FAKEOFTVC | 4'
+      - '🇨🇦CA | vmess | @forwardv2ray | 17'
+      - '🇨🇦CA | vmess | @FAKEOFTVC | 4'
       - '🇺🇸US | vmess | @eliya_chiter0 | 3'
   - name: FALLBACK
     type: fallback
@@ -169,9 +169,9 @@ proxy-groups:
       - '🇨🇳CN | vmess | @mftizi | 19'
       - '🇺🇦UA | vmess | @DeamNet_Proxy | 19'
       - '🇨🇦CA | vmess | @oneclickvpnkeys | 11'
-      - '🇨🇦CA | vmess | @Hope_Net | 11'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇺🇸US | vmess | @FAKEOFTVC | 4'
+      - '🇨🇦CA | vmess | @forwardv2ray | 17'
+      - '🇨🇦CA | vmess | @FAKEOFTVC | 4'
       - '🇺🇸US | vmess | @eliya_chiter0 | 3'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
