@@ -121,7 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇸🇪SE | trojan | @PrivateVPNs | 16","type":"trojan","server":"51.21.101.53","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇩🇪DE | trojan | @DirectVPN | 16","type":"trojan","server":"3.73.238.119","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇸🇪SE | trojan | @DirectVPN | 16","type":"trojan","server":"13.50.172.121","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇨🇦CA | trojan | @v2ray1_ng | 5","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"QWhnWaVLh0","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"maintains-newton-b-bless.trycloudflare.com"}
 proxy-groups:
   - name: MANUAL
@@ -130,7 +130,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇸🇪SE | trojan | @PrivateVPNs | 16'
-      - '🇩🇪DE | trojan | @DirectVPN | 16'
+      - '🇸🇪SE | trojan | @DirectVPN | 16'
       - '🇨🇦CA | trojan | @v2ray1_ng | 5'
   - name: URL-TEST
     type: url-test
@@ -139,7 +139,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇸🇪SE | trojan | @PrivateVPNs | 16'
-      - '🇩🇪DE | trojan | @DirectVPN | 16'
+      - '🇸🇪SE | trojan | @DirectVPN | 16'
       - '🇨🇦CA | trojan | @v2ray1_ng | 5'
   - name: FALLBACK
     type: fallback
@@ -147,7 +147,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇸🇪SE | trojan | @PrivateVPNs | 16'
-      - '🇩🇪DE | trojan | @DirectVPN | 16'
+      - '🇸🇪SE | trojan | @DirectVPN | 16'
       - '🇨🇦CA | trojan | @v2ray1_ng | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
