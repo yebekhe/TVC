@@ -13,11 +13,13 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇨🇦CA | trojan | @V2rayCollectorDonate | 19 = trojan, 104.19.101.129, 8880, password = Ph0DplG7Ko9LMmPTbZK69g, udp-delay = true, skip-cert-verify = false, ws = false
 🇬🇧GB | trojan | @PrivateVPNs | 15 = trojan, 18.134.194.250, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
-🇬🇧GB | trojan | @DirectVPN | 15 = trojan, 13.41.236.106, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇮🇪IE | trojan | @DirectVPN | 15 = trojan, 54.195.178.125, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇨🇦CA | trojan | @proxyymeliii | 20 = trojan, gr.tucn-serves.info, 8443, password = vBjaQYDraP, udp-delay = true, skip-cert-verify = false, sni = gr.tucn-serves.info, ws = false
+🇨🇦CA | trojan | @kingofilter | 13 = trojan, 172.67.204.84, 443, password = efdf7370-b84b-11ee-9e41-1239d0255272, udp-delay = true, skip-cert-verify = false, sni = de2.test3.net, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇬🇧GB | trojan | @PrivateVPNs | 15,🇬🇧GB | trojan | @DirectVPN | 15
-URL-TEST = url-test,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇬🇧GB | trojan | @PrivateVPNs | 15,🇬🇧GB | trojan | @DirectVPN | 15
-FALLBACK = fallback,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇬🇧GB | trojan | @PrivateVPNs | 15,🇬🇧GB | trojan | @DirectVPN | 15
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇬🇧GB | trojan | @PrivateVPNs | 15,🇮🇪IE | trojan | @DirectVPN | 15,🇨🇦CA | trojan | @proxyymeliii | 20,🇨🇦CA | trojan | @kingofilter | 13
+URL-TEST = url-test,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇬🇧GB | trojan | @PrivateVPNs | 15,🇮🇪IE | trojan | @DirectVPN | 15,🇨🇦CA | trojan | @proxyymeliii | 20,🇨🇦CA | trojan | @kingofilter | 13
+FALLBACK = fallback,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇬🇧GB | trojan | @PrivateVPNs | 15,🇮🇪IE | trojan | @DirectVPN | 15,🇨🇦CA | trojan | @proxyymeliii | 20,🇨🇦CA | trojan | @kingofilter | 13
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
