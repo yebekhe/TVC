@@ -161,7 +161,7 @@
                 "🇺🇸US | vless | @Capoit | 3",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇷CR | vless | @flyv2ray | 20",
-                "🇨🇦CA | vless | @forwardv2ray | 16",
+                "🇨🇷CR | vless | @forwardv2ray | 19",
                 "🇬🇧GB | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇦CA | vless | @mehrosaboran | 14",
@@ -238,7 +238,7 @@
                 "🇺🇸US | vless | @Capoit | 3",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇷CR | vless | @flyv2ray | 20",
-                "🇨🇦CA | vless | @forwardv2ray | 16",
+                "🇨🇷CR | vless | @forwardv2ray | 19",
                 "🇬🇧GB | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇦CA | vless | @mehrosaboran | 14",
@@ -1504,7 +1504,7 @@
             "type": "vless",
             "server": "104.25.254.88",
             "server_port": 8443,
-            "uuid": "3292f8a0-9004-464d-9892-b61111c51866",
+            "uuid": "c26e69ca-e2b6-44de-bc48-20b0960c5a1d",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1805,11 +1805,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 16",
+            "tag": "🇨🇷CR | vless | @forwardv2ray | 19",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 2052,
-            "uuid": "3d8c9d4a-3682-4b83-bb17-4989927b0a6f",
+            "server": "shhproxy.varzesh3-cnd.site",
+            "server_port": 2087,
+            "uuid": "e8afb3c4-0178-4813-adbf-93abe76759c5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1817,11 +1817,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "gmV2raybo.shhproxyfree.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "gmV2raybo.shhproxyfree.com"
                 }
             }
         },
