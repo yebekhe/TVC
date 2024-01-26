@@ -11,14 +11,15 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇨🇦CA | trojan | @V2rayCollectorDonate | 19 = trojan, 104.19.101.129, 8880, password = Ph0DplG7Ko9LMmPTbZK69g, udp-delay = true, skip-cert-verify = false, ws = false
 🇫🇷FR | trojan | @PrivateVPNs | 15 = trojan, 15.236.75.239, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇫🇷FR | trojan | @DirectVPN | 15 = trojan, 15.236.176.227, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇨🇦CA | trojan | @v2ray1_ng | 5 = trojan, www.speedtest.net, 443, password = QWhnWaVLh0, udp-delay = true, skip-cert-verify = false, sni = maintains-newton-b-bless.trycloudflare.com, ws = false
 🇨🇦CA | trojan | @kingofilter | 13 = trojan, 172.67.204.84, 443, password = efdf7370-b84b-11ee-9e41-1239d0255272, udp-delay = true, skip-cert-verify = false, sni = de2.test3.net, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇨🇦CA | trojan | @v2ray1_ng | 5,🇨🇦CA | trojan | @kingofilter | 13
-URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇨🇦CA | trojan | @v2ray1_ng | 5,🇨🇦CA | trojan | @kingofilter | 13
-FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇨🇦CA | trojan | @v2ray1_ng | 5,🇨🇦CA | trojan | @kingofilter | 13
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇨🇦CA | trojan | @v2ray1_ng | 5,🇨🇦CA | trojan | @kingofilter | 13
+URL-TEST = url-test,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇨🇦CA | trojan | @v2ray1_ng | 5,🇨🇦CA | trojan | @kingofilter | 13
+FALLBACK = fallback,🇨🇦CA | trojan | @V2rayCollectorDonate | 19,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇨🇦CA | trojan | @v2ray1_ng | 5,🇨🇦CA | trojan | @kingofilter | 13
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
