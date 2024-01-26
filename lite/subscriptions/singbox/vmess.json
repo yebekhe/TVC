@@ -106,10 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🏳️XX | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇨🇦CA | vmess | @DailyV2RY | 134",
-                "🏳️XX | vmess | @Hope_Net | 10",
+                "🇨🇦CA | vmess | @Hope_Net | 8",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇮🇷IR | vmess | @eliya_chiter0 | 2"
             ]
@@ -118,10 +118,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🏳️XX | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇨🇦CA | vmess | @DailyV2RY | 134",
-                "🏳️XX | vmess | @Hope_Net | 10",
+                "🇨🇦CA | vmess | @Hope_Net | 8",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇮🇷IR | vmess | @eliya_chiter0 | 2"
             ],
@@ -144,6 +144,23 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🏳️XX | vmess | @V2rayCollectorDonate | 19",
+            "type": "vmess",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "🇬🇧GB | vmess | @v2ray_outlineir | 0",
@@ -180,11 +197,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @DailyV2RY | 134",
+            "tag": "🇨🇦CA | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "172.67.167.220",
-            "server_port": 2087,
-            "uuid": "5db4c51c-7304-4f0a-bbd8-083d258c04eb",
+            "server": "172.67.203.169",
+            "server_port": 8880,
+            "uuid": "4b5e4565-322f-4223-a891-78a84f189726",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -194,40 +211,13 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ryogplffcnsdgvvuwfuwtbgehdsgsgsgsgsfgegsgsgsghhddhdhdbhddhhtjsfjfjtjfwqdhwrjafjafjadhafhqfjqdhqdgdqhdqgegsofwnfianfaofnsifnaofnqfosjfsifjwfosmfaokfsofmwofsnfosmgsokfsofaofsmfowmfwofnwofnscoanowjfwofwofmwofnwofneciwbcuwbsogjsofsina.fpluuuxtoopgol.shop",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "dfgh",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🏳️XX | vmess | @Hope_Net | 10",
-            "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "cbacaba-caba-caba-bacd-bbcacacbaacb",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+                "type": "ws",
+                "path": "\/r8ykwif5rffiqJeJ49zLQtAUESmka7PbhWz3wiHs8cSeiRyZL",
+                "headers": {
+                    "Host": "172.67.203.169"
+                }
             }
         },
         {
