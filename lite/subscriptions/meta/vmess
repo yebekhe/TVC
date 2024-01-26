@@ -126,7 +126,6 @@ proxies:
   - {"name":"🇨🇦CA | vmess | @customv2ray | 15","type":"vmess","server":"104.21.25.65","port":"2087","cipher":"auto","uuid":"864112a6-ceeb-4126-b7e2-509c2a203d20","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"🇨🇦CA | vmess | @DailyV2RY | 134","type":"vmess","server":"172.67.167.220","port":"2087","cipher":"auto","uuid":"5db4c51c-7304-4f0a-bbd8-083d258c04eb","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"dfgh","grpc-mode":"gun"}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
-  - {"name":"🇨🇦CA | vmess | @forwardv2ray | 17","type":"vmess","server":"104.25.38.74","port":"2096","cipher":"auto","uuid":"12009e57-6fd8-46d6-94af-539514a7e7c7","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"s1.shargh.shop"}}}
   - {"name":"🇮🇷IR | vmess | @eliya_chiter0 | 2","type":"vmess","server":"78.109.198.37","port":"2053","cipher":"auto","uuid":"15dd1b0f-1a17-4c85-ac6a-047a6f92d504","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
@@ -140,7 +139,6 @@ proxy-groups:
       - '🇨🇦CA | vmess | @customv2ray | 15'
       - '🇨🇦CA | vmess | @DailyV2RY | 134'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇨🇦CA | vmess | @forwardv2ray | 17'
       - '🇮🇷IR | vmess | @eliya_chiter0 | 2'
   - name: URL-TEST
     type: url-test
@@ -154,7 +152,6 @@ proxy-groups:
       - '🇨🇦CA | vmess | @customv2ray | 15'
       - '🇨🇦CA | vmess | @DailyV2RY | 134'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇨🇦CA | vmess | @forwardv2ray | 17'
       - '🇮🇷IR | vmess | @eliya_chiter0 | 2'
   - name: FALLBACK
     type: fallback
@@ -167,7 +164,6 @@ proxy-groups:
       - '🇨🇦CA | vmess | @customv2ray | 15'
       - '🇨🇦CA | vmess | @DailyV2RY | 134'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇨🇦CA | vmess | @forwardv2ray | 17'
       - '🇮🇷IR | vmess | @eliya_chiter0 | 2'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
