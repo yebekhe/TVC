@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | vless | @EliV2ray | 13",
                 "🇫🇮FI | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @v2logy | 15",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 12",
@@ -121,7 +120,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | vless | @EliV2ray | 13",
                 "🇫🇮FI | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @v2logy | 15",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 12",
@@ -150,35 +148,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | vless | @EliV2ray | 13",
-            "type": "vless",
-            "server": "45.147.7.44",
-            "server_port": 8443,
-            "uuid": "06452c8c-628c-4d66-aff3-c985e01340cf",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "speed.cloudflare.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "SZBXvlqrTHH41VkXYoYgYX8oZUp7Xl6Fx2HcmJNYARU",
-                    "short_id": "db473c03"
-                }
-            }
         },
         {
             "tag": "🇫🇮FI | vless | @ipV2Ray | 17",
