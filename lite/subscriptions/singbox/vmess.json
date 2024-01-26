@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇺🇦UA | vmess | @oneclickvpnkeys | 11",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 11",
                 "🏳️XX | vmess | @Hope_Net | 3",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇮🇷IR | vmess | @eliya_chiter0 | 5"
@@ -120,7 +120,7 @@
             "outbounds": [
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇺🇦UA | vmess | @oneclickvpnkeys | 11",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 11",
                 "🏳️XX | vmess | @Hope_Net | 3",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇮🇷IR | vmess | @eliya_chiter0 | 5"
@@ -180,11 +180,11 @@
             }
         },
         {
-            "tag": "🇺🇦UA | vmess | @oneclickvpnkeys | 11",
+            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 11",
             "type": "vmess",
-            "server": "45.137.155.195",
-            "server_port": 443,
-            "uuid": "49c76bcf-3a58-43df-b1d4-2bffe9ca03b5",
+            "server": "104.31.16.104",
+            "server_port": 8080,
+            "uuid": "3a6752b4-8353-4172-85b1-32202116714d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -195,14 +195,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
                 }
             }
         },
