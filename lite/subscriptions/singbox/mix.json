@@ -135,6 +135,7 @@
                 "🇫🇷FR | trojan | @DirectVPN | 15",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
+                "🇺🇸US | ss | @DeamNet_Proxy | 18",
                 "🇫🇷FR | vmess | @oneclickvpnkeys | 11",
                 "🇨🇦CA | vless | @prrofile_purple | 172",
                 "🇨🇷CR | vless | @ShadowSocks_s | 10",
@@ -160,7 +161,7 @@
                 "🇦🇹AT | ss | @OutlineVpnOfficial | 15",
                 "🇺🇸US | vless | @proxystore11 | 15",
                 "🇨🇦CA | vless | @free1_vpn | 0",
-                "🏳️XX | vmess | @Hope_Net | 2",
+                "🏳️XX | vmess | @Hope_Net | 4",
                 "🏳️XX | vless | @fnet00 | 15",
                 "🏳️XX | vless | @polproxy | 18",
                 "🇩🇪DE | vless | @Outlinev2rayNG | 5",
@@ -169,7 +170,7 @@
                 "🇺🇸US | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 18",
-                "🇬🇧GB | vless | @forwardv2ray | 19",
+                "🇫🇮FI | vless | @forwardv2ray | 19",
                 "🇬🇧GB | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇦CA | vless | @mehrosaboran | 14",
@@ -222,6 +223,7 @@
                 "🇫🇷FR | trojan | @DirectVPN | 15",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
+                "🇺🇸US | ss | @DeamNet_Proxy | 18",
                 "🇫🇷FR | vmess | @oneclickvpnkeys | 11",
                 "🇨🇦CA | vless | @prrofile_purple | 172",
                 "🇨🇷CR | vless | @ShadowSocks_s | 10",
@@ -247,7 +249,7 @@
                 "🇦🇹AT | ss | @OutlineVpnOfficial | 15",
                 "🇺🇸US | vless | @proxystore11 | 15",
                 "🇨🇦CA | vless | @free1_vpn | 0",
-                "🏳️XX | vmess | @Hope_Net | 2",
+                "🏳️XX | vmess | @Hope_Net | 4",
                 "🏳️XX | vless | @fnet00 | 15",
                 "🏳️XX | vless | @polproxy | 18",
                 "🇩🇪DE | vless | @Outlinev2rayNG | 5",
@@ -256,7 +258,7 @@
                 "🇺🇸US | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 18",
-                "🇬🇧GB | vless | @forwardv2ray | 19",
+                "🇫🇮FI | vless | @forwardv2ray | 19",
                 "🇬🇧GB | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇦CA | vless | @mehrosaboran | 14",
@@ -1104,6 +1106,16 @@
             }
         },
         {
+            "tag": "🇺🇸US | ss | @DeamNet_Proxy | 18",
+            "type": "shadowsocks",
+            "server": "38.75.136.21",
+            "server_port": 6697,
+            "method": "aes-256-gcm",
+            "password": "TEzjfAYq2IjtuoS",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇫🇷FR | vmess | @oneclickvpnkeys | 11",
             "type": "vmess",
             "server": "141.94.86.92",
@@ -1730,7 +1742,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @Hope_Net | 2",
+            "tag": "🏳️XX | vmess | @Hope_Net | 4",
             "type": "vmess",
             "server": "127.0.0.1",
             "server_port": 8080,
@@ -1973,17 +1985,39 @@
             }
         },
         {
-            "tag": "🇬🇧GB | vless | @forwardv2ray | 19",
+            "tag": "🇫🇮FI | vless | @forwardv2ray | 19",
             "type": "vless",
-            "server": "78.141.193.208",
-            "server_port": 41085,
-            "uuid": "04dc7b3a-1814-4af2-a53a-d08d5b86b345",
-            "flow": "",
+            "server": "95.216.208.84",
+            "server_port": 443,
+            "uuid": "691a087a-f23c-4162-99f5-6d3270a08108",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "e04ffyItLlsxgGAYbVvWPE5PG7XYJIR4Gu_uv1qzTk0",
+                    "short_id": "54052ca6"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
