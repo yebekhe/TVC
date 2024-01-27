@@ -108,11 +108,13 @@
                 "URL-TEST",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇭🇰HK | vmess | @DeamNet_Proxy | 19",
+                "🇺🇸US | vmess | @DeamNet_Proxy | 19",
                 "🇫🇷FR | vmess | @ShadowProxy66 | 63",
                 "🇨🇦CA | vmess | @v2ray1_ng | 4",
                 "🏳️XX | vmess | @Hope_Net | 1",
-                "🇺🇸US | vmess | @v2Line | 6"
+                "🇺🇸US | vmess | @v2Line | 6",
+                "🏳️XX | vmess | @forwardv2ray | 17",
+                "🇨🇭CH | vmess | @eliya_chiter0 | 2"
             ]
         },
         {
@@ -121,11 +123,13 @@
             "outbounds": [
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇭🇰HK | vmess | @DeamNet_Proxy | 19",
+                "🇺🇸US | vmess | @DeamNet_Proxy | 19",
                 "🇫🇷FR | vmess | @ShadowProxy66 | 63",
                 "🇨🇦CA | vmess | @v2ray1_ng | 4",
                 "🏳️XX | vmess | @Hope_Net | 1",
-                "🇺🇸US | vmess | @v2Line | 6"
+                "🇺🇸US | vmess | @v2Line | 6",
+                "🏳️XX | vmess | @forwardv2ray | 17",
+                "🇨🇭CH | vmess | @eliya_chiter0 | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -182,11 +186,11 @@
             }
         },
         {
-            "tag": "🇭🇰HK | vmess | @DeamNet_Proxy | 19",
+            "tag": "🇺🇸US | vmess | @DeamNet_Proxy | 19",
             "type": "vmess",
-            "server": "hkaz.takeshi.wiki",
-            "server_port": 443,
-            "uuid": "803b8c6b-192e-4500-a919-485566f8e058",
+            "server": "129.146.133.157",
+            "server_port": 51009,
+            "uuid": "81714cef-9bde-4a08-aa50-d6bc0172d78b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -196,23 +200,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/takeshi.wiki",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
@@ -305,6 +292,40 @@
                 "headers": {
                     "Host": "ca2.xv2ray.net"
                 }
+            }
+        },
+        {
+            "tag": "🏳️XX | vmess | @forwardv2ray | 17",
+            "type": "vmess",
+            "server": "tun.amirkreyl.ir",
+            "server_port": 80,
+            "uuid": "508a8857-374f-4c49-87ff-86f2a4fc55ba",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇭CH | vmess | @eliya_chiter0 | 2",
+            "type": "vmess",
+            "server": "94.131.99.8",
+            "server_port": 47182,
+            "uuid": "81b2b630-8b6a-404f-b996-b12f13db5786",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         }
     ],
