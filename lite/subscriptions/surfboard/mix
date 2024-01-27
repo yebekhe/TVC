@@ -13,13 +13,13 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇫🇷FR | trojan | @PrivateVPNs | 15 = trojan, 13.36.221.62, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇫🇷FR | trojan | @DirectVPN | 15 = trojan, 52.47.42.155, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇫🇷FR | ss | @DeamNet_Proxy | 19 = ss, 149.202.82.172, 5600, encrypt-method = aes-256-gcm, password = Y6R9pAtvxxzmGC
 🇦🇹AT | ss | @OutlineVpnOfficial | 15 = ss, 212.113.106.243, 12949, encrypt-method = chacha20-ietf-poly1305, password = P2zxXPewlV3BlfqqYiSthvtLc
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
-🇨🇦CA | vmess | @forwardv2ray | 19 = vmess, 172.67.217.144, 80, username = 85674552-ce41-44d9-bb2a-50f76450b3d8, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"lv1.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇦🇹AT | ss | @OutlineVpnOfficial | 15,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @forwardv2ray | 19
-URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇦🇹AT | ss | @OutlineVpnOfficial | 15,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @forwardv2ray | 19
-FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇦🇹AT | ss | @OutlineVpnOfficial | 15,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @forwardv2ray | 19
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇫🇷FR | ss | @DeamNet_Proxy | 19,🇦🇹AT | ss | @OutlineVpnOfficial | 15,🇺🇸US | vmess | @v2Line | 6
+URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇫🇷FR | ss | @DeamNet_Proxy | 19,🇦🇹AT | ss | @OutlineVpnOfficial | 15,🇺🇸US | vmess | @v2Line | 6
+FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 15,🇫🇷FR | ss | @DeamNet_Proxy | 19,🇦🇹AT | ss | @OutlineVpnOfficial | 15,🇺🇸US | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
