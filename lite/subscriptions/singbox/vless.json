@@ -121,7 +121,7 @@
                 "🇨🇦CA | vless | @Lockey_vpn | 11",
                 "🇨🇦CA | vless | @rxv2ray | 14",
                 "🇨🇦CA | vless | @free_v2rayyy | 4",
-                "🇺🇸US | vless | @lightning6 | 29",
+                "🇨🇷CR | vless | @lightning6 | 29",
                 "🇺🇸US | vless | @vpn_xw | 0",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 19",
@@ -129,7 +129,7 @@
                 "🇨🇦CA | vless | @v2logy | 14",
                 "🇩🇪DE | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
-                "🇺🇸US | vless | @V2rayNGn | 16",
+                "🇺🇸US | vless | @V2rayNGn | 14",
                 "🇨🇦CA | vless | @prrofile_purple | 172",
                 "🇨🇷CR | vless | @ShadowSocks_s | 10",
                 "🇨🇦CA | vless | @UnlimitedDev | 4",
@@ -196,7 +196,7 @@
                 "🇨🇦CA | vless | @Lockey_vpn | 11",
                 "🇨🇦CA | vless | @rxv2ray | 14",
                 "🇨🇦CA | vless | @free_v2rayyy | 4",
-                "🇺🇸US | vless | @lightning6 | 29",
+                "🇨🇷CR | vless | @lightning6 | 29",
                 "🇺🇸US | vless | @vpn_xw | 0",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 19",
@@ -204,7 +204,7 @@
                 "🇨🇦CA | vless | @v2logy | 14",
                 "🇩🇪DE | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
-                "🇺🇸US | vless | @V2rayNGn | 16",
+                "🇺🇸US | vless | @V2rayNGn | 14",
                 "🇨🇦CA | vless | @prrofile_purple | 172",
                 "🇨🇷CR | vless | @ShadowSocks_s | 10",
                 "🇨🇦CA | vless | @UnlimitedDev | 4",
@@ -722,7 +722,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @lightning6 | 29",
+            "tag": "🇨🇷CR | vless | @lightning6 | 29",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 2083,
@@ -950,11 +950,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @V2rayNGn | 16",
+            "tag": "🇺🇸US | vless | @V2rayNGn | 14",
             "type": "vless",
-            "server": "LIGHTNING6-joinbede.liV2ray.xyz",
-            "server_port": 8880,
-            "uuid": "c534dfc8-5a79-41aa-af4c-6ef8dfdc0985",
+            "server": "tel.VPNCUSTOMIZE.cam",
+            "server_port": 8443,
+            "uuid": "VPNCUSTOMIZE",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -962,12 +962,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/@LIGHTNING6",
-                "headers": {
-                    "Host": "LIGHTNING6-joinbede.liV2ray.xyz"
+            "tls": {
+                "enabled": true,
+                "server_name": "England-V2ray.vpncustomize.tech",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@VPNCUSTOMIZE",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
