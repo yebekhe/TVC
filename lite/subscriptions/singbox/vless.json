@@ -149,7 +149,7 @@
                 "🇨🇦CA | vless | @MTConfig | 18",
                 "🇨🇷CR | vless | @V2RayTz | 18",
                 "🇨🇦CA | vless | @VmessProtocol | 11",
-                "🇺🇸US | vless | @DailyV2RY | 150",
+                "🇨🇦CA | vless | @DailyV2RY | 146",
                 "🇨🇦CA | vless | @sinabigo | 7",
                 "🇨🇦CA | vless | @lrnbymaa | 7",
                 "🇺🇸US | vless | @proxystore11 | 15",
@@ -161,6 +161,7 @@
                 "🇺🇸US | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 18",
+                "🇩🇪DE | vless | @forwardv2ray | 12",
                 "🇬🇧GB | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇦CA | vless | @mehrosaboran | 13",
@@ -225,7 +226,7 @@
                 "🇨🇦CA | vless | @MTConfig | 18",
                 "🇨🇷CR | vless | @V2RayTz | 18",
                 "🇨🇦CA | vless | @VmessProtocol | 11",
-                "🇺🇸US | vless | @DailyV2RY | 150",
+                "🇨🇦CA | vless | @DailyV2RY | 146",
                 "🇨🇦CA | vless | @sinabigo | 7",
                 "🇨🇦CA | vless | @lrnbymaa | 7",
                 "🇺🇸US | vless | @proxystore11 | 15",
@@ -237,6 +238,7 @@
                 "🇺🇸US | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 18",
+                "🇩🇪DE | vless | @forwardv2ray | 12",
                 "🇬🇧GB | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇦CA | vless | @mehrosaboran | 13",
@@ -1458,11 +1460,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @DailyV2RY | 150",
+            "tag": "🇨🇦CA | vless | @DailyV2RY | 146",
             "type": "vless",
-            "server": "ip.aminivip2023.site",
-            "server_port": 8443,
-            "uuid": "695b6a42-e044-406e-9f55-9778548fdc15",
+            "server": "172.67.73.163",
+            "server_port": 80,
+            "uuid": "48bd4d22-e42f-4749-af6a-85ecf716c823",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1470,21 +1472,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "ri.aminivip2023.site",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/V2zed",
+                "path": "\/",
                 "headers": {
-                    "Host": "ri.aminivip2023.site"
+                    "Host": "172.67.73.163"
                 }
             }
         },
@@ -1801,6 +1793,35 @@
                 "path": "\/",
                 "headers": {
                     "Host": "172.67.204.84"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 12",
+            "type": "vless",
+            "server": "88.151.194.252",
+            "server_port": 8443,
+            "uuid": "115cb25a-154f-4899-8437-983c6b4b77c4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speed.cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_lZAF6sNv2UN3Dw1J-onN3DDunvHo4t5FmOXMPAYLBw",
+                    "short_id": "4bc2f303"
                 }
             }
         },
