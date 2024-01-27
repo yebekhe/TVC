@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇫🇮FI | vless | @ipV2Ray | 17",
+                "🇳🇱NL | vless | @V2RayTz | 19",
                 "🇩🇪DE | vless | @Outlinev2rayNG | 8",
                 "🏳️XX | vless | @Capital_NET | 48",
                 "🇸🇪SE | vless | @kiava | 5",
@@ -120,6 +121,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇫🇮FI | vless | @ipV2Ray | 17",
+                "🇳🇱NL | vless | @V2RayTz | 19",
                 "🇩🇪DE | vless | @Outlinev2rayNG | 8",
                 "🏳️XX | vless | @Capital_NET | 48",
                 "🇸🇪SE | vless | @kiava | 5",
@@ -178,6 +180,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇳🇱NL | vless | @V2RayTz | 19",
+            "type": "vless",
+            "server": "64.227.66.44",
+            "server_port": 30069,
+            "uuid": "b68e3345-d339-43bc-a4f9-e2f2ca600420",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zula.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QCe8xKATFRQ3TMSmXilikvCl5Fjj8-RX_AR_WkYbiWc",
+                    "short_id": "1c600b1a"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
