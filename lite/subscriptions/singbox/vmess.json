@@ -108,12 +108,13 @@
                 "URL-TEST",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
+                "🇺🇸US | vmess | @DeamNet_Proxy | 17",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 9",
-                "🇺🇦UA | vmess | @ShadowProxy66 | 45",
+                "🇨🇦CA | vmess | @ShadowProxy66 | 40",
                 "🇺🇸US | vmess | @DailyV2RY | 163",
+                "🏳️XX | vmess | @ConfigsHUB | 18",
                 "🏳️XX | vmess | @Hope_Net | 4",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇺🇸US | vmess | @forwardv2ray | 19",
                 "🇮🇷IR | vmess | @eliya_chiter0 | 2"
             ]
         },
@@ -123,12 +124,13 @@
             "outbounds": [
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
+                "🇺🇸US | vmess | @DeamNet_Proxy | 17",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 9",
-                "🇺🇦UA | vmess | @ShadowProxy66 | 45",
+                "🇨🇦CA | vmess | @ShadowProxy66 | 40",
                 "🇺🇸US | vmess | @DailyV2RY | 163",
+                "🏳️XX | vmess | @ConfigsHUB | 18",
                 "🏳️XX | vmess | @Hope_Net | 4",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇺🇸US | vmess | @forwardv2ray | 19",
                 "🇮🇷IR | vmess | @eliya_chiter0 | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -186,6 +188,30 @@
             }
         },
         {
+            "tag": "🇺🇸US | vmess | @DeamNet_Proxy | 17",
+            "type": "vmess",
+            "server": "47.88.106.47",
+            "server_port": 80,
+            "uuid": "52fe86cc-db7f-43d0-83f8-7e4c91a61f35",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/qRV8zMMajQyex4KWUBkia1vvH",
+                "headers": {
+                    "Host": "47.88.106.47"
+                }
+            }
+        },
+        {
             "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 9",
             "type": "vmess",
             "server": "104.17.25.1",
@@ -210,11 +236,11 @@
             }
         },
         {
-            "tag": "🇺🇦UA | vmess | @ShadowProxy66 | 45",
+            "tag": "🇨🇦CA | vmess | @ShadowProxy66 | 40",
             "type": "vmess",
-            "server": "45.137.155.195",
+            "server": "172.67.220.64",
             "server_port": 443,
-            "uuid": "49c76bcf-3a58-43df-b1d4-2bffe9ca03b5",
+            "uuid": "f24bba0f-8656-44f8-b21e-a0e3a190c4c5",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -224,6 +250,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "172.67.220.64",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/df97b21e-3943-4865-af18-b5ea9676b037",
+                "headers": {
+                    "Host": "172.67.220.64"
+                }
             }
         },
         {
@@ -241,6 +284,30 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🏳️XX | vmess | @ConfigsHUB | 18",
+            "type": "vmess",
+            "server": "index.zhaal.ir",
+            "server_port": 2086,
+            "uuid": "e690ff9e-1676-4be3-d136-dcae586cb1e7",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
@@ -281,40 +348,6 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "ca2.xv2ray.net"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | vmess | @forwardv2ray | 19",
-            "type": "vmess",
-            "server": "173.245.58.37",
-            "server_port": 443,
-            "uuid": "695ae833-9d90-4598-b431-c4cd214106c0",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "7wih-darkness-f0af.jivegoh116.workers.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/tasnim.onthewifi.com\/@forwardv2ray",
-                "headers": {
-                    "Host": "7wih-darkness-f0af.jivegoh116.workers.dev"
                 }
             }
         },
