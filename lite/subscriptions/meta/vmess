@@ -126,9 +126,9 @@ proxies:
   - {"name":"🇺🇦UA | vmess | @ShadowProxy66 | 45","type":"vmess","server":"45.137.155.195","port":443,"cipher":"auto","uuid":"49c76bcf-3a58-43df-b1d4-2bffe9ca03b5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @proxyymeliii | 21","type":"vmess","server":"104.21.25.65","port":"2087","cipher":"auto","uuid":"864112a6-ceeb-4126-b7e2-509c2a203d20","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"🇺🇸US | vmess | @DailyV2RY | 163","type":"vmess","server":"5.161.80.234","port":"8081","cipher":"auto","uuid":"852cb4c2-e786-4beb-abb6-76cbc56a29f0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇵🇱PL | vmess | @ConfigsHUB | 19","type":"vmess","server":"94.131.96.137","port":"8080","cipher":"auto","uuid":"900fbb93-4dba-40c1-be96-9aef165a7c2e","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":""}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
-  - {"name":"🇺🇸US | vmess | @forwardv2ray | 19","type":"vmess","server":"162.251.62.115","port":"22324","cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸US | vmess | @forwardv2ray | 19","type":"vmess","server":"173.245.58.37","port":"443","cipher":"auto","uuid":"695ae833-9d90-4598-b431-c4cd214106c0","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/tasnim.onthewifi.com/@forwardv2ray","headers":{"host":"7wih-darkness-f0af.jivegoh116.workers.dev"}}}
+  - {"name":"🏳️XX | vmess | @kingofilter | 12","type":"vmess","server":"revers1.gerardfiliptoneer02.shop","port":"2087","cipher":"auto","uuid":"d8b965f6-2846-4288-9478-5d6ec3cd409f","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -141,9 +141,9 @@ proxy-groups:
       - '🇺🇦UA | vmess | @ShadowProxy66 | 45'
       - '🇨🇦CA | vmess | @proxyymeliii | 21'
       - '🇺🇸US | vmess | @DailyV2RY | 163'
-      - '🇵🇱PL | vmess | @ConfigsHUB | 19'
       - '🇺🇸US | vmess | @v2Line | 6'
       - '🇺🇸US | vmess | @forwardv2ray | 19'
+      - '🏳️XX | vmess | @kingofilter | 12'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -156,9 +156,9 @@ proxy-groups:
       - '🇺🇦UA | vmess | @ShadowProxy66 | 45'
       - '🇨🇦CA | vmess | @proxyymeliii | 21'
       - '🇺🇸US | vmess | @DailyV2RY | 163'
-      - '🇵🇱PL | vmess | @ConfigsHUB | 19'
       - '🇺🇸US | vmess | @v2Line | 6'
       - '🇺🇸US | vmess | @forwardv2ray | 19'
+      - '🏳️XX | vmess | @kingofilter | 12'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -170,9 +170,9 @@ proxy-groups:
       - '🇺🇦UA | vmess | @ShadowProxy66 | 45'
       - '🇨🇦CA | vmess | @proxyymeliii | 21'
       - '🇺🇸US | vmess | @DailyV2RY | 163'
-      - '🇵🇱PL | vmess | @ConfigsHUB | 19'
       - '🇺🇸US | vmess | @v2Line | 6'
       - '🇺🇸US | vmess | @forwardv2ray | 19'
+      - '🏳️XX | vmess | @kingofilter | 12'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
