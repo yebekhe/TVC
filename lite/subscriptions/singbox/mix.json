@@ -150,17 +150,17 @@
                 "🇺🇦UA | vmess | @ShadowProxy66 | 45",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇫🇷FR | vless | @v2ray_swhil | 24",
-                "🇺🇸US | vless | @MsV2ray | 17",
+                "🇨🇦CA | vless | @MsV2ray | 17",
                 "🇺🇸US | vless | @v2ray1_ng | 3",
                 "🇮🇷IR | vless | @vless_vmess | 0",
                 "🇨🇦CA | vless | @MTConfig | 18",
-                "🇨🇦CA | vless | @V2RayTz | 19",
+                "🇺🇸US | vless | @V2RayTz | 19",
                 "🇨🇦CA | vless | @VmessProtocol | 11",
                 "🇨🇦CA | vless | @DailyV2RY | 159",
                 "🇳🇱NL | vless | @sinabigo | 6",
                 "🇨🇦CA | vless | @lrnbymaa | 9",
                 "🇦🇹AT | ss | @OutlineVpnOfficial | 15",
-                "🇨🇦CA | vmess | @ConfigsHUB | 15",
+                "🇨🇦CA | vless | @ConfigsHUB | 13",
                 "🇨🇦CA | vless | @proxystore11 | 15",
                 "🏳️XX | vmess | @Hope_Net | 4",
                 "🏳️XX | vless | @fnet00 | 13",
@@ -171,7 +171,7 @@
                 "🇺🇸US | vless | @Capoit | 7",
                 "🇨🇦CA | vless | @FreakConfig | 7",
                 "🇨🇷CR | vless | @flyv2ray | 15",
-                "🇨🇦CA | vless | @forwardv2ray | 15",
+                "🇨🇷CR | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 13",
@@ -235,17 +235,17 @@
                 "🇺🇦UA | vmess | @ShadowProxy66 | 45",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇫🇷FR | vless | @v2ray_swhil | 24",
-                "🇺🇸US | vless | @MsV2ray | 17",
+                "🇨🇦CA | vless | @MsV2ray | 17",
                 "🇺🇸US | vless | @v2ray1_ng | 3",
                 "🇮🇷IR | vless | @vless_vmess | 0",
                 "🇨🇦CA | vless | @MTConfig | 18",
-                "🇨🇦CA | vless | @V2RayTz | 19",
+                "🇺🇸US | vless | @V2RayTz | 19",
                 "🇨🇦CA | vless | @VmessProtocol | 11",
                 "🇨🇦CA | vless | @DailyV2RY | 159",
                 "🇳🇱NL | vless | @sinabigo | 6",
                 "🇨🇦CA | vless | @lrnbymaa | 9",
                 "🇦🇹AT | ss | @OutlineVpnOfficial | 15",
-                "🇨🇦CA | vmess | @ConfigsHUB | 15",
+                "🇨🇦CA | vless | @ConfigsHUB | 13",
                 "🇨🇦CA | vless | @proxystore11 | 15",
                 "🏳️XX | vmess | @Hope_Net | 4",
                 "🏳️XX | vless | @fnet00 | 13",
@@ -256,7 +256,7 @@
                 "🇺🇸US | vless | @Capoit | 7",
                 "🇨🇦CA | vless | @FreakConfig | 7",
                 "🇨🇷CR | vless | @flyv2ray | 15",
-                "🇨🇦CA | vless | @forwardv2ray | 15",
+                "🇨🇷CR | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 13",
@@ -1442,7 +1442,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @MsV2ray | 17",
+            "tag": "🇨🇦CA | vless | @MsV2ray | 17",
             "type": "vless",
             "server": "all.MsV2ray.online",
             "server_port": 2095,
@@ -1529,11 +1529,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @V2RayTz | 19",
+            "tag": "🇺🇸US | vless | @V2RayTz | 19",
             "type": "vless",
-            "server": "104.31.16.160",
-            "server_port": 80,
-            "uuid": "e4a52f75-474e-449e-bcd2-05ea177f1403",
+            "server": "190.93.244.103",
+            "server_port": 2083,
+            "uuid": "6ef2cb58-17dd-4c13-bc80-a16f91719ea6",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1541,12 +1541,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "104.31.16.160"
+            "tls": {
+                "enabled": true,
+                "server_name": "liV2helo.LIGHTNING6.IR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@LIGHTNING6",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1674,36 +1684,23 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇦CA | vmess | @ConfigsHUB | 15",
-            "type": "vmess",
-            "server": "104.21.4.6",
-            "server_port": 443,
-            "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇨🇦CA | vless | @ConfigsHUB | 13",
+            "type": "vless",
+            "server": "104.19.101.129",
+            "server_port": 2052,
+            "uuid": "1d9e8411-2c28-4527-875e-490c2bcc88ef",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "glweidf.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/linkws",
+                "path": "\/",
                 "headers": {
-                    "Host": "glweidf.cfd"
+                    "Host": "104.19.101.129"
                 }
             }
         },
@@ -1950,11 +1947,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 15",
+            "tag": "🇨🇷CR | vless | @forwardv2ray | 18",
             "type": "vless",
-            "server": "172.64.89.170",
-            "server_port": 443,
-            "uuid": "b9ad895b-12ac-40fc-a5ac-a5b2a1285001",
+            "server": "www.tozedmodeon.store",
+            "server_port": 8080,
+            "uuid": "f370b6f6-0878-46b2-8eae-a703fe704149",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1962,21 +1959,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "3k.pureboy.eu.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed",
+                "path": "\/TELEGRAM-ZEDMODEON-TEL-ZEDMODEON-JOIN-ZEDMODEON-JOIN-ZEDMODEON-JOIN-ZEDMODEON",
                 "headers": {
-                    "Host": "3k.pureboy.eu.org"
+                    "Host": "www.tozedmodeon.store"
                 }
             }
         },
