@@ -107,7 +107,6 @@
             "outbounds": [
                 "URL-TEST",
                 "🇫🇮FI | vless | @ipV2Ray | 17",
-                "🏳️XX | vless | @fnet00 | 11",
                 "🏳️XX | vless | @Capital_NET | 48",
                 "🇸🇪SE | vless | @kiava | 5",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -119,7 +118,6 @@
             "type": "urltest",
             "outbounds": [
                 "🇫🇮FI | vless | @ipV2Ray | 17",
-                "🏳️XX | vless | @fnet00 | 11",
                 "🏳️XX | vless | @Capital_NET | 48",
                 "🇸🇪SE | vless | @kiava | 5",
                 "🇨🇦CA | vless | @vpn_go67 | 23",
@@ -176,42 +174,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🏳️XX | vless | @fnet00 | 11",
-            "type": "vless",
-            "server": "yourconfig.camdvr.org",
-            "server_port": 443,
-            "uuid": "b4285bc2-def8-4822-96a1-58124e360aed",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "greenpepper.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "pj7hhjVTqfsjNw7vIMQFwT6nzdbHLNAyUveeRhv5vw4",
-                    "short_id": "0960546b"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@Fnet00",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
