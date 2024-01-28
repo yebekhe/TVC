@@ -155,7 +155,7 @@
                 "🇳🇱NL | vless | @sinabigo | 6",
                 "🇸🇪SE | vless | @lrnbymaa | 10",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🏳️XX | vmess | @ConfigsHUB | 18",
+                "🇨🇦CA | vmess | @ConfigsHUB | 17",
                 "🇨🇦CA | vless | @proxystore11 | 14",
                 "🏳️XX | vmess | @Hope_Net | 4",
                 "🇨🇦CA | vless | @polproxy | 9",
@@ -166,6 +166,7 @@
                 "🇺🇸US | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 6",
                 "🇺🇸US | vless | @flyv2ray | 13",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇺🇸US | tuic | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 15",
@@ -236,7 +237,7 @@
                 "🇳🇱NL | vless | @sinabigo | 6",
                 "🇸🇪SE | vless | @lrnbymaa | 10",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🏳️XX | vmess | @ConfigsHUB | 18",
+                "🇨🇦CA | vmess | @ConfigsHUB | 17",
                 "🇨🇦CA | vless | @proxystore11 | 14",
                 "🏳️XX | vmess | @Hope_Net | 4",
                 "🇨🇦CA | vless | @polproxy | 9",
@@ -247,6 +248,7 @@
                 "🇺🇸US | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 6",
                 "🇺🇸US | vless | @flyv2ray | 13",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇺🇸US | tuic | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 15",
@@ -1559,11 +1561,11 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🏳️XX | vmess | @ConfigsHUB | 18",
+            "tag": "🇨🇦CA | vmess | @ConfigsHUB | 17",
             "type": "vmess",
-            "server": "index.zhaal.ir",
-            "server_port": 2086,
-            "uuid": "e690ff9e-1676-4be3-d136-dcae586cb1e7",
+            "server": "104.21.44.64",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1574,11 +1576,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "kellie.makeup",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": ""
+                    "Host": "kellie.makeup"
                 }
             }
         },
@@ -1814,6 +1826,37 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@VPNCUSTOMIZE,@VPNCUSTOMIZE",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "v2rayconfig.ddnsfree.com",
+            "server_port": 443,
+            "uuid": "5cf680c9-470e-4593-8f0b-6e8555fdb475",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kamy.CaEras.shop",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Fnet00",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
