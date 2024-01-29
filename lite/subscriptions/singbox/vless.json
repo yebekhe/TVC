@@ -118,7 +118,7 @@
                 "🇨🇦CA | vless | @Lockey_vpn | 11",
                 "🇨🇦CA | vless | @rxv2ray | 14",
                 "🇨🇦CA | vless | @free_v2rayyy | 7",
-                "🇨🇷CR | vless | @lightning6 | 30",
+                "🇺🇸US | vless | @lightning6 | 30",
                 "🇺🇸US | vless | @vpn_xw | 0",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 20",
@@ -136,7 +136,7 @@
                 "🇨🇦CA | vless | @UnlimitedDev | 5",
                 "🇨🇦CA | vless | @vmessorg | 3",
                 "🇨🇦CA | vless | @v2rayNG_Matsuri | 7",
-                "🇨🇦CA | vless | @v2rayngvpn | 12",
+                "🇺🇸US | vless | @v2rayngvpn | 12",
                 "🇨🇦CA | vless | @FalconPolV2rayNG | 7",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 5",
                 "🇨🇦CA | vless | @v2ray_swhil | 20",
@@ -155,6 +155,7 @@
                 "🇺🇸US | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 6",
                 "🇺🇸US | vless | @flyv2ray | 13",
+                "🇮🇷IR | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 16",
                 "🇸🇪SE | vless | @kiava | 5",
@@ -184,7 +185,7 @@
                 "🇨🇦CA | vless | @Lockey_vpn | 11",
                 "🇨🇦CA | vless | @rxv2ray | 14",
                 "🇨🇦CA | vless | @free_v2rayyy | 7",
-                "🇨🇷CR | vless | @lightning6 | 30",
+                "🇺🇸US | vless | @lightning6 | 30",
                 "🇺🇸US | vless | @vpn_xw | 0",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 20",
@@ -202,7 +203,7 @@
                 "🇨🇦CA | vless | @UnlimitedDev | 5",
                 "🇨🇦CA | vless | @vmessorg | 3",
                 "🇨🇦CA | vless | @v2rayNG_Matsuri | 7",
-                "🇨🇦CA | vless | @v2rayngvpn | 12",
+                "🇺🇸US | vless | @v2rayngvpn | 12",
                 "🇨🇦CA | vless | @FalconPolV2rayNG | 7",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 5",
                 "🇨🇦CA | vless | @v2ray_swhil | 20",
@@ -221,6 +222,7 @@
                 "🇺🇸US | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 6",
                 "🇺🇸US | vless | @flyv2ray | 13",
+                "🇮🇷IR | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇦CA | vless | @mehrosaboran | 16",
                 "🇸🇪SE | vless | @kiava | 5",
@@ -601,7 +603,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @lightning6 | 30",
+            "tag": "🇺🇸US | vless | @lightning6 | 30",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 2083,
@@ -1079,7 +1081,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @v2rayngvpn | 12",
+            "tag": "🇺🇸US | vless | @v2rayngvpn | 12",
             "type": "vless",
             "server": "667.lutong.eu.org",
             "server_port": 8443,
@@ -1549,6 +1551,37 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇮🇷IR | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "servers.xvon.in",
+            "server_port": 80,
+            "uuid": "9b56464e-c862-4731-8598-6ea09b7e6cfb",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "servers.xvon.in",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "servers.xvon.in"
+                }
             }
         },
         {
