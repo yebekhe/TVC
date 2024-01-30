@@ -118,7 +118,7 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🏳️XX | ss | @V2rayCollectorDonate | 7","type":"ss","server":"[0000:0000:0000:0000:0000:ffff:1010:7b8b]","port":8080,"password":"ugLzHwb46XEQZmKF0eBPTuMktwyQhnGvwt4fzt8PEd4=","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🏳️XX | ss | @V2rayCollectorDonate | 11","type":"ss","server":"[0000:0000:0000:0000:0000:ffff:1010:7b8b]","port":8080,"password":"ugLzHwb46XEQZmKF0eBPTuMktwyQhnGvwt4fzt8PEd4=","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | ss | @DeamNet_Proxy | 4","type":"ss","server":"38.121.43.97","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
   - {"name":"🇺🇸US | ss | @DeamNet_Proxy | 7","type":"ss","server":"38.75.136.135","port":8888,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
   - {"name":"🇺🇸US | ss | @DeamNet_Proxy | 8","type":"ss","server":"167.88.61.175","port":8119,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
@@ -145,7 +145,6 @@ proxies:
   - {"name":"🇦🇹AT | ss | @OutlineVpnOfficial | 15","type":"ss","server":"212.113.106.243","port":12949,"password":"P2zxXPewlV3BlfqqYiSthvtLc","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 16","type":"ss","server":"www.outline.network.ak2003.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"zekdk0MRWVx1zFASC+HAcmCVBA+TljWabwoF57zjIZA=","cipher":"aes-256-gcm"}
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
-  - {"name":"🇬🇧GB | ss | @forwardv2ray | 9","type":"ss","server":"series-a2-me.samanehha.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | ss | @ROMAX_VPN | 3","type":"ss","server":"51.104.230.134","port":60156,"password":"cWKqgZ2YrNWTOLhDMtJn2R","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -153,7 +152,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🏳️XX | ss | @V2rayCollectorDonate | 7'
+      - '🏳️XX | ss | @V2rayCollectorDonate | 11'
       - '🇺🇸US | ss | @DeamNet_Proxy | 4'
       - '🇺🇸US | ss | @DeamNet_Proxy | 7'
       - '🇺🇸US | ss | @DeamNet_Proxy | 8'
@@ -180,7 +179,6 @@ proxy-groups:
       - '🇦🇹AT | ss | @OutlineVpnOfficial | 15'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 16'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
-      - '🇬🇧GB | ss | @forwardv2ray | 9'
       - '🇬🇧GB | ss | @ROMAX_VPN | 3'
   - name: URL-TEST
     type: url-test
@@ -188,7 +186,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🏳️XX | ss | @V2rayCollectorDonate | 7'
+      - '🏳️XX | ss | @V2rayCollectorDonate | 11'
       - '🇺🇸US | ss | @DeamNet_Proxy | 4'
       - '🇺🇸US | ss | @DeamNet_Proxy | 7'
       - '🇺🇸US | ss | @DeamNet_Proxy | 8'
@@ -215,14 +213,13 @@ proxy-groups:
       - '🇦🇹AT | ss | @OutlineVpnOfficial | 15'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 16'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
-      - '🇬🇧GB | ss | @forwardv2ray | 9'
       - '🇬🇧GB | ss | @ROMAX_VPN | 3'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🏳️XX | ss | @V2rayCollectorDonate | 7'
+      - '🏳️XX | ss | @V2rayCollectorDonate | 11'
       - '🇺🇸US | ss | @DeamNet_Proxy | 4'
       - '🇺🇸US | ss | @DeamNet_Proxy | 7'
       - '🇺🇸US | ss | @DeamNet_Proxy | 8'
@@ -249,7 +246,6 @@ proxy-groups:
       - '🇦🇹AT | ss | @OutlineVpnOfficial | 15'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 16'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
-      - '🇬🇧GB | ss | @forwardv2ray | 9'
       - '🇬🇧GB | ss | @ROMAX_VPN | 3'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
