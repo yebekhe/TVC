@@ -11,15 +11,15 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | trojan | @PrivateVPNs | 17 = trojan, 3.69.199.93, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
-🇩🇪DE | trojan | @DirectVPN | 17 = trojan, 3.73.60.160, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
+🇩🇪DE | trojan | @PrivateVPNs | 17 = trojan, 18.153.229.79, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇫🇷FR | trojan | @DirectVPN | 17 = trojan, 13.39.94.214, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
 🇺🇸US | ss | @OutlineVpnOfficial | 17 = ss, www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 2443, encrypt-method = aes-256-gcm, password = hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=
+🇸🇪SE | trojan | @ConfigsHUB | 15 = trojan, 13.60.0.57, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trj.rollingnext.co.uk, ws = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
-🇺🇦UA | vmess | @forwardv2ray | 19 = vmess, 195.137.167.148, 443, username = 06195b5b-3815-4a07-96f7-47eefbb1b143, ws = true, tls = 1, vmess-aead = true, ws-path = /urnxewzvh.site/kwhmvws, ws-headers = Host:"7hss-butterfly-d4c3.fijetem432.workers.dev", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | trojan | @PrivateVPNs | 17,🇩🇪DE | trojan | @DirectVPN | 17,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇺🇸US | vmess | @v2Line | 6,🇺🇦UA | vmess | @forwardv2ray | 19
-URL-TEST = url-test,🇩🇪DE | trojan | @PrivateVPNs | 17,🇩🇪DE | trojan | @DirectVPN | 17,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇺🇸US | vmess | @v2Line | 6,🇺🇦UA | vmess | @forwardv2ray | 19
-FALLBACK = fallback,🇩🇪DE | trojan | @PrivateVPNs | 17,🇩🇪DE | trojan | @DirectVPN | 17,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇺🇸US | vmess | @v2Line | 6,🇺🇦UA | vmess | @forwardv2ray | 19
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | trojan | @PrivateVPNs | 17,🇫🇷FR | trojan | @DirectVPN | 17,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇸🇪SE | trojan | @ConfigsHUB | 15,🇺🇸US | vmess | @v2Line | 6
+URL-TEST = url-test,🇩🇪DE | trojan | @PrivateVPNs | 17,🇫🇷FR | trojan | @DirectVPN | 17,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇸🇪SE | trojan | @ConfigsHUB | 15,🇺🇸US | vmess | @v2Line | 6
+FALLBACK = fallback,🇩🇪DE | trojan | @PrivateVPNs | 17,🇫🇷FR | trojan | @DirectVPN | 17,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇸🇪SE | trojan | @ConfigsHUB | 15,🇺🇸US | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
