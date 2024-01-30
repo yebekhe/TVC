@@ -155,7 +155,7 @@
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @lrnbymaa | 10",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇨🇦CA | vless | @ConfigsHUB | 19",
+                "🇺🇸US | vless | @ConfigsHUB | 19",
                 "🇨🇷CR | vless | @proxystore11 | 15",
                 "🇨🇦CA | vmess | @yaney_01 | 11",
                 "🏳️XX | vmess | @Hope_Net | 4",
@@ -164,8 +164,7 @@
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 7",
                 "🏳️XX | vless | @Capital_NET | 48",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇨🇦CA | vless | @FreakConfig | 10",
-                "🏳️XX | vmess | @forwardv2ray | 18",
+                "🇨🇦CA | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @https_config_injector | 13",
                 "🇺🇸US | vless | @mehrosaboran | 13",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -235,7 +234,7 @@
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @lrnbymaa | 10",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇨🇦CA | vless | @ConfigsHUB | 19",
+                "🇺🇸US | vless | @ConfigsHUB | 19",
                 "🇨🇷CR | vless | @proxystore11 | 15",
                 "🇨🇦CA | vmess | @yaney_01 | 11",
                 "🏳️XX | vmess | @Hope_Net | 4",
@@ -244,8 +243,7 @@
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 7",
                 "🏳️XX | vless | @Capital_NET | 48",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇨🇦CA | vless | @FreakConfig | 10",
-                "🏳️XX | vmess | @forwardv2ray | 18",
+                "🇨🇦CA | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @https_config_injector | 13",
                 "🇺🇸US | vless | @mehrosaboran | 13",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -1549,11 +1547,11 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇦CA | vless | @ConfigsHUB | 19",
+            "tag": "🇺🇸US | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "freevp.telecode.space",
-            "server_port": 443,
-            "uuid": "112242b5-6b83-421e-8b23-ca9b5c68b0d0",
+            "server": "tel.VPNCUSTOMIZE.cam",
+            "server_port": 8080,
+            "uuid": "dc9f9344-d123-46e2-8c6d-db02ba121e37",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1561,22 +1559,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "free.telecode.space",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "@Outlinev2rayNG",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "tel.VPNCUSTOMIZE.cam"
+                }
             }
         },
         {
@@ -1768,11 +1756,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @FreakConfig | 10",
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 19",
             "type": "vless",
-            "server": "172.67.19.244",
+            "server": "104.22.51.162",
             "server_port": 80,
-            "uuid": "e1a928be-e289-4aef-b92e-4106fabdf42f",
+            "uuid": "-----WS-ipV2Ray-----",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1782,43 +1770,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/path\/TELEGRAM-PROXY_MTM",
+                "path": "\/",
                 "headers": {
-                    "Host": "172.67.19.244"
-                }
-            }
-        },
-        {
-            "tag": "🏳️XX | vmess | @forwardv2ray | 18",
-            "type": "vmess",
-            "server": "mci.mosi.mosipro.ml",
-            "server_port": 443,
-            "uuid": "3585d23e-c29a-4071-891e-eea72dcf6459",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "Dusseldorf.kotick.site",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/speedtest",
-                "headers": {
-                    "Host": "Dusseldorf.kotick.site"
+                    "Host": "104.22.51.162"
                 }
             }
         },
