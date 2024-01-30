@@ -125,6 +125,7 @@ proxies:
   - {"name":"🇫🇷FR | vmess | @oneclickvpnkeys | 6","type":"vmess","server":"141.94.86.92","port":"10050","cipher":"auto","uuid":"9b3b40c1-3b11-4094-8553-a02f2e01f24c","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @ShadowProxy66 | 47","type":"vmess","server":"104.19.44.203","port":"2087","cipher":"auto","uuid":"e3a464d7-ad51-42ee-8059-220154797b50","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
+  - {"name":"🇸🇬SG | vmess | @forwardv2ray | 19","type":"vmess","server":"128.199.128.214","port":"42338","cipher":"auto","uuid":"13e5d814-834b-473a-a87a-15459987f181","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -136,6 +137,7 @@ proxy-groups:
       - '🇫🇷FR | vmess | @oneclickvpnkeys | 6'
       - '🇨🇦CA | vmess | @ShadowProxy66 | 47'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇸🇬SG | vmess | @forwardv2ray | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -147,6 +149,7 @@ proxy-groups:
       - '🇫🇷FR | vmess | @oneclickvpnkeys | 6'
       - '🇨🇦CA | vmess | @ShadowProxy66 | 47'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇸🇬SG | vmess | @forwardv2ray | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -157,6 +160,7 @@ proxy-groups:
       - '🇫🇷FR | vmess | @oneclickvpnkeys | 6'
       - '🇨🇦CA | vmess | @ShadowProxy66 | 47'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇸🇬SG | vmess | @forwardv2ray | 19'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
