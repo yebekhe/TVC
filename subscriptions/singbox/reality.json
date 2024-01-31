@@ -124,7 +124,10 @@
                 "🇩🇪DE | vless | @v2ray_swhil | 8",
                 "🇫🇮FI | vless | @v2ray_swhil | 14",
                 "🇩🇪DE | vless | @v2ray1_ng | 0",
-                "🇩🇪DE | vless | @ConfigsHUB | 3",
+                "🇩🇪DE | vless | @v2ray1_ng | 1",
+                "🇳🇱NL | vless | @DailyV2RY | 144",
+                "🇺🇸US | vless | @DailyV2RY | 146",
+                "🏳️XX | vless | @DailyV2RY | 149",
                 "🇸🇪SE | vless | @Outlinev2rayNG | 1",
                 "🏳️XX | vless | @Capital_NET | 34",
                 "🇩🇪DE | vless | @Capital_NET | 35",
@@ -187,7 +190,10 @@
                 "🇩🇪DE | vless | @v2ray_swhil | 8",
                 "🇫🇮FI | vless | @v2ray_swhil | 14",
                 "🇩🇪DE | vless | @v2ray1_ng | 0",
-                "🇩🇪DE | vless | @ConfigsHUB | 3",
+                "🇩🇪DE | vless | @v2ray1_ng | 1",
+                "🇳🇱NL | vless | @DailyV2RY | 144",
+                "🇺🇸US | vless | @DailyV2RY | 146",
+                "🏳️XX | vless | @DailyV2RY | 149",
                 "🇸🇪SE | vless | @Outlinev2rayNG | 1",
                 "🏳️XX | vless | @Capital_NET | 34",
                 "🇩🇪DE | vless | @Capital_NET | 35",
@@ -794,6 +800,42 @@
             "type": "vless",
             "server": "78.47.198.99",
             "server_port": 443,
+            "uuid": "cb00ef4a-fcf7-484a-8c49-6a2422ed84e6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "msTPLgzvYs8r_Nww-HHQG5Cbj8VEwYjwsFVCuwdSZk8",
+                    "short_id": "9d2b63ad"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @v2ray1_ng | 1",
+            "type": "vless",
+            "server": "78.47.198.99",
+            "server_port": 443,
             "uuid": "717dc04f-b838-4999-a006-2199eab5c714",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
@@ -826,11 +868,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @ConfigsHUB | 3",
+            "tag": "🇳🇱NL | vless | @DailyV2RY | 144",
             "type": "vless",
-            "server": "78.47.198.99",
+            "server": "77.105.142.117",
             "server_port": 443,
-            "uuid": "cb00ef4a-fcf7-484a-8c49-6a2422ed84e6",
+            "uuid": "97350766-b6b0-411c-ba40-9e47c900421e",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -840,7 +882,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "*.google.com",
+                "server_name": "iranfun.shop",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -849,13 +891,85 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "msTPLgzvYs8r_Nww-HHQG5Cbj8VEwYjwsFVCuwdSZk8",
-                    "short_id": "9d2b63ad"
+                    "public_key": "htWPfl7075ru_ZG6sVuuez_Bxx2XN7K0YTTLWRQFwwM",
+                    "short_id": "739f9cea"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@ipV2Ray",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | vless | @DailyV2RY | 146",
+            "type": "vless",
+            "server": "146.190.184.166",
+            "server_port": 2096,
+            "uuid": "b00351ed-f001-4977-abfa-ae2b3cf1884f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "w69-dXNHmz1jAlVucZahod85pcGfDLx3nqPcqhYskQ8",
+                    "short_id": "ff105c70"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON-@ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🏳️XX | vless | @DailyV2RY | 149",
+            "type": "vless",
+            "server": "[2a01:4f9:c012:ae57::1]",
+            "server_port": 443,
+            "uuid": "361962dd-1061-411c-82df-2cc7bfa1ea5b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3rbctwQwvd_706Z0ZRnrha6BIzksEDH2ZJ8ySFawSls",
+                    "short_id": "9e383072"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
