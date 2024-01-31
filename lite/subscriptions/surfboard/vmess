@@ -11,15 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇵🇭PH | vmess | @DeamNet_Proxy | 18 = vmess, 109.248.25.59, 29064, username = 8958440c-aa86-4ff1-8e88-5c7a052d5961, ws = true, tls = , vmess-aead = true, ws-path = /ss, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇬🇷GR | vmess | @oneclickvpnkeys | 8 = vmess, 94.131.8.32, 2095, username = 57e37a74-badc-4b71-87c7-5b9e20879b58, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @kingofilter | 8 = vmess, srv1.hamedgeek.sbs, 2083, username = d7924fe6-bc4d-4809-a1c0-33ad5d8ef5ed, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"vpnetiran.hamedgeek.sbs", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @eliya_chiter0 | 7 = vmess, 104.21.4.6, 443, username = 1052f24e-7b09-45eb-b0c5-d858eb124192, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"glweidf.cfd", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇵🇭PH | vmess | @DeamNet_Proxy | 18,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @kingofilter | 8,🇨🇦CA | vmess | @eliya_chiter0 | 7
-URL-TEST = url-test,🇵🇭PH | vmess | @DeamNet_Proxy | 18,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @kingofilter | 8,🇨🇦CA | vmess | @eliya_chiter0 | 7
-FALLBACK = fallback,🇵🇭PH | vmess | @DeamNet_Proxy | 18,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @kingofilter | 8,🇨🇦CA | vmess | @eliya_chiter0 | 7
+MANUAL = select,URL-TEST,FALLBACK,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @kingofilter | 8,🇨🇦CA | vmess | @eliya_chiter0 | 7
+URL-TEST = url-test,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @kingofilter | 8,🇨🇦CA | vmess | @eliya_chiter0 | 7
+FALLBACK = fallback,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @kingofilter | 8,🇨🇦CA | vmess | @eliya_chiter0 | 7
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
