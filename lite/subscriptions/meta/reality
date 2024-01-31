@@ -120,8 +120,9 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇮🇷IR | vless | @EliV2ray | 14","type":"vless","server":"194.31.194.175","port":2046,"udp":true,"uuid":"5ebf801c-eb58-4e9e-96df-39112c54b25c","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"igap.net","reality-opts":{"public-key":"d5lQ5iM3LcZe802055DfB5FN7-c3f6gkWMLKTCQxzQg","short-id":"116f6684"}}
   - {"name":"🇫🇮FI | vless | @Capital_NET | 47","type":"vless","server":"tel.1lagvpn13.cfd","port":443,"udp":true,"uuid":"9eb0967f-8c35-4aa5-b6be-a2e46f4c2348","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"gsmarena.com","grpc-opts":{"grpc-service-name":"@LAGVPN13"},"reality-opts":{"public-key":"uX1V5lrEbOrtXi-2dQyPNVJ6sf80g19HYujUUWN5nxA","short-id":"464f8607"}}
-  - {"name":"🇩🇪DE | vless | @Capoit | 4","type":"vless","server":"78.47.198.99","port":443,"udp":true,"uuid":"717dc04f-b838-4999-a006-2199eab5c714","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.google.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"oQC3BbnZ1yNgRHXF1z3B_zEwv1tIClsHDVzDXOHY5xw","short-id":"c2bd6f04"}}
+  - {"name":"🇩🇪DE | vless | @Capoit | 6","type":"vless","server":"78.47.198.99","port":443,"udp":true,"uuid":"717dc04f-b838-4999-a006-2199eab5c714","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.google.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"oQC3BbnZ1yNgRHXF1z3B_zEwv1tIClsHDVzDXOHY5xw","short-id":"c2bd6f04"}}
   - {"name":"🇸🇪SE | vless | @kiava | 6","type":"vless","server":"13.49.102.150","port":8443,"udp":true,"uuid":"2c59ff33-916d-459b-a4c0-8b7432c4c3bb","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"coinmarketcap.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"aG4GaoEpt529YYeMSMlka3pu6Xh8Je72HHKPdMwnzAY","short-id":"f450be"}}
 proxy-groups:
   - name: MANUAL
@@ -129,8 +130,9 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇮🇷IR | vless | @EliV2ray | 14'
       - '🇫🇮FI | vless | @Capital_NET | 47'
-      - '🇩🇪DE | vless | @Capoit | 4'
+      - '🇩🇪DE | vless | @Capoit | 6'
       - '🇸🇪SE | vless | @kiava | 6'
   - name: URL-TEST
     type: url-test
@@ -138,16 +140,18 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇮🇷IR | vless | @EliV2ray | 14'
       - '🇫🇮FI | vless | @Capital_NET | 47'
-      - '🇩🇪DE | vless | @Capoit | 4'
+      - '🇩🇪DE | vless | @Capoit | 6'
       - '🇸🇪SE | vless | @kiava | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇮🇷IR | vless | @EliV2ray | 14'
       - '🇫🇮FI | vless | @Capital_NET | 47'
-      - '🇩🇪DE | vless | @Capoit | 4'
+      - '🇩🇪DE | vless | @Capoit | 6'
       - '🇸🇪SE | vless | @kiava | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
