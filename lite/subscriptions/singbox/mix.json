@@ -150,7 +150,7 @@
                 "🇨🇦CA | vless | @MTConfig | 18",
                 "🇨🇷CR | vless | @V2RayTz | 19",
                 "🇨🇦CA | vless | @VmessProtocol | 15",
-                "🇨🇷CR | vless | @DailyV2RY | 151",
+                "🇨🇷CR | vless | @DailyV2RY | 158",
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @MehradLearn | 12",
                 "🇨🇦CA | vless | @lrnbymaa | 12",
@@ -168,7 +168,7 @@
                 "🇺🇸US | vless | @Capoit | 4",
                 "🇨🇦CA | vless | @FreakConfig | 6",
                 "🇺🇸US | vless | @flyv2ray | 17",
-                "🇨🇦CA | vless | @forwardv2ray | 7",
+                "🇨🇳CN | trojan | @forwardv2ray | 17",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 12",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -232,7 +232,7 @@
                 "🇨🇦CA | vless | @MTConfig | 18",
                 "🇨🇷CR | vless | @V2RayTz | 19",
                 "🇨🇦CA | vless | @VmessProtocol | 15",
-                "🇨🇷CR | vless | @DailyV2RY | 151",
+                "🇨🇷CR | vless | @DailyV2RY | 158",
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @MehradLearn | 12",
                 "🇨🇦CA | vless | @lrnbymaa | 12",
@@ -250,7 +250,7 @@
                 "🇺🇸US | vless | @Capoit | 4",
                 "🇨🇦CA | vless | @FreakConfig | 6",
                 "🇺🇸US | vless | @flyv2ray | 17",
-                "🇨🇦CA | vless | @forwardv2ray | 7",
+                "🇨🇳CN | trojan | @forwardv2ray | 17",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 12",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -1454,11 +1454,11 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @DailyV2RY | 151",
+            "tag": "🇨🇷CR | vless | @DailyV2RY | 158",
             "type": "vless",
-            "server": "www.legendaryking.link",
-            "server_port": 8080,
-            "uuid": "b7f45d38-a69f-474d-ad4d-a9248d9bc15a",
+            "server": "LIGHTNING6-joinbede.liV2ray.xyz",
+            "server_port": 2083,
+            "uuid": "67658bd2-00e3-4751-9604-7e63266468c5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1466,12 +1466,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers",
-                "headers": {
-                    "Host": "www.legendaryking.link"
+            "tls": {
+                "enabled": true,
+                "server_name": "liV2held.LIGHTNING6.IR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@LIGHTNING6",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1881,23 +1891,24 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 7",
-            "type": "vless",
-            "server": "www.greendam.site",
-            "server_port": 80,
-            "uuid": "-----WS-ipV2Ray-----",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇨🇳CN | trojan | @forwardv2ray | 17",
+            "type": "trojan",
+            "server": "tiananmen.19890604.day",
+            "server_port": 10807,
+            "password": "a912c063-252d-4c4f-8944-1b3bd93bf9ba",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "www.greendam.site"
+            "tls": {
+                "enabled": true,
+                "server_name": "cloudflare.node-ssl.cdn-alibaba.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
