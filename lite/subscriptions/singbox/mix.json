@@ -168,7 +168,7 @@
                 "🇺🇸US | vless | @Capoit | 4",
                 "🇨🇦CA | vless | @FreakConfig | 6",
                 "🇺🇸US | vless | @flyv2ray | 17",
-                "🇨🇳CN | trojan | @forwardv2ray | 17",
+                "🇨🇦CA | vless | @forwardv2ray | 10",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 12",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -250,7 +250,7 @@
                 "🇺🇸US | vless | @Capoit | 4",
                 "🇨🇦CA | vless | @FreakConfig | 6",
                 "🇺🇸US | vless | @flyv2ray | 17",
-                "🇨🇳CN | trojan | @forwardv2ray | 17",
+                "🇨🇦CA | vless | @forwardv2ray | 10",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 12",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -1891,24 +1891,23 @@
             }
         },
         {
-            "tag": "🇨🇳CN | trojan | @forwardv2ray | 17",
-            "type": "trojan",
-            "server": "tiananmen.19890604.day",
-            "server_port": 10807,
-            "password": "a912c063-252d-4c4f-8944-1b3bd93bf9ba",
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 10",
+            "type": "vless",
+            "server": "k---join.outline-vpn.cloud",
+            "server_port": 80,
+            "uuid": "e1a928be-e289-4aef-b92e-4106fabdf42f",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "cloudflare.node-ssl.cdn-alibaba.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "k---join.outline-vpn.cloud"
                 }
             }
         },
