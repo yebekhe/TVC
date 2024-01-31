@@ -106,8 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇮FI | vless | @ipV2Ray | 18",
                 "🏳️XX | vless | @v2logy | 13",
+                "🇩🇪DE | vless | @V2RayTz | 19",
                 "🇫🇮FI | vless | @Capital_NET | 47",
                 "🇩🇪DE | vless | @Capoit | 2",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -119,8 +119,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇮FI | vless | @ipV2Ray | 18",
                 "🏳️XX | vless | @v2logy | 13",
+                "🇩🇪DE | vless | @V2RayTz | 19",
                 "🇫🇮FI | vless | @Capital_NET | 47",
                 "🇩🇪DE | vless | @Capoit | 2",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -146,42 +146,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇫🇮FI | vless | @ipV2Ray | 18",
-            "type": "vless",
-            "server": "95.217.165.237",
-            "server_port": 443,
-            "uuid": "362b4ce4-aafe-4b9b-a6a3-01a63abbbfc0",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "greenpepper.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "sCISqS8-2p5yxMf587SprLh9VhwqtWfZFfBrjqotLmQ",
-                    "short_id": "0aa7423a"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🏳️XX | vless | @v2logy | 13",
@@ -217,6 +181,42 @@
                     "vultr.com"
                 ],
                 "path": "\/pricing"
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @V2RayTz | 19",
+            "type": "vless",
+            "server": "78.47.198.99",
+            "server_port": 443,
+            "uuid": "cb00ef4a-fcf7-484a-8c49-6a2422ed84e6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "msTPLgzvYs8r_Nww-HHQG5Cbj8VEwYjwsFVCuwdSZk8",
+                    "short_id": "9d2b63ad"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
