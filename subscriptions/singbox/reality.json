@@ -109,6 +109,7 @@
                 "🇫🇷FR | vless | @EliV2ray | 2",
                 "🇩🇪DE | vless | @EliV2ray | 11",
                 "🇩🇪DE | vless | @ipV2Ray | 4",
+                "🇩🇪DE | vless | @V2pedia | 0",
                 "🇩🇪DE | vless | @ARv2ray | 2",
                 "🇩🇪DE | vless | @ARv2ray | 4",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
@@ -120,8 +121,9 @@
                 "🏳️XX | vless | @v2logy | 13",
                 "🇩🇪DE | vless | @servermomo | 1",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 8",
-                "🇩🇪DE | vless | @V2rayCollectorDonate | 11",
+                "🇩🇪DE | vless | @V2rayCollectorDonate | 13",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 2",
+                "🇩🇪DE | vless | @FalconPolV2rayNG | 0",
                 "🇩🇪DE | vless | @v2ray_swhil | 9",
                 "🇫🇮FI | vless | @v2ray_swhil | 15",
                 "🇩🇪DE | vless | @v2ray1_ng | 0",
@@ -134,9 +136,8 @@
                 "🇩🇪DE | vless | @Capital_NET | 46",
                 "🇫🇮FI | vless | @Capital_NET | 47",
                 "🏳️XX | vless | @FreakConfig | 1",
-                "🇩🇪DE | vless | @forwardv2ray | 12",
-                "🇩🇪DE | vless | @FAKEOFTVC | 1",
-                "🇩🇪DE | vless | @mehrosaboran | 12",
+                "🇩🇪DE | vless | @FAKEOFTVC | 3",
+                "🇩🇪DE | vless | @mehrosaboran | 14",
                 "🇸🇪SE | vless | @kiava | 0",
                 "🇸🇪SE | vless | @kiava | 4",
                 "🇸🇪SE | vless | @kiava | 5",
@@ -173,6 +174,7 @@
                 "🇫🇷FR | vless | @EliV2ray | 2",
                 "🇩🇪DE | vless | @EliV2ray | 11",
                 "🇩🇪DE | vless | @ipV2Ray | 4",
+                "🇩🇪DE | vless | @V2pedia | 0",
                 "🇩🇪DE | vless | @ARv2ray | 2",
                 "🇩🇪DE | vless | @ARv2ray | 4",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
@@ -184,8 +186,9 @@
                 "🏳️XX | vless | @v2logy | 13",
                 "🇩🇪DE | vless | @servermomo | 1",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 8",
-                "🇩🇪DE | vless | @V2rayCollectorDonate | 11",
+                "🇩🇪DE | vless | @V2rayCollectorDonate | 13",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 2",
+                "🇩🇪DE | vless | @FalconPolV2rayNG | 0",
                 "🇩🇪DE | vless | @v2ray_swhil | 9",
                 "🇫🇮FI | vless | @v2ray_swhil | 15",
                 "🇩🇪DE | vless | @v2ray1_ng | 0",
@@ -198,9 +201,8 @@
                 "🇩🇪DE | vless | @Capital_NET | 46",
                 "🇫🇮FI | vless | @Capital_NET | 47",
                 "🏳️XX | vless | @FreakConfig | 1",
-                "🇩🇪DE | vless | @forwardv2ray | 12",
-                "🇩🇪DE | vless | @FAKEOFTVC | 1",
-                "🇩🇪DE | vless | @mehrosaboran | 12",
+                "🇩🇪DE | vless | @FAKEOFTVC | 3",
+                "🇩🇪DE | vless | @mehrosaboran | 14",
                 "🇸🇪SE | vless | @kiava | 0",
                 "🇸🇪SE | vless | @kiava | 4",
                 "🇸🇪SE | vless | @kiava | 5",
@@ -345,6 +347,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @V2pedia | 0",
+            "type": "vless",
+            "server": "fbbvssss.v2pedia.xyz",
+            "server_port": 8443,
+            "uuid": "8b2f1fc5-9d1c-4304-9c1d-91806eef4629",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pubmed.ncbi.nlm.nih.gov",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1XVNWscPjgvJ1uh9Tvk30Gh8dRlDL93jQEu2hk8YrRY",
+                    "short_id": "268ede"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -698,7 +736,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @V2rayCollectorDonate | 11",
+            "tag": "🇩🇪DE | vless | @V2rayCollectorDonate | 13",
             "type": "vless",
             "server": "cloud.ns.g01e.nochofscu.sbs",
             "server_port": 10443,
@@ -757,6 +795,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@kiava",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @FalconPolV2rayNG | 0",
+            "type": "vless",
+            "server": "188.34.194.108",
+            "server_port": 443,
+            "uuid": "cb00ef4a-fcf7-484a-8c49-6a2422ed84e6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "W6ol7KU4fjV1mBS2aG_xs8emIKsqF8y6Ufva-2MRa20",
+                    "short_id": "9d2b63ad"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -1153,43 +1227,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @forwardv2ray | 12",
-            "type": "vless",
-            "server": "143.244.204.83",
-            "server_port": 2096,
-            "uuid": "6fe24b1f-bed6-4604-a8dd-b61476991caf",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "prestigegifting.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ttCJEedqz8oC5Gh9HfbkfUP2EF6EbrKT6rZgd4t2dDY",
-                    "short_id": "53543632"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ZEDMODEON\/@ZEDMODEON\/@ZEDMODEON\/@ZEDMODEON\/@ZEDMODEON\/@ZEDMODEON\/@ZEDMODEON\/@ZEDMODEON\/@ZEDMODEON",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @FAKEOFTVC | 1",
+            "tag": "🇩🇪DE | vless | @FAKEOFTVC | 3",
             "type": "vless",
             "server": "49.13.135.58",
             "server_port": 443,
@@ -1218,7 +1256,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @mehrosaboran | 12",
+            "tag": "🇩🇪DE | vless | @mehrosaboran | 14",
             "type": "vless",
             "server": "78.47.198.99",
             "server_port": 443,
