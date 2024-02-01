@@ -108,6 +108,7 @@
                 "URL-TEST",
                 "🇨🇦CA | vless | @Parsashonam | 10",
                 "🇨🇦CA | vless | @v2_team | 18",
+                "🇨🇦CA | vless | @NIM_VPN_ir | 14",
                 "🇺🇸US | vless | @VlessConfig | 18",
                 "🇺🇸US | vless | @VPNCUSTOMIZE | 24",
                 "🇨🇦CA | vless | @ipV2Ray | 18",
@@ -115,7 +116,7 @@
                 "🇨🇦CA | vless | @Lockey_vpn | 12",
                 "🇨🇦CA | vless | @rxv2ray | 14",
                 "🇨🇦CA | vless | @free_v2rayyy | 3",
-                "🇨🇷CR | vless | @lightning6 | 28",
+                "🇺🇸US | vless | @lightning6 | 28",
                 "🇺🇸US | vless | @vpn_xw | 0",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 23",
@@ -155,6 +156,7 @@
                 "🇳🇱NL | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 13",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇩🇪DE | vless | @FAKEOFTVC | 4",
                 "🇨🇦CA | vless | @https_config_injector | 13",
                 "🇨🇦CA | vless | @mehrosaboran | 14",
@@ -175,6 +177,7 @@
             "outbounds": [
                 "🇨🇦CA | vless | @Parsashonam | 10",
                 "🇨🇦CA | vless | @v2_team | 18",
+                "🇨🇦CA | vless | @NIM_VPN_ir | 14",
                 "🇺🇸US | vless | @VlessConfig | 18",
                 "🇺🇸US | vless | @VPNCUSTOMIZE | 24",
                 "🇨🇦CA | vless | @ipV2Ray | 18",
@@ -182,7 +185,7 @@
                 "🇨🇦CA | vless | @Lockey_vpn | 12",
                 "🇨🇦CA | vless | @rxv2ray | 14",
                 "🇨🇦CA | vless | @free_v2rayyy | 3",
-                "🇨🇷CR | vless | @lightning6 | 28",
+                "🇺🇸US | vless | @lightning6 | 28",
                 "🇺🇸US | vless | @vpn_xw | 0",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇷CR | vless | @DigiV2ray | 23",
@@ -222,6 +225,7 @@
                 "🇳🇱NL | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 13",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇩🇪DE | vless | @FAKEOFTVC | 4",
                 "🇨🇦CA | vless | @https_config_injector | 13",
                 "🇨🇦CA | vless | @mehrosaboran | 14",
@@ -308,9 +312,30 @@
             }
         },
         {
+            "tag": "🇨🇦CA | vless | @NIM_VPN_ir | 14",
+            "type": "vless",
+            "server": "speedtest.org",
+            "server_port": 80,
+            "uuid": "157fc603-fbd5-4ee8-ac61-17b5346bd98c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/NIM_VPN_ir",
+                "headers": {
+                    "Host": "speedtest.org"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | vless | @VlessConfig | 18",
             "type": "vless",
-            "server": "44.219.38.35",
+            "server": "54.88.29.139",
             "server_port": 22222,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -505,7 +530,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @lightning6 | 28",
+            "tag": "🇺🇸US | vless | @lightning6 | 28",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 2083,
@@ -1539,6 +1564,35 @@
                 "path": "\/Telegram channel : @pandavpntc",
                 "headers": {
                     "Host": "free.pandavpn.tech"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 19",
+            "type": "vless",
+            "server": "168.119.110.229",
+            "server_port": 56372,
+            "uuid": "cf052982-23bb-4404-8817-05302c50fcd3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YdveG9_ciK2YgrnXMN6Ncid3h5dK44rI1Rhb29RTDWE",
+                    "short_id": "e7f19002"
                 }
             }
         },

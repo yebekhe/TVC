@@ -121,6 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇮🇷IR | vless | @EliV2ray | 19","type":"vless","server":"194.31.194.175","port":2046,"udp":true,"uuid":"5ebf801c-eb58-4e9e-96df-39112c54b25c","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"igap.net","reality-opts":{"public-key":"d5lQ5iM3LcZe802055DfB5FN7-c3f6gkWMLKTCQxzQg","short-id":"116f6684"}}
+  - {"name":"🇩🇪DE | vless | @forwardv2ray | 19","type":"vless","server":"168.119.110.229","port":56372,"udp":true,"uuid":"cf052982-23bb-4404-8817-05302c50fcd3","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"sourceforge.net","reality-opts":{"public-key":"YdveG9_ciK2YgrnXMN6Ncid3h5dK44rI1Rhb29RTDWE","short-id":"e7f19002"}}
   - {"name":"🇩🇪DE | vless | @FAKEOFTVC | 4","type":"vless","server":"49.13.135.58","port":443,"udp":true,"uuid":"18e82ee0-3b88-48d1-9292-484c8051f690","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"github.io","flow":"xtls-rprx-vision","reality-opts":{"public-key":"X5WLfJ82KCpBanu2EwML11CwJUM2NczTonML5hHwW2o","short-id":"b5b39d420f404069"}}
 proxy-groups:
   - name: MANUAL
@@ -129,6 +130,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇮🇷IR | vless | @EliV2ray | 19'
+      - '🇩🇪DE | vless | @forwardv2ray | 19'
       - '🇩🇪DE | vless | @FAKEOFTVC | 4'
   - name: URL-TEST
     type: url-test
@@ -137,6 +139,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇮🇷IR | vless | @EliV2ray | 19'
+      - '🇩🇪DE | vless | @forwardv2ray | 19'
       - '🇩🇪DE | vless | @FAKEOFTVC | 4'
   - name: FALLBACK
     type: fallback
@@ -144,6 +147,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇮🇷IR | vless | @EliV2ray | 19'
+      - '🇩🇪DE | vless | @forwardv2ray | 19'
       - '🇩🇪DE | vless | @FAKEOFTVC | 4'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
