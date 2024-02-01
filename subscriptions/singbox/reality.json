@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | vless | @EliV2ray | 9",
+                "🇫🇷FR | vless | @EliV2ray | 11",
                 "🇩🇪DE | vless | @ipV2Ray | 5",
                 "🇩🇪DE | vless | @ipV2Ray | 6",
                 "🇩🇪DE | vless | @V2pedia | 0",
@@ -134,6 +134,7 @@
                 "🇩🇪DE | vless | @Capoit | 1",
                 "🏳️XX | vless | @FreakConfig | 3",
                 "🇩🇪DE | vless | @FAKEOFTVC | 3",
+                "🇩🇪DE | vless | @mehrosaboran | 1",
                 "🇸🇪SE | vless | @kiava | 0",
                 "🇸🇪SE | vless | @kiava | 4",
                 "🇸🇪SE | vless | @kiava | 5",
@@ -167,7 +168,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | vless | @EliV2ray | 9",
+                "🇫🇷FR | vless | @EliV2ray | 11",
                 "🇩🇪DE | vless | @ipV2Ray | 5",
                 "🇩🇪DE | vless | @ipV2Ray | 6",
                 "🇩🇪DE | vless | @V2pedia | 0",
@@ -195,6 +196,7 @@
                 "🇩🇪DE | vless | @Capoit | 1",
                 "🏳️XX | vless | @FreakConfig | 3",
                 "🇩🇪DE | vless | @FAKEOFTVC | 3",
+                "🇩🇪DE | vless | @mehrosaboran | 1",
                 "🇸🇪SE | vless | @kiava | 0",
                 "🇸🇪SE | vless | @kiava | 4",
                 "🇸🇪SE | vless | @kiava | 5",
@@ -244,7 +246,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | vless | @EliV2ray | 9",
+            "tag": "🇫🇷FR | vless | @EliV2ray | 11",
             "type": "vless",
             "server": "136.244.114.210",
             "server_port": 21877,
@@ -1151,6 +1153,42 @@
                     "public_key": "X5WLfJ82KCpBanu2EwML11CwJUM2NczTonML5hHwW2o",
                     "short_id": "b5b39d420f404069"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @mehrosaboran | 1",
+            "type": "vless",
+            "server": "188.34.194.108",
+            "server_port": 443,
+            "uuid": "cb00ef4a-fcf7-484a-8c49-6a2422ed84e6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5xIIuYDTZSlGG0pfit32xlw67JK7KOCfWIkliAwXVRg",
+                    "short_id": "9d2b63ad"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
