@@ -115,7 +115,7 @@
                 "🏳️XX | vmess | @Hope_Net | 4",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vmess | @kingofilter | 9",
-                "🇮🇷IR | vmess | @eliya_chiter0 | 9"
+                "🇨🇦CA | vmess | @eliya_chiter0 | 9"
             ]
         },
         {
@@ -131,7 +131,7 @@
                 "🏳️XX | vmess | @Hope_Net | 4",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vmess | @kingofilter | 9",
-                "🇮🇷IR | vmess | @eliya_chiter0 | 9"
+                "🇨🇦CA | vmess | @eliya_chiter0 | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -369,11 +369,11 @@
             }
         },
         {
-            "tag": "🇮🇷IR | vmess | @eliya_chiter0 | 9",
+            "tag": "🇨🇦CA | vmess | @eliya_chiter0 | 9",
             "type": "vmess",
-            "server": "holo.web.e1osux.adress.eyb30.com",
-            "server_port": 8880,
-            "uuid": "39774cdd-024a-4025-8fc2-476d5be01215",
+            "server": "104.18.36.100",
+            "server_port": 443,
+            "uuid": "express_v2ray",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -383,6 +383,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "api68.happylifee.space",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Express_V2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         }
     ],

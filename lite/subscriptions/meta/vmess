@@ -127,7 +127,6 @@ proxies:
   - {"name":"🇧🇭BH | vmess | @yaney_01 | 8","type":"vmess","server":"62.209.27.232","port":"443","cipher":"auto","uuid":"f5c137d1-ca89-42c0-b604-db39aef60a73","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray","headers":{"host":"tabyan777.sytes.net"}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
   - {"name":"🇨🇦CA | vmess | @kingofilter | 9","type":"vmess","server":"srv1.hamedgeek.sbs","port":2083,"cipher":"auto","uuid":"d7924fe6-bc4d-4809-a1c0-33ad5d8ef5ed","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"vpnetiran.hamedgeek.sbs"}}}
-  - {"name":"🇮🇷IR | vmess | @eliya_chiter0 | 9","type":"vmess","server":"holo.web.e1osux.adress.eyb30.com","port":"8880","cipher":"auto","uuid":"39774cdd-024a-4025-8fc2-476d5be01215","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -141,7 +140,6 @@ proxy-groups:
       - '🇧🇭BH | vmess | @yaney_01 | 8'
       - '🇺🇸US | vmess | @v2Line | 6'
       - '🇨🇦CA | vmess | @kingofilter | 9'
-      - '🇮🇷IR | vmess | @eliya_chiter0 | 9'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -155,7 +153,6 @@ proxy-groups:
       - '🇧🇭BH | vmess | @yaney_01 | 8'
       - '🇺🇸US | vmess | @v2Line | 6'
       - '🇨🇦CA | vmess | @kingofilter | 9'
-      - '🇮🇷IR | vmess | @eliya_chiter0 | 9'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -168,7 +165,6 @@ proxy-groups:
       - '🇧🇭BH | vmess | @yaney_01 | 8'
       - '🇺🇸US | vmess | @v2Line | 6'
       - '🇨🇦CA | vmess | @kingofilter | 9'
-      - '🇮🇷IR | vmess | @eliya_chiter0 | 9'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
