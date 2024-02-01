@@ -11,14 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇵🇭PH | vmess | @DeamNet_Proxy | 19 = vmess, 109.248.25.59, 29064, username = 8958440c-aa86-4ff1-8e88-5c7a052d5961, ws = true, tls = , vmess-aead = true, ws-path = /ss, ws-headers = Host:"109.248.25.59", skip-cert-verify = true, tfo = false
-🇬🇷GR | vmess | @oneclickvpnkeys | 7 = vmess, 94.131.8.32, 8880, username = 57e37a74-badc-4b71-87c7-5b9e20879b58, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇨🇦CA | vmess | @DeamNet_Proxy | 19 = vmess, us3e-mmnnfr9dop0.v2freevpn.com, 80, username = 2a8a10fb-9ca3-367e-a234-cf09f841be4f, ws = true, tls = , vmess-aead = true, ws-path = /v118-fccxmxm35, ws-headers = Host:"us3e-mmnnfr9dop0.v2freevpn.com", skip-cert-verify = true, tfo = false
+🇬🇷GR | vmess | @oneclickvpnkeys | 8 = vmess, 94.131.8.32, 8880, username = 57e37a74-badc-4b71-87c7-5b9e20879b58, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇧🇭BH | vmess | @yaney_01 | 8 = vmess, 62.209.27.232, 443, username = f5c137d1-ca89-42c0-b604-db39aef60a73, ws = true, tls = 1, vmess-aead = true, ws-path = /@forwardv2ray, ws-headers = Host:"tabyan777.sytes.net", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇵🇭PH | vmess | @DeamNet_Proxy | 19,🇬🇷GR | vmess | @oneclickvpnkeys | 7,🇧🇭BH | vmess | @yaney_01 | 8,🇺🇸US | vmess | @v2Line | 6
-URL-TEST = url-test,🇵🇭PH | vmess | @DeamNet_Proxy | 19,🇬🇷GR | vmess | @oneclickvpnkeys | 7,🇧🇭BH | vmess | @yaney_01 | 8,🇺🇸US | vmess | @v2Line | 6
-FALLBACK = fallback,🇵🇭PH | vmess | @DeamNet_Proxy | 19,🇬🇷GR | vmess | @oneclickvpnkeys | 7,🇧🇭BH | vmess | @yaney_01 | 8,🇺🇸US | vmess | @v2Line | 6
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇧🇭BH | vmess | @yaney_01 | 8,🇺🇸US | vmess | @v2Line | 6
+URL-TEST = url-test,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇧🇭BH | vmess | @yaney_01 | 8,🇺🇸US | vmess | @v2Line | 6
+FALLBACK = fallback,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇧🇭BH | vmess | @yaney_01 | 8,🇺🇸US | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
