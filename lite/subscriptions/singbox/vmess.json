@@ -110,7 +110,7 @@
                 "🏳️XX | vmess | @mftizi | 19",
                 "🇵🇭PH | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 6",
-                "🇨🇳CN | vmess | @yaney_01 | 8",
+                "🇧🇭BH | vmess | @yaney_01 | 8",
                 "🏳️XX | vmess | @Hope_Net | 4",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 6"
@@ -124,7 +124,7 @@
                 "🏳️XX | vmess | @mftizi | 19",
                 "🇵🇭PH | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 6",
-                "🇨🇳CN | vmess | @yaney_01 | 8",
+                "🇧🇭BH | vmess | @yaney_01 | 8",
                 "🏳️XX | vmess | @Hope_Net | 4",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 6"
@@ -239,11 +239,11 @@
             }
         },
         {
-            "tag": "🇨🇳CN | vmess | @yaney_01 | 8",
+            "tag": "🇧🇭BH | vmess | @yaney_01 | 8",
             "type": "vmess",
-            "server": "shdx.pmxu.link",
-            "server_port": 15109,
-            "uuid": "63bafe05-a231-34bc-a8dd-4b9cc65d57d8",
+            "server": "62.209.27.232",
+            "server_port": 443,
+            "uuid": "f5c137d1-ca89-42c0-b604-db39aef60a73",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -253,6 +253,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "62.209.27.232",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@forwardv2ray",
+                "headers": {
+                    "Host": "62.209.27.232"
+                }
             }
         },
         {
