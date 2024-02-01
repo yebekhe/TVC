@@ -121,12 +121,11 @@ proxies:
   - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 18","type":"trojan","server":"13.38.169.6","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇺🇸US | trojan | @DirectVPN | 18","type":"trojan","server":"34.211.8.63","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trj.rollingnext.co.uk"}
   - {"name":"🇬🇧GB | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇦CA | vmess | @DeamNet_Proxy | 19","type":"vmess","server":"us3e-mmnnfr9dop0.v2freevpn.com","port":"80","cipher":"auto","uuid":"2a8a10fb-9ca3-367e-a234-cf09f841be4f","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/v118-fccxmxm35","headers":{"host":"us3e-mmnnfr9dop0.v2freevpn.com"}}}
+  - {"name":"🇫🇷FR | ss | @DeamNet_Proxy | 19","type":"ss","server":"149.202.82.172","port":6679,"password":"TEzjfAYq2IjtuoS","cipher":"aes-256-gcm"}
   - {"name":"🇬🇷GR | vmess | @oneclickvpnkeys | 8","type":"vmess","server":"94.131.8.32","port":"8880","cipher":"auto","uuid":"57e37a74-badc-4b71-87c7-5b9e20879b58","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":""}}}
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
   - {"name":"🇧🇭BH | vmess | @yaney_01 | 8","type":"vmess","server":"62.209.27.232","port":"443","cipher":"auto","uuid":"f5c137d1-ca89-42c0-b604-db39aef60a73","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray","headers":{"host":"tabyan777.sytes.net"}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
-  - {"name":"🏳️XX | ss | @forwardv2ray | 18","type":"ss","server":"[0000:0000:0000:0000:0000:ffff:10aa:fcc1]","port":8080,"password":"FGjVMugsSdonhMd4HxqJo7e0xckqXKlDlF/Ap991gXA=","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | ss | @ROMAX_VPN | 10","type":"ss","server":"series-a2.samanehha.co","port":443,"password":"mps3FwmDjLrWaOVg","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -137,12 +136,11 @@ proxy-groups:
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
       - '🇺🇸US | trojan | @DirectVPN | 18'
       - '🇬🇧GB | vmess | @v2ray_outlineir | 0'
-      - '🇨🇦CA | vmess | @DeamNet_Proxy | 19'
+      - '🇫🇷FR | ss | @DeamNet_Proxy | 19'
       - '🇬🇷GR | vmess | @oneclickvpnkeys | 8'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇧🇭BH | vmess | @yaney_01 | 8'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🏳️XX | ss | @forwardv2ray | 18'
       - '🇬🇧GB | ss | @ROMAX_VPN | 10'
   - name: URL-TEST
     type: url-test
@@ -153,12 +151,11 @@ proxy-groups:
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
       - '🇺🇸US | trojan | @DirectVPN | 18'
       - '🇬🇧GB | vmess | @v2ray_outlineir | 0'
-      - '🇨🇦CA | vmess | @DeamNet_Proxy | 19'
+      - '🇫🇷FR | ss | @DeamNet_Proxy | 19'
       - '🇬🇷GR | vmess | @oneclickvpnkeys | 8'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇧🇭BH | vmess | @yaney_01 | 8'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🏳️XX | ss | @forwardv2ray | 18'
       - '🇬🇧GB | ss | @ROMAX_VPN | 10'
   - name: FALLBACK
     type: fallback
@@ -168,12 +165,11 @@ proxy-groups:
       - '🇫🇷FR | trojan | @PrivateVPNs | 18'
       - '🇺🇸US | trojan | @DirectVPN | 18'
       - '🇬🇧GB | vmess | @v2ray_outlineir | 0'
-      - '🇨🇦CA | vmess | @DeamNet_Proxy | 19'
+      - '🇫🇷FR | ss | @DeamNet_Proxy | 19'
       - '🇬🇷GR | vmess | @oneclickvpnkeys | 8'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇧🇭BH | vmess | @yaney_01 | 8'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🏳️XX | ss | @forwardv2ray | 18'
       - '🇬🇧GB | ss | @ROMAX_VPN | 10'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
