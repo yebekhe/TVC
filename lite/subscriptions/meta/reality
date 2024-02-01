@@ -120,43 +120,35 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇫🇮FI | vless | @v2ray_swhil | 22","type":"vless","server":"95.216.170.113","port":443,"udp":true,"uuid":"691a087a-f23c-4162-99f5-6d3270a08108","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"greenpepper.ir","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"XjP7jAIA1Y0QmNnNMlUGKsQnkP4HpbZtU5yPqesorm8","short-id":"54052ca6"}}
   - {"name":"🇩🇪DE | vless | @Capoit | 3","type":"vless","server":"188.34.194.108","port":443,"udp":true,"uuid":"cb00ef4a-fcf7-484a-8c49-6a2422ed84e6","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"ftp.debian.org","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"5xIIuYDTZSlGG0pfit32xlw67JK7KOCfWIkliAwXVRg","short-id":"9d2b63ad"}}
   - {"name":"🏳️XX | vless | @FreakConfig | 4","type":"vless","server":"[2a01:4f9:c010:6fb9::1f]","port":443,"udp":true,"uuid":"1e7e5bfa-2386-471f-81f9-c080a124c94f","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"gsmarena.com","flow":"xtls-rprx-vision","grpc-opts":{"grpc-service-name":"@Everyday_VPN"},"reality-opts":{"public-key":"AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw","short-id":"32d7a82d"}}
   - {"name":"🇩🇪DE | vless | @FAKEOFTVC | 4","type":"vless","server":"49.13.135.58","port":443,"udp":true,"uuid":"18e82ee0-3b88-48d1-9292-484c8051f690","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"github.io","flow":"xtls-rprx-vision","reality-opts":{"public-key":"X5WLfJ82KCpBanu2EwML11CwJUM2NczTonML5hHwW2o","short-id":"b5b39d420f404069"}}
-  - {"name":"🇩🇪DE | vless | @mehrosaboran | 13","type":"vless","server":"188.34.194.108","port":443,"udp":true,"uuid":"cb00ef4a-fcf7-484a-8c49-6a2422ed84e6","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"ftp.debian.org","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"5xIIuYDTZSlGG0pfit32xlw67JK7KOCfWIkliAwXVRg","short-id":"9d2b63ad"}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇮FI | vless | @v2ray_swhil | 22'
       - '🇩🇪DE | vless | @Capoit | 3'
       - '🏳️XX | vless | @FreakConfig | 4'
       - '🇩🇪DE | vless | @FAKEOFTVC | 4'
-      - '🇩🇪DE | vless | @mehrosaboran | 13'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇮FI | vless | @v2ray_swhil | 22'
       - '🇩🇪DE | vless | @Capoit | 3'
       - '🏳️XX | vless | @FreakConfig | 4'
       - '🇩🇪DE | vless | @FAKEOFTVC | 4'
-      - '🇩🇪DE | vless | @mehrosaboran | 13'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇫🇮FI | vless | @v2ray_swhil | 22'
       - '🇩🇪DE | vless | @Capoit | 3'
       - '🏳️XX | vless | @FreakConfig | 4'
       - '🇩🇪DE | vless | @FAKEOFTVC | 4'
-      - '🇩🇪DE | vless | @mehrosaboran | 13'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
