@@ -165,7 +165,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 7",
                 "🏳️XX | vless | @FreakConfig | 5",
-                "🇳🇱NL | vless | @forwardv2ray | 19",
+                "🇩🇪DE | vless | @forwardv2ray | 18",
                 "🇩🇪DE | vless | @FAKEOFTVC | 4",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 12",
@@ -245,7 +245,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 7",
                 "🏳️XX | vless | @FreakConfig | 5",
-                "🇳🇱NL | vless | @forwardv2ray | 19",
+                "🇩🇪DE | vless | @forwardv2ray | 18",
                 "🇩🇪DE | vless | @FAKEOFTVC | 4",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 12",
@@ -1808,24 +1808,39 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vless | @forwardv2ray | 19",
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 18",
             "type": "vless",
-            "server": "188.114.96.18",
-            "server_port": 80,
-            "uuid": "e1a928be-e289-4aef-b92e-4106fabdf42f",
-            "flow": "",
+            "server": "free.mmdtitaniom.com",
+            "server_port": 2053,
+            "uuid": "a1607b53-08c9-4f77-cc45-850e16f9e6c7",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "188.114.96.18"
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "-FArfVyUNqBnbsHtWC4MvDcUpW6MjplITOJjVoGhRCA",
+                    "short_id": "888746"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
