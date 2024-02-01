@@ -11,12 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇯🇵JP | vmess | @DeamNet_Proxy | 18 = vmess, 152.69.197.74, 12345, username = b8a6bf58-485a-4046-b386-b3661bf65eff, ws = true, tls = , vmess-aead = true, ws-path = /bb, ws-headers = Host:"152.69.197.74", skip-cert-verify = true, tfo = false
 🇬🇷GR | vmess | @oneclickvpnkeys | 8 = vmess, 94.131.8.32, 2095, username = 57e37a74-badc-4b71-87c7-5b9e20879b58, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6
-URL-TEST = url-test,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6
-FALLBACK = fallback,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6
+MANUAL = select,URL-TEST,FALLBACK,🇯🇵JP | vmess | @DeamNet_Proxy | 18,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6
+URL-TEST = url-test,🇯🇵JP | vmess | @DeamNet_Proxy | 18,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6
+FALLBACK = fallback,🇯🇵JP | vmess | @DeamNet_Proxy | 18,🇬🇷GR | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
