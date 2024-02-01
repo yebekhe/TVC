@@ -108,7 +108,9 @@
                 "URL-TEST",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 5",
                 "🇫🇮FI | vless | @v2ray_swhil | 22",
+                "🇩🇪DE | vless | @V2RayTz | 17",
                 "🇩🇪DE | vless | @Capoit | 3",
+                "🏳️XX | vless | @FreakConfig | 4",
                 "🇩🇪DE | vless | @FAKEOFTVC | 4",
                 "🇸🇪SE | vless | @kiava | 5",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
@@ -121,7 +123,9 @@
             "outbounds": [
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 5",
                 "🇫🇮FI | vless | @v2ray_swhil | 22",
+                "🇩🇪DE | vless | @V2RayTz | 17",
                 "🇩🇪DE | vless | @Capoit | 3",
+                "🏳️XX | vless | @FreakConfig | 4",
                 "🇩🇪DE | vless | @FAKEOFTVC | 4",
                 "🇸🇪SE | vless | @kiava | 5",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
@@ -220,6 +224,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @V2RayTz | 17",
+            "type": "vless",
+            "server": "162.55.39.57",
+            "server_port": 443,
+            "uuid": "2bf2eda3-0f30-4764-a983-98a1d4533be5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "salatin.store",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Z58-lpuE3uNKz8ilN7pWQkelFb_ZoxFxAeCWJRW--Gg",
+                    "short_id": "947d0d57"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇩🇪DE | vless | @Capoit | 3",
             "type": "vless",
             "server": "188.34.194.108",
@@ -250,6 +290,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🏳️XX | vless | @FreakConfig | 4",
+            "type": "vless",
+            "server": "[2a01:4f9:c010:6fb9::1f]",
+            "server_port": 443,
+            "uuid": "1e7e5bfa-2386-471f-81f9-c080a124c94f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "gsmarena.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw",
+                    "short_id": "32d7a82d"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Everyday_VPN",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
