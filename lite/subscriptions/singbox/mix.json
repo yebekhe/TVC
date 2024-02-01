@@ -166,7 +166,7 @@
                 "🇳🇱NL | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 13",
-                "🇸🇪SE | ss | @forwardv2ray | 18",
+                "🇸🇪SE | ss | @forwardv2ray | 19",
                 "🇩🇪DE | vless | @FAKEOFTVC | 4",
                 "🇨🇦CA | vless | @https_config_injector | 13",
                 "🇨🇦CA | vless | @mehrosaboran | 14",
@@ -247,7 +247,7 @@
                 "🇳🇱NL | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 13",
-                "🇸🇪SE | ss | @forwardv2ray | 18",
+                "🇸🇪SE | ss | @forwardv2ray | 19",
                 "🇩🇪DE | vless | @FAKEOFTVC | 4",
                 "🇨🇦CA | vless | @https_config_injector | 13",
                 "🇨🇦CA | vless | @mehrosaboran | 14",
@@ -1806,12 +1806,12 @@
             }
         },
         {
-            "tag": "🇸🇪SE | ss | @forwardv2ray | 18",
+            "tag": "🇸🇪SE | ss | @forwardv2ray | 19",
             "type": "shadowsocks",
-            "server": "16.171.22.172",
+            "server": "51.20.193.2",
             "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
-            "password": "BsYFGD\/QGR006E9EHURxRgPUUFTUBUd\/gEv4bkX3xXw=",
+            "password": "4pYUofR\/m7HeQZ3wdkqnEg+xKATlDUz4zvF4sHAHp0s=",
             "plugin": "",
             "plugin_opts": ""
         },
@@ -1878,9 +1878,9 @@
         {
             "tag": "🇨🇦CA | vless | @mehrosaboran | 14",
             "type": "vless",
-            "server": "104.21.51.208",
-            "server_port": 80,
-            "uuid": "-----WS-ipV2Ray-----",
+            "server": "172.67.186.42",
+            "server_port": 8443,
+            "uuid": "Tel-VPNCUSTOMIZE",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1888,12 +1888,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "104.21.51.208"
+            "tls": {
+                "enabled": true,
+                "server_name": "20ns2-V2ray.Vpncustomize.Com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@VPNCUSTOMIZE,@VPNCUSTOMIZE",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
