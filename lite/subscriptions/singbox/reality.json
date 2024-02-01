@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇸🇪SE | vless | @v2logy | 12",
+                "🇸🇪SE | vless | @v2rayNG_Matsuri | 4",
                 "🇩🇪DE | vless | @Capoit | 6",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
@@ -118,6 +119,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇸🇪SE | vless | @v2logy | 12",
+                "🇸🇪SE | vless | @v2rayNG_Matsuri | 4",
                 "🇩🇪DE | vless | @Capoit | 6",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
@@ -170,6 +172,42 @@
                     "public_key": "ShPth8QS5a900vN2moVQSJYVq8sY37F74F1-bThQSHc",
                     "short_id": "214229"
                 }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | vless | @v2rayNG_Matsuri | 4",
+            "type": "vless",
+            "server": "13.49.231.106",
+            "server_port": 8080,
+            "uuid": "049f97b8-7180-4b67-d79d-9541ff116fe8",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tj4NuuQRH5GMJqWUYRYsCPvhR4KCRQ58TqF7gqCf9lQ",
+                    "short_id": "21e3"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@kiava",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
