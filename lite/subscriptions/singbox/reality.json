@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇸🇪SE | vless | @v2logy | 12",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 4",
                 "🇩🇪DE | vless | @Capoit | 6",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -118,7 +117,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇸🇪SE | vless | @v2logy | 12",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 4",
                 "🇩🇪DE | vless | @Capoit | 6",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -144,35 +142,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇸🇪SE | vless | @v2logy | 12",
-            "type": "vless",
-            "server": "16.16.141.25",
-            "server_port": 2083,
-            "uuid": "23758119-cf33-4269-fb50-bc04930d356a",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.cdn.amazon.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ShPth8QS5a900vN2moVQSJYVq8sY37F74F1-bThQSHc",
-                    "short_id": "214229"
-                }
-            }
         },
         {
             "tag": "🇸🇪SE | vless | @v2rayNG_Matsuri | 4",
