@@ -136,7 +136,7 @@
                 "🇨🇦CA | vless | @ShadowProxy66 | 41",
                 "🇨🇦CA | vless | @ServerNett | 10",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 5",
-                "🇨🇦CA | vless | @v2ray_swhil | 11",
+                "🇨🇦CA | vless | @v2ray_swhil | 21",
                 "🇨🇦CA | vless | @MsV2ray | 17",
                 "🇨🇦CA | vless | @v2ray1_ng | 4",
                 "🇮🇷IR | vless | @vless_vmess | 3",
@@ -201,7 +201,7 @@
                 "🇨🇦CA | vless | @ShadowProxy66 | 41",
                 "🇨🇦CA | vless | @ServerNett | 10",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 5",
-                "🇨🇦CA | vless | @v2ray_swhil | 11",
+                "🇨🇦CA | vless | @v2ray_swhil | 21",
                 "🇨🇦CA | vless | @MsV2ray | 17",
                 "🇨🇦CA | vless | @v2ray1_ng | 4",
                 "🇮🇷IR | vless | @vless_vmess | 3",
@@ -399,9 +399,9 @@
         {
             "tag": "🇨🇦CA | vless | @ARv2ray | 14",
             "type": "vless",
-            "server": "www.speedtest.net",
+            "server": "check-host.net",
             "server_port": 443,
-            "uuid": "7ff1f7f6-63d7-436e-9dc8-546fceec4a25",
+            "uuid": "dd8cc6a7-ebfa-4ec3-9d56-cfa73db1041b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -411,7 +411,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.ArV2ray.host",
+                "server_name": "tel.ArV2ray.host",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1090,11 +1090,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @v2ray_swhil | 11",
+            "tag": "🇨🇦CA | vless | @v2ray_swhil | 21",
             "type": "vless",
-            "server": "all.vipxali.cfd",
-            "server_port": 443,
-            "uuid": "0a4acf58-cc3c-4f99-89c1-70d7ca3fbd92",
+            "server": "edgu.pureboy.eu.org",
+            "server_port": 80,
+            "uuid": "e1a928be-e289-4aef-b92e-4106fabdf42f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1102,22 +1102,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "mx.XsV2ray.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "@XsV2ray,@XsV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "edgu.pureboy.eu.org"
+                }
             }
         },
         {
