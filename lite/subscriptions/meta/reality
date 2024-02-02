@@ -120,6 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇩🇪DE | vless | @v2ray_swhil | 17","type":"vless","server":"german.mmdtitaniom.com","port":443,"udp":true,"uuid":"c6446acb-5a26-4b24-bc82-812baff26c3a","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"greenpepper.ir","grpc-opts":{"grpc-service-name":"Telegram:@TITANIOM_OFFICIAL,@TITANIOM_OFFICIlAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL"},"reality-opts":{"public-key":"xtsHef5EMKqwwpP3cJTyrMKM9SyaPb19ORaZQ_GMmSA","short-id":"fd7bb3af"}}
   - {"name":"🇩🇪DE | vless | @FAKEOFTVC | 6","type":"vless","server":"49.13.135.58","port":443,"udp":true,"uuid":"18e82ee0-3b88-48d1-9292-484c8051f690","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"github.io","flow":"xtls-rprx-vision","reality-opts":{"public-key":"X5WLfJ82KCpBanu2EwML11CwJUM2NczTonML5hHwW2o","short-id":"b5b39d420f404069"}}
 proxy-groups:
   - name: MANUAL
@@ -127,6 +128,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇩🇪DE | vless | @v2ray_swhil | 17'
       - '🇩🇪DE | vless | @FAKEOFTVC | 6'
   - name: URL-TEST
     type: url-test
@@ -134,12 +136,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇩🇪DE | vless | @v2ray_swhil | 17'
       - '🇩🇪DE | vless | @FAKEOFTVC | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇩🇪DE | vless | @v2ray_swhil | 17'
       - '🇩🇪DE | vless | @FAKEOFTVC | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
