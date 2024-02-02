@@ -124,6 +124,7 @@ proxies:
   - {"name":"🇫🇷FR | vmess | @ShadowProxy66 | 31","type":"vmess","server":"141.94.86.92","port":"10050","cipher":"auto","uuid":"9b3b40c1-3b11-4094-8553-a02f2e01f24c","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇧🇭BH | vmess | @yaney_01 | 8","type":"vmess","server":"62.209.27.232","port":"443","cipher":"auto","uuid":"f5c137d1-ca89-42c0-b604-db39aef60a73","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@forwardv2ray","headers":{"host":"tabyan777.sytes.net"}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
+  - {"name":"🇨🇦CA | vmess | @nofiltering2 | 13","type":"vmess","server":"glweidf.cfd","port":"443","cipher":"auto","uuid":"1052f24e-7b09-45eb-b0c5-d858eb124192","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"glweidf.cfd"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -136,6 +137,7 @@ proxy-groups:
       - '🇫🇷FR | vmess | @ShadowProxy66 | 31'
       - '🇧🇭BH | vmess | @yaney_01 | 8'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇦CA | vmess | @nofiltering2 | 13'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -148,6 +150,7 @@ proxy-groups:
       - '🇫🇷FR | vmess | @ShadowProxy66 | 31'
       - '🇧🇭BH | vmess | @yaney_01 | 8'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇦CA | vmess | @nofiltering2 | 13'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -159,6 +162,7 @@ proxy-groups:
       - '🇫🇷FR | vmess | @ShadowProxy66 | 31'
       - '🇧🇭BH | vmess | @yaney_01 | 8'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇦CA | vmess | @nofiltering2 | 13'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
