@@ -13,11 +13,12 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇨🇳CN | vmess | @mftizi | 19 = vmess, data-us-v1.shwjfkw.cn, 20401, username = b1478e24-4916-3abe-8f17-15931012ecbe, ws = true, tls = , vmess-aead = true, ws-path = /debian, ws-headers = Host:"data-us-v1.shwjfkw.cn", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @DeamNet_Proxy | 19 = vmess, 47.254.17.235, 80, username = 2caa5a0e-519b-4503-80d4-5363193e5018, ws = true, tls = , vmess-aead = true, ws-path = /Ogl9djGbo2NTAt3Ovj1NvwjJ, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇵🇹PT | vmess | @oneclickvpnkeys | 7 = vmess, 94.131.10.135, 2095, username = e2021c91-6e29-49d6-9641-14a8f2600e05, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"94.131.10.135", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇳CN | vmess | @mftizi | 19,🇺🇸US | vmess | @DeamNet_Proxy | 19,🇺🇸US | vmess | @v2Line | 6
-URL-TEST = url-test,🇨🇳CN | vmess | @mftizi | 19,🇺🇸US | vmess | @DeamNet_Proxy | 19,🇺🇸US | vmess | @v2Line | 6
-FALLBACK = fallback,🇨🇳CN | vmess | @mftizi | 19,🇺🇸US | vmess | @DeamNet_Proxy | 19,🇺🇸US | vmess | @v2Line | 6
+MANUAL = select,URL-TEST,FALLBACK,🇨🇳CN | vmess | @mftizi | 19,🇺🇸US | vmess | @DeamNet_Proxy | 19,🇵🇹PT | vmess | @oneclickvpnkeys | 7,🇺🇸US | vmess | @v2Line | 6
+URL-TEST = url-test,🇨🇳CN | vmess | @mftizi | 19,🇺🇸US | vmess | @DeamNet_Proxy | 19,🇵🇹PT | vmess | @oneclickvpnkeys | 7,🇺🇸US | vmess | @v2Line | 6
+FALLBACK = fallback,🇨🇳CN | vmess | @mftizi | 19,🇺🇸US | vmess | @DeamNet_Proxy | 19,🇵🇹PT | vmess | @oneclickvpnkeys | 7,🇺🇸US | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
