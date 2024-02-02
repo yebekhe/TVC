@@ -106,14 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | tuic | @TUICity | 76"
+                "🇳🇱NL | tuic | @TUICity | 65",
+                "🇩🇪DE | tuic | @TUICity | 66",
+                "🇺🇸US | tuic | @TUICity | 67"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | tuic | @TUICity | 76"
+                "🇳🇱NL | tuic | @TUICity | 65",
+                "🇩🇪DE | tuic | @TUICity | 66",
+                "🇺🇸US | tuic | @TUICity | 67"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,7 +140,53 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | tuic | @TUICity | 76",
+            "tag": "🇳🇱NL | tuic | @TUICity | 65",
+            "type": "tuic",
+            "server": "209.250.254.198",
+            "server_port": 443,
+            "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
+            "password": "e7b1c11f0d40cc95",
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "www.apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🇩🇪DE | tuic | @TUICity | 66",
+            "type": "tuic",
+            "server": "136.244.88.153",
+            "server_port": 443,
+            "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
+            "password": "e7b1c11f0d40cc95",
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "www.apple.com",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🇺🇸US | tuic | @TUICity | 67",
             "type": "tuic",
             "server": "64.110.25.10",
             "server_port": 11227,
