@@ -107,8 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 5",
+                "🇩🇪DE | vless | @v2ray_swhil | 17",
                 "🇩🇪DE | vless | @v2ray1_ng | 8",
-                "🇩🇪DE | vless | @FAKEOFTVC | 4",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
+                "🇩🇪DE | vless | @FAKEOFTVC | 5",
                 "🇸🇪SE | vless | @kiava | 5",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -119,8 +121,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 5",
+                "🇩🇪DE | vless | @v2ray_swhil | 17",
                 "🇩🇪DE | vless | @v2ray1_ng | 8",
-                "🇩🇪DE | vless | @FAKEOFTVC | 4",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
+                "🇩🇪DE | vless | @FAKEOFTVC | 5",
                 "🇸🇪SE | vless | @kiava | 5",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -182,6 +186,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @v2ray_swhil | 17",
+            "type": "vless",
+            "server": "german.mmdtitaniom.com",
+            "server_port": 443,
+            "uuid": "c6446acb-5a26-4b24-bc82-812baff26c3a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xtsHef5EMKqwwpP3cJTyrMKM9SyaPb19ORaZQ_GMmSA",
+                    "short_id": "fd7bb3af"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@TITANIOM_OFFICIAL,@TITANIOM_OFFICIlAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇩🇪DE | vless | @v2ray1_ng | 8",
             "type": "vless",
             "server": "78.47.198.99",
@@ -218,7 +258,43 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @FAKEOFTVC | 4",
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 19",
+            "type": "vless",
+            "server": "free.mmdtitaniom.com",
+            "server_port": 2053,
+            "uuid": "a1607b53-08c9-4f77-cc45-850e16f9e6c7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "-FArfVyUNqBnbsHtWC4MvDcUpW6MjplITOJjVoGhRCA",
+                    "short_id": "888746"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @FAKEOFTVC | 5",
             "type": "vless",
             "server": "49.13.135.58",
             "server_port": 443,
