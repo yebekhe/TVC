@@ -164,8 +164,8 @@
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 7",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 7",
-                "🏳️XX | vless | @FreakConfig | 5",
-                "🇬🇧GB | ss | @forwardv2ray | 19",
+                "🏳️XX | vless | @FreakConfig | 6",
+                "🏳️XX | vmess | @forwardv2ray | 18",
                 "🇩🇪DE | vless | @FAKEOFTVC | 4",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇸🇪SE | vless | @mehrosaboran | 9",
@@ -178,6 +178,7 @@
                 "🇬🇧GB | vless | @FoXrayIran | 4",
                 "🇨🇦CA | vless | @V2FETCH | 8",
                 "🏳️XX | vless | @VpnSkyy | 7",
+                "🇬🇧GB | ss | @ROMAX_VPN | 10",
                 "🇨🇦CA | vless | @TIKTOK_PROXY | 4"
             ]
         },
@@ -243,8 +244,8 @@
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 7",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 7",
-                "🏳️XX | vless | @FreakConfig | 5",
-                "🇬🇧GB | ss | @forwardv2ray | 19",
+                "🏳️XX | vless | @FreakConfig | 6",
+                "🏳️XX | vmess | @forwardv2ray | 18",
                 "🇩🇪DE | vless | @FAKEOFTVC | 4",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇸🇪SE | vless | @mehrosaboran | 9",
@@ -257,6 +258,7 @@
                 "🇬🇧GB | vless | @FoXrayIran | 4",
                 "🇨🇦CA | vless | @V2FETCH | 8",
                 "🏳️XX | vless | @VpnSkyy | 7",
+                "🇬🇧GB | ss | @ROMAX_VPN | 10",
                 "🇨🇦CA | vless | @TIKTOK_PROXY | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -1780,7 +1782,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @FreakConfig | 5",
+            "tag": "🏳️XX | vless | @FreakConfig | 6",
             "type": "vless",
             "server": "[2a01:4f9:c010:6fb9::1f]",
             "server_port": 443,
@@ -1816,14 +1818,38 @@
             }
         },
         {
-            "tag": "🇬🇧GB | ss | @forwardv2ray | 19",
-            "type": "shadowsocks",
-            "server": "series-a2.samanehha.co",
+            "tag": "🏳️XX | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "mci.mosi.mosipro.ml",
             "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "mps3FwmDjLrWaOVg",
-            "plugin": "",
-            "plugin_opts": ""
+            "uuid": "38db5778-1462-4908-aa04-54808c616c20",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "Dusseldorf.kotick.site",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/speedtest",
+                "headers": {
+                    "Host": "Dusseldorf.kotick.site"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @FAKEOFTVC | 4",
@@ -2113,6 +2139,16 @@
                 "protocol": "smux",
                 "max_streams": 32
             }
+        },
+        {
+            "tag": "🇬🇧GB | ss | @ROMAX_VPN | 10",
+            "type": "shadowsocks",
+            "server": "series-a2.samanehha.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "mps3FwmDjLrWaOVg",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇨🇦CA | vless | @TIKTOK_PROXY | 4",
