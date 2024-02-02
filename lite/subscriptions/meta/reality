@@ -120,7 +120,6 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇩🇪DE | vless | @v2ray1_ng | 9","type":"vless","server":"78.47.198.99","port":443,"udp":true,"uuid":"cb00ef4a-fcf7-484a-8c49-6a2422ed84e6","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.google.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"msTPLgzvYs8r_Nww-HHQG5Cbj8VEwYjwsFVCuwdSZk8","short-id":"9d2b63ad"}}
   - {"name":"🇩🇪DE | vless | @FAKEOFTVC | 6","type":"vless","server":"49.13.135.58","port":443,"udp":true,"uuid":"18e82ee0-3b88-48d1-9292-484c8051f690","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"github.io","flow":"xtls-rprx-vision","reality-opts":{"public-key":"X5WLfJ82KCpBanu2EwML11CwJUM2NczTonML5hHwW2o","short-id":"b5b39d420f404069"}}
 proxy-groups:
   - name: MANUAL
@@ -128,7 +127,6 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | vless | @v2ray1_ng | 9'
       - '🇩🇪DE | vless | @FAKEOFTVC | 6'
   - name: URL-TEST
     type: url-test
@@ -136,14 +134,12 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | vless | @v2ray1_ng | 9'
       - '🇩🇪DE | vless | @FAKEOFTVC | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | vless | @v2ray1_ng | 9'
       - '🇩🇪DE | vless | @FAKEOFTVC | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
