@@ -125,7 +125,7 @@
                 "🇨🇦CA | vless | @DarkTeam_VPN | 9",
                 "🇨🇦CA | vless | @v2logy | 11",
                 "🇺🇸US | vless | @servermomo | 6",
-                "🇨🇦CA | vless | @azadi_az_inja_migzare | 8",
+                "🇨🇦CA | vless | @azadi_az_inja_migzare | 10",
                 "🇨🇦CA | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇨🇷CR | vless | @V2rayNGn | 15",
@@ -166,9 +166,9 @@
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 11",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 8",
-                "🇨🇦CA | vless | @FreakConfig | 5",
+                "🇺🇸US | vless | @IRN_VPN | 1",
                 "🇨🇷CR | vless | @flyv2ray | 14",
-                "🇨🇦CA | vless | @forwardv2ray | 12",
+                "🇨🇦CA | vmess | @forwardv2ray | 17",
                 "🇷🇼RW | vmess | @FAKEOFTVC | 6",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇷CR | vless | @mehrosaboran | 13",
@@ -206,7 +206,7 @@
                 "🇨🇦CA | vless | @DarkTeam_VPN | 9",
                 "🇨🇦CA | vless | @v2logy | 11",
                 "🇺🇸US | vless | @servermomo | 6",
-                "🇨🇦CA | vless | @azadi_az_inja_migzare | 8",
+                "🇨🇦CA | vless | @azadi_az_inja_migzare | 10",
                 "🇨🇦CA | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇨🇷CR | vless | @V2rayNGn | 15",
@@ -247,9 +247,9 @@
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 11",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 8",
-                "🇨🇦CA | vless | @FreakConfig | 5",
+                "🇺🇸US | vless | @IRN_VPN | 1",
                 "🇨🇷CR | vless | @flyv2ray | 14",
-                "🇨🇦CA | vless | @forwardv2ray | 12",
+                "🇨🇦CA | vmess | @forwardv2ray | 17",
                 "🇷🇼RW | vmess | @FAKEOFTVC | 6",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇨🇷CR | vless | @mehrosaboran | 13",
@@ -833,7 +833,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @azadi_az_inja_migzare | 8",
+            "tag": "🇨🇦CA | vless | @azadi_az_inja_migzare | 10",
             "type": "vless",
             "server": "172.67.178.175",
             "server_port": 80,
@@ -856,21 +856,31 @@
         {
             "tag": "🇨🇦CA | vless | @V2rayCollectorDonate | 19",
             "type": "vless",
-            "server": "cf88.gozar7.xyz",
-            "server_port": 80,
-            "uuid": "64126626-b5f3-5ad5-a24a-2d8836005f89",
-            "flow": "",
+            "server": "zula.ir",
+            "server_port": 2053,
+            "uuid": "cda2fa62-79b1-4177-81fc-165f98943a1c",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "lV2ray.nobarane.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/?ed=1024",
                 "headers": {
-                    "Host": "cf88.gozar7.xyz"
+                    "Host": "lV2ray.nobarane.org"
                 }
             }
         },
@@ -1842,11 +1852,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @FreakConfig | 5",
+            "tag": "🇺🇸US | vless | @IRN_VPN | 1",
             "type": "vless",
-            "server": "zula.ir",
-            "server_port": 443,
-            "uuid": "bfba705b-78ec-424b-e3b7-eca97332b1de",
+            "server": "173.245.58.31",
+            "server_port": 8880,
+            "uuid": "79a571fb-4fd2-4b87-9876-1b7d9728bb5c",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1854,22 +1864,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "mxdypodx813ne.drapico.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "@FreakConfig@FreakConfig@FreakConfig@FreakConfig@FreakConfig",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "173.245.58.31"
+                }
             }
         },
         {
@@ -1904,13 +1904,16 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 12",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "405e2aed-78c8-4956-cb8a-45752410cf66",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 17",
+            "type": "vmess",
+            "server": "www.zula.ir",
+            "server_port": 8880,
+            "uuid": "e305fc57-6153-4650-8c52-9a36865a199d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -1918,9 +1921,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER",
+                "path": "\/",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": ""
                 }
             }
         },
