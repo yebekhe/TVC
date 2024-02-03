@@ -121,8 +121,6 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | vless | @EliV2ray | 23","type":"vless","server":"136.244.81.135","port":443,"udp":true,"uuid":"d5ed6cb7-7088-4ebb-9240-e12d241ca81f","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"reversereality.cpionline.us","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc"}}
-  - {"name":"🇩🇪DE | vless | @v2ray_swhil | 19","type":"vless","server":"german.mmdtitaniom.com","port":443,"udp":true,"uuid":"c6446acb-5a26-4b24-bc82-812baff26c3a","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"greenpepper.ir","grpc-opts":{"grpc-service-name":"Telegram:@TITANIOM_OFFICIAL,@TITANIOM_OFFICIlAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL"},"reality-opts":{"public-key":"xtsHef5EMKqwwpP3cJTyrMKM9SyaPb19ORaZQ_GMmSA","short-id":"fd7bb3af"}}
-  - {"name":"🇩🇪DE | vless | @V2RayTz | 13","type":"vless","server":"162.55.177.254","port":443,"udp":true,"uuid":"2d112e48-4039-4cfb-ba9f-27fe6707e3a1","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"ftp.debian.org","grpc-opts":{"grpc-service-name":"@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"},"reality-opts":{"public-key":"-jIb_iK3BKht1fMzTXCfe9_GjzvYZPLuyuozw2p_Bm0","short-id":"d0fbbc8525"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,8 +128,6 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | vless | @EliV2ray | 23'
-      - '🇩🇪DE | vless | @v2ray_swhil | 19'
-      - '🇩🇪DE | vless | @V2RayTz | 13'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -139,16 +135,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | vless | @EliV2ray | 23'
-      - '🇩🇪DE | vless | @v2ray_swhil | 19'
-      - '🇩🇪DE | vless | @V2RayTz | 13'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇩🇪DE | vless | @EliV2ray | 23'
-      - '🇩🇪DE | vless | @v2ray_swhil | 19'
-      - '🇩🇪DE | vless | @V2RayTz | 13'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
