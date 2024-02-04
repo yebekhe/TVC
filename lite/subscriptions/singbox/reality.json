@@ -107,8 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | vless | @ipV2Ray | 15",
-                "🇩🇪DE | vless | @V2rayCollectorDonate | 19",
-                "🇩🇪DE | vless | @v2ray1_ng | 5",
+                "🇩🇪DE | vless | @ARv2ray | 14",
+                "🇫🇮FI | vless | @proxyymeliii | 15",
+                "🇩🇪DE | vless | @v2ray1_ng | 4",
+                "🇸🇪SE | vless | @V2RayTz | 12",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇩🇪DE | vless | @proxy_mtm | 9",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
@@ -120,8 +122,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | vless | @ipV2Ray | 15",
-                "🇩🇪DE | vless | @V2rayCollectorDonate | 19",
-                "🇩🇪DE | vless | @v2ray1_ng | 5",
+                "🇩🇪DE | vless | @ARv2ray | 14",
+                "🇫🇮FI | vless | @proxyymeliii | 15",
+                "🇩🇪DE | vless | @v2ray1_ng | 4",
+                "🇸🇪SE | vless | @V2RayTz | 12",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇩🇪DE | vless | @proxy_mtm | 9",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
@@ -184,11 +188,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @V2rayCollectorDonate | 19",
+            "tag": "🇩🇪DE | vless | @ARv2ray | 14",
             "type": "vless",
-            "server": "45.147.7.13",
-            "server_port": 8443,
-            "uuid": "9f76cfec-2931-4f9b-a992-1c5ebc86f72a",
+            "server": "162.55.185.255",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -198,22 +202,58 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "speed.cloudflare.com",
+                "server_name": "ftp.debian.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "QEfpfYwKLNiQMxe5kSTCMCsxeRj3KUjT7DCQ5lsKHQo",
-                    "short_id": "1a16f64f"
+                    "public_key": "TON6tp0pjN1isM3xJaGH_R4-TjSBArIHmtmmwGYAEXQ",
+                    "short_id": "d0fbbc8525"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇮FI | vless | @proxyymeliii | 15",
+            "type": "vless",
+            "server": "37.27.44.176",
+            "server_port": 443,
+            "uuid": "26d9ff4d-5fdb-43d8-8ed4-44b4d1d167ea",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.discordapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7Z43zHWUVIR0N-vR-yF6h9exfw03q5Lj-ajN3_FxVRA",
+                    "short_id": "214c"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @v2ray1_ng | 5",
+            "tag": "🇩🇪DE | vless | @v2ray1_ng | 4",
             "type": "vless",
             "server": "23.88.47.9",
             "server_port": 443,
@@ -246,6 +286,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇸🇪SE | vless | @V2RayTz | 12",
+            "type": "vless",
+            "server": "13.53.71.181",
+            "server_port": 80,
+            "uuid": "e7d3e8b2-7470-4ad2-9063-e0dfecb7a92b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "71hRMNYTTn6cHxUzoQVeHaV2iIRq-A_zjSzDS0N2F2w",
+                    "short_id": "71d36706"
+                }
             }
         },
         {

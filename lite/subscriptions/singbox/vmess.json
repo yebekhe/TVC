@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇮🇷IR | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
                 "🏳️XX | vmess | @oneclickvpnkeys | 5",
@@ -113,6 +114,7 @@
                 "🇮🇷IR | vmess | @V2rayng_Fast | 4",
                 "🇨🇦CA | vmess | @Hope_Net | 2",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 11",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 10"
             ]
         },
@@ -120,6 +122,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇮🇷IR | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
                 "🏳️XX | vmess | @oneclickvpnkeys | 5",
@@ -127,6 +130,7 @@
                 "🇮🇷IR | vmess | @V2rayng_Fast | 4",
                 "🇨🇦CA | vmess | @Hope_Net | 2",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 11",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -148,6 +152,23 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇮🇷IR | vmess | @V2rayCollectorDonate | 19",
+            "type": "vmess",
+            "server": "31.47.45.133",
+            "server_port": 23610,
+            "uuid": "53b389bd-156e-4dc5-bf10-ff16f7628db8",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "🇬🇧GB | vmess | @v2ray_outlineir | 0",
@@ -310,6 +331,40 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "ca2.xv2ray.net"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 11",
+            "type": "vmess",
+            "server": "104.18.202.232",
+            "server_port": 2083,
+            "uuid": "0d3f0cf6-e010-4138-8133-140c07e5eafb",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "joooin.golestan-vpn.link",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@golestan_vpn",
+                "headers": {
+                    "Host": "joooin.golestan-vpn.link"
                 }
             }
         },
