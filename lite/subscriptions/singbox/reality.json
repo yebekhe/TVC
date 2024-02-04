@@ -109,8 +109,9 @@
                 "🇩🇪DE | vless | @ipV2Ray | 15",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 6",
                 "🇩🇪DE | vless | @v2ray1_ng | 1",
+                "🇩🇪DE | vless | @V2RayTz | 10",
                 "🏳️XX | vless | @FAKEOFTVC | 5",
-                "🇸🇪SE | vless | @kiava | 5",
+                "🇸🇪SE | vless | @kiava | 6",
                 "🇩🇪DE | vless | @proxy_mtm | 5",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -123,8 +124,9 @@
                 "🇩🇪DE | vless | @ipV2Ray | 15",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 6",
                 "🇩🇪DE | vless | @v2ray1_ng | 1",
+                "🇩🇪DE | vless | @V2RayTz | 10",
                 "🏳️XX | vless | @FAKEOFTVC | 5",
-                "🇸🇪SE | vless | @kiava | 5",
+                "🇸🇪SE | vless | @kiava | 6",
                 "🇩🇪DE | vless | @proxy_mtm | 5",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -258,6 +260,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @V2RayTz | 10",
+            "type": "vless",
+            "server": "49.13.200.200",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "LnrQlRplXGOm1sJd2HfdHc66-e6862n906oKqsWaClc",
+                    "short_id": "156a49fef7"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🏳️XX | vless | @FAKEOFTVC | 5",
             "type": "vless",
             "server": "my.lamashop.site",
@@ -287,7 +325,7 @@
             }
         },
         {
-            "tag": "🇸🇪SE | vless | @kiava | 5",
+            "tag": "🇸🇪SE | vless | @kiava | 6",
             "type": "vless",
             "server": "13.50.17.155",
             "server_port": 8443,
