@@ -109,6 +109,7 @@
                 "🇨🇦CA | vless | @Parsashonam | 7",
                 "🇨🇦CA | vless | @NIM_VPN_ir | 8",
                 "🇫🇷FR | vless | @VlessConfig | 15",
+                "🇨🇷CR | vless | @VPNCUSTOMIZE | 13",
                 "🇩🇪DE | vless | @ipV2Ray | 14",
                 "🇨🇦CA | vless | @melov2ray | 7",
                 "🇸🇬SG | vless | @frev2ray | 3",
@@ -148,7 +149,6 @@
                 "🇨🇦CA | vless | @MTConfig | 18",
                 "🇳🇱NL | vless | @V2RayTz | 14",
                 "🇬🇧GB | ss | @VmessProtocol | 19",
-                "🇨🇷CR | vless | @DailyV2RY | 134",
                 "🏳️XX | vless | @sinabigo | 4",
                 "🇨🇦CA | vless | @lrnbymaa | 14",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
@@ -161,7 +161,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🏳️XX | vless | @Capoit | 6",
                 "🏳️XX | vless | @flyv2ray | 16",
-                "🇬🇧GB | ss | @forwardv2ray | 19",
+                "🇷🇺RU | ss | @forwardv2ray | 5",
                 "🇨🇦CA | vless | @FAKEOFTVC | 6",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇨🇷CR | vless | @mehrosaboran | 11",
@@ -186,6 +186,7 @@
                 "🇨🇦CA | vless | @Parsashonam | 7",
                 "🇨🇦CA | vless | @NIM_VPN_ir | 8",
                 "🇫🇷FR | vless | @VlessConfig | 15",
+                "🇨🇷CR | vless | @VPNCUSTOMIZE | 13",
                 "🇩🇪DE | vless | @ipV2Ray | 14",
                 "🇨🇦CA | vless | @melov2ray | 7",
                 "🇸🇬SG | vless | @frev2ray | 3",
@@ -225,7 +226,6 @@
                 "🇨🇦CA | vless | @MTConfig | 18",
                 "🇳🇱NL | vless | @V2RayTz | 14",
                 "🇬🇧GB | ss | @VmessProtocol | 19",
-                "🇨🇷CR | vless | @DailyV2RY | 134",
                 "🏳️XX | vless | @sinabigo | 4",
                 "🇨🇦CA | vless | @lrnbymaa | 14",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
@@ -238,7 +238,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🏳️XX | vless | @Capoit | 6",
                 "🏳️XX | vless | @flyv2ray | 16",
-                "🇬🇧GB | ss | @forwardv2ray | 19",
+                "🇷🇺RU | ss | @forwardv2ray | 5",
                 "🇨🇦CA | vless | @FAKEOFTVC | 6",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇨🇷CR | vless | @mehrosaboran | 11",
@@ -356,6 +356,37 @@
                 "headers": {
                     "Host": "telegram-channel-vlessconfig.sohala.uk"
                 }
+            }
+        },
+        {
+            "tag": "🇨🇷CR | vless | @VPNCUSTOMIZE | 13",
+            "type": "vless",
+            "server": "tel.VPNCUSTOMIZE.cam",
+            "server_port": 8443,
+            "uuid": "Tel-VPNCUSTOMIZE",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "20ns2-V2ray.Vpncustomize.Com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@VPNCUSTOMIZE,@VPNCUSTOMIZE",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1324,37 +1355,6 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇷CR | vless | @DailyV2RY | 134",
-            "type": "vless",
-            "server": "tel.VPNCUSTOMIZE.cam",
-            "server_port": 8443,
-            "uuid": "Tel-VPNCUSTOMIZE",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "20ns2-V2ray.Vpncustomize.Com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@VPNCUSTOMIZE,@VPNCUSTOMIZE",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🏳️XX | vless | @sinabigo | 4",
             "type": "vless",
             "server": "tunelserver.myelf.me",
@@ -1628,12 +1628,12 @@
             }
         },
         {
-            "tag": "🇬🇧GB | ss | @forwardv2ray | 19",
+            "tag": "🇷🇺RU | ss | @forwardv2ray | 5",
             "type": "shadowsocks",
-            "server": "series-a2-me.samanehha.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "Bog0ELmMM9DSxDdQ",
+            "server": "37.140.241.40",
+            "server_port": 55223,
+            "method": "aes-256-gcm",
+            "password": "1NKp5UR0YRE28mdf",
             "plugin": "",
             "plugin_opts": ""
         },
