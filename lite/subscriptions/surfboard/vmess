@@ -12,14 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇦CA | vmess | @mftizi | 19 = vmess, cfcdn1.sanfencdn9.com, 8880, username = ae16d5a4-9a22-4177-8884-77aa3b309d30, ws = true, tls = , vmess-aead = true, ws-path = /video/bYdJ7Vc2We, ws-headers = Host:"us6gzxQRrE4.fzbqfrse.xyz", skip-cert-verify = true, tfo = false
-🇵🇭PH | vmess | @DeamNet_Proxy | 19 = vmess, 109.248.25.59, 29064, username = 8958440c-aa86-4ff1-8e88-5c7a052d5961, ws = true, tls = , vmess-aead = true, ws-path = /ss, ws-headers = Host:"internet.life.com.by", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @oneclickvpnkeys | 5 = vmess, server12.beheshtbaneh.com, 8880, username = 39c03e6d-9efd-4e5a-8851-cd4ed0ec303c, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"server12.beheshtbaneh.com", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
-🇨🇦CA | vmess | @forwardv2ray | 19 = vmess, server10.beheshtbaneh.com, 8880, username = 66d4af1c-fcc3-479b-847c-3260253e1faa, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"server10.beheshtbaneh.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @mftizi | 19,🇵🇭PH | vmess | @DeamNet_Proxy | 19,🇨🇦CA | vmess | @oneclickvpnkeys | 5,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @forwardv2ray | 19
-URL-TEST = url-test,🇨🇦CA | vmess | @mftizi | 19,🇵🇭PH | vmess | @DeamNet_Proxy | 19,🇨🇦CA | vmess | @oneclickvpnkeys | 5,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @forwardv2ray | 19
-FALLBACK = fallback,🇨🇦CA | vmess | @mftizi | 19,🇵🇭PH | vmess | @DeamNet_Proxy | 19,🇨🇦CA | vmess | @oneclickvpnkeys | 5,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @forwardv2ray | 19
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @mftizi | 19,🇨🇦CA | vmess | @oneclickvpnkeys | 5,🇺🇸US | vmess | @v2Line | 6
+URL-TEST = url-test,🇨🇦CA | vmess | @mftizi | 19,🇨🇦CA | vmess | @oneclickvpnkeys | 5,🇺🇸US | vmess | @v2Line | 6
+FALLBACK = fallback,🇨🇦CA | vmess | @mftizi | 19,🇨🇦CA | vmess | @oneclickvpnkeys | 5,🇺🇸US | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
