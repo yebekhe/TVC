@@ -109,6 +109,7 @@
                 "🇩🇪DE | vless | @ipV2Ray | 15",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 5",
                 "🇩🇪DE | vless | @v2ray1_ng | 1",
+                "🇩🇪DE | vless | @forwardv2ray | 18",
                 "🏳️XX | vless | @FAKEOFTVC | 4",
                 "🇸🇪SE | vless | @kiava | 5",
                 "🇩🇪DE | vless | @proxy_mtm | 5",
@@ -123,6 +124,7 @@
                 "🇩🇪DE | vless | @ipV2Ray | 15",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 5",
                 "🇩🇪DE | vless | @v2ray1_ng | 1",
+                "🇩🇪DE | vless | @forwardv2ray | 18",
                 "🏳️XX | vless | @FAKEOFTVC | 4",
                 "🇸🇪SE | vless | @kiava | 5",
                 "🇩🇪DE | vless | @proxy_mtm | 5",
@@ -252,6 +254,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "fbbvssss.v2pedia.xyz",
+            "server_port": 8443,
+            "uuid": "8b2f1fc5-9d1c-4304-9c1d-91806eef4629",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pubmed.ncbi.nlm.nih.gov",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1XVNWscPjgvJ1uh9Tvk30Gh8dRlDL93jQEu2hk8YrRY",
+                    "short_id": "268ede"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
