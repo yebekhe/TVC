@@ -106,22 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | hy2 | @TUICity | 76",
-                "🇨🇦CA | hy2 | @TUICity | 77",
-                "🇸🇪SE | hy2 | @TUICity | 84",
-                "🇬🇧GB | hy2 | @TUICity | 85",
-                "🇫🇮FI | hy2 | @TUICity | 86"
+                "🇦🇲AM | hy2 | @TUICity | 72",
+                "🇸🇪SE | hy2 | @TUICity | 73",
+                "🇬🇧GB | hy2 | @TUICity | 74",
+                "🇫🇮FI | hy2 | @TUICity | 75",
+                "🇳🇱NL | hy2 | @TUICity | 77",
+                "🇨🇦CA | hy2 | @TUICity | 78"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | hy2 | @TUICity | 76",
-                "🇨🇦CA | hy2 | @TUICity | 77",
-                "🇸🇪SE | hy2 | @TUICity | 84",
-                "🇬🇧GB | hy2 | @TUICity | 85",
-                "🇫🇮FI | hy2 | @TUICity | 86"
+                "🇦🇲AM | hy2 | @TUICity | 72",
+                "🇸🇪SE | hy2 | @TUICity | 73",
+                "🇬🇧GB | hy2 | @TUICity | 74",
+                "🇫🇮FI | hy2 | @TUICity | 75",
+                "🇳🇱NL | hy2 | @TUICity | 77",
+                "🇨🇦CA | hy2 | @TUICity | 78"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -144,40 +146,17 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | hy2 | @TUICity | 76",
+            "tag": "🇦🇲AM | hy2 | @TUICity | 72",
             "type": "hysteria2",
-            "server": "45.32.234.211",
+            "server": "92.246.139.15",
             "server_port": 443,
             "up_mbps": 0,
             "down_mbps": 0,
-            "password": "y0qochAspE+u-HLfrip-",
+            "password": "04979c3cfe2a7945",
             "network": "tcp",
             "obfs": {
                 "type": "salamander",
-                "password": "2pU!&Brls!0exuP+!4so"
-            },
-            "tls": {
-                "enabled": true,
-                "disable_sni": false,
-                "server_name": "Google.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
-        },
-        {
-            "tag": "🇨🇦CA | hy2 | @TUICity | 77",
-            "type": "hysteria2",
-            "server": "51.222.12.75",
-            "server_port": 443,
-            "up_mbps": 0,
-            "down_mbps": 0,
-            "password": "2f1b122607f533dc",
-            "network": "tcp",
-            "obfs": {
-                "type": "salamander",
-                "password": "7925a5b3071cb35f"
+                "password": "205ef172277d3292"
             },
             "tls": {
                 "enabled": true,
@@ -190,7 +169,7 @@
             }
         },
         {
-            "tag": "🇸🇪SE | hy2 | @TUICity | 84",
+            "tag": "🇸🇪SE | hy2 | @TUICity | 73",
             "type": "hysteria2",
             "server": "70.34.213.123",
             "server_port": 443,
@@ -213,7 +192,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | hy2 | @TUICity | 85",
+            "tag": "🇬🇧GB | hy2 | @TUICity | 74",
             "type": "hysteria2",
             "server": "66.245.192.15",
             "server_port": 443,
@@ -236,7 +215,7 @@
             }
         },
         {
-            "tag": "🇫🇮FI | hy2 | @TUICity | 86",
+            "tag": "🇫🇮FI | hy2 | @TUICity | 75",
             "type": "hysteria2",
             "server": "95.217.211.216",
             "server_port": 443,
@@ -247,6 +226,52 @@
             "obfs": {
                 "type": "salamander",
                 "password": "05462d067f21387c"
+            },
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "www.google.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇳🇱NL | hy2 | @TUICity | 77",
+            "type": "hysteria2",
+            "server": "45.32.234.211",
+            "server_port": 443,
+            "up_mbps": 0,
+            "down_mbps": 0,
+            "password": "y0qochAspE+u-HLfrip-",
+            "network": "tcp",
+            "obfs": {
+                "type": "salamander",
+                "password": "2pU!&Brls!0exuP+!4so"
+            },
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "Google.com",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
+        },
+        {
+            "tag": "🇨🇦CA | hy2 | @TUICity | 78",
+            "type": "hysteria2",
+            "server": "51.222.12.75",
+            "server_port": 443,
+            "up_mbps": 0,
+            "down_mbps": 0,
+            "password": "2f1b122607f533dc",
+            "network": "tcp",
+            "obfs": {
+                "type": "salamander",
+                "password": "7925a5b3071cb35f"
             },
             "tls": {
                 "enabled": true,
