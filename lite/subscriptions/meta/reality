@@ -121,8 +121,8 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | vless | @ipV2Ray | 15","type":"vless","server":"78.47.198.99","port":443,"udp":true,"uuid":"cb00ef4a-fcf7-484a-8c49-6a2422ed84e6","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.google.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"msTPLgzvYs8r_Nww-HHQG5Cbj8VEwYjwsFVCuwdSZk8","short-id":"9d2b63ad"}}
-  - {"name":"🇩🇪DE | vless | @V2rayCollectorDonate | 19","type":"vless","server":"49.13.27.100","port":443,"udp":true,"uuid":"5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.gsmarena.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"AQ_czQOq5paFHTJMjxD-uLklfIDCammNofaA8QggRjg","short-id":"1fefa3a0"}}
-  - {"name":"🇩🇪DE | vless | @v2ray1_ng | 2","type":"vless","server":"23.88.47.9","port":443,"udp":true,"uuid":"5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.hetzner.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"9o7f3Rkn6BUL_emZVS6yMoVu8OoTozpOKlkc7JaUSQ8","short-id":"1fefa3a0"}}
+  - {"name":"🇩🇪DE | vless | @V2rayCollectorDonate | 19","type":"vless","server":"45.147.7.13","port":8443,"udp":true,"uuid":"9f76cfec-2931-4f9b-a992-1c5ebc86f72a","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"speed.cloudflare.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"QEfpfYwKLNiQMxe5kSTCMCsxeRj3KUjT7DCQ5lsKHQo","short-id":"1a16f64f"}}
+  - {"name":"🇩🇪DE | vless | @v2ray1_ng | 5","type":"vless","server":"23.88.47.9","port":443,"udp":true,"uuid":"5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.hetzner.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"9o7f3Rkn6BUL_emZVS6yMoVu8OoTozpOKlkc7JaUSQ8","short-id":"1fefa3a0"}}
   - {"name":"🇩🇪DE | vless | @proxy_mtm | 8","type":"vless","server":"128.140.36.96","port":443,"udp":true,"uuid":"9cfc941b-d243-4dc4-8989-40716165027a","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.dibagroup.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"zPiAq35Bvh5g1oVxW8tyzPC5vV064awAqKOwTeo6h0E","short-id":"cf6c26b3"}}
 proxy-groups:
   - name: MANUAL
@@ -132,7 +132,7 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | vless | @ipV2Ray | 15'
       - '🇩🇪DE | vless | @V2rayCollectorDonate | 19'
-      - '🇩🇪DE | vless | @v2ray1_ng | 2'
+      - '🇩🇪DE | vless | @v2ray1_ng | 5'
       - '🇩🇪DE | vless | @proxy_mtm | 8'
   - name: URL-TEST
     type: url-test
@@ -142,7 +142,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | vless | @ipV2Ray | 15'
       - '🇩🇪DE | vless | @V2rayCollectorDonate | 19'
-      - '🇩🇪DE | vless | @v2ray1_ng | 2'
+      - '🇩🇪DE | vless | @v2ray1_ng | 5'
       - '🇩🇪DE | vless | @proxy_mtm | 8'
   - name: FALLBACK
     type: fallback
@@ -151,7 +151,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | vless | @ipV2Ray | 15'
       - '🇩🇪DE | vless | @V2rayCollectorDonate | 19'
-      - '🇩🇪DE | vless | @v2ray1_ng | 2'
+      - '🇩🇪DE | vless | @v2ray1_ng | 5'
       - '🇩🇪DE | vless | @proxy_mtm | 8'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
