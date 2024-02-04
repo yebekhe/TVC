@@ -108,12 +108,11 @@
                 "URL-TEST",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
-                "🇯🇵JP | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 5",
                 "🇨🇦CA | vmess | @prrofile_purple | 175",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 3",
                 "🇨🇦CA | vmess | @v2ray_swhil | 23",
-                "🇳🇱NL | vmess | @Hope_Net | 4",
+                "🇺🇸US | vmess | @Hope_Net | 4",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 9"
             ]
@@ -124,12 +123,11 @@
             "outbounds": [
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
-                "🇯🇵JP | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 5",
                 "🇨🇦CA | vmess | @prrofile_purple | 175",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 3",
                 "🇨🇦CA | vmess | @v2ray_swhil | 23",
-                "🇳🇱NL | vmess | @Hope_Net | 4",
+                "🇺🇸US | vmess | @Hope_Net | 4",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 9"
             ],
@@ -192,23 +190,6 @@
                 "headers": {
                     "Host": ""
                 }
-            }
-        },
-        {
-            "tag": "🇯🇵JP | vmess | @DeamNet_Proxy | 19",
-            "type": "vmess",
-            "server": "138.2.44.211",
-            "server_port": 20081,
-            "uuid": "593b8525-0c48-4b0f-d9af-2d73a9148973",
-            "security": "auto",
-            "alter_id": 64,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -321,11 +302,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vmess | @Hope_Net | 4",
+            "tag": "🇺🇸US | vmess | @Hope_Net | 4",
             "type": "vmess",
-            "server": "hdfy8d1.cpi2hidd.eu.org",
-            "server_port": 80,
-            "uuid": "a6292090-afe1-4640-97a7-4f1d1d877cf1",
+            "server": "wus01.node.onepai.top",
+            "server_port": 443,
+            "uuid": "bcd089f0-92f2-4f46-b2b4-c2031ba49d59",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -336,9 +317,19 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/Av8czorIlYicU6D349brWUw6a",
+                "path": "\/",
                 "headers": {
                     "Host": ""
                 }
