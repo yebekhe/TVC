@@ -121,10 +121,9 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | vless | @ipV2Ray | 15","type":"vless","server":"78.47.198.99","port":443,"udp":true,"uuid":"cb00ef4a-fcf7-484a-8c49-6a2422ed84e6","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.google.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"msTPLgzvYs8r_Nww-HHQG5Cbj8VEwYjwsFVCuwdSZk8","short-id":"9d2b63ad"}}
+  - {"name":"🇩🇪DE | vless | @V2rayCollectorDonate | 19","type":"vless","server":"49.13.27.100","port":443,"udp":true,"uuid":"5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.gsmarena.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"AQ_czQOq5paFHTJMjxD-uLklfIDCammNofaA8QggRjg","short-id":"1fefa3a0"}}
   - {"name":"🇩🇪DE | vless | @v2ray1_ng | 2","type":"vless","server":"23.88.47.9","port":443,"udp":true,"uuid":"5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.hetzner.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"9o7f3Rkn6BUL_emZVS6yMoVu8OoTozpOKlkc7JaUSQ8","short-id":"1fefa3a0"}}
-  - {"name":"🏳️XX | vless | @forwardv2ray | 19","type":"vless","server":"v2logy.ddns.net","port":443,"udp":true,"uuid":"72859c41-15ac-4621-bfdf-ac4c3ac33ad4","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"sourceforge.net","grpc-opts":{"grpc-service-name":"Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,"},"reality-opts":{"public-key":"k6gu1t73hTdYK3PKNUwOqy2B7ZP-sek-dW2_-aGf9i4"}}
   - {"name":"🏳️XX | vless | @FAKEOFTVC | 5","type":"vless","server":"my.lamashop.site","port":2053,"udp":true,"uuid":"012fd299-db19-472b-a133-4e7bd9246396","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"xy.achkan7.site","flow":"xtls-rprx-vision","reality-opts":{"public-key":"aWq3udGBr7wzX97Y6lkC4E-08pmF4oXJPvDSTyE3l3k","short-id":"6266b6f9"}}
-  - {"name":"🇩🇪DE | vless | @proxy_mtm | 9","type":"vless","server":"49.13.27.100","port":443,"udp":true,"uuid":"5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.gsmarena.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"AQ_czQOq5paFHTJMjxD-uLklfIDCammNofaA8QggRjg","short-id":"1fefa3a0"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,10 +131,9 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | vless | @ipV2Ray | 15'
+      - '🇩🇪DE | vless | @V2rayCollectorDonate | 19'
       - '🇩🇪DE | vless | @v2ray1_ng | 2'
-      - '🏳️XX | vless | @forwardv2ray | 19'
       - '🏳️XX | vless | @FAKEOFTVC | 5'
-      - '🇩🇪DE | vless | @proxy_mtm | 9'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -143,20 +141,18 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | vless | @ipV2Ray | 15'
+      - '🇩🇪DE | vless | @V2rayCollectorDonate | 19'
       - '🇩🇪DE | vless | @v2ray1_ng | 2'
-      - '🏳️XX | vless | @forwardv2ray | 19'
       - '🏳️XX | vless | @FAKEOFTVC | 5'
-      - '🇩🇪DE | vless | @proxy_mtm | 9'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇩🇪DE | vless | @ipV2Ray | 15'
+      - '🇩🇪DE | vless | @V2rayCollectorDonate | 19'
       - '🇩🇪DE | vless | @v2ray1_ng | 2'
-      - '🏳️XX | vless | @forwardv2ray | 19'
       - '🏳️XX | vless | @FAKEOFTVC | 5'
-      - '🇩🇪DE | vless | @proxy_mtm | 9'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
