@@ -122,7 +122,7 @@
                 "🇨🇦CA | vless | @servermomo | 3",
                 "🇩🇪DE | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
-                "🇨🇷CR | vless | @V2rayNGn | 15",
+                "🇺🇸US | vless | @V2rayNGn | 15",
                 "🇨🇷CR | vless | @customv2ray | 15",
                 "🇨🇦CA | vless | @UnlimitedDev | 9",
                 "🇨🇦CA | vless | @vmessorg | 7",
@@ -146,8 +146,9 @@
                 "🇨🇦CA | vless | @polproxy | 12",
                 "🇨🇦CA | vless | @Outlinev2rayNG | 10",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 13",
-                "🇨🇦CA | vless | @FreakConfig | 7",
+                "🇨🇷CR | vless | @Capoit | 7",
                 "🇨🇷CR | vless | @flyv2ray | 14",
+                "🇨🇦CA | vless | @forwardv2ray | 16",
                 "🏳️XX | vless | @FAKEOFTVC | 5",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇳🇱NL | vless | @mehrosaboran | 12",
@@ -184,7 +185,7 @@
                 "🇨🇦CA | vless | @servermomo | 3",
                 "🇩🇪DE | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
-                "🇨🇷CR | vless | @V2rayNGn | 15",
+                "🇺🇸US | vless | @V2rayNGn | 15",
                 "🇨🇷CR | vless | @customv2ray | 15",
                 "🇨🇦CA | vless | @UnlimitedDev | 9",
                 "🇨🇦CA | vless | @vmessorg | 7",
@@ -208,8 +209,9 @@
                 "🇨🇦CA | vless | @polproxy | 12",
                 "🇨🇦CA | vless | @Outlinev2rayNG | 10",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 13",
-                "🇨🇦CA | vless | @FreakConfig | 7",
+                "🇨🇷CR | vless | @Capoit | 7",
                 "🇨🇷CR | vless | @flyv2ray | 14",
+                "🇨🇦CA | vless | @forwardv2ray | 16",
                 "🏳️XX | vless | @FAKEOFTVC | 5",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇳🇱NL | vless | @mehrosaboran | 12",
@@ -680,7 +682,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @V2rayNGn | 15",
+            "tag": "🇺🇸US | vless | @V2rayNGn | 15",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 8880,
@@ -1287,11 +1289,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @FreakConfig | 7",
+            "tag": "🇨🇷CR | vless | @Capoit | 7",
             "type": "vless",
-            "server": "lol.ps",
-            "server_port": 443,
-            "uuid": "bfba705b-78ec-424b-e3b7-eca97332b1de",
+            "server": "190.93.247.155",
+            "server_port": 8080,
+            "uuid": "config-injectorV2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1299,22 +1301,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "maxwdhix02dy62g.drapico.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "@FreakConfig@FreakConfig@FreakConfig@FreakConfig@FreakConfig",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "190.93.247.155"
+                }
             }
         },
         {
@@ -1345,6 +1337,27 @@
                 "path": "\/",
                 "headers": {
                     "Host": "gmV2raybo.shhproxyfree.com"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 16",
+            "type": "vless",
+            "server": "104.18.200.200",
+            "server_port": 2095,
+            "uuid": "75ae068c-f1b2-46d6-ab07-4a63452f5aee",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "104.18.200.200"
                 }
             }
         },
