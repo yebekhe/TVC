@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇷IR | vmess | @V2rayCollectorDonate | 19",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 5",
@@ -114,7 +114,6 @@
                 "🇮🇷IR | vmess | @V2rayng_Fast | 2",
                 "🏳️XX | vmess | @Hope_Net | 10",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇱🇹LT | vmess | @forwardv2ray | 4",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 9"
             ]
         },
@@ -122,7 +121,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇷IR | vmess | @V2rayCollectorDonate | 19",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 5",
@@ -130,7 +129,6 @@
                 "🇮🇷IR | vmess | @V2rayng_Fast | 2",
                 "🏳️XX | vmess | @Hope_Net | 10",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇱🇹LT | vmess | @forwardv2ray | 4",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -154,11 +152,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇮🇷IR | vmess | @V2rayCollectorDonate | 19",
+            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 19",
             "type": "vmess",
-            "server": "78.109.198.37",
-            "server_port": 2053,
-            "uuid": "fd017802-8fd9-4880-b351-ebe5e6c3285a",
+            "server": "zula.ir",
+            "server_port": 80,
+            "uuid": "e181241a-a324-43d2-a7aa-30ab32a9f5b2",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -168,6 +166,13 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vmess",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
@@ -307,30 +312,6 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "ca2.xv2ray.net"
-                }
-            }
-        },
-        {
-            "tag": "🇱🇹LT | vmess | @forwardv2ray | 4",
-            "type": "vmess",
-            "server": "lt2-vmess.sshmax.xyz",
-            "server_port": 80,
-            "uuid": "7f4c22ba-61de-4ed3-87b4-9bccde300f0f",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vmess",
-                "headers": {
-                    "Host": ""
                 }
             }
         },
