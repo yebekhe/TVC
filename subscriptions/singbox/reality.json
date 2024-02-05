@@ -139,8 +139,6 @@
                 "🏳️XX | vless | @Capital_NET | 38",
                 "🏳️XX | vless | @Capital_NET | 42",
                 "🇩🇪DE | vless | @FreakConfig | 1",
-                "🇸🇪SE | vless | @forwardv2ray | 3",
-                "🇩🇪DE | vless | @forwardv2ray | 4",
                 "🇩🇪DE | vless | @FAKEOFTVC | 0",
                 "🏳️XX | vless | @FAKEOFTVC | 2",
                 "🏳️XX | vless | @FAKEOFTVC | 4",
@@ -211,8 +209,6 @@
                 "🏳️XX | vless | @Capital_NET | 38",
                 "🏳️XX | vless | @Capital_NET | 42",
                 "🇩🇪DE | vless | @FreakConfig | 1",
-                "🇸🇪SE | vless | @forwardv2ray | 3",
-                "🇩🇪DE | vless | @forwardv2ray | 4",
                 "🇩🇪DE | vless | @FAKEOFTVC | 0",
                 "🏳️XX | vless | @FAKEOFTVC | 2",
                 "🏳️XX | vless | @FAKEOFTVC | 4",
@@ -1315,71 +1311,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇸🇪SE | vless | @forwardv2ray | 3",
-            "type": "vless",
-            "server": "13.53.71.181",
-            "server_port": 80,
-            "uuid": "e7d3e8b2-7470-4ad2-9063-e0dfecb7a92b",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.speedtest.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "71hRMNYTTn6cHxUzoQVeHaV2iIRq-A_zjSzDS0N2F2w",
-                    "short_id": "71d36706"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @forwardv2ray | 4",
-            "type": "vless",
-            "server": "fbbvssss.v2pedia.xyz",
-            "server_port": 8443,
-            "uuid": "8b2f1fc5-9d1c-4304-9c1d-91806eef4629",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "pubmed.ncbi.nlm.nih.gov",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "1XVNWscPjgvJ1uh9Tvk30Gh8dRlDL93jQEu2hk8YrRY",
-                    "short_id": "268ede"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
