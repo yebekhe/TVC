@@ -13,11 +13,10 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇫🇷FR | trojan | @PrivateVPNs | 14 = trojan, 15.188.190.129, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇸🇪SE | trojan | @DirectVPN | 13 = trojan, 13.50.76.223, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
-🇨🇦CA | trojan | @forwardv2ray | 15 = trojan, 104.16.126.175, 2083, password = qG9K8AGnn9XH5jUqeFu96g, udp-delay = true, skip-cert-verify = false, sni = cdn13.cdn2cdn.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 14,🇸🇪SE | trojan | @DirectVPN | 13,🇨🇦CA | trojan | @forwardv2ray | 15
-URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 14,🇸🇪SE | trojan | @DirectVPN | 13,🇨🇦CA | trojan | @forwardv2ray | 15
-FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 14,🇸🇪SE | trojan | @DirectVPN | 13,🇨🇦CA | trojan | @forwardv2ray | 15
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 14,🇸🇪SE | trojan | @DirectVPN | 13
+URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 14,🇸🇪SE | trojan | @DirectVPN | 13
+FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 14,🇸🇪SE | trojan | @DirectVPN | 13
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
