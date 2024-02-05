@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | vless | @ipV2Ray | 13",
+                "🇩🇪DE | vless | @v2ray1_ng | 4",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -117,6 +118,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | vless | @ipV2Ray | 13",
+                "🇩🇪DE | vless | @v2ray1_ng | 4",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -167,6 +169,42 @@
                     "enabled": true,
                     "public_key": "5xIIuYDTZSlGG0pfit32xlw67JK7KOCfWIkliAwXVRg",
                     "short_id": "9d2b63ad"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @v2ray1_ng | 4",
+            "type": "vless",
+            "server": "128.140.36.96",
+            "server_port": 443,
+            "uuid": "9cfc941b-d243-4dc4-8989-40716165027a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.dibagroup.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "zPiAq35Bvh5g1oVxW8tyzPC5vV064awAqKOwTeo6h0E",
+                    "short_id": "cf6c26b3"
                 }
             },
             "transport": {
