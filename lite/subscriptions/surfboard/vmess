@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇨🇦CA | vmess | @DeamNet_Proxy | 19 = vmess, 104.21.44.200, 8880, username = 4b5e4565-322f-4223-a891-78a84f189726, ws = true, tls = , vmess-aead = true, ws-path = /r8ykwif5rffiqJeJ49zLQtAUESmka7PbhWz3wiHs8cSeiRyZL, ws-headers = Host:"pla.yj2022.gq", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | vmess | @v2Line | 6
-URL-TEST = url-test,🇺🇸US | vmess | @v2Line | 6
-FALLBACK = fallback,🇺🇸US | vmess | @v2Line | 6
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇺🇸US | vmess | @v2Line | 6
+URL-TEST = url-test,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇺🇸US | vmess | @v2Line | 6
+FALLBACK = fallback,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇺🇸US | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
