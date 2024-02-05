@@ -123,7 +123,6 @@ proxies:
   - {"name":"🇺🇸US | vmess | @mftizi | 18","type":"vmess","server":"38.147.191.185","port":"10241","cipher":"auto","uuid":"e820d6f7-57ef-4575-99da-bcd7d318c742","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇮🇷IR | vmess | @V2rayng_Fast | 4","type":"vmess","server":"81.12.27.108","port":"16767","cipher":"auto","uuid":"d30a1c51-d37c-4cb8-bee6-8f5cd746f9d7","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @v2ray_swhil | 24","type":"vmess","server":"172.67.167.220","port":"2087","cipher":"auto","uuid":"5db4c51c-7304-4f0a-bbd8-083d258c04eb","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"dfgh","grpc-mode":"gun"}}
-  - {"name":"🇨🇦CA | vmess | @Hope_Net | 8","type":"vmess","server":"104.21.27.222","port":"8443","cipher":"auto","uuid":"92ae428d-9e76-4e0e-b7a5-c2a6f22b8e21","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
 proxy-groups:
   - name: MANUAL
@@ -136,7 +135,6 @@ proxy-groups:
       - '🇺🇸US | vmess | @mftizi | 18'
       - '🇮🇷IR | vmess | @V2rayng_Fast | 4'
       - '🇨🇦CA | vmess | @v2ray_swhil | 24'
-      - '🇨🇦CA | vmess | @Hope_Net | 8'
       - '🇺🇸US | vmess | @v2Line | 6'
   - name: URL-TEST
     type: url-test
@@ -149,7 +147,6 @@ proxy-groups:
       - '🇺🇸US | vmess | @mftizi | 18'
       - '🇮🇷IR | vmess | @V2rayng_Fast | 4'
       - '🇨🇦CA | vmess | @v2ray_swhil | 24'
-      - '🇨🇦CA | vmess | @Hope_Net | 8'
       - '🇺🇸US | vmess | @v2Line | 6'
   - name: FALLBACK
     type: fallback
@@ -161,7 +158,6 @@ proxy-groups:
       - '🇺🇸US | vmess | @mftizi | 18'
       - '🇮🇷IR | vmess | @V2rayng_Fast | 4'
       - '🇨🇦CA | vmess | @v2ray_swhil | 24'
-      - '🇨🇦CA | vmess | @Hope_Net | 8'
       - '🇺🇸US | vmess | @v2Line | 6'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
