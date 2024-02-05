@@ -129,7 +129,8 @@
                 "🇫🇷FR | trojan | @PrivateVPNs | 15",
                 "🇩🇪DE | trojan | @DirectVPN | 14",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
-                "🇺🇸US | vmess | @mftizi | 19",
+                "🇨🇦CA | vmess | @mftizi | 19",
+                "🇵🇭PH | vmess | @DeamNet_Proxy | 18",
                 "🇮🇹IT | vmess | @oneclickvpnkeys | 5",
                 "🇨🇦CA | vmess | @prrofile_purple | 184",
                 "🇨🇦CA | vless | @customv2ray | 10",
@@ -159,8 +160,8 @@
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 12",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🏳️XX | vless | @Capoit | 6",
+                "🇨🇦CA | vless | @FreakConfig | 5",
                 "🏳️XX | vless | @flyv2ray | 16",
-                "🇳🇱NL | vmess | @forwardv2ray | 18",
                 "🏳️XX | vless | @FAKEOFTVC | 4",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇨🇷CR | vless | @mehrosaboran | 11",
@@ -205,7 +206,8 @@
                 "🇫🇷FR | trojan | @PrivateVPNs | 15",
                 "🇩🇪DE | trojan | @DirectVPN | 14",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
-                "🇺🇸US | vmess | @mftizi | 19",
+                "🇨🇦CA | vmess | @mftizi | 19",
+                "🇵🇭PH | vmess | @DeamNet_Proxy | 18",
                 "🇮🇹IT | vmess | @oneclickvpnkeys | 5",
                 "🇨🇦CA | vmess | @prrofile_purple | 184",
                 "🇨🇦CA | vless | @customv2ray | 10",
@@ -235,8 +237,8 @@
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 12",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🏳️XX | vless | @Capoit | 6",
+                "🇨🇦CA | vless | @FreakConfig | 5",
                 "🏳️XX | vless | @flyv2ray | 16",
-                "🇳🇱NL | vmess | @forwardv2ray | 18",
                 "🏳️XX | vless | @FAKEOFTVC | 4",
                 "🇨🇦CA | vless | @https_config_injector | 15",
                 "🇨🇷CR | vless | @mehrosaboran | 11",
@@ -867,7 +869,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @mftizi | 19",
+            "tag": "🇨🇦CA | vmess | @mftizi | 19",
             "type": "vmess",
             "server": "cfcdn1.sanfencdn9.com",
             "server_port": 8880,
@@ -887,6 +889,30 @@
                 "path": "\/video\/bYdJ7Vc2We",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇵🇭PH | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "109.248.25.59",
+            "server_port": 29064,
+            "uuid": "8958440c-aa86-4ff1-8e88-5c7a052d5961",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ss",
+                "headers": {
+                    "Host": "109.248.25.59"
                 }
             }
         },
@@ -1493,9 +1519,9 @@
         {
             "tag": "🏳️XX | vless | @Outlinev2rayNG | 10",
             "type": "vless",
-            "server": "oskbsl.ps4lavazemjanebi.ir",
-            "server_port": 8443,
-            "uuid": "2e7afeb3-cbe8-4eaa-93cd-4f7e2bd89c3a",
+            "server": "cdn08.cc2.maroon-shimi.ir",
+            "server_port": 443,
+            "uuid": "9ae86998-777e-4e6f-9c37-8ed88a4c24eb",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1505,7 +1531,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "oskbsl.ps4lavazemjanebi.ir",
+                "server_name": "cdn08.cc2.maroon-shimi.ir",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1514,11 +1540,11 @@
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "@v2roay",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/smarthome",
+                "headers": {
+                    "Host": "cdn08.cc2.maroon-shimi.ir"
+                }
             }
         },
         {
@@ -1591,6 +1617,27 @@
             }
         },
         {
+            "tag": "🇨🇦CA | vless | @FreakConfig | 5",
+            "type": "vless",
+            "server": "104.31.16.168",
+            "server_port": 80,
+            "uuid": "e4a52f75-474e-449e-bcd2-05ea177f1403",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "104.31.16.168"
+                }
+            }
+        },
+        {
             "tag": "🏳️XX | vless | @flyv2ray | 16",
             "type": "vless",
             "server": "V2RAXX",
@@ -1602,40 +1649,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇳🇱NL | vmess | @forwardv2ray | 18",
-            "type": "vmess",
-            "server": "188.114.97.7",
-            "server_port": 443,
-            "uuid": "41e39a58-4dda-46a2-bf64-02087508fff0",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kansas.gafn.online",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/speedtest",
-                "headers": {
-                    "Host": "kansas.gafn.online"
-                }
             }
         },
         {
