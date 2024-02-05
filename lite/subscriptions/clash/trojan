@@ -118,31 +118,35 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇩🇪DE | trojan | @PrivateVPNs | 16","type":"trojan","server":"18.198.192.56","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇩🇪DE | trojan | @DirectVPN | 15","type":"trojan","server":"3.71.234.219","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 14","type":"trojan","server":"15.188.190.129","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇸🇪SE | trojan | @DirectVPN | 13","type":"trojan","server":"13.50.76.223","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇺🇸US | trojan | @forwardv2ray | 12","type":"trojan","server":"z-v2-003225.kailib.com","port":443,"udp":false,"password":"wkmY1R4EcP","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | trojan | @PrivateVPNs | 16'
-      - '🇩🇪DE | trojan | @DirectVPN | 15'
+      - '🇫🇷FR | trojan | @PrivateVPNs | 14'
+      - '🇸🇪SE | trojan | @DirectVPN | 13'
+      - '🇺🇸US | trojan | @forwardv2ray | 12'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | trojan | @PrivateVPNs | 16'
-      - '🇩🇪DE | trojan | @DirectVPN | 15'
+      - '🇫🇷FR | trojan | @PrivateVPNs | 14'
+      - '🇸🇪SE | trojan | @DirectVPN | 13'
+      - '🇺🇸US | trojan | @forwardv2ray | 12'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | trojan | @PrivateVPNs | 16'
-      - '🇩🇪DE | trojan | @DirectVPN | 15'
+      - '🇫🇷FR | trojan | @PrivateVPNs | 14'
+      - '🇸🇪SE | trojan | @DirectVPN | 13'
+      - '🇺🇸US | trojan | @forwardv2ray | 12'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
