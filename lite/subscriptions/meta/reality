@@ -121,7 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | vless | @ipV2Ray | 14","type":"vless","server":"188.34.194.108","port":443,"udp":true,"uuid":"cb00ef4a-fcf7-484a-8c49-6a2422ed84e6","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"ftp.debian.org","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"W6ol7KU4fjV1mBS2aG_xs8emIKsqF8y6Ufva-2MRa20","short-id":"9d2b63ad"}}
-  - {"name":"🇩🇪DE | vless | @v2ray1_ng | 6","type":"vless","server":"23.88.47.9","port":443,"udp":true,"uuid":"5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.hetzner.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"9o7f3Rkn6BUL_emZVS6yMoVu8OoTozpOKlkc7JaUSQ8","short-id":"1fefa3a0"}}
+  - {"name":"🇩🇪DE | vless | @mehrosaboran | 12","type":"vless","server":"49.13.27.100","port":443,"udp":true,"uuid":"5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.gsmarena.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"AQ_czQOq5paFHTJMjxD-uLklfIDCammNofaA8QggRjg","short-id":"1fefa3a0"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +129,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | vless | @ipV2Ray | 14'
-      - '🇩🇪DE | vless | @v2ray1_ng | 6'
+      - '🇩🇪DE | vless | @mehrosaboran | 12'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -137,14 +137,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | vless | @ipV2Ray | 14'
-      - '🇩🇪DE | vless | @v2ray1_ng | 6'
+      - '🇩🇪DE | vless | @mehrosaboran | 12'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇩🇪DE | vless | @ipV2Ray | 14'
-      - '🇩🇪DE | vless | @v2ray1_ng | 6'
+      - '🇩🇪DE | vless | @mehrosaboran | 12'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
