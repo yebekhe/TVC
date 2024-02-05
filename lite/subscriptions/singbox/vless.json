@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇮🇷IR | vless | @EliV2ray | 20",
                 "🇨🇦CA | vless | @Parsashonam | 8",
                 "🇨🇦CA | vless | @NIM_VPN_ir | 9",
                 "🇮🇪IE | vless | @VlessConfig | 18",
@@ -155,7 +156,7 @@
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇨🇷CR | vless | @nofiltering2 | 4",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
-                "🇨🇦CA | vless | @kingofilter | 9",
+                "🇨🇦CA | vless | @kingofilter | 10",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇬🇧GB | vless | @FoXrayIran | 4",
                 "🇨🇦CA | vless | @IBv2ray | 3",
@@ -168,6 +169,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇮🇷IR | vless | @EliV2ray | 20",
                 "🇨🇦CA | vless | @Parsashonam | 8",
                 "🇨🇦CA | vless | @NIM_VPN_ir | 9",
                 "🇮🇪IE | vless | @VlessConfig | 18",
@@ -217,7 +219,7 @@
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇨🇷CR | vless | @nofiltering2 | 4",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
-                "🇨🇦CA | vless | @kingofilter | 9",
+                "🇨🇦CA | vless | @kingofilter | 10",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇬🇧GB | vless | @FoXrayIran | 4",
                 "🇨🇦CA | vless | @IBv2ray | 3",
@@ -244,6 +246,27 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇮🇷IR | vless | @EliV2ray | 20",
+            "type": "vless",
+            "server": "5.61.31.203",
+            "server_port": 8080,
+            "uuid": "20c90a40-be6b-4f5c-a293-63c7d639739c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "8080vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇨🇦CA | vless | @Parsashonam | 8",
@@ -1492,7 +1515,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @kingofilter | 9",
+            "tag": "🇨🇦CA | vless | @kingofilter | 10",
             "type": "vless",
             "server": "jp.xiaoshus.com",
             "server_port": 443,
