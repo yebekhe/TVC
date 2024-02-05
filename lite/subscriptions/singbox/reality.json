@@ -107,7 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | vless | @ipV2Ray | 14",
+                "🇫🇮FI | vless | @proxyymeliii | 17",
                 "🇩🇪DE | vless | @v2ray1_ng | 4",
+                "🇩🇪DE | vless | @forwardv2ray | 12",
                 "🏳️XX | vless | @FAKEOFTVC | 4",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
@@ -119,7 +121,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | vless | @ipV2Ray | 14",
+                "🇫🇮FI | vless | @proxyymeliii | 17",
                 "🇩🇪DE | vless | @v2ray1_ng | 4",
+                "🇩🇪DE | vless | @forwardv2ray | 12",
                 "🏳️XX | vless | @FAKEOFTVC | 4",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇹🇷TR | vless | @vpn_go67 | 23",
@@ -182,6 +186,35 @@
             }
         },
         {
+            "tag": "🇫🇮FI | vless | @proxyymeliii | 17",
+            "type": "vless",
+            "server": "37.27.44.176",
+            "server_port": 443,
+            "uuid": "26d9ff4d-5fdb-43d8-8ed4-44b4d1d167ea",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.discordapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7Z43zHWUVIR0N-vR-yF6h9exfw03q5Lj-ajN3_FxVRA",
+                    "short_id": "214c"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | vless | @v2ray1_ng | 4",
             "type": "vless",
             "server": "128.140.36.96",
@@ -206,6 +239,42 @@
                 "reality": {
                     "enabled": true,
                     "public_key": "zPiAq35Bvh5g1oVxW8tyzPC5vV064awAqKOwTeo6h0E",
+                    "short_id": "cf6c26b3"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 12",
+            "type": "vless",
+            "server": "168.119.229.200",
+            "server_port": 443,
+            "uuid": "9cfc941b-d243-4dc4-8989-40716165027a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ET5QqxGsxGR8g4LDn1nXb6NOMrjndaaQa5CE4Rs9mw0",
                     "short_id": "cf6c26b3"
                 }
             },
