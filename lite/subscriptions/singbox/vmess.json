@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
-                "🇺🇸US | vmess | @mftizi | 19",
+                "🇺🇸US | vmess | @mftizi | 18",
+                "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
                 "🇮🇹IT | vmess | @oneclickvpnkeys | 5",
                 "🇨🇦CA | vmess | @prrofile_purple | 184",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 4",
@@ -122,7 +123,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
-                "🇺🇸US | vmess | @mftizi | 19",
+                "🇺🇸US | vmess | @mftizi | 18",
+                "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
                 "🇮🇹IT | vmess | @oneclickvpnkeys | 5",
                 "🇨🇦CA | vmess | @prrofile_purple | 184",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 4",
@@ -169,11 +171,28 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @mftizi | 19",
+            "tag": "🇺🇸US | vmess | @mftizi | 18",
             "type": "vmess",
-            "server": "cfcdn1.sanfencdn9.com",
-            "server_port": 8880,
-            "uuid": "ae16d5a4-9a22-4177-8884-77aa3b309d30",
+            "server": "38.147.191.185",
+            "server_port": 10241,
+            "uuid": "e820d6f7-57ef-4575-99da-bcd7d318c742",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "ming2.kiwireich.com",
+            "server_port": 443,
+            "uuid": "18e5f40f-bda6-4c15-9334-e87cda6047af",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -184,11 +203,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "ming2.kiwireich.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/video\/bYdJ7Vc2We",
+                "path": "\/ray",
                 "headers": {
-                    "Host": ""
+                    "Host": "ming2.kiwireich.com"
                 }
             }
         },
