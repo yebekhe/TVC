@@ -118,12 +118,11 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇫🇮FI | ss | @azadi_az_inja_migzare | 12","type":"ss","server":"45.159.249.7","port":31803,"password":"llRQSxw3erJhCElYdwks12","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇩🇪DE | ss | @V2rayCollectorDonate | 6","type":"ss","server":"91.149.233.34","port":43622,"password":"cMzybYD0NaFiS6vy6sQpcF","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇱NL | ss | @V2rayCollectorDonate | 17","type":"ss","server":"45.8.145.198","port":20189,"password":"KAJm6u6jcOeSxIh1azjbF9","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇵🇱PL | ss | @DeamNet_Proxy | 9","type":"ss","server":"54.36.174.181","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
-  - {"name":"🇺🇸US | ss | @DeamNet_Proxy | 10","type":"ss","server":"38.68.134.9","port":8118,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
-  - {"name":"🇵🇱PL | ss | @DeamNet_Proxy | 16","type":"ss","server":"54.36.174.181","port":5003,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"🇵🇱PL | ss | @DeamNet_Proxy | 10","type":"ss","server":"54.36.174.181","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US | ss | @DeamNet_Proxy | 11","type":"ss","server":"38.68.134.9","port":8118,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"🇵🇱PL | ss | @DeamNet_Proxy | 17","type":"ss","server":"54.36.174.181","port":5003,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
   - {"name":"🇨🇦CA | ss | @VmessProtocol | 7","type":"ss","server":"134.195.196.178","port":804,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | ss | @VmessProtocol | 8","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇸🇪SE | ss | @VmessProtocol | 9","type":"ss","server":"16.171.198.214","port":8080,"password":"rNhl2Gl3E/MxDZUZOw1kQz1RCGcEoXsmudDgwbkAgiI=","cipher":"chacha20-ietf-poly1305"}
@@ -151,18 +150,18 @@ proxies:
   - {"name":"🇬🇧GB | ss | @ROMAX_VPN | 5","type":"ss","server":"3.8.11.228","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | ss | @ROMAX_VPN | 7","type":"ss","server":"18.134.19.38","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | ss | @ROMAX_VPN | 9","type":"ss","server":"94.131.121.130","port":49845,"password":"uUjyhRvJrLsMwDFxDUAtar","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇮FI | ss | @ROMAX_VPN | 10","type":"ss","server":"45.159.249.7","port":31803,"password":"llRQSxw3erJhCElYdwks12","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇮FI | ss | @azadi_az_inja_migzare | 12'
       - '🇩🇪DE | ss | @V2rayCollectorDonate | 6'
       - '🇳🇱NL | ss | @V2rayCollectorDonate | 17'
-      - '🇵🇱PL | ss | @DeamNet_Proxy | 9'
-      - '🇺🇸US | ss | @DeamNet_Proxy | 10'
-      - '🇵🇱PL | ss | @DeamNet_Proxy | 16'
+      - '🇵🇱PL | ss | @DeamNet_Proxy | 10'
+      - '🇺🇸US | ss | @DeamNet_Proxy | 11'
+      - '🇵🇱PL | ss | @DeamNet_Proxy | 17'
       - '🇨🇦CA | ss | @VmessProtocol | 7'
       - '🇬🇧GB | ss | @VmessProtocol | 8'
       - '🇸🇪SE | ss | @VmessProtocol | 9'
@@ -190,18 +189,18 @@ proxy-groups:
       - '🇬🇧GB | ss | @ROMAX_VPN | 5'
       - '🇬🇧GB | ss | @ROMAX_VPN | 7'
       - '🇺🇸US | ss | @ROMAX_VPN | 9'
+      - '🇫🇮FI | ss | @ROMAX_VPN | 10'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇮FI | ss | @azadi_az_inja_migzare | 12'
       - '🇩🇪DE | ss | @V2rayCollectorDonate | 6'
       - '🇳🇱NL | ss | @V2rayCollectorDonate | 17'
-      - '🇵🇱PL | ss | @DeamNet_Proxy | 9'
-      - '🇺🇸US | ss | @DeamNet_Proxy | 10'
-      - '🇵🇱PL | ss | @DeamNet_Proxy | 16'
+      - '🇵🇱PL | ss | @DeamNet_Proxy | 10'
+      - '🇺🇸US | ss | @DeamNet_Proxy | 11'
+      - '🇵🇱PL | ss | @DeamNet_Proxy | 17'
       - '🇨🇦CA | ss | @VmessProtocol | 7'
       - '🇬🇧GB | ss | @VmessProtocol | 8'
       - '🇸🇪SE | ss | @VmessProtocol | 9'
@@ -229,17 +228,17 @@ proxy-groups:
       - '🇬🇧GB | ss | @ROMAX_VPN | 5'
       - '🇬🇧GB | ss | @ROMAX_VPN | 7'
       - '🇺🇸US | ss | @ROMAX_VPN | 9'
+      - '🇫🇮FI | ss | @ROMAX_VPN | 10'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇫🇮FI | ss | @azadi_az_inja_migzare | 12'
       - '🇩🇪DE | ss | @V2rayCollectorDonate | 6'
       - '🇳🇱NL | ss | @V2rayCollectorDonate | 17'
-      - '🇵🇱PL | ss | @DeamNet_Proxy | 9'
-      - '🇺🇸US | ss | @DeamNet_Proxy | 10'
-      - '🇵🇱PL | ss | @DeamNet_Proxy | 16'
+      - '🇵🇱PL | ss | @DeamNet_Proxy | 10'
+      - '🇺🇸US | ss | @DeamNet_Proxy | 11'
+      - '🇵🇱PL | ss | @DeamNet_Proxy | 17'
       - '🇨🇦CA | ss | @VmessProtocol | 7'
       - '🇬🇧GB | ss | @VmessProtocol | 8'
       - '🇸🇪SE | ss | @VmessProtocol | 9'
@@ -267,6 +266,7 @@ proxy-groups:
       - '🇬🇧GB | ss | @ROMAX_VPN | 5'
       - '🇬🇧GB | ss | @ROMAX_VPN | 7'
       - '🇺🇸US | ss | @ROMAX_VPN | 9'
+      - '🇫🇮FI | ss | @ROMAX_VPN | 10'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
