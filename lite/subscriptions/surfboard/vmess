@@ -14,10 +14,11 @@ DIRECT = direct
 🇨🇷CR | vmess | @oneclickvpnkeys | 9 = vmess, mci.mordad.shop, 2096, username = 12009e57-6fd8-46d6-94af-539514a7e7c7, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"s1.shargh.shop", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @Hope_Net | 4 = vmess, server4.beheshtbaneh.com, 8880, username = b7e04f2a-2a6a-4b74-a11e-06f658c36391, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"server4.beheshtbaneh.com", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
+🇨🇦CA | vmess | @eliya_chiter0 | 4 = vmess, server13.beheshtbaneh.com, 8880, username = 0c0db4fe-6133-4837-9f57-0ce75fb59692, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇷CR | vmess | @oneclickvpnkeys | 9,🇨🇦CA | vmess | @Hope_Net | 4,🇺🇸US | vmess | @v2Line | 6
-URL-TEST = url-test,🇨🇷CR | vmess | @oneclickvpnkeys | 9,🇨🇦CA | vmess | @Hope_Net | 4,🇺🇸US | vmess | @v2Line | 6
-FALLBACK = fallback,🇨🇷CR | vmess | @oneclickvpnkeys | 9,🇨🇦CA | vmess | @Hope_Net | 4,🇺🇸US | vmess | @v2Line | 6
+MANUAL = select,URL-TEST,FALLBACK,🇨🇷CR | vmess | @oneclickvpnkeys | 9,🇨🇦CA | vmess | @Hope_Net | 4,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 4
+URL-TEST = url-test,🇨🇷CR | vmess | @oneclickvpnkeys | 9,🇨🇦CA | vmess | @Hope_Net | 4,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 4
+FALLBACK = fallback,🇨🇷CR | vmess | @oneclickvpnkeys | 9,🇨🇦CA | vmess | @Hope_Net | 4,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
