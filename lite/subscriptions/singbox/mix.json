@@ -158,7 +158,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 7",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
-                "🇸🇬SG | ss | @forwardv2ray | 19",
+                "🇨🇷CR | vless | @forwardv2ray | 17",
                 "🇳🇱NL | vless | @FAKEOFTVC | 3",
                 "🇨🇦CA | vless | @https_config_injector | 16",
                 "🇺🇸US | vless | @mehrosaboran | 11",
@@ -231,7 +231,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 7",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
-                "🇸🇬SG | ss | @forwardv2ray | 19",
+                "🇨🇷CR | vless | @forwardv2ray | 17",
                 "🇳🇱NL | vless | @FAKEOFTVC | 3",
                 "🇨🇦CA | vless | @https_config_injector | 16",
                 "🇺🇸US | vless | @mehrosaboran | 11",
@@ -1553,14 +1553,25 @@
             }
         },
         {
-            "tag": "🇸🇬SG | ss | @forwardv2ray | 19",
-            "type": "shadowsocks",
-            "server": "216.39.248.152",
+            "tag": "🇨🇷CR | vless | @forwardv2ray | 17",
+            "type": "vless",
+            "server": "tel.VPNCUSTOMIZE.cam",
             "server_port": 8080,
-            "method": "aes-256-gcm",
-            "password": "KixLvKzwjekG00rm",
-            "plugin": "",
-            "plugin_opts": ""
+            "uuid": "VPNCUSTOMIZE-VPNCUSTOMIZE",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "tel.VPNCUSTOMIZE.cam"
+                }
+            }
         },
         {
             "tag": "🇳🇱NL | vless | @FAKEOFTVC | 3",
