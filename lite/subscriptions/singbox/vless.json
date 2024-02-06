@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇨🇦CA | vless | @EliV2ray | 14",
                 "🇨🇦CA | vless | @Parsashonam | 8",
                 "🇩🇪DE | vless | @NIM_VPN_ir | 8",
                 "🇫🇷FR | vless | @VlessConfig | 17",
@@ -126,7 +127,6 @@
                 "🇨🇷CR | vless | @V2rayNGn | 16",
                 "🇳🇱NL | vless | @prrofile_purple | 181",
                 "🇨🇷CR | vless | @ShadowSocks_s | 9",
-                "🇨🇦CA | vless | @customv2ray | 11",
                 "🇨🇦CA | vless | @UnlimitedDev | 8",
                 "🇨🇦CA | vless | @vmessorg | 8",
                 "🇨🇦CA | vless | @v2rayNG_Matsuri | 9",
@@ -137,7 +137,7 @@
                 "🇫🇮FI | vless | @v2ray_swhil | 26",
                 "🇨🇷CR | vless | @proxyymeliii | 18",
                 "🇨🇦CA | vless | @MsV2ray | 17",
-                "🇩🇪DE | vless | @v2ray1_ng | 5",
+                "🇩🇪DE | vless | @v2ray1_ng | 6",
                 "🇮🇷IR | vless | @vless_vmess | 5",
                 "🇨🇦CA | vless | @MTConfig | 18",
                 "🇨🇷CR | vless | @V2RayTz | 19",
@@ -151,7 +151,7 @@
                 "🇫🇮FI | vless | @Capoit | 1",
                 "🏳️XX | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
-                "🇨🇷CR | vless | @flyv2ray | 12",
+                "🇨🇦CA | vless | @flyv2ray | 12",
                 "🇳🇱NL | vless | @FAKEOFTVC | 3",
                 "🇸🇪SE | vless | @kiava | 7",
                 "🇨🇷CR | vless | @nofiltering2 | 1",
@@ -170,6 +170,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇨🇦CA | vless | @EliV2ray | 14",
                 "🇨🇦CA | vless | @Parsashonam | 8",
                 "🇩🇪DE | vless | @NIM_VPN_ir | 8",
                 "🇫🇷FR | vless | @VlessConfig | 17",
@@ -190,7 +191,6 @@
                 "🇨🇷CR | vless | @V2rayNGn | 16",
                 "🇳🇱NL | vless | @prrofile_purple | 181",
                 "🇨🇷CR | vless | @ShadowSocks_s | 9",
-                "🇨🇦CA | vless | @customv2ray | 11",
                 "🇨🇦CA | vless | @UnlimitedDev | 8",
                 "🇨🇦CA | vless | @vmessorg | 8",
                 "🇨🇦CA | vless | @v2rayNG_Matsuri | 9",
@@ -201,7 +201,7 @@
                 "🇫🇮FI | vless | @v2ray_swhil | 26",
                 "🇨🇷CR | vless | @proxyymeliii | 18",
                 "🇨🇦CA | vless | @MsV2ray | 17",
-                "🇩🇪DE | vless | @v2ray1_ng | 5",
+                "🇩🇪DE | vless | @v2ray1_ng | 6",
                 "🇮🇷IR | vless | @vless_vmess | 5",
                 "🇨🇦CA | vless | @MTConfig | 18",
                 "🇨🇷CR | vless | @V2RayTz | 19",
@@ -215,7 +215,7 @@
                 "🇫🇮FI | vless | @Capoit | 1",
                 "🏳️XX | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
-                "🇨🇷CR | vless | @flyv2ray | 12",
+                "🇨🇦CA | vless | @flyv2ray | 12",
                 "🇳🇱NL | vless | @FAKEOFTVC | 3",
                 "🇸🇪SE | vless | @kiava | 7",
                 "🇨🇷CR | vless | @nofiltering2 | 1",
@@ -248,6 +248,27 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇨🇦CA | vless | @EliV2ray | 14",
+            "type": "vless",
+            "server": "172.67.170.16",
+            "server_port": 80,
+            "uuid": "7a68c736-245e-4a13-8a84-4968c0419654",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "172.67.170.16"
+                }
+            }
         },
         {
             "tag": "🇨🇦CA | vless | @Parsashonam | 8",
@@ -791,27 +812,6 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @customv2ray | 11",
-            "type": "vless",
-            "server": "104.18.202.232",
-            "server_port": 80,
-            "uuid": "-ArV2ray--ArV2ray--ArV2ray-",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/@ArV2ray,@ArV2ray,@ArV2ray",
-                "headers": {
-                    "Host": "104.18.202.232"
-                }
-            }
-        },
-        {
             "tag": "🇨🇦CA | vless | @UnlimitedDev | 8",
             "type": "vless",
             "server": "bia-to2.unlimiteddev.site",
@@ -1067,7 +1067,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @v2ray1_ng | 5",
+            "tag": "🇩🇪DE | vless | @v2ray1_ng | 6",
             "type": "vless",
             "server": "128.140.36.96",
             "server_port": 443,
@@ -1434,11 +1434,11 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @flyv2ray | 12",
+            "tag": "🇨🇦CA | vless | @flyv2ray | 12",
             "type": "vless",
-            "server": "tel.VPNCUSTOMIZE.cam",
-            "server_port": 8443,
-            "uuid": "VPNCUSTOMIZE-VPNCUSTOMIZE",
+            "server": "gh.popprime.shop",
+            "server_port": 2083,
+            "uuid": "82e9bdf4-ed87-4925-8b23-95336e5dec43",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1448,7 +1448,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "gr-V2rayng.vpncustomize.com",
+                "server_name": "server1.popprime.shop",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1457,11 +1457,11 @@
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "@VPNCUSTOMIZE,@VPNCUSTOMIZE",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "server1.popprime.shop"
+                }
             }
         },
         {
