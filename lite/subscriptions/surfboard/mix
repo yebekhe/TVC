@@ -15,10 +15,11 @@ DIRECT = direct
 🇸🇪SE | trojan | @DirectVPN | 14 = trojan, 13.49.34.50, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇦🇹AT | ss | @OutlineVpnOfficial | 15 = ss, 212.113.106.243, 12949, encrypt-method = chacha20-ietf-poly1305, password = P2zxXPewlV3BlfqqYiSthvtLc
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
+🇳🇬NG | vmess | @forwardv2ray | 17 = vmess, 150.107.126.4, 443, username = 8ed466fb-1aba-4bde-90a6-8536817c2230, ws = true, tls = 1, vmess-aead = true, ws-path = /@forwardv2ray, ws-headers = Host:"mom5.sytes.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 14,🇸🇪SE | trojan | @DirectVPN | 14,🇦🇹AT | ss | @OutlineVpnOfficial | 15,🇺🇸US | vmess | @v2Line | 6
-URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 14,🇸🇪SE | trojan | @DirectVPN | 14,🇦🇹AT | ss | @OutlineVpnOfficial | 15,🇺🇸US | vmess | @v2Line | 6
-FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 14,🇸🇪SE | trojan | @DirectVPN | 14,🇦🇹AT | ss | @OutlineVpnOfficial | 15,🇺🇸US | vmess | @v2Line | 6
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 14,🇸🇪SE | trojan | @DirectVPN | 14,🇦🇹AT | ss | @OutlineVpnOfficial | 15,🇺🇸US | vmess | @v2Line | 6,🇳🇬NG | vmess | @forwardv2ray | 17
+URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 14,🇸🇪SE | trojan | @DirectVPN | 14,🇦🇹AT | ss | @OutlineVpnOfficial | 15,🇺🇸US | vmess | @v2Line | 6,🇳🇬NG | vmess | @forwardv2ray | 17
+FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 14,🇸🇪SE | trojan | @DirectVPN | 14,🇦🇹AT | ss | @OutlineVpnOfficial | 15,🇺🇸US | vmess | @v2Line | 6,🇳🇬NG | vmess | @forwardv2ray | 17
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
