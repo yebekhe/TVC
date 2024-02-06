@@ -130,7 +130,7 @@
                 "🇫🇷FR | trojan | @DirectVPN | 14",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
+                "🇵🇱PL | ss | @DeamNet_Proxy | 19",
                 "🇨🇷CR | vmess | @oneclickvpnkeys | 9",
                 "🇨🇷CR | vless | @prrofile_purple | 180",
                 "🇨🇷CR | vless | @ShadowSocks_s | 7",
@@ -164,7 +164,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 2",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇨🇦CA | vless | @flyv2ray | 9",
-                "🇨🇷CR | vless | @forwardv2ray | 19",
+                "🇺🇸US | vmess | @forwardv2ray | 17",
                 "🏳️XX | vless | @FAKEOFTVC | 5",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇸🇪SE | vless | @kiava | 7",
@@ -208,7 +208,7 @@
                 "🇫🇷FR | trojan | @DirectVPN | 14",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
+                "🇵🇱PL | ss | @DeamNet_Proxy | 19",
                 "🇨🇷CR | vmess | @oneclickvpnkeys | 9",
                 "🇨🇷CR | vless | @prrofile_purple | 180",
                 "🇨🇷CR | vless | @ShadowSocks_s | 7",
@@ -242,7 +242,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 2",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇨🇦CA | vless | @flyv2ray | 9",
-                "🇨🇷CR | vless | @forwardv2ray | 19",
+                "🇺🇸US | vmess | @forwardv2ray | 17",
                 "🏳️XX | vless | @FAKEOFTVC | 5",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇸🇪SE | vless | @kiava | 7",
@@ -902,38 +902,14 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
-            "type": "vmess",
-            "server": "104.21.40.162",
-            "server_port": 443,
-            "uuid": "d196ccc9-db42-475d-a7e4-7c27a6a326d1",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "be1.xv2ray.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vmess",
-                "headers": {
-                    "Host": "be1.xv2ray.net"
-                }
-            }
+            "tag": "🇵🇱PL | ss | @DeamNet_Proxy | 19",
+            "type": "shadowsocks",
+            "server": "54.36.174.181",
+            "server_port": 8882,
+            "method": "aes-256-gcm",
+            "password": "kDWvXYZoTBcGkC4",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇨🇷CR | vmess | @oneclickvpnkeys | 9",
@@ -1741,13 +1717,16 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @forwardv2ray | 19",
-            "type": "vless",
-            "server": "www.tozedmodeon.store",
-            "server_port": 2095,
-            "uuid": "0bdb1407-0554-4834-97cd-ba3487af59b5",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇺🇸US | vmess | @forwardv2ray | 17",
+            "type": "vmess",
+            "server": "129.146.113.254",
+            "server_port": 43121,
+            "uuid": "d53b39e2-925e-45b6-9389-46b9fa95878b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -1755,9 +1734,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/@ZEDMODEON-ZEDMODEON-JOINZEDMODEON-@ZEDMODEON",
+                "path": "\/",
                 "headers": {
-                    "Host": "www.tozedmodeon.store"
+                    "Host": "129.146.113.254"
                 }
             }
         },
