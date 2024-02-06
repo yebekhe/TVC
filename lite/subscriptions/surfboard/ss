@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇬🇧GB | ss | @VmessProtocol | 18 = ss, 51.104.229.3, 20843, encrypt-method = chacha20-ietf-poly1305, password = 9AxuisOgNqoWZw76Ue9nUK
 🇦🇹AT | ss | @OutlineVpnOfficial | 15 = ss, 212.113.106.243, 12949, encrypt-method = chacha20-ietf-poly1305, password = P2zxXPewlV3BlfqqYiSthvtLc
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇦🇹AT | ss | @OutlineVpnOfficial | 15
-URL-TEST = url-test,🇦🇹AT | ss | @OutlineVpnOfficial | 15
-FALLBACK = fallback,🇦🇹AT | ss | @OutlineVpnOfficial | 15
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | ss | @VmessProtocol | 18,🇦🇹AT | ss | @OutlineVpnOfficial | 15
+URL-TEST = url-test,🇬🇧GB | ss | @VmessProtocol | 18,🇦🇹AT | ss | @OutlineVpnOfficial | 15
+FALLBACK = fallback,🇬🇧GB | ss | @VmessProtocol | 18,🇦🇹AT | ss | @OutlineVpnOfficial | 15
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
