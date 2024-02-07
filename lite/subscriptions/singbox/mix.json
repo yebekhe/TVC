@@ -130,7 +130,7 @@
                 "🇸🇪SE | trojan | @DirectVPN | 15",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇯🇵JP | vmess | @DeamNet_Proxy | 19",
+                "🇺🇸US | vmess | @DeamNet_Proxy | 19",
                 "🇨🇷CR | vmess | @oneclickvpnkeys | 9",
                 "🇨🇷CR | vless | @prrofile_purple | 180",
                 "🇨🇷CR | vless | @ShadowSocks_s | 7",
@@ -164,7 +164,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 2",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇨🇦CA | vless | @flyv2ray | 9",
-                "🇳🇱NL | vless | @forwardv2ray | 14",
+                "🇦🇺AU | vmess | @forwardv2ray | 19",
                 "🏳️XX | vless | @FAKEOFTVC | 5",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 11",
@@ -209,7 +209,7 @@
                 "🇸🇪SE | trojan | @DirectVPN | 15",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇯🇵JP | vmess | @DeamNet_Proxy | 19",
+                "🇺🇸US | vmess | @DeamNet_Proxy | 19",
                 "🇨🇷CR | vmess | @oneclickvpnkeys | 9",
                 "🇨🇷CR | vless | @prrofile_purple | 180",
                 "🇨🇷CR | vless | @ShadowSocks_s | 7",
@@ -243,7 +243,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 2",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇨🇦CA | vless | @flyv2ray | 9",
-                "🇳🇱NL | vless | @forwardv2ray | 14",
+                "🇦🇺AU | vmess | @forwardv2ray | 19",
                 "🏳️XX | vless | @FAKEOFTVC | 5",
                 "🇨🇦CA | vless | @https_config_injector | 14",
                 "🇺🇸US | vless | @mehrosaboran | 11",
@@ -904,11 +904,11 @@
             }
         },
         {
-            "tag": "🇯🇵JP | vmess | @DeamNet_Proxy | 19",
+            "tag": "🇺🇸US | vmess | @DeamNet_Proxy | 19",
             "type": "vmess",
-            "server": "152.69.197.60",
-            "server_port": 1069,
-            "uuid": "ac8e26fe-8150-4b60-ae64-82fc77eba2cf",
+            "server": "158.101.7.8",
+            "server_port": 80,
+            "uuid": "95b45c49-f5c0-4959-bb64-2b8fbc4a869c",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -918,6 +918,13 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "158.101.7.8"
+                }
             }
         },
         {
@@ -1728,32 +1735,20 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vless | @forwardv2ray | 14",
-            "type": "vless",
-            "server": "185.242.86.156",
-            "server_port": 443,
-            "uuid": "6c3cd88a-54da-4ab6-9a65-e6ee880ddc78",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
+            "tag": "🇦🇺AU | vmess | @forwardv2ray | 19",
+            "type": "vmess",
+            "server": "103.73.64.180",
+            "server_port": 31217,
+            "uuid": "db6c286f-69fa-4ed0-b812-4f22d78f2fed",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "sfnjE7zzQhrk7OCM5eVRYkPkITbP9pfIyAcJK1QawRs",
-                    "short_id": "f033b9d6"
-                }
             }
         },
         {
