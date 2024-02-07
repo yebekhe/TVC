@@ -126,6 +126,7 @@ proxies:
   - {"name":"🇨🇦CA | vmess | @v2ray1_ng | 6","type":"vmess","server":"104.18.203.0","port":"2087","cipher":"auto","uuid":"ea58ee27-ded1-4959-a860-ec4747f9cd82","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"🇺🇸US | vmess | @Hope_Net | 15","type":"vmess","server":"135.148.67.129","port":"35063","cipher":"auto","uuid":"2f1c9600-706e-4a0d-93da-53bb42a27487","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
+  - {"name":"🇮🇷IR | vmess | @FAKEOFTVC | 4","type":"vmess","server":"81.12.27.108","port":"16767","cipher":"auto","uuid":"d30a1c51-d37c-4cb8-bee6-8f5cd746f9d7","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @eliya_chiter0 | 5","type":"vmess","server":"server13.beheshtbaneh.com","port":"8880","cipher":"auto","uuid":"0c0db4fe-6133-4837-9f57-0ce75fb59692","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
 proxy-groups:
   - name: MANUAL
@@ -139,6 +140,7 @@ proxy-groups:
       - '🇨🇦CA | vmess | @v2ray1_ng | 6'
       - '🇺🇸US | vmess | @Hope_Net | 15'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇮🇷IR | vmess | @FAKEOFTVC | 4'
       - '🇨🇦CA | vmess | @eliya_chiter0 | 5'
   - name: URL-TEST
     type: url-test
@@ -152,6 +154,7 @@ proxy-groups:
       - '🇨🇦CA | vmess | @v2ray1_ng | 6'
       - '🇺🇸US | vmess | @Hope_Net | 15'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇮🇷IR | vmess | @FAKEOFTVC | 4'
       - '🇨🇦CA | vmess | @eliya_chiter0 | 5'
   - name: FALLBACK
     type: fallback
@@ -164,6 +167,7 @@ proxy-groups:
       - '🇨🇦CA | vmess | @v2ray1_ng | 6'
       - '🇺🇸US | vmess | @Hope_Net | 15'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇮🇷IR | vmess | @FAKEOFTVC | 4'
       - '🇨🇦CA | vmess | @eliya_chiter0 | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
