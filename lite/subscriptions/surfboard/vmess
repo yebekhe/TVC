@@ -11,14 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇨🇦CA | vmess | @DeamNet_Proxy | 19 = vmess, us3e-mmnnfr9dop0.v2freevpn.com, 80, username = 2a8a10fb-9ca3-367e-a234-cf09f841be4f, ws = true, tls = , vmess-aead = true, ws-path = /v118-fccxmxm35, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @Hope_Net | 16 = vmess, server9.beheshtbaneh.com, 8880, username = 62575747-37b4-4bf8-9ac5-95d214003be1, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @eliya_chiter0 | 5 = vmess, server13.beheshtbaneh.com, 8880, username = 0c0db4fe-6133-4837-9f57-0ce75fb59692, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇨🇦CA | vmess | @Hope_Net | 16,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 5
-URL-TEST = url-test,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇨🇦CA | vmess | @Hope_Net | 16,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 5
-FALLBACK = fallback,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇨🇦CA | vmess | @Hope_Net | 16,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 5
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @Hope_Net | 16,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 5
+URL-TEST = url-test,🇨🇦CA | vmess | @Hope_Net | 16,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 5
+FALLBACK = fallback,🇨🇦CA | vmess | @Hope_Net | 16,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
