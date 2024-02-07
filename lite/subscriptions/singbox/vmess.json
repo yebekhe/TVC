@@ -110,8 +110,9 @@
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇮🇳IN | vmess | @oneclickvpnkeys | 10",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 0",
-                "🇨🇦CA | vmess | @Hope_Net | 14",
+                "🇮🇳IN | vmess | @Hope_Net | 15",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 19",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 5"
             ]
         },
@@ -123,8 +124,9 @@
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇮🇳IN | vmess | @oneclickvpnkeys | 10",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 0",
-                "🇨🇦CA | vmess | @Hope_Net | 14",
+                "🇮🇳IN | vmess | @Hope_Net | 15",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 19",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -233,11 +235,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 14",
+            "tag": "🇮🇳IN | vmess | @Hope_Net | 15",
             "type": "vmess",
-            "server": "server32.beheshtbaneh.com",
-            "server_port": 8880,
-            "uuid": "044ba8ed-7285-472a-bc14-fb91dc6be4c9",
+            "server": "202.78.162.5",
+            "server_port": 443,
+            "uuid": "2ff97c6d-8557-42a4-b43f-19c77c5959ea",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -248,9 +250,19 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/@forwardv2ray",
                 "headers": {
                     "Host": ""
                 }
@@ -277,6 +289,40 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "ca2.xv2ray.net"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 19",
+            "type": "vmess",
+            "server": "172.67.157.151",
+            "server_port": 8443,
+            "uuid": "7ca05845-1154-4328-b48a-0e9da3767dba",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "troll.ankitfa.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/tel:  @RaFaV2ray",
+                "headers": {
+                    "Host": "troll.ankitfa.ir"
                 }
             }
         },
