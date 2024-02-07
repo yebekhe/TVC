@@ -108,10 +108,9 @@
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇨🇷CR | vmess | @oneclickvpnkeys | 6",
-                "🇺🇸US | vmess | @customv2ray | 12",
+                "🇨🇷CR | vmess | @oneclickvpnkeys | 8",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 2",
-                "🇺🇸US | vmess | @Hope_Net | 18",
+                "🇨🇷CR | vmess | @Hope_Net | 17",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 5"
             ]
@@ -122,10 +121,9 @@
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇨🇷CR | vmess | @oneclickvpnkeys | 6",
-                "🇺🇸US | vmess | @customv2ray | 12",
+                "🇨🇷CR | vmess | @oneclickvpnkeys | 8",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 2",
-                "🇺🇸US | vmess | @Hope_Net | 18",
+                "🇨🇷CR | vmess | @Hope_Net | 17",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 5"
             ],
@@ -184,7 +182,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vmess | @oneclickvpnkeys | 6",
+            "tag": "🇨🇷CR | vmess | @oneclickvpnkeys | 8",
             "type": "vmess",
             "server": "mci.mordad.shop",
             "server_port": 2096,
@@ -218,30 +216,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @customv2ray | 12",
-            "type": "vmess",
-            "server": "205.185.125.200",
-            "server_port": 11451,
-            "uuid": "165bdbb6-3fd0-4d1a-e6fb-0e5cd2a0154f",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
             "tag": "🇮🇷IR | vmess | @V2rayng_Fast | 2",
             "type": "vmess",
             "server": "81.12.27.108",
@@ -259,11 +233,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @Hope_Net | 18",
+            "tag": "🇨🇷CR | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "51.81.168.70",
-            "server_port": 53345,
-            "uuid": "5df8991b-389e-4920-8ccd-e78b2bdf56dd",
+            "server": "190.93.246.137",
+            "server_port": 2096,
+            "uuid": "12009e57-6fd8-46d6-94af-539514a7e7c7",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -273,6 +247,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "s1.shargh.shop",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "s1.shargh.shop"
+                }
             }
         },
         {
