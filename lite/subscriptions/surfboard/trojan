@@ -11,13 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇮🇪IE | trojan | @PrivateVPNs | 16 = trojan, 52.208.52.22, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
-🇺🇸US | trojan | @DirectVPN | 16 = trojan, 44.218.153.215, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇮🇪IE | trojan | @PrivateVPNs | 16 = trojan, 34.253.136.136, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇸🇪SE | trojan | @DirectVPN | 16 = trojan, 13.50.9.186, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇸🇪SE | trojan | @oneclickvpnkeys | 9 = trojan, 16.171.12.59, 80, password = o233Smkn1m, udp-delay = true, skip-cert-verify = false, ws = false
 🇨🇳CN | trojan | @yaney_01 | 7 = trojan, xibaozi.19890604.day, 10847, password = c1dc3493-2298-44ab-98c1-4abccbc350d1, udp-delay = true, skip-cert-verify = false, sni = cloudflare.node-ssl.cdn-alibaba.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇮🇪IE | trojan | @PrivateVPNs | 16,🇺🇸US | trojan | @DirectVPN | 16,🇨🇳CN | trojan | @yaney_01 | 7
-URL-TEST = url-test,🇮🇪IE | trojan | @PrivateVPNs | 16,🇺🇸US | trojan | @DirectVPN | 16,🇨🇳CN | trojan | @yaney_01 | 7
-FALLBACK = fallback,🇮🇪IE | trojan | @PrivateVPNs | 16,🇺🇸US | trojan | @DirectVPN | 16,🇨🇳CN | trojan | @yaney_01 | 7
+MANUAL = select,URL-TEST,FALLBACK,🇮🇪IE | trojan | @PrivateVPNs | 16,🇸🇪SE | trojan | @DirectVPN | 16,🇸🇪SE | trojan | @oneclickvpnkeys | 9,🇨🇳CN | trojan | @yaney_01 | 7
+URL-TEST = url-test,🇮🇪IE | trojan | @PrivateVPNs | 16,🇸🇪SE | trojan | @DirectVPN | 16,🇸🇪SE | trojan | @oneclickvpnkeys | 9,🇨🇳CN | trojan | @yaney_01 | 7
+FALLBACK = fallback,🇮🇪IE | trojan | @PrivateVPNs | 16,🇸🇪SE | trojan | @DirectVPN | 16,🇸🇪SE | trojan | @oneclickvpnkeys | 9,🇨🇳CN | trojan | @yaney_01 | 7
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
