@@ -12,12 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇮🇳IN | vmess | @oneclickvpnkeys | 10 = vmess, 202.78.162.5, 443, username = c43ba667-1d64-448a-9905-7477d8543268, ws = true, tls = 1, vmess-aead = true, ws-path = /@forwardv2ray, ws-headers = Host:"kosar56.serveminecraft.net", skip-cert-verify = true, tfo = false
-🇮🇳IN | vmess | @Hope_Net | 15 = vmess, 202.78.162.5, 443, username = 2ff97c6d-8557-42a4-b43f-19c77c5959ea, ws = true, tls = 1, vmess-aead = false, ws-path = /@forwardv2ray, ws-headers = Host:"irsoft.sytes.net", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇮🇳IN | vmess | @oneclickvpnkeys | 10,🇮🇳IN | vmess | @Hope_Net | 15,🇺🇸US | vmess | @v2Line | 6
-URL-TEST = url-test,🇮🇳IN | vmess | @oneclickvpnkeys | 10,🇮🇳IN | vmess | @Hope_Net | 15,🇺🇸US | vmess | @v2Line | 6
-FALLBACK = fallback,🇮🇳IN | vmess | @oneclickvpnkeys | 10,🇮🇳IN | vmess | @Hope_Net | 15,🇺🇸US | vmess | @v2Line | 6
+MANUAL = select,URL-TEST,FALLBACK,🇮🇳IN | vmess | @oneclickvpnkeys | 10,🇺🇸US | vmess | @v2Line | 6
+URL-TEST = url-test,🇮🇳IN | vmess | @oneclickvpnkeys | 10,🇺🇸US | vmess | @v2Line | 6
+FALLBACK = fallback,🇮🇳IN | vmess | @oneclickvpnkeys | 10,🇺🇸US | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
