@@ -225,9 +225,9 @@
         {
             "tag": "🏳️XX | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "food.zhaal.ir",
-            "server_port": 8880,
-            "uuid": "0d1bf26a-ce97-4707-a270-7f4d2ae37334",
+            "server": "mci.mosi.mosipro.ml",
+            "server_port": 443,
+            "uuid": "9df9dbf2-5a0b-427a-8574-cc11bda045ec",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -238,11 +238,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "Dusseldorf.kotick.site",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/speedtest",
                 "headers": {
-                    "Host": ""
+                    "Host": "Dusseldorf.kotick.site"
                 }
             }
         },
