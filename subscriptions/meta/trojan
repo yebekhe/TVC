@@ -120,7 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇮🇪IE | trojan | @V2rayCollectorDonate | 15","type":"trojan","server":"54.220.134.150","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇮🇪IE | trojan | @V2rayCollectorDonate | 17","type":"trojan","server":"54.220.134.150","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇩🇪DE | trojan | @PrivateVPNs | 2","type":"trojan","server":"3.74.179.33","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇸🇪SE | trojan | @PrivateVPNs | 3","type":"trojan","server":"13.49.118.77","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇸🇪SE | trojan | @PrivateVPNs | 4","type":"trojan","server":"13.53.237.142","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
@@ -156,13 +156,20 @@ proxies:
   - {"name":"🇸🇪SE | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"16.171.12.59","port":80,"udp":false,"password":"o233Smkn1m","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇸🇬SG | trojan | @v2ray1_ng | 1","type":"trojan","server":"15.235.203.122","port":80,"udp":false,"password":"VF1Al6V2fk","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇨🇳CN | trojan | @yaney_01 | 7","type":"trojan","server":"xibaozi.19890604.day","port":10847,"udp":false,"password":"c1dc3493-2298-44ab-98c1-4abccbc350d1","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cloudflare.node-ssl.cdn-alibaba.com"}
+  - {"name":"🇮🇪IE | trojan | @forwardv2ray | 4","type":"trojan","server":"3.254.40.17","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇺🇸US | trojan | @forwardv2ray | 6","type":"trojan","server":"172.67.204.84","port":443,"udp":false,"password":"qj1Dz1CJmFQRhWr1SP80aA","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"cdn-21.gsmxreality.com"}
+  - {"name":"🇨🇦CA | trojan | @forwardv2ray | 9","type":"trojan","server":"zula.ir","port":443,"udp":false,"password":"qj1Dz1CJmFQRhWr1SP80aA","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cdn-21.gsmxreality.com"}
+  - {"name":"🇸🇬SG | trojan | @forwardv2ray | 12","type":"trojan","server":"15.235.203.122","port":80,"udp":false,"password":"VF1Al6V2fk","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇺🇸US | trojan | @forwardv2ray | 15","type":"trojan","server":"z-v2-003314.kailib.com","port":443,"udp":false,"password":"wkmY1R4EcP","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇺🇸US | trojan | @forwardv2ray | 16","type":"trojan","server":"z-v2-002797.kailib.com","port":443,"udp":false,"password":"wkmY1R4EcP","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇺🇸US | trojan | @forwardv2ray | 17","type":"trojan","server":"z-v2-003263.kailib.com","port":443,"udp":false,"password":"wkmY1R4EcP","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇮🇪IE | trojan | @V2rayCollectorDonate | 15'
+      - '🇮🇪IE | trojan | @V2rayCollectorDonate | 17'
       - '🇩🇪DE | trojan | @PrivateVPNs | 2'
       - '🇸🇪SE | trojan | @PrivateVPNs | 3'
       - '🇸🇪SE | trojan | @PrivateVPNs | 4'
@@ -198,13 +205,20 @@ proxy-groups:
       - '🇸🇪SE | trojan | @oneclickvpnkeys | 10'
       - '🇸🇬SG | trojan | @v2ray1_ng | 1'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
+      - '🇮🇪IE | trojan | @forwardv2ray | 4'
+      - '🇺🇸US | trojan | @forwardv2ray | 6'
+      - '🇨🇦CA | trojan | @forwardv2ray | 9'
+      - '🇸🇬SG | trojan | @forwardv2ray | 12'
+      - '🇺🇸US | trojan | @forwardv2ray | 15'
+      - '🇺🇸US | trojan | @forwardv2ray | 16'
+      - '🇺🇸US | trojan | @forwardv2ray | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇮🇪IE | trojan | @V2rayCollectorDonate | 15'
+      - '🇮🇪IE | trojan | @V2rayCollectorDonate | 17'
       - '🇩🇪DE | trojan | @PrivateVPNs | 2'
       - '🇸🇪SE | trojan | @PrivateVPNs | 3'
       - '🇸🇪SE | trojan | @PrivateVPNs | 4'
@@ -240,12 +254,19 @@ proxy-groups:
       - '🇸🇪SE | trojan | @oneclickvpnkeys | 10'
       - '🇸🇬SG | trojan | @v2ray1_ng | 1'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
+      - '🇮🇪IE | trojan | @forwardv2ray | 4'
+      - '🇺🇸US | trojan | @forwardv2ray | 6'
+      - '🇨🇦CA | trojan | @forwardv2ray | 9'
+      - '🇸🇬SG | trojan | @forwardv2ray | 12'
+      - '🇺🇸US | trojan | @forwardv2ray | 15'
+      - '🇺🇸US | trojan | @forwardv2ray | 16'
+      - '🇺🇸US | trojan | @forwardv2ray | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇮🇪IE | trojan | @V2rayCollectorDonate | 15'
+      - '🇮🇪IE | trojan | @V2rayCollectorDonate | 17'
       - '🇩🇪DE | trojan | @PrivateVPNs | 2'
       - '🇸🇪SE | trojan | @PrivateVPNs | 3'
       - '🇸🇪SE | trojan | @PrivateVPNs | 4'
@@ -281,6 +302,13 @@ proxy-groups:
       - '🇸🇪SE | trojan | @oneclickvpnkeys | 10'
       - '🇸🇬SG | trojan | @v2ray1_ng | 1'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
+      - '🇮🇪IE | trojan | @forwardv2ray | 4'
+      - '🇺🇸US | trojan | @forwardv2ray | 6'
+      - '🇨🇦CA | trojan | @forwardv2ray | 9'
+      - '🇸🇬SG | trojan | @forwardv2ray | 12'
+      - '🇺🇸US | trojan | @forwardv2ray | 15'
+      - '🇺🇸US | trojan | @forwardv2ray | 16'
+      - '🇺🇸US | trojan | @forwardv2ray | 17'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
