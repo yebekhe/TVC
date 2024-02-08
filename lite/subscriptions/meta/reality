@@ -121,6 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇳🇱NL | vless | @NIM_VPN_ir | 8","type":"vless","server":"ch1.amirali0013.monster","port":34943,"udp":true,"uuid":"cf8cdf42-8999-4d92-b669-78e8db5f68eb","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"sourceforge.net","reality-opts":{"public-key":"36FItsfzNuuu10R3mmrFOThp-KmxCfx5SHxm82Qb9UQ","short-id":"d222da96"}}
+  - {"name":"🇩🇪DE | vless | @azadi_az_inja_migzare | 16","type":"vless","server":"89.208.103.30","port":2053,"udp":true,"uuid":"4ca8dc85-0dbe-4bda-9f07-985aeb7a77bf","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"cdn.discordapp.com","grpc-opts":{"grpc-service-name":"xyz"},"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +129,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇳🇱NL | vless | @NIM_VPN_ir | 8'
+      - '🇩🇪DE | vless | @azadi_az_inja_migzare | 16'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,12 +137,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇳🇱NL | vless | @NIM_VPN_ir | 8'
+      - '🇩🇪DE | vless | @azadi_az_inja_migzare | 16'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇳🇱NL | vless | @NIM_VPN_ir | 8'
+      - '🇩🇪DE | vless | @azadi_az_inja_migzare | 16'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
