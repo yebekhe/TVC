@@ -121,6 +121,8 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | vless | @EliV2ray | 17","type":"vless","server":"128.140.101.103","port":2087,"udp":true,"uuid":"e4527384-4f20-4378-95dc-403996f12588","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"dash.cloudflare.com","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"GicA8fPbS9LksttApqa8gzOstomRFncKNoYGLCOqQF8","short-id":"fc805835"}}
+  - {"name":"🇫🇮FI | vless | @v2ray_swhil | 33","type":"vless","server":"37.27.28.65","port":443,"udp":true,"uuid":"dbf9a864-95a3-415d-9d41-6a5cc25278f5","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"greenpepper.ir","grpc-opts":{"grpc-service-name":"@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"},"reality-opts":{"public-key":"hv8rmIqgK13FnthDgzEgwcdzN0R8QEd49OqvPgXg-WQ","short-id":"775ee92c"}}
+  - {"name":"🇫🇮FI | vless | @v2ray1_ng | 10","type":"vless","server":"95.217.208.245","port":443,"udp":true,"uuid":"2b2e85fd-fb5f-4050-8af3-dc5b168fdf4e","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.gsmarena.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"ghLIwaKG9GWJLEV7PxdHKkW4a37QBfa30A0tufmJ6zw","short-id":"849f8532"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +130,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | vless | @EliV2ray | 17'
+      - '🇫🇮FI | vless | @v2ray_swhil | 33'
+      - '🇫🇮FI | vless | @v2ray1_ng | 10'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,12 +139,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | vless | @EliV2ray | 17'
+      - '🇫🇮FI | vless | @v2ray_swhil | 33'
+      - '🇫🇮FI | vless | @v2ray1_ng | 10'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇩🇪DE | vless | @EliV2ray | 17'
+      - '🇫🇮FI | vless | @v2ray_swhil | 33'
+      - '🇫🇮FI | vless | @v2ray1_ng | 10'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
