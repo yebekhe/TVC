@@ -125,6 +125,7 @@ proxies:
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
   - {"name":"🇨🇳CN | trojan | @yaney_01 | 7","type":"trojan","server":"xibaozi.19890604.day","port":10847,"udp":false,"password":"c1dc3493-2298-44ab-98c1-4abccbc350d1","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cloudflare.node-ssl.cdn-alibaba.com"}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
+  - {"name":"🇬🇧GB | vmess | @forwardv2ray | 6","type":"vmess","server":"31.22.116.8","port":"2087","cipher":"auto","uuid":"ea58ee27-ded1-4959-a860-ec4747f9cd82","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"🇫🇮FI | ss | @ROMAX_VPN | 13","type":"ss","server":"45.159.249.7","port":31803,"password":"llRQSxw3erJhCElYdwks12","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -139,6 +140,7 @@ proxy-groups:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇬🇧GB | vmess | @forwardv2ray | 6'
       - '🇫🇮FI | ss | @ROMAX_VPN | 13'
   - name: URL-TEST
     type: url-test
@@ -153,6 +155,7 @@ proxy-groups:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇬🇧GB | vmess | @forwardv2ray | 6'
       - '🇫🇮FI | ss | @ROMAX_VPN | 13'
   - name: FALLBACK
     type: fallback
@@ -166,6 +169,7 @@ proxy-groups:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇬🇧GB | vmess | @forwardv2ray | 6'
       - '🇫🇮FI | ss | @ROMAX_VPN | 13'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
