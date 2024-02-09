@@ -128,9 +128,9 @@ proxies:
   - {"name":"🇸🇬SG | trojan | @v2ray1_ng | 6","type":"trojan","server":"15.235.203.122","port":80,"udp":false,"password":"VF1Al6V2fk","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇸🇪SE | ss | @VmessProtocol | 15","type":"ss","server":"16.171.198.214","port":8080,"password":"rNhl2Gl3E/MxDZUZOw1kQz1RCGcEoXsmudDgwbkAgiI=","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
+  - {"name":"🇩🇪DE | vmess | @ConfigsHUB | 15","type":"vmess","server":"209.38.208.73","port":"2086","cipher":"auto","uuid":"1abc186e-fc0f-43e4-9839-4f23cccd77e7","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
   - {"name":"🇨🇳CN | trojan | @yaney_01 | 7","type":"trojan","server":"xibaozi.19890604.day","port":10847,"udp":false,"password":"c1dc3493-2298-44ab-98c1-4abccbc350d1","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cloudflare.node-ssl.cdn-alibaba.com"}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
-  - {"name":"🇩🇪DE | vmess | @forwardv2ray | 19","type":"vmess","server":"209.38.208.73","port":"2086","cipher":"auto","uuid":"1abc186e-fc0f-43e4-9839-4f23cccd77e7","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
   - {"name":"🇫🇮FI | ss | @ROMAX_VPN | 14","type":"ss","server":"45.159.249.7","port":31803,"password":"llRQSxw3erJhCElYdwks12","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -148,9 +148,9 @@ proxy-groups:
       - '🇸🇬SG | trojan | @v2ray1_ng | 6'
       - '🇸🇪SE | ss | @VmessProtocol | 15'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🇩🇪DE | vmess | @ConfigsHUB | 15'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇩🇪DE | vmess | @forwardv2ray | 19'
       - '🇫🇮FI | ss | @ROMAX_VPN | 14'
   - name: URL-TEST
     type: url-test
@@ -168,9 +168,9 @@ proxy-groups:
       - '🇸🇬SG | trojan | @v2ray1_ng | 6'
       - '🇸🇪SE | ss | @VmessProtocol | 15'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🇩🇪DE | vmess | @ConfigsHUB | 15'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇩🇪DE | vmess | @forwardv2ray | 19'
       - '🇫🇮FI | ss | @ROMAX_VPN | 14'
   - name: FALLBACK
     type: fallback
@@ -187,9 +187,9 @@ proxy-groups:
       - '🇸🇬SG | trojan | @v2ray1_ng | 6'
       - '🇸🇪SE | ss | @VmessProtocol | 15'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🇩🇪DE | vmess | @ConfigsHUB | 15'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇩🇪DE | vmess | @forwardv2ray | 19'
       - '🇫🇮FI | ss | @ROMAX_VPN | 14'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
