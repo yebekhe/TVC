@@ -121,6 +121,7 @@
                 "🇺🇸US | vless | @DigiV2ray | 8",
                 "🇨🇦CA | vless | @v2logy | 11",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 16",
+                "🇨🇦CA | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇨🇷CR | vless | @V2rayNGn | 14",
                 "🇫🇷FR | trojan | @PrivateVPNs | 15",
@@ -151,10 +152,10 @@
                 "🇨🇦CA | vless | @sinabigo | 4",
                 "🇨🇦CA | vless | @lrnbymaa | 12",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇨🇦CA | vless | @ConfigsHUB | 19",
+                "🇨🇦CA | vless | @ConfigsHUB | 14",
                 "🇨🇦CA | vless | @proxystore11 | 14",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
-                "🏳️XX | vmess | @Hope_Net | 16",
+                "🏳️XX | vmess | @Hope_Net | 15",
                 "🇨🇦CA | vless | @fnet00 | 12",
                 "🇨🇦CA | vless | @polproxy | 12",
                 "🇨🇦CA | vless | @Outlinev2rayNG | 5",
@@ -165,7 +166,6 @@
                 "🇨🇦CA | vless | @FreakConfig | 4",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇨🇷CR | vless | @flyv2ray | 11",
-                "🇨🇦CA | vless | @forwardv2ray | 16",
                 "🇨🇦CA | vless | @FAKEOFTVC | 7",
                 "🇨🇷CR | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 6",
@@ -203,6 +203,7 @@
                 "🇺🇸US | vless | @DigiV2ray | 8",
                 "🇨🇦CA | vless | @v2logy | 11",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 16",
+                "🇨🇦CA | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇨🇷CR | vless | @V2rayNGn | 14",
                 "🇫🇷FR | trojan | @PrivateVPNs | 15",
@@ -233,10 +234,10 @@
                 "🇨🇦CA | vless | @sinabigo | 4",
                 "🇨🇦CA | vless | @lrnbymaa | 12",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇨🇦CA | vless | @ConfigsHUB | 19",
+                "🇨🇦CA | vless | @ConfigsHUB | 14",
                 "🇨🇦CA | vless | @proxystore11 | 14",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
-                "🏳️XX | vmess | @Hope_Net | 16",
+                "🏳️XX | vmess | @Hope_Net | 15",
                 "🇨🇦CA | vless | @fnet00 | 12",
                 "🇨🇦CA | vless | @polproxy | 12",
                 "🇨🇦CA | vless | @Outlinev2rayNG | 5",
@@ -247,7 +248,6 @@
                 "🇨🇦CA | vless | @FreakConfig | 4",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇨🇷CR | vless | @flyv2ray | 11",
-                "🇨🇦CA | vless | @forwardv2ray | 16",
                 "🇨🇦CA | vless | @FAKEOFTVC | 7",
                 "🇨🇷CR | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 6",
@@ -713,6 +713,37 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "xyz",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @V2rayCollectorDonate | 19",
+            "type": "vless",
+            "server": "discord.com",
+            "server_port": 443,
+            "uuid": "Venom-Servers",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "VENOM4.chvrsi.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-Channel@Venom_serversTelegram-Channel@Venom_serversTelegram-Channel@Venom_serversTelegram-Channel@Venom_serversTelegram-Channel@Venom_serversTelegram-Channel@Venom_serversTelegram-Channel@Venom_serversTelegram-Channel@Venom_servers",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -1399,11 +1430,11 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇦CA | vless | @ConfigsHUB | 19",
+            "tag": "🇨🇦CA | vless | @ConfigsHUB | 14",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 8080,
-            "uuid": "---Telegram-Parsashonam--3-",
+            "server": "104.31.16.160",
+            "server_port": 80,
+            "uuid": "30bacb3e-a515-42bc-9e0b-5241f32e8080",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1415,7 +1446,7 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "104.31.16.160"
                 }
             }
         },
@@ -1453,11 +1484,11 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @Hope_Net | 16",
+            "tag": "🏳️XX | vmess | @Hope_Net | 15",
             "type": "vmess",
             "server": "127.0.0.1",
             "server_port": 8080,
-            "uuid": "baabcac-baca-abca-cadb-bccbacabaabc",
+            "uuid": "abcaabc-acba-baca-dacb-acbbcbbaaacc",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1702,27 +1733,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "tel.VPNCUSTOMIZE.cam"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 16",
-            "type": "vless",
-            "server": "104.24.172.7",
-            "server_port": 8080,
-            "uuid": "25078e26-5992-4a79-96eb-b5626c93191d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet",
-                "headers": {
-                    "Host": "104.24.172.7"
                 }
             }
         },
