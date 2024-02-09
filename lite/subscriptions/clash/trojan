@@ -119,9 +119,10 @@ dns:
 
 proxies:
   - {"name":"🇬🇧GB | trojan | @PrivateVPNs | 15","type":"trojan","server":"52.56.87.9","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇫🇷FR | trojan | @DirectVPN | 15","type":"trojan","server":"13.36.192.236","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇬🇧GB | trojan | @DirectVPN | 15","type":"trojan","server":"18.135.246.6","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇩🇪DE | trojan | @oneclickvpnkeys | 7","type":"trojan","server":"fast.jahansystem.sbs","port":2083,"udp":false,"password":"UZ5ZjBAUGh","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇨🇳CN | trojan | @yaney_01 | 7","type":"trojan","server":"xibaozi.19890604.day","port":10847,"udp":false,"password":"c1dc3493-2298-44ab-98c1-4abccbc350d1","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cloudflare.node-ssl.cdn-alibaba.com"}
-  - {"name":"🇨🇦CA | trojan | @forwardv2ray | 19","type":"trojan","server":"162.159.1.94","port":443,"udp":false,"password":"2572a1bd-4dd2-4323-b508-490b04177303","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"fr2u9t9.lowerpingservise.ir"}
+  - {"name":"🇨🇦CA | trojan | @forwardv2ray | 18","type":"trojan","server":"upload.ir","port":443,"udp":false,"password":"89edf49e-e625-4902-a94b-d1acc926b96d","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"p2jp1.pqjc.buzz"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,9 +130,10 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇬🇧GB | trojan | @PrivateVPNs | 15'
-      - '🇫🇷FR | trojan | @DirectVPN | 15'
+      - '🇬🇧GB | trojan | @DirectVPN | 15'
+      - '🇩🇪DE | trojan | @oneclickvpnkeys | 7'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
-      - '🇨🇦CA | trojan | @forwardv2ray | 19'
+      - '🇨🇦CA | trojan | @forwardv2ray | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -139,18 +141,20 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇬🇧GB | trojan | @PrivateVPNs | 15'
-      - '🇫🇷FR | trojan | @DirectVPN | 15'
+      - '🇬🇧GB | trojan | @DirectVPN | 15'
+      - '🇩🇪DE | trojan | @oneclickvpnkeys | 7'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
-      - '🇨🇦CA | trojan | @forwardv2ray | 19'
+      - '🇨🇦CA | trojan | @forwardv2ray | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇬🇧GB | trojan | @PrivateVPNs | 15'
-      - '🇫🇷FR | trojan | @DirectVPN | 15'
+      - '🇬🇧GB | trojan | @DirectVPN | 15'
+      - '🇩🇪DE | trojan | @oneclickvpnkeys | 7'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
-      - '🇨🇦CA | trojan | @forwardv2ray | 19'
+      - '🇨🇦CA | trojan | @forwardv2ray | 18'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
