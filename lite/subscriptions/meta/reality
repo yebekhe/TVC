@@ -124,7 +124,6 @@ proxies:
   - {"name":"🇩🇪DE | vless | @ipV2Ray | 11","type":"vless","server":"49.13.135.60","port":443,"udp":true,"uuid":"5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.cloudflare.com","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"_8KBuavwD4j4k2Ux72RucdwxUIWXqa_CZCbRP4fuexE","short-id":"1fefa3a0"}}
   - {"name":"🏳️XX | vless | @V2pedia | 9","type":"vless","server":"fbbvssss.v2pedia.xyz","port":8443,"udp":true,"uuid":"8b2f1fc5-9d1c-4304-9c1d-91806eef4629","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"pubmed.ncbi.nlm.nih.gov","grpc-opts":{"grpc-service-name":"Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia"},"reality-opts":{"public-key":"1XVNWscPjgvJ1uh9Tvk30Gh8dRlDL93jQEu2hk8YrRY","short-id":"268ede"}}
   - {"name":"🇩🇪DE | vless | @azadi_az_inja_migzare | 16","type":"vless","server":"89.208.103.30","port":2053,"udp":true,"uuid":"4ca8dc85-0dbe-4bda-9f07-985aeb7a77bf","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"cdn.discordapp.com","grpc-opts":{"grpc-service-name":"xyz"},"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"}}
-  - {"name":"🇫🇮FI | vless | @V2rayCollectorDonate | 19","type":"vless","server":"finland.nodes.mrzb.artydev.ru","port":8443,"udp":true,"uuid":"964736c9-abc2-400d-b7de-378d9de2e4c0","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"cdn.discordapp.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -135,7 +134,6 @@ proxy-groups:
       - '🇩🇪DE | vless | @ipV2Ray | 11'
       - '🏳️XX | vless | @V2pedia | 9'
       - '🇩🇪DE | vless | @azadi_az_inja_migzare | 16'
-      - '🇫🇮FI | vless | @V2rayCollectorDonate | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -146,7 +144,6 @@ proxy-groups:
       - '🇩🇪DE | vless | @ipV2Ray | 11'
       - '🏳️XX | vless | @V2pedia | 9'
       - '🇩🇪DE | vless | @azadi_az_inja_migzare | 16'
-      - '🇫🇮FI | vless | @V2rayCollectorDonate | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -156,7 +153,6 @@ proxy-groups:
       - '🇩🇪DE | vless | @ipV2Ray | 11'
       - '🏳️XX | vless | @V2pedia | 9'
       - '🇩🇪DE | vless | @azadi_az_inja_migzare | 16'
-      - '🇫🇮FI | vless | @V2rayCollectorDonate | 19'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
