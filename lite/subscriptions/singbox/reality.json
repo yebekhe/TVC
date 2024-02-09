@@ -109,7 +109,10 @@
                 "🇳🇱NL | vless | @NIM_VPN_ir | 9",
                 "🇩🇪DE | vless | @ARv2ray | 11",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 16",
+                "🇩🇪DE | vless | @prrofile_purple | 180",
                 "🏳️XX | vless | @v2ray_swhil | 27",
+                "🇷🇴RO | vless | @proxyymeliii | 18",
+                "🇩🇪DE | vless | @Capoit | 5",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -122,7 +125,10 @@
                 "🇳🇱NL | vless | @NIM_VPN_ir | 9",
                 "🇩🇪DE | vless | @ARv2ray | 11",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 16",
+                "🇩🇪DE | vless | @prrofile_purple | 180",
                 "🏳️XX | vless | @v2ray_swhil | 27",
+                "🇷🇴RO | vless | @proxyymeliii | 18",
+                "🇩🇪DE | vless | @Capoit | 5",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -249,6 +255,35 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @prrofile_purple | 180",
+            "type": "vless",
+            "server": "116.202.99.47",
+            "server_port": 49124,
+            "uuid": "0448c6ea-34ce-487a-93be-8e57bd2f2fa8",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dalan-group.de",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "rBdocIQXi2MdXwQYubRsn4fTG1_3XMZiNgtn9u3yzwI",
+                    "short_id": "0bf98883"
+                }
+            }
+        },
+        {
             "tag": "🏳️XX | vless | @v2ray_swhil | 27",
             "type": "vless",
             "server": "free.mmdtitaniom.com",
@@ -279,6 +314,78 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇷🇴RO | vless | @proxyymeliii | 18",
+            "type": "vless",
+            "server": "188.241.240.230",
+            "server_port": 20044,
+            "uuid": "a598099f-5032-475d-8826-3bfac5e042b3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UK7qxWWGfRQcQfwaGpHnqmmqqJBut4jxve8AeDDJ2UI",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "www.speedtest.org",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @Capoit | 5",
+            "type": "vless",
+            "server": "64.227.117.48",
+            "server_port": 443,
+            "uuid": "1a43202e-c14a-4f5b-8b06-f752ffb6d12e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vindu.agency",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8s2_n7pYiHwWJ_ZAB0RgPUaqO0_rCe3RykFPJtIC6UI",
+                    "short_id": "c77cf6ff"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
