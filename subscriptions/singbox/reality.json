@@ -130,21 +130,23 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 9",
                 "🇫🇷FR | vless | @CUSTOMVPNSERVER | 10",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 16",
-                "🏳️XX | vless | @V2rayCollectorDonate | 10",
+                "🏳️XX | vless | @V2rayCollectorDonate | 12",
                 "🇩🇪DE | vless | @prrofile_purple | 160",
                 "🇫🇮FI | vless | @customv2ray | 9",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 2",
                 "🇩🇪DE | vless | @ShadowProxy66 | 14",
                 "🇩🇪DE | vless | @ShadowProxy66 | 15",
                 "🇩🇪DE | vless | @ShadowProxy66 | 16",
-                "🏳️XX | vless | @v2ray_swhil | 28",
+                "🇷🇴RO | vless | @proxyymeliii | 18",
+                "🇺🇸US | vless | @ConfigsHUB | 7",
+                "🇩🇪DE | vless | @ConfigsHUB | 13",
                 "🇩🇪DE | vless | @Outlinev2rayNG | 5",
                 "🇬🇧GB | vless | @Capital_NET | 27",
                 "🇩🇪DE | vless | @Capital_NET | 28",
                 "🇩🇪DE | vless | @Capital_NET | 29",
                 "🏳️XX | vless | @Capital_NET | 30",
                 "🏳️XX | vless | @Capital_NET | 32",
-                "🇳🇱NL | vless | @Capital_NET | 34",
+                "🇨🇦CA | vless | @Capital_NET | 34",
                 "🇩🇪DE | vless | @Capital_NET | 35",
                 "🏳️XX | vless | @Capital_NET | 37",
                 "🇩🇪DE | vless | @Capital_NET | 38",
@@ -207,21 +209,23 @@
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 9",
                 "🇫🇷FR | vless | @CUSTOMVPNSERVER | 10",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 16",
-                "🏳️XX | vless | @V2rayCollectorDonate | 10",
+                "🏳️XX | vless | @V2rayCollectorDonate | 12",
                 "🇩🇪DE | vless | @prrofile_purple | 160",
                 "🇫🇮FI | vless | @customv2ray | 9",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 2",
                 "🇩🇪DE | vless | @ShadowProxy66 | 14",
                 "🇩🇪DE | vless | @ShadowProxy66 | 15",
                 "🇩🇪DE | vless | @ShadowProxy66 | 16",
-                "🏳️XX | vless | @v2ray_swhil | 28",
+                "🇷🇴RO | vless | @proxyymeliii | 18",
+                "🇺🇸US | vless | @ConfigsHUB | 7",
+                "🇩🇪DE | vless | @ConfigsHUB | 13",
                 "🇩🇪DE | vless | @Outlinev2rayNG | 5",
                 "🇬🇧GB | vless | @Capital_NET | 27",
                 "🇩🇪DE | vless | @Capital_NET | 28",
                 "🇩🇪DE | vless | @Capital_NET | 29",
                 "🏳️XX | vless | @Capital_NET | 30",
                 "🏳️XX | vless | @Capital_NET | 32",
-                "🇳🇱NL | vless | @Capital_NET | 34",
+                "🇨🇦CA | vless | @Capital_NET | 34",
                 "🇩🇪DE | vless | @Capital_NET | 35",
                 "🏳️XX | vless | @Capital_NET | 37",
                 "🇩🇪DE | vless | @Capital_NET | 38",
@@ -1098,7 +1102,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @V2rayCollectorDonate | 10",
+            "tag": "🏳️XX | vless | @V2rayCollectorDonate | 12",
             "type": "vless",
             "server": "[0000:0000:0000:0000:0000:ffff:054b:c06c]",
             "server_port": 443,
@@ -1315,11 +1319,47 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @v2ray_swhil | 28",
+            "tag": "🇷🇴RO | vless | @proxyymeliii | 18",
             "type": "vless",
-            "server": "free.mmdtitaniom.com",
-            "server_port": 2053,
-            "uuid": "a1607b53-08c9-4f77-cc45-850e16f9e6c7",
+            "server": "188.241.240.230",
+            "server_port": 20044,
+            "uuid": "a598099f-5032-475d-8826-3bfac5e042b3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UK7qxWWGfRQcQfwaGpHnqmmqqJBut4jxve8AeDDJ2UI",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "www.speedtest.org",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | vless | @ConfigsHUB | 7",
+            "type": "vless",
+            "server": "5.78.83.250",
+            "server_port": 25365,
+            "uuid": "3bb09d54-9cf2-4f4e-a619-b2196e7568e8",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1334,17 +1374,53 @@
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "-FArfVyUNqBnbsHtWC4MvDcUpW6MjplITOJjVoGhRCA",
-                    "short_id": "888746"
+                    "public_key": "3tG_6ui57nKUktmjW_BvM9OPLO0hCH8SyLlphGoLWHA",
+                    "short_id": "80af7bf6"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @ConfigsHUB | 13",
+            "type": "vless",
+            "server": "germany.mmdtitaniom.com",
+            "server_port": 2053,
+            "uuid": "fafcd6a9-07b2-4185-a4e8-a2e5abf8035c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -1539,7 +1615,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vless | @Capital_NET | 34",
+            "tag": "🇨🇦CA | vless | @Capital_NET | 34",
             "type": "vless",
             "server": "194.5.97.158",
             "server_port": 443,
