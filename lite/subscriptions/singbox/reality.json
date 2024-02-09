@@ -107,11 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🇳🇱NL | vless | @NIM_VPN_ir | 9",
+                "🇩🇪DE | vless | @ipV2Ray | 12",
                 "🇩🇪DE | vless | @ARv2ray | 11",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 16",
-                "🇷🇴RO | vless | @proxyymeliii | 19",
+                "🇷🇴RO | vless | @proxyymeliii | 18",
                 "🇩🇪DE | vless | @Capoit | 5",
-                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -122,11 +122,11 @@
             "type": "urltest",
             "outbounds": [
                 "🇳🇱NL | vless | @NIM_VPN_ir | 9",
+                "🇩🇪DE | vless | @ipV2Ray | 12",
                 "🇩🇪DE | vless | @ARv2ray | 11",
                 "🇩🇪DE | vless | @azadi_az_inja_migzare | 16",
-                "🇷🇴RO | vless | @proxyymeliii | 19",
+                "🇷🇴RO | vless | @proxyymeliii | 18",
                 "🇩🇪DE | vless | @Capoit | 5",
-                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -178,6 +178,42 @@
                     "public_key": "36FItsfzNuuu10R3mmrFOThp-KmxCfx5SHxm82Qb9UQ",
                     "short_id": "d222da96"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @ipV2Ray | 12",
+            "type": "vless",
+            "server": "23.88.47.9",
+            "server_port": 443,
+            "uuid": "5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.hetzner.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "9o7f3Rkn6BUL_emZVS6yMoVu8OoTozpOKlkc7JaUSQ8",
+                    "short_id": "1fefa3a0"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -253,7 +289,7 @@
             }
         },
         {
-            "tag": "🇷🇴RO | vless | @proxyymeliii | 19",
+            "tag": "🇷🇴RO | vless | @proxyymeliii | 18",
             "type": "vless",
             "server": "188.241.240.230",
             "server_port": 20044,
@@ -322,35 +358,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @forwardv2ray | 19",
-            "type": "vless",
-            "server": "irancell3---join.outline-vpn.cloud",
-            "server_port": 22710,
-            "uuid": "52bd5ea2-dcfb-4f96-a54a-8c8c0f682d75",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "discord.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "U7eH8h4h2edWICi90a2570pInOrQNo7pVGu0w6dHPkU",
-                    "short_id": "7e69c512"
-                }
             }
         },
         {
