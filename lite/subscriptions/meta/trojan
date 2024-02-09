@@ -122,8 +122,8 @@ dns:
 proxies:
   - {"name":"🇬🇧GB | trojan | @PrivateVPNs | 15","type":"trojan","server":"52.56.87.9","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇫🇷FR | trojan | @DirectVPN | 15","type":"trojan","server":"13.36.192.236","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇸🇬SG | trojan | @v2ray1_ng | 6","type":"trojan","server":"15.235.203.122","port":80,"udp":false,"password":"VF1Al6V2fk","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇨🇳CN | trojan | @yaney_01 | 7","type":"trojan","server":"xibaozi.19890604.day","port":10847,"udp":false,"password":"c1dc3493-2298-44ab-98c1-4abccbc350d1","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cloudflare.node-ssl.cdn-alibaba.com"}
+  - {"name":"🇨🇦CA | trojan | @forwardv2ray | 19","type":"trojan","server":"162.159.1.94","port":443,"udp":false,"password":"2572a1bd-4dd2-4323-b508-490b04177303","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"fr2u9t9.lowerpingservise.ir"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,8 +132,8 @@ proxy-groups:
       - FALLBACK
       - '🇬🇧GB | trojan | @PrivateVPNs | 15'
       - '🇫🇷FR | trojan | @DirectVPN | 15'
-      - '🇸🇬SG | trojan | @v2ray1_ng | 6'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
+      - '🇨🇦CA | trojan | @forwardv2ray | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -142,8 +142,8 @@ proxy-groups:
     proxies:
       - '🇬🇧GB | trojan | @PrivateVPNs | 15'
       - '🇫🇷FR | trojan | @DirectVPN | 15'
-      - '🇸🇬SG | trojan | @v2ray1_ng | 6'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
+      - '🇨🇦CA | trojan | @forwardv2ray | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -151,8 +151,8 @@ proxy-groups:
     proxies:
       - '🇬🇧GB | trojan | @PrivateVPNs | 15'
       - '🇫🇷FR | trojan | @DirectVPN | 15'
-      - '🇸🇬SG | trojan | @v2ray1_ng | 6'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
+      - '🇨🇦CA | trojan | @forwardv2ray | 19'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
