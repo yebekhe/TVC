@@ -152,7 +152,7 @@
                 "🇨🇦CA | vless | @sinabigo | 4",
                 "🇨🇦CA | vless | @lrnbymaa | 12",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇩🇪DE | vless | @ConfigsHUB | 19",
+                "🇨🇦CA | vless | @ConfigsHUB | 13",
                 "🇨🇦CA | vless | @proxystore11 | 14",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
                 "🇨🇦CA | vless | @fnet00 | 12",
@@ -165,7 +165,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 7",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇨🇷CR | vless | @flyv2ray | 11",
-                "🇳🇱NL | vmess | @forwardv2ray | 18",
+                "🇬🇧GB | ss | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 7",
                 "🇨🇷CR | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 6",
@@ -234,7 +234,7 @@
                 "🇨🇦CA | vless | @sinabigo | 4",
                 "🇨🇦CA | vless | @lrnbymaa | 12",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇩🇪DE | vless | @ConfigsHUB | 19",
+                "🇨🇦CA | vless | @ConfigsHUB | 13",
                 "🇨🇦CA | vless | @proxystore11 | 14",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
                 "🇨🇦CA | vless | @fnet00 | 12",
@@ -247,7 +247,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 7",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇨🇷CR | vless | @flyv2ray | 11",
-                "🇳🇱NL | vmess | @forwardv2ray | 18",
+                "🇬🇧GB | ss | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 7",
                 "🇨🇷CR | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 6",
@@ -1427,17 +1427,24 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇩🇪DE | vless | @ConfigsHUB | 19",
+            "tag": "🇨🇦CA | vless | @ConfigsHUB | 13",
             "type": "vless",
-            "server": "195.201.238.126",
-            "server_port": 443,
-            "uuid": "cce2f72e-a166-4563-be4f-59392881c9d8",
+            "server": "104.21.64.117",
+            "server_port": 8080,
+            "uuid": "b00b62d3-80a2-40f4-92f2-f93f6cbbc96e",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@x2rayn_vpnCDN?ed=2090",
+                "headers": {
+                    "Host": "104.21.64.117"
+                }
             }
         },
         {
@@ -1710,38 +1717,14 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vmess | @forwardv2ray | 18",
-            "type": "vmess",
-            "server": "188.114.97.7",
+            "tag": "🇬🇧GB | ss | @forwardv2ray | 19",
+            "type": "shadowsocks",
+            "server": "series-a2-mec.samanehha.co",
             "server_port": 443,
-            "uuid": "73c5becd-4c4d-4e0f-844f-d54bd10fdefc",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kansas.gafn.online",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/speedtest",
-                "headers": {
-                    "Host": "kansas.gafn.online"
-                }
-            }
+            "method": "chacha20-ietf-poly1305",
+            "password": "u17T3BvpYaaiuW2c",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇨🇦CA | vless | @FAKEOFTVC | 7",
