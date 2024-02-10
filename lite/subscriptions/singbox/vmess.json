@@ -188,9 +188,9 @@
         {
             "tag": "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
             "type": "vmess",
-            "server": "198.57.27.212",
-            "server_port": 22324,
-            "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+            "server": "adenc35.fixedlfoat.top",
+            "server_port": 443,
+            "uuid": "45f63e92-f782-4cac-84b8-e61cb5a5bfd0",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -200,6 +200,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
