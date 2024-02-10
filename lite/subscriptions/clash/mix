@@ -127,8 +127,10 @@ proxies:
   - {"name":"🇨🇦CA | vmess | @customv2ray | 11","type":"vmess","server":"submehti.karaj68.shop","port":"2087","cipher":"auto","uuid":"db5afae4-ac23-41a6-8378-f307a9a47436","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"🇨🇦CA | vmess | @v2ray1_ng | 9","type":"vmess","server":"submehti.karaj68.shop","port":"2087","cipher":"auto","uuid":"db5afae4-ac23-41a6-8378-f307a9a47436","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"🇦🇹AT | ss | @OutlineVpnOfficial | 15","type":"ss","server":"212.113.106.243","port":12949,"password":"P2zxXPewlV3BlfqqYiSthvtLc","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇨🇦CA | vmess | @ConfigsHUB | 19","type":"vmess","server":"cfcdn3.sanfencdn9.com","port":80,"cipher":"aes-128-gcm","uuid":"d0a3e08a-d26f-45bd-ba3c-6387f9182633","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/ibCT6z55","headers":{"host":"agzbjszujp4.yofnhkfc.xyz"}}}
   - {"name":"🇨🇳CN | trojan | @yaney_01 | 7","type":"trojan","server":"xibaozi.19890604.day","port":10847,"udp":false,"password":"c1dc3493-2298-44ab-98c1-4abccbc350d1","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cloudflare.node-ssl.cdn-alibaba.com"}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
+  - {"name":"🇨🇳CN | vmess | @forwardv2ray | 19","type":"vmess","server":"183.236.48.169","port":1002,"cipher":"aes-128-gcm","uuid":"229ccd44-c56c-3947-88de-849dd70c180d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -144,8 +146,10 @@ proxy-groups:
       - '🇨🇦CA | vmess | @customv2ray | 11'
       - '🇨🇦CA | vmess | @v2ray1_ng | 9'
       - '🇦🇹AT | ss | @OutlineVpnOfficial | 15'
+      - '🇨🇦CA | vmess | @ConfigsHUB | 19'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇳CN | vmess | @forwardv2ray | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -161,8 +165,10 @@ proxy-groups:
       - '🇨🇦CA | vmess | @customv2ray | 11'
       - '🇨🇦CA | vmess | @v2ray1_ng | 9'
       - '🇦🇹AT | ss | @OutlineVpnOfficial | 15'
+      - '🇨🇦CA | vmess | @ConfigsHUB | 19'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇳CN | vmess | @forwardv2ray | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -177,8 +183,10 @@ proxy-groups:
       - '🇨🇦CA | vmess | @customv2ray | 11'
       - '🇨🇦CA | vmess | @v2ray1_ng | 9'
       - '🇦🇹AT | ss | @OutlineVpnOfficial | 15'
+      - '🇨🇦CA | vmess | @ConfigsHUB | 19'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇳CN | vmess | @forwardv2ray | 19'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve

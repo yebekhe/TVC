@@ -125,7 +125,9 @@ proxies:
   - {"name":"🇹🇼TW | vmess | @oneclickvpnkeys | 8","type":"vmess","server":"118.167.68.3","port":"4443","cipher":"auto","uuid":"60ab817e-0566-44cb-becd-6b51698d5672","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @customv2ray | 11","type":"vmess","server":"submehti.karaj68.shop","port":"2087","cipher":"auto","uuid":"db5afae4-ac23-41a6-8378-f307a9a47436","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"🇨🇦CA | vmess | @v2ray1_ng | 9","type":"vmess","server":"submehti.karaj68.shop","port":"2087","cipher":"auto","uuid":"db5afae4-ac23-41a6-8378-f307a9a47436","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
+  - {"name":"🇨🇦CA | vmess | @ConfigsHUB | 19","type":"vmess","server":"cfcdn3.sanfencdn9.com","port":80,"cipher":"aes-128-gcm","uuid":"d0a3e08a-d26f-45bd-ba3c-6387f9182633","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/ibCT6z55","headers":{"host":"agzbjszujp4.yofnhkfc.xyz"}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
+  - {"name":"🇨🇳CN | vmess | @forwardv2ray | 19","type":"vmess","server":"183.236.48.169","port":1002,"cipher":"aes-128-gcm","uuid":"229ccd44-c56c-3947-88de-849dd70c180d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -137,7 +139,9 @@ proxy-groups:
       - '🇹🇼TW | vmess | @oneclickvpnkeys | 8'
       - '🇨🇦CA | vmess | @customv2ray | 11'
       - '🇨🇦CA | vmess | @v2ray1_ng | 9'
+      - '🇨🇦CA | vmess | @ConfigsHUB | 19'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇳CN | vmess | @forwardv2ray | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -149,7 +153,9 @@ proxy-groups:
       - '🇹🇼TW | vmess | @oneclickvpnkeys | 8'
       - '🇨🇦CA | vmess | @customv2ray | 11'
       - '🇨🇦CA | vmess | @v2ray1_ng | 9'
+      - '🇨🇦CA | vmess | @ConfigsHUB | 19'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇳CN | vmess | @forwardv2ray | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -160,7 +166,9 @@ proxy-groups:
       - '🇹🇼TW | vmess | @oneclickvpnkeys | 8'
       - '🇨🇦CA | vmess | @customv2ray | 11'
       - '🇨🇦CA | vmess | @v2ray1_ng | 9'
+      - '🇨🇦CA | vmess | @ConfigsHUB | 19'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇳CN | vmess | @forwardv2ray | 19'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
