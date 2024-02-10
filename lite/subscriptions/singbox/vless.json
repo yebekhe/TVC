@@ -117,8 +117,8 @@
                 "🇺🇸US | vless | @Lockey_vpn | 12",
                 "🇨🇦CA | vless | @rxv2ray | 16",
                 "🇨🇦CA | vless | @free_v2rayyy | 3",
-                "🇨🇷CR | vless | @lightning6 | 26",
-                "🇳🇱NL | vless | @vpn_xw | 1",
+                "🇺🇸US | vless | @lightning6 | 26",
+                "🇺🇸US | vless | @vpn_xw | 0",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇺🇸US | vless | @DigiV2ray | 7",
                 "🇨🇦CA | vless | @v2logy | 12",
@@ -127,7 +127,7 @@
                 "🇨🇦CA | vless | @V2rayNGn | 25",
                 "🏳️XX | vless | @prrofile_purple | 181",
                 "🇨🇦CA | vless | @UnlimitedDev | 5",
-                "🏳️XX | vless | @vmessorg | 8",
+                "🇺🇸US | vless | @vmessorg | 8",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 8",
                 "🇩🇪DE | vless | @v2rayngvpn | 11",
                 "🇺🇸US | vless | @FalconPolV2rayNG | 8",
@@ -149,7 +149,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 3",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇩🇪DE | vless | @flyv2ray | 12",
-                "🇨🇦CA | vless | @forwardv2ray | 19",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 4",
                 "🇨🇷CR | vless | @https_config_injector | 14",
                 "🇸🇪SE | vless | @kiava | 8",
@@ -178,8 +178,8 @@
                 "🇺🇸US | vless | @Lockey_vpn | 12",
                 "🇨🇦CA | vless | @rxv2ray | 16",
                 "🇨🇦CA | vless | @free_v2rayyy | 3",
-                "🇨🇷CR | vless | @lightning6 | 26",
-                "🇳🇱NL | vless | @vpn_xw | 1",
+                "🇺🇸US | vless | @lightning6 | 26",
+                "🇺🇸US | vless | @vpn_xw | 0",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇺🇸US | vless | @DigiV2ray | 7",
                 "🇨🇦CA | vless | @v2logy | 12",
@@ -188,7 +188,7 @@
                 "🇨🇦CA | vless | @V2rayNGn | 25",
                 "🏳️XX | vless | @prrofile_purple | 181",
                 "🇨🇦CA | vless | @UnlimitedDev | 5",
-                "🏳️XX | vless | @vmessorg | 8",
+                "🇺🇸US | vless | @vmessorg | 8",
                 "🇸🇪SE | vless | @v2rayNG_Matsuri | 8",
                 "🇩🇪DE | vless | @v2rayngvpn | 11",
                 "🇺🇸US | vless | @FalconPolV2rayNG | 8",
@@ -210,7 +210,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 3",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇩🇪DE | vless | @flyv2ray | 12",
-                "🇨🇦CA | vless | @forwardv2ray | 19",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 4",
                 "🇨🇷CR | vless | @https_config_injector | 14",
                 "🇸🇪SE | vless | @kiava | 8",
@@ -553,7 +553,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @lightning6 | 26",
+            "tag": "🇺🇸US | vless | @lightning6 | 26",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 2083,
@@ -584,39 +584,24 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vless | @vpn_xw | 1",
+            "tag": "🇺🇸US | vless | @vpn_xw | 0",
             "type": "vless",
-            "server": "xw.gooldeneaglee.eu.org",
-            "server_port": 2096,
-            "uuid": "goldeneagle",
-            "flow": "xtls-rprx-vision",
+            "server": "173.245.58.142",
+            "server_port": 2095,
+            "uuid": "eaglegolden",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "xw.gooldeneaglee.eu.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "KIaq9HgZdGdCnFQbVT9TL6rH4ChS7ILGxmK_6EQIuiI",
-                    "short_id": "217888f9"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "----------telegram:vpn_xw----------",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "173.245.58.142"
+                }
             }
         },
         {
@@ -828,7 +813,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @vmessorg | 8",
+            "tag": "🇺🇸US | vless | @vmessorg | 8",
             "type": "vless",
             "server": "joinbede.vmessorg.online",
             "server_port": 8880,
@@ -1357,12 +1342,12 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 19",
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 19",
             "type": "vless",
-            "server": "parspack.com",
-            "server_port": 443,
-            "uuid": "51905fd3-29de-4b4e-b351-83542f1d5390",
-            "flow": "",
+            "server": "91.107.244.26",
+            "server_port": 22710,
+            "uuid": "52bd5ea2-dcfb-4f96-a54a-8c8c0f682d75",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1371,19 +1356,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "Bia.alLhub.Ltd",
+                "server_name": "discord.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "Bia.alLhub.Ltd"
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "U7eH8h4h2edWICi90a2570pInOrQNo7pVGu0w6dHPkU",
+                    "short_id": "7e69c512"
                 }
             }
         },
