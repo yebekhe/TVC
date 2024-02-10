@@ -109,11 +109,11 @@
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 6",
-                "🇺🇸US | vmess | @proxyymeliii | 18",
+                "🇺🇸US | vmess | @oneclickvpnkeys | 6",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
                 "🇦🇺AU | vmess | @Hope_Net | 1",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 8"
             ]
         },
@@ -124,11 +124,11 @@
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 6",
-                "🇺🇸US | vmess | @proxyymeliii | 18",
+                "🇺🇸US | vmess | @oneclickvpnkeys | 6",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
                 "🇦🇺AU | vmess | @Hope_Net | 1",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -220,7 +220,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 6",
+            "tag": "🇺🇸US | vmess | @oneclickvpnkeys | 6",
             "type": "vmess",
             "server": "cloudflare.alipay.ovh",
             "server_port": 80,
@@ -241,23 +241,6 @@
                 "headers": {
                     "Host": ""
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | vmess | @proxyymeliii | 18",
-            "type": "vmess",
-            "server": "51.81.149.151",
-            "server_port": 27978,
-            "uuid": "9fd11110-625d-4a96-9e3a-09062613a098",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -326,11 +309,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @eliya_chiter0 | 8",
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 18",
             "type": "vmess",
-            "server": "104.16.4.103",
-            "server_port": 443,
-            "uuid": "1f6d762e-b32e-4028-8291-4b81af1cd52c",
+            "server": "104.24.208.37",
+            "server_port": 80,
+            "uuid": "7022982f-da4c-48c9-c660-b2315abdcf7e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -341,21 +324,35 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdn.free-best-ray.space",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
                 }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @eliya_chiter0 | 8",
+            "type": "vmess",
+            "server": "104.21.82.183",
+            "server_port": 8880,
+            "uuid": "7ee41eb4-0594-4e2d-92a7-5dd3ee513692",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
-                "path": "\/FSSSJJaPXI0ATHQ2RoRM",
+                "path": "\/",
                 "headers": {
-                    "Host": "cdn.free-best-ray.space"
+                    "Host": ""
                 }
             }
         }
