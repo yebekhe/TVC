@@ -108,8 +108,8 @@
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
+                "🇰🇷KR | vmess | @DeamNet_Proxy | 18",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
-                "🇩🇪DE | vmess | @ConfigsHUB | 18",
                 "🇨🇦CA | vmess | @Hope_Net | 5",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇺🇸US | vmess | @FAKEOFTVC | 8",
@@ -122,8 +122,8 @@
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
+                "🇰🇷KR | vmess | @DeamNet_Proxy | 18",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
-                "🇩🇪DE | vmess | @ConfigsHUB | 18",
                 "🇨🇦CA | vmess | @Hope_Net | 5",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇺🇸US | vmess | @FAKEOFTVC | 8",
@@ -184,6 +184,40 @@
             }
         },
         {
+            "tag": "🇰🇷KR | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "152.67.218.38",
+            "server_port": 443,
+            "uuid": "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "152.67.218.38",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "152.67.218.38"
+                }
+            }
+        },
+        {
             "tag": "🇳🇱NL | vmess | @Cov2ray | 0",
             "type": "vmess",
             "server": "188.114.96.11",
@@ -205,23 +239,6 @@
                 "headers": {
                     "Host": ""
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vmess | @ConfigsHUB | 18",
-            "type": "vmess",
-            "server": "23.88.122.107",
-            "server_port": 12707,
-            "uuid": "4b8b2641-be43-434d-8f38-639d7cf247f8",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
