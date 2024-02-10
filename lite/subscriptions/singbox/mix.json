@@ -128,7 +128,7 @@
                 "🇸🇪SE | trojan | @DirectVPN | 15",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇳🇱NL | ss | @DeamNet_Proxy | 18",
+                "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | trojan | @oneclickvpnkeys | 8",
                 "🇨🇷CR | vless | @prrofile_purple | 179",
                 "🇮🇷IR | vless | @customv2ray | 8",
@@ -149,6 +149,7 @@
                 "🇨🇦CA | vless | @sinabigo | 4",
                 "🇨🇦CA | vless | @lrnbymaa | 7",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
+                "🇨🇦CA | vless | @ConfigsHUB | 15",
                 "🇨🇦CA | vless | @proxystore11 | 15",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
                 "🇨🇦CA | vmess | @Hope_Net | 5",
@@ -162,6 +163,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 6",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇨🇷CR | vless | @flyv2ray | 14",
+                "🇨🇦CA | trojan | @forwardv2ray | 18",
                 "🇺🇸US | vmess | @FAKEOFTVC | 8",
                 "🇨🇷CR | vless | @https_config_injector | 13",
                 "🇨🇦CA | vless | @mehrosaboran | 14",
@@ -205,7 +207,7 @@
                 "🇸🇪SE | trojan | @DirectVPN | 15",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇳🇱NL | ss | @DeamNet_Proxy | 18",
+                "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | trojan | @oneclickvpnkeys | 8",
                 "🇨🇷CR | vless | @prrofile_purple | 179",
                 "🇮🇷IR | vless | @customv2ray | 8",
@@ -226,6 +228,7 @@
                 "🇨🇦CA | vless | @sinabigo | 4",
                 "🇨🇦CA | vless | @lrnbymaa | 7",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
+                "🇨🇦CA | vless | @ConfigsHUB | 15",
                 "🇨🇦CA | vless | @proxystore11 | 15",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
                 "🇨🇦CA | vmess | @Hope_Net | 5",
@@ -239,6 +242,7 @@
                 "🇨🇦CA | vless | @FreakConfig | 6",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇨🇷CR | vless | @flyv2ray | 14",
+                "🇨🇦CA | trojan | @forwardv2ray | 18",
                 "🇺🇸US | vmess | @FAKEOFTVC | 8",
                 "🇨🇷CR | vless | @https_config_injector | 13",
                 "🇨🇦CA | vless | @mehrosaboran | 14",
@@ -860,14 +864,28 @@
             }
         },
         {
-            "tag": "🇳🇱NL | ss | @DeamNet_Proxy | 18",
-            "type": "shadowsocks",
-            "server": "beeconf.xyz",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "Z1wBgCIV329qt77IFvDEGE",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "172.67.229.39",
+            "server_port": 2086,
+            "uuid": "58fe1542-5290-40ad-815a-77707a81afe5",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/IOebhLMhl1CTbFHbL95myfRX2",
+                "headers": {
+                    "Host": "172.67.229.39"
+                }
+            }
         },
         {
             "tag": "🇨🇦CA | trojan | @oneclickvpnkeys | 8",
@@ -1365,6 +1383,37 @@
             "plugin_opts": ""
         },
         {
+            "tag": "🇨🇦CA | vless | @ConfigsHUB | 15",
+            "type": "vless",
+            "server": "check-host.net",
+            "server_port": 443,
+            "uuid": "b3d4f0de-8cb0-4c1d-fcbb-013971fb5761",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "check-host.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@N",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @proxystore11 | 15",
             "type": "vless",
             "server": "104.17.45.62",
@@ -1664,6 +1713,35 @@
                 "path": "\/",
                 "headers": {
                     "Host": "shhproxy.varzesh3-cnd.site"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | trojan | @forwardv2ray | 18",
+            "type": "trojan",
+            "server": "104.17.147.11",
+            "server_port": 443,
+            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "jobscareerfortoday.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/6b777a91",
+                "headers": {
+                    "Host": "jobscareerfortoday.com"
                 }
             }
         },
