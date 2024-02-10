@@ -124,6 +124,7 @@ proxies:
   - {"name":"🇩🇪DE | vless | @ipV2Ray | 14","type":"vless","server":"128.140.36.96","port":443,"udp":true,"uuid":"9cfc941b-d243-4dc4-8989-40716165027a","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.dibagroup.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"zPiAq35Bvh5g1oVxW8tyzPC5vV064awAqKOwTeo6h0E","short-id":"cf6c26b3"}}
   - {"name":"🇩🇪DE | vless | @ShadowProxy66 | 23","type":"vless","server":"91.107.244.26","port":22710,"udp":true,"uuid":"52bd5ea2-dcfb-4f96-a54a-8c8c0f682d75","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"discord.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"U7eH8h4h2edWICi90a2570pInOrQNo7pVGu0w6dHPkU","short-id":"7e69c512"}}
   - {"name":"🇫🇷FR | vless | @Capital_NET | 41","type":"vless","server":"46.105.218.0","port":16741,"udp":true,"uuid":"d2176467-4879-4beb-94e9-f1fa8177d8e2","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"ea.com","reality-opts":{"public-key":"kp0my80cNyM8TPeU-LbUaU3DSlAnYkbJ9jeWI2WougM","short-id":"6ae860e1"}}
+  - {"name":"🇩🇪DE | vless | @flyv2ray | 12","type":"vless","server":"104.248.30.140","port":443,"udp":true,"uuid":"8c54ae83-682b-4a8a-b220-f1f7215911ec","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"popapps.host","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"2WzBUhzmjAvsdX26HZqjPXdHwwyobyDdgy-761x9LVI","short-id":"5bf34d64"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -134,6 +135,7 @@ proxy-groups:
       - '🇩🇪DE | vless | @ipV2Ray | 14'
       - '🇩🇪DE | vless | @ShadowProxy66 | 23'
       - '🇫🇷FR | vless | @Capital_NET | 41'
+      - '🇩🇪DE | vless | @flyv2ray | 12'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -144,6 +146,7 @@ proxy-groups:
       - '🇩🇪DE | vless | @ipV2Ray | 14'
       - '🇩🇪DE | vless | @ShadowProxy66 | 23'
       - '🇫🇷FR | vless | @Capital_NET | 41'
+      - '🇩🇪DE | vless | @flyv2ray | 12'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -153,6 +156,7 @@ proxy-groups:
       - '🇩🇪DE | vless | @ipV2Ray | 14'
       - '🇩🇪DE | vless | @ShadowProxy66 | 23'
       - '🇫🇷FR | vless | @Capital_NET | 41'
+      - '🇩🇪DE | vless | @flyv2ray | 12'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
