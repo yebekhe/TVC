@@ -125,7 +125,6 @@ proxies:
   - {"name":"🇹🇼TW | vmess | @oneclickvpnkeys | 8","type":"vmess","server":"118.167.68.3","port":"4443","cipher":"auto","uuid":"60ab817e-0566-44cb-becd-6b51698d5672","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @customv2ray | 11","type":"vmess","server":"submehti.karaj68.shop","port":"2087","cipher":"auto","uuid":"db5afae4-ac23-41a6-8378-f307a9a47436","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"🇨🇦CA | vmess | @v2ray1_ng | 9","type":"vmess","server":"submehti.karaj68.shop","port":"2087","cipher":"auto","uuid":"db5afae4-ac23-41a6-8378-f307a9a47436","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
-  - {"name":"🇨🇦CA | vmess | @ConfigsHUB | 13","type":"vmess","server":"submehti.karaj68.shop","port":"2087","cipher":"auto","uuid":"db5afae4-ac23-41a6-8378-f307a9a47436","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
 proxy-groups:
   - name: MANUAL
@@ -138,7 +137,6 @@ proxy-groups:
       - '🇹🇼TW | vmess | @oneclickvpnkeys | 8'
       - '🇨🇦CA | vmess | @customv2ray | 11'
       - '🇨🇦CA | vmess | @v2ray1_ng | 9'
-      - '🇨🇦CA | vmess | @ConfigsHUB | 13'
       - '🇺🇸US | vmess | @v2Line | 6'
   - name: URL-TEST
     type: url-test
@@ -151,7 +149,6 @@ proxy-groups:
       - '🇹🇼TW | vmess | @oneclickvpnkeys | 8'
       - '🇨🇦CA | vmess | @customv2ray | 11'
       - '🇨🇦CA | vmess | @v2ray1_ng | 9'
-      - '🇨🇦CA | vmess | @ConfigsHUB | 13'
       - '🇺🇸US | vmess | @v2Line | 6'
   - name: FALLBACK
     type: fallback
@@ -163,7 +160,6 @@ proxy-groups:
       - '🇹🇼TW | vmess | @oneclickvpnkeys | 8'
       - '🇨🇦CA | vmess | @customv2ray | 11'
       - '🇨🇦CA | vmess | @v2ray1_ng | 9'
-      - '🇨🇦CA | vmess | @ConfigsHUB | 13'
       - '🇺🇸US | vmess | @v2Line | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
