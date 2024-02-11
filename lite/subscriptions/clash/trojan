@@ -120,7 +120,9 @@ dns:
 proxies:
   - {"name":"🇬🇧GB | trojan | @PrivateVPNs | 17","type":"trojan","server":"18.170.131.9","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇺🇸US | trojan | @DirectVPN | 17","type":"trojan","server":"3.136.3.199","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇩🇪DE | trojan | @ConfigsHUB | 15","type":"trojan","server":"3.74.70.245","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇨🇳CN | trojan | @yaney_01 | 7","type":"trojan","server":"xibaozi.19890604.day","port":10847,"udp":false,"password":"c1dc3493-2298-44ab-98c1-4abccbc350d1","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cloudflare.node-ssl.cdn-alibaba.com"}
+  - {"name":"🇮🇪IE | trojan | @forwardv2ray | 18","type":"trojan","server":"52.48.247.154","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +131,9 @@ proxy-groups:
       - FALLBACK
       - '🇬🇧GB | trojan | @PrivateVPNs | 17'
       - '🇺🇸US | trojan | @DirectVPN | 17'
+      - '🇩🇪DE | trojan | @ConfigsHUB | 15'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
+      - '🇮🇪IE | trojan | @forwardv2ray | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,7 +142,9 @@ proxy-groups:
     proxies:
       - '🇬🇧GB | trojan | @PrivateVPNs | 17'
       - '🇺🇸US | trojan | @DirectVPN | 17'
+      - '🇩🇪DE | trojan | @ConfigsHUB | 15'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
+      - '🇮🇪IE | trojan | @forwardv2ray | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -146,7 +152,9 @@ proxy-groups:
     proxies:
       - '🇬🇧GB | trojan | @PrivateVPNs | 17'
       - '🇺🇸US | trojan | @DirectVPN | 17'
+      - '🇩🇪DE | trojan | @ConfigsHUB | 15'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
+      - '🇮🇪IE | trojan | @forwardv2ray | 18'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
