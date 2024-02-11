@@ -128,10 +128,10 @@
                 "🇫🇷FR | trojan | @DirectVPN | 14",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇫🇷FR | ss | @DeamNet_Proxy | 19",
+                "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vless | @prrofile_purple | 182",
                 "🇨🇦CA | vless | @UnlimitedDev | 6",
-                "🇺🇸US | vless | @vmessorg | 8",
+                "🏳️XX | vless | @vmessorg | 8",
                 "🇨🇦CA | vless | @v2rayNG_Matsuri | 9",
                 "🇨🇦CA | vless | @v2rayngvpn | 13",
                 "🇺🇸US | vless | @FalconPolV2rayNG | 8",
@@ -147,6 +147,7 @@
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @lrnbymaa | 4",
                 "🇦🇹AT | ss | @OutlineVpnOfficial | 15",
+                "🇨🇷CR | vless | @ConfigsHUB | 15",
                 "🇨🇦CA | vless | @proxystore11 | 14",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
                 "🇨🇦CA | vless | @polproxy | 11",
@@ -200,10 +201,10 @@
                 "🇫🇷FR | trojan | @DirectVPN | 14",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇫🇷FR | ss | @DeamNet_Proxy | 19",
+                "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vless | @prrofile_purple | 182",
                 "🇨🇦CA | vless | @UnlimitedDev | 6",
-                "🇺🇸US | vless | @vmessorg | 8",
+                "🏳️XX | vless | @vmessorg | 8",
                 "🇨🇦CA | vless | @v2rayNG_Matsuri | 9",
                 "🇨🇦CA | vless | @v2rayngvpn | 13",
                 "🇺🇸US | vless | @FalconPolV2rayNG | 8",
@@ -219,6 +220,7 @@
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @lrnbymaa | 4",
                 "🇦🇹AT | ss | @OutlineVpnOfficial | 15",
+                "🇨🇷CR | vless | @ConfigsHUB | 15",
                 "🇨🇦CA | vless | @proxystore11 | 14",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
                 "🇨🇦CA | vless | @polproxy | 11",
@@ -862,14 +864,28 @@
             }
         },
         {
-            "tag": "🇫🇷FR | ss | @DeamNet_Proxy | 19",
-            "type": "shadowsocks",
-            "server": "149.202.82.172",
-            "server_port": 7001,
-            "method": "aes-256-gcm",
-            "password": "RexnBgU7EV5ADxG",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
+            "type": "vmess",
+            "server": "ap-northeast-anycast.lnaspiring.com",
+            "server_port": 80,
+            "uuid": "c64fa146-e851-4dfa-8f90-59a8fee49bc3",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/geg\/45",
+                "headers": {
+                    "Host": "ap-northeast-anycast.lnaspiring.com"
+                }
+            }
         },
         {
             "tag": "🇨🇦CA | vless | @prrofile_purple | 182",
@@ -914,7 +930,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @vmessorg | 8",
+            "tag": "🏳️XX | vless | @vmessorg | 8",
             "type": "vless",
             "server": "joinbede.vmessorg.online",
             "server_port": 8880,
@@ -1293,6 +1309,37 @@
             "password": "P2zxXPewlV3BlfqqYiSthvtLc",
             "plugin": "",
             "plugin_opts": ""
+        },
+        {
+            "tag": "🇨🇷CR | vless | @ConfigsHUB | 15",
+            "type": "vless",
+            "server": "www.tozedmodeon.store",
+            "server_port": 443,
+            "uuid": "11eb2987-5ab8-42f4-a6fb-c4cc66697d7f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zoloft-outline-dishes-youth.trycloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@ZEDMODEON-@ZEDMODEON-@ZEDMODEON",
+                "headers": {
+                    "Host": "zoloft-outline-dishes-youth.trycloudflare.com"
+                }
+            }
         },
         {
             "tag": "🇨🇦CA | vless | @proxystore11 | 14",
