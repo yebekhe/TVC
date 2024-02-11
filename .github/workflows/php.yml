@@ -7,7 +7,7 @@ on:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }} # Use the workflow name and branch/tag as the group
-  cancel-in-progress: true # Cancel any in-progress jobs if a new job is queued
+  cancel-in-progress: false # Cancel any in-progress jobs if a new job is queued
 
     
 jobs:
