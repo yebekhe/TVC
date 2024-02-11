@@ -125,6 +125,7 @@ proxies:
   - {"name":"🇷🇺RU | vmess | @oneclickvpnkeys | 7","type":"vmess","server":"103.113.68.233","port":"8880","cipher":"auto","uuid":"fddb3781-7e15-4731-a933-94db110b4bbc","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"103.113.68.233"}}}
   - {"name":"🇨🇦CA | vmess | @customv2ray | 11","type":"vmess","server":"submehti.karaj68.shop","port":"2087","cipher":"auto","uuid":"db5afae4-ac23-41a6-8378-f307a9a47436","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
+  - {"name":"🇮🇩ID | vmess | @forwardv2ray | 19","type":"vmess","server":"103.173.75.59","port":"8080","cipher":"auto","uuid":"e8782680-c8c2-11ee-b433-205c6d5f5d78","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/@V2RayyNGvpn","headers":{"host":"ba24.ir"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -136,6 +137,7 @@ proxy-groups:
       - '🇷🇺RU | vmess | @oneclickvpnkeys | 7'
       - '🇨🇦CA | vmess | @customv2ray | 11'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇮🇩ID | vmess | @forwardv2ray | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -147,6 +149,7 @@ proxy-groups:
       - '🇷🇺RU | vmess | @oneclickvpnkeys | 7'
       - '🇨🇦CA | vmess | @customv2ray | 11'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇮🇩ID | vmess | @forwardv2ray | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -157,6 +160,7 @@ proxy-groups:
       - '🇷🇺RU | vmess | @oneclickvpnkeys | 7'
       - '🇨🇦CA | vmess | @customv2ray | 11'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇮🇩ID | vmess | @forwardv2ray | 19'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
