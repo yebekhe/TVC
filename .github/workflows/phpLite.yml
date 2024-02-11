@@ -5,12 +5,6 @@ on:
   schedule:
     - cron: '*/21 * * * *'
 
-# Define a concurrency group
-concurrency:
-  group: "TVC"
-  cancel-in-progress: false # Cancel any in-progress jobs if a new job is queued
-
-
 jobs:
   build:
     runs-on: ubuntu-latest
