@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '*/60 * * * *'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }} # Use the workflow name and branch/tag as the group
+  cancel-in-progress: true # Cancel any in-progress jobs if a new job is queued
+
     
 jobs:
   build:
@@ -31,3 +36,4 @@ jobs:
           git add -A
           git commit -m "🚀 Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')"
           git push
+z
