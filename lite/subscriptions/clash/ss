@@ -120,7 +120,6 @@ dns:
 proxies:
   - {"name":"🇳🇱NL | ss | @V2rayCollectorDonate | 19","type":"ss","server":"masting.xyz","port":8080,"password":"XlUFgoOqDlVqlZFD3Js0YA","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇦🇹AT | ss | @OutlineVpnOfficial | 15","type":"ss","server":"212.113.106.243","port":12949,"password":"P2zxXPewlV3BlfqqYiSthvtLc","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB | ss | @forwardv2ray | 19","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +128,6 @@ proxy-groups:
       - FALLBACK
       - '🇳🇱NL | ss | @V2rayCollectorDonate | 19'
       - '🇦🇹AT | ss | @OutlineVpnOfficial | 15'
-      - '🇬🇧GB | ss | @forwardv2ray | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,7 +136,6 @@ proxy-groups:
     proxies:
       - '🇳🇱NL | ss | @V2rayCollectorDonate | 19'
       - '🇦🇹AT | ss | @OutlineVpnOfficial | 15'
-      - '🇬🇧GB | ss | @forwardv2ray | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -146,7 +143,6 @@ proxy-groups:
     proxies:
       - '🇳🇱NL | ss | @V2rayCollectorDonate | 19'
       - '🇦🇹AT | ss | @OutlineVpnOfficial | 15'
-      - '🇬🇧GB | ss | @forwardv2ray | 19'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
