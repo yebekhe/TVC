@@ -108,7 +108,6 @@
                 "URL-TEST",
                 "🇩🇪DE | vless | @ipV2Ray | 15",
                 "🏳️XX | vless | @frev2ray | 1",
-                "🇩🇪DE | vless | @Capoit | 3",
                 "🇸🇬SG | vless | @flyv2ray | 14",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -121,7 +120,6 @@
             "outbounds": [
                 "🇩🇪DE | vless | @ipV2Ray | 15",
                 "🏳️XX | vless | @frev2ray | 1",
-                "🇩🇪DE | vless | @Capoit | 3",
                 "🇸🇬SG | vless | @flyv2ray | 14",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -214,42 +212,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "\/\/\/v2raymask",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @Capoit | 3",
-            "type": "vless",
-            "server": "104.248.134.5",
-            "server_port": 443,
-            "uuid": "cbe86cff-48ff-44ca-949b-3f6e4c03e41e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dnschecker.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "4pwFpFNcO_oJRC40e3xHZrKYnSsF-xTbcgTyEi4Jqz8",
-                    "short_id": "18ee56a6"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
