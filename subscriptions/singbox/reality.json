@@ -106,8 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🏳️XX | vless | @EliV2ray | 0",
-                "🇫🇮FI | vless | @EliV2ray | 10",
+                "🏳️XX | vless | @EliV2ray | 1",
+                "🏳️XX | vless | @EliV2ray | 3",
+                "🇫🇮FI | vless | @EliV2ray | 13",
                 "🇳🇱NL | vless | @NIM_VPN_ir | 8",
                 "🇳🇱NL | vless | @ipV2Ray | 0",
                 "🇩🇪DE | vless | @ipV2Ray | 1",
@@ -185,8 +186,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🏳️XX | vless | @EliV2ray | 0",
-                "🇫🇮FI | vless | @EliV2ray | 10",
+                "🏳️XX | vless | @EliV2ray | 1",
+                "🏳️XX | vless | @EliV2ray | 3",
+                "🇫🇮FI | vless | @EliV2ray | 13",
                 "🇳🇱NL | vless | @NIM_VPN_ir | 8",
                 "🇳🇱NL | vless | @ipV2Ray | 0",
                 "🇩🇪DE | vless | @ipV2Ray | 1",
@@ -280,7 +282,36 @@
             "type": "dns"
         },
         {
-            "tag": "🏳️XX | vless | @EliV2ray | 0",
+            "tag": "🏳️XX | vless | @EliV2ray | 1",
+            "type": "vless",
+            "server": "[2001:41d0:401:3000::3be1]",
+            "server_port": 2083,
+            "uuid": "37405634-5db1-4d2a-a0a1-85d006dbe35a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "streaming.androidcentral.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QBzDikCTIljaAPywseSeEkfvJ0snlAIXmrjTYKz7mQo",
+                    "short_id": "43BB2438"
+                }
+            }
+        },
+        {
+            "tag": "🏳️XX | vless | @EliV2ray | 3",
             "type": "vless",
             "server": "[2001:41d0:801:2000::217c]",
             "server_port": 2083,
@@ -309,7 +340,7 @@
             }
         },
         {
-            "tag": "🇫🇮FI | vless | @EliV2ray | 10",
+            "tag": "🇫🇮FI | vless | @EliV2ray | 13",
             "type": "vless",
             "server": "65.109.203.49",
             "server_port": 22294,
