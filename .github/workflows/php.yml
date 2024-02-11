@@ -4,11 +4,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '*/60 * * * *'
-
-concurrency:
-  group: "TVC"
-  cancel-in-progress: false # Cancel any in-progress jobs if a new job is queued
-
     
 jobs:
   build:
