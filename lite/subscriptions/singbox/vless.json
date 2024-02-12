@@ -143,14 +143,13 @@
                 "🇨🇦CA | vless | @DailyV2RY | 148",
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @lrnbymaa | 5",
-                "🇩🇪DE | vless | @ConfigsHUB | 15",
+                "🇨🇦CA | vless | @ConfigsHUB | 17",
                 "🇨🇦CA | vless | @proxystore11 | 15",
                 "🇳🇱NL | vless | @polproxy | 11",
                 "🇨🇦CA | vless | @Outlinev2rayNG | 8",
                 "🇳🇱NL | vless | @v2rayng_vpnrog | 8",
                 "🇨🇦CA | vless | @v2rayng_config_amin | 3",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
-                "🇮🇷IR | vless | @forwardv2ray | 18",
                 "🏳️XX | vless | @FAKEOFTVC | 0",
                 "🇺🇸US | vless | @mehrosaboran | 20",
                 "🇸🇪SE | vless | @kiava | 8",
@@ -205,14 +204,13 @@
                 "🇨🇦CA | vless | @DailyV2RY | 148",
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @lrnbymaa | 5",
-                "🇩🇪DE | vless | @ConfigsHUB | 15",
+                "🇨🇦CA | vless | @ConfigsHUB | 17",
                 "🇨🇦CA | vless | @proxystore11 | 15",
                 "🇳🇱NL | vless | @polproxy | 11",
                 "🇨🇦CA | vless | @Outlinev2rayNG | 8",
                 "🇳🇱NL | vless | @v2rayng_vpnrog | 8",
                 "🇨🇦CA | vless | @v2rayng_config_amin | 3",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
-                "🇮🇷IR | vless | @forwardv2ray | 18",
                 "🏳️XX | vless | @FAKEOFTVC | 0",
                 "🇺🇸US | vless | @mehrosaboran | 20",
                 "🇸🇪SE | vless | @kiava | 8",
@@ -1239,12 +1237,12 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @ConfigsHUB | 15",
+            "tag": "🇨🇦CA | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "128.140.97.199",
-            "server_port": 52606,
-            "uuid": "bbcac1db-e11c-4e8e-8421-442b910d2231",
-            "flow": "xtls-rprx-vision",
+            "server": "104.18.64.117",
+            "server_port": 2083,
+            "uuid": "f7d1e423-a5e8-4d11-b5c1-01913aab6521",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1253,18 +1251,20 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "sourceforge.net",
+                "server_name": "DE.CountLeon.eu.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "oC_KW2uWbqYBPZ33Ywhkr0N-n2rYDecWwQj87asCl2Y",
-                    "short_id": "f6159ff1"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@x2rayn_vpn",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1411,20 +1411,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇮🇷IR | vless | @forwardv2ray | 18",
-            "type": "vless",
-            "server": "193.151.152.15",
-            "server_port": 8081,
-            "uuid": "44ec988f-c6f1-4fd8-88e6-e8fad6dd221d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {

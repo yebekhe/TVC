@@ -129,6 +129,7 @@
                 "🇺🇸US | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
+                "🇺🇸US | ss | @DeamNet_Proxy | 19",
                 "🇺🇸US | trojan | @oneclickvpnkeys | 4",
                 "🇨🇦CA | vless | @prrofile_purple | 173",
                 "🇨🇦CA | vless | @customv2ray | 9",
@@ -152,7 +153,7 @@
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @lrnbymaa | 5",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇩🇪DE | vless | @ConfigsHUB | 15",
+                "🇨🇦CA | vless | @ConfigsHUB | 17",
                 "🇨🇦CA | vless | @proxystore11 | 15",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
                 "🇳🇱NL | vless | @polproxy | 11",
@@ -161,7 +162,7 @@
                 "🇨🇦CA | vless | @v2rayng_config_amin | 3",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
-                "🇮🇷IR | vless | @forwardv2ray | 18",
+                "🇷🇺RU | vmess | @forwardv2ray | 18",
                 "🏳️XX | vless | @FAKEOFTVC | 0",
                 "🇺🇸US | vless | @mehrosaboran | 20",
                 "🇸🇪SE | vless | @kiava | 8",
@@ -206,6 +207,7 @@
                 "🇺🇸US | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
+                "🇺🇸US | ss | @DeamNet_Proxy | 19",
                 "🇺🇸US | trojan | @oneclickvpnkeys | 4",
                 "🇨🇦CA | vless | @prrofile_purple | 173",
                 "🇨🇦CA | vless | @customv2ray | 9",
@@ -229,7 +231,7 @@
                 "🇨🇦CA | vless | @sinabigo | 5",
                 "🇨🇦CA | vless | @lrnbymaa | 5",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇩🇪DE | vless | @ConfigsHUB | 15",
+                "🇨🇦CA | vless | @ConfigsHUB | 17",
                 "🇨🇦CA | vless | @proxystore11 | 15",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
                 "🇳🇱NL | vless | @polproxy | 11",
@@ -238,7 +240,7 @@
                 "🇨🇦CA | vless | @v2rayng_config_amin | 3",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
-                "🇮🇷IR | vless | @forwardv2ray | 18",
+                "🇷🇺RU | vmess | @forwardv2ray | 18",
                 "🏳️XX | vless | @FAKEOFTVC | 0",
                 "🇺🇸US | vless | @mehrosaboran | 20",
                 "🇸🇪SE | vless | @kiava | 8",
@@ -876,6 +878,16 @@
             }
         },
         {
+            "tag": "🇺🇸US | ss | @DeamNet_Proxy | 19",
+            "type": "shadowsocks",
+            "server": "38.114.114.143",
+            "server_port": 2376,
+            "method": "aes-256-gcm",
+            "password": "faBAoD54k87UJG7",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇺🇸US | trojan | @oneclickvpnkeys | 4",
             "type": "trojan",
             "server": "104.207.157.132",
@@ -1444,12 +1456,12 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇩🇪DE | vless | @ConfigsHUB | 15",
+            "tag": "🇨🇦CA | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "128.140.97.199",
-            "server_port": 52606,
-            "uuid": "bbcac1db-e11c-4e8e-8421-442b910d2231",
-            "flow": "xtls-rprx-vision",
+            "server": "104.18.64.117",
+            "server_port": 2083,
+            "uuid": "f7d1e423-a5e8-4d11-b5c1-01913aab6521",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1458,18 +1470,20 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "sourceforge.net",
+                "server_name": "DE.CountLeon.eu.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "oC_KW2uWbqYBPZ33Ywhkr0N-n2rYDecWwQj87asCl2Y",
-                    "short_id": "f6159ff1"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@x2rayn_vpn",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1655,13 +1669,16 @@
             }
         },
         {
-            "tag": "🇮🇷IR | vless | @forwardv2ray | 18",
-            "type": "vless",
-            "server": "193.151.152.15",
+            "tag": "🇷🇺RU | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "147.45.76.222",
             "server_port": 8081,
-            "uuid": "44ec988f-c6f1-4fd8-88e6-e8fad6dd221d",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "uuid": "ef5f443e-d259-46f1-872a-92bd4ee78962",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
