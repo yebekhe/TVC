@@ -120,6 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇫🇷FR | ss | @DeamNet_Proxy | 19","type":"ss","server":"149.202.82.172","port":8118,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
   - {"name":"🇸🇪SE | ss | @kingofilter | 9","type":"ss","server":"16.16.210.97","port":8080,"password":"q/3DJoB2rYzaBPKQCLl/rcXTj2vGTL8ho0KyW7swEW8=","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
@@ -128,6 +129,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇫🇷FR | ss | @DeamNet_Proxy | 19'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇸🇪SE | ss | @kingofilter | 9'
   - name: URL-TEST
@@ -136,6 +138,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇫🇷FR | ss | @DeamNet_Proxy | 19'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇸🇪SE | ss | @kingofilter | 9'
   - name: FALLBACK
@@ -143,6 +146,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇫🇷FR | ss | @DeamNet_Proxy | 19'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇸🇪SE | ss | @kingofilter | 9'
 rule-providers:
