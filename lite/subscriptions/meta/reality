@@ -120,6 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇩🇪DE | vless | @EliV2ray | 18","type":"vless","server":"128.140.101.103","port":2087,"udp":true,"uuid":"e4527384-4f20-4378-95dc-403996f12588","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"dash.cloudflare.com","reality-opts":{"public-key":"GicA8fPbS9LksttApqa8gzOstomRFncKNoYGLCOqQF8","short-id":"fc805835"}}
   - {"name":"🇩🇪DE | vless | @ipV2Ray | 15","type":"vless","server":"168.119.229.200","port":443,"udp":true,"uuid":"9cfc941b-d243-4dc4-8989-40716165027a","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"greenpepper.ir","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"ET5QqxGsxGR8g4LDn1nXb6NOMrjndaaQa5CE4Rs9mw0","short-id":"cf6c26b3"}}
   - {"name":"🇩🇪DE | vless | @DailyV2RY | 141","type":"vless","server":"104.248.30.140","port":443,"udp":true,"uuid":"8c54ae83-682b-4a8a-b220-f1f7215911ec","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"popapps.host","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"2WzBUhzmjAvsdX26HZqjPXdHwwyobyDdgy-761x9LVI","short-id":"5bf34d64"}}
   - {"name":"🇫🇷FR | vless | @Capital_NET | 41","type":"vless","server":"46.105.218.0","port":16741,"udp":true,"uuid":"d2176467-4879-4beb-94e9-f1fa8177d8e2","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"ea.com","reality-opts":{"public-key":"kp0my80cNyM8TPeU-LbUaU3DSlAnYkbJ9jeWI2WougM","short-id":"6ae860e1"}}
@@ -129,6 +130,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇩🇪DE | vless | @EliV2ray | 18'
       - '🇩🇪DE | vless | @ipV2Ray | 15'
       - '🇩🇪DE | vless | @DailyV2RY | 141'
       - '🇫🇷FR | vless | @Capital_NET | 41'
@@ -138,6 +140,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇩🇪DE | vless | @EliV2ray | 18'
       - '🇩🇪DE | vless | @ipV2Ray | 15'
       - '🇩🇪DE | vless | @DailyV2RY | 141'
       - '🇫🇷FR | vless | @Capital_NET | 41'
@@ -146,6 +149,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇩🇪DE | vless | @EliV2ray | 18'
       - '🇩🇪DE | vless | @ipV2Ray | 15'
       - '🇩🇪DE | vless | @DailyV2RY | 141'
       - '🇫🇷FR | vless | @Capital_NET | 41'
