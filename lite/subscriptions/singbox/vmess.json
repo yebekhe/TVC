@@ -111,7 +111,8 @@
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇺🇸US | vmess | @eliya_chiter0 | 5"
+                "🇳🇱NL | vmess | @forwardv2ray | 18",
+                "🇨🇦CA | vmess | @eliya_chiter0 | 2"
             ]
         },
         {
@@ -123,7 +124,8 @@
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇺🇸US | vmess | @eliya_chiter0 | 5"
+                "🇳🇱NL | vmess | @forwardv2ray | 18",
+                "🇨🇦CA | vmess | @eliya_chiter0 | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -252,11 +254,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @eliya_chiter0 | 5",
+            "tag": "🇳🇱NL | vmess | @forwardv2ray | 18",
             "type": "vmess",
-            "server": "fastly.alipay.ovh",
+            "server": "188.114.96.113",
             "server_port": 80,
-            "uuid": "97d5d17f-1a55-4074-8207-192873e362ed",
+            "uuid": "7022982f-da4c-48c9-c660-b2315abdcf7e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -269,9 +271,43 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/aries",
+                "path": "\/",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @eliya_chiter0 | 2",
+            "type": "vmess",
+            "server": "nelly.homes",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nelly.homes",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "nelly.homes"
                 }
             }
         }
