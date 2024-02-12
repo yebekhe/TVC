@@ -111,8 +111,7 @@
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
-                "🇳🇱NL | vmess | @Cov2ray | 0",
-                "🇨🇦CA | vmess | @ConfigsHUB | 18",
+                "🇺🇸US | vmess | @Cov2ray | 0",
                 "🇨🇦CA | vmess | @Hope_Net | 1",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 5"
@@ -127,8 +126,7 @@
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
-                "🇳🇱NL | vmess | @Cov2ray | 0",
-                "🇨🇦CA | vmess | @ConfigsHUB | 18",
+                "🇺🇸US | vmess | @Cov2ray | 0",
                 "🇨🇦CA | vmess | @Hope_Net | 1",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 5"
@@ -214,9 +212,9 @@
         {
             "tag": "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
             "type": "vmess",
-            "server": "172.67.217.144",
-            "server_port": 80,
-            "uuid": "85674552-ce41-44d9-bb2a-50f76450b3d8",
+            "server": "linde06.indiavideo.sbs",
+            "server_port": 443,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -227,11 +225,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "linde06.indiavideo.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/vmess",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": "172.67.217.144"
+                    "Host": "linde06.indiavideo.sbs"
                 }
             }
         },
@@ -260,7 +268,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vmess | @Cov2ray | 0",
+            "tag": "🇺🇸US | vmess | @Cov2ray | 0",
             "type": "vmess",
             "server": "188.114.96.11",
             "server_port": 80,
@@ -280,40 +288,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vmess | @ConfigsHUB | 18",
-            "type": "vmess",
-            "server": "s2.animationkidsart.ir",
-            "server_port": 443,
-            "uuid": "b4ae5e3b-43a9-4306-b09f-081ed4c75e75",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "napi3.animationkidsart.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/dcsfsrafawfwegarga2r3r2344",
-                "headers": {
-                    "Host": "napi3.animationkidsart.ir"
                 }
             }
         },
