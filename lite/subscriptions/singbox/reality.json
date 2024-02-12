@@ -106,10 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇮FI | vless | @ipV2Ray | 16",
+                "🇫🇮FI | vless | @ipV2Ray | 17",
                 "🏳️XX | vless | @frev2ray | 1",
                 "🏳️XX | vless | @V2rayCollector | 2",
-                "🇷🇴RO | vless | @proxyymeliii | 20",
                 "🇩🇪DE | vless | @flyv2ray | 12",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -121,10 +120,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇮FI | vless | @ipV2Ray | 16",
+                "🇫🇮FI | vless | @ipV2Ray | 17",
                 "🏳️XX | vless | @frev2ray | 1",
                 "🏳️XX | vless | @V2rayCollector | 2",
-                "🇷🇴RO | vless | @proxyymeliii | 20",
                 "🇩🇪DE | vless | @flyv2ray | 12",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -152,11 +150,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇮FI | vless | @ipV2Ray | 16",
+            "tag": "🇫🇮FI | vless | @ipV2Ray | 17",
             "type": "vless",
-            "server": "65.21.180.51",
+            "server": "95.217.208.245",
             "server_port": 443,
-            "uuid": "8f1ce530-8017-40a4-a7f8-890ba0256993",
+            "uuid": "2b2e85fd-fb5f-4050-8af3-dc5b168fdf4e",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -166,7 +164,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "greenpepper.ir",
+                "server_name": "*.gsmarena.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -175,8 +173,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "bJbix2DnMimiLWVBvnQ4s1y84nSA6ebn5V_owZPREA4",
-                    "short_id": "243e05d0"
+                    "public_key": "ghLIwaKG9GWJLEV7PxdHKkW4a37QBfa30A0tufmJ6zw",
+                    "short_id": "849f8532"
                 }
             },
             "transport": {
@@ -254,42 +252,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@Everyday_VPN",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇷🇴RO | vless | @proxyymeliii | 20",
-            "type": "vless",
-            "server": "188.241.240.230",
-            "server_port": 20044,
-            "uuid": "a598099f-5032-475d-8826-3bfac5e042b3",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.speedtest.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "UK7qxWWGfRQcQfwaGpHnqmmqqJBut4jxve8AeDDJ2UI",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "www.speedtest.org",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
