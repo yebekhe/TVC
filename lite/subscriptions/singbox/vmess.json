@@ -106,11 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🏳️XX | vmess | @oneclickvpnkeys | 2",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
+                "🇨🇦CA | vmess | @ConfigsHUB | 15",
                 "🇧🇬BG | vmess | @Hope_Net | 6",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 5"
@@ -120,11 +122,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | vmess | @V2rayCollectorDonate | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🏳️XX | vmess | @oneclickvpnkeys | 2",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
+                "🇨🇦CA | vmess | @ConfigsHUB | 15",
                 "🇧🇬BG | vmess | @Hope_Net | 6",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇫🇷FR | vmess | @eliya_chiter0 | 5"
@@ -148,6 +152,23 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | vmess | @V2rayCollectorDonate | 19",
+            "type": "vmess",
+            "server": "cdn.servemp3.com",
+            "server_port": 2083,
+            "uuid": "fc1ff4f2-cee6-44fb-86cb-d9e177d59cc2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "🇫🇷FR | vmess | @v2ray_outlineir | 0",
@@ -245,6 +266,40 @@
                 "path": "\/",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @ConfigsHUB | 15",
+            "type": "vmess",
+            "server": "zula.ir",
+            "server_port": 2087,
+            "uuid": "afe2fe35-b6c9-4a9d-a8bd-94b4e2167868",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr3.arvcloud.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "fr3.arvcloud.ir"
                 }
             }
         },
