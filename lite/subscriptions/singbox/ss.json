@@ -106,14 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | ss | @OutlineVpnOfficial | 17"
+                "🇸🇪SE | ss | @VmessProtocol | 13",
+                "🇺🇸US | ss | @OutlineVpnOfficial | 17",
+                "🇸🇪SE | ss | @kingofilter | 9"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | ss | @OutlineVpnOfficial | 17"
+                "🇸🇪SE | ss | @VmessProtocol | 13",
+                "🇺🇸US | ss | @OutlineVpnOfficial | 17",
+                "🇸🇪SE | ss | @kingofilter | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,12 +140,32 @@
             "type": "dns"
         },
         {
+            "tag": "🇸🇪SE | ss | @VmessProtocol | 13",
+            "type": "shadowsocks",
+            "server": "16.170.255.208",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "3GzMOT+hfsB4w4PbGqlBwYAOpzamToy4M+51S7X6U34=",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇺🇸US | ss | @OutlineVpnOfficial | 17",
             "type": "shadowsocks",
             "server": "www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
             "server_port": 2443,
             "method": "aes-256-gcm",
             "password": "hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇸🇪SE | ss | @kingofilter | 9",
+            "type": "shadowsocks",
+            "server": "16.16.210.97",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "q\/3DJoB2rYzaBPKQCLl\/rcXTj2vGTL8ho0KyW7swEW8=",
             "plugin": "",
             "plugin_opts": ""
         }
