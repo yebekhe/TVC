@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | vmess | @oneclickvpnkeys | 3 = vmess, 151.101.131.10, 80, username = 97d5d17f-1a55-4074-8207-192873e362ed, ws = true, tls = , vmess-aead = true, ws-path = /aries?ed=2048, ws-headers = Host:"beeline.ru", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @V2rayng_Fast | 0 = vmess, discord.gg, 80, username = 332dd81f-2f68-47e1-b8b0-b63517297816, ws = true, tls = , vmess-aead = true, ws-path = /@vpn_whal?ed=2048, ws-headers = Host:"fastfoodhamid.whaleproject.tech", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | vmess | @oneclickvpnkeys | 3,🇨🇦CA | vmess | @V2rayng_Fast | 0,🇺🇸US | vmess | @v2Line | 6
-URL-TEST = url-test,🇺🇸US | vmess | @oneclickvpnkeys | 3,🇨🇦CA | vmess | @V2rayng_Fast | 0,🇺🇸US | vmess | @v2Line | 6
-FALLBACK = fallback,🇺🇸US | vmess | @oneclickvpnkeys | 3,🇨🇦CA | vmess | @V2rayng_Fast | 0,🇺🇸US | vmess | @v2Line | 6
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @V2rayng_Fast | 0,🇺🇸US | vmess | @v2Line | 6
+URL-TEST = url-test,🇨🇦CA | vmess | @V2rayng_Fast | 0,🇺🇸US | vmess | @v2Line | 6
+FALLBACK = fallback,🇨🇦CA | vmess | @V2rayng_Fast | 0,🇺🇸US | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
