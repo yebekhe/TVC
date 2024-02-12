@@ -108,6 +108,7 @@
                 "URL-TEST",
                 "🇫🇮FI | vless | @ipV2Ray | 16",
                 "🏳️XX | vless | @frev2ray | 1",
+                "🏳️XX | vless | @V2rayCollector | 0",
                 "🇬🇧GB | vless | @v2ray_swhil | 21",
                 "🇷🇴RO | vless | @proxyymeliii | 21",
                 "🇸🇪SE | vless | @kiava | 8",
@@ -122,6 +123,7 @@
             "outbounds": [
                 "🇫🇮FI | vless | @ipV2Ray | 16",
                 "🏳️XX | vless | @frev2ray | 1",
+                "🏳️XX | vless | @V2rayCollector | 0",
                 "🇬🇧GB | vless | @v2ray_swhil | 21",
                 "🇷🇴RO | vless | @proxyymeliii | 21",
                 "🇸🇪SE | vless | @kiava | 8",
@@ -216,6 +218,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "\/\/\/v2raymask",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🏳️XX | vless | @V2rayCollector | 0",
+            "type": "vless",
+            "server": "[2a01:4f9:c010:6fb9::2b]",
+            "server_port": 443,
+            "uuid": "38f30c94-7bb8-4fcc-8574-17fb02677d7e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "gsmarena.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw",
+                    "short_id": "32d7a82d"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Everyday_VPN",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
