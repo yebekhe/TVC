@@ -15,10 +15,11 @@ DIRECT = direct
 🇫🇷FR | trojan | @DirectVPN | 14 = trojan, 15.237.64.235, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇺🇸US | trojan | @oneclickvpnkeys | 6 = trojan, 104.207.157.132, 41896, password = nItd7Ro2A3-akjdhj-Wkfhdw, udp-delay = true, skip-cert-verify = false, ws = false
 🇨🇳CN | trojan | @yaney_01 | 7 = trojan, xibaozi.19890604.day, 10847, password = c1dc3493-2298-44ab-98c1-4abccbc350d1, udp-delay = true, skip-cert-verify = false, sni = cloudflare.node-ssl.cdn-alibaba.com, ws = false
+🇬🇧GB | trojan | @forwardv2ray | 18 = trojan, 45.76.130.173, 443, password = wkmY1R4EcP, udp-delay = true, skip-cert-verify = true, sni = z-v2-003289.kailib.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 14,🇺🇸US | trojan | @oneclickvpnkeys | 6,🇨🇳CN | trojan | @yaney_01 | 7
-URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 14,🇺🇸US | trojan | @oneclickvpnkeys | 6,🇨🇳CN | trojan | @yaney_01 | 7
-FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 14,🇺🇸US | trojan | @oneclickvpnkeys | 6,🇨🇳CN | trojan | @yaney_01 | 7
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 14,🇺🇸US | trojan | @oneclickvpnkeys | 6,🇨🇳CN | trojan | @yaney_01 | 7,🇬🇧GB | trojan | @forwardv2ray | 18
+URL-TEST = url-test,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 14,🇺🇸US | trojan | @oneclickvpnkeys | 6,🇨🇳CN | trojan | @yaney_01 | 7,🇬🇧GB | trojan | @forwardv2ray | 18
+FALLBACK = fallback,🇫🇷FR | trojan | @PrivateVPNs | 15,🇫🇷FR | trojan | @DirectVPN | 14,🇺🇸US | trojan | @oneclickvpnkeys | 6,🇨🇳CN | trojan | @yaney_01 | 7,🇬🇧GB | trojan | @forwardv2ray | 18
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
