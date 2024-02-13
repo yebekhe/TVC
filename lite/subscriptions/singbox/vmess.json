@@ -110,12 +110,11 @@
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
-                "🇨🇦CA | vmess | @proxyymeliii | 16",
                 "🇩🇪DE | vmess | @v2ray1_ng | 7",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
+                "🇨🇦CA | vmess | @ConfigsHUB | 16",
                 "🏳️XX | vmess | @Hope_Net | 5",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇨🇦CA | vmess | @forwardv2ray | 17",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 2"
             ]
         },
@@ -127,12 +126,11 @@
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
-                "🇨🇦CA | vmess | @proxyymeliii | 16",
                 "🇩🇪DE | vmess | @v2ray1_ng | 7",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
+                "🇨🇦CA | vmess | @ConfigsHUB | 16",
                 "🏳️XX | vmess | @Hope_Net | 5",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇨🇦CA | vmess | @forwardv2ray | 17",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -248,30 +246,6 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @proxyymeliii | 16",
-            "type": "vmess",
-            "server": "23.227.38.135",
-            "server_port": 2086,
-            "uuid": "49dd3dfb-eda0-4dde-d636-35b846a71a5c",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
             "tag": "🇩🇪DE | vmess | @v2ray1_ng | 7",
             "type": "vmess",
             "server": "49.12.109.46",
@@ -313,6 +287,40 @@
             }
         },
         {
+            "tag": "🇨🇦CA | vmess | @ConfigsHUB | 16",
+            "type": "vmess",
+            "server": "vip2323.cfd",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vip2323.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "vip2323.cfd"
+                }
+            }
+        },
+        {
             "tag": "🏳️XX | vmess | @Hope_Net | 5",
             "type": "vmess",
             "server": "127.0.0.1",
@@ -350,40 +358,6 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "ca2.xv2ray.net"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vmess | @forwardv2ray | 17",
-            "type": "vmess",
-            "server": "zula.ir",
-            "server_port": 2087,
-            "uuid": "afe2fe35-b6c9-4a9d-a8bd-94b4e2167868",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "arv.aticloud.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "arv.aticloud.ir"
                 }
             }
         },
