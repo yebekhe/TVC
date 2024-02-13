@@ -111,9 +111,9 @@
                 "🇳🇱NL | vmess | @oneclickvpnkeys | 9",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 1",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
-                "🇨🇦CA | vmess | @Hope_Net | 3",
+                "🇨🇦CA | vmess | @ConfigsHUB | 18",
+                "🇸🇬SG | vmess | @Hope_Net | 3",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇫🇮FI | vmess | @forwardv2ray | 19",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 2"
             ]
         },
@@ -126,9 +126,9 @@
                 "🇳🇱NL | vmess | @oneclickvpnkeys | 9",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 1",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
-                "🇨🇦CA | vmess | @Hope_Net | 3",
+                "🇨🇦CA | vmess | @ConfigsHUB | 18",
+                "🇸🇬SG | vmess | @Hope_Net | 3",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇫🇮FI | vmess | @forwardv2ray | 19",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -268,11 +268,35 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 3",
+            "tag": "🇨🇦CA | vmess | @ConfigsHUB | 18",
             "type": "vmess",
-            "server": "172.66.45.41",
-            "server_port": 2053,
-            "uuid": "06195b5b-3815-4a07-96f7-47eefbb1b143",
+            "server": "104.17.25.1",
+            "server_port": 80,
+            "uuid": "83c19463-f966-4adb-a7d8-b127825ffab2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "104.17.25.1"
+                }
+            }
+        },
+        {
+            "tag": "🇸🇬SG | vmess | @Hope_Net | 3",
+            "type": "vmess",
+            "server": "sg2-full.privateip.net",
+            "server_port": 443,
+            "uuid": "83e6db42-a0a4-4281-bdc6-7a6e161d1380",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -285,7 +309,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "warp-sub.pages.dev",
+                "server_name": "sg2-full.privateip.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -295,9 +319,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/urnxewzvh.site:443\/kwhmvws",
+                "path": "\/RACEVPN",
                 "headers": {
-                    "Host": "warp-sub.pages.dev"
+                    "Host": "sg2-full.privateip.net"
                 }
             }
         },
@@ -323,40 +347,6 @@
                 "headers": {
                     "Host": "ca2.xv2ray.net"
                 }
-            }
-        },
-        {
-            "tag": "🇫🇮FI | vmess | @forwardv2ray | 19",
-            "type": "vmess",
-            "server": "s3.hiddenguard.top",
-            "server_port": 443,
-            "uuid": "31470020-c0cd-469e-96bb-94f964acd5e5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "s3.hiddenguard.top",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "88d5erUH1bFvMWsH8SeAYv",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
