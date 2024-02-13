@@ -112,8 +112,7 @@
                 "🇳🇱NL | vmess | @oneclickvpnkeys | 5",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
-                "🇨🇦CA | vmess | @ConfigsHUB | 19",
-                "🏳️XX | vmess | @Hope_Net | 7",
+                "🇸🇬SG | vmess | @Hope_Net | 6",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 2"
             ]
@@ -128,8 +127,7 @@
                 "🇳🇱NL | vmess | @oneclickvpnkeys | 5",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
-                "🇨🇦CA | vmess | @ConfigsHUB | 19",
-                "🏳️XX | vmess | @Hope_Net | 7",
+                "🇸🇬SG | vmess | @Hope_Net | 6",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 2"
             ],
@@ -304,11 +302,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @ConfigsHUB | 19",
+            "tag": "🇸🇬SG | vmess | @Hope_Net | 6",
             "type": "vmess",
-            "server": "104.20.231.30",
-            "server_port": 80,
-            "uuid": "7022982f-da4c-48c9-c660-b2315abdcf7e",
+            "server": "sg2-full.privateip.net",
+            "server_port": 443,
+            "uuid": "83e6db42-a0a4-4281-bdc6-7a6e161d1380",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -319,29 +317,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "sg2-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/RACEVPN",
                 "headers": {
-                    "Host": ""
+                    "Host": "sg2-full.privateip.net"
                 }
-            }
-        },
-        {
-            "tag": "🏳️XX | vmess | @Hope_Net | 7",
-            "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "aabcabc-caba-abca-cdba-acbabccbbcaa",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
