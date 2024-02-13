@@ -13,11 +13,12 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇬🇧GB | ss | @VmessProtocol | 13 = ss, 51.142.156.170, 54791, encrypt-method = chacha20-ietf-poly1305, password = bHGU0wywczsLJN5l7FPdzu
 🇺🇸US | ss | @OutlineVpnOfficial | 17 = ss, www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 2443, encrypt-method = aes-256-gcm, password = hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=
+🇬🇧GB | ss | @forwardv2ray | 19 = ss, series-a2.samanehha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = mps3FwmDjLrWaOVg
 🇸🇪SE | ss | @kingofilter | 9 = ss, 16.16.210.97, 8080, encrypt-method = chacha20-ietf-poly1305, password = q/3DJoB2rYzaBPKQCLl/rcXTj2vGTL8ho0KyW7swEW8=
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | ss | @VmessProtocol | 13,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇸🇪SE | ss | @kingofilter | 9
-URL-TEST = url-test,🇬🇧GB | ss | @VmessProtocol | 13,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇸🇪SE | ss | @kingofilter | 9
-FALLBACK = fallback,🇬🇧GB | ss | @VmessProtocol | 13,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇸🇪SE | ss | @kingofilter | 9
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | ss | @VmessProtocol | 13,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇬🇧GB | ss | @forwardv2ray | 19,🇸🇪SE | ss | @kingofilter | 9
+URL-TEST = url-test,🇬🇧GB | ss | @VmessProtocol | 13,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇬🇧GB | ss | @forwardv2ray | 19,🇸🇪SE | ss | @kingofilter | 9
+FALLBACK = fallback,🇬🇧GB | ss | @VmessProtocol | 13,🇺🇸US | ss | @OutlineVpnOfficial | 17,🇬🇧GB | ss | @forwardv2ray | 19,🇸🇪SE | ss | @kingofilter | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
