@@ -109,7 +109,10 @@
                 "🇫🇮FI | vless | @ipV2Ray | 17",
                 "🏳️XX | vless | @frev2ray | 1",
                 "🏳️XX | vless | @V2rayCollector | 2",
+                "🇷🇴RO | vless | @proxyymeliii | 21",
+                "🇩🇪DE | vless | @Capital_NET | 39",
                 "🇳🇱NL | vless | @flyv2ray | 14",
+                "🇩🇪DE | vless | @forwardv2ray | 7",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -122,7 +125,10 @@
                 "🇫🇮FI | vless | @ipV2Ray | 17",
                 "🏳️XX | vless | @frev2ray | 1",
                 "🏳️XX | vless | @V2rayCollector | 2",
+                "🇷🇴RO | vless | @proxyymeliii | 21",
+                "🇩🇪DE | vless | @Capital_NET | 39",
                 "🇳🇱NL | vless | @flyv2ray | 14",
+                "🇩🇪DE | vless | @forwardv2ray | 7",
                 "🇸🇪SE | vless | @kiava | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -256,6 +262,71 @@
             }
         },
         {
+            "tag": "🇷🇴RO | vless | @proxyymeliii | 21",
+            "type": "vless",
+            "server": "188.241.240.230",
+            "server_port": 20044,
+            "uuid": "a598099f-5032-475d-8826-3bfac5e042b3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UK7qxWWGfRQcQfwaGpHnqmmqqJBut4jxve8AeDDJ2UI",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "www.speedtest.org",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @Capital_NET | 39",
+            "type": "vless",
+            "server": "four.felinetest.site",
+            "server_port": 443,
+            "uuid": "fbe02c0b-775f-4431-8615-a9497255c876",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "none.felinetest.site",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
+                    "short_id": "6f9deca7"
+                }
+            }
+        },
+        {
             "tag": "🇳🇱NL | vless | @flyv2ray | 14",
             "type": "vless",
             "server": "152.42.132.236",
@@ -281,6 +352,42 @@
                     "enabled": true,
                     "public_key": "eS374Xks1P-TLKV_pNaRPJNZfQKrMTLFvacPWPGVlFw",
                     "short_id": "e14a3c0d"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 7",
+            "type": "vless",
+            "server": "195.201.91.198",
+            "server_port": 443,
+            "uuid": "021e1111-e6d9-4f6c-a1b8-03a70b6e4540",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mail.nareezacademy.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Kk-B3428i3QXD1CCpyRPImaMUkBNG6E4adIEo-G4RmQ",
+                    "short_id": "23e8beee"
                 }
             },
             "transport": {
