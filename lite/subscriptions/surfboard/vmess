@@ -11,15 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇨🇦CA | vmess | @DeamNet_Proxy | 19 = vmess, 104.20.39.186, 443, username = 441da342-ce90-441e-bff9-d2ceb55e68ca, ws = true, tls = 1, vmess-aead = true, ws-path = /ivideos.sbs/linkws, ws-headers = Host:"vmess.taxar71054.workers.dev", skip-cert-verify = true, tfo = false
 🇳🇱NL | vmess | @oneclickvpnkeys | 5 = vmess, 188.114.97.53, 443, username = 8c929251-406f-4b32-9173-07ccd242cb58, ws = true, tls = 1, vmess-aead = true, ws-path = /vmess, ws-headers = Host:"fr1-vmess.sshmax.xyz", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @V2rayng_Fast | 0 = vmess, discord.gg, 80, username = 332dd81f-2f68-47e1-b8b0-b63517297816, ws = true, tls = , vmess-aead = true, ws-path = /@vpn_whal?ed=2048, ws-headers = Host:"fastfoodhamid.whaleproject.tech", skip-cert-verify = true, tfo = false
-🇸🇬SG | vmess | @Hope_Net | 6 = vmess, sg2-full.privateip.net, 443, username = 83e6db42-a0a4-4281-bdc6-7a6e161d1380, ws = true, tls = 1, vmess-aead = true, ws-path = /RACEVPN, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇨🇦CA | vmess | @Hope_Net | 7 = vmess, 172.66.46.215, 8443, username = 06195b5b-3815-4a07-96f7-47eefbb1b143, ws = true, tls = 1, vmess-aead = true, ws-path = /urnxewzvh.site:443/kwhmvws, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇳🇱NL | vmess | @oneclickvpnkeys | 5,🇨🇦CA | vmess | @V2rayng_Fast | 0,🇸🇬SG | vmess | @Hope_Net | 6,🇺🇸US | vmess | @v2Line | 6
-URL-TEST = url-test,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇳🇱NL | vmess | @oneclickvpnkeys | 5,🇨🇦CA | vmess | @V2rayng_Fast | 0,🇸🇬SG | vmess | @Hope_Net | 6,🇺🇸US | vmess | @v2Line | 6
-FALLBACK = fallback,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇳🇱NL | vmess | @oneclickvpnkeys | 5,🇨🇦CA | vmess | @V2rayng_Fast | 0,🇸🇬SG | vmess | @Hope_Net | 6,🇺🇸US | vmess | @v2Line | 6
+MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | vmess | @oneclickvpnkeys | 5,🇨🇦CA | vmess | @V2rayng_Fast | 0,🇨🇦CA | vmess | @Hope_Net | 7,🇺🇸US | vmess | @v2Line | 6
+URL-TEST = url-test,🇳🇱NL | vmess | @oneclickvpnkeys | 5,🇨🇦CA | vmess | @V2rayng_Fast | 0,🇨🇦CA | vmess | @Hope_Net | 7,🇺🇸US | vmess | @v2Line | 6
+FALLBACK = fallback,🇳🇱NL | vmess | @oneclickvpnkeys | 5,🇨🇦CA | vmess | @V2rayng_Fast | 0,🇨🇦CA | vmess | @Hope_Net | 7,🇺🇸US | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
