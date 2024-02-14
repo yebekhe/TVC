@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | vless | @EliV2ray | 3",
+                "🇨🇦CA | vless | @EliV2ray | 1",
                 "🇨🇦CA | vless | @Parsashonam | 5",
                 "🇨🇦CA | vless | @XsV2ray | 16",
                 "🇬🇧GB | vless | @VlessConfig | 15",
@@ -128,7 +128,7 @@
                 "🇺🇸US | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇨🇦CA | vless | @V2rayNGn | 32",
-                "🇨🇦CA | vless | @prrofile_purple | 180",
+                "🇮🇷IR | vless | @prrofile_purple | 171",
                 "🇨🇦CA | vless | @customv2ray | 9",
                 "🇨🇦CA | vless | @UnlimitedDev | 5",
                 "🏳️XX | vless | @vmessorg | 6",
@@ -142,11 +142,11 @@
                 "🇨🇦CA | vless | @MsV2ray | 14",
                 "🇩🇪DE | vless | @v2ray1_ng | 5",
                 "🇮🇷IR | vless | @vless_vmess | 7",
-                "🇩🇪DE | vless | @V2RayTz | 11",
+                "🇩🇪DE | vless | @V2RayTz | 12",
                 "🇨🇦CA | vless | @DailyV2RY | 159",
                 "🇺🇸US | vless | @sinabigo | 4",
                 "🏳️XX | vless | @lrnbymaa | 6",
-                "🇨🇦CA | vless | @ConfigsHUB | 9",
+                "🇨🇦CA | vless | @ConfigsHUB | 18",
                 "🇳🇱NL | vless | @proxystore11 | 15",
                 "🇨🇦CA | vless | @polproxy | 12",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 10",
@@ -173,7 +173,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | vless | @EliV2ray | 3",
+                "🇨🇦CA | vless | @EliV2ray | 1",
                 "🇨🇦CA | vless | @Parsashonam | 5",
                 "🇨🇦CA | vless | @XsV2ray | 16",
                 "🇬🇧GB | vless | @VlessConfig | 15",
@@ -195,7 +195,7 @@
                 "🇺🇸US | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇨🇦CA | vless | @V2rayNGn | 32",
-                "🇨🇦CA | vless | @prrofile_purple | 180",
+                "🇮🇷IR | vless | @prrofile_purple | 171",
                 "🇨🇦CA | vless | @customv2ray | 9",
                 "🇨🇦CA | vless | @UnlimitedDev | 5",
                 "🏳️XX | vless | @vmessorg | 6",
@@ -209,11 +209,11 @@
                 "🇨🇦CA | vless | @MsV2ray | 14",
                 "🇩🇪DE | vless | @v2ray1_ng | 5",
                 "🇮🇷IR | vless | @vless_vmess | 7",
-                "🇩🇪DE | vless | @V2RayTz | 11",
+                "🇩🇪DE | vless | @V2RayTz | 12",
                 "🇨🇦CA | vless | @DailyV2RY | 159",
                 "🇺🇸US | vless | @sinabigo | 4",
                 "🏳️XX | vless | @lrnbymaa | 6",
-                "🇨🇦CA | vless | @ConfigsHUB | 9",
+                "🇨🇦CA | vless | @ConfigsHUB | 18",
                 "🇳🇱NL | vless | @proxystore11 | 15",
                 "🇨🇦CA | vless | @polproxy | 12",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 10",
@@ -256,7 +256,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | vless | @EliV2ray | 3",
+            "tag": "🇨🇦CA | vless | @EliV2ray | 1",
             "type": "vless",
             "server": "172.66.44.158",
             "server_port": 80,
@@ -486,8 +486,8 @@
         {
             "tag": "🇨🇦CA | vless | @ARv2ray | 14",
             "type": "vless",
-            "server": "ftpdeb.Com",
-            "server_port": 443,
+            "server": "check-host.net",
+            "server_port": 80,
             "uuid": "telegram-id-ArV2ray",
             "flow": "",
             "packet_encoding": "xudp",
@@ -496,22 +496,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "FtPdeb.Com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+                "headers": {
+                    "Host": "check-host.net"
+                }
             }
         },
         {
@@ -883,24 +873,17 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @prrofile_purple | 180",
+            "tag": "🇮🇷IR | vless | @prrofile_purple | 171",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 8080,
-            "uuid": "SVNTEAMa",
+            "server": "37.32.7.236",
+            "server_port": 4444,
+            "uuid": "f5daa9f0-eb6b-4ce0-a4ab-4e99339ed42d",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
             }
         },
         {
@@ -1213,7 +1196,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @V2RayTz | 11",
+            "tag": "🇩🇪DE | vless | @V2RayTz | 12",
             "type": "vless",
             "server": "49.13.149.114",
             "server_port": 443,
@@ -1312,11 +1295,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @ConfigsHUB | 9",
+            "tag": "🇨🇦CA | vless | @ConfigsHUB | 18",
             "type": "vless",
-            "server": "cdn.user.com",
+            "server": "check-host.net",
             "server_port": 80,
-            "uuid": "bda4be04-48bf-4df1-aaf2-6d42522eab6b",
+            "uuid": "5563d1dc-3e84-4e4b-e569-ecfb96e8732a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1326,9 +1309,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/@client-proo-@client-proo-@client-proo-@client-proo-@client-proo",
                 "headers": {
-                    "Host": "cdn.user.com"
+                    "Host": "check-host.net"
                 }
             }
         },
