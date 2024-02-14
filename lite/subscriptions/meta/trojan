@@ -120,39 +120,39 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🏳️XX | trojan | @V2rayCollectorDonate | 19","type":"trojan","server":"server.cactusrobot.ir","port":8814,"udp":false,"password":"AXpad_TiGkIWp-sfixRAug","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇮🇪IE | trojan | @PrivateVPNs | 16","type":"trojan","server":"34.254.79.22","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇺🇸US | trojan | @DirectVPN | 16","type":"trojan","server":"52.23.31.58","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇨🇳CN | trojan | @yaney_01 | 7","type":"trojan","server":"xibaozi.19890604.day","port":10847,"udp":false,"password":"c1dc3493-2298-44ab-98c1-4abccbc350d1","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cloudflare.node-ssl.cdn-alibaba.com"}
+  - {"name":"🇨🇦CA | trojan | @forwardv2ray | 18","type":"trojan","server":"162.159.1.94","port":443,"udp":false,"password":"7397ca10-3fa4-459c-9f58-330800df292b","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"6exEa2RpxrVmgn.lowerpingservise.ir"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🏳️XX | trojan | @V2rayCollectorDonate | 19'
       - '🇮🇪IE | trojan | @PrivateVPNs | 16'
       - '🇺🇸US | trojan | @DirectVPN | 16'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
+      - '🇨🇦CA | trojan | @forwardv2ray | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🏳️XX | trojan | @V2rayCollectorDonate | 19'
       - '🇮🇪IE | trojan | @PrivateVPNs | 16'
       - '🇺🇸US | trojan | @DirectVPN | 16'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
+      - '🇨🇦CA | trojan | @forwardv2ray | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🏳️XX | trojan | @V2rayCollectorDonate | 19'
       - '🇮🇪IE | trojan | @PrivateVPNs | 16'
       - '🇺🇸US | trojan | @DirectVPN | 16'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
+      - '🇨🇦CA | trojan | @forwardv2ray | 18'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}

@@ -113,9 +113,8 @@
                 "🇳🇱NL | vmess | @v2ray1_ng | 3",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
                 "🇬🇧GB | vmess | @proxystore11 | 13",
-                "🇨🇦CA | vmess | @Hope_Net | 16",
+                "🏳️XX | vmess | @Hope_Net | 17",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇵🇹PT | vmess | @forwardv2ray | 19",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 1"
             ]
         },
@@ -130,9 +129,8 @@
                 "🇳🇱NL | vmess | @v2ray1_ng | 3",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
                 "🇬🇧GB | vmess | @proxystore11 | 13",
-                "🇨🇦CA | vmess | @Hope_Net | 16",
+                "🏳️XX | vmess | @Hope_Net | 17",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇵🇹PT | vmess | @forwardv2ray | 19",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -303,11 +301,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 16",
+            "tag": "🏳️XX | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "104.21.6.75",
-            "server_port": 443,
-            "uuid": "1477c801-1f2f-4db2-8683-cff2b1151ebe",
+            "server": "channel.iran-mehr14.ir",
+            "server_port": 8080,
+            "uuid": "c4bb3b21-81b7-4a0c-8f0d-36d6b865c926",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -318,22 +316,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "frmgrpc.mainssh.xyz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "vmessgrpc",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/RL842FfWrFLaTjhd",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
@@ -357,30 +345,6 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "ca2.xv2ray.net"
-                }
-            }
-        },
-        {
-            "tag": "🇵🇹PT | vmess | @forwardv2ray | 19",
-            "type": "vmess",
-            "server": "94.131.10.135",
-            "server_port": 2095,
-            "uuid": "e2021c91-6e29-49d6-9641-14a8f2600e05",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vmess",
-                "headers": {
-                    "Host": ""
                 }
             }
         },
