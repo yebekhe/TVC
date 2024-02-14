@@ -110,8 +110,6 @@
                 "🏳️XX | vless | @frev2ray | 1",
                 "🇩🇪DE | vless | @proxy_kafee | 1",
                 "🏳️XX | vless | @V2rayCollector | 2",
-                "🇫🇮FI | vless | @ConfigsHUB | 18",
-                "🇩🇪DE | vless | @flyv2ray | 14",
                 "🇸🇪SE | vless | @kiava | 7",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -125,8 +123,6 @@
                 "🏳️XX | vless | @frev2ray | 1",
                 "🇩🇪DE | vless | @proxy_kafee | 1",
                 "🏳️XX | vless | @V2rayCollector | 2",
-                "🇫🇮FI | vless | @ConfigsHUB | 18",
-                "🇩🇪DE | vless | @flyv2ray | 14",
                 "🇸🇪SE | vless | @kiava | 7",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
@@ -290,78 +286,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@Everyday_VPN",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇫🇮FI | vless | @ConfigsHUB | 18",
-            "type": "vless",
-            "server": "s1.norbertpro.site",
-            "server_port": 2053,
-            "uuid": "fc6ef02f-aaca-477d-8609-c7c1537f8a6f",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "s12.norbertpro.site",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "uvwIRRB8ZUmTdcXmRkonO6Dh23b0RDa2iPRgWQUMFBw",
-                    "short_id": "7e4444ac"
-                }
-            },
-            "transport": {
-                "type": "http",
-                "host": [
-                    "s12.norbertpro.site"
-                ],
-                "path": "\/"
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @flyv2ray | 14",
-            "type": "vless",
-            "server": "159.223.17.211",
-            "server_port": 443,
-            "uuid": "82726ccd-17a3-4827-b06c-8da69b973602",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dnschecker.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "-2iaaZuCAi7I9r4680lLC8p4krVTtEFq2xj6ylvpJUc",
-                    "short_id": "47890dea"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
