@@ -11,13 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇨🇦CA | vmess | @customv2ray | 7 = vmess, server32.beheshtbaneh.com, 8880, username = 044ba8ed-7285-472a-bc14-fb91dc6be4c9, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @V2rayng_Fast | 4 = vmess, discord.gg, 80, username = 332dd81f-2f68-47e1-b8b0-b63517297816, ws = true, tls = , vmess-aead = true, ws-path = /@vpn_whal?ed=2048, ws-headers = Host:"fastfoodhamid.whaleproject.tech", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @eliya_chiter0 | 3 = vmess, 172.67.71.160, 443, username = 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"obdii.cfd", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @V2rayng_Fast | 4,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 3
-URL-TEST = url-test,🇨🇦CA | vmess | @V2rayng_Fast | 4,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 3
-FALLBACK = fallback,🇨🇦CA | vmess | @V2rayng_Fast | 4,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 3
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @customv2ray | 7,🇨🇦CA | vmess | @V2rayng_Fast | 4,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 3
+URL-TEST = url-test,🇨🇦CA | vmess | @customv2ray | 7,🇨🇦CA | vmess | @V2rayng_Fast | 4,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 3
+FALLBACK = fallback,🇨🇦CA | vmess | @customv2ray | 7,🇨🇦CA | vmess | @V2rayng_Fast | 4,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @eliya_chiter0 | 3
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
