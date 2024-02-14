@@ -120,47 +120,51 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇩🇪DE | vless | @ipV2Ray | 17","type":"vless","server":"64.227.117.48","port":443,"udp":true,"uuid":"1a43202e-c14a-4f5b-8b06-f752ffb6d12e","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"vindu.agency","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"8s2_n7pYiHwWJ_ZAB0RgPUaqO0_rCe3RykFPJtIC6UI","short-id":"c77cf6ff"}}
+  - {"name":"🇩🇪DE | vless | @ipV2Ray | 19","type":"vless","server":"64.227.117.48","port":443,"udp":true,"uuid":"1a43202e-c14a-4f5b-8b06-f752ffb6d12e","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"vindu.agency","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"8s2_n7pYiHwWJ_ZAB0RgPUaqO0_rCe3RykFPJtIC6UI","short-id":"c77cf6ff"}}
   - {"name":"🏳️XX | vless | @V2rayCollector | 1","type":"vless","server":"[2a01:4f9:c010:6fb9::2b]","port":443,"udp":true,"uuid":"38f30c94-7bb8-4fcc-8574-17fb02677d7e","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"gsmarena.com","grpc-opts":{"grpc-service-name":"@Everyday_VPN"},"reality-opts":{"public-key":"AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw","short-id":"32d7a82d"}}
   - {"name":"🇩🇪DE | vless | @v2ray1_ng | 3","type":"vless","server":"161.35.17.40","port":443,"udp":true,"uuid":"f876f795-fced-4604-b190-4db485813c89","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"feat.agency","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"RdG5aIJYY3zhj4rwssViQaohx4xKm4aT5Hsd9mMu2x4","short-id":"015aab49"}}
   - {"name":"🇩🇪DE | vless | @V2RayTz | 15","type":"vless","server":"49.13.149.114","port":443,"udp":true,"uuid":"021e1111-e6d9-4f6c-a1b8-03a70b6e4540","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.nareezacademy.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"gqIyM6we26p1RDqHL-X9iB7OEkNVTf5M1-hZ85bukSI","short-id":"23e8beee"}}
   - {"name":"🇫🇷FR | vless | @Capital_NET | 41","type":"vless","server":"46.105.218.0","port":16741,"udp":true,"uuid":"d2176467-4879-4beb-94e9-f1fa8177d8e2","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"ea.com","reality-opts":{"public-key":"kp0my80cNyM8TPeU-LbUaU3DSlAnYkbJ9jeWI2WougM","short-id":"6ae860e1"}}
   - {"name":"🇸🇪SE | vless | @kiava | 7","type":"vless","server":"ec2-51-20-7-239.eu-north-1.compute.amazonaws.com","port":13393,"udp":true,"uuid":"4d310081-0502-488a-a26c-abecb7dc0020","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"E17XtBQAZVa_636Qjsbyn8rySgv9ipf8-urCDe2pCk4","short-id":"6ba85179e30d4fc2"}}
+  - {"name":"🇩🇪DE | vless | @proxy_mtm | 4","type":"vless","server":"49.13.202.244","port":443,"udp":true,"uuid":"021e1111-e6d9-4f6c-a1b8-03a70b6e4540","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"albasir.in","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"i0qcM56ezyBF1UMvSAfSEBGA0wGmp6tUH5lnt-dFP10","short-id":"23e8beee"}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | vless | @ipV2Ray | 17'
+      - '🇩🇪DE | vless | @ipV2Ray | 19'
       - '🏳️XX | vless | @V2rayCollector | 1'
       - '🇩🇪DE | vless | @v2ray1_ng | 3'
       - '🇩🇪DE | vless | @V2RayTz | 15'
       - '🇫🇷FR | vless | @Capital_NET | 41'
       - '🇸🇪SE | vless | @kiava | 7'
+      - '🇩🇪DE | vless | @proxy_mtm | 4'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | vless | @ipV2Ray | 17'
+      - '🇩🇪DE | vless | @ipV2Ray | 19'
       - '🏳️XX | vless | @V2rayCollector | 1'
       - '🇩🇪DE | vless | @v2ray1_ng | 3'
       - '🇩🇪DE | vless | @V2RayTz | 15'
       - '🇫🇷FR | vless | @Capital_NET | 41'
       - '🇸🇪SE | vless | @kiava | 7'
+      - '🇩🇪DE | vless | @proxy_mtm | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | vless | @ipV2Ray | 17'
+      - '🇩🇪DE | vless | @ipV2Ray | 19'
       - '🏳️XX | vless | @V2rayCollector | 1'
       - '🇩🇪DE | vless | @v2ray1_ng | 3'
       - '🇩🇪DE | vless | @V2RayTz | 15'
       - '🇫🇷FR | vless | @Capital_NET | 41'
       - '🇸🇪SE | vless | @kiava | 7'
+      - '🇩🇪DE | vless | @proxy_mtm | 4'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
