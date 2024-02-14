@@ -148,11 +148,10 @@
                 "🇮🇷IR | vless | @vless_vmess | 7",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
                 "🇬🇧GB | ss | @VmessProtocol | 14",
-                "🇨🇦CA | vless | @DailyV2RY | 143",
                 "🇺🇸US | vless | @sinabigo | 4",
                 "🏳️XX | vless | @lrnbymaa | 5",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇨🇦CA | vless | @ConfigsHUB | 8",
+                "🇨🇦CA | vmess | @ConfigsHUB | 19",
                 "🇳🇱NL | vless | @proxystore11 | 15",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
                 "🏳️XX | vmess | @Hope_Net | 12",
@@ -164,7 +163,7 @@
                 "🇨🇦CA | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇩🇪DE | vless | @flyv2ray | 14",
-                "🇨🇦CA | vmess | @forwardv2ray | 18",
+                "🇳🇱NL | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @https_config_injector | 13",
                 "🇨🇷CR | vless | @mehrosaboran | 6",
                 "🇸🇪SE | vless | @kiava | 7",
@@ -229,11 +228,10 @@
                 "🇮🇷IR | vless | @vless_vmess | 7",
                 "🇳🇱NL | vmess | @Cov2ray | 0",
                 "🇬🇧GB | ss | @VmessProtocol | 14",
-                "🇨🇦CA | vless | @DailyV2RY | 143",
                 "🇺🇸US | vless | @sinabigo | 4",
                 "🏳️XX | vless | @lrnbymaa | 5",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇨🇦CA | vless | @ConfigsHUB | 8",
+                "🇨🇦CA | vmess | @ConfigsHUB | 19",
                 "🇳🇱NL | vless | @proxystore11 | 15",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
                 "🏳️XX | vmess | @Hope_Net | 12",
@@ -245,7 +243,7 @@
                 "🇨🇦CA | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇩🇪DE | vless | @flyv2ray | 14",
-                "🇨🇦CA | vmess | @forwardv2ray | 18",
+                "🇳🇱NL | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @https_config_injector | 13",
                 "🇨🇷CR | vless | @mehrosaboran | 6",
                 "🇸🇪SE | vless | @kiava | 7",
@@ -1344,37 +1342,6 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇦CA | vless | @DailyV2RY | 143",
-            "type": "vless",
-            "server": "104.31.16.133",
-            "server_port": 443,
-            "uuid": "b75b3034-36ab-4979-beae-3d02db1b11ec",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "always-online1.lp-airdrop.top",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "always-online1.lp-airdrop.top"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | vless | @sinabigo | 4",
             "type": "vless",
             "server": "141.101.113.110",
@@ -1427,23 +1394,36 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇦CA | vless | @ConfigsHUB | 8",
-            "type": "vless",
-            "server": "104.17.101.35",
-            "server_port": 2052,
-            "uuid": "cf7b57db-b47f-47f7-b67c-26ef50740b58",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇨🇦CA | vmess | @ConfigsHUB | 19",
+            "type": "vmess",
+            "server": "jader.fun",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "jader.fun",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": "104.17.101.35"
+                    "Host": "jader.fun"
                 }
             }
         },
@@ -1707,20 +1687,24 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @forwardv2ray | 18",
-            "type": "vmess",
-            "server": "198.57.27.212",
-            "server_port": 22324,
-            "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇳🇱NL | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "shhproxy.varzesh3-cnd.site",
+            "server_port": 8080,
+            "uuid": "74a5f75d-fd88-4dfc-9b89-0f9afd477cb3",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "shhproxy.varzesh3-cnd.site"
+                }
             }
         },
         {
