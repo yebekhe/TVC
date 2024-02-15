@@ -128,6 +128,7 @@
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇨🇦CA | vless | @V2rayNGn | 32",
                 "🇨🇦CA | vless | @prrofile_purple | 169",
+                "🇨🇦CA | vless | @ShadowSocks_s | 10",
                 "🇨🇦CA | vless | @UnlimitedDev | 4",
                 "🏳️XX | vless | @vmessorg | 6",
                 "🇨🇦CA | vless | @v2rayngvpn | 18",
@@ -151,10 +152,10 @@
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇺🇸US | vless | @flyv2ray | 14",
-                "🇨🇦CA | vless | @forwardv2ray | 17",
+                "🇮🇷IR | vless | @forwardv2ray | 17",
                 "🇨🇦CA | vless | @FAKEOFTVC | 0",
                 "🇮🇷IR | vless | @https_config_injector | 12",
-                "🇨🇦CA | vless | @mehrosaboran | 12",
+                "🇨🇷CR | vless | @mehrosaboran | 9",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇨🇷CR | vless | @kingofilter | 7",
@@ -193,6 +194,7 @@
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇨🇦CA | vless | @V2rayNGn | 32",
                 "🇨🇦CA | vless | @prrofile_purple | 169",
+                "🇨🇦CA | vless | @ShadowSocks_s | 10",
                 "🇨🇦CA | vless | @UnlimitedDev | 4",
                 "🏳️XX | vless | @vmessorg | 6",
                 "🇨🇦CA | vless | @v2rayngvpn | 18",
@@ -216,10 +218,10 @@
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇺🇸US | vless | @flyv2ray | 14",
-                "🇨🇦CA | vless | @forwardv2ray | 17",
+                "🇮🇷IR | vless | @forwardv2ray | 17",
                 "🇨🇦CA | vless | @FAKEOFTVC | 0",
                 "🇮🇷IR | vless | @https_config_injector | 12",
-                "🇨🇦CA | vless | @mehrosaboran | 12",
+                "🇨🇷CR | vless | @mehrosaboran | 9",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇨🇷CR | vless | @kingofilter | 7",
@@ -872,6 +874,37 @@
             }
         },
         {
+            "tag": "🇨🇦CA | vless | @ShadowSocks_s | 10",
+            "type": "vless",
+            "server": "check-host.net",
+            "server_port": 443,
+            "uuid": "9c6e085e-fbb1-4e14-ba30-a74186553c9c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tel.ArV2ray.host",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @UnlimitedDev | 4",
             "type": "vless",
             "server": "bia-to2.unlimiteddev.site",
@@ -1468,34 +1501,17 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 17",
+            "tag": "🇮🇷IR | vless | @forwardv2ray | 17",
             "type": "vless",
-            "server": "w2.sylarsun.eu.org",
+            "server": "193.134.100.233",
             "server_port": 443,
-            "uuid": "dfb18c6f-731a-4898-a1c4-cc36c6055a90",
+            "uuid": "4d68a5be-30a6-43cc-a7f8-f49dca92ffb2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "w2.sylarsun.eu.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed",
-                "headers": {
-                    "Host": "w2.sylarsun.eu.org"
-                }
             }
         },
         {
@@ -1534,11 +1550,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @mehrosaboran | 12",
+            "tag": "🇨🇷CR | vless | @mehrosaboran | 9",
             "type": "vless",
-            "server": "104.31.16.136",
-            "server_port": 2083,
-            "uuid": "56f19062-ec7e-4b4a-b4d4-a14fe749f4c3",
+            "server": "190.93.247.155",
+            "server_port": 8880,
+            "uuid": "9a56b3ee-4b1c-438a-9387-a50c9464e04b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1546,22 +1562,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "104.31.16.136",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "@LIGHTNING6,",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/@LIGHTNING6, @LIGHTNING6",
+                "headers": {
+                    "Host": "190.93.247.155"
+                }
             }
         },
         {
