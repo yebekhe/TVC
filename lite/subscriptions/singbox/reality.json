@@ -110,7 +110,8 @@
                 "🏳️XX | vless | @frev2ray | 1",
                 "🏳️XX | vless | @azadi_az_inja_migzare | 0",
                 "🏳️XX | vless | @v2ray_swhil | 13",
-                "🇩🇪DE | vless | @flyv2ray | 14",
+                "🇩🇪DE | vless | @flyv2ray | 13",
+                "🇩🇪DE | vless | @mehrosaboran | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
             ]
@@ -123,7 +124,8 @@
                 "🏳️XX | vless | @frev2ray | 1",
                 "🏳️XX | vless | @azadi_az_inja_migzare | 0",
                 "🏳️XX | vless | @v2ray_swhil | 13",
-                "🇩🇪DE | vless | @flyv2ray | 14",
+                "🇩🇪DE | vless | @flyv2ray | 13",
+                "🇩🇪DE | vless | @mehrosaboran | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
             ],
@@ -292,7 +294,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @flyv2ray | 14",
+            "tag": "🇩🇪DE | vless | @flyv2ray | 13",
             "type": "vless",
             "server": "49.13.149.114",
             "server_port": 443,
@@ -316,6 +318,42 @@
                 "reality": {
                     "enabled": true,
                     "public_key": "gqIyM6we26p1RDqHL-X9iB7OEkNVTf5M1-hZ85bukSI",
+                    "short_id": "23e8beee"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @mehrosaboran | 8",
+            "type": "vless",
+            "server": "128.140.73.69",
+            "server_port": 443,
+            "uuid": "021e1111-e6d9-4f6c-a1b8-03a70b6e4540",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mail.albasir.in",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pFIXFBUWlfxKzjMQG4k7RxZrtHbbROURhe61gbKTOzM",
                     "short_id": "23e8beee"
                 }
             },
