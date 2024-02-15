@@ -139,7 +139,7 @@
                 "🇺🇸US | vless | @proxyymeliii | 21",
                 "🇨🇦CA | vless | @MsV2ray | 14",
                 "🇮🇷IR | vless | @vless_vmess | 6",
-                "🇩🇪DE | vless | @V2RayTz | 6",
+                "🇺🇸US | vless | @V2RayTz | 7",
                 "🇸🇬SG | vless | @VmessProtocol | 14",
                 "🇨🇦CA | vless | @DailyV2RY | 96",
                 "🏳️XX | vless | @lrnbymaa | 6",
@@ -150,6 +150,7 @@
                 "🇨🇦CA | vless | @Capoit | 2",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇩🇪DE | vless | @flyv2ray | 13",
+                "🇸🇬SG | vless | @forwardv2ray | 17",
                 "🇨🇦CA | vless | @FAKEOFTVC | 1",
                 "🇮🇷IR | vless | @https_config_injector | 12",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -201,7 +202,7 @@
                 "🇺🇸US | vless | @proxyymeliii | 21",
                 "🇨🇦CA | vless | @MsV2ray | 14",
                 "🇮🇷IR | vless | @vless_vmess | 6",
-                "🇩🇪DE | vless | @V2RayTz | 6",
+                "🇺🇸US | vless | @V2RayTz | 7",
                 "🇸🇬SG | vless | @VmessProtocol | 14",
                 "🇨🇦CA | vless | @DailyV2RY | 96",
                 "🏳️XX | vless | @lrnbymaa | 6",
@@ -212,6 +213,7 @@
                 "🇨🇦CA | vless | @Capoit | 2",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇩🇪DE | vless | @flyv2ray | 13",
+                "🇸🇬SG | vless | @forwardv2ray | 17",
                 "🇨🇦CA | vless | @FAKEOFTVC | 1",
                 "🇮🇷IR | vless | @https_config_injector | 12",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -1143,12 +1145,12 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @V2RayTz | 6",
+            "tag": "🇺🇸US | vless | @V2RayTz | 7",
             "type": "vless",
-            "server": "142.132.243.199",
-            "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "xtls-rprx-vision",
+            "server": "190.93.244.103",
+            "server_port": 2083,
+            "uuid": "d8706c1b-83dc-456c-915a-92910e779cef",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1157,22 +1159,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ftp.debian.org",
+                "server_name": "liV2rayl.xn--mgbg0fka44dhgc.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "lA58yrE4PZoVlzVF3y0iGKyGDP1XEoqTlFO4P0wFSSs",
-                    "short_id": "26de4b53"
+                    "fingerprint": "chrome"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "service_name": "@LIGHTNING6, @LIGHTNING6",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -1295,9 +1292,9 @@
         {
             "tag": "🇨🇦CA | vless | @polproxy | 12",
             "type": "vless",
-            "server": "172.67.153.213",
-            "server_port": 2087,
-            "uuid": "61327bc1-4e9a-4cea-a214-7b489c3bcec3",
+            "server": "check-host.net",
+            "server_port": 2095,
+            "uuid": "--Polproxy--Polproxy--",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1305,22 +1302,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "hu.moienmusic.space",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY",
+                "headers": {
+                    "Host": "check-host.net"
+                }
             }
         },
         {
@@ -1466,6 +1453,37 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇸🇬SG | vless | @forwardv2ray | 17",
+            "type": "vless",
+            "server": "proxyip.sg.fxxk.dedyn.io",
+            "server_port": 443,
+            "uuid": "084d82cb-8c07-4a11-9c44-e296d0f51550",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zealand-disease-server-hawk.trycloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/argox-vl",
+                "headers": {
+                    "Host": "zealand-disease-server-hawk.trycloudflare.com"
+                }
             }
         },
         {
