@@ -150,10 +150,10 @@
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇺🇸US | vless | @flyv2ray | 13",
-                "🇮🇷IR | vless | @forwardv2ray | 17",
+                "🇮🇷IR | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 0",
                 "🇨🇦CA | vless | @https_config_injector | 14",
-                "🇺🇸US | vless | @mehrosaboran | 16",
+                "🇨🇦CA | vless | @mehrosaboran | 15",
                 "🇸🇪SE | vless | @kiava | 7",
                 "🇩🇪DE | vless | @proxy_mtm | 6",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -164,7 +164,7 @@
                 "🇸🇪SE | vless | @IBv2ray | 0",
                 "🇨🇦CA | vless | @V2FETCH | 8",
                 "🏳️XX | vless | @VpnSkyy | 7",
-                "🇨🇦CA | vless | @TVCminer | 19"
+                "🇨🇦CA | vless | @TVCminer | 17"
             ]
         },
         {
@@ -215,10 +215,10 @@
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇺🇸US | vless | @flyv2ray | 13",
-                "🇮🇷IR | vless | @forwardv2ray | 17",
+                "🇮🇷IR | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 0",
                 "🇨🇦CA | vless | @https_config_injector | 14",
-                "🇺🇸US | vless | @mehrosaboran | 16",
+                "🇨🇦CA | vless | @mehrosaboran | 15",
                 "🇸🇪SE | vless | @kiava | 7",
                 "🇩🇪DE | vless | @proxy_mtm | 6",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -229,7 +229,7 @@
                 "🇸🇪SE | vless | @IBv2ray | 0",
                 "🇨🇦CA | vless | @V2FETCH | 8",
                 "🏳️XX | vless | @VpnSkyy | 7",
-                "🇨🇦CA | vless | @TVCminer | 19"
+                "🇨🇦CA | vless | @TVCminer | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -1427,11 +1427,11 @@
             }
         },
         {
-            "tag": "🇮🇷IR | vless | @forwardv2ray | 17",
+            "tag": "🇮🇷IR | vless | @forwardv2ray | 19",
             "type": "vless",
             "server": "buy.g4.videoshopgame.online",
             "server_port": 6978,
-            "uuid": "d5eb6a6f-a344-4001-96c5-169ad3574916",
+            "uuid": "ef3ac28c-1874-47bb-b26d-bcc9ea1ebfd9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1493,11 +1493,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @mehrosaboran | 16",
+            "tag": "🇨🇦CA | vless | @mehrosaboran | 15",
             "type": "vless",
-            "server": "198.41.202.5",
-            "server_port": 8880,
-            "uuid": "269160ec-0cc4-4430-c106-2ccf5bf035b2",
+            "server": "104.31.16.136",
+            "server_port": 2083,
+            "uuid": "7cb0f413-fe87-4dcb-af35-cca23d5e0013",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1505,12 +1505,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/@LIGHTNING6, @LIGHTNING6",
-                "headers": {
-                    "Host": "198.41.202.5"
+            "tls": {
+                "enabled": true,
+                "server_name": "104.31.16.136",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@LIGHTNING6,",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1766,7 +1776,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @TVCminer | 19",
+            "tag": "🇨🇦CA | vless | @TVCminer | 17",
             "type": "vless",
             "server": "104.21.63.77",
             "server_port": 2083,
