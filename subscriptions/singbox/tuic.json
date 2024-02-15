@@ -106,22 +106,22 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇸🇪SE | tuic | @TUICity | 37",
-                "🇳🇱NL | tuic | @TUICity | 38",
-                "🇩🇪DE | tuic | @TUICity | 39",
-                "🇬🇧GB | tuic | @TUICity | 40",
-                "🇺🇸US | tuic | @TUICity | 41"
+                "🇺🇸US | tuic | @TUICity | 20",
+                "🇸🇪SE | tuic | @TUICity | 30",
+                "🇳🇱NL | tuic | @TUICity | 31",
+                "🇩🇪DE | tuic | @TUICity | 32",
+                "🇬🇧GB | tuic | @TUICity | 33"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇸🇪SE | tuic | @TUICity | 37",
-                "🇳🇱NL | tuic | @TUICity | 38",
-                "🇩🇪DE | tuic | @TUICity | 39",
-                "🇬🇧GB | tuic | @TUICity | 40",
-                "🇺🇸US | tuic | @TUICity | 41"
+                "🇺🇸US | tuic | @TUICity | 20",
+                "🇸🇪SE | tuic | @TUICity | 30",
+                "🇳🇱NL | tuic | @TUICity | 31",
+                "🇩🇪DE | tuic | @TUICity | 32",
+                "🇬🇧GB | tuic | @TUICity | 33"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -144,7 +144,30 @@
             "type": "dns"
         },
         {
-            "tag": "🇸🇪SE | tuic | @TUICity | 37",
+            "tag": "🇺🇸US | tuic | @TUICity | 20",
+            "type": "tuic",
+            "server": "64.110.25.10",
+            "server_port": 11227,
+            "uuid": "764b539f-2d3c-4772-9731-5ebf6984af98",
+            "password": "dongtaiwang.com",
+            "congestion_control": "bbr",
+            "udp_relay_mode": "native",
+            "zero_rtt_handshake": false,
+            "heartbeat": "10s",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "bing.com",
+                "insecure": true,
+                "alpn": [
+                    "h3",
+                    "spdy\/3.1"
+                ]
+            }
+        },
+        {
+            "tag": "🇸🇪SE | tuic | @TUICity | 30",
             "type": "tuic",
             "server": "70.34.197.98",
             "server_port": 443,
@@ -167,7 +190,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | tuic | @TUICity | 38",
+            "tag": "🇳🇱NL | tuic | @TUICity | 31",
             "type": "tuic",
             "server": "209.250.254.198",
             "server_port": 443,
@@ -190,7 +213,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | tuic | @TUICity | 39",
+            "tag": "🇩🇪DE | tuic | @TUICity | 32",
             "type": "tuic",
             "server": "136.244.88.153",
             "server_port": 443,
@@ -213,7 +236,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | tuic | @TUICity | 40",
+            "tag": "🇬🇧GB | tuic | @TUICity | 33",
             "type": "tuic",
             "server": "64.176.186.193",
             "server_port": 443,
@@ -228,29 +251,6 @@
                 "enabled": true,
                 "disable_sni": true,
                 "server_name": "",
-                "insecure": true,
-                "alpn": [
-                    "h3",
-                    "spdy\/3.1"
-                ]
-            }
-        },
-        {
-            "tag": "🇺🇸US | tuic | @TUICity | 41",
-            "type": "tuic",
-            "server": "64.110.25.10",
-            "server_port": 11227,
-            "uuid": "764b539f-2d3c-4772-9731-5ebf6984af98",
-            "password": "dongtaiwang.com",
-            "congestion_control": "bbr",
-            "udp_relay_mode": "native",
-            "zero_rtt_handshake": false,
-            "heartbeat": "10s",
-            "network": "tcp",
-            "tls": {
-                "enabled": true,
-                "disable_sni": false,
-                "server_name": "bing.com",
                 "insecure": true,
                 "alpn": [
                     "h3",
