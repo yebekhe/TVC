@@ -121,6 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | ss | @DeamNet_Proxy | 19","type":"ss","server":"38.68.134.202","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US | ss | @VmessProtocol | 15","type":"ss","server":"104.167.197.23","port":57456,"password":"afa22bb1050134b8","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: MANUAL
@@ -129,6 +130,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | ss | @DeamNet_Proxy | 19'
+      - '🇺🇸US | ss | @VmessProtocol | 15'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
   - name: URL-TEST
     type: url-test
@@ -137,6 +139,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | ss | @DeamNet_Proxy | 19'
+      - '🇺🇸US | ss | @VmessProtocol | 15'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
   - name: FALLBACK
     type: fallback
@@ -144,6 +147,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇺🇸US | ss | @DeamNet_Proxy | 19'
+      - '🇺🇸US | ss | @VmessProtocol | 15'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
