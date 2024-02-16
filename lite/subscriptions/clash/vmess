@@ -124,7 +124,6 @@ proxies:
   - {"name":"🇨🇦CA | vmess | @V2rayng_Fast | 2","type":"vmess","server":"zula.ir","port":"2087","cipher":"auto","uuid":"bfbc634f-561d-40b0-b116-db30169d0623","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"fr2.nitrohosting.ir"}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
   - {"name":"🇫🇮FI | vmess | @eliya_chiter0 | 6","type":"vmess","server":"95.216.215.141","port":"8081","cipher":"auto","uuid":"cf90e65d-9614-480b-9425-24db45fc3ec3","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇦CA | vmess | @SINABIGO | 4","type":"vmess","server":"104.21.27.222","port":"8443","cipher":"auto","uuid":"92ae428d-9e76-4e0e-b7a5-c2a6f22b8e21","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -137,7 +136,6 @@ proxy-groups:
       - '🇨🇦CA | vmess | @V2rayng_Fast | 2'
       - '🇺🇸US | vmess | @v2Line | 6'
       - '🇫🇮FI | vmess | @eliya_chiter0 | 6'
-      - '🇨🇦CA | vmess | @SINABIGO | 4'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -150,7 +148,6 @@ proxy-groups:
       - '🇨🇦CA | vmess | @V2rayng_Fast | 2'
       - '🇺🇸US | vmess | @v2Line | 6'
       - '🇫🇮FI | vmess | @eliya_chiter0 | 6'
-      - '🇨🇦CA | vmess | @SINABIGO | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -162,7 +159,6 @@ proxy-groups:
       - '🇨🇦CA | vmess | @V2rayng_Fast | 2'
       - '🇺🇸US | vmess | @v2Line | 6'
       - '🇫🇮FI | vmess | @eliya_chiter0 | 6'
-      - '🇨🇦CA | vmess | @SINABIGO | 4'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
