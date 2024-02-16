@@ -135,7 +135,7 @@
                 "🇺🇸US | vless | @FalconPolV2rayNG | 9",
                 "🇨🇦CA | vless | @ServerNett | 15",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
-                "🇨🇦CA | vless | @v2ray_swhil | 14",
+                "🇩🇪DE | vless | @v2ray_swhil | 13",
                 "🇺🇸US | vless | @proxyymeliii | 18",
                 "🇨🇦CA | vless | @MsV2ray | 14",
                 "🇮🇷IR | vless | @vless_vmess | 5",
@@ -150,7 +150,7 @@
                 "🇨🇦CA | vless | @v2rayng_config_amin | 4",
                 "🇨🇦CA | vless | @Capoit | 1",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
-                "🏳️XX | vless | @flyv2ray | 11",
+                "🇨🇦CA | vless | @flyv2ray | 11",
                 "🇮🇷IR | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 5",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -196,7 +196,7 @@
                 "🇺🇸US | vless | @FalconPolV2rayNG | 9",
                 "🇨🇦CA | vless | @ServerNett | 15",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
-                "🇨🇦CA | vless | @v2ray_swhil | 14",
+                "🇩🇪DE | vless | @v2ray_swhil | 13",
                 "🇺🇸US | vless | @proxyymeliii | 18",
                 "🇨🇦CA | vless | @MsV2ray | 14",
                 "🇮🇷IR | vless | @vless_vmess | 5",
@@ -211,7 +211,7 @@
                 "🇨🇦CA | vless | @v2rayng_config_amin | 4",
                 "🇨🇦CA | vless | @Capoit | 1",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
-                "🏳️XX | vless | @flyv2ray | 11",
+                "🇨🇦CA | vless | @flyv2ray | 11",
                 "🇮🇷IR | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 5",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -1061,24 +1061,39 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @v2ray_swhil | 14",
+            "tag": "🇩🇪DE | vless | @v2ray_swhil | 13",
             "type": "vless",
-            "server": "cdn.user.com",
-            "server_port": 80,
-            "uuid": "bda4be04-48bf-4df1-aaf2-6d42522eab6b",
-            "flow": "",
+            "server": "germany.mmdtitaniom.com",
+            "server_port": 2053,
+            "uuid": "fafcd6a9-07b2-4185-a4e8-a2e5abf8035c",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "cdn.user.com"
+            "tls": {
+                "enabled": true,
+                "server_name": "www.sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1395,7 +1410,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @flyv2ray | 11",
+            "tag": "🇨🇦CA | vless | @flyv2ray | 11",
             "type": "vless",
             "server": "ipv.freedomfv2ray.lol",
             "server_port": 2096,
