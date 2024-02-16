@@ -110,7 +110,6 @@
                 "🇨🇦CA | vless | @NIM_VPN_ir | 12",
                 "🇨🇦CA | vless | @XsV2ray | 17",
                 "🇮🇪IE | vless | @VlessConfig | 18",
-                "🇨🇦CA | vless | @VPNCUSTOMIZE | 12",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @melov2ray | 4",
                 "🇨🇦CA | vless | @V2pedia | 13",
@@ -152,7 +151,7 @@
                 "🇩🇪DE | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 7",
                 "🇮🇷IR | vless | @https_config_injector | 12",
-                "🇨🇳CN | vless | @mehrosaboran | 5",
+                "🇩🇪DE | vless | @mehrosaboran | 4",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇩🇪DE | vless | @proxy_mtm | 1",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -173,7 +172,6 @@
                 "🇨🇦CA | vless | @NIM_VPN_ir | 12",
                 "🇨🇦CA | vless | @XsV2ray | 17",
                 "🇮🇪IE | vless | @VlessConfig | 18",
-                "🇨🇦CA | vless | @VPNCUSTOMIZE | 12",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @melov2ray | 4",
                 "🇨🇦CA | vless | @V2pedia | 13",
@@ -215,7 +213,7 @@
                 "🇩🇪DE | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 7",
                 "🇮🇷IR | vless | @https_config_injector | 12",
-                "🇨🇳CN | vless | @mehrosaboran | 5",
+                "🇩🇪DE | vless | @mehrosaboran | 4",
                 "🇸🇪SE | vless | @kiava | 6",
                 "🇩🇪DE | vless | @proxy_mtm | 1",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -333,7 +331,7 @@
         {
             "tag": "🇮🇪IE | vless | @VlessConfig | 18",
             "type": "vless",
-            "server": "54.195.82.115",
+            "server": "54.220.81.217",
             "server_port": 22222,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -358,37 +356,6 @@
                 "path": "\/telegram-channel-vlessconfig-ws",
                 "headers": {
                     "Host": "telegram-channel-vlessconfig.sohala.uk"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vless | @VPNCUSTOMIZE | 12",
-            "type": "vless",
-            "server": "tel.VPNCUSTOMIZE.cam",
-            "server_port": 2053,
-            "uuid": "VPNCUSTOMIZE-VPNCUSTOMIZE",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "vpncustomizeV2ray.xn--4oq36ed28d.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ws-@VPNCUSTOMIZE-@VPNCUSTOMIZE-@VPNCUSTOMIZE-@VPNCUSTOMIZE-@VPNCUSTOMIZE?ed=1024",
-                "headers": {
-                    "Host": "vpncustomizeV2ray.xn--4oq36ed28d.org"
                 }
             }
         },
@@ -1461,12 +1428,12 @@
             }
         },
         {
-            "tag": "🇨🇳CN | vless | @mehrosaboran | 5",
+            "tag": "🇩🇪DE | vless | @mehrosaboran | 4",
             "type": "vless",
-            "server": "103.184.44.200",
-            "server_port": 2083,
-            "uuid": "934b0140-6ada-430d-b6eb-dfc57fb74a7c",
-            "flow": "",
+            "server": "116.202.103.212",
+            "server_port": 443,
+            "uuid": "ac554074-ad55-41c6-9fc1-5af16ace00f1",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1475,17 +1442,22 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "103.184.44.200",
+                "server_name": "www.danishshakeel.me",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "dt-8AYayJYIhVUKUcfNwD7t67i199CiGWqGfcsYj2Wo",
+                    "short_id": "0cb80458"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@LIGHTNING6,",
+                "service_name": "@ipV2Ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
