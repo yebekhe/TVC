@@ -120,7 +120,6 @@ dns:
 proxies:
   - {"name":"🇺🇸US | ss | @DeamNet_Proxy | 19","type":"ss","server":"38.68.134.202","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
-  - {"name":"🇨🇦CA | ss | @FAKEOFTVC | 4","type":"ss","server":"ca2.dart-vpn.com","port":443,"password":"ICTOtROjrAqIotsEYTG8Nc","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +128,6 @@ proxy-groups:
       - FALLBACK
       - '🇺🇸US | ss | @DeamNet_Proxy | 19'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
-      - '🇨🇦CA | ss | @FAKEOFTVC | 4'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,7 +136,6 @@ proxy-groups:
     proxies:
       - '🇺🇸US | ss | @DeamNet_Proxy | 19'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
-      - '🇨🇦CA | ss | @FAKEOFTVC | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -146,7 +143,6 @@ proxy-groups:
     proxies:
       - '🇺🇸US | ss | @DeamNet_Proxy | 19'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
-      - '🇨🇦CA | ss | @FAKEOFTVC | 4'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve

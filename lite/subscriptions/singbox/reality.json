@@ -106,12 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇷FR | vless | @NIM_VPN_ir | 9",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🏳️XX | vless | @frev2ray | 1",
                 "🇩🇪DE | vless | @ARv2ray | 5",
-                "🏳️XX | vless | @azadi_az_inja_migzare | 0",
-                "🇩🇪DE | vless | @v2ray_swhil | 15",
-                "🇩🇪DE | vless | @V2RayTz | 17",
+                "🏳️XX | vless | @v2logy | 13",
+                "🇩🇪DE | vless | @v2ray_swhil | 14",
                 "🇳🇱NL | vless | @free1_vpn | 0",
                 "🇩🇪DE | vless | @FreakConfig | 5",
                 "🇩🇪DE | vless | @proxy_mtm | 1",
@@ -123,12 +123,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇷FR | vless | @NIM_VPN_ir | 9",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🏳️XX | vless | @frev2ray | 1",
                 "🇩🇪DE | vless | @ARv2ray | 5",
-                "🏳️XX | vless | @azadi_az_inja_migzare | 0",
-                "🇩🇪DE | vless | @v2ray_swhil | 15",
-                "🇩🇪DE | vless | @V2RayTz | 17",
+                "🏳️XX | vless | @v2logy | 13",
+                "🇩🇪DE | vless | @v2ray_swhil | 14",
                 "🇳🇱NL | vless | @free1_vpn | 0",
                 "🇩🇪DE | vless | @FreakConfig | 5",
                 "🇩🇪DE | vless | @proxy_mtm | 1",
@@ -154,6 +154,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇷FR | vless | @NIM_VPN_ir | 9",
+            "type": "vless",
+            "server": "95.179.217.33",
+            "server_port": 45712,
+            "uuid": "6f128769-e3b6-409a-9416-8d7f6dabaab4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.discordapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "RsbT8HImgysmMNJaDi3x4yyrUdWpfk3EJEDVYQPvZRw",
+                    "short_id": "d55861e7"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
@@ -264,11 +293,11 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @azadi_az_inja_migzare | 0",
+            "tag": "🏳️XX | vless | @v2logy | 13",
             "type": "vless",
-            "server": "[2a01:4f9:c011:64f::2d]",
+            "server": "dnschecker.tech",
             "server_port": 443,
-            "uuid": "2cc2c64a-f1ff-44d4-ac05-4037adc9a3e2",
+            "uuid": "telegram-id-ArV2ray",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -278,29 +307,29 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "gsmarena.com",
+                "server_name": "dnschecker.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw",
-                    "short_id": "32d7a82d"
+                    "public_key": "KoEODSUr5KMk1gOL3p4REHueFdiGamXAz5HT3oHOQxU",
+                    "short_id": "94f779f4"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@Everyday_VPN",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @v2ray_swhil | 15",
+            "tag": "🇩🇪DE | vless | @v2ray_swhil | 14",
             "type": "vless",
             "server": "germany.mmdtitaniom.com",
             "server_port": 2053,
@@ -330,42 +359,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Telegram:@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official,@Titaniom_Official",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @V2RayTz | 17",
-            "type": "vless",
-            "server": "128.140.89.49",
-            "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ftp.debian.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "FXj6NwLg5Zi9Q1P3Eq-VPigJfJLvC7dQX-gouoFr0xI",
-                    "short_id": "3d750c53"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
