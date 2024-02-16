@@ -12,11 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇦CA | vmess | @oneclickvpnkeys | 8 = vmess, 162.159.200.5, 80, username = 384648b3-bcc5-401e-b145-dc91f57ee5e6, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"ca3.889611.com", skip-cert-verify = true, tfo = false
+🇮🇷IR | vmess | @proxyymeliii | 20 = vmess, svt63.iranvipnet.com, 11705, username = 36ace384-bb81-45e1-946d-81a59c10a493, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6
-URL-TEST = url-test,🇨🇦CA | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6
-FALLBACK = fallback,🇨🇦CA | vmess | @oneclickvpnkeys | 8,🇺🇸US | vmess | @v2Line | 6
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @oneclickvpnkeys | 8,🇮🇷IR | vmess | @proxyymeliii | 20,🇺🇸US | vmess | @v2Line | 6
+URL-TEST = url-test,🇨🇦CA | vmess | @oneclickvpnkeys | 8,🇮🇷IR | vmess | @proxyymeliii | 20,🇺🇸US | vmess | @v2Line | 6
+FALLBACK = fallback,🇨🇦CA | vmess | @oneclickvpnkeys | 8,🇮🇷IR | vmess | @proxyymeliii | 20,🇺🇸US | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
