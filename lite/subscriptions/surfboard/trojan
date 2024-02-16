@@ -11,13 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇸🇪SE | trojan | @PrivateVPNs | 18 = trojan, 51.21.103.98, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇸🇪SE | trojan | @PrivateVPNs | 18 = trojan, 13.50.28.110, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇮🇪IE | trojan | @DirectVPN | 18 = trojan, 52.215.164.132, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇨🇳CN | trojan | @yaney_01 | 7 = trojan, xibaozi.19890604.day, 10847, password = c1dc3493-2298-44ab-98c1-4abccbc350d1, udp-delay = true, skip-cert-verify = false, sni = cloudflare.node-ssl.cdn-alibaba.com, ws = false
+🇫🇷FR | trojan | @FAKEOFTVC | 2 = trojan, fr1.test3.net, 443, password = 147669c0-cbef-11ee-b2e9-1239d0255272, udp-delay = true, skip-cert-verify = false, sni = irancell.ir, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇸🇪SE | trojan | @PrivateVPNs | 18,🇮🇪IE | trojan | @DirectVPN | 18,🇨🇳CN | trojan | @yaney_01 | 7
-URL-TEST = url-test,🇸🇪SE | trojan | @PrivateVPNs | 18,🇮🇪IE | trojan | @DirectVPN | 18,🇨🇳CN | trojan | @yaney_01 | 7
-FALLBACK = fallback,🇸🇪SE | trojan | @PrivateVPNs | 18,🇮🇪IE | trojan | @DirectVPN | 18,🇨🇳CN | trojan | @yaney_01 | 7
+MANUAL = select,URL-TEST,FALLBACK,🇸🇪SE | trojan | @PrivateVPNs | 18,🇮🇪IE | trojan | @DirectVPN | 18,🇨🇳CN | trojan | @yaney_01 | 7,🇫🇷FR | trojan | @FAKEOFTVC | 2
+URL-TEST = url-test,🇸🇪SE | trojan | @PrivateVPNs | 18,🇮🇪IE | trojan | @DirectVPN | 18,🇨🇳CN | trojan | @yaney_01 | 7,🇫🇷FR | trojan | @FAKEOFTVC | 2
+FALLBACK = fallback,🇸🇪SE | trojan | @PrivateVPNs | 18,🇮🇪IE | trojan | @DirectVPN | 18,🇨🇳CN | trojan | @yaney_01 | 7,🇫🇷FR | trojan | @FAKEOFTVC | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
