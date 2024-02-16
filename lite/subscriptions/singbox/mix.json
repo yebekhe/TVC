@@ -120,7 +120,7 @@
                 "🇺🇸US | vless | @shh_proxy | 14",
                 "🇨🇦CA | vless | @Lockey_vpn | 9",
                 "🇨🇦CA | vless | @rxv2ray | 21",
-                "🇺🇸US | vless | @lightning6 | 29",
+                "🇨🇷CR | vless | @lightning6 | 29",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇺🇸US | vless | @DigiV2ray | 18",
                 "🇨🇦CA | vless | @v2logy | 13",
@@ -151,7 +151,7 @@
                 "🇳🇱NL | vmess | @Cov2ray | 0",
                 "🇮🇷IR | vless | @V2RayTz | 14",
                 "🏳️XX | vless | @VmessProtocol | 15",
-                "🇨🇦CA | vless | @DailyV2RY | 86",
+                "🇺🇸US | vless | @DailyV2RY | 84",
                 "🇨🇷CR | vless | @sinabigo | 3",
                 "🏳️XX | vless | @lrnbymaa | 7",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
@@ -165,6 +165,7 @@
                 "🇨🇦CA | vless | @Capoit | 1",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇨🇦CA | vless | @flyv2ray | 11",
+                "🇸🇬SG | vmess | @forwardv2ray | 18",
                 "🇨🇦CA | ss | @FAKEOFTVC | 4",
                 "🇮🇷IR | vless | @https_config_injector | 12",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -198,7 +199,7 @@
                 "🇺🇸US | vless | @shh_proxy | 14",
                 "🇨🇦CA | vless | @Lockey_vpn | 9",
                 "🇨🇦CA | vless | @rxv2ray | 21",
-                "🇺🇸US | vless | @lightning6 | 29",
+                "🇨🇷CR | vless | @lightning6 | 29",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇺🇸US | vless | @DigiV2ray | 18",
                 "🇨🇦CA | vless | @v2logy | 13",
@@ -229,7 +230,7 @@
                 "🇳🇱NL | vmess | @Cov2ray | 0",
                 "🇮🇷IR | vless | @V2RayTz | 14",
                 "🏳️XX | vless | @VmessProtocol | 15",
-                "🇨🇦CA | vless | @DailyV2RY | 86",
+                "🇺🇸US | vless | @DailyV2RY | 84",
                 "🇨🇷CR | vless | @sinabigo | 3",
                 "🏳️XX | vless | @lrnbymaa | 7",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
@@ -243,6 +244,7 @@
                 "🇨🇦CA | vless | @Capoit | 1",
                 "🇨🇦CA | vless | @IRN_VPN | 2",
                 "🇨🇦CA | vless | @flyv2ray | 11",
+                "🇸🇬SG | vmess | @forwardv2ray | 18",
                 "🇨🇦CA | ss | @FAKEOFTVC | 4",
                 "🇮🇷IR | vless | @https_config_injector | 12",
                 "🇸🇪SE | vless | @kiava | 6",
@@ -675,7 +677,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @lightning6 | 29",
+            "tag": "🇨🇷CR | vless | @lightning6 | 29",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 2083,
@@ -1394,11 +1396,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @DailyV2RY | 86",
+            "tag": "🇺🇸US | vless | @DailyV2RY | 84",
             "type": "vless",
-            "server": "server3.mobileberooz-e41.workers.dev",
-            "server_port": 80,
-            "uuid": "0c1823f5-e8b1-4cfe-8f8b-441f8dd42fd2",
+            "server": "79.99.31.126",
+            "server_port": 2087,
+            "uuid": "df2265d6-4bc7-4805-9cb0-889fb955d846",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1406,12 +1408,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "server3.mobileberooz-e41.workers.dev"
+            "tls": {
+                "enabled": true,
+                "server_name": "germany.v2rayfree1.shop",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "V2rayfree1_V2rayfree1_V2rayfree1_V2rayfree1_V2rayfree1_V2rayfree1_V2rayfree1_V2rayfree1_V2rayfree1_V2rayfree1_V2rayfree1_",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1514,7 +1526,7 @@
             "type": "vmess",
             "server": "127.0.0.1",
             "server_port": 8080,
-            "uuid": "cabcaba-baca-aabc-abcd-acaabacbbcbc",
+            "uuid": "acabacb-abca-abac-dbca-abaacaccbcbb",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1704,6 +1716,30 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇸🇬SG | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "group.vpnking.online",
+            "server_port": 80,
+            "uuid": "ab8c009c-3ff5-40f0-83c4-43fae2d66639",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/SACHI",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
