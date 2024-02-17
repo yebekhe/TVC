@@ -122,7 +122,7 @@ dns:
 proxies:
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
   - {"name":"🇷🇺RU | ss | @proxy_mtm | 0","type":"ss","server":"109.107.189.185","port":17397,"password":"lrJVYHCiZA3VdRckEWQnSg","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | ss | @ROMAX_VPN | 4","type":"ss","server":"45.8.146.32","port":50370,"password":"4sZ69FNmAPosCBiD6MUryB","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | ss | @ROMAX_VPN | 5","type":"ss","server":"45.8.146.32","port":50370,"password":"4sZ69FNmAPosCBiD6MUryB","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,7 +131,7 @@ proxy-groups:
       - FALLBACK
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇷🇺RU | ss | @proxy_mtm | 0'
-      - '🇺🇸US | ss | @ROMAX_VPN | 4'
+      - '🇺🇸US | ss | @ROMAX_VPN | 5'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -140,7 +140,7 @@ proxy-groups:
     proxies:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇷🇺RU | ss | @proxy_mtm | 0'
-      - '🇺🇸US | ss | @ROMAX_VPN | 4'
+      - '🇺🇸US | ss | @ROMAX_VPN | 5'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -148,7 +148,7 @@ proxy-groups:
     proxies:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
       - '🇷🇺RU | ss | @proxy_mtm | 0'
-      - '🇺🇸US | ss | @ROMAX_VPN | 4'
+      - '🇺🇸US | ss | @ROMAX_VPN | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
