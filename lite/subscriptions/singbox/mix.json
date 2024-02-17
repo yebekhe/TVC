@@ -120,7 +120,7 @@
                 "🇨🇷CR | vless | @lightning6 | 27",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇺🇸US | vless | @DigiV2ray | 15",
-                "🇺🇸US | vless | @proxy_kafee | 2",
+                "🇺🇸US | vless | @proxy_kafee | 0",
                 "🇨🇦CA | vless | @v2logy | 13",
                 "🇮🇷IR | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
@@ -162,7 +162,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 1",
                 "🇩🇪DE | vless | @flyv2ray | 10",
-                "🇨🇦CA | vless | @forwardv2ray | 12",
+                "🇨🇦CA | vless | @forwardv2ray | 17",
                 "🇮🇷IR | vless | @FAKEOFTVC | 0",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 2",
@@ -197,7 +197,7 @@
                 "🇨🇷CR | vless | @lightning6 | 27",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇺🇸US | vless | @DigiV2ray | 15",
-                "🇺🇸US | vless | @proxy_kafee | 2",
+                "🇺🇸US | vless | @proxy_kafee | 0",
                 "🇨🇦CA | vless | @v2logy | 13",
                 "🇮🇷IR | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
@@ -239,7 +239,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 1",
                 "🇩🇪DE | vless | @flyv2ray | 10",
-                "🇨🇦CA | vless | @forwardv2ray | 12",
+                "🇨🇦CA | vless | @forwardv2ray | 17",
                 "🇮🇷IR | vless | @FAKEOFTVC | 0",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 2",
@@ -670,7 +670,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @proxy_kafee | 2",
+            "tag": "🇺🇸US | vless | @proxy_kafee | 0",
             "type": "vless",
             "server": "173.245.58.31",
             "server_port": 8080,
@@ -1445,7 +1445,7 @@
             "type": "vmess",
             "server": "127.0.0.1",
             "server_port": 8080,
-            "uuid": "abacabc-cbaa-baac-bdca-bbabcbacacca",
+            "uuid": "abcaabc-baac-caba-abcd-bbcacacababc",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1674,11 +1674,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 12",
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 17",
             "type": "vless",
-            "server": "iranserver.com",
-            "server_port": 8880,
-            "uuid": "c8579ab5-5d46-4c4f-a6a0-6e0c2c6f4357",
+            "server": "op.bilibili.ovh",
+            "server_port": 443,
+            "uuid": "cefffd1d-cc58-4560-b4d1-44f1af528f30",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1686,11 +1686,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "GOV.UK",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram:@x2raynvpn",
+                "path": "\/",
                 "headers": {
-                    "Host": "iranserver.com"
+                    "Host": "GOV.UK"
                 }
             }
         },
