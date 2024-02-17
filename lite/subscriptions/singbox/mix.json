@@ -122,7 +122,7 @@
                 "🇺🇸US | vless | @DigiV2ray | 15",
                 "🇺🇸US | vless | @proxy_kafee | 0",
                 "🇨🇦CA | vless | @v2logy | 13",
-                "🇷🇺RU | trojan | @V2rayCollectorDonate | 19",
+                "🇮🇷IR | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇺🇸US | vless | @V2rayNGn | 34",
                 "🇫🇷FR | trojan | @PrivateVPNs | 14",
@@ -163,6 +163,7 @@
                 "🇨🇦CA | vless | @Capoit | 1",
                 "🇨🇦CA | vless | @FreakConfig | 3",
                 "🇩🇪DE | vless | @flyv2ray | 10",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇮🇷IR | vless | @FAKEOFTVC | 0",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 2",
@@ -199,7 +200,7 @@
                 "🇺🇸US | vless | @DigiV2ray | 15",
                 "🇺🇸US | vless | @proxy_kafee | 0",
                 "🇨🇦CA | vless | @v2logy | 13",
-                "🇷🇺RU | trojan | @V2rayCollectorDonate | 19",
+                "🇮🇷IR | vless | @V2rayCollectorDonate | 19",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇺🇸US | vless | @V2rayNGn | 34",
                 "🇫🇷FR | trojan | @PrivateVPNs | 14",
@@ -240,6 +241,7 @@
                 "🇨🇦CA | vless | @Capoit | 1",
                 "🇨🇦CA | vless | @FreakConfig | 3",
                 "🇩🇪DE | vless | @flyv2ray | 10",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🇮🇷IR | vless | @FAKEOFTVC | 0",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 2",
@@ -722,24 +724,23 @@
             }
         },
         {
-            "tag": "🇷🇺RU | trojan | @V2rayCollectorDonate | 19",
-            "type": "trojan",
-            "server": "ru01.bsawc.shop",
-            "server_port": 30005,
-            "password": "6a407a94-3fda-4946-a48c-2aa1ced31687",
+            "tag": "🇮🇷IR | vless | @V2rayCollectorDonate | 19",
+            "type": "vless",
+            "server": "193.151.138.156",
+            "server_port": 8080,
+            "uuid": "e12f1c92-3cb0-4e93-ad70-aaaefb154366",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "ru01.bsawc.shop",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "193.151.138.156"
                 }
             }
         },
@@ -1468,7 +1469,7 @@
             "type": "vmess",
             "server": "127.0.0.1",
             "server_port": 8080,
-            "uuid": "cbacaab-acba-abac-abcd-bacccaabbabc",
+            "uuid": "cbabaac-acab-cbaa-badc-cbbcacbcbaaa",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1715,6 +1716,27 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "iranserver.com",
+            "server_port": 8880,
+            "uuid": "c8579ab5-5d46-4c4f-a6a0-6e0c2c6f4357",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram:@x2raynvpn",
+                "headers": {
+                    "Host": "iranserver.com"
+                }
             }
         },
         {
