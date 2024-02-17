@@ -108,9 +108,10 @@
                 "URL-TEST",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🏳️XX | vless | @frev2ray | 1",
+                "🇫🇮FI | vless | @v2logy | 12",
                 "🇳🇱NL | vless | @free1_vpn | 0",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇳🇱NL | vless | @proxy_mtm | 2",
+                "🇳🇱NL | vless | @proxy_mtm | 3",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
             ]
@@ -121,9 +122,10 @@
             "outbounds": [
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🏳️XX | vless | @frev2ray | 1",
+                "🇫🇮FI | vless | @v2logy | 12",
                 "🇳🇱NL | vless | @free1_vpn | 0",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇳🇱NL | vless | @proxy_mtm | 2",
+                "🇳🇱NL | vless | @proxy_mtm | 3",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4"
             ],
@@ -150,7 +152,7 @@
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
             "type": "vless",
-            "server": "195.201.91.198",
+            "server": "128.140.41.104",
             "server_port": 443,
             "uuid": "021e1111-e6d9-4f6c-a1b8-03a70b6e4540",
             "flow": "xtls-rprx-vision",
@@ -162,7 +164,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "mail.nareezacademy.com",
+                "server_name": "nareezacademy.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -171,7 +173,7 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "Kk-B3428i3QXD1CCpyRPImaMUkBNG6E4adIEo-G4RmQ",
+                    "public_key": "x0XXHnApqo5BMsVlKePM6vcVFY5uEvW7DspPCe2QmSY",
                     "short_id": "23e8beee"
                 }
             },
@@ -214,6 +216,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "\/\/\/v2raymask",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇮FI | vless | @v2logy | 12",
+            "type": "vless",
+            "server": "37.27.7.241",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "m0g72CLscL0SSXyJp9hz1XMub641LoYxjr7h_-vFRFY",
+                    "short_id": "bce662cb"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -285,7 +323,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vless | @proxy_mtm | 2",
+            "tag": "🇳🇱NL | vless | @proxy_mtm | 3",
             "type": "vless",
             "server": "165.232.94.24",
             "server_port": 443,
