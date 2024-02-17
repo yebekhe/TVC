@@ -132,8 +132,8 @@
                 "🇨🇦CA | trojan | @DirectVPN | 17",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇩🇪DE | ss | @DeamNet_Proxy | 19",
-                "🇬🇧GB | vmess | @oneclickvpnkeys | 7",
+                "🇦🇪AE | vmess | @DeamNet_Proxy | 19",
+                "🇬🇧GB | vmess | @oneclickvpnkeys | 8",
                 "🇨🇦CA | vless | @prrofile_purple | 171",
                 "🇨🇦CA | vless | @UnlimitedDev | 4",
                 "🏳️XX | vless | @vmessorg | 6",
@@ -164,8 +164,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 1",
                 "🇩🇪DE | vless | @flyv2ray | 11",
-                "🇬🇧GB | ss | @forwardv2ray | 19",
-                "🇮🇷IR | vless | @FAKEOFTVC | 0",
+                "🇬🇧GB | ss | @forwardv2ray | 17",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 1",
                 "🇨🇦CA | vless | @kiava | 5",
@@ -213,8 +212,8 @@
                 "🇨🇦CA | trojan | @DirectVPN | 17",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇩🇪DE | ss | @DeamNet_Proxy | 19",
-                "🇬🇧GB | vmess | @oneclickvpnkeys | 7",
+                "🇦🇪AE | vmess | @DeamNet_Proxy | 19",
+                "🇬🇧GB | vmess | @oneclickvpnkeys | 8",
                 "🇨🇦CA | vless | @prrofile_purple | 171",
                 "🇨🇦CA | vless | @UnlimitedDev | 4",
                 "🏳️XX | vless | @vmessorg | 6",
@@ -245,8 +244,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 1",
                 "🇩🇪DE | vless | @flyv2ray | 11",
-                "🇬🇧GB | ss | @forwardv2ray | 19",
-                "🇮🇷IR | vless | @FAKEOFTVC | 0",
+                "🇬🇧GB | ss | @forwardv2ray | 17",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 1",
                 "🇨🇦CA | vless | @kiava | 5",
@@ -952,17 +950,31 @@
             }
         },
         {
-            "tag": "🇩🇪DE | ss | @DeamNet_Proxy | 19",
-            "type": "shadowsocks",
-            "server": "145.239.1.100",
-            "server_port": 8009,
-            "method": "aes-256-gcm",
-            "password": "XKFKl2rULjIp74",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇦🇪AE | vmess | @DeamNet_Proxy | 19",
+            "type": "vmess",
+            "server": "94.140.0.110",
+            "server_port": 8880,
+            "uuid": "0d1bf26a-ce97-4707-a270-7f4d2ae37334",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "94.140.0.110"
+                }
+            }
         },
         {
-            "tag": "🇬🇧GB | vmess | @oneclickvpnkeys | 7",
+            "tag": "🇬🇧GB | vmess | @oneclickvpnkeys | 8",
             "type": "vmess",
             "server": "172.99.190.12",
             "server_port": 22324,
@@ -1732,43 +1744,14 @@
             }
         },
         {
-            "tag": "🇬🇧GB | ss | @forwardv2ray | 19",
+            "tag": "🇬🇧GB | ss | @forwardv2ray | 17",
             "type": "shadowsocks",
-            "server": "51.11.104.69",
-            "server_port": 16550,
+            "server": "18.133.208.28",
+            "server_port": 443,
             "method": "chacha20-ietf-poly1305",
-            "password": "qFqqKf78FuMHnBqoxeWz4R",
+            "password": "Bog0ELmMM9DSxDdQ",
             "plugin": "",
             "plugin_opts": ""
-        },
-        {
-            "tag": "🇮🇷IR | vless | @FAKEOFTVC | 0",
-            "type": "vless",
-            "server": "en.silveren.top",
-            "server_port": 46506,
-            "uuid": "1f6a5806-8826-4934-b54f-175573966786",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "flutter.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "CXajBjtMIJKmIh0VGHu0E5OFxmSM47_IgtuZYM-p9A0",
-                    "short_id": "dff7990a"
-                }
-            }
         },
         {
             "tag": "🇨🇦CA | vless | @https_config_injector | 12",
