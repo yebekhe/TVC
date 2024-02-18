@@ -112,6 +112,7 @@
                 "🇫🇮FI | vless | @v2logy | 12",
                 "🏳️XX | vless | @V2rayCollectorDonate | 19",
                 "🏳️XX | vless | @proxystore11 | 6",
+                "🇩🇪DE | vless | @Outlinev2rayNG | 12",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4",
@@ -128,6 +129,7 @@
                 "🇫🇮FI | vless | @v2logy | 12",
                 "🏳️XX | vless | @V2rayCollectorDonate | 19",
                 "🏳️XX | vless | @proxystore11 | 6",
+                "🇩🇪DE | vless | @Outlinev2rayNG | 12",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @FoXrayIran | 4",
@@ -364,6 +366,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@Everyday_VPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @Outlinev2rayNG | 12",
+            "type": "vless",
+            "server": "195.201.38.188",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ukD3I7XRdbBvLVOscQVtAe5vJs7nYubH0E5ES4XUbX8",
+                    "short_id": "5a4ce4d9"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
