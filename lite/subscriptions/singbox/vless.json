@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇮FI | vless | @Parsashonam | 0",
                 "🇨🇦CA | vless | @NIM_VPN_ir | 8",
                 "🇮🇪IE | vless | @VlessConfig | 16",
                 "🇺🇸US | vless | @VPNCUSTOMIZE | 7",
@@ -150,10 +151,11 @@
                 "🇨🇦CA | vless | @v2rayng_config_amin | 4",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇨🇦CA | vless | @Capoit | 6",
+                "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 7",
-                "🇬🇧GB | vless | @forwardv2ray | 19",
+                "🇨🇦CA | vless | @forwardv2ray | 6",
                 "🇨🇦CA | vless | @https_config_injector | 12",
-                "🇨🇷CR | vless | @mehrosaboran | 15",
+                "🇨🇷CR | vless | @mehrosaboran | 10",
                 "🇨🇦CA | vless | @kiava | 5",
                 "🇨🇦CA | vless | @nofiltering2 | 1",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -171,6 +173,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇮FI | vless | @Parsashonam | 0",
                 "🇨🇦CA | vless | @NIM_VPN_ir | 8",
                 "🇮🇪IE | vless | @VlessConfig | 16",
                 "🇺🇸US | vless | @VPNCUSTOMIZE | 7",
@@ -215,10 +218,11 @@
                 "🇨🇦CA | vless | @v2rayng_config_amin | 4",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇨🇦CA | vless | @Capoit | 6",
+                "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 7",
-                "🇬🇧GB | vless | @forwardv2ray | 19",
+                "🇨🇦CA | vless | @forwardv2ray | 6",
                 "🇨🇦CA | vless | @https_config_injector | 12",
-                "🇨🇷CR | vless | @mehrosaboran | 15",
+                "🇨🇷CR | vless | @mehrosaboran | 10",
                 "🇨🇦CA | vless | @kiava | 5",
                 "🇨🇦CA | vless | @nofiltering2 | 1",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -250,6 +254,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇮FI | vless | @Parsashonam | 0",
+            "type": "vless",
+            "server": "37.27.10.189",
+            "server_port": 443,
+            "uuid": "Parsashonam",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "check-ipv6.trycloudflare.blog",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "e2zZyOb9I5UEWxcNG-CzJ8o6sTxSzAB91f3Tx6L6li4",
+                    "short_id": "5f9dd06e"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇨🇦CA | vless | @NIM_VPN_ir | 8",
@@ -1443,6 +1483,27 @@
             }
         },
         {
+            "tag": "🇨🇦CA | vless | @FreakConfig | 5",
+            "type": "vless",
+            "server": "104.22.49.253",
+            "server_port": 80,
+            "uuid": "bda4be04-48bf-4df1-aaf2-6d42522eab6b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Path\/\/",
+                "headers": {
+                    "Host": "104.22.49.253"
+                }
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @flyv2ray | 7",
             "type": "vless",
             "server": "ip.VPNCUSTOMIZE.com",
@@ -1464,11 +1525,11 @@
             }
         },
         {
-            "tag": "🇬🇧GB | vless | @forwardv2ray | 19",
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 6",
             "type": "vless",
-            "server": "91.193.58.1",
-            "server_port": 80,
-            "uuid": "VPNCUSTOMIZE--VPNCUSTOMIZE",
+            "server": "104.17.88.212",
+            "server_port": 443,
+            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1476,11 +1537,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "baipiao406.stunning-bassoon.pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/VPNCUSTOMIZE-VPNCUSTOMIZE?ed=1048",
+                "path": "\/Path\/Telegram@proxy_mtm\/",
                 "headers": {
-                    "Host": "91.193.58.1"
+                    "Host": "baipiao406.stunning-bassoon.pages.dev"
                 }
             }
         },
@@ -1516,11 +1587,11 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @mehrosaboran | 15",
+            "tag": "🇨🇷CR | vless | @mehrosaboran | 10",
             "type": "vless",
-            "server": "www.tozedmodeon.store",
-            "server_port": 2096,
-            "uuid": "1418c118-8d6d-4b33-86e8-b8877513db13",
+            "server": "190.93.246.241",
+            "server_port": 2083,
+            "uuid": "05c024c9-b896-4a52-fab8-771e248bcd3a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1530,7 +1601,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.tozedmodeon.store",
+                "server_name": "190.93.246.241",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1540,7 +1611,7 @@
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@zedmodeon",
+                "service_name": "@LIGHTNING6,",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
