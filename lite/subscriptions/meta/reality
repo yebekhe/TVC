@@ -121,8 +121,10 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | vless | @ipV2Ray | 19","type":"vless","server":"49.13.149.114","port":443,"udp":true,"uuid":"021e1111-e6d9-4f6c-a1b8-03a70b6e4540","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.nareezacademy.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"gqIyM6we26p1RDqHL-X9iB7OEkNVTf5M1-hZ85bukSI","short-id":"23e8beee"}}
+  - {"name":"🏳️XX | vless | @V2RayTz | 18","type":"vless","server":"[2a01:4f9:c011:64f::30]","port":443,"udp":true,"uuid":"2cc2c64a-f1ff-44d4-ac05-4037adc9a3e2","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"gsmarena.com","grpc-opts":{"grpc-service-name":"@Everyday_VPN"},"reality-opts":{"public-key":"AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw","short-id":"32d7a82d"}}
   - {"name":"🏳️XX | vless | @proxystore11 | 6","type":"vless","server":"[2a01:4f9:c010:6fb9::2e]","port":443,"udp":true,"uuid":"38f30c94-7bb8-4fcc-8574-17fb02677d7e","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"gsmarena.com","grpc-opts":{"grpc-service-name":"@Everyday_VPN"},"reality-opts":{"public-key":"AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw","short-id":"32d7a82d"}}
   - {"name":"🇩🇪DE | vless | @Capital_NET | 45","type":"vless","server":"four.felinetest.site","port":443,"udp":true,"uuid":"fbe02c0b-775f-4431-8615-a9497255c876","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"none.felinetest.site","flow":"xtls-rprx-vision","reality-opts":{"public-key":"fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs","short-id":"6f9deca7"}}
+  - {"name":"🇬🇧GB | vless | @forwardv2ray | 16","type":"vless","server":"sw.hotmusic.com.tr","port":2924,"udp":true,"uuid":"298b1640-3afc-49f1-ac28-bfd6fb7667dd","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"codedeploy-commands.eu-west-2.amazonaws.com","grpc-opts":{"grpc-service-name":"xyz"},"reality-opts":{"public-key":"YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E"}}
   - {"name":"🇺🇸US | vless | @TVCminer | 18","type":"vless","server":"45.77.210.181","port":443,"udp":true,"uuid":"ce256176-8e38-49b7-852e-c99ba72b1d84","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"cloudreve.r-yu.me","reality-opts":{"public-key":"UK7qxWWGfRQcQfwaGpHnqmmqqJBut4jxve8AeDDJ2UI"}}
 proxy-groups:
   - name: MANUAL
@@ -131,8 +133,10 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | vless | @ipV2Ray | 19'
+      - '🏳️XX | vless | @V2RayTz | 18'
       - '🏳️XX | vless | @proxystore11 | 6'
       - '🇩🇪DE | vless | @Capital_NET | 45'
+      - '🇬🇧GB | vless | @forwardv2ray | 16'
       - '🇺🇸US | vless | @TVCminer | 18'
   - name: URL-TEST
     type: url-test
@@ -141,8 +145,10 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | vless | @ipV2Ray | 19'
+      - '🏳️XX | vless | @V2RayTz | 18'
       - '🏳️XX | vless | @proxystore11 | 6'
       - '🇩🇪DE | vless | @Capital_NET | 45'
+      - '🇬🇧GB | vless | @forwardv2ray | 16'
       - '🇺🇸US | vless | @TVCminer | 18'
   - name: FALLBACK
     type: fallback
@@ -150,8 +156,10 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇩🇪DE | vless | @ipV2Ray | 19'
+      - '🏳️XX | vless | @V2RayTz | 18'
       - '🏳️XX | vless | @proxystore11 | 6'
       - '🇩🇪DE | vless | @Capital_NET | 45'
+      - '🇬🇧GB | vless | @forwardv2ray | 16'
       - '🇺🇸US | vless | @TVCminer | 18'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
