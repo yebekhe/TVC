@@ -113,7 +113,7 @@
                 "🇨🇦CA | vmess | @free1_vpn | 0",
                 "🏳️XX | vmess | @Hope_Net | 19",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇸🇪SE | vmess | @forwardv2ray | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 8",
                 "🇳🇱NL | vmess | @kingofilter | 6",
                 "🇮🇷IR | vmess | @eliya_chiter0 | 3"
             ]
@@ -129,7 +129,7 @@
                 "🇨🇦CA | vmess | @free1_vpn | 0",
                 "🏳️XX | vmess | @Hope_Net | 19",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇸🇪SE | vmess | @forwardv2ray | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 8",
                 "🇳🇱NL | vmess | @kingofilter | 6",
                 "🇮🇷IR | vmess | @eliya_chiter0 | 3"
             ],
@@ -311,11 +311,11 @@
             }
         },
         {
-            "tag": "🇸🇪SE | vmess | @forwardv2ray | 6",
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 8",
             "type": "vmess",
-            "server": "45.11.182.108",
-            "server_port": 80,
-            "uuid": "ea122eac-3ea3-47e3-9c43-a0393dade8c8",
+            "server": "104.16.0.0",
+            "server_port": 443,
+            "uuid": "702b27e8-e096-42d0-f2df-ec5f7d4edd30",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -325,6 +325,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "terry-louise-guild-hoped.trycloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "terry-louise-guild-hoped.trycloudflare.com"
+                }
             }
         },
         {
