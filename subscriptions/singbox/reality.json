@@ -124,8 +124,8 @@
                 "🏳️XX | vless | @frev2ray | 0",
                 "🏳️XX | vless | @frev2ray | 1",
                 "🇩🇪DE | vless | @ARv2ray | 1",
+                "🇩🇪DE | vless | @ARv2ray | 4",
                 "🇩🇪DE | vless | @ARv2ray | 8",
-                "🇩🇪DE | vless | @ARv2ray | 10",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
                 "🇫🇮FI | vless | @CUSTOMVPNSERVER | 6",
@@ -148,7 +148,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 36",
                 "🏳️XX | vless | @Capital_NET | 37",
                 "🏳️XX | vless | @Capital_NET | 39",
-                "🇨🇦CA | vless | @Capital_NET | 41",
+                "🇳🇱NL | vless | @Capital_NET | 41",
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
@@ -206,8 +206,8 @@
                 "🏳️XX | vless | @frev2ray | 0",
                 "🏳️XX | vless | @frev2ray | 1",
                 "🇩🇪DE | vless | @ARv2ray | 1",
+                "🇩🇪DE | vless | @ARv2ray | 4",
                 "🇩🇪DE | vless | @ARv2ray | 8",
-                "🇩🇪DE | vless | @ARv2ray | 10",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
                 "🇫🇮FI | vless | @CUSTOMVPNSERVER | 6",
@@ -230,7 +230,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 36",
                 "🏳️XX | vless | @Capital_NET | 37",
                 "🏳️XX | vless | @Capital_NET | 39",
-                "🇨🇦CA | vless | @Capital_NET | 41",
+                "🇳🇱NL | vless | @Capital_NET | 41",
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
@@ -900,6 +900,42 @@
         {
             "tag": "🇩🇪DE | vless | @ARv2ray | 1",
             "type": "vless",
+            "server": "142.132.164.116",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftpdeb.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UxElrD_c6qrXRc9PFNKIcfsiqWJdvbUQHX2WpxHB428",
+                    "short_id": "4eafa6e8"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @ARv2ray | 4",
+            "type": "vless",
             "server": "195.201.38.188",
             "server_port": 443,
             "uuid": "telegram-id-ArV2ray",
@@ -959,42 +995,6 @@
                     "enabled": true,
                     "public_key": "-mjMgFno1kihL7m7cmKw8XgxBkVdRCHgGL9dXrjDLgc",
                     "short_id": "0c088b1a"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @ARv2ray | 10",
-            "type": "vless",
-            "server": "142.132.164.116",
-            "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ftpdeb.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "UxElrD_c6qrXRc9PFNKIcfsiqWJdvbUQHX2WpxHB428",
-                    "short_id": "4eafa6e8"
                 }
             },
             "transport": {
@@ -1714,7 +1714,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @Capital_NET | 41",
+            "tag": "🇳🇱NL | vless | @Capital_NET | 41",
             "type": "vless",
             "server": "194.5.97.158",
             "server_port": 443,
