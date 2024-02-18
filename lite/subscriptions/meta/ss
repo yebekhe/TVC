@@ -121,7 +121,6 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
-  - {"name":"🇸🇪SE | ss | @proxy_mtm | 0","type":"ss","server":"13.48.59.157","port":8081,"password":"RiSLs2PRGQt01PQwzdbaTVSLhEM/g0eM5qciNTv5qZ4=","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | ss | @ROMAX_VPN | 5","type":"ss","server":"45.8.146.32","port":50370,"password":"4sZ69FNmAPosCBiD6MUryB","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -130,7 +129,6 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
-      - '🇸🇪SE | ss | @proxy_mtm | 0'
       - '🇺🇸US | ss | @ROMAX_VPN | 5'
   - name: URL-TEST
     type: url-test
@@ -139,7 +137,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
-      - '🇸🇪SE | ss | @proxy_mtm | 0'
       - '🇺🇸US | ss | @ROMAX_VPN | 5'
   - name: FALLBACK
     type: fallback
@@ -147,7 +144,6 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
-      - '🇸🇪SE | ss | @proxy_mtm | 0'
       - '🇺🇸US | ss | @ROMAX_VPN | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
