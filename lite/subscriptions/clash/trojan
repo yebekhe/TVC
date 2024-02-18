@@ -120,7 +120,6 @@ dns:
 proxies:
   - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 15","type":"trojan","server":"13.36.217.59","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇸🇪SE | trojan | @DirectVPN | 15","type":"trojan","server":"16.171.131.194","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🏳️XX | trojan | @v2ray_swhil | 14","type":"trojan","server":"hongkong.followerpanell.ir","port":8443,"udp":false,"password":"e40c26851093180","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇨🇳CN | trojan | @yaney_01 | 7","type":"trojan","server":"xibaozi.19890604.day","port":10847,"udp":false,"password":"c1dc3493-2298-44ab-98c1-4abccbc350d1","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cloudflare.node-ssl.cdn-alibaba.com"}
 proxy-groups:
   - name: MANUAL
@@ -130,7 +129,6 @@ proxy-groups:
       - FALLBACK
       - '🇫🇷FR | trojan | @PrivateVPNs | 15'
       - '🇸🇪SE | trojan | @DirectVPN | 15'
-      - '🏳️XX | trojan | @v2ray_swhil | 14'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
   - name: URL-TEST
     type: url-test
@@ -140,7 +138,6 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 15'
       - '🇸🇪SE | trojan | @DirectVPN | 15'
-      - '🏳️XX | trojan | @v2ray_swhil | 14'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
   - name: FALLBACK
     type: fallback
@@ -149,7 +146,6 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | trojan | @PrivateVPNs | 15'
       - '🇸🇪SE | trojan | @DirectVPN | 15'
-      - '🏳️XX | trojan | @v2ray_swhil | 14'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
