@@ -115,7 +115,6 @@
                 "🇨🇦CA | vless | @melov2ray | 3",
                 "🏳️XX | vless | @frev2ray | 1",
                 "🇩🇪DE | vless | @ARv2ray | 12",
-                "🇺🇸US | vless | @shh_proxy | 20",
                 "🇨🇦CA | vless | @Lockey_vpn | 9",
                 "🇨🇦CA | vless | @rxv2ray | 21",
                 "🇨🇦CA | vless | @free_v2rayyy | 4",
@@ -167,8 +166,8 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇺🇸US | vless | @flyv2ray | 10",
-                "🇸🇪SE | vmess | @forwardv2ray | 17",
-                "🇺🇸US | vless | @https_config_injector | 11",
+                "🇸🇪SE | ss | @forwardv2ray | 11",
+                "🇨🇦CA | vless | @https_config_injector | 11",
                 "🇨🇳CN | vless | @mehrosaboran | 8",
                 "🇨🇦CA | vless | @kiava | 5",
                 "🇨🇦CA | vless | @nofiltering2 | 1",
@@ -200,7 +199,6 @@
                 "🇨🇦CA | vless | @melov2ray | 3",
                 "🏳️XX | vless | @frev2ray | 1",
                 "🇩🇪DE | vless | @ARv2ray | 12",
-                "🇺🇸US | vless | @shh_proxy | 20",
                 "🇨🇦CA | vless | @Lockey_vpn | 9",
                 "🇨🇦CA | vless | @rxv2ray | 21",
                 "🇨🇦CA | vless | @free_v2rayyy | 4",
@@ -252,8 +250,8 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇺🇸US | vless | @flyv2ray | 10",
-                "🇸🇪SE | vmess | @forwardv2ray | 17",
-                "🇺🇸US | vless | @https_config_injector | 11",
+                "🇸🇪SE | ss | @forwardv2ray | 11",
+                "🇨🇦CA | vless | @https_config_injector | 11",
                 "🇨🇳CN | vless | @mehrosaboran | 8",
                 "🇨🇦CA | vless | @kiava | 5",
                 "🇨🇦CA | vless | @nofiltering2 | 1",
@@ -536,37 +534,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇺🇸US | vless | @shh_proxy | 20",
-            "type": "vless",
-            "server": "shhproxy.varzesh3-cnd.site",
-            "server_port": 2087,
-            "uuid": "0b2d1029-6c3d-4178-9ee6-20e2e44f0dcb",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "SHHPROXY.xn--69-pv2cl2k5x3fipr.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "SHHPROXY.xn--69-pv2cl2k5x3fipr.org"
-                }
             }
         },
         {
@@ -1817,24 +1784,17 @@
             }
         },
         {
-            "tag": "🇸🇪SE | vmess | @forwardv2ray | 17",
-            "type": "vmess",
-            "server": "45.11.182.108",
-            "server_port": 80,
-            "uuid": "ea122eac-3ea3-47e3-9c43-a0393dade8c8",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
+            "tag": "🇸🇪SE | ss | @forwardv2ray | 11",
+            "type": "shadowsocks",
+            "server": "51.20.10.151",
+            "server_port": 8081,
+            "method": "chacha20-ietf-poly1305",
+            "password": "R9ah9Z+nTKXs2LkdbDGal\/xHSz4yJGS2De\/+xcda0g8=",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
-            "tag": "🇺🇸US | vless | @https_config_injector | 11",
+            "tag": "🇨🇦CA | vless | @https_config_injector | 11",
             "type": "vless",
             "server": "eli.eliv2.top",
             "server_port": 80,
