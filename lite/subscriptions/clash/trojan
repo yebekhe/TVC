@@ -118,11 +118,10 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 18","type":"trojan","server":"35.181.231.85","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇫🇷FR | trojan | @DirectVPN | 18","type":"trojan","server":"15.237.79.99","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇫🇷FR | trojan | @PrivateVPNs | 18","type":"trojan","server":"15.236.200.80","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇫🇷FR | trojan | @DirectVPN | 18","type":"trojan","server":"15.188.131.123","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🏳️XX | trojan | @v2ray_swhil | 21","type":"trojan","server":"hongkong.followerpanell.ir","port":8443,"udp":false,"password":"e40c26851093180","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇨🇳CN | trojan | @yaney_01 | 7","type":"trojan","server":"xibaozi.19890604.day","port":10847,"udp":false,"password":"c1dc3493-2298-44ab-98c1-4abccbc350d1","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cloudflare.node-ssl.cdn-alibaba.com"}
-  - {"name":"🇯🇵JP | trojan | @forwardv2ray | 17","type":"trojan","server":"ua.mjt000.com","port":443,"udp":false,"password":"0cdc54e5-c8e1-4350-a7b2-047e5f4c02f9","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ua.mjt000.com"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -133,7 +132,6 @@ proxy-groups:
       - '🇫🇷FR | trojan | @DirectVPN | 18'
       - '🏳️XX | trojan | @v2ray_swhil | 21'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
-      - '🇯🇵JP | trojan | @forwardv2ray | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -144,7 +142,6 @@ proxy-groups:
       - '🇫🇷FR | trojan | @DirectVPN | 18'
       - '🏳️XX | trojan | @v2ray_swhil | 21'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
-      - '🇯🇵JP | trojan | @forwardv2ray | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -154,7 +151,6 @@ proxy-groups:
       - '🇫🇷FR | trojan | @DirectVPN | 18'
       - '🏳️XX | trojan | @v2ray_swhil | 21'
       - '🇨🇳CN | trojan | @yaney_01 | 7'
-      - '🇯🇵JP | trojan | @forwardv2ray | 17'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
