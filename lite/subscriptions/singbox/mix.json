@@ -156,7 +156,7 @@
                 "🏳️XX | vless | @proxystore11 | 8",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
                 "🇨🇦CA | vmess | @free1_vpn | 0",
-                "🇳🇴NO | vmess | @Hope_Net | 3",
+                "🇯🇵JP | vmess | @Hope_Net | 1",
                 "🇨🇦CA | vless | @fnet00 | 7",
                 "🇨🇦CA | vless | @polproxy | 2",
                 "🇺🇸US | vless | @Outlinev2rayNG | 15",
@@ -167,7 +167,7 @@
                 "🏳️XX | vless | @Capoit | 7",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 11",
-                "🇪🇸ES | vless | @forwardv2ray | 18",
+                "🇫🇷FR | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 13",
                 "🇨🇦CA | vless | @kiava | 5",
@@ -241,7 +241,7 @@
                 "🏳️XX | vless | @proxystore11 | 8",
                 "🇨🇳CN | trojan | @yaney_01 | 7",
                 "🇨🇦CA | vmess | @free1_vpn | 0",
-                "🇳🇴NO | vmess | @Hope_Net | 3",
+                "🇯🇵JP | vmess | @Hope_Net | 1",
                 "🇨🇦CA | vless | @fnet00 | 7",
                 "🇨🇦CA | vless | @polproxy | 2",
                 "🇺🇸US | vless | @Outlinev2rayNG | 15",
@@ -252,7 +252,7 @@
                 "🏳️XX | vless | @Capoit | 7",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vless | @flyv2ray | 11",
-                "🇪🇸ES | vless | @forwardv2ray | 18",
+                "🇫🇷FR | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 13",
                 "🇨🇦CA | vless | @kiava | 5",
@@ -1545,11 +1545,11 @@
             }
         },
         {
-            "tag": "🇳🇴NO | vmess | @Hope_Net | 3",
+            "tag": "🇯🇵JP | vmess | @Hope_Net | 1",
             "type": "vmess",
-            "server": "185.175.56.124",
-            "server_port": 21210,
-            "uuid": "82fad303-8c2e-4f65-a9bd-cc5992ac1102",
+            "server": "183.181.36.194",
+            "server_port": 41597,
+            "uuid": "4a6eaa2d-5603-4c05-d967-fb6f42250a5a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1559,6 +1559,13 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
@@ -1806,17 +1813,32 @@
             }
         },
         {
-            "tag": "🇪🇸ES | vless | @forwardv2ray | 18",
+            "tag": "🇫🇷FR | vless | @forwardv2ray | 19",
             "type": "vless",
-            "server": "65.20.104.127",
-            "server_port": 48493,
-            "uuid": "4b1ca9d9-0088-4e56-a4cb-e5e77e9411ed",
-            "flow": "",
+            "server": "95.179.217.33",
+            "server_port": 45712,
+            "uuid": "69a75a84-31ab-46c4-8e42-fc4c6d320ba1",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.discordapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "RsbT8HImgysmMNJaDi3x4yyrUdWpfk3EJEDVYQPvZRw",
+                    "short_id": "d55861e7"
+                }
             }
         },
         {
