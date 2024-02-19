@@ -154,6 +154,8 @@
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @FreakConfig | 1",
+                "🇩🇪DE | vless | @forwardv2ray | 6",
+                "🏳️XX | vless | @forwardv2ray | 7",
                 "🇸🇪SE | vless | @kiava | 2",
                 "🇸🇪SE | vless | @kiava | 3",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
@@ -236,6 +238,8 @@
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @FreakConfig | 1",
+                "🇩🇪DE | vless | @forwardv2ray | 6",
+                "🏳️XX | vless | @forwardv2ray | 7",
                 "🇸🇪SE | vless | @kiava | 2",
                 "🇸🇪SE | vless | @kiava | 3",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
@@ -1882,6 +1886,71 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@Everyday_VPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 6",
+            "type": "vless",
+            "server": "zedmodeon-channel-zedmodeon-join-zedmodeon-zedmodeon-zedmodeon.tozedmodeon.store",
+            "server_port": 25365,
+            "uuid": "b69844ba-4ec7-470e-8885-5ff31662473f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "A71DCWHWVNjZgmzh2gWM9Wq5OXl8J2RXtOHkiPI89GM",
+                    "short_id": "044a8c43"
+                }
+            }
+        },
+        {
+            "tag": "🏳️XX | vless | @forwardv2ray | 7",
+            "type": "vless",
+            "server": "[2a01:4f9:c011:8b23::1]",
+            "server_port": 25365,
+            "uuid": "35529d09-bc2a-47bf-a8bc-65703cd95247",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Z8VGv2kPcxu7pW1wXRW8lnpPq19TobF9YKrdlW3EBlU",
+                    "short_id": "fc790928"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ZEDMODEON-@ZEDMODEON-@ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
