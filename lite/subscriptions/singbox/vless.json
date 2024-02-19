@@ -142,20 +142,20 @@
                 "🇫🇷FR | vless | @v2ray1_ng | 9",
                 "🇮🇷IR | vless | @vless_vmess | 4",
                 "🇨🇦CA | vless | @V2RayTz | 19",
-                "🇬🇧GB | vless | @DailyV2RY | 82",
+                "🇬🇧GB | vless | @DailyV2RY | 83",
                 "🇨🇦CA | vless | @sinabigo | 2",
                 "🏳️XX | vless | @lrnbymaa | 6",
                 "🇨🇦CA | vless | @proxystore11 | 12",
                 "🇨🇦CA | vless | @fnet00 | 7",
                 "🇨🇦CA | vless | @polproxy | 2",
-                "🇨🇦CA | vless | @Outlinev2rayNG | 15",
+                "🇨🇦CA | vless | @Outlinev2rayNG | 14",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 5",
                 "🇨🇦CA | vless | @v2rayng_config_amin | 4",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇨🇦CA | vless | @Capoit | 4",
                 "🇺🇸US | vless | @FreakConfig | 4",
                 "🇨🇦CA | vless | @flyv2ray | 11",
-                "🇨🇦CA | vless | @https_config_injector | 12",
+                "🇺🇸US | vless | @https_config_injector | 11",
                 "🇺🇸US | vless | @mehrosaboran | 12",
                 "🇨🇦CA | vless | @kiava | 5",
                 "🇨🇦CA | vless | @nofiltering2 | 1",
@@ -212,20 +212,20 @@
                 "🇫🇷FR | vless | @v2ray1_ng | 9",
                 "🇮🇷IR | vless | @vless_vmess | 4",
                 "🇨🇦CA | vless | @V2RayTz | 19",
-                "🇬🇧GB | vless | @DailyV2RY | 82",
+                "🇬🇧GB | vless | @DailyV2RY | 83",
                 "🇨🇦CA | vless | @sinabigo | 2",
                 "🏳️XX | vless | @lrnbymaa | 6",
                 "🇨🇦CA | vless | @proxystore11 | 12",
                 "🇨🇦CA | vless | @fnet00 | 7",
                 "🇨🇦CA | vless | @polproxy | 2",
-                "🇨🇦CA | vless | @Outlinev2rayNG | 15",
+                "🇨🇦CA | vless | @Outlinev2rayNG | 14",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 5",
                 "🇨🇦CA | vless | @v2rayng_config_amin | 4",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇨🇦CA | vless | @Capoit | 4",
                 "🇺🇸US | vless | @FreakConfig | 4",
                 "🇨🇦CA | vless | @flyv2ray | 11",
-                "🇨🇦CA | vless | @https_config_injector | 12",
+                "🇺🇸US | vless | @https_config_injector | 11",
                 "🇺🇸US | vless | @mehrosaboran | 12",
                 "🇨🇦CA | vless | @kiava | 5",
                 "🇨🇦CA | vless | @nofiltering2 | 1",
@@ -772,9 +772,9 @@
         {
             "tag": "🇨🇦CA | vless | @V2rayCollectorDonate | 19",
             "type": "vless",
-            "server": "104.21.15.47",
-            "server_port": 8443,
-            "uuid": "6d083019-882c-4386-b96f-888a19fbf42d",
+            "server": "Allv10.Azaronline.org",
+            "server_port": 80,
+            "uuid": "7f55b425-a623-439b-bbd5-0b1778162054",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -782,22 +782,12 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "xnxv2ray.mioRay.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "Telegram:@XNXV2RAY,Telegram:@XNXV2RAY,Telegram:@XNXV2RAY,Telegram:@XNXV2RAY,Telegram:@XNXV2RAY,Telegram:@XNXV2RAY,Telegram:@XNXV2RAY",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "Allv10.Azaronline.org"
+                }
             }
         },
         {
@@ -942,9 +932,9 @@
         {
             "tag": "🇨🇦CA | vless | @v2rayngvpn | 17",
             "type": "vless",
-            "server": "Allv8.Azaronline.org",
-            "server_port": 80,
-            "uuid": "7f55b425-a623-439b-bbd5-0b1778162054",
+            "server": "3k.pureboy.eu.org",
+            "server_port": 443,
+            "uuid": "b9ad895b-12ac-40fc-a5ac-a5b2a1285001",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -952,11 +942,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "3k.pureboy.eu.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "Allv8.Azaronline.org"
+                    "Host": "3k.pureboy.eu.org"
                 }
             }
         },
@@ -1216,7 +1216,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | vless | @DailyV2RY | 82",
+            "tag": "🇬🇧GB | vless | @DailyV2RY | 83",
             "type": "vless",
             "server": "143.110.169.62",
             "server_port": 57599,
@@ -1380,11 +1380,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @Outlinev2rayNG | 15",
+            "tag": "🇨🇦CA | vless | @Outlinev2rayNG | 14",
             "type": "vless",
-            "server": "104.26.15.85",
-            "server_port": 2053,
-            "uuid": "2305891e-b2f2-4c97-841c-c52d9d2c9631",
+            "server": "cdb1.mazedownloader.lol",
+            "server_port": 443,
+            "uuid": "d50a0b45-1132-460c-babc-4b364f3f29ae",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1394,7 +1394,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "transaction-24385b2fdde5059057d092719877602e24a85e24fd2e6feb0e79eeeccbfd1024.mitsonic.com",
+                "server_name": "aspiss.segstar.info",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1404,9 +1404,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed",
+                "path": "\/segws\/47932",
                 "headers": {
-                    "Host": "transaction-24385b2fdde5059057d092719877602e24a85e24fd2e6feb0e79eeeccbfd1024.mitsonic.com"
+                    "Host": "aspiss.segstar.info"
                 }
             }
         },
@@ -1565,11 +1565,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @https_config_injector | 12",
+            "tag": "🇺🇸US | vless | @https_config_injector | 11",
             "type": "vless",
-            "server": "speedtest.org",
+            "server": "172.64.111.9",
             "server_port": 443,
-            "uuid": "1d86846c-5a27-43c8-8981-57bb75c82195",
+            "uuid": "b0138d55-a493-4dc3-9932-c6f0391707c1",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1579,7 +1579,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tjsre.ttvoffi.info",
+                "server_name": "edge.020770.xyz",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1589,9 +1589,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/paradise",
+                "path": "\/vless\/b0138d55-a493-4dc3-9932-c6f0391707c1",
                 "headers": {
-                    "Host": "tjsre.ttvoffi.info"
+                    "Host": "edge.020770.xyz"
                 }
             }
         },
