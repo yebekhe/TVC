@@ -122,6 +122,7 @@ dns:
 proxies:
   - {"name":"🏳️XX | ss | @azadi_az_inja_migzare | 2","type":"ss","server":"[::ffff:1285:d01c]","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
+  - {"name":"🇬🇧GB | ss | @kingofilter | 5","type":"ss","server":"51.11.104.69","port":16550,"password":"qFqqKf78FuMHnBqoxeWz4R","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | ss | @ROMAX_VPN | 5","type":"ss","server":"45.8.146.32","port":50370,"password":"4sZ69FNmAPosCBiD6MUryB","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -131,6 +132,7 @@ proxy-groups:
       - FALLBACK
       - '🏳️XX | ss | @azadi_az_inja_migzare | 2'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🇬🇧GB | ss | @kingofilter | 5'
       - '🇺🇸US | ss | @ROMAX_VPN | 5'
   - name: URL-TEST
     type: url-test
@@ -140,6 +142,7 @@ proxy-groups:
     proxies:
       - '🏳️XX | ss | @azadi_az_inja_migzare | 2'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🇬🇧GB | ss | @kingofilter | 5'
       - '🇺🇸US | ss | @ROMAX_VPN | 5'
   - name: FALLBACK
     type: fallback
@@ -148,6 +151,7 @@ proxy-groups:
     proxies:
       - '🏳️XX | ss | @azadi_az_inja_migzare | 2'
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🇬🇧GB | ss | @kingofilter | 5'
       - '🇺🇸US | ss | @ROMAX_VPN | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
