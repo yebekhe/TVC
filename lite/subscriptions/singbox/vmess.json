@@ -110,8 +110,10 @@
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
+                "🇳🇱NL | vmess | @v2ray_swhil | 17",
                 "🇨🇦CA | vmess | @free1_vpn | 0",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇳🇱NL | vmess | @forwardv2ray | 7",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 2"
             ]
         },
@@ -123,8 +125,10 @@
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
+                "🇳🇱NL | vmess | @v2ray_swhil | 17",
                 "🇨🇦CA | vmess | @free1_vpn | 0",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇳🇱NL | vmess | @forwardv2ray | 7",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -250,6 +254,30 @@
             }
         },
         {
+            "tag": "🇳🇱NL | vmess | @v2ray_swhil | 17",
+            "type": "vmess",
+            "server": "188.114.96.113",
+            "server_port": 80,
+            "uuid": "7022982f-da4c-48c9-c660-b2315abdcf7e",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
             "tag": "🇨🇦CA | vmess | @free1_vpn | 0",
             "type": "vmess",
             "server": "104.21.33.32",
@@ -304,6 +332,40 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "ca2.xv2ray.net"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | vmess | @forwardv2ray | 7",
+            "type": "vmess",
+            "server": "142.93.130.99",
+            "server_port": 443,
+            "uuid": "f0aec29d-9f86-4887-88d5-11a69044ec42",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
                 }
             }
         },
