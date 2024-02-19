@@ -132,7 +132,7 @@
                 "🇫🇷FR | trojan | @DirectVPN | 14",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @DeamNet_Proxy | 17",
+                "🇺🇸US | ss | @DeamNet_Proxy | 16",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
                 "🇩🇪DE | vless | @prrofile_purple | 179",
                 "🇨🇦CA | vless | @UnlimitedDev | 7",
@@ -166,6 +166,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇫🇷FR | vless | @flyv2ray | 13",
+                "🇨🇷CR | vless | @forwardv2ray | 18",
                 "🇺🇸US | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 15",
                 "🇨🇦CA | vless | @kiava | 5",
@@ -216,7 +217,7 @@
                 "🇫🇷FR | trojan | @DirectVPN | 14",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @DeamNet_Proxy | 17",
+                "🇺🇸US | ss | @DeamNet_Proxy | 16",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
                 "🇩🇪DE | vless | @prrofile_purple | 179",
                 "🇨🇦CA | vless | @UnlimitedDev | 7",
@@ -250,6 +251,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇫🇷FR | vless | @flyv2ray | 13",
+                "🇨🇷CR | vless | @forwardv2ray | 18",
                 "🇺🇸US | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 15",
                 "🇨🇦CA | vless | @kiava | 5",
@@ -965,38 +967,14 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @DeamNet_Proxy | 17",
-            "type": "vmess",
-            "server": "afrhms16v.bestxray.buzz",
+            "tag": "🇺🇸US | ss | @DeamNet_Proxy | 16",
+            "type": "shadowsocks",
+            "server": "205.134.180.147",
             "server_port": 443,
-            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "afrhms16v.bestxray.buzz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws",
-                "headers": {
-                    "Host": "afrhms16v.bestxray.buzz"
-                }
-            }
+            "method": "chacha20-ietf-poly1305",
+            "password": "9Bvkw5aupNy8",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
@@ -1647,9 +1625,9 @@
         {
             "tag": "🇨🇦CA | vless | @polproxy | 2",
             "type": "vless",
-            "server": "zula.ir",
+            "server": "104.16.32.40",
             "server_port": 2087,
-            "uuid": "61327bc1-4e9a-4cea-a214-7b489c3bcec3",
+            "uuid": "4b6d3cb5-017a-4dd6-94e0-08fa5d862c9a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1669,7 +1647,7 @@
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY-Telegram:@POLPROXY",
+                "service_name": "baipiao406.stunning-bassoon.pages.dev",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -1855,6 +1833,37 @@
                 "path": "\/SvnTeam",
                 "headers": {
                     "Host": "95.179.216.171"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇷CR | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "190.93.247.155",
+            "server_port": 443,
+            "uuid": "858590af-4e6c-48d9-8532-8479cf51976a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "aaa.moaidownloader.info",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/download.zula_v1.8.09",
+                "headers": {
+                    "Host": "aaa.moaidownloader.info"
                 }
             }
         },
