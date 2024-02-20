@@ -110,6 +110,7 @@
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @v2logy | 10",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 5",
+                "🇩🇪DE | vless | @V2RayTz | 13",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @FreakConfig | 3",
                 "🏳️XX | vless | @vpn_go67 | 23"
@@ -123,6 +124,7 @@
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @v2logy | 10",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 5",
+                "🇩🇪DE | vless | @V2RayTz | 13",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @FreakConfig | 3",
                 "🏳️XX | vless | @vpn_go67 | 23"
@@ -274,6 +276,42 @@
                     "enabled": true,
                     "public_key": "W6ol7KU4fjV1mBS2aG_xs8emIKsqF8y6Ufva-2MRa20",
                     "short_id": "9d2b63ad"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @V2RayTz | 13",
+            "type": "vless",
+            "server": "116.203.229.47",
+            "server_port": 443,
+            "uuid": "b1c1da37-726b-4db1-8139-27a7497e3186",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.dnschecker.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "c452clIZOGrphH1pKZLlFFyN9bjhk2JxMemT2Df6C3w",
+                    "short_id": "d276874c"
                 }
             },
             "transport": {

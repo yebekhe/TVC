@@ -114,6 +114,7 @@
                 "🇨🇦CA | vmess | @yaney_01 | 7",
                 "🇨🇦CA | vmess | @free1_vpn | 1",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 11",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | vmess | @FoXrayIran | 3"
             ]
@@ -130,6 +131,7 @@
                 "🇨🇦CA | vmess | @yaney_01 | 7",
                 "🇨🇦CA | vmess | @free1_vpn | 1",
                 "🇺🇸US | vmess | @v2Line | 6",
+                "🇨🇦CA | vmess | @forwardv2ray | 11",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | vmess | @FoXrayIran | 3"
             ],
@@ -369,6 +371,40 @@
                 "headers": {
                     "Host": "ca2.xv2ray.net"
                 }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 11",
+            "type": "vmess",
+            "server": "162.159.1.94",
+            "server_port": 2053,
+            "uuid": "91b88510-b749-447a-b0b4-4666fcb8a62d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cloud.hide-luod.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "2053vmess",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
