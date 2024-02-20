@@ -144,7 +144,7 @@
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 1",
                 "🇨🇦CA | vmess | @v2ray_swhil | 21",
-                "🇺🇸US | vless | @proxyymeliii | 18",
+                "🇮🇷IR | vmess | @proxyymeliii | 17",
                 "🇨🇷CR | vless | @MsV2ray | 14",
                 "🇫🇷FR | vless | @v2ray1_ng | 10",
                 "🇮🇷IR | vless | @vless_vmess | 4",
@@ -165,7 +165,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇫🇷FR | vless | @flyv2ray | 13",
-                "🏳️XX | vmess | @forwardv2ray | 8",
+                "🇨🇦CA | vless | @forwardv2ray | 15",
                 "🇺🇸US | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 15",
                 "🇨🇦CA | vless | @kiava | 5",
@@ -228,7 +228,7 @@
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 1",
                 "🇨🇦CA | vmess | @v2ray_swhil | 21",
-                "🇺🇸US | vless | @proxyymeliii | 18",
+                "🇮🇷IR | vmess | @proxyymeliii | 17",
                 "🇨🇷CR | vless | @MsV2ray | 14",
                 "🇫🇷FR | vless | @v2ray1_ng | 10",
                 "🇮🇷IR | vless | @vless_vmess | 4",
@@ -249,7 +249,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇫🇷FR | vless | @flyv2ray | 13",
-                "🏳️XX | vmess | @forwardv2ray | 8",
+                "🇨🇦CA | vless | @forwardv2ray | 15",
                 "🇺🇸US | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 15",
                 "🇨🇦CA | vless | @kiava | 5",
@@ -1317,24 +1317,20 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @proxyymeliii | 18",
-            "type": "vless",
-            "server": "gcore.com",
-            "server_port": 80,
-            "uuid": "09b5812b-8ede-4d1b-b55a-d40b48e3443b",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇮🇷IR | vmess | @proxyymeliii | 17",
+            "type": "vmess",
+            "server": "193.151.142.196",
+            "server_port": 16048,
+            "uuid": "67823cc6-821a-484a-b809-23758629fef6",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ws",
-                "headers": {
-                    "Host": "gcore.com"
-                }
             }
         },
         {
@@ -1840,36 +1836,23 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @forwardv2ray | 8",
-            "type": "vmess",
-            "server": "mci.mosi.mosipro.ml",
-            "server_port": 443,
-            "uuid": "2f2ebfa0-8e1b-4ffd-afda-11bde1e5d184",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 15",
+            "type": "vless",
+            "server": "172.66.148.85",
+            "server_port": 8080,
+            "uuid": "00ec5896-0a05-4508-9a09-02b06cd40bf8",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "Dusseldorf.kotick.site",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/speedtest",
+                "path": "\/",
                 "headers": {
-                    "Host": "Dusseldorf.kotick.site"
+                    "Host": "172.66.148.85"
                 }
             }
         },
