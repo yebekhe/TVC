@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇷FR | vless | @EliV2ray | 1",
                 "🇫🇷FR | vless | @NIM_VPN_ir | 0",
                 "🇩🇪DE | vless | @ipV2Ray | 5",
                 "🇳🇱NL | vless | @ipV2Ray | 6",
@@ -152,12 +153,12 @@
                 "🇩🇪DE | vless | @Capital_NET | 36",
                 "🏳️XX | vless | @Capital_NET | 37",
                 "🏳️XX | vless | @Capital_NET | 39",
-                "🇨🇦CA | vless | @Capital_NET | 41",
+                "🇳🇱NL | vless | @Capital_NET | 41",
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @FreakConfig | 2",
-                "🏳️XX | vless | @forwardv2ray | 5",
+                "🇮🇷IR | vless | @forwardv2ray | 5",
                 "🇳🇱NL | vless | @mehrosaboran | 6",
                 "🇬🇧GB | vless | @mehrosaboran | 7",
                 "🇸🇪SE | vless | @kiava | 3",
@@ -194,6 +195,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇷FR | vless | @EliV2ray | 1",
                 "🇫🇷FR | vless | @NIM_VPN_ir | 0",
                 "🇩🇪DE | vless | @ipV2Ray | 5",
                 "🇳🇱NL | vless | @ipV2Ray | 6",
@@ -240,12 +242,12 @@
                 "🇩🇪DE | vless | @Capital_NET | 36",
                 "🏳️XX | vless | @Capital_NET | 37",
                 "🏳️XX | vless | @Capital_NET | 39",
-                "🇨🇦CA | vless | @Capital_NET | 41",
+                "🇳🇱NL | vless | @Capital_NET | 41",
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @FreakConfig | 2",
-                "🏳️XX | vless | @forwardv2ray | 5",
+                "🇮🇷IR | vless | @forwardv2ray | 5",
                 "🇳🇱NL | vless | @mehrosaboran | 6",
                 "🇬🇧GB | vless | @mehrosaboran | 7",
                 "🇸🇪SE | vless | @kiava | 3",
@@ -296,6 +298,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇷FR | vless | @EliV2ray | 1",
+            "type": "vless",
+            "server": "95.179.217.33",
+            "server_port": 45712,
+            "uuid": "69a75a84-31ab-46c4-8e42-fc4c6d320ba1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.discordapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "RsbT8HImgysmMNJaDi3x4yyrUdWpfk3EJEDVYQPvZRw",
+                    "short_id": "d55861e7"
+                }
+            }
         },
         {
             "tag": "🇫🇷FR | vless | @NIM_VPN_ir | 0",
@@ -1842,7 +1873,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @Capital_NET | 41",
+            "tag": "🇳🇱NL | vless | @Capital_NET | 41",
             "type": "vless",
             "server": "194.5.97.158",
             "server_port": 443,
@@ -1994,11 +2025,11 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @forwardv2ray | 5",
+            "tag": "🇮🇷IR | vless | @forwardv2ray | 5",
             "type": "vless",
-            "server": "v2logy.ddns.net",
-            "server_port": 443,
-            "uuid": "72859c41-15ac-4621-bfdf-ac4c3ac33ad4",
+            "server": "85.9.96.131",
+            "server_port": 2087,
+            "uuid": "352f8151-f56f-4858-a855-b338e3053e6d",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2008,7 +2039,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "sourceforge.net",
+                "server_name": "www.speedtest.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -2017,16 +2048,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "k6gu1t73hTdYK3PKNUwOqy2B7ZP-sek-dW2_-aGf9i4",
-                    "short_id": ""
+                    "public_key": "2-t9uUzRV61JYk2SuEzWmNuKgh_lG5IteIJ_pHPcPWM",
+                    "short_id": "21e8adbf"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
