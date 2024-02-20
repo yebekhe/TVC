@@ -164,7 +164,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 6",
-                "🏳️XX | vless | @forwardv2ray | 17",
+                "🇨🇦CA | vless | @forwardv2ray | 7",
                 "🇺🇸US | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 15",
                 "🇨🇦CA | vless | @kiava | 5",
@@ -247,7 +247,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 6",
-                "🏳️XX | vless | @forwardv2ray | 17",
+                "🇨🇦CA | vless | @forwardv2ray | 7",
                 "🇺🇸US | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 15",
                 "🇨🇦CA | vless | @kiava | 5",
@@ -1803,17 +1803,24 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @forwardv2ray | 17",
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 7",
             "type": "vless",
-            "server": "[2a03:b0c0:2:d0::b7c:e001]",
-            "server_port": 15317,
-            "uuid": "f932c50c-f36f-4cd5-8fcd-cbf92f8d3b66",
+            "server": "172.67.140.26",
+            "server_port": 8080,
+            "uuid": "00ec5896-0a05-4508-9a09-02b06cd40bf8",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "172.67.140.26"
+                }
             }
         },
         {
