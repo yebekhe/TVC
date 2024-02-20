@@ -123,8 +123,9 @@ proxies:
   - {"name":"🇨🇦CA | vmess | @DeamNet_Proxy | 19","type":"vmess","server":"172.67.133.78","port":"2053","cipher":"auto","uuid":"0f1b29b8-0f0f-431a-b6d1-035803a95c32","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vVNUJOgb/","headers":{"host":"v2ray.ibgfw.top"}}}
   - {"name":"🇨🇦CA | vmess | @yaney_01 | 7","type":"vmess","server":"172.67.217.144","port":"80","cipher":"auto","uuid":"85674552-ce41-44d9-bb2a-50f76450b3d8","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"lv1.xv2ray.net"}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
+  - {"name":"🇨🇭CH | vmess | @forwardv2ray | 19","type":"vmess","server":"188.244.117.31","port":"28320","cipher":"auto","uuid":"236fa6e3-683b-4c3f-a07c-56061ee393c2","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @eliya_chiter0 | 2","type":"vmess","server":"172.67.131.108","port":"443","cipher":"auto","uuid":"1052f24e-7b09-45eb-b0c5-d858eb124192","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"glweidf.cfd"}}}
-  - {"name":"🇨🇦CA | vmess | @FoXrayIran | 3","type":"vmess","server":"tl.iranray.online","port":"8080","cipher":"auto","uuid":"839a223f-7510-4556-91fc-03c9dcd9056b","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tl.iranray.online"}}}
+  - {"name":"🇨🇦CA | vmess | @FoXrayIran | 1","type":"vmess","server":"tl.iranray.online","port":"8080","cipher":"auto","uuid":"b3c20911-126d-4c30-bd32-10152bf0b593","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tl.iranray.online"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -136,8 +137,9 @@ proxy-groups:
       - '🇨🇦CA | vmess | @DeamNet_Proxy | 19'
       - '🇨🇦CA | vmess | @yaney_01 | 7'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇭CH | vmess | @forwardv2ray | 19'
       - '🇨🇦CA | vmess | @eliya_chiter0 | 2'
-      - '🇨🇦CA | vmess | @FoXrayIran | 3'
+      - '🇨🇦CA | vmess | @FoXrayIran | 1'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -149,8 +151,9 @@ proxy-groups:
       - '🇨🇦CA | vmess | @DeamNet_Proxy | 19'
       - '🇨🇦CA | vmess | @yaney_01 | 7'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇭CH | vmess | @forwardv2ray | 19'
       - '🇨🇦CA | vmess | @eliya_chiter0 | 2'
-      - '🇨🇦CA | vmess | @FoXrayIran | 3'
+      - '🇨🇦CA | vmess | @FoXrayIran | 1'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -161,8 +164,9 @@ proxy-groups:
       - '🇨🇦CA | vmess | @DeamNet_Proxy | 19'
       - '🇨🇦CA | vmess | @yaney_01 | 7'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇭CH | vmess | @forwardv2ray | 19'
       - '🇨🇦CA | vmess | @eliya_chiter0 | 2'
-      - '🇨🇦CA | vmess | @FoXrayIran | 3'
+      - '🇨🇦CA | vmess | @FoXrayIran | 1'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
