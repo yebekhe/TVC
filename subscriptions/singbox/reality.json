@@ -142,6 +142,7 @@
                 "🇩🇪DE | vless | @VmessProtocol | 5",
                 "🇩🇪DE | vless | @VmessProtocol | 6",
                 "🇩🇪DE | vless | @VmessProtocol | 8",
+                "🇩🇪DE | vless | @DailyV2RY | 56",
                 "🏳️XX | vless | @v2rayng_vpnrog | 4",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
@@ -156,6 +157,7 @@
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @FreakConfig | 2",
+                "🇫🇷FR | vless | @forwardv2ray | 14",
                 "🇳🇱NL | vless | @mehrosaboran | 6",
                 "🇬🇧GB | vless | @mehrosaboran | 7",
                 "🇸🇪SE | vless | @kiava | 2",
@@ -228,6 +230,7 @@
                 "🇩🇪DE | vless | @VmessProtocol | 5",
                 "🇩🇪DE | vless | @VmessProtocol | 6",
                 "🇩🇪DE | vless | @VmessProtocol | 8",
+                "🇩🇪DE | vless | @DailyV2RY | 56",
                 "🏳️XX | vless | @v2rayng_vpnrog | 4",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
@@ -242,6 +245,7 @@
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @FreakConfig | 2",
+                "🇫🇷FR | vless | @forwardv2ray | 14",
                 "🇳🇱NL | vless | @mehrosaboran | 6",
                 "🇬🇧GB | vless | @mehrosaboran | 7",
                 "🇸🇪SE | vless | @kiava | 2",
@@ -1527,6 +1531,35 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @DailyV2RY | 56",
+            "type": "vless",
+            "server": "zedmodeon-channel-zedmodeon-join-zedmodeon-zedmodeon-zedmodeon.tozedmodeon.store",
+            "server_port": 25365,
+            "uuid": "fe4fa32d-377c-4577-86eb-8e9a81d08cdf",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "t7pJFOkjW5P8PPC4JpV2H97JC1aVwN5-qH2oMygORVw",
+                    "short_id": "fa1007c3"
+                }
+            }
+        },
+        {
             "tag": "🏳️XX | vless | @v2rayng_vpnrog | 4",
             "type": "vless",
             "server": "[2a01:4f9:c011:64f::30]",
@@ -1955,6 +1988,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@Everyday_VPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇷FR | vless | @forwardv2ray | 14",
+            "type": "vless",
+            "server": "fr1.quickvpn.shop",
+            "server_port": 4054,
+            "uuid": "a3180306-9950-4bba-85c8-64da4be09031",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kodular.io",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pR5x9i6sat2bcT3iT4U_-mU8HZH59XYAJn776oV9Cz4",
+                    "short_id": "85689f6e"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "maeinvp239h",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
