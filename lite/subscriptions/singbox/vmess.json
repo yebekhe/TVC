@@ -115,7 +115,7 @@
                 "🇨🇦CA | vmess | @v2ray1_ng | 12",
                 "🇺🇸US | vmess | @yaney_01 | 6",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇺🇸US | vmess | @forwardv2ray | 15",
+                "🇮🇷IR | vmess | @forwardv2ray | 14",
                 "🇨🇦CA | vmess | @FoXrayIran | 1"
             ]
         },
@@ -132,7 +132,7 @@
                 "🇨🇦CA | vmess | @v2ray1_ng | 12",
                 "🇺🇸US | vmess | @yaney_01 | 6",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇺🇸US | vmess | @forwardv2ray | 15",
+                "🇮🇷IR | vmess | @forwardv2ray | 14",
                 "🇨🇦CA | vmess | @FoXrayIran | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -378,11 +378,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @forwardv2ray | 15",
+            "tag": "🇮🇷IR | vmess | @forwardv2ray | 14",
             "type": "vmess",
-            "server": "129.146.113.254",
-            "server_port": 43121,
-            "uuid": "d53b39e2-925e-45b6-9389-46b9fa95878b",
+            "server": "snappfood.ir",
+            "server_port": 443,
+            "uuid": "6d658352-571f-4cb6-9205-d7c02331fa86",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -393,11 +393,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "tr.fastosos.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/api",
                 "headers": {
-                    "Host": "129.146.113.254"
+                    "Host": "tr.fastosos.com"
                 }
             }
         },
