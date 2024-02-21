@@ -110,6 +110,7 @@
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇬🇧GB | vless | @azadi_az_inja_migzare | 2",
                 "🇫🇮FI | vless | @prrofile_purple | 170",
+                "🇩🇪DE | vless | @VmessProtocol | 16",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @vpn_go67 | 23"
             ]
@@ -122,6 +123,7 @@
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇬🇧GB | vless | @azadi_az_inja_migzare | 2",
                 "🇫🇮FI | vless | @prrofile_purple | 170",
+                "🇩🇪DE | vless | @VmessProtocol | 16",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @vpn_go67 | 23"
             ],
@@ -270,6 +272,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @VmessProtocol | 16",
+            "type": "vless",
+            "server": "3.120.189.41",
+            "server_port": 30721,
+            "uuid": "2f10cc9e-1475-440d-e109-59e1f4059b8a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "microsoft.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BF_qNOCxYtj6EMgNx7rdSCcTdD3UYllc2vY-mFFB1SQ",
+                    "short_id": "08"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "https:\/\/t.me\/VmessProtocol",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
