@@ -159,13 +159,12 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 1",
                 "🇨🇦CA | vless | @flyv2ray | 14",
-                "🇮🇷IR | ss | @forwardv2ray | 16",
-                "🏳️XX | vless | @https_config_injector | 9",
+                "🇨🇦CA | vless | @https_config_injector | 8",
                 "🇨🇷CR | vless | @mehrosaboran | 25",
                 "🏳️XX | vless | @kiava | 5",
                 "🇨🇦CA | vless | @nofiltering2 | 1",
                 "🏳️XX | vless | @vpn_go67 | 23",
-                "🇬🇧GB | ss | @kingofilter | 4",
+                "🇨🇦CA | vless | @kingofilter | 2",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇫🇷FR | vless | @SvnTeam | 3",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
@@ -236,13 +235,12 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 1",
                 "🇨🇦CA | vless | @flyv2ray | 14",
-                "🇮🇷IR | ss | @forwardv2ray | 16",
-                "🏳️XX | vless | @https_config_injector | 9",
+                "🇨🇦CA | vless | @https_config_injector | 8",
                 "🇨🇷CR | vless | @mehrosaboran | 25",
                 "🏳️XX | vless | @kiava | 5",
                 "🇨🇦CA | vless | @nofiltering2 | 1",
                 "🏳️XX | vless | @vpn_go67 | 23",
-                "🇬🇧GB | ss | @kingofilter | 4",
+                "🇨🇦CA | vless | @kingofilter | 2",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇫🇷FR | vless | @SvnTeam | 3",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
@@ -1630,27 +1628,34 @@
             }
         },
         {
-            "tag": "🇮🇷IR | ss | @forwardv2ray | 16",
-            "type": "shadowsocks",
-            "server": "dash.hide-abr.cloud",
-            "server_port": 321,
-            "method": "chacha20-ietf-poly1305",
-            "password": "zxBD5vat5AgI3xud0X8zLg",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🏳️XX | vless | @https_config_injector | 9",
+            "tag": "🇨🇦CA | vless | @https_config_injector | 8",
             "type": "vless",
-            "server": "best1.channeltest.site",
-            "server_port": 11641,
-            "uuid": "2f0d929a-5dc0-4fe6-a0fc-44a251045832",
+            "server": "104.21.28.62",
+            "server_port": 443,
+            "uuid": "b9ad895b-12ac-40fc-a5ac-a5b2a1285001",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "3k.pureboy.eu.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "3k.pureboy.eu.org"
+                }
             }
         },
         {
@@ -1773,14 +1778,25 @@
             }
         },
         {
-            "tag": "🇬🇧GB | ss | @kingofilter | 4",
-            "type": "shadowsocks",
-            "server": "51.11.104.69",
-            "server_port": 16550,
-            "method": "chacha20-ietf-poly1305",
-            "password": "qFqqKf78FuMHnBqoxeWz4R",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇨🇦CA | vless | @kingofilter | 2",
+            "type": "vless",
+            "server": "MeHrHosT.cOm",
+            "server_port": 80,
+            "uuid": "eb5e4663-4195-47a1-c0cd-639010c53291",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/,Turk",
+                "headers": {
+                    "Host": "MeHrHosT.cOm"
+                }
+            }
         },
         {
             "tag": "🇬🇧GB | vless | @freeconfigv2 | 14",
