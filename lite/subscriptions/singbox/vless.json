@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇷FR | vless | @EliV2ray | 1",
                 "🇨🇦CA | vless | @Parsashonam | 5",
                 "🇫🇷FR | vless | @NIM_VPN_ir | 4",
                 "🇨🇦CA | vless | @XsV2ray | 14",
@@ -137,7 +138,7 @@
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇨🇦CA | vless | @proxyymeliii | 19",
                 "🇨🇷CR | vless | @MsV2ray | 14",
-                "🇮🇷IR | vless | @vless_vmess | 2",
+                "🇮🇷IR | vless | @vless_vmess | 3",
                 "🇨🇦CA | vless | @V2RayTz | 18",
                 "🏳️XX | vless | @DailyV2RY | 102",
                 "🏳️XX | vless | @lrnbymaa | 4",
@@ -167,6 +168,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇷FR | vless | @EliV2ray | 1",
                 "🇨🇦CA | vless | @Parsashonam | 5",
                 "🇫🇷FR | vless | @NIM_VPN_ir | 4",
                 "🇨🇦CA | vless | @XsV2ray | 14",
@@ -198,7 +200,7 @@
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇨🇦CA | vless | @proxyymeliii | 19",
                 "🇨🇷CR | vless | @MsV2ray | 14",
-                "🇮🇷IR | vless | @vless_vmess | 2",
+                "🇮🇷IR | vless | @vless_vmess | 3",
                 "🇨🇦CA | vless | @V2RayTz | 18",
                 "🏳️XX | vless | @DailyV2RY | 102",
                 "🏳️XX | vless | @lrnbymaa | 4",
@@ -242,6 +244,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇷FR | vless | @EliV2ray | 1",
+            "type": "vless",
+            "server": "95.179.217.33",
+            "server_port": 45712,
+            "uuid": "69a75a84-31ab-46c4-8e42-fc4c6d320ba1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.discordapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "RsbT8HImgysmMNJaDi3x4yyrUdWpfk3EJEDVYQPvZRw",
+                    "short_id": "d55861e7"
+                }
+            }
         },
         {
             "tag": "🇨🇦CA | vless | @Parsashonam | 5",
@@ -1076,11 +1107,11 @@
             }
         },
         {
-            "tag": "🇮🇷IR | vless | @vless_vmess | 2",
+            "tag": "🇮🇷IR | vless | @vless_vmess | 3",
             "type": "vless",
-            "server": "z2.darklord.life",
+            "server": "l21.darklord.life",
             "server_port": 443,
-            "uuid": "1cc913d3-fa5c-f2d6-d199-3793aa8d6837",
+            "uuid": "a81bb96d-39c9-6220-0c5b-9fa3db53d809",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
