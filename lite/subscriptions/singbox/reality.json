@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | vless | @NIM_VPN_ir | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @v2logy | 8",
                 "🇬🇧GB | vless | @azadi_az_inja_migzare | 4",
@@ -120,7 +119,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | vless | @NIM_VPN_ir | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @v2logy | 8",
                 "🇬🇧GB | vless | @azadi_az_inja_migzare | 4",
@@ -148,35 +146,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇫🇷FR | vless | @NIM_VPN_ir | 4",
-            "type": "vless",
-            "server": "95.179.217.33",
-            "server_port": 45712,
-            "uuid": "69a75a84-31ab-46c4-8e42-fc4c6d320ba1",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdn.discordapp.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "RsbT8HImgysmMNJaDi3x4yyrUdWpfk3EJEDVYQPvZRw",
-                    "short_id": "d55861e7"
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
