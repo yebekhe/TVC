@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | vless | @EliV2ray | 1",
                 "🇨🇦CA | vless | @Parsashonam | 5",
                 "🇫🇷FR | vless | @NIM_VPN_ir | 4",
                 "🇬🇧GB | vless | @VlessConfig | 15",
@@ -126,6 +125,7 @@
                 "🇨🇦CA | vless | @proxy_kafee | 1",
                 "🇨🇦CA | vless | @v2logy | 9",
                 "🇬🇧GB | vless | @azadi_az_inja_migzare | 2",
+                "🇮🇷IR | vless | @V2rayCollectorDonate | 23",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇨🇷CR | vless | @V2rayNGn | 38",
                 "🇫🇮FI | vless | @prrofile_purple | 179",
@@ -137,7 +137,7 @@
                 "🇨🇦CA | vless | @FalconPolV2rayNG | 8",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇨🇦CA | vless | @v2ray_swhil | 18",
-                "🇨🇦CA | vless | @proxyymeliii | 17",
+                "🇨🇦CA | vless | @proxyymeliii | 19",
                 "🇨🇷CR | vless | @MsV2ray | 14",
                 "🇮🇷IR | vless | @vless_vmess | 2",
                 "🇨🇷CR | vless | @V2RayTz | 19",
@@ -159,6 +159,7 @@
                 "🇨🇦CA | vless | @nofiltering2 | 1",
                 "🇨🇦CA | vless | @proxy_mtm | 2",
                 "🏳️XX | vless | @vpn_go67 | 23",
+                "🇨🇦CA | vless | @kingofilter | 4",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇫🇷FR | vless | @SvnTeam | 3",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
@@ -173,7 +174,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | vless | @EliV2ray | 1",
                 "🇨🇦CA | vless | @Parsashonam | 5",
                 "🇫🇷FR | vless | @NIM_VPN_ir | 4",
                 "🇬🇧GB | vless | @VlessConfig | 15",
@@ -193,6 +193,7 @@
                 "🇨🇦CA | vless | @proxy_kafee | 1",
                 "🇨🇦CA | vless | @v2logy | 9",
                 "🇬🇧GB | vless | @azadi_az_inja_migzare | 2",
+                "🇮🇷IR | vless | @V2rayCollectorDonate | 23",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
                 "🇨🇷CR | vless | @V2rayNGn | 38",
                 "🇫🇮FI | vless | @prrofile_purple | 179",
@@ -204,7 +205,7 @@
                 "🇨🇦CA | vless | @FalconPolV2rayNG | 8",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇨🇦CA | vless | @v2ray_swhil | 18",
-                "🇨🇦CA | vless | @proxyymeliii | 17",
+                "🇨🇦CA | vless | @proxyymeliii | 19",
                 "🇨🇷CR | vless | @MsV2ray | 14",
                 "🇮🇷IR | vless | @vless_vmess | 2",
                 "🇨🇷CR | vless | @V2RayTz | 19",
@@ -226,6 +227,7 @@
                 "🇨🇦CA | vless | @nofiltering2 | 1",
                 "🇨🇦CA | vless | @proxy_mtm | 2",
                 "🏳️XX | vless | @vpn_go67 | 23",
+                "🇨🇦CA | vless | @kingofilter | 4",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇫🇷FR | vless | @SvnTeam | 3",
                 "🇮🇷IR | vless | @Good_V2rayy | 3",
@@ -254,37 +256,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇨🇦CA | vless | @EliV2ray | 1",
-            "type": "vless",
-            "server": "104.21.27.96",
-            "server_port": 443,
-            "uuid": "33f11af2-cf46-42e1-aad0-c7d85b5fe992",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdn29.cdn2cdn.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "e59ef42e",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🇨🇦CA | vless | @Parsashonam | 5",
@@ -800,6 +771,20 @@
             }
         },
         {
+            "tag": "🇮🇷IR | vless | @V2rayCollectorDonate | 23",
+            "type": "vless",
+            "server": "185.212.194.38",
+            "server_port": 5050,
+            "uuid": "c0c2cf9b-9f27-452b-a71f-addca6836888",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @ProxyForOpeta | 1",
             "type": "vless",
             "server": "CDN.user.com",
@@ -1089,7 +1074,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @proxyymeliii | 17",
+            "tag": "🇨🇦CA | vless | @proxyymeliii | 19",
             "type": "vless",
             "server": "shhproxy.varzesh3-cnd.site",
             "server_port": 2087,
@@ -1687,6 +1672,27 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @kingofilter | 4",
+            "type": "vless",
+            "server": "MeHrHosT.cOm",
+            "server_port": 80,
+            "uuid": "eb5e4663-4195-47a1-c0cd-639010c53291",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/,Turk",
+                "headers": {
+                    "Host": "MeHrHosT.cOm"
+                }
             }
         },
         {
