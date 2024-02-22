@@ -122,11 +122,12 @@
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇺🇸US | vless | @DigiV2ray | 15",
                 "🇮🇷IR | vless | @DarkTeam_VPN | 2",
+                "🇨🇦CA | vless | @proxy_kafee | 1",
                 "🇨🇦CA | vless | @v2logy | 9",
                 "🇬🇧GB | vless | @azadi_az_inja_migzare | 2",
                 "🇨🇦CA | vless | @V2rayCollectorDonate | 22",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
-                "🇺🇸US | vless | @V2rayNGn | 38",
+                "🇨🇷CR | vless | @V2rayNGn | 38",
                 "🇫🇷FR | trojan | @PrivateVPNs | 15",
                 "🇸🇪SE | trojan | @DirectVPN | 15",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
@@ -163,7 +164,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 1",
-                "🇬🇧GB | ss | @forwardv2ray | 18",
+                "🇩🇪DE | vmess | @forwardv2ray | 16",
                 "🇨🇦CA | vless | @FAKEOFTVC | 0",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 28",
@@ -205,11 +206,12 @@
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇺🇸US | vless | @DigiV2ray | 15",
                 "🇮🇷IR | vless | @DarkTeam_VPN | 2",
+                "🇨🇦CA | vless | @proxy_kafee | 1",
                 "🇨🇦CA | vless | @v2logy | 9",
                 "🇬🇧GB | vless | @azadi_az_inja_migzare | 2",
                 "🇨🇦CA | vless | @V2rayCollectorDonate | 22",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
-                "🇺🇸US | vless | @V2rayNGn | 38",
+                "🇨🇷CR | vless | @V2rayNGn | 38",
                 "🇫🇷FR | trojan | @PrivateVPNs | 15",
                 "🇸🇪SE | trojan | @DirectVPN | 15",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
@@ -246,7 +248,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 1",
-                "🇬🇧GB | ss | @forwardv2ray | 18",
+                "🇩🇪DE | vmess | @forwardv2ray | 16",
                 "🇨🇦CA | vless | @FAKEOFTVC | 0",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇨🇷CR | vless | @mehrosaboran | 28",
@@ -710,6 +712,37 @@
             }
         },
         {
+            "tag": "🇨🇦CA | vless | @proxy_kafee | 1",
+            "type": "vless",
+            "server": "telegram-falcunargo.falcunar.uk.eu.org",
+            "server_port": 8443,
+            "uuid": "041f479a-63f5-4af1-a492-8cbff5797b8a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "telegram-falcunargo.falcunar.uk.eu.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "telegram-falcunargo.falcunar.uk.eu.org"
+                }
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @v2logy | 9",
             "type": "vless",
             "server": "172.67.170.103",
@@ -822,7 +855,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @V2rayNGn | 38",
+            "tag": "🇨🇷CR | vless | @V2rayNGn | 38",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 2083,
@@ -1777,14 +1810,21 @@
             }
         },
         {
-            "tag": "🇬🇧GB | ss | @forwardv2ray | 18",
-            "type": "shadowsocks",
-            "server": "series-a1.samanehha.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "W74XFALLLuw6m5IA",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇩🇪DE | vmess | @forwardv2ray | 16",
+            "type": "vmess",
+            "server": "5.75.153.210",
+            "server_port": 8081,
+            "uuid": "25796c93-bb72-4163-87db-592c4a48de8a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "🇨🇦CA | vless | @FAKEOFTVC | 0",
