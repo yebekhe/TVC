@@ -126,6 +126,7 @@
                 "🇬🇧GB | vless | @azadi_az_inja_migzare | 4",
                 "🇨🇦CA | vless | @V2rayCollectorDonate | 21",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
+                "🇨🇷CR | vless | @V2rayNGn | 37",
                 "🇮🇷IR | vless | @prrofile_purple | 183",
                 "🇨🇦CA | vless | @customv2ray | 9",
                 "🇨🇦CA | vless | @UnlimitedDev | 10",
@@ -151,6 +152,7 @@
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @FreakConfig | 1",
                 "🇨🇦CA | vless | @flyv2ray | 14",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🏳️XX | vless | @FAKEOFTVC | 2",
                 "🏳️XX | vless | @https_config_injector | 12",
                 "🇬🇧GB | vless | @mehrosaboran | 12",
@@ -190,6 +192,7 @@
                 "🇬🇧GB | vless | @azadi_az_inja_migzare | 4",
                 "🇨🇦CA | vless | @V2rayCollectorDonate | 21",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
+                "🇨🇷CR | vless | @V2rayNGn | 37",
                 "🇮🇷IR | vless | @prrofile_purple | 183",
                 "🇨🇦CA | vless | @customv2ray | 9",
                 "🇨🇦CA | vless | @UnlimitedDev | 10",
@@ -215,6 +218,7 @@
                 "🇨🇦CA | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @FreakConfig | 1",
                 "🇨🇦CA | vless | @flyv2ray | 14",
+                "🇨🇦CA | vless | @forwardv2ray | 18",
                 "🏳️XX | vless | @FAKEOFTVC | 2",
                 "🏳️XX | vless | @https_config_injector | 12",
                 "🇬🇧GB | vless | @mehrosaboran | 12",
@@ -788,6 +792,37 @@
                 "headers": {
                     "Host": "CDN.user.com"
                 }
+            }
+        },
+        {
+            "tag": "🇨🇷CR | vless | @V2rayNGn | 37",
+            "type": "vless",
+            "server": "LIGHTNING6-joinbede.liV2ray.xyz",
+            "server_port": 2083,
+            "uuid": "1972a2c8-b4d0-4a94-833d-3ee6b5c75cdf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "LIGHTNING6-joinbede.liV2ray.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@LIGHTNING6,",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1399,6 +1434,37 @@
                 "path": "\/",
                 "headers": {
                     "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "sablan.ferdosi.tech",
+            "server_port": 2053,
+            "uuid": "f035cbbc-c7fb-4d6d-8eb9-8896b0626484",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sablan.ferdosi.tech",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/I4qaCnHhlKyYt2aTOdmZcpe",
+                "headers": {
+                    "Host": "sablan.ferdosi.tech"
                 }
             }
         },
