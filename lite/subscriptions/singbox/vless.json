@@ -140,7 +140,6 @@
                 "🇨🇦CA | vless | @v2ray_swhil | 20",
                 "🇺🇸US | vless | @proxyymeliii | 19",
                 "🇨🇦CA | vless | @MsV2ray | 14",
-                "🇨🇦CA | vless | @v2ray1_ng | 12",
                 "🇮🇷IR | vless | @vless_vmess | 2",
                 "🏳️XX | vless | @V2RayTz | 18",
                 "🇩🇪DE | vless | @DailyV2RY | 111",
@@ -157,7 +156,7 @@
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇩🇪DE | vless | @mehrosaboran | 13",
                 "🇸🇪SE | vless | @kiava | 3",
-                "🇨🇦CA | vless | @proxy_mtm | 25",
+                "🇩🇪DE | vless | @proxy_mtm | 11",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇫🇷FR | vless | @SvnTeam | 3",
@@ -207,7 +206,6 @@
                 "🇨🇦CA | vless | @v2ray_swhil | 20",
                 "🇺🇸US | vless | @proxyymeliii | 19",
                 "🇨🇦CA | vless | @MsV2ray | 14",
-                "🇨🇦CA | vless | @v2ray1_ng | 12",
                 "🇮🇷IR | vless | @vless_vmess | 2",
                 "🏳️XX | vless | @V2RayTz | 18",
                 "🇩🇪DE | vless | @DailyV2RY | 111",
@@ -224,7 +222,7 @@
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇩🇪DE | vless | @mehrosaboran | 13",
                 "🇸🇪SE | vless | @kiava | 3",
-                "🇨🇦CA | vless | @proxy_mtm | 25",
+                "🇩🇪DE | vless | @proxy_mtm | 11",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇬🇧GB | vless | @freeconfigv2 | 14",
                 "🇫🇷FR | vless | @SvnTeam | 3",
@@ -1166,37 +1164,6 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @v2ray1_ng | 12",
-            "type": "vless",
-            "server": "104.16.32.40",
-            "server_port": 443,
-            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "baipiao406.stunning-bassoon.pages.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "baipiao406.stunning-bassoon.pages.dev"
-                }
-            }
-        },
-        {
             "tag": "🇮🇷IR | vless | @vless_vmess | 2",
             "type": "vless",
             "server": "z2.darklord.life",
@@ -1593,17 +1560,39 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @proxy_mtm | 25",
+            "tag": "🇩🇪DE | vless | @proxy_mtm | 11",
             "type": "vless",
-            "server": "discord.gg",
-            "server_port": 80,
-            "uuid": "ID---%54%4d%43%55%53%54%4f%4d%49%5a%45",
-            "flow": "",
+            "server": "5.75.225.4",
+            "server_port": 443,
+            "uuid": "0793ef40-8bb7-47df-acf6-e8ad8898fc9f",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.hetzner.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AVh9z3yAsgz2E7o7UOWUIRcOMKgcrXJjchCIUwaviDQ",
+                    "short_id": "3eb1d20a"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
