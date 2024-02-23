@@ -4,6 +4,10 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '*/21 * * * *'
+    
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
