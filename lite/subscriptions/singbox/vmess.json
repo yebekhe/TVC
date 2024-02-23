@@ -112,7 +112,7 @@
                 "🇨🇦CA | vmess | @V2rayng_Fast | 3",
                 "🇨🇦CA | vmess | @yaney_01 | 8",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇹🇼TW | vmess | @forwardv2ray | 19",
+                "🇨🇦CA | vmess | @forwardv2ray | 16",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 3",
                 "🇨🇦CA | vmess | @FoXrayIran | 1"
             ]
@@ -127,7 +127,7 @@
                 "🇨🇦CA | vmess | @V2rayng_Fast | 3",
                 "🇨🇦CA | vmess | @yaney_01 | 8",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🇹🇼TW | vmess | @forwardv2ray | 19",
+                "🇨🇦CA | vmess | @forwardv2ray | 16",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 3",
                 "🇨🇦CA | vmess | @FoXrayIran | 1"
             ],
@@ -292,11 +292,11 @@
             }
         },
         {
-            "tag": "🇹🇼TW | vmess | @forwardv2ray | 19",
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 16",
             "type": "vmess",
-            "server": "36.232.172.75",
-            "server_port": 14431,
-            "uuid": "e2d318b6-52f6-4339-ae4d-19ccf28e24c7",
+            "server": "104.21.33.32",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -306,6 +306,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nelly.homes",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "nelly.homes"
+                }
             }
         },
         {
