@@ -119,6 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 17","type":"ss","server":"www.outline.network.ak2002.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":2443,"password":"hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=","cipher":"aes-256-gcm"}
+  - {"name":"🇨🇳CN | ss | @forwardv2ray | 18","type":"ss","server":"service.ouluyun9803.com","port":20009,"password":"cfa17a0d-5e7d-4871-976e-f116e0818123","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🏳️XX | ss | @ROMAX_VPN | 7","type":"ss","server":"fast_2ray_telchannelll.fast2rayy.eu.org","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -127,6 +128,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🇨🇳CN | ss | @forwardv2ray | 18'
       - '🏳️XX | ss | @ROMAX_VPN | 7'
   - name: URL-TEST
     type: url-test
@@ -135,6 +137,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🇨🇳CN | ss | @forwardv2ray | 18'
       - '🏳️XX | ss | @ROMAX_VPN | 7'
   - name: FALLBACK
     type: fallback
@@ -142,6 +145,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 17'
+      - '🇨🇳CN | ss | @forwardv2ray | 18'
       - '🏳️XX | ss | @ROMAX_VPN | 7'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
