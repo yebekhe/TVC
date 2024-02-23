@@ -118,7 +118,7 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇩🇪DE | trojan | @V2rayCollectorDonate | 20","type":"trojan","server":"callmesir.rezashopparivate.sbs","port":443,"udp":false,"password":"202fef2a-eff2-4815-bf05-cadcad4b7863","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"callmesir.rezashopparivate.sbs"}
+  - {"name":"🇩🇪DE | trojan | @V2rayCollectorDonate | 21","type":"trojan","server":"callmesir.rezashopparivate.sbs","port":443,"udp":false,"password":"202fef2a-eff2-4815-bf05-cadcad4b7863","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"callmesir.rezashopparivate.sbs"}
   - {"name":"🇮🇪IE | trojan | @PrivateVPNs | 1","type":"trojan","server":"54.194.19.172","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇬🇧GB | trojan | @PrivateVPNs | 2","type":"trojan","server":"13.43.213.194","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇬🇧GB | trojan | @PrivateVPNs | 3","type":"trojan","server":"3.10.125.88","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
@@ -149,14 +149,13 @@ proxies:
   - {"name":"🇬🇧GB | trojan | @DirectVPN | 12","type":"trojan","server":"18.171.112.156","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇫🇷FR | trojan | @DirectVPN | 13","type":"trojan","server":"13.39.218.158","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇫🇷FR | trojan | @DirectVPN | 14","type":"trojan","server":"35.181.219.105","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇹🇼TW | trojan | @forwardv2ray | 16","type":"trojan","server":"114.43.169.51","port":443,"udp":false,"password":"7b4066ae-accc-11eb-a8bf-f23c91cfbbc9","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"02071e2c-s9bgg0-0-zzkl.tw3.p5pv.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | trojan | @V2rayCollectorDonate | 20'
+      - '🇩🇪DE | trojan | @V2rayCollectorDonate | 21'
       - '🇮🇪IE | trojan | @PrivateVPNs | 1'
       - '🇬🇧GB | trojan | @PrivateVPNs | 2'
       - '🇬🇧GB | trojan | @PrivateVPNs | 3'
@@ -187,14 +186,13 @@ proxy-groups:
       - '🇬🇧GB | trojan | @DirectVPN | 12'
       - '🇫🇷FR | trojan | @DirectVPN | 13'
       - '🇫🇷FR | trojan | @DirectVPN | 14'
-      - '🇹🇼TW | trojan | @forwardv2ray | 16'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | trojan | @V2rayCollectorDonate | 20'
+      - '🇩🇪DE | trojan | @V2rayCollectorDonate | 21'
       - '🇮🇪IE | trojan | @PrivateVPNs | 1'
       - '🇬🇧GB | trojan | @PrivateVPNs | 2'
       - '🇬🇧GB | trojan | @PrivateVPNs | 3'
@@ -225,13 +223,12 @@ proxy-groups:
       - '🇬🇧GB | trojan | @DirectVPN | 12'
       - '🇫🇷FR | trojan | @DirectVPN | 13'
       - '🇫🇷FR | trojan | @DirectVPN | 14'
-      - '🇹🇼TW | trojan | @forwardv2ray | 16'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | trojan | @V2rayCollectorDonate | 20'
+      - '🇩🇪DE | trojan | @V2rayCollectorDonate | 21'
       - '🇮🇪IE | trojan | @PrivateVPNs | 1'
       - '🇬🇧GB | trojan | @PrivateVPNs | 2'
       - '🇬🇧GB | trojan | @PrivateVPNs | 3'
@@ -262,7 +259,6 @@ proxy-groups:
       - '🇬🇧GB | trojan | @DirectVPN | 12'
       - '🇫🇷FR | trojan | @DirectVPN | 13'
       - '🇫🇷FR | trojan | @DirectVPN | 14'
-      - '🇹🇼TW | trojan | @forwardv2ray | 16'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
