@@ -106,12 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇷FR | vless | @EliV2ray | 1",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇸🇬SG | vless | @DarkTeam_VPN | 4",
                 "🇩🇪DE | vless | @v2logy | 8",
                 "🇮🇷IR | vless | @V2rayCollectorDonate | 23",
                 "🇳🇱NL | vless | @V2RayTz | 19",
-                "🇩🇪DE | vless | @VmessProtocol | 17",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇩🇪DE | vless | @Capoit | 6",
                 "🇸🇪SE | vless | @kiava | 3",
@@ -122,12 +122,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇷FR | vless | @EliV2ray | 1",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇸🇬SG | vless | @DarkTeam_VPN | 4",
                 "🇩🇪DE | vless | @v2logy | 8",
                 "🇮🇷IR | vless | @V2rayCollectorDonate | 23",
                 "🇳🇱NL | vless | @V2RayTz | 19",
-                "🇩🇪DE | vless | @VmessProtocol | 17",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇩🇪DE | vless | @Capoit | 6",
                 "🇸🇪SE | vless | @kiava | 3",
@@ -152,6 +152,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇷FR | vless | @EliV2ray | 1",
+            "type": "vless",
+            "server": "217.69.6.138",
+            "server_port": 442,
+            "uuid": "db47858f-d33d-4177-a1d8-80898cf99af9",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5ymESWL8fiNj53FXaFl9VoiyP775drBZ9t97Ie_luwY",
+                    "short_id": "d8c6a509"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "FOX_VPN66",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
@@ -314,42 +350,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @VmessProtocol | 17",
-            "type": "vless",
-            "server": "54.93.88.137",
-            "server_port": 30721,
-            "uuid": "1cd5b863-3748-4f2f-88e8-d4b2b97dbce9",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "microsoft.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "BF_qNOCxYtj6EMgNx7rdSCcTdD3UYllc2vY-mFFB1SQ",
-                    "short_id": "08"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "https:\/\/t.me\/VmessProtocol",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
