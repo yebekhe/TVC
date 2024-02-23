@@ -122,7 +122,7 @@
                 "🏳️XX | vless | @vpn_xw | 3",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇺🇸US | vless | @DigiV2ray | 17",
-                "🇨🇦CA | vless | @proxy_kafee | 1",
+                "🇨🇦CA | vless | @proxy_kafee | 2",
                 "🇩🇪DE | vless | @v2logy | 8",
                 "🇨🇦CA | vless | @azadi_az_inja_migzare | 5",
                 "🇨🇦CA | vless | @V2rayCollectorDonate | 21",
@@ -147,7 +147,7 @@
                 "🇺🇸US | vless | @proxyymeliii | 19",
                 "🇨🇦CA | vless | @MsV2ray | 14",
                 "🇮🇷IR | vless | @vless_vmess | 2",
-                "🏳️XX | vless | @V2RayTz | 18",
+                "🇩🇪DE | vless | @V2RayTz | 18",
                 "🇩🇪DE | vless | @DailyV2RY | 111",
                 "🇨🇦CA | vless | @sinabigo | 1",
                 "🇮🇷IR | vless | @lrnbymaa | 2",
@@ -162,7 +162,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇬🇧GB | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @flyv2ray | 15",
-                "🇬🇧GB | vless | @forwardv2ray | 18",
+                "🇺🇸US | vless | @forwardv2ray | 11",
                 "🇨🇦CA | vmess | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇩🇪DE | vless | @mehrosaboran | 13",
@@ -201,7 +201,7 @@
                 "🏳️XX | vless | @vpn_xw | 3",
                 "🏳️XX | vless | @CUSTOMVPNSERVER | 14",
                 "🇺🇸US | vless | @DigiV2ray | 17",
-                "🇨🇦CA | vless | @proxy_kafee | 1",
+                "🇨🇦CA | vless | @proxy_kafee | 2",
                 "🇩🇪DE | vless | @v2logy | 8",
                 "🇨🇦CA | vless | @azadi_az_inja_migzare | 5",
                 "🇨🇦CA | vless | @V2rayCollectorDonate | 21",
@@ -226,7 +226,7 @@
                 "🇺🇸US | vless | @proxyymeliii | 19",
                 "🇨🇦CA | vless | @MsV2ray | 14",
                 "🇮🇷IR | vless | @vless_vmess | 2",
-                "🏳️XX | vless | @V2RayTz | 18",
+                "🇩🇪DE | vless | @V2RayTz | 18",
                 "🇩🇪DE | vless | @DailyV2RY | 111",
                 "🇨🇦CA | vless | @sinabigo | 1",
                 "🇮🇷IR | vless | @lrnbymaa | 2",
@@ -241,7 +241,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇬🇧GB | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @flyv2ray | 15",
-                "🇬🇧GB | vless | @forwardv2ray | 18",
+                "🇺🇸US | vless | @forwardv2ray | 11",
                 "🇨🇦CA | vmess | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇩🇪DE | vless | @mehrosaboran | 13",
@@ -719,7 +719,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @proxy_kafee | 1",
+            "tag": "🇨🇦CA | vless | @proxy_kafee | 2",
             "type": "vless",
             "server": "discordapp.com",
             "server_port": 80,
@@ -1337,24 +1337,39 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @V2RayTz | 18",
+            "tag": "🇩🇪DE | vless | @V2RayTz | 18",
             "type": "vless",
-            "server": "[2606:4700:3033::6815:2a92]",
-            "server_port": 2052,
-            "uuid": "2bd4720b-142a-4b66-b0db-77e37762bccc",
-            "flow": "",
+            "server": "128.140.51.3",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "[2606:4700:3033::6815:2a92]"
+            "tls": {
+                "enabled": true,
+                "server_name": "www.mashti.link",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "kMX4T_q6LI-uw4oS-nj2xt-nvPD3JsB8FmnI3Pr-DRk",
+                    "short_id": "4f42d845"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1681,11 +1696,11 @@
             }
         },
         {
-            "tag": "🇬🇧GB | vless | @forwardv2ray | 18",
+            "tag": "🇺🇸US | vless | @forwardv2ray | 11",
             "type": "vless",
-            "server": "64.176.183.63",
-            "server_port": 2095,
-            "uuid": "PywNet-PywNet-PywNet-PywNet",
+            "server": "education.bigcommerce.com",
+            "server_port": 443,
+            "uuid": "0859b7f2-be12-4a5d-d2b4-6e57217b494b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1693,12 +1708,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "64.176.183.63"
+            "tls": {
+                "enabled": true,
+                "server_name": "jadidtar.nufilter.store",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
