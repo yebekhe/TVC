@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | vless | @EliV2ray | 1",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @v2logy | 8",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 8",
@@ -122,7 +121,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | vless | @EliV2ray | 1",
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @v2logy | 8",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 8",
@@ -152,42 +150,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇫🇷FR | vless | @EliV2ray | 1",
-            "type": "vless",
-            "server": "217.69.6.138",
-            "server_port": 442,
-            "uuid": "db47858f-d33d-4177-a1d8-80898cf99af9",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sourceforge.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "5ymESWL8fiNj53FXaFl9VoiyP775drBZ9t97Ie_luwY",
-                    "short_id": "d8c6a509"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "FOX_VPN66",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
