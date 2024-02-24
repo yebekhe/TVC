@@ -127,14 +127,14 @@
                 "🇨🇦CA | vless | @proxy_kafee | 3",
                 "🇩🇪DE | vless | @v2logy | 8",
                 "🇧🇬BG | vless | @azadi_az_inja_migzare | 7",
-                "🇨🇦CA | vless | @V2rayCollectorDonate | 24",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 24",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
-                "🇨🇷CR | vless | @V2rayNGn | 29",
+                "🇺🇸US | vless | @V2rayNGn | 29",
                 "🇫🇷FR | trojan | @PrivateVPNs | 15",
                 "🇫🇷FR | trojan | @DirectVPN | 14",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
+                "🇸🇪SE | ss | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
                 "🏳️XX | vless | @prrofile_purple | 185",
                 "🇨🇦CA | vless | @customv2ray | 10",
@@ -211,14 +211,14 @@
                 "🇨🇦CA | vless | @proxy_kafee | 3",
                 "🇩🇪DE | vless | @v2logy | 8",
                 "🇧🇬BG | vless | @azadi_az_inja_migzare | 7",
-                "🇨🇦CA | vless | @V2rayCollectorDonate | 24",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 24",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
-                "🇨🇷CR | vless | @V2rayNGn | 29",
+                "🇺🇸US | vless | @V2rayNGn | 29",
                 "🇫🇷FR | trojan | @PrivateVPNs | 15",
                 "🇫🇷FR | trojan | @DirectVPN | 14",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
+                "🇸🇪SE | ss | @DeamNet_Proxy | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
                 "🏳️XX | vless | @prrofile_purple | 185",
                 "🇨🇦CA | vless | @customv2ray | 10",
@@ -847,23 +847,36 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @V2rayCollectorDonate | 24",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 8080,
-            "uuid": "Parsashonam-7",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 24",
+            "type": "vmess",
+            "server": "104.21.46.63",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "marien.motorcycles",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/?@ASATeam_1,@ASATeam_1,@ASATeam_1,@ASATeam_1,@ASATeam_1,@ASATeam_1,@ASATeam_1,@ASATeam_1,@ASATeam_1,@ASATeam_1",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "marien.motorcycles"
                 }
             }
         },
@@ -889,7 +902,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @V2rayNGn | 29",
+            "tag": "🇺🇸US | vless | @V2rayNGn | 29",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 2083,
@@ -1005,38 +1018,14 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
-            "type": "vmess",
-            "server": "nina.bond",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "nina.bond",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "nina.bond"
-                }
-            }
+            "tag": "🇸🇪SE | ss | @DeamNet_Proxy | 19",
+            "type": "shadowsocks",
+            "server": "94.228.165.234",
+            "server_port": 15214,
+            "method": "chacha20-ietf-poly1305",
+            "password": "DmMQUmI7pgQDnrWqLXC00L",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
