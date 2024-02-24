@@ -109,6 +109,7 @@
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @v2logy | 8",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 8",
+                "🇩🇪DE | vless | @V2RayTz | 17",
                 "🇳🇱NL | vless | @Outlinev2rayNG | 18",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇩🇪DE | vless | @mehrosaboran | 16",
@@ -124,6 +125,7 @@
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇩🇪DE | vless | @v2logy | 8",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 8",
+                "🇩🇪DE | vless | @V2RayTz | 17",
                 "🇳🇱NL | vless | @Outlinev2rayNG | 18",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇩🇪DE | vless | @mehrosaboran | 16",
@@ -154,7 +156,7 @@
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 19",
             "type": "vless",
-            "server": "195.201.0.124",
+            "server": "116.203.229.47",
             "server_port": 443,
             "uuid": "b1c1da37-726b-4db1-8139-27a7497e3186",
             "flow": "xtls-rprx-vision",
@@ -254,6 +256,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @V2RayTz | 17",
+            "type": "vless",
+            "server": "49.12.215.249",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.mashti.link",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "kMX4T_q6LI-uw4oS-nj2xt-nvPD3JsB8FmnI3Pr-DRk",
+                    "short_id": "4f42d845"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
