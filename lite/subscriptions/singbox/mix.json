@@ -113,7 +113,7 @@
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @melov2ray | 3",
                 "🇨🇦CA | vless | @frev2ray | 1",
-                "🇨🇦CA | vless | @ARv2ray | 12",
+                "🇨🇦CA | vless | @ARv2ray | 11",
                 "🇩🇪DE | vless | @shh_proxy | 23",
                 "🇨🇦CA | vless | @Lockey_vpn | 8",
                 "🇨🇦CA | vless | @rxv2ray | 21",
@@ -158,16 +158,16 @@
                 "🇨🇦CA | vmess | @yaney_01 | 8",
                 "🇹🇷TR | vless | @fnet00 | 8",
                 "🇨🇦CA | vless | @polproxy | 10",
-                "🇮🇪IE | vless | @Outlinev2rayNG | 18",
+                "🇮🇷IR | vless | @Outlinev2rayNG | 18",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 4",
                 "🇨🇦CA | vless | @v2rayng_config_amin | 4",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 9",
                 "🇩🇪DE | vless | @flyv2ray | 15",
-                "🇷🇺RU | ss | @forwardv2ray | 18",
+                "🇬🇧GB | ss | @forwardv2ray | 18",
                 "🇩🇪DE | vmess | @FAKEOFTVC | 2",
-                "🇩🇪DE | vless | @mehrosaboran | 12",
+                "🇩🇪DE | vless | @mehrosaboran | 13",
                 "🇸🇪SE | vless | @kiava | 3",
                 "🇬🇧GB | vless | @proxy_mtm | 1",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -194,7 +194,7 @@
                 "🇩🇪DE | vless | @ipV2Ray | 19",
                 "🇨🇦CA | vless | @melov2ray | 3",
                 "🇨🇦CA | vless | @frev2ray | 1",
-                "🇨🇦CA | vless | @ARv2ray | 12",
+                "🇨🇦CA | vless | @ARv2ray | 11",
                 "🇩🇪DE | vless | @shh_proxy | 23",
                 "🇨🇦CA | vless | @Lockey_vpn | 8",
                 "🇨🇦CA | vless | @rxv2ray | 21",
@@ -239,16 +239,16 @@
                 "🇨🇦CA | vmess | @yaney_01 | 8",
                 "🇹🇷TR | vless | @fnet00 | 8",
                 "🇨🇦CA | vless | @polproxy | 10",
-                "🇮🇪IE | vless | @Outlinev2rayNG | 18",
+                "🇮🇷IR | vless | @Outlinev2rayNG | 18",
                 "🇨🇦CA | vless | @v2rayng_vpnrog | 4",
                 "🇨🇦CA | vless | @v2rayng_config_amin | 4",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇨🇦CA | vless | @Capoit | 9",
                 "🇩🇪DE | vless | @flyv2ray | 15",
-                "🇷🇺RU | ss | @forwardv2ray | 18",
+                "🇬🇧GB | ss | @forwardv2ray | 18",
                 "🇩🇪DE | vmess | @FAKEOFTVC | 2",
-                "🇩🇪DE | vless | @mehrosaboran | 12",
+                "🇩🇪DE | vless | @mehrosaboran | 13",
                 "🇸🇪SE | vless | @kiava | 3",
                 "🇬🇧GB | vless | @proxy_mtm | 1",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -476,11 +476,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @ARv2ray | 12",
+            "tag": "🇨🇦CA | vless | @ARv2ray | 11",
             "type": "vless",
             "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray",
+            "server_port": 443,
+            "uuid": "3dcbd7f9-c25f-4aad-bc6b-720fadec67a7",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -488,12 +488,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
-                "headers": {
-                    "Host": "www.speedtest.net"
+            "tls": {
+                "enabled": true,
+                "server_name": "tl.ArV2ray.host",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1632,11 +1642,11 @@
             }
         },
         {
-            "tag": "🇮🇪IE | vless | @Outlinev2rayNG | 18",
+            "tag": "🇮🇷IR | vless | @Outlinev2rayNG | 18",
             "type": "vless",
-            "server": "52.214.150.0",
-            "server_port": 22222,
-            "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+            "server": "86.104.32.93",
+            "server_port": 80,
+            "uuid": "08cf0e60-a98c-4542-fa81-49601fe94b82",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1644,21 +1654,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "telegram-channel-vlessconfig.sohala.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/telegram-channel-vlessconfig-ws",
+                "path": "\/webrovers",
                 "headers": {
-                    "Host": "telegram-channel-vlessconfig.sohala.uk"
+                    "Host": "86.104.32.93"
                 }
             }
         },
@@ -1820,12 +1820,12 @@
             }
         },
         {
-            "tag": "🇷🇺RU | ss | @forwardv2ray | 18",
+            "tag": "🇬🇧GB | ss | @forwardv2ray | 18",
             "type": "shadowsocks",
-            "server": "195.2.85.32",
-            "server_port": 56901,
+            "server": "51.142.173.34",
+            "server_port": 27842,
             "method": "chacha20-ietf-poly1305",
-            "password": "Qp41lJ1OBfcF4aTRKoLkRU",
+            "password": "f57zVblTQs60egXUizaq4Y",
             "plugin": "",
             "plugin_opts": ""
         },
@@ -1847,7 +1847,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @mehrosaboran | 12",
+            "tag": "🇩🇪DE | vless | @mehrosaboran | 13",
             "type": "vless",
             "server": "45.77.53.53",
             "server_port": 34372,
