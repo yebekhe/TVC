@@ -127,7 +127,7 @@
                 "🇨🇦CA | vless | @azadi_az_inja_migzare | 5",
                 "🇨🇦CA | vless | @V2rayCollectorDonate | 22",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
-                "🇨🇷CR | vless | @V2rayNGn | 32",
+                "🇺🇸US | vless | @V2rayNGn | 32",
                 "🇫🇷FR | trojan | @PrivateVPNs | 15",
                 "🇫🇷FR | trojan | @DirectVPN | 14",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
@@ -143,7 +143,7 @@
                 "🇨🇦CA | vless | @ShadowProxy66 | 19",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇩🇪DE | vmess | @V2rayng_Fast | 3",
-                "TVCxknawraipr",
+                "🇨🇦CA | vless | @v2ray_swhil | 20",
                 "🇺🇸US | vless | @proxyymeliii | 20",
                 "🇨🇦CA | vless | @MsV2ray | 14",
                 "🇮🇷IR | vless | @vless_vmess | 2",
@@ -162,7 +162,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇬🇧GB | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @flyv2ray | 15",
-                "🇫🇷FR | vless | @forwardv2ray | 18",
+                "🇬🇧GB | ss | @forwardv2ray | 17",
                 "🇨🇦CA | vmess | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇩🇪DE | vless | @mehrosaboran | 16",
@@ -206,7 +206,7 @@
                 "🇨🇦CA | vless | @azadi_az_inja_migzare | 5",
                 "🇨🇦CA | vless | @V2rayCollectorDonate | 22",
                 "🇨🇦CA | vless | @ProxyForOpeta | 1",
-                "🇨🇷CR | vless | @V2rayNGn | 32",
+                "🇺🇸US | vless | @V2rayNGn | 32",
                 "🇫🇷FR | trojan | @PrivateVPNs | 15",
                 "🇫🇷FR | trojan | @DirectVPN | 14",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
@@ -222,7 +222,7 @@
                 "🇨🇦CA | vless | @ShadowProxy66 | 19",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
                 "🇩🇪DE | vmess | @V2rayng_Fast | 3",
-                "TVCxknawraipr",
+                "🇨🇦CA | vless | @v2ray_swhil | 20",
                 "🇺🇸US | vless | @proxyymeliii | 20",
                 "🇨🇦CA | vless | @MsV2ray | 14",
                 "🇮🇷IR | vless | @vless_vmess | 2",
@@ -241,7 +241,7 @@
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇬🇧GB | vless | @Capoit | 6",
                 "🇨🇦CA | vless | @flyv2ray | 15",
-                "🇫🇷FR | vless | @forwardv2ray | 18",
+                "🇬🇧GB | ss | @forwardv2ray | 17",
                 "🇨🇦CA | vmess | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 12",
                 "🇩🇪DE | vless | @mehrosaboran | 16",
@@ -859,7 +859,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | vless | @V2rayNGn | 32",
+            "tag": "🇺🇸US | vless | @V2rayNGn | 32",
             "type": "vless",
             "server": "LIGHTNING6-joinbede.liV2ray.xyz",
             "server_port": 2083,
@@ -1260,17 +1260,24 @@
             }
         },
         {
-            "tag": "TVCxknawraipr",
+            "tag": "🇨🇦CA | vless | @v2ray_swhil | 20",
             "type": "vless",
-            "server": "",
-            "server_port": 0,
-            "uuid": "",
+            "server": "cp.ifilo.org",
+            "server_port": 80,
+            "uuid": "VPNCUSTOMIZE-VPNCUSTOMIZE",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=1048",
+                "headers": {
+                    "Host": "cp.ifilo.org"
+                }
             }
         },
         {
@@ -1694,40 +1701,14 @@
             }
         },
         {
-            "tag": "🇫🇷FR | vless | @forwardv2ray | 18",
-            "type": "vless",
-            "server": "217.69.6.138",
-            "server_port": 442,
-            "uuid": "db47858f-d33d-4177-a1d8-80898cf99af9",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sourceforge.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "5ymESWL8fiNj53FXaFl9VoiyP775drBZ9t97Ie_luwY",
-                    "short_id": "d8c6a509"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "FOX_VPN66",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
+            "tag": "🇬🇧GB | ss | @forwardv2ray | 17",
+            "type": "shadowsocks",
+            "server": "51.11.104.69",
+            "server_port": 16550,
+            "method": "chacha20-ietf-poly1305",
+            "password": "qFqqKf78FuMHnBqoxeWz4R",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇨🇦CA | vmess | @FAKEOFTVC | 2",
