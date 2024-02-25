@@ -138,7 +138,6 @@
                 "🇨🇦CA | vless | @ShadowProxy66 | 49",
                 "🇬🇧GB | vless | @ServerNett | 21",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
-                "🇨🇦CA | vless | @v2ray_swhil | 21",
                 "🇨🇦CA | vless | @proxyymeliii | 16",
                 "🇨🇷CR | vless | @MsV2ray | 14",
                 "🇮🇷IR | vless | @vless_vmess | 2",
@@ -156,9 +155,10 @@
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇨🇦CA | vless | @Capoit | 5",
                 "🇬🇧GB | vless | @flyv2ray | 16",
+                "🇨🇦CA | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 15",
-                "🇩🇪DE | vless | @mehrosaboran | 15",
+                "🇨🇦CA | vless | @mehrosaboran | 14",
                 "🇸🇪SE | vless | @kiava | 3",
                 "🇩🇪DE | vless | @proxy_mtm | 14",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -206,7 +206,6 @@
                 "🇨🇦CA | vless | @ShadowProxy66 | 49",
                 "🇬🇧GB | vless | @ServerNett | 21",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
-                "🇨🇦CA | vless | @v2ray_swhil | 21",
                 "🇨🇦CA | vless | @proxyymeliii | 16",
                 "🇨🇷CR | vless | @MsV2ray | 14",
                 "🇮🇷IR | vless | @vless_vmess | 2",
@@ -224,9 +223,10 @@
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇨🇦CA | vless | @Capoit | 5",
                 "🇬🇧GB | vless | @flyv2ray | 16",
+                "🇨🇦CA | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 15",
-                "🇩🇪DE | vless | @mehrosaboran | 15",
+                "🇨🇦CA | vless | @mehrosaboran | 14",
                 "🇸🇪SE | vless | @kiava | 3",
                 "🇩🇪DE | vless | @proxy_mtm | 14",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -281,7 +281,7 @@
         {
             "tag": "🇩🇪DE | vless | @VlessConfig | 15",
             "type": "vless",
-            "server": "18.194.191.136",
+            "server": "63.176.0.8",
             "server_port": 22222,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -1109,27 +1109,6 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @v2ray_swhil | 21",
-            "type": "vless",
-            "server": "cp.ifilo.org",
-            "server_port": 80,
-            "uuid": "VPNCUSTOMIZE-VPNCUSTOMIZE",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=1048",
-                "headers": {
-                    "Host": "cp.ifilo.org"
-                }
-            }
-        },
-        {
             "tag": "🇨🇦CA | vless | @proxyymeliii | 16",
             "type": "vless",
             "server": "maz.maznet.cfd",
@@ -1576,6 +1555,37 @@
             }
         },
         {
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 19",
+            "type": "vless",
+            "server": "172.67.220.65",
+            "server_port": 443,
+            "uuid": "ffffffff-eeae-4311-b37c-b2a67847fed2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "watashi.free.de.mnhacker.eu.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Path\/Telegram@V2ray_alpha\/",
+                "headers": {
+                    "Host": "watashi.free.de.mnhacker.eu.org"
+                }
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @FAKEOFTVC | 1",
             "type": "vless",
             "server": "cdn.snailnetworktm.link",
@@ -1638,12 +1648,12 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @mehrosaboran | 15",
+            "tag": "🇨🇦CA | vless | @mehrosaboran | 14",
             "type": "vless",
-            "server": "5.75.225.4",
-            "server_port": 443,
-            "uuid": "b72392f9-e9bc-4f36-a112-916d32e5f389",
-            "flow": "xtls-rprx-vision",
+            "server": "104.31.16.85",
+            "server_port": 2083,
+            "uuid": "461bf02a-ecdb-49ea-ae0b-f2200565b0d8",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1652,22 +1662,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "*.hetzner.com",
+                "server_name": "104.31.16.85",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "AVh9z3yAsgz2E7o7UOWUIRcOMKgcrXJjchCIUwaviDQ",
-                    "short_id": "3eb1d20a"
+                    "fingerprint": "chrome"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@ipV2Ray",
+                "service_name": "@LIGHTNING6,",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
