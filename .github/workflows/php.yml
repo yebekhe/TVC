@@ -37,6 +37,7 @@ jobs:
           git push
   tvc-lite:
     runs-on: ubuntu-latest
+    needs: tvc-full
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
