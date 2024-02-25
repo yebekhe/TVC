@@ -157,9 +157,10 @@
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇨🇦CA | vless | @Capoit | 7",
                 "🇨🇦CA | vless | @flyv2ray | 16",
+                "🇨🇦CA | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 14",
-                "🇺🇸US | vless | @mehrosaboran | 11",
+                "🇫🇮FI | vless | @mehrosaboran | 10",
                 "🇸🇪SE | vless | @kiava | 3",
                 "🇬🇧GB | vless | @proxy_mtm | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -226,9 +227,10 @@
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇨🇦CA | vless | @Capoit | 7",
                 "🇨🇦CA | vless | @flyv2ray | 16",
+                "🇨🇦CA | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 14",
-                "🇺🇸US | vless | @mehrosaboran | 11",
+                "🇫🇮FI | vless | @mehrosaboran | 10",
                 "🇸🇪SE | vless | @kiava | 3",
                 "🇬🇧GB | vless | @proxy_mtm | 8",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -1601,6 +1603,37 @@
             }
         },
         {
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 19",
+            "type": "vless",
+            "server": "zsf-5fa.pages.dev",
+            "server_port": 443,
+            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zsf-5fa.pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "zsf-5fa.pages.dev"
+                }
+            }
+        },
+        {
             "tag": "🇨🇦CA | vless | @FAKEOFTVC | 1",
             "type": "vless",
             "server": "cdn.snailnetworktm.link",
@@ -1663,12 +1696,12 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @mehrosaboran | 11",
+            "tag": "🇫🇮FI | vless | @mehrosaboran | 10",
             "type": "vless",
-            "server": "205.233.181.27",
-            "server_port": 2083,
-            "uuid": "461bf02a-ecdb-49ea-ae0b-f2200565b0d8",
-            "flow": "",
+            "server": "135.181.108.187",
+            "server_port": 443,
+            "uuid": "587c2cd4-e2c5-4e4c-ac23-eb38192cd02f",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1677,17 +1710,22 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "205.233.181.27",
+                "server_name": "*.hetzner.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5To2hd8dONrepW48wI6V1hbYePWOjYHgMXiR9Gq9tF4",
+                    "short_id": "ca837ff5"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@LIGHTNING6,",
+                "service_name": "@ipV2Ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
