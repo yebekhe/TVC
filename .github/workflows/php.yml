@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  tvc-full:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -25,6 +25,31 @@ jobs:
         run: |
           php get.php
           php channelsAssets.php
+          php duplicate.php
+          php sort.php
+          php toSingbox.php
+          php toClashSurfboard.php
+          git config --global user.email "yebekhe@gmail.com"
+          git config --global user.name "yebekhe"
+          git config credential.helper store
+          git add -A
+          git commit -m "🚀 Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')"
+          git push
+  tvc-lite:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          
+      - name: Execute PHP script
+        run: |
+          cd lite
+          php get.php
           php duplicate.php
           php sort.php
           php toSingbox.php
