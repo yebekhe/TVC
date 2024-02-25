@@ -113,9 +113,9 @@
                 "🇨🇦CA | vmess | @V2rayng_Fast | 2",
                 "🇨🇦CA | vmess | @yaney_01 | 8",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🏳️XX | vmess | @eliya_chiter0 | 8",
+                "🇨🇦CA | vmess | @eliya_chiter0 | 7",
                 "🇨🇦CA | vmess | @FoXrayIran | 1",
-                "🇨🇦CA | vmess | @SINABIGO | 4"
+                "🇨🇦CA | vmess | @SINABIGO | 5"
             ]
         },
         {
@@ -129,9 +129,9 @@
                 "🇨🇦CA | vmess | @V2rayng_Fast | 2",
                 "🇨🇦CA | vmess | @yaney_01 | 8",
                 "🇺🇸US | vmess | @v2Line | 6",
-                "🏳️XX | vmess | @eliya_chiter0 | 8",
+                "🇨🇦CA | vmess | @eliya_chiter0 | 7",
                 "🇨🇦CA | vmess | @FoXrayIran | 1",
-                "🇨🇦CA | vmess | @SINABIGO | 4"
+                "🇨🇦CA | vmess | @SINABIGO | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -335,11 +335,11 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @eliya_chiter0 | 8",
+            "tag": "🇨🇦CA | vmess | @eliya_chiter0 | 7",
             "type": "vmess",
-            "server": "ro.domain.photos",
-            "server_port": 80,
-            "uuid": "fae9e04a-3ff8-4bab-f9f8-d39ef67e2d25",
+            "server": "104.21.30.254",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -350,11 +350,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "nina.bond",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": ""
+                    "Host": "nina.bond"
                 }
             }
         },
@@ -383,7 +393,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @SINABIGO | 4",
+            "tag": "🇨🇦CA | vmess | @SINABIGO | 5",
             "type": "vmess",
             "server": "104.21.75.244",
             "server_port": 443,
