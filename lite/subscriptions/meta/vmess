@@ -125,7 +125,8 @@ proxies:
   - {"name":"🇬🇧GB | vmess | @oneclickvpnkeys | 7","type":"vmess","server":"159.65.25.87","port":"54389","cipher":"auto","uuid":"26b05411-2a1f-48d4-8b93-1fa6fc0a0934","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":""}}
   - {"name":"🇨🇦CA | vmess | @V2rayng_Fast | 1","type":"vmess","server":"warp-sub.pages.dev","port":"443","cipher":"auto","uuid":"06195b5b-3815-4a07-96f7-47eefbb1b143","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/urnxewzvh.site:443/kwhmvws","headers":{"host":""}}}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
-  - {"name":"🇳🇱NL | vmess | @eliya_chiter0 | 7","type":"vmess","server":"159.223.243.147","port":"57607","cipher":"auto","uuid":"ea85ebb7-b07b-46be-b877-345cf86aca74","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
+  - {"name":"🇺🇦UA | vmess | @forwardv2ray | 18","type":"vmess","server":"45.137.155.195","port":"443","cipher":"auto","uuid":"49c76bcf-3a58-43df-b1d4-2bffe9ca03b5","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧GB | vmess | @eliya_chiter0 | 6","type":"vmess","server":"159.65.25.87","port":"54389","cipher":"auto","uuid":"c81c1983-c5b7-4935-9272-1bed4f6792b6","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"🇨🇦CA | vmess | @FoXrayIran | 1","type":"vmess","server":"tl.iranray.online","port":"8080","cipher":"auto","uuid":"b3c20911-126d-4c30-bd32-10152bf0b593","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tl.iranray.online"}}}
 proxy-groups:
   - name: MANUAL
@@ -138,7 +139,8 @@ proxy-groups:
       - '🇬🇧GB | vmess | @oneclickvpnkeys | 7'
       - '🇨🇦CA | vmess | @V2rayng_Fast | 1'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇳🇱NL | vmess | @eliya_chiter0 | 7'
+      - '🇺🇦UA | vmess | @forwardv2ray | 18'
+      - '🇬🇧GB | vmess | @eliya_chiter0 | 6'
       - '🇨🇦CA | vmess | @FoXrayIran | 1'
   - name: URL-TEST
     type: url-test
@@ -151,7 +153,8 @@ proxy-groups:
       - '🇬🇧GB | vmess | @oneclickvpnkeys | 7'
       - '🇨🇦CA | vmess | @V2rayng_Fast | 1'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇳🇱NL | vmess | @eliya_chiter0 | 7'
+      - '🇺🇦UA | vmess | @forwardv2ray | 18'
+      - '🇬🇧GB | vmess | @eliya_chiter0 | 6'
       - '🇨🇦CA | vmess | @FoXrayIran | 1'
   - name: FALLBACK
     type: fallback
@@ -163,7 +166,8 @@ proxy-groups:
       - '🇬🇧GB | vmess | @oneclickvpnkeys | 7'
       - '🇨🇦CA | vmess | @V2rayng_Fast | 1'
       - '🇺🇸US | vmess | @v2Line | 6'
-      - '🇳🇱NL | vmess | @eliya_chiter0 | 7'
+      - '🇺🇦UA | vmess | @forwardv2ray | 18'
+      - '🇬🇧GB | vmess | @eliya_chiter0 | 6'
       - '🇨🇦CA | vmess | @FoXrayIran | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
