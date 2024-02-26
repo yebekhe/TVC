@@ -60,5 +60,5 @@ jobs:
           git config --global user.name "yebekhe"
           git config credential.helper store
           git add -A
-          git commit -m "🚀 Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')"
-          git push TVC main --force
+          git commit -m "🚀 Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')" --no-verify
+          git push
