@@ -105,16 +105,13 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST",
-                "🏳️XX | hy2 | @V2rayCollector | 0"
+                "URL-TEST"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [
-                "🏳️XX | hy2 | @V2rayCollector | 0"
-            ],
+            "outbounds": [],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -134,29 +131,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🏳️XX | hy2 | @V2rayCollector | 0",
-            "type": "hysteria2",
-            "server": "[2001:19f0:1000:6daf:5400:4ff:feba:32c3]",
-            "server_port": 443,
-            "up_mbps": 0,
-            "down_mbps": 0,
-            "password": "f6e4b19a3110d19d",
-            "network": "tcp",
-            "obfs": {
-                "type": "salamander",
-                "password": "8c3ce17b"
-            },
-            "tls": {
-                "enabled": true,
-                "disable_sni": false,
-                "server_name": "www.apple.com\n",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
         }
     ],
     "route": {
