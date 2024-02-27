@@ -108,9 +108,9 @@
                 "URL-TEST",
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇺🇸US | vmess | @oneclickvpnkeys | 8",
                 "🇫🇮FI | vmess | @V2rayng_Fast | 0",
                 "🇨🇦CA | vmess | @v2ray1_ng | 11",
+                "🇨🇦CA | vmess | @DailyV2RY | 134",
                 "🇭🇰HK | vmess | @yaney_01 | 8",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇩🇪DE | vmess | @kingofilter | 9",
@@ -124,9 +124,9 @@
             "outbounds": [
                 "🇬🇧GB | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
-                "🇺🇸US | vmess | @oneclickvpnkeys | 8",
                 "🇫🇮FI | vmess | @V2rayng_Fast | 0",
                 "🇨🇦CA | vmess | @v2ray1_ng | 11",
+                "🇨🇦CA | vmess | @DailyV2RY | 134",
                 "🇭🇰HK | vmess | @yaney_01 | 8",
                 "🇺🇸US | vmess | @v2Line | 6",
                 "🇩🇪DE | vmess | @kingofilter | 9",
@@ -188,23 +188,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @oneclickvpnkeys | 8",
-            "type": "vmess",
-            "server": "129.80.151.246",
-            "server_port": 40059,
-            "uuid": "1b359f51-72df-4435-81df-b92cf75262d9",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇫🇮FI | vmess | @V2rayng_Fast | 0",
             "type": "vmess",
             "server": "65.109.199.171",
@@ -252,6 +235,40 @@
                 "path": "\/linkws",
                 "headers": {
                     "Host": "obdii.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @DailyV2RY | 134",
+            "type": "vmess",
+            "server": "172.67.196.112",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kellie.makeup",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "kellie.makeup"
                 }
             }
         },
