@@ -13,11 +13,10 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @FoXrayIran | 1 = vmess, tl.iranray.online, 8080, username = b3c20911-126d-4c30-bd32-10152bf0b593, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tl.iranray.online", skip-cert-verify = true, tfo = false
-🇨🇦CA | vmess | @SINABIGO | 7 = vmess, hms182.glweidf.sbs, 443, username = 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"glweidf.sbs", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @FoXrayIran | 1,🇨🇦CA | vmess | @SINABIGO | 7
-URL-TEST = url-test,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @FoXrayIran | 1,🇨🇦CA | vmess | @SINABIGO | 7
-FALLBACK = fallback,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @FoXrayIran | 1,🇨🇦CA | vmess | @SINABIGO | 7
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @FoXrayIran | 1
+URL-TEST = url-test,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @FoXrayIran | 1
+FALLBACK = fallback,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @FoXrayIran | 1
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
