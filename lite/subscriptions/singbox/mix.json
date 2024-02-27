@@ -152,9 +152,9 @@
                 "🇨🇦CA | vless | @V2RayTz | 18",
                 "🇬🇧GB | vless | @DailyV2RY | 121",
                 "🇨🇦CA | vless | @sinabigo | 6",
-                "🏳️XX | vless | @lrnbymaa | 3",
+                "🇨🇦CA | vless | @lrnbymaa | 3",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇮🇷IR | vless | @ConfigsHUB | 17",
+                "🇨🇦CA | vless | @ConfigsHUB | 19",
                 "🇨🇦CA | vless | @proxystore11 | 17",
                 "🇭🇰HK | vmess | @yaney_01 | 7",
                 "🇨🇦CA | vless | @free1_vpn | 0",
@@ -168,7 +168,7 @@
                 "🇩🇪DE | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 1",
                 "🇨🇦CA | vless | @flyv2ray | 18",
-                "🇳🇱NL | vless | @forwardv2ray | 19",
+                "🇮🇷IR | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 18",
                 "🇨🇦CA | vless | @mehrosaboran | 9",
@@ -237,9 +237,9 @@
                 "🇨🇦CA | vless | @V2RayTz | 18",
                 "🇬🇧GB | vless | @DailyV2RY | 121",
                 "🇨🇦CA | vless | @sinabigo | 6",
-                "🏳️XX | vless | @lrnbymaa | 3",
+                "🇨🇦CA | vless | @lrnbymaa | 3",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇮🇷IR | vless | @ConfigsHUB | 17",
+                "🇨🇦CA | vless | @ConfigsHUB | 19",
                 "🇨🇦CA | vless | @proxystore11 | 17",
                 "🇭🇰HK | vmess | @yaney_01 | 7",
                 "🇨🇦CA | vless | @free1_vpn | 0",
@@ -253,7 +253,7 @@
                 "🇩🇪DE | vless | @Capoit | 5",
                 "🇨🇦CA | vless | @FreakConfig | 1",
                 "🇨🇦CA | vless | @flyv2ray | 18",
-                "🇳🇱NL | vless | @forwardv2ray | 19",
+                "🇮🇷IR | vless | @forwardv2ray | 18",
                 "🇨🇦CA | vless | @FAKEOFTVC | 1",
                 "🇨🇦CA | vless | @https_config_injector | 18",
                 "🇨🇦CA | vless | @mehrosaboran | 9",
@@ -1505,7 +1505,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @lrnbymaa | 3",
+            "tag": "🇨🇦CA | vless | @lrnbymaa | 3",
             "type": "vless",
             "server": "donaldi.pydri.ir",
             "server_port": 8080,
@@ -1536,17 +1536,34 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇮🇷IR | vless | @ConfigsHUB | 17",
+            "tag": "🇨🇦CA | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "212.23.214.137",
-            "server_port": 500,
-            "uuid": "bbda8565-70e1-434d-b404-671b224d76c7",
+            "server": "star--join.outline-vpn.cloud",
+            "server_port": 443,
+            "uuid": "b9ad895b-12ac-40fc-a5ac-a5b2a1285001",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "3k.pureboy.eu.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "3k.pureboy.eu.org"
+                }
             }
         },
         {
@@ -1886,39 +1903,24 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vless | @forwardv2ray | 19",
+            "tag": "🇮🇷IR | vless | @forwardv2ray | 18",
             "type": "vless",
-            "server": "146.190.17.120",
-            "server_port": 443,
-            "uuid": "8558f681-519e-40c3-8cc8-aea8e850d34a",
-            "flow": "xtls-rprx-vision",
+            "server": "185.143.233.1",
+            "server_port": 80,
+            "uuid": "169d4fb3-a564-4db5-8865-09e8e0853c24",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "*.biro.nl",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tpbNb0GaEaKigfpohZXxjlbNyBXHcsucB0KiFyw3fFA",
-                    "short_id": "85446011"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "185.143.233.1"
+                }
             }
         },
         {
