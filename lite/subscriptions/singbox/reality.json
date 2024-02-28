@@ -108,6 +108,7 @@
                 "URL-TEST",
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @ARv2ray | 13",
+                "🇮🇷IR | vless | @v2rayngvpn | 9",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇫🇮FI | vless | @flyv2ray | 18",
                 "🇸🇪SE | vless | @kiava | 3",
@@ -121,6 +122,7 @@
             "outbounds": [
                 "🇩🇪DE | vless | @ipV2Ray | 17",
                 "🇩🇪DE | vless | @ARv2ray | 13",
+                "🇮🇷IR | vless | @v2rayngvpn | 9",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇫🇮FI | vless | @flyv2ray | 18",
                 "🇸🇪SE | vless | @kiava | 3",
@@ -217,6 +219,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇮🇷IR | vless | @v2rayngvpn | 9",
+            "type": "vless",
+            "server": "188.121.103.47",
+            "server_port": 2087,
+            "uuid": "352f8151-f56f-4858-a855-b338e3053e6d",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "2-t9uUzRV61JYk2SuEzWmNuKgh_lG5IteIJ_pHPcPWM",
+                    "short_id": "21e8adbf"
+                }
             }
         },
         {
