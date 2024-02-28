@@ -106,7 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇷IR | vless | @EliV2ray | 4",
+                "🇳🇱NL | vless | @EliV2ray | 3",
+                "🇮🇷IR | vless | @EliV2ray | 7",
                 "🇩🇪DE | vless | @NIM_VPN_ir | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 3",
                 "🇫🇮FI | vless | @ipV2Ray | 4",
@@ -141,7 +142,6 @@
                 "🇩🇪DE | vless | @prrofile_purple | 169",
                 "🇳🇱NL | vless | @prrofile_purple | 170",
                 "🇩🇪DE | vless | @v2rayNG_Matsuri | 5",
-                "🇮🇷IR | vless | @v2rayngvpn | 14",
                 "🇳🇱NL | vless | @FalconPolV2rayNG | 3",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
                 "🇩🇪DE | vless | @ShadowProxy66 | 15",
@@ -151,6 +151,7 @@
                 "🇩🇪DE | vless | @lrnbymaa | 5",
                 "🏳️XX | vless | @polproxy | 8",
                 "🏳️XX | vless | @polproxy | 9",
+                "🇮🇷IR | vless | @Outlinev2rayNG | 9",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
                 "🏳️XX | vless | @Capital_NET | 33",
@@ -159,7 +160,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 36",
                 "🏳️XX | vless | @Capital_NET | 37",
                 "🏳️XX | vless | @Capital_NET | 39",
-                "🇳🇱NL | vless | @Capital_NET | 41",
+                "🇨🇦CA | vless | @Capital_NET | 41",
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
@@ -195,7 +196,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇷IR | vless | @EliV2ray | 4",
+                "🇳🇱NL | vless | @EliV2ray | 3",
+                "🇮🇷IR | vless | @EliV2ray | 7",
                 "🇩🇪DE | vless | @NIM_VPN_ir | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 3",
                 "🇫🇮FI | vless | @ipV2Ray | 4",
@@ -230,7 +232,6 @@
                 "🇩🇪DE | vless | @prrofile_purple | 169",
                 "🇳🇱NL | vless | @prrofile_purple | 170",
                 "🇩🇪DE | vless | @v2rayNG_Matsuri | 5",
-                "🇮🇷IR | vless | @v2rayngvpn | 14",
                 "🇳🇱NL | vless | @FalconPolV2rayNG | 3",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
                 "🇩🇪DE | vless | @ShadowProxy66 | 15",
@@ -240,6 +241,7 @@
                 "🇩🇪DE | vless | @lrnbymaa | 5",
                 "🏳️XX | vless | @polproxy | 8",
                 "🏳️XX | vless | @polproxy | 9",
+                "🇮🇷IR | vless | @Outlinev2rayNG | 9",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
                 "🏳️XX | vless | @Capital_NET | 33",
@@ -248,7 +250,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 36",
                 "🏳️XX | vless | @Capital_NET | 37",
                 "🏳️XX | vless | @Capital_NET | 39",
-                "🇳🇱NL | vless | @Capital_NET | 41",
+                "🇨🇦CA | vless | @Capital_NET | 41",
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
@@ -300,7 +302,36 @@
             "type": "dns"
         },
         {
-            "tag": "🇮🇷IR | vless | @EliV2ray | 4",
+            "tag": "🇳🇱NL | vless | @EliV2ray | 3",
+            "type": "vless",
+            "server": "77.246.99.239",
+            "server_port": 443,
+            "uuid": "95889265-c183-4b99-a4ab-648245c05c89",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "canva.heydasip.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "oIXlVQLyObtIYcvEtVGXrathqaxBQd0keGCIrP_KHk8",
+                    "short_id": "b3c1fd20"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇷IR | vless | @EliV2ray | 7",
             "type": "vless",
             "server": "188.121.103.47",
             "server_port": 2087,
@@ -1511,35 +1542,6 @@
             }
         },
         {
-            "tag": "🇮🇷IR | vless | @v2rayngvpn | 14",
-            "type": "vless",
-            "server": "188.121.103.47",
-            "server_port": 2087,
-            "uuid": "352f8151-f56f-4858-a855-b338e3053e6d",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.speedtest.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "2-t9uUzRV61JYk2SuEzWmNuKgh_lG5IteIJ_pHPcPWM",
-                    "short_id": "21e8adbf"
-                }
-            }
-        },
-        {
             "tag": "🇳🇱NL | vless | @FalconPolV2rayNG | 3",
             "type": "vless",
             "server": "104.248.194.223",
@@ -1822,6 +1824,35 @@
             }
         },
         {
+            "tag": "🇮🇷IR | vless | @Outlinev2rayNG | 9",
+            "type": "vless",
+            "server": "188.121.103.47",
+            "server_port": 2087,
+            "uuid": "352f8151-f56f-4858-a855-b338e3053e6d",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "2-t9uUzRV61JYk2SuEzWmNuKgh_lG5IteIJ_pHPcPWM",
+                    "short_id": "21e8adbf"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | vless | @Capital_NET | 31",
             "type": "vless",
             "server": "142.132.183.55",
@@ -2068,7 +2099,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | vless | @Capital_NET | 41",
+            "tag": "🇨🇦CA | vless | @Capital_NET | 41",
             "type": "vless",
             "server": "194.5.97.158",
             "server_port": 443,
