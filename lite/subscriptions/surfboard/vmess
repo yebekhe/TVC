@@ -13,12 +13,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇫🇷FR | vmess | @oneclickvpnkeys | 11 = vmess, 35.180.199.174, 11275, username = 8b938e92-c30b-42bd-8f86-3cda381126ea, ws = true, tls = , vmess-aead = true, ws-path = /arki?ed=2048, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @v2Line | 6 = vmess, v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 80, username = f61203bd-f386-4d12-9853-cc829d6b7c9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ca2.xv2ray.net", skip-cert-verify = true, tfo = false
-🇨🇦CA | vmess | @forwardv2ray | 19 = vmess, v3-1.806cms.top, 2082, username = cb790be2-e639-4872-b88e-a933d56ae5a9, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @FoXrayIran | 1 = vmess, tl.iranray.online, 8080, username = b3c20911-126d-4c30-bd32-10152bf0b593, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tl.iranray.online", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | vmess | @oneclickvpnkeys | 11,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @forwardv2ray | 19,🇨🇦CA | vmess | @FoXrayIran | 1
-URL-TEST = url-test,🇫🇷FR | vmess | @oneclickvpnkeys | 11,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @forwardv2ray | 19,🇨🇦CA | vmess | @FoXrayIran | 1
-FALLBACK = fallback,🇫🇷FR | vmess | @oneclickvpnkeys | 11,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @forwardv2ray | 19,🇨🇦CA | vmess | @FoXrayIran | 1
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | vmess | @oneclickvpnkeys | 11,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @FoXrayIran | 1
+URL-TEST = url-test,🇫🇷FR | vmess | @oneclickvpnkeys | 11,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @FoXrayIran | 1
+FALLBACK = fallback,🇫🇷FR | vmess | @oneclickvpnkeys | 11,🇺🇸US | vmess | @v2Line | 6,🇨🇦CA | vmess | @FoXrayIran | 1
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

@@ -106,11 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇷IR | vless | @EliV2ray | 7",
+                "🇮🇷IR | vless | @EliV2ray | 9",
                 "🇩🇪DE | vless | @ipV2Ray | 16",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
-                "🇩🇪DE | vless | @ConfigsHUB | 17",
-                "🏳️XX | vless | @polproxy | 9",
+                "🇩🇪DE | vless | @free1_vpn | 0",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇸🇪SE | vless | @kiava | 3",
                 "🏳️XX | vless | @vpn_go67 | 23"
@@ -120,11 +119,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇷IR | vless | @EliV2ray | 7",
+                "🇮🇷IR | vless | @EliV2ray | 9",
                 "🇩🇪DE | vless | @ipV2Ray | 16",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
-                "🇩🇪DE | vless | @ConfigsHUB | 17",
-                "🏳️XX | vless | @polproxy | 9",
+                "🇩🇪DE | vless | @free1_vpn | 0",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇸🇪SE | vless | @kiava | 3",
                 "🏳️XX | vless | @vpn_go67 | 23"
@@ -150,7 +148,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇮🇷IR | vless | @EliV2ray | 7",
+            "tag": "🇮🇷IR | vless | @EliV2ray | 9",
             "type": "vless",
             "server": "188.121.103.47",
             "server_port": 2087,
@@ -251,11 +249,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @ConfigsHUB | 17",
+            "tag": "🇩🇪DE | vless | @free1_vpn | 0",
             "type": "vless",
-            "server": "sow1.noooooop.top",
-            "server_port": 2924,
-            "uuid": "4389c3cb-f2b2-401e-a99b-6cdf59c1f4f9",
+            "server": "164.92.250.121",
+            "server_port": 443,
+            "uuid": "107e6e81-80da-47b0-a125-449f7c4b38e3",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -265,54 +263,25 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.speedtest.net",
+                "server_name": "*.dsp-redirect.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E",
-                    "short_id": ""
+                    "public_key": "BxRvYZ4Jfff0ozG7aLyOqnCsUVq0O_ws1t21PEHlWx4",
+                    "short_id": "a3f0945a"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "xyz",
+                "service_name": "@ipV2Ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🏳️XX | vless | @polproxy | 9",
-            "type": "vless",
-            "server": "[2600:3c07::f03c:94ff:fe7f:deb7]",
-            "server_port": 80,
-            "uuid": "82e1cf39-6753-411e-a0f2-2e155067b6d7",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "reality172-232-62-114.cleanmark.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "QTUASK_nDearjwIt_ygwF71iQRIACGa-qR1N-YJhPkA",
-                    "short_id": "abd7809d"
-                }
             }
         },
         {
