@@ -125,8 +125,8 @@
                 "🇩🇪DE | vless | @ipV2Ray | 16",
                 "🇸🇪SE | vless | @V2pedia | 6",
                 "🇬🇧GB | vless | @V2pedia | 15",
-                "🇩🇪DE | vless | @ARv2ray | 4",
-                "🇩🇪DE | vless | @ARv2ray | 11",
+                "🇩🇪DE | vless | @ARv2ray | 0",
+                "🇩🇪DE | vless | @ARv2ray | 5",
                 "🇬🇧GB | vless | @Lockey_vpn | 4",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
@@ -209,8 +209,8 @@
                 "🇩🇪DE | vless | @ipV2Ray | 16",
                 "🇸🇪SE | vless | @V2pedia | 6",
                 "🇬🇧GB | vless | @V2pedia | 15",
-                "🇩🇪DE | vless | @ARv2ray | 4",
-                "🇩🇪DE | vless | @ARv2ray | 11",
+                "🇩🇪DE | vless | @ARv2ray | 0",
+                "🇩🇪DE | vless | @ARv2ray | 5",
                 "🇬🇧GB | vless | @Lockey_vpn | 4",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
@@ -967,7 +967,43 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @ARv2ray | 4",
+            "tag": "🇩🇪DE | vless | @ARv2ray | 0",
+            "type": "vless",
+            "server": "49.13.12.237",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UpCUC8wyxeS7cRw2vI5zdl8b5z3jlGs5Ok6gfJP3vCI",
+                    "short_id": "cf9bc318"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @ARv2ray | 5",
             "type": "vless",
             "server": "49.13.56.161",
             "server_port": 443,
@@ -992,42 +1028,6 @@
                     "enabled": true,
                     "public_key": "9_uiyQFlS7NYxxFiN5TZmAQr3FBiZZ4sWHEZwydQuT0",
                     "short_id": "c0ce49ac"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @ARv2ray | 11",
-            "type": "vless",
-            "server": "49.13.115.35",
-            "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.speedtest.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "axHtICQ_rwi3kZsN9CC1vUELchyykiHkLWB6ocrqRm4",
-                    "short_id": "4e830fa7"
                 }
             },
             "transport": {
