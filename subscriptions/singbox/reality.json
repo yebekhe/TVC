@@ -127,8 +127,8 @@
                 "🏳️XX | vless | @V2pedia | 6",
                 "🇸🇪SE | vless | @V2pedia | 9",
                 "🇬🇧GB | vless | @V2pedia | 18",
-                "🇩🇪DE | vless | @ARv2ray | 1",
-                "🇩🇪DE | vless | @ARv2ray | 3",
+                "🇩🇪DE | vless | @ARv2ray | 2",
+                "🇩🇪DE | vless | @ARv2ray | 4",
                 "🇬🇧GB | vless | @Lockey_vpn | 4",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
@@ -144,7 +144,7 @@
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
                 "🇩🇪DE | vless | @ShadowProxy66 | 32",
                 "🇩🇪DE | vless | @v2ray1_ng | 0",
-                "🇮🇷IR | vless | @DailyV2RY | 96",
+                "🇮🇷IR | vless | @DailyV2RY | 105",
                 "🇩🇪DE | vless | @lrnbymaa | 10",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
@@ -185,7 +185,8 @@
                 "🇩🇪DE | vless | @freeconfigv2 | 11",
                 "🇩🇪DE | vless | @freeconfigv2 | 13",
                 "🏳️XX | vless | @Good_V2rayy | 2",
-                "🏳️XX | vless | @TVCminer | 5"
+                "🏳️XX | vless | @TVCminer | 5",
+                "🇬🇧GB | vless | @TVCminer | 9"
             ]
         },
         {
@@ -213,8 +214,8 @@
                 "🏳️XX | vless | @V2pedia | 6",
                 "🇸🇪SE | vless | @V2pedia | 9",
                 "🇬🇧GB | vless | @V2pedia | 18",
-                "🇩🇪DE | vless | @ARv2ray | 1",
-                "🇩🇪DE | vless | @ARv2ray | 3",
+                "🇩🇪DE | vless | @ARv2ray | 2",
+                "🇩🇪DE | vless | @ARv2ray | 4",
                 "🇬🇧GB | vless | @Lockey_vpn | 4",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
@@ -230,7 +231,7 @@
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
                 "🇩🇪DE | vless | @ShadowProxy66 | 32",
                 "🇩🇪DE | vless | @v2ray1_ng | 0",
-                "🇮🇷IR | vless | @DailyV2RY | 96",
+                "🇮🇷IR | vless | @DailyV2RY | 105",
                 "🇩🇪DE | vless | @lrnbymaa | 10",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
@@ -271,7 +272,8 @@
                 "🇩🇪DE | vless | @freeconfigv2 | 11",
                 "🇩🇪DE | vless | @freeconfigv2 | 13",
                 "🏳️XX | vless | @Good_V2rayy | 2",
-                "🏳️XX | vless | @TVCminer | 5"
+                "🏳️XX | vless | @TVCminer | 5",
+                "🇬🇧GB | vless | @TVCminer | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -1043,7 +1045,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @ARv2ray | 1",
+            "tag": "🇩🇪DE | vless | @ARv2ray | 2",
             "type": "vless",
             "server": "49.13.56.161",
             "server_port": 443,
@@ -1079,7 +1081,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @ARv2ray | 3",
+            "tag": "🇩🇪DE | vless | @ARv2ray | 4",
             "type": "vless",
             "server": "49.13.12.237",
             "server_port": 443,
@@ -1606,7 +1608,7 @@
             }
         },
         {
-            "tag": "🇮🇷IR | vless | @DailyV2RY | 96",
+            "tag": "🇮🇷IR | vless | @DailyV2RY | 105",
             "type": "vless",
             "server": "185.213.164.162",
             "server_port": 80,
@@ -2972,6 +2974,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇬🇧GB | vless | @TVCminer | 9",
+            "type": "vless",
+            "server": "57.128.163.80",
+            "server_port": 443,
+            "uuid": "VPNCUSTOMIZE",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.kellekcollection.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "w9tYPxes9YU2yvmYMgRYhSFQCWFoyQCz5b0odul1DQQ",
+                    "short_id": "136ce8d8"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@VPNCUSTOMIZE",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
