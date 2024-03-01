@@ -107,7 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇳🇱NL | vless | @EliV2ray | 8",
-                "🇩🇪DE | vless | @NIM_VPN_ir | 8",
+                "🇩🇪DE | vless | @NIM_VPN_ir | 11",
                 "🇬🇧GB | vless | @VPNCUSTOMIZE | 3",
                 "🇬🇧GB | vless | @VPNCUSTOMIZE | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 0",
@@ -146,6 +146,7 @@
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
                 "🇩🇪DE | vless | @proxyymeliii | 0",
                 "🇩🇪DE | vless | @proxyymeliii | 1",
+                "🇩🇪DE | vless | @V2RayTz | 5",
                 "🇩🇪DE | vless | @lrnbymaa | 13",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
@@ -159,7 +160,6 @@
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🏳️XX | vless | @forwardv2ray | 9",
                 "🇩🇪DE | vless | @mehrosaboran | 2",
                 "🇬🇧GB | vless | @mehrosaboran | 3",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
@@ -194,7 +194,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇳🇱NL | vless | @EliV2ray | 8",
-                "🇩🇪DE | vless | @NIM_VPN_ir | 8",
+                "🇩🇪DE | vless | @NIM_VPN_ir | 11",
                 "🇬🇧GB | vless | @VPNCUSTOMIZE | 3",
                 "🇬🇧GB | vless | @VPNCUSTOMIZE | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 0",
@@ -233,6 +233,7 @@
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
                 "🇩🇪DE | vless | @proxyymeliii | 0",
                 "🇩🇪DE | vless | @proxyymeliii | 1",
+                "🇩🇪DE | vless | @V2RayTz | 5",
                 "🇩🇪DE | vless | @lrnbymaa | 13",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
@@ -246,7 +247,6 @@
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🏳️XX | vless | @forwardv2ray | 9",
                 "🇩🇪DE | vless | @mehrosaboran | 2",
                 "🇬🇧GB | vless | @mehrosaboran | 3",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
@@ -325,7 +325,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @NIM_VPN_ir | 8",
+            "tag": "🇩🇪DE | vless | @NIM_VPN_ir | 11",
             "type": "vless",
             "server": "116.203.41.231",
             "server_port": 443,
@@ -1673,6 +1673,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @V2RayTz | 5",
+            "type": "vless",
+            "server": "49.13.119.48",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UpCUC8wyxeS7cRw2vI5zdl8b5z3jlGs5Ok6gfJP3vCI",
+                    "short_id": "cf9bc318"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇩🇪DE | vless | @lrnbymaa | 13",
             "type": "vless",
             "server": "ng.nourycazablanka.online",
@@ -2060,35 +2096,6 @@
                     "enabled": true,
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
-                }
-            }
-        },
-        {
-            "tag": "🏳️XX | vless | @forwardv2ray | 9",
-            "type": "vless",
-            "server": "V2rez",
-            "server_port": 1111,
-            "uuid": "44cb0056-f846-413b-911e-7014c30b1298",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mega.io",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "5HwFpn0nd52NSlRg_vYZw93TFOUIpYpysTqo40uD5xU",
-                    "short_id": ""
                 }
             }
         },
