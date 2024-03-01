@@ -108,7 +108,8 @@
                 "URL-TEST",
                 "🇳🇱NL | vless | @EliV2ray | 8",
                 "🇩🇪DE | vless | @NIM_VPN_ir | 8",
-                "🇬🇧GB | vless | @VPNCUSTOMIZE | 0",
+                "🇬🇧GB | vless | @VPNCUSTOMIZE | 3",
+                "🇬🇧GB | vless | @VPNCUSTOMIZE | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 1",
                 "🇩🇪DE | vless | @ipV2Ray | 2",
                 "🇩🇪DE | vless | @ipV2Ray | 3",
@@ -128,8 +129,8 @@
                 "🏳️XX | vless | @V2pedia | 14",
                 "🇸🇪SE | vless | @V2pedia | 17",
                 "🇩🇪DE | vless | @ARv2ray | 0",
-                "🇩🇪DE | vless | @ARv2ray | 4",
                 "🇩🇪DE | vless | @ARv2ray | 6",
+                "🇩🇪DE | vless | @ARv2ray | 8",
                 "🇬🇧GB | vless | @Lockey_vpn | 4",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
@@ -158,7 +159,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇩🇪DE | vless | @forwardv2ray | 9",
+                "🇫🇷FR | vless | @forwardv2ray | 4",
                 "🇩🇪DE | vless | @mehrosaboran | 5",
                 "🇪🇪EE | vless | @mehrosaboran | 9",
                 "🇸🇪SE | vless | @kiava | 3",
@@ -195,7 +196,8 @@
             "outbounds": [
                 "🇳🇱NL | vless | @EliV2ray | 8",
                 "🇩🇪DE | vless | @NIM_VPN_ir | 8",
-                "🇬🇧GB | vless | @VPNCUSTOMIZE | 0",
+                "🇬🇧GB | vless | @VPNCUSTOMIZE | 3",
+                "🇬🇧GB | vless | @VPNCUSTOMIZE | 4",
                 "🇩🇪DE | vless | @ipV2Ray | 1",
                 "🇩🇪DE | vless | @ipV2Ray | 2",
                 "🇩🇪DE | vless | @ipV2Ray | 3",
@@ -215,8 +217,8 @@
                 "🏳️XX | vless | @V2pedia | 14",
                 "🇸🇪SE | vless | @V2pedia | 17",
                 "🇩🇪DE | vless | @ARv2ray | 0",
-                "🇩🇪DE | vless | @ARv2ray | 4",
                 "🇩🇪DE | vless | @ARv2ray | 6",
+                "🇩🇪DE | vless | @ARv2ray | 8",
                 "🇬🇧GB | vless | @Lockey_vpn | 4",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
@@ -245,7 +247,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇩🇪DE | vless | @forwardv2ray | 9",
+                "🇫🇷FR | vless | @forwardv2ray | 4",
                 "🇩🇪DE | vless | @mehrosaboran | 5",
                 "🇪🇪EE | vless | @mehrosaboran | 9",
                 "🇸🇪SE | vless | @kiava | 3",
@@ -361,7 +363,43 @@
             }
         },
         {
-            "tag": "🇬🇧GB | vless | @VPNCUSTOMIZE | 0",
+            "tag": "🇬🇧GB | vless | @VPNCUSTOMIZE | 3",
+            "type": "vless",
+            "server": "57.128.163.80",
+            "server_port": 443,
+            "uuid": "VPNCUSTOMIZE",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.kellekcollection.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Tbo7wSj9u_1HMcETBisSXtdd1n4qyJnZOBRBtYOd7n0",
+                    "short_id": "136ce8d8"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@VPNCUSTOMIZE",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇬🇧GB | vless | @VPNCUSTOMIZE | 4",
             "type": "vless",
             "server": "57.128.163.80",
             "server_port": 443,
@@ -1081,7 +1119,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @ARv2ray | 4",
+            "tag": "🇩🇪DE | vless | @ARv2ray | 6",
             "type": "vless",
             "server": "49.13.56.161",
             "server_port": 443,
@@ -1117,7 +1155,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @ARv2ray | 6",
+            "tag": "🇩🇪DE | vless | @ARv2ray | 8",
             "type": "vless",
             "server": "49.13.12.237",
             "server_port": 443,
@@ -2035,11 +2073,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @forwardv2ray | 9",
+            "tag": "🇫🇷FR | vless | @forwardv2ray | 4",
             "type": "vless",
-            "server": "49.13.69.46",
-            "server_port": 56078,
-            "uuid": "dbff34ab-eb96-441d-9f07-30f0a7776037",
+            "server": "217.69.2.222",
+            "server_port": 443,
+            "uuid": "bbc35d6d-5830-45ac-fbce-c5d246aef83f",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2049,17 +2087,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "canva.com",
+                "server_name": "ohoh.mtshop1.site",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "SUCJ94wKPUdfkBJw8VnANql6kevueb6EyA71C3AfKFs",
-                    "short_id": "bf44fc2c"
+                    "public_key": "m7-y_iaWWZZfzl9G05LVRwva51Kv3nXCvs9CJmMdhno",
+                    "short_id": "80"
                 }
             }
         },
