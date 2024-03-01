@@ -145,7 +145,7 @@
                 "🇩🇪DE | vless | @VmessProtocol | 18",
                 "🇩🇪DE | vless | @DailyV2RY | 109",
                 "🇨🇦CA | vless | @sinabigo | 4",
-                "🇨🇦CA | vless | @ConfigsHUB | 16",
+                "🇩🇪DE | vless | @ConfigsHUB | 17",
                 "🇬🇧GB | vless | @proxystore11 | 11",
                 "🇩🇪DE | vless | @free1_vpn | 1",
                 "🇨🇦CA | vless | @fnet00 | 5",
@@ -216,7 +216,7 @@
                 "🇩🇪DE | vless | @VmessProtocol | 18",
                 "🇩🇪DE | vless | @DailyV2RY | 109",
                 "🇨🇦CA | vless | @sinabigo | 4",
-                "🇨🇦CA | vless | @ConfigsHUB | 16",
+                "🇩🇪DE | vless | @ConfigsHUB | 17",
                 "🇬🇧GB | vless | @proxystore11 | 11",
                 "🇩🇪DE | vless | @free1_vpn | 1",
                 "🇨🇦CA | vless | @fnet00 | 5",
@@ -1243,11 +1243,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @ConfigsHUB | 16",
+            "tag": "🇩🇪DE | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 2082,
-            "uuid": "5fd30283-078d-4ee6-873b-4ecb8fec1958",
+            "server": "78.47.96.56",
+            "server_port": 8080,
+            "uuid": "5f2bcfcb-43a0-4de3-9306-8020b9ff0c13",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1259,7 +1259,7 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "78.47.96.56"
                 }
             }
         },
@@ -1591,9 +1591,9 @@
         {
             "tag": "🇨🇦CA | vless | @forwardv2ray | 18",
             "type": "vless",
-            "server": "162.159.135.234",
-            "server_port": 8880,
-            "uuid": "1655cc99-42e6-4b2a-c472-50e2dfaa3993",
+            "server": "162.159.135.79",
+            "server_port": 443,
+            "uuid": "d672ec4f-afba-4f61-af09-eec872f97e99",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1601,11 +1601,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "test57.pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/@daily_configs,@daily_configs,@daily_configs,@daily_configs,@daily_configs",
+                "path": "\/Path\/Telegram@proxy_mtm\/",
                 "headers": {
-                    "Host": "162.159.135.234"
+                    "Host": "test57.pages.dev"
                 }
             }
         },
