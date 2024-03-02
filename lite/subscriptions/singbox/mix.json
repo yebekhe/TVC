@@ -148,7 +148,7 @@
                 "🇨🇦CA | vmess | @DailyV2RY | 107",
                 "🇨🇦CA | vless | @sinabigo | 4",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇨🇦CA | vless | @ConfigsHUB | 19",
+                "🇩🇪DE | trojan | @ConfigsHUB | 18",
                 "🇨🇦CA | vless | @proxystore11 | 12",
                 "🇹🇼TW | vmess | @yaney_01 | 6",
                 "🇩🇪DE | vless | @free1_vpn | 1",
@@ -163,7 +163,7 @@
                 "🏳️XX | vless | @FreakConfig | 1",
                 "🇨🇷CR | vless | @IRN_VPN | 4",
                 "🇨🇦CA | vless | @flyv2ray | 18",
-                "🇺🇸US | vless | @forwardv2ray | 18",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 26",
                 "🇨🇳CN | vless | @mehrosaboran | 11",
@@ -224,7 +224,7 @@
                 "🇨🇦CA | vmess | @DailyV2RY | 107",
                 "🇨🇦CA | vless | @sinabigo | 4",
                 "🇺🇸US | ss | @OutlineVpnOfficial | 17",
-                "🇨🇦CA | vless | @ConfigsHUB | 19",
+                "🇩🇪DE | trojan | @ConfigsHUB | 18",
                 "🇨🇦CA | vless | @proxystore11 | 12",
                 "🇹🇼TW | vmess | @yaney_01 | 6",
                 "🇩🇪DE | vless | @free1_vpn | 1",
@@ -239,7 +239,7 @@
                 "🏳️XX | vless | @FreakConfig | 1",
                 "🇨🇷CR | vless | @IRN_VPN | 4",
                 "🇨🇦CA | vless | @flyv2ray | 18",
-                "🇺🇸US | vless | @forwardv2ray | 18",
+                "🇩🇪DE | vless | @forwardv2ray | 19",
                 "🇨🇦CA | vless | @FAKEOFTVC | 2",
                 "🇨🇦CA | vless | @https_config_injector | 26",
                 "🇨🇳CN | vless | @mehrosaboran | 11",
@@ -1303,23 +1303,24 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇦CA | vless | @ConfigsHUB | 19",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 8080,
-            "uuid": "SVNTEAMz",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇩🇪DE | trojan | @ConfigsHUB | 18",
+            "type": "trojan",
+            "server": "3.75.68.178",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/SVNTEAM",
-                "headers": {
-                    "Host": "www.speedtest.net"
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.miwan.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
@@ -1706,17 +1707,32 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @forwardv2ray | 18",
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 19",
             "type": "vless",
-            "server": "5.78.63.250",
-            "server_port": 443,
-            "uuid": "6e14606d-f2ec-4d7e-ba43-541d1d54bea6",
-            "flow": "",
+            "server": "ng.nourycazablanka.online",
+            "server_port": 11426,
+            "uuid": "0116c348-f32f-4e40-91c7-a90b5aae6495",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ng.nourycazablanka.online",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xv9dgE3CwwjEFMGfEn3EXyUvH3qfotIeu9v2xxm4sg4",
+                    "short_id": "266b4610"
+                }
             }
         },
         {
