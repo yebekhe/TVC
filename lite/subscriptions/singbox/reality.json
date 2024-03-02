@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | vless | @NIM_VPN_ir | 13",
                 "🇩🇪DE | vless | @ipV2Ray | 12",
                 "🇩🇪DE | vless | @ARv2ray | 15",
                 "🇩🇪DE | vless | @v2logy | 6",
@@ -114,7 +115,7 @@
                 "🇩🇪DE | vless | @free1_vpn | 2",
                 "🇩🇪DE | vless | @Outlinev2rayNG | 16",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇬🇧GB | vless | @mehrosaboran | 11",
+                "🇩🇪DE | vless | @mehrosaboran | 10",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🏳️XX | vless | @TVCminer | 16"
             ]
@@ -123,6 +124,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | vless | @NIM_VPN_ir | 13",
                 "🇩🇪DE | vless | @ipV2Ray | 12",
                 "🇩🇪DE | vless | @ARv2ray | 15",
                 "🇩🇪DE | vless | @v2logy | 6",
@@ -131,7 +133,7 @@
                 "🇩🇪DE | vless | @free1_vpn | 2",
                 "🇩🇪DE | vless | @Outlinev2rayNG | 16",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇬🇧GB | vless | @mehrosaboran | 11",
+                "🇩🇪DE | vless | @mehrosaboran | 10",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🏳️XX | vless | @TVCminer | 16"
             ],
@@ -154,6 +156,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | vless | @NIM_VPN_ir | 13",
+            "type": "vless",
+            "server": "116.203.41.231",
+            "server_port": 443,
+            "uuid": "ba286bf3-bb85-405a-8609-8f3681413464",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fussenegger.pro",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UTXySBjS5WIrxMokR0o5P4jGg2yG3W8Sg-SAQHkr60U",
+                    "short_id": "0c984483"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 12",
@@ -437,11 +475,11 @@
             }
         },
         {
-            "tag": "🇬🇧GB | vless | @mehrosaboran | 11",
+            "tag": "🇩🇪DE | vless | @mehrosaboran | 10",
             "type": "vless",
-            "server": "57.128.163.80",
+            "server": "142.93.166.107",
             "server_port": 443,
-            "uuid": "VPNCUSTOMIZE",
+            "uuid": "e82351c5-c339-4d48-b90d-3524c5547912",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -451,7 +489,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "cdn.kellekcollection.com",
+                "server_name": "*.partyverleih-glauberg.de",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -460,13 +498,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "Tbo7wSj9u_1HMcETBisSXtdd1n4qyJnZOBRBtYOd7n0",
-                    "short_id": "136ce8d8"
+                    "public_key": "LD8y7bs5T8tNSLcB83NQXpo0_LfHk76WWykNwXJRG3I",
+                    "short_id": "304a9854"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@VPNCUSTOMIZE",
+                "service_name": "@ipV2Ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
