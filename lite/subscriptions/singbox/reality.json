@@ -107,11 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | vless | @ipV2Ray | 12",
-                "🇩🇪DE | vless | @ARv2ray | 13",
+                "🇩🇪DE | vless | @ARv2ray | 15",
                 "🇩🇪DE | vless | @v2logy | 6",
                 "🏳️XX | vless | @azadi_az_inja_migzare | 4",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
                 "🇩🇪DE | vless | @free1_vpn | 2",
+                "🇩🇪DE | vless | @Outlinev2rayNG | 16",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇬🇧GB | vless | @mehrosaboran | 11",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -123,11 +124,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | vless | @ipV2Ray | 12",
-                "🇩🇪DE | vless | @ARv2ray | 13",
+                "🇩🇪DE | vless | @ARv2ray | 15",
                 "🇩🇪DE | vless | @v2logy | 6",
                 "🏳️XX | vless | @azadi_az_inja_migzare | 4",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
                 "🇩🇪DE | vless | @free1_vpn | 2",
+                "🇩🇪DE | vless | @Outlinev2rayNG | 16",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🇬🇧GB | vless | @mehrosaboran | 11",
                 "🏳️XX | vless | @vpn_go67 | 23",
@@ -190,9 +192,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @ARv2ray | 13",
+            "tag": "🇩🇪DE | vless | @ARv2ray | 15",
             "type": "vless",
-            "server": "49.13.56.161",
+            "server": "49.13.12.237",
             "server_port": 443,
             "uuid": "telegram-id-ArV2ray",
             "flow": "xtls-rprx-vision",
@@ -204,7 +206,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ftp.debian.org",
+                "server_name": "greenpepper.ir",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -213,13 +215,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "9_uiyQFlS7NYxxFiN5TZmAQr3FBiZZ4sWHEZwydQuT0",
-                    "short_id": "c0ce49ac"
+                    "public_key": "UpCUC8wyxeS7cRw2vI5zdl8b5z3jlGs5Ok6gfJP3vCI",
+                    "short_id": "cf9bc318"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -349,6 +351,42 @@
             "tls": {
                 "enabled": true,
                 "server_name": "*.octopad.ch",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "LD8y7bs5T8tNSLcB83NQXpo0_LfHk76WWykNwXJRG3I",
+                    "short_id": "304a9854"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @Outlinev2rayNG | 16",
+            "type": "vless",
+            "server": "142.93.166.107",
+            "server_port": 443,
+            "uuid": "e82351c5-c339-4d48-b90d-3524c5547912",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.partyverleih-glauberg.de",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
