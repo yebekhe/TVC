@@ -108,14 +108,13 @@
                 "URL-TEST",
                 "🇩🇪DE | vless | @NIM_VPN_ir | 13",
                 "🇩🇪DE | vless | @ipV2Ray | 12",
+                "🇩🇪DE | vless | @proxy_kafee | 0",
                 "🇩🇪DE | vless | @v2logy | 6",
                 "🏳️XX | vless | @azadi_az_inja_migzare | 4",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
-                "🇬🇧GB | vless | @V2RayTz | 15",
                 "🇩🇪DE | vless | @free1_vpn | 2",
                 "🇬🇧GB | vless | @Outlinev2rayNG | 16",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇩🇪DE | vless | @mehrosaboran | 12",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🏳️XX | vless | @TVCminer | 16"
             ]
@@ -126,14 +125,13 @@
             "outbounds": [
                 "🇩🇪DE | vless | @NIM_VPN_ir | 13",
                 "🇩🇪DE | vless | @ipV2Ray | 12",
+                "🇩🇪DE | vless | @proxy_kafee | 0",
                 "🇩🇪DE | vless | @v2logy | 6",
                 "🏳️XX | vless | @azadi_az_inja_migzare | 4",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
-                "🇬🇧GB | vless | @V2RayTz | 15",
                 "🇩🇪DE | vless | @free1_vpn | 2",
                 "🇬🇧GB | vless | @Outlinev2rayNG | 16",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇩🇪DE | vless | @mehrosaboran | 12",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🏳️XX | vless | @TVCminer | 16"
             ],
@@ -224,6 +222,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @proxy_kafee | 0",
+            "type": "vless",
+            "server": "3.66.30.218",
+            "server_port": 43731,
+            "uuid": "92058762-0a4d-47bb-e816-46e98cf61cf6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "microsoft.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3I7XFSEAMHRufcTTH1z0k-vrTQGbDjdPUDhU6p-4Wx4",
+                    "short_id": "f376"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@proxy_kafee\/Telegram:@proxy_kafee\/Telegram:@proxy_kafee\/Telegram:@proxy_kafee\/Telegram:@proxy_kafee\/Telegram:@proxy_kafee",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -338,42 +372,6 @@
             }
         },
         {
-            "tag": "🇬🇧GB | vless | @V2RayTz | 15",
-            "type": "vless",
-            "server": "57.128.163.80",
-            "server_port": 443,
-            "uuid": "VPNCUSTOMIZE",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdn.kellekcollection.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "A-zhzAJw7aU1NU9KaEfDvlbM8Tdc1K5C2m7eDSLxpmQ",
-                    "short_id": "136ce8d8"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@VPNCUSTOMIZE",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🇩🇪DE | vless | @free1_vpn | 2",
             "type": "vless",
             "server": "142.93.166.107",
@@ -472,42 +470,6 @@
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @mehrosaboran | 12",
-            "type": "vless",
-            "server": "142.93.166.107",
-            "server_port": 443,
-            "uuid": "e82351c5-c339-4d48-b90d-3524c5547912",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "*.partyverleih-glauberg.de",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "LD8y7bs5T8tNSLcB83NQXpo0_LfHk76WWykNwXJRG3I",
-                    "short_id": "304a9854"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
