@@ -11,12 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇮🇪IE | trojan | @PrivateVPNs | 18 = trojan, 52.48.93.169, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇸🇪SE | trojan | @PrivateVPNs | 18 = trojan, 51.20.48.36, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇮🇪IE | trojan | @DirectVPN | 18 = trojan, 54.74.166.153, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇳🇱NL | trojan | @oneclickvpnkeys | 9 = trojan, 188.114.96.3, 2083, password = qG9K8AGnn9XH5jUqeFu96g, udp-delay = true, skip-cert-verify = false, sni = cdn13.cdn2cdn.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇮🇪IE | trojan | @PrivateVPNs | 18,🇮🇪IE | trojan | @DirectVPN | 18
-URL-TEST = url-test,🇮🇪IE | trojan | @PrivateVPNs | 18,🇮🇪IE | trojan | @DirectVPN | 18
-FALLBACK = fallback,🇮🇪IE | trojan | @PrivateVPNs | 18,🇮🇪IE | trojan | @DirectVPN | 18
+MANUAL = select,URL-TEST,FALLBACK,🇸🇪SE | trojan | @PrivateVPNs | 18,🇮🇪IE | trojan | @DirectVPN | 18,🇳🇱NL | trojan | @oneclickvpnkeys | 9
+URL-TEST = url-test,🇸🇪SE | trojan | @PrivateVPNs | 18,🇮🇪IE | trojan | @DirectVPN | 18,🇳🇱NL | trojan | @oneclickvpnkeys | 9
+FALLBACK = fallback,🇸🇪SE | trojan | @PrivateVPNs | 18,🇮🇪IE | trojan | @DirectVPN | 18,🇳🇱NL | trojan | @oneclickvpnkeys | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
