@@ -106,11 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | vless | @ipV2Ray | 11",
+                "🇩🇪DE | vless | @ipV2Ray | 10",
                 "🇩🇪DE | vless | @v2logy | 6",
                 "🏳️XX | vless | @azadi_az_inja_migzare | 4",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
-                "🏳️XX | vless | @V2RayTz | 18",
                 "🇩🇪DE | vless | @free1_vpn | 2",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @vpn_go67 | 23"
@@ -120,11 +119,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | vless | @ipV2Ray | 11",
+                "🇩🇪DE | vless | @ipV2Ray | 10",
                 "🇩🇪DE | vless | @v2logy | 6",
                 "🏳️XX | vless | @azadi_az_inja_migzare | 4",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
-                "🏳️XX | vless | @V2RayTz | 18",
                 "🇩🇪DE | vless | @free1_vpn | 2",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @vpn_go67 | 23"
@@ -150,9 +148,9 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | vless | @ipV2Ray | 11",
+            "tag": "🇩🇪DE | vless | @ipV2Ray | 10",
             "type": "vless",
-            "server": "116.202.111.71",
+            "server": "5.75.242.254",
             "server_port": 443,
             "uuid": "f587585e-e171-4c48-98d5-91c7e062cc54",
             "flow": "xtls-rprx-vision",
@@ -164,7 +162,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "*.hetzner.com",
+                "server_name": "fussenegger.pro",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -173,8 +171,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "oqPBF95pF4VW-1GH2gt5E4-Jyb-BiYOO5fEms-lbwG4",
-                    "short_id": "0de595c5"
+                    "public_key": "tdhJHRKHkUuWVG78-FHoJbCxPq6FBN6xlBMY2vDWQ24",
+                    "short_id": "e49685dd"
                 }
             },
             "transport": {
@@ -288,42 +286,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🏳️XX | vless | @V2RayTz | 18",
-            "type": "vless",
-            "server": "[2a01:4f8:1c0c:7523::1]",
-            "server_port": 2096,
-            "uuid": "cc7a59ce-eee7-4503-afc1-d73703c40993",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "[2a01:4f8:1c0c:7523::1]",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "fkSxbZt-AETccsW2WfmHBP5RhiLy6Nk1vdEgYdnYQUc",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "ZEDMODEON-ZEDMODEONsourceforge.net",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
