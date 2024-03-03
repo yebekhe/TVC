@@ -122,6 +122,7 @@ proxies:
   - {"name":"🇺🇸US | vmess | @mftizi | 18","type":"vmess","server":"38.147.191.185","port":"10241","cipher":"auto","uuid":"e820d6f7-57ef-4575-99da-bcd7d318c742","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @fnet00 | 3","type":"vmess","server":"167.114.98.162","port":"8081","cipher":"auto","uuid":"67c63963-9e52-49df-a16b-8545387be5d2","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇸US | vmess | @v2Line | 6","type":"vmess","server":"v2line.telegram.channel.1390.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou","port":"80","cipher":"auto","uuid":"f61203bd-f386-4d12-9853-cc829d6b7c9d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"ca2.xv2ray.net"}}}
+  - {"name":"🇨🇭CH | vmess | @eliya_chiter0 | 2","type":"vmess","server":"94.131.99.8","port":"47182","cipher":"auto","uuid":"81b2b630-8b6a-404f-b996-b12f13db5786","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,6 +133,7 @@ proxy-groups:
       - '🇺🇸US | vmess | @mftizi | 18'
       - '🇨🇦CA | vmess | @fnet00 | 3'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇭CH | vmess | @eliya_chiter0 | 2'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -142,6 +144,7 @@ proxy-groups:
       - '🇺🇸US | vmess | @mftizi | 18'
       - '🇨🇦CA | vmess | @fnet00 | 3'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇭CH | vmess | @eliya_chiter0 | 2'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -151,6 +154,7 @@ proxy-groups:
       - '🇺🇸US | vmess | @mftizi | 18'
       - '🇨🇦CA | vmess | @fnet00 | 3'
       - '🇺🇸US | vmess | @v2Line | 6'
+      - '🇨🇭CH | vmess | @eliya_chiter0 | 2'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
