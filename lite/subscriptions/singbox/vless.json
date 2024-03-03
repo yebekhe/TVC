@@ -132,21 +132,20 @@
                 "🇨🇦CA | vless | @prrofile_purple | 180",
                 "🇨🇦CA | vless | @customv2ray | 13",
                 "🇨🇦CA | vless | @UnlimitedDev | 23",
-                "🇨🇦CA | vless | @vmessorg | 21",
                 "🇦🇱AL | vless | @v2rayNG_Matsuri | 11",
                 "🇨🇦CA | vless | @v2rayngvpn | 8",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
                 "🇨🇦CA | vless | @ShadowProxy66 | 55",
                 "🇬🇧GB | vless | @ServerNett | 23",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
-                "🇨🇦CA | vless | @v2ray_swhil | 26",
+                "🇨🇦CA | vless | @v2ray_swhil | 27",
                 "🇺🇸US | vless | @v2ray1_ng | 6",
                 "🇮🇷IR | vless | @vless_vmess | 1",
                 "🇸🇪SE | vless | @V2RayTz | 16",
                 "🇩🇪DE | vless | @VmessProtocol | 19",
                 "🇨🇦CA | vless | @DailyV2RY | 153",
                 "🇨🇦CA | vless | @sinabigo | 4",
-                "🇸🇪SE | vless | @ConfigsHUB | 19",
+                "🇨🇦CA | vless | @ConfigsHUB | 15",
                 "🇺🇸US | vless | @proxystore11 | 11",
                 "🇩🇪DE | vless | @free1_vpn | 2",
                 "🇨🇦CA | vless | @polproxy | 9",
@@ -198,21 +197,20 @@
                 "🇨🇦CA | vless | @prrofile_purple | 180",
                 "🇨🇦CA | vless | @customv2ray | 13",
                 "🇨🇦CA | vless | @UnlimitedDev | 23",
-                "🇨🇦CA | vless | @vmessorg | 21",
                 "🇦🇱AL | vless | @v2rayNG_Matsuri | 11",
                 "🇨🇦CA | vless | @v2rayngvpn | 8",
                 "🇩🇪DE | vless | @FalconPolV2rayNG | 9",
                 "🇨🇦CA | vless | @ShadowProxy66 | 55",
                 "🇬🇧GB | vless | @ServerNett | 23",
                 "🇨🇦CA | vless | @Qv2rayDONATED | 6",
-                "🇨🇦CA | vless | @v2ray_swhil | 26",
+                "🇨🇦CA | vless | @v2ray_swhil | 27",
                 "🇺🇸US | vless | @v2ray1_ng | 6",
                 "🇮🇷IR | vless | @vless_vmess | 1",
                 "🇸🇪SE | vless | @V2RayTz | 16",
                 "🇩🇪DE | vless | @VmessProtocol | 19",
                 "🇨🇦CA | vless | @DailyV2RY | 153",
                 "🇨🇦CA | vless | @sinabigo | 4",
-                "🇸🇪SE | vless | @ConfigsHUB | 19",
+                "🇨🇦CA | vless | @ConfigsHUB | 15",
                 "🇺🇸US | vless | @proxystore11 | 11",
                 "🇩🇪DE | vless | @free1_vpn | 2",
                 "🇨🇦CA | vless | @polproxy | 9",
@@ -916,27 +914,6 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @vmessorg | 21",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 8880,
-            "uuid": "efdee8af-7ca2-46fc-822b-d653de5cc442",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram:@vmessorg",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
             "tag": "🇦🇱AL | vless | @v2rayNG_Matsuri | 11",
             "type": "vless",
             "server": "cookiemonster.webpathway.eu",
@@ -1091,11 +1068,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @v2ray_swhil | 26",
+            "tag": "🇨🇦CA | vless | @v2ray_swhil | 27",
             "type": "vless",
-            "server": "www.Speedtest.Net",
-            "server_port": 80,
-            "uuid": "V2rayCUSTOMIZE",
+            "server": "www.tegzitp.net",
+            "server_port": 443,
+            "uuid": "d164ce1a-27a8-43c5-b586-81b4a60bf577",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1103,12 +1080,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/@VPNCUSTOMIZE",
-                "headers": {
-                    "Host": "www.Speedtest.Net"
+            "tls": {
+                "enabled": true,
+                "server_name": "le.bo3kot.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1237,11 +1224,11 @@
             }
         },
         {
-            "tag": "🇸🇪SE | vless | @ConfigsHUB | 19",
+            "tag": "🇨🇦CA | vless | @ConfigsHUB | 15",
             "type": "vless",
-            "server": "185.146.173.56",
-            "server_port": 8880,
-            "uuid": "808ba961-96d7-429b-9966-3c3262c97098",
+            "server": "104.24.172.7",
+            "server_port": 2083,
+            "uuid": "b64fe209-6414-4316-9362-9e292838f8df",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1249,11 +1236,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "join20.maznet.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/@LIGHTNING6, @LIGHTNING6",
+                "path": "\/@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet",
                 "headers": {
-                    "Host": "185.146.173.56"
+                    "Host": "join20.maznet.cfd"
                 }
             }
         },
