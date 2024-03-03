@@ -122,6 +122,7 @@ dns:
 proxies:
   - {"name":"🇩🇪DE | trojan | @PrivateVPNs | 17","type":"trojan","server":"3.77.143.98","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇸🇪SE | trojan | @DirectVPN | 16","type":"trojan","server":"13.50.8.16","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇹🇼TW | trojan | @oneclickvpnkeys | 12","type":"trojan","server":"ty12t.twty.dynu.net","port":18912,"udp":false,"password":"645f0af0-dec8-48db-862f-82b6346408b4","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ty12t.twty.dynu.net"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,6 +131,7 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | trojan | @PrivateVPNs | 17'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇹🇼TW | trojan | @oneclickvpnkeys | 12'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,6 +140,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | trojan | @PrivateVPNs | 17'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇹🇼TW | trojan | @oneclickvpnkeys | 12'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -145,6 +148,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | trojan | @PrivateVPNs | 17'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇹🇼TW | trojan | @oneclickvpnkeys | 12'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
