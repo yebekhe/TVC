@@ -106,8 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | vless | @VPNCUSTOMIZE | 15",
-                "🇬🇧GB | vless | @VPNCUSTOMIZE | 16",
+                "🇬🇧GB | vless | @VPNCUSTOMIZE | 12",
+                "🇬🇧GB | vless | @VPNCUSTOMIZE | 17",
+                "🇬🇧GB | vless | @VPNCUSTOMIZE | 18",
                 "🇩🇪DE | vless | @ipV2Ray | 0",
                 "🇩🇪DE | vless | @ipV2Ray | 1",
                 "🇩🇪DE | vless | @ipV2Ray | 2",
@@ -132,10 +133,10 @@
                 "🇩🇪DE | vless | @v2logy | 2",
                 "🇩🇪DE | vless | @v2logy | 4",
                 "🇩🇪DE | vless | @v2logy | 6",
-                "🇬🇧GB | vless | @V2rayNGn | 9",
+                "🇫🇷FR | vless | @prrofile_purple | 181",
                 "🇳🇱NL | vless | @FalconPolV2rayNG | 5",
-                "🏳️XX | vless | @proxyymeliii | 11",
                 "🏳️XX | vless | @proxyymeliii | 12",
+                "🏳️XX | vless | @proxyymeliii | 13",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
                 "🏳️XX | vless | @Capital_NET | 33",
@@ -144,7 +145,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 36",
                 "🏳️XX | vless | @Capital_NET | 37",
                 "🏳️XX | vless | @Capital_NET | 39",
-                "🇨🇦CA | vless | @Capital_NET | 41",
+                "🇳🇱NL | vless | @Capital_NET | 41",
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
@@ -178,8 +179,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | vless | @VPNCUSTOMIZE | 15",
-                "🇬🇧GB | vless | @VPNCUSTOMIZE | 16",
+                "🇬🇧GB | vless | @VPNCUSTOMIZE | 12",
+                "🇬🇧GB | vless | @VPNCUSTOMIZE | 17",
+                "🇬🇧GB | vless | @VPNCUSTOMIZE | 18",
                 "🇩🇪DE | vless | @ipV2Ray | 0",
                 "🇩🇪DE | vless | @ipV2Ray | 1",
                 "🇩🇪DE | vless | @ipV2Ray | 2",
@@ -204,10 +206,10 @@
                 "🇩🇪DE | vless | @v2logy | 2",
                 "🇩🇪DE | vless | @v2logy | 4",
                 "🇩🇪DE | vless | @v2logy | 6",
-                "🇬🇧GB | vless | @V2rayNGn | 9",
+                "🇫🇷FR | vless | @prrofile_purple | 181",
                 "🇳🇱NL | vless | @FalconPolV2rayNG | 5",
-                "🏳️XX | vless | @proxyymeliii | 11",
                 "🏳️XX | vless | @proxyymeliii | 12",
+                "🏳️XX | vless | @proxyymeliii | 13",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
                 "🏳️XX | vless | @Capital_NET | 33",
@@ -216,7 +218,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 36",
                 "🏳️XX | vless | @Capital_NET | 37",
                 "🏳️XX | vless | @Capital_NET | 39",
-                "🇨🇦CA | vless | @Capital_NET | 41",
+                "🇳🇱NL | vless | @Capital_NET | 41",
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
@@ -266,7 +268,43 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | vless | @VPNCUSTOMIZE | 15",
+            "tag": "🇬🇧GB | vless | @VPNCUSTOMIZE | 12",
+            "type": "vless",
+            "server": "57.128.163.80",
+            "server_port": 443,
+            "uuid": "VPNCUSTOMIZE",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.kellekcollection.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "A-zhzAJw7aU1NU9KaEfDvlbM8Tdc1K5C2m7eDSLxpmQ",
+                    "short_id": "136ce8d8"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@VPNCUSTOMIZE",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇬🇧GB | vless | @VPNCUSTOMIZE | 17",
             "type": "vless",
             "server": "57.128.163.80",
             "server_port": 443,
@@ -302,7 +340,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | vless | @VPNCUSTOMIZE | 16",
+            "tag": "🇬🇧GB | vless | @VPNCUSTOMIZE | 18",
             "type": "vless",
             "server": "57.128.163.80",
             "server_port": 443,
@@ -1160,11 +1198,11 @@
             }
         },
         {
-            "tag": "🇬🇧GB | vless | @V2rayNGn | 9",
+            "tag": "🇫🇷FR | vless | @prrofile_purple | 181",
             "type": "vless",
-            "server": "57.128.163.80",
-            "server_port": 443,
-            "uuid": "VPNCUSTOMIZE",
+            "server": "172.232.62.114",
+            "server_port": 80,
+            "uuid": "82e1cf39-6753-411e-a0f2-2e155067b6d7",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1174,25 +1212,18 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "cdn.kellekcollection.com",
+                "server_name": "reality172-232-62-114.cleanmark.ir",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "A-zhzAJw7aU1NU9KaEfDvlbM8Tdc1K5C2m7eDSLxpmQ",
-                    "short_id": "136ce8d8"
+                    "public_key": "QTUASK_nDearjwIt_ygwF71iQRIACGa-qR1N-YJhPkA",
+                    "short_id": "abd7809d"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@VPNCUSTOMIZE",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -1232,7 +1263,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @proxyymeliii | 11",
+            "tag": "🏳️XX | vless | @proxyymeliii | 12",
             "type": "vless",
             "server": "ar5v5dys494b.todayisagoodday.today",
             "server_port": 2083,
@@ -1261,7 +1292,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @proxyymeliii | 12",
+            "tag": "🏳️XX | vless | @proxyymeliii | 13",
             "type": "vless",
             "server": "ar5v5dys494b.todayisagoodday.today",
             "server_port": 2083,
@@ -1536,7 +1567,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @Capital_NET | 41",
+            "tag": "🇳🇱NL | vless | @Capital_NET | 41",
             "type": "vless",
             "server": "194.5.97.158",
             "server_port": 443,
