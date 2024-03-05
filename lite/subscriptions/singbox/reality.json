@@ -107,9 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | vless | @ipV2Ray | 9",
+                "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇩🇪DE | vless | @v2logy | 6",
-                "🇫🇷FR | vless | @prrofile_purple | 171",
-                "🇩🇪DE | vless | @v2ray1_ng | 13",
                 "🇩🇪DE | vless | @free1_vpn | 0",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @vpn_go67 | 23"
@@ -120,9 +119,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | vless | @ipV2Ray | 9",
+                "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇩🇪DE | vless | @v2logy | 6",
-                "🇫🇷FR | vless | @prrofile_purple | 171",
-                "🇩🇪DE | vless | @v2ray1_ng | 13",
                 "🇩🇪DE | vless | @free1_vpn | 0",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @vpn_go67 | 23"
@@ -184,6 +182,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @ARv2ray | 13",
+            "type": "vless",
+            "server": "78.46.186.163",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "aTSvhfg0nF-ZuKgE-mzH5YYNUXRzEVhBOuyNdQG-aR8",
+                    "short_id": "55d743bf"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇩🇪DE | vless | @v2logy | 6",
             "type": "vless",
             "server": "49.12.72.62",
@@ -209,71 +243,6 @@
                     "enabled": true,
                     "public_key": "pPpTgNj1bPnJ6cL_l3nSPacY6Bl2R2uctUi_ULZ0iR0",
                     "short_id": "0d83afe9"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇫🇷FR | vless | @prrofile_purple | 171",
-            "type": "vless",
-            "server": "172.232.62.114",
-            "server_port": 80,
-            "uuid": "82e1cf39-6753-411e-a0f2-2e155067b6d7",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "reality172-232-62-114.cleanmark.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "QTUASK_nDearjwIt_ygwF71iQRIACGa-qR1N-YJhPkA",
-                    "short_id": "abd7809d"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @v2ray1_ng | 13",
-            "type": "vless",
-            "server": "68.183.79.172",
-            "server_port": 443,
-            "uuid": "ebec51cf-e819-412c-b242-d00b9084c41f",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdn.darawd.shop",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Po2J6iG_e4sGaBTxC2PGjW25gw5GwQIimL__f2gahm0",
-                    "short_id": "3daa83c7"
                 }
             },
             "transport": {
