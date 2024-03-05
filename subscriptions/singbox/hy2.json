@@ -105,16 +105,13 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST",
-                "🇳🇱NL | hy2 | @TUICity | 16"
+                "URL-TEST"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [
-                "🇳🇱NL | hy2 | @TUICity | 16"
-            ],
+            "outbounds": [],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -134,29 +131,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇳🇱NL | hy2 | @TUICity | 16",
-            "type": "hysteria2",
-            "server": "45.32.234.211",
-            "server_port": 443,
-            "up_mbps": 0,
-            "down_mbps": 0,
-            "password": "y0qochAspE+u-HLfrip-",
-            "network": "tcp",
-            "obfs": {
-                "type": "salamander",
-                "password": "2pU!&Brls!0exuP+!4so"
-            },
-            "tls": {
-                "enabled": true,
-                "disable_sni": false,
-                "server_name": "Google.com",
-                "insecure": true,
-                "alpn": [
-                    "h3"
-                ]
-            }
         }
     ],
     "route": {
