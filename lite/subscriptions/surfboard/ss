@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇦🇹AT | ss | @OutlineVpnOfficial | 17 = ss, 212.113.106.243, 12949, encrypt-method = chacha20-ietf-poly1305, password = P2zxXPewlV3BlfqqYiSthvtLc
+🇩🇪DE | ss | @VmessProtocol | 15 = ss, 3.70.174.99, 8080, encrypt-method = chacha20-ietf-poly1305, password = ARC0u1LsngVI6YwK3Gcvl3Th7r3WxKFnlb0EXMjpH80=
+🇦🇺AU | ss | @OutlineVpnOfficial | 17 = ss, au-ss.ipracevpn.com, 2443, encrypt-method = aes-256-gcm, password = StRPmBQw4HLCWZPqR4DHTmImaHFPhjj0PdKCDUwyrSk=
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇦🇹AT | ss | @OutlineVpnOfficial | 17
-URL-TEST = url-test,🇦🇹AT | ss | @OutlineVpnOfficial | 17
-FALLBACK = fallback,🇦🇹AT | ss | @OutlineVpnOfficial | 17
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | ss | @VmessProtocol | 15,🇦🇺AU | ss | @OutlineVpnOfficial | 17
+URL-TEST = url-test,🇩🇪DE | ss | @VmessProtocol | 15,🇦🇺AU | ss | @OutlineVpnOfficial | 17
+FALLBACK = fallback,🇩🇪DE | ss | @VmessProtocol | 15,🇦🇺AU | ss | @OutlineVpnOfficial | 17
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
