@@ -137,7 +137,7 @@
                 "🇳🇱NL | vless | @FalconPolV2rayNG | 5",
                 "🏳️XX | vless | @proxyymeliii | 13",
                 "🏳️XX | vless | @proxyymeliii | 14",
-                "🇯🇵JP | vless | @ConfigsHUB | 8",
+                "🇯🇵JP | vless | @ConfigsHUB | 11",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
                 "🏳️XX | vless | @Capital_NET | 33",
@@ -151,6 +151,8 @@
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @Capoit | 1",
+                "🇹🇷TR | vless | @forwardv2ray | 4",
+                "🇩🇪DE | vless | @forwardv2ray | 5",
                 "🇹🇷TR | vless | @FAKEOFTVC | 1",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
                 "🏳️XX | vless | @vpn_go67 | 10",
@@ -212,7 +214,7 @@
                 "🇳🇱NL | vless | @FalconPolV2rayNG | 5",
                 "🏳️XX | vless | @proxyymeliii | 13",
                 "🏳️XX | vless | @proxyymeliii | 14",
-                "🇯🇵JP | vless | @ConfigsHUB | 8",
+                "🇯🇵JP | vless | @ConfigsHUB | 11",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
                 "🏳️XX | vless | @Capital_NET | 33",
@@ -226,6 +228,8 @@
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @Capoit | 1",
+                "🇹🇷TR | vless | @forwardv2ray | 4",
+                "🇩🇪DE | vless | @forwardv2ray | 5",
                 "🇹🇷TR | vless | @FAKEOFTVC | 1",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
                 "🏳️XX | vless | @vpn_go67 | 10",
@@ -1332,7 +1336,7 @@
             }
         },
         {
-            "tag": "🇯🇵JP | vless | @ConfigsHUB | 8",
+            "tag": "🇯🇵JP | vless | @ConfigsHUB | 11",
             "type": "vless",
             "server": "20.222.152.47",
             "server_port": 443,
@@ -1760,6 +1764,78 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇹🇷TR | vless | @forwardv2ray | 4",
+            "type": "vless",
+            "server": "abadis.ir.mmdargon.top",
+            "server_port": 80,
+            "uuid": "04219735-8453-47a4-986e-2a780a034517",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "internetbrayhamh.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vQHsbqgrft7IuCf9_m1Zex_Jaw9bBX7Mv-mUkNvzhGk",
+                    "short_id": "25b888a5"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@internetbrayhamh@internetbrayhamh@internetbrayhamh@internetbrayhamh",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 5",
+            "type": "vless",
+            "server": "142.93.166.107",
+            "server_port": 443,
+            "uuid": "ebc278cd-4666-4ecb-9d5c-1d8921fb13f3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.partyverleih-glauberg.de",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "LD8y7bs5T8tNSLcB83NQXpo0_LfHk76WWykNwXJRG3I",
+                    "short_id": "304a9854"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
