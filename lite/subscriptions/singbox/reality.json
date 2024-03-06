@@ -107,7 +107,6 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | vless | @ipV2Ray | 9",
-                "🇩🇪DE | vless | @V2pedia | 19",
                 "🇩🇪DE | vless | @v2logy | 6",
                 "🏳️XX | vless | @proxyymeliii | 15",
                 "🇩🇪DE | vless | @free1_vpn | 0",
@@ -120,7 +119,6 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | vless | @ipV2Ray | 9",
-                "🇩🇪DE | vless | @V2pedia | 19",
                 "🇩🇪DE | vless | @v2logy | 6",
                 "🏳️XX | vless | @proxyymeliii | 15",
                 "🇩🇪DE | vless | @free1_vpn | 0",
@@ -178,42 +176,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @V2pedia | 19",
-            "type": "vless",
-            "server": "49.13.119.48",
-            "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ftp.debian.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "UpCUC8wyxeS7cRw2vI5zdl8b5z3jlGs5Ok6gfJP3vCI",
-                    "short_id": "cf9bc318"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
