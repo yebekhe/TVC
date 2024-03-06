@@ -120,31 +120,27 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇩🇪DE | ss | @VmessProtocol | 15","type":"ss","server":"3.70.174.99","port":8080,"password":"ARC0u1LsngVI6YwK3Gcvl3Th7r3WxKFnlb0EXMjpH80=","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇦🇺AU | ss | @OutlineVpnOfficial | 17","type":"ss","server":"au-ss.ipracevpn.com","port":2443,"password":"StRPmBQw4HLCWZPqR4DHTmImaHFPhjj0PdKCDUwyrSk=","cipher":"aes-256-gcm"}
+  - {"name":"🇨🇦CA | ss | @OutlineVpnOfficial | 17","type":"ss","server":"ca-ss.ipracevpn.com","port":2443,"password":"aSE/26C9Mjl+LrnEwXkKv6ErH9yfIlt9SffXCAEDCks=","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | ss | @VmessProtocol | 15'
-      - '🇦🇺AU | ss | @OutlineVpnOfficial | 17'
+      - '🇨🇦CA | ss | @OutlineVpnOfficial | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | ss | @VmessProtocol | 15'
-      - '🇦🇺AU | ss | @OutlineVpnOfficial | 17'
+      - '🇨🇦CA | ss | @OutlineVpnOfficial | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | ss | @VmessProtocol | 15'
-      - '🇦🇺AU | ss | @OutlineVpnOfficial | 17'
+      - '🇨🇦CA | ss | @OutlineVpnOfficial | 17'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
