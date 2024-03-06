@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇦🇺AU | vmess | @v2Line | 6 = vmess, au-full.privateip.net, 443, username = db373721-55aa-4ad2-9c33-855377ad289f, ws = true, tls = 1, vmess-aead = true, ws-path = /RACEVPN, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇮🇳IN | vmess | @v2Line | 5 = vmess, in-full.privateip.net, 443, username = 4df2b4df-7157-4dbd-ae1f-997d11fd4fee, ws = true, tls = 1, vmess-aead = true, ws-path = /RACEVPN, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇵🇱PL | vmess | @eliya_chiter0 | 3 = vmess, pl2-vmess.sshmax.xyz, 80, username = 18c6b542-e6f8-4476-872a-d3955f45d9f0, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"pl2-vmess.sshmax.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇦🇺AU | vmess | @v2Line | 6,🇵🇱PL | vmess | @eliya_chiter0 | 3
-URL-TEST = url-test,🇦🇺AU | vmess | @v2Line | 6,🇵🇱PL | vmess | @eliya_chiter0 | 3
-FALLBACK = fallback,🇦🇺AU | vmess | @v2Line | 6,🇵🇱PL | vmess | @eliya_chiter0 | 3
+MANUAL = select,URL-TEST,FALLBACK,🇮🇳IN | vmess | @v2Line | 5,🇵🇱PL | vmess | @eliya_chiter0 | 3
+URL-TEST = url-test,🇮🇳IN | vmess | @v2Line | 5,🇵🇱PL | vmess | @eliya_chiter0 | 3
+FALLBACK = fallback,🇮🇳IN | vmess | @v2Line | 5,🇵🇱PL | vmess | @eliya_chiter0 | 3
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
