@@ -124,9 +124,10 @@ proxies:
   - {"name":"🇺🇸US | vmess | @mftizi | 18","type":"vmess","server":"38.147.191.185","port":"10241","cipher":"auto","uuid":"e820d6f7-57ef-4575-99da-bcd7d318c742","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇩🇪DE | vmess | @ShadowProxy66 | 28","type":"vmess","server":"195.201.2.27","port":"25761","cipher":"auto","uuid":"de746cfd-c2db-4618-83c2-9bd1d763cc25","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇩🇪DE | ss | @OutlineVpnOfficial | 17","type":"ss","server":"145.239.1.100","port":5001,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
-  - {"name":"🇨🇭CH | vmess | @ConfigsHUB | 18","type":"vmess","server":"188.244.117.31","port":"28320","cipher":"auto","uuid":"236fa6e3-683b-4c3f-a07c-56061ee393c2","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇮🇷IR | vmess | @Hope_Net | 6","type":"vmess","server":"85.133.199.40","port":"12770","cipher":"auto","uuid":"4e6d3bc1-4ac1-4d40-b6a8-12fec89ba5f6","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧GB | trojan | @ConfigsHUB | 2","type":"trojan","server":"18.175.5.7","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇨🇦CA | vmess | @Hope_Net | 5","type":"vmess","server":"cdnjs.com","port":"443","cipher":"chacha20-poly1305","uuid":"52701795-3c3b-46b4-b7cf-c5978b3a4cf2","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"sNpuhb8v1rEIIYTVEagC5V7fI","grpc-mode":""}}
   - {"name":"🇮🇳IN | vmess | @v2Line | 5","type":"vmess","server":"in-full.privateip.net","port":"443","cipher":"auto","uuid":"4df2b4df-7157-4dbd-ae1f-997d11fd4fee","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN","headers":{"host":""}}}
+  - {"name":"🇫🇮FI | ss | @forwardv2ray | 19","type":"ss","server":"95.164.113.64","port":7150,"password":"btzmpL7aOs7YbcLS4In6YX","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇵🇱PL | vmess | @eliya_chiter0 | 4","type":"vmess","server":"pl2-vmess.sshmax.xyz","port":"80","cipher":"auto","uuid":"18c6b542-e6f8-4476-872a-d3955f45d9f0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"pl2-vmess.sshmax.xyz"}}}
 proxy-groups:
   - name: MANUAL
@@ -140,9 +141,10 @@ proxy-groups:
       - '🇺🇸US | vmess | @mftizi | 18'
       - '🇩🇪DE | vmess | @ShadowProxy66 | 28'
       - '🇩🇪DE | ss | @OutlineVpnOfficial | 17'
-      - '🇨🇭CH | vmess | @ConfigsHUB | 18'
-      - '🇮🇷IR | vmess | @Hope_Net | 6'
+      - '🇬🇧GB | trojan | @ConfigsHUB | 2'
+      - '🇨🇦CA | vmess | @Hope_Net | 5'
       - '🇮🇳IN | vmess | @v2Line | 5'
+      - '🇫🇮FI | ss | @forwardv2ray | 19'
       - '🇵🇱PL | vmess | @eliya_chiter0 | 4'
   - name: URL-TEST
     type: url-test
@@ -156,9 +158,10 @@ proxy-groups:
       - '🇺🇸US | vmess | @mftizi | 18'
       - '🇩🇪DE | vmess | @ShadowProxy66 | 28'
       - '🇩🇪DE | ss | @OutlineVpnOfficial | 17'
-      - '🇨🇭CH | vmess | @ConfigsHUB | 18'
-      - '🇮🇷IR | vmess | @Hope_Net | 6'
+      - '🇬🇧GB | trojan | @ConfigsHUB | 2'
+      - '🇨🇦CA | vmess | @Hope_Net | 5'
       - '🇮🇳IN | vmess | @v2Line | 5'
+      - '🇫🇮FI | ss | @forwardv2ray | 19'
       - '🇵🇱PL | vmess | @eliya_chiter0 | 4'
   - name: FALLBACK
     type: fallback
@@ -171,9 +174,10 @@ proxy-groups:
       - '🇺🇸US | vmess | @mftizi | 18'
       - '🇩🇪DE | vmess | @ShadowProxy66 | 28'
       - '🇩🇪DE | ss | @OutlineVpnOfficial | 17'
-      - '🇨🇭CH | vmess | @ConfigsHUB | 18'
-      - '🇮🇷IR | vmess | @Hope_Net | 6'
+      - '🇬🇧GB | trojan | @ConfigsHUB | 2'
+      - '🇨🇦CA | vmess | @Hope_Net | 5'
       - '🇮🇳IN | vmess | @v2Line | 5'
+      - '🇫🇮FI | ss | @forwardv2ray | 19'
       - '🇵🇱PL | vmess | @eliya_chiter0 | 4'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
