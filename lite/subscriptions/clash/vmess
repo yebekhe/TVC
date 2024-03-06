@@ -121,10 +121,9 @@ proxies:
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇸US | vmess | @mftizi | 18","type":"vmess","server":"38.147.191.185","port":"10241","cipher":"auto","uuid":"e820d6f7-57ef-4575-99da-bcd7d318c742","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇩🇪DE | vmess | @ShadowProxy66 | 28","type":"vmess","server":"195.201.2.27","port":"25761","cipher":"auto","uuid":"de746cfd-c2db-4618-83c2-9bd1d763cc25","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇮🇷IR | vmess | @Hope_Net | 5","type":"vmess","server":"85.133.199.40","port":"12770","cipher":"auto","uuid":"4e6d3bc1-4ac1-4d40-b6a8-12fec89ba5f6","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇮🇷IR | vmess | @Hope_Net | 6","type":"vmess","server":"85.133.199.40","port":"12770","cipher":"auto","uuid":"4e6d3bc1-4ac1-4d40-b6a8-12fec89ba5f6","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇮🇳IN | vmess | @v2Line | 5","type":"vmess","server":"in-full.privateip.net","port":"443","cipher":"auto","uuid":"4df2b4df-7157-4dbd-ae1f-997d11fd4fee","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN","headers":{"host":""}}}
-  - {"name":"🇨🇦CA | vmess | @forwardv2ray | 18","type":"vmess","server":"nodejs.org","port":"443","cipher":"chacha20-poly1305","uuid":"4804f14b-c1f8-452d-a6ec-eff1490aeac9","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"lRkGCkYS9X5GFzoZoavn2kmJ","grpc-mode":""}}
-  - {"name":"🇵🇱PL | vmess | @eliya_chiter0 | 3","type":"vmess","server":"pl2-vmess.sshmax.xyz","port":"80","cipher":"auto","uuid":"18c6b542-e6f8-4476-872a-d3955f45d9f0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"pl2-vmess.sshmax.xyz"}}}
+  - {"name":"🇵🇱PL | vmess | @eliya_chiter0 | 4","type":"vmess","server":"pl2-vmess.sshmax.xyz","port":"80","cipher":"auto","uuid":"18c6b542-e6f8-4476-872a-d3955f45d9f0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"pl2-vmess.sshmax.xyz"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -134,10 +133,9 @@ proxy-groups:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇺🇸US | vmess | @mftizi | 18'
       - '🇩🇪DE | vmess | @ShadowProxy66 | 28'
-      - '🇮🇷IR | vmess | @Hope_Net | 5'
+      - '🇮🇷IR | vmess | @Hope_Net | 6'
       - '🇮🇳IN | vmess | @v2Line | 5'
-      - '🇨🇦CA | vmess | @forwardv2ray | 18'
-      - '🇵🇱PL | vmess | @eliya_chiter0 | 3'
+      - '🇵🇱PL | vmess | @eliya_chiter0 | 4'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -147,10 +145,9 @@ proxy-groups:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇺🇸US | vmess | @mftizi | 18'
       - '🇩🇪DE | vmess | @ShadowProxy66 | 28'
-      - '🇮🇷IR | vmess | @Hope_Net | 5'
+      - '🇮🇷IR | vmess | @Hope_Net | 6'
       - '🇮🇳IN | vmess | @v2Line | 5'
-      - '🇨🇦CA | vmess | @forwardv2ray | 18'
-      - '🇵🇱PL | vmess | @eliya_chiter0 | 3'
+      - '🇵🇱PL | vmess | @eliya_chiter0 | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -159,10 +156,9 @@ proxy-groups:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇺🇸US | vmess | @mftizi | 18'
       - '🇩🇪DE | vmess | @ShadowProxy66 | 28'
-      - '🇮🇷IR | vmess | @Hope_Net | 5'
+      - '🇮🇷IR | vmess | @Hope_Net | 6'
       - '🇮🇳IN | vmess | @v2Line | 5'
-      - '🇨🇦CA | vmess | @forwardv2ray | 18'
-      - '🇵🇱PL | vmess | @eliya_chiter0 | 3'
+      - '🇵🇱PL | vmess | @eliya_chiter0 | 4'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve

@@ -11,15 +11,15 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇮🇪IE | trojan | @PrivateVPNs | 17 = trojan, 108.128.99.25, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
-🇺🇸US | trojan | @DirectVPN | 17 = trojan, 34.227.202.2, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇸🇪SE | trojan | @PrivateVPNs | 17 = trojan, 13.51.37.177, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
+🇸🇪SE | trojan | @DirectVPN | 17 = trojan, 13.50.213.46, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.miwan.co.uk, ws = false
 🇩🇪DE | ss | @OutlineVpnOfficial | 17 = ss, 145.239.1.100, 5001, encrypt-method = aes-256-gcm, password = Y6R9pAtvxxzmGC
 🇮🇳IN | vmess | @v2Line | 5 = vmess, in-full.privateip.net, 443, username = 4df2b4df-7157-4dbd-ae1f-997d11fd4fee, ws = true, tls = 1, vmess-aead = true, ws-path = /RACEVPN, ws-headers = Host:"", skip-cert-verify = true, tfo = false
-🇵🇱PL | vmess | @eliya_chiter0 | 3 = vmess, pl2-vmess.sshmax.xyz, 80, username = 18c6b542-e6f8-4476-872a-d3955f45d9f0, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"pl2-vmess.sshmax.xyz", skip-cert-verify = true, tfo = false
+🇵🇱PL | vmess | @eliya_chiter0 | 4 = vmess, pl2-vmess.sshmax.xyz, 80, username = 18c6b542-e6f8-4476-872a-d3955f45d9f0, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"pl2-vmess.sshmax.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇮🇪IE | trojan | @PrivateVPNs | 17,🇺🇸US | trojan | @DirectVPN | 17,🇩🇪DE | ss | @OutlineVpnOfficial | 17,🇮🇳IN | vmess | @v2Line | 5,🇵🇱PL | vmess | @eliya_chiter0 | 3
-URL-TEST = url-test,🇮🇪IE | trojan | @PrivateVPNs | 17,🇺🇸US | trojan | @DirectVPN | 17,🇩🇪DE | ss | @OutlineVpnOfficial | 17,🇮🇳IN | vmess | @v2Line | 5,🇵🇱PL | vmess | @eliya_chiter0 | 3
-FALLBACK = fallback,🇮🇪IE | trojan | @PrivateVPNs | 17,🇺🇸US | trojan | @DirectVPN | 17,🇩🇪DE | ss | @OutlineVpnOfficial | 17,🇮🇳IN | vmess | @v2Line | 5,🇵🇱PL | vmess | @eliya_chiter0 | 3
+MANUAL = select,URL-TEST,FALLBACK,🇸🇪SE | trojan | @PrivateVPNs | 17,🇸🇪SE | trojan | @DirectVPN | 17,🇩🇪DE | ss | @OutlineVpnOfficial | 17,🇮🇳IN | vmess | @v2Line | 5,🇵🇱PL | vmess | @eliya_chiter0 | 4
+URL-TEST = url-test,🇸🇪SE | trojan | @PrivateVPNs | 17,🇸🇪SE | trojan | @DirectVPN | 17,🇩🇪DE | ss | @OutlineVpnOfficial | 17,🇮🇳IN | vmess | @v2Line | 5,🇵🇱PL | vmess | @eliya_chiter0 | 4
+FALLBACK = fallback,🇸🇪SE | trojan | @PrivateVPNs | 17,🇸🇪SE | trojan | @DirectVPN | 17,🇩🇪DE | ss | @OutlineVpnOfficial | 17,🇮🇳IN | vmess | @v2Line | 5,🇵🇱PL | vmess | @eliya_chiter0 | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
