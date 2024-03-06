@@ -122,6 +122,7 @@
                 "🏳️XX | vless | @V2pedia | 5",
                 "🏳️XX | vless | @V2pedia | 7",
                 "🇩🇪DE | vless | @ARv2ray | 8",
+                "🇩🇪DE | vless | @ARv2ray | 15",
                 "🇬🇧GB | vless | @Lockey_vpn | 9",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
@@ -136,9 +137,7 @@
                 "🏳️XX | vless | @customv2ray | 7",
                 "🇩🇪DE | vless | @v2rayngvpn | 7",
                 "🇳🇱NL | vless | @FalconPolV2rayNG | 5",
-                "🇩🇪DE | vless | @V2RayTz | 10",
-                "🇺🇦UA | vless | @DailyV2RY | 130",
-                "🇩🇪DE | vless | @DailyV2RY | 134",
+                "🇩🇪DE | vless | @V2RayTz | 15",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
                 "🏳️XX | vless | @Capital_NET | 33",
@@ -147,7 +146,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 36",
                 "🏳️XX | vless | @Capital_NET | 37",
                 "🏳️XX | vless | @Capital_NET | 39",
-                "🇨🇦CA | vless | @Capital_NET | 41",
+                "🇳🇱NL | vless | @Capital_NET | 41",
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
@@ -197,6 +196,7 @@
                 "🏳️XX | vless | @V2pedia | 5",
                 "🏳️XX | vless | @V2pedia | 7",
                 "🇩🇪DE | vless | @ARv2ray | 8",
+                "🇩🇪DE | vless | @ARv2ray | 15",
                 "🇬🇧GB | vless | @Lockey_vpn | 9",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
@@ -211,9 +211,7 @@
                 "🏳️XX | vless | @customv2ray | 7",
                 "🇩🇪DE | vless | @v2rayngvpn | 7",
                 "🇳🇱NL | vless | @FalconPolV2rayNG | 5",
-                "🇩🇪DE | vless | @V2RayTz | 10",
-                "🇺🇦UA | vless | @DailyV2RY | 130",
-                "🇩🇪DE | vless | @DailyV2RY | 134",
+                "🇩🇪DE | vless | @V2RayTz | 15",
                 "🇩🇪DE | vless | @Capital_NET | 31",
                 "🇬🇧GB | vless | @Capital_NET | 32",
                 "🏳️XX | vless | @Capital_NET | 33",
@@ -222,7 +220,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 36",
                 "🏳️XX | vless | @Capital_NET | 37",
                 "🏳️XX | vless | @Capital_NET | 39",
-                "🇨🇦CA | vless | @Capital_NET | 41",
+                "🇳🇱NL | vless | @Capital_NET | 41",
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
@@ -848,6 +846,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @ARv2ray | 15",
+            "type": "vless",
+            "server": "78.46.186.163",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "aTSvhfg0nF-ZuKgE-mzH5YYNUXRzEVhBOuyNdQG-aR8",
+                    "short_id": "55d743bf"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇬🇧GB | vless | @Lockey_vpn | 9",
             "type": "vless",
             "server": "144.126.234.182",
@@ -1310,7 +1344,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @V2RayTz | 10",
+            "tag": "🇩🇪DE | vless | @V2RayTz | 15",
             "type": "vless",
             "server": "164.92.187.94",
             "server_port": 443,
@@ -1340,78 +1374,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇺🇦UA | vless | @DailyV2RY | 130",
-            "type": "vless",
-            "server": "141.105.130.35",
-            "server_port": 24548,
-            "uuid": "a7ad5367-a2f8-4597-9f61-e4943ebefdee",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "speedtest.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "j8cwezGiycgWQ0fL9Js-YuUyqAT2iSrS8xETokpzKzk",
-                    "short_id": "b8a1a3e5"
-                }
-            },
-            "transport": {
-                "type": "http",
-                "host": [
-                    "speedtest.net"
-                ],
-                "path": "\/"
-            }
-        },
-        {
-            "tag": "🇩🇪DE | vless | @DailyV2RY | 134",
-            "type": "vless",
-            "server": "78.46.186.163",
-            "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ftp.debian.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "aTSvhfg0nF-ZuKgE-mzH5YYNUXRzEVhBOuyNdQG-aR8",
-                    "short_id": "55d743bf"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -1664,7 +1626,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @Capital_NET | 41",
+            "tag": "🇳🇱NL | vless | @Capital_NET | 41",
             "type": "vless",
             "server": "194.5.97.158",
             "server_port": 443,
