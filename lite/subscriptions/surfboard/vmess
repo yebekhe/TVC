@@ -11,13 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🏳️XX | vmess | @Hope_Net | 7 = vmess, mci.mosi.mosipro.ml, 443, username = 5dab80a4-d5e3-4e33-811f-53ee15da0b22, ws = true, tls = 1, vmess-aead = true, ws-path = /speedtest, ws-headers = Host:"Dusseldorf.kotick.site", skip-cert-verify = true, tfo = false
+🇺🇸US | vmess | @Hope_Net | 6 = vmess, us5.socifiles.com, 80, username = d143ad00-dc04-11ee-907e-1239d0255272, ws = true, tls = , vmess-aead = true, ws-path = /vmws, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇮🇳IN | vmess | @v2Line | 6 = vmess, in-full.privateip.net, 443, username = 4df2b4df-7157-4dbd-ae1f-997d11fd4fee, ws = true, tls = 1, vmess-aead = true, ws-path = /RACEVPN, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇵🇱PL | vmess | @eliya_chiter0 | 4 = vmess, pl2-vmess.sshmax.xyz, 80, username = 18c6b542-e6f8-4476-872a-d3955f45d9f0, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"pl2-vmess.sshmax.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🏳️XX | vmess | @Hope_Net | 7,🇮🇳IN | vmess | @v2Line | 6,🇵🇱PL | vmess | @eliya_chiter0 | 4
-URL-TEST = url-test,🏳️XX | vmess | @Hope_Net | 7,🇮🇳IN | vmess | @v2Line | 6,🇵🇱PL | vmess | @eliya_chiter0 | 4
-FALLBACK = fallback,🏳️XX | vmess | @Hope_Net | 7,🇮🇳IN | vmess | @v2Line | 6,🇵🇱PL | vmess | @eliya_chiter0 | 4
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | vmess | @Hope_Net | 6,🇮🇳IN | vmess | @v2Line | 6,🇵🇱PL | vmess | @eliya_chiter0 | 4
+URL-TEST = url-test,🇺🇸US | vmess | @Hope_Net | 6,🇮🇳IN | vmess | @v2Line | 6,🇵🇱PL | vmess | @eliya_chiter0 | 4
+FALLBACK = fallback,🇺🇸US | vmess | @Hope_Net | 6,🇮🇳IN | vmess | @v2Line | 6,🇵🇱PL | vmess | @eliya_chiter0 | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
