@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇮🇷IR | ss | @proxyymeliii | 15 = ss, all-nets.0912.org, 301, encrypt-method = chacha20-ietf-poly1305, password = rXVRavlmnKtYE1jeO5NM7Q
 🇫🇷FR | ss | @OutlineVpnOfficial | 17 = ss, 149.202.82.172, 5600, encrypt-method = aes-256-gcm, password = Y6R9pAtvxxzmGC
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | ss | @OutlineVpnOfficial | 17
-URL-TEST = url-test,🇫🇷FR | ss | @OutlineVpnOfficial | 17
-FALLBACK = fallback,🇫🇷FR | ss | @OutlineVpnOfficial | 17
+MANUAL = select,URL-TEST,FALLBACK,🇮🇷IR | ss | @proxyymeliii | 15,🇫🇷FR | ss | @OutlineVpnOfficial | 17
+URL-TEST = url-test,🇮🇷IR | ss | @proxyymeliii | 15,🇫🇷FR | ss | @OutlineVpnOfficial | 17
+FALLBACK = fallback,🇮🇷IR | ss | @proxyymeliii | 15,🇫🇷FR | ss | @OutlineVpnOfficial | 17
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
