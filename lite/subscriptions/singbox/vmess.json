@@ -108,9 +108,9 @@
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 12",
                 "🇭🇰HK | vmess | @yaney_01 | 5",
-                "🇮🇷IR | vmess | @Hope_Net | 10",
+                "🇺🇸US | vmess | @Hope_Net | 8",
                 "🇮🇳IN | vmess | @v2Line | 6",
                 "🇺🇸US | vmess | @FAKEOFTVC | 5",
                 "🇺🇸US | vmess | @nofiltering2 | 1"
@@ -122,9 +122,9 @@
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 12",
                 "🇭🇰HK | vmess | @yaney_01 | 5",
-                "🇮🇷IR | vmess | @Hope_Net | 10",
+                "🇺🇸US | vmess | @Hope_Net | 8",
                 "🇮🇳IN | vmess | @v2Line | 6",
                 "🇺🇸US | vmess | @FAKEOFTVC | 5",
                 "🇺🇸US | vmess | @nofiltering2 | 1"
@@ -184,7 +184,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 12",
             "type": "vmess",
             "server": "104.24.0.11",
             "server_port": 443,
@@ -242,13 +242,13 @@
             }
         },
         {
-            "tag": "🇮🇷IR | vmess | @Hope_Net | 10",
+            "tag": "🇺🇸US | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "relay.vipservice.website",
-            "server_port": 80,
-            "uuid": "469abe72-d5a9-40c2-99f6-a48459b1d65a",
+            "server": "hms08.gwdef.sbs",
+            "server_port": 443,
+            "uuid": "bc864078-dcf3-4bf4-8dbf-ca9f200b56be",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -256,6 +256,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "gwdef.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "gwdef.sbs"
+                }
             }
         },
         {
