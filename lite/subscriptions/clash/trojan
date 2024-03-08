@@ -118,35 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇸🇪SE | trojan | @PrivateVPNs | 17","type":"trojan","server":"16.170.127.99","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇸🇪SE | trojan | @DirectVPN | 17","type":"trojan","server":"51.20.110.253","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇨🇦CA | trojan | @v2ray_swhil | 32","type":"trojan","server":"104.16.123.175","port":2083,"udp":false,"password":"qG9K8AGnn9XH5jUqeFu96g","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cdn13.cdn2cdn.com"}
+  - {"name":"🇩🇪DE | trojan | @PrivateVPNs | 17","type":"trojan","server":"3.121.122.106","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇸🇪SE | trojan | @DirectVPN | 16","type":"trojan","server":"13.51.101.183","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇸🇪SE | trojan | @PrivateVPNs | 17'
-      - '🇸🇪SE | trojan | @DirectVPN | 17'
-      - '🇨🇦CA | trojan | @v2ray_swhil | 32'
+      - '🇩🇪DE | trojan | @PrivateVPNs | 17'
+      - '🇸🇪SE | trojan | @DirectVPN | 16'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇸🇪SE | trojan | @PrivateVPNs | 17'
-      - '🇸🇪SE | trojan | @DirectVPN | 17'
-      - '🇨🇦CA | trojan | @v2ray_swhil | 32'
+      - '🇩🇪DE | trojan | @PrivateVPNs | 17'
+      - '🇸🇪SE | trojan | @DirectVPN | 16'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇸🇪SE | trojan | @PrivateVPNs | 17'
-      - '🇸🇪SE | trojan | @DirectVPN | 17'
-      - '🇨🇦CA | trojan | @v2ray_swhil | 32'
+      - '🇩🇪DE | trojan | @PrivateVPNs | 17'
+      - '🇸🇪SE | trojan | @DirectVPN | 16'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
