@@ -109,6 +109,7 @@
                 "🇬🇧GB | vless | @VPNCUSTOMIZE | 25",
                 "🇩🇪DE | vless | @ipV2Ray | 9",
                 "🇬🇧GB | vless | @Lockey_vpn | 12",
+                "🇩🇪DE | vless | @v2logy | 6",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @vpn_go67 | 23"
             ]
@@ -120,6 +121,7 @@
                 "🇬🇧GB | vless | @VPNCUSTOMIZE | 25",
                 "🇩🇪DE | vless | @ipV2Ray | 9",
                 "🇬🇧GB | vless | @Lockey_vpn | 12",
+                "🇩🇪DE | vless | @v2logy | 6",
                 "🇩🇪DE | vless | @Capital_NET | 45",
                 "🏳️XX | vless | @vpn_go67 | 23"
             ],
@@ -182,9 +184,9 @@
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 9",
             "type": "vless",
-            "server": "134.122.70.211",
+            "server": "142.93.163.180",
             "server_port": 443,
-            "uuid": "3f6208c3-1ea6-4dff-992b-ae22dd2978a1",
+            "uuid": "2d351deb-700a-4ce6-9c02-68a478770d59",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -194,7 +196,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "*.naninails.ro",
+                "server_name": "*.emirogluorhan.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -203,8 +205,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "kLRBzMLZjRkSE3PurYfp63JGnsfYooSdeyXZDtbLuAo",
-                    "short_id": "c378d224"
+                    "public_key": "xbsM3rlblvuzjOXyQSh9-oqjVmk5BFb1j8BwWaMVpBk",
+                    "short_id": "926eb1d5"
                 }
             },
             "transport": {
@@ -242,6 +244,42 @@
                     "public_key": "3KmWh8OPrAr-gBXyVdyS4IaB8DKUTtdIpbv5qvN15RY",
                     "short_id": "c2abcb19"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @v2logy | 6",
+            "type": "vless",
+            "server": "116.203.58.130",
+            "server_port": 443,
+            "uuid": "72856660-bfbe-449d-aa0b-1a103d7a06fd",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.hetzner.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "yEIv8lhKCppriIvnDL922eeW4nFR9ei-x2BebOwQ9BY",
+                    "short_id": "485bc860"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
