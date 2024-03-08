@@ -110,7 +110,7 @@
                 "🇨🇳CN | vmess | @mftizi | 18",
                 "🇫🇮FI | vmess | @oneclickvpnkeys | 11",
                 "🇺🇸US | vmess | @yaney_01 | 5",
-                "🇲🇾MY | vmess | @Hope_Net | 4",
+                "🇺🇸US | vmess | @Hope_Net | 5",
                 "🇮🇳IN | vmess | @v2Line | 6",
                 "🇨🇦CA | vmess | @nofiltering2 | 1"
             ]
@@ -123,7 +123,7 @@
                 "🇨🇳CN | vmess | @mftizi | 18",
                 "🇫🇮FI | vmess | @oneclickvpnkeys | 11",
                 "🇺🇸US | vmess | @yaney_01 | 5",
-                "🇲🇾MY | vmess | @Hope_Net | 4",
+                "🇺🇸US | vmess | @Hope_Net | 5",
                 "🇮🇳IN | vmess | @v2Line | 6",
                 "🇨🇦CA | vmess | @nofiltering2 | 1"
             ],
@@ -230,13 +230,13 @@
             }
         },
         {
-            "tag": "🇲🇾MY | vmess | @Hope_Net | 4",
+            "tag": "🇺🇸US | vmess | @Hope_Net | 5",
             "type": "vmess",
-            "server": "154.90.39.63",
-            "server_port": 45343,
-            "uuid": "08aa8499-d616-4ff1-d6ab-ce0c522824aa",
+            "server": "hms08.gwdef.sbs",
+            "server_port": 443,
+            "uuid": "bc864078-dcf3-4bf4-8dbf-ca9f200b56be",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -244,6 +244,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "gwdef.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "gwdef.sbs"
+                }
             }
         },
         {
