@@ -108,10 +108,10 @@
                 "URL-TEST",
                 "🇬🇧GB | vless | @VPNCUSTOMIZE | 25",
                 "🇩🇪DE | vless | @ipV2Ray | 9",
-                "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇬🇧GB | vless | @Lockey_vpn | 11",
+                "🇩🇪DE | vless | @v2rayngvpn | 17",
+                "🇩🇪DE | vless | @V2RayTz | 16",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇹🇷TR | vless | @FAKEOFTVC | 7",
                 "🏳️XX | vless | @vpn_go67 | 23"
             ]
         },
@@ -121,10 +121,10 @@
             "outbounds": [
                 "🇬🇧GB | vless | @VPNCUSTOMIZE | 25",
                 "🇩🇪DE | vless | @ipV2Ray | 9",
-                "🇩🇪DE | vless | @ARv2ray | 13",
                 "🇬🇧GB | vless | @Lockey_vpn | 11",
+                "🇩🇪DE | vless | @v2rayngvpn | 17",
+                "🇩🇪DE | vless | @V2RayTz | 16",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇹🇷TR | vless | @FAKEOFTVC | 7",
                 "🏳️XX | vless | @vpn_go67 | 23"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -220,42 +220,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @ARv2ray | 13",
-            "type": "vless",
-            "server": "5.75.242.254",
-            "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ftp.debian.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "z7LnPBgBIYfnkraL-IQ2G9qOvEAsYmOE7GH2UhXzGA0",
-                    "short_id": "8b0b9ef5"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🇬🇧GB | vless | @Lockey_vpn | 11",
             "type": "vless",
             "server": "144.126.234.182",
@@ -285,6 +249,78 @@
             }
         },
         {
+            "tag": "🇩🇪DE | vless | @v2rayngvpn | 17",
+            "type": "vless",
+            "server": "Join.V2rayOfficial.Site",
+            "server_port": 443,
+            "uuid": "v2ray__official",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "kLXon5BH9DZHbyrJJ9dSrmOt1ivHJH8SE_8BkPJFZys",
+                    "short_id": "24e03254"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "www.speedtest.net",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @V2RayTz | 16",
+            "type": "vless",
+            "server": "5.75.142.73",
+            "server_port": 443,
+            "uuid": "7d419df7-4b41-42b8-bfda-be8535254e94",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.hetzner.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7fX27jWXrP5zA7IzAua7lyfjiDPJ8T6e6bNccQr8-QM",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇩🇪DE | vless | @Capital_NET | 45",
             "type": "vless",
             "server": "four.felinetest.site",
@@ -311,42 +347,6 @@
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
                 }
-            }
-        },
-        {
-            "tag": "🇹🇷TR | vless | @FAKEOFTVC | 7",
-            "type": "vless",
-            "server": "abadis.ir.mmdargon.top",
-            "server_port": 80,
-            "uuid": "04219735-8453-47a4-986e-2a780a034517",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "internetbrayhamh.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "vQHsbqgrft7IuCf9_m1Zex_Jaw9bBX7Mv-mUkNvzhGk",
-                    "short_id": "25b888a5"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@internetbrayhamh@internetbrayhamh@internetbrayhamh@internetbrayhamh",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
