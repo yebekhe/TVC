@@ -41,7 +41,7 @@ $choosenRanges = [
 $choosenIps = [
     getRandomIpFromRange($choosenRange[0]),
     getRandomIpFromRange($choosenRange[1])
-]
+];
 $portsArray = explode(",", $ports);
 $choosenPort = $portsArray[array_rand($portsArray)];
 
@@ -64,4 +64,4 @@ $profileOutput = $profileHeader . "
 
 file_put_contents("subscriptions/warp/config", $profileOutput);
 
-echo "\nWARP Configuration created!\n"
+echo "\nWARP Configuration created!\n";
