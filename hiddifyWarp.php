@@ -4,21 +4,29 @@ ini_set("display_errors", 1);
 ini_set("display_startup_errors", 1);
 error_reporting(E_ERROR | E_PARSE);
 
-function getRandomIpFromRange($range) {
-    // Split the range into an array
-    $range = explode('/', $range);
-    $ip = $range[0];
-    $mask = $range[1];
+function getRandomIpFromCidr($cidr) {
+    // Split the CIDR into network and mask
+    list($network, $mask) = explode('/', $cidr);
 
-    // Convert the IP and mask to binary
-    $ip_bin = ip2long($ip);
-    $mask_bin = str_pad(decbin(~0 << (32 - $mask)), 32, '0', STR_PAD_LEFT);
+    // Convert the network to binary
+    $networkBinary = ip2long($network);
 
-    // Generate a random number within the range
-    $random_ip_bin = mt_rand(ip2long($ip . '/0'), ip2long($ip . '/32')) & $mask_bin;
+    // Calculate the number of available IPs
+    $availableIps = pow(2, (32 - $mask));
 
-    // Convert the random IP back to decimal and return it
-    return strval(long2ip($random_ip_bin));
+    // Generate a random number of available IPs
+    $randomNumber = mt_rand(0, $availableIps - 1);
+
+    // Convert the random number to binary
+    $randomNumberBinary = str_pad(decbin($randomNumber), 32, '0', STR_PAD_LEFT);
+
+    // Combine the network and random number binaries
+    $ipBinary = $networkBinary . $randomNumberBinary;
+
+    // Convert the binary back to an IP address
+    $ip = long2ip($ipBinary);
+
+    return $ip;
 }
 
 $ipRanges = [
@@ -39,8 +47,8 @@ $choosenRanges = [
     $ipRanges[array_rand($ipRanges)]
 ];
 $choosenIps = [
-    getRandomIpFromRange($choosenRange[0]),
-    getRandomIpFromRange($choosenRange[1])
+    getRandomIpFromCidr($choosenRange[0]),
+    getRandomIpFromCidr($choosenRange[1])
 ];
 $portsArray = explode(",", $ports);
 $choosenPort = $portsArray[array_rand($portsArray)];
