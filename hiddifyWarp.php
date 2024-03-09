@@ -36,10 +36,10 @@ $portsArray = explode(",", $ports);
 $choosenPort = $portsArray[array_rand($portsArray)];
 
 $profileConfigs = [
-    "warp://" . $choosenIps[0] . ":" . $choosenPort . "?ifp=5-10#" . $choosenIps[0] . ":" . $choosenPort,
-    "warp://" . $choosenIps[1] . ":" . $choosenPort . "?ifp=5-10#" . $choosenIps[1] . ":" . $choosenPort,
-    "warp://" . $choosenIps[0] . ":" . $choosenPort . "?ifp=5-10#" . $choosenIps[0] . ":" . $choosenPort . "&&detour=warp://" . $choosenIps[1] . ":" . $choosenPort . "?ifp=5-10#" . $choosenIps[1] . ":" . $choosenPort,
-    "warp://" . $choosenIps[1] . ":" . $choosenPort . "?ifp=5-10#" . $choosenIps[1] . ":" . $choosenPort . "&&detour=warp://" . $choosenIps[0] . ":" . $choosenPort . "?ifp=5-10#" . $choosenIps[0] . ":" . $choosenPort,
+    "warp://" . $choosenIps[0] . ":" . $choosenPort . "?ifp=5-10#WARP1-✴️",
+    "warp://" . $choosenIps[1] . ":" . $choosenPort . "?ifp=5-10#WARP2-🔅",
+    "warp://" . $choosenIps[0] . ":" . $choosenPort . "?ifp=5-10#WARP1-🔀&&detour=warp://" . $choosenIps[1] . ":" . $choosenPort . "?ifp=5-10#WARP2-🛜",
+    "warp://" . $choosenIps[1] . ":" . $choosenPort . "?ifp=5-10#WARP2-🔀&&detour=warp://" . $choosenIps[0] . ":" . $choosenPort . "?ifp=5-10#WARP1-🛜",
 ];
 
 $profileHeader = "#profile-title: base64:" . base64_encode("TVC | WARP") . "
