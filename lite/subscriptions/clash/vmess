@@ -123,7 +123,6 @@ proxies:
   - {"name":"🇭🇰HK | vmess | @yaney_01 | 5","type":"vmess","server":"8.218.3.12","port":"80","cipher":"auto","uuid":"1a2068d7-5067-47ae-93da-34ac673c2741","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/mls.html","headers":{"host":"91887969116649.yg.chisi.link"}}}
   - {"name":"🇺🇦UA | vmess | @v2Line | 7","type":"vmess","server":"uk1.xv2ray.net","port":"80","cipher":"auto","uuid":"3b871117-3a4e-4df2-a8af-08ecc7db6887","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"uk1.xv2ray.net"}}}
   - {"name":"🇱🇹LT | vmess | @eliya_chiter0 | 3","type":"vmess","server":"lt2-vmess.sshmax.xyz","port":"80","cipher":"auto","uuid":"a23a9cde-e563-4461-9b45-7843e7c28d00","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"lt2-vmess.sshmax.xyz"}}}
-  - {"name":"🇮🇷IR | vmess | @SINABIGO | 6","type":"vmess","server":"relay.vipservice.website","port":"80","cipher":"chacha20-poly1305","uuid":"469abe72-d5a9-40c2-99f6-a48459b1d65a","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -135,7 +134,6 @@ proxy-groups:
       - '🇭🇰HK | vmess | @yaney_01 | 5'
       - '🇺🇦UA | vmess | @v2Line | 7'
       - '🇱🇹LT | vmess | @eliya_chiter0 | 3'
-      - '🇮🇷IR | vmess | @SINABIGO | 6'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -147,7 +145,6 @@ proxy-groups:
       - '🇭🇰HK | vmess | @yaney_01 | 5'
       - '🇺🇦UA | vmess | @v2Line | 7'
       - '🇱🇹LT | vmess | @eliya_chiter0 | 3'
-      - '🇮🇷IR | vmess | @SINABIGO | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -158,7 +155,6 @@ proxy-groups:
       - '🇭🇰HK | vmess | @yaney_01 | 5'
       - '🇺🇦UA | vmess | @v2Line | 7'
       - '🇱🇹LT | vmess | @eliya_chiter0 | 3'
-      - '🇮🇷IR | vmess | @SINABIGO | 6'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
