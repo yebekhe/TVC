@@ -128,7 +128,7 @@
                 "🇩🇪DE | vless | @v2logy | 4",
                 "🇩🇪DE | vless | @v2logy | 6",
                 "🇬🇧GB | vless | @V2rayNGn | 19",
-                "🇧🇪BE | vless | @v2rayngvpn | 9",
+                "🇫🇷FR | vless | @v2rayngvpn | 9",
                 "🏳️XX | vless | @FalconPolV2rayNG | 1",
                 "🇳🇱NL | vless | @FalconPolV2rayNG | 7",
                 "🇬🇧GB | vless | @v2ray_swhil | 35",
@@ -144,6 +144,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
+                "🏳️XX | vless | @forwardv2ray | 10",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
                 "🏳️XX | vless | @vpn_go67 | 10",
                 "🏳️XX | vless | @vpn_go67 | 11",
@@ -159,8 +160,8 @@
                 "🏳️XX | vless | @vpn_go67 | 21",
                 "🏳️XX | vless | @vpn_go67 | 22",
                 "🏳️XX | vless | @vpn_go67 | 23",
-                "🇩🇪DE | vless | @GozargahVPN | 4",
-                "🏳️XX | vless | @GozargahVPN | 5",
+                "🇩🇪DE | vless | @GozargahVPN | 5",
+                "🏳️XX | vless | @GozargahVPN | 6",
                 "🇸🇪SE | vless | @freeconfigv2 | 1",
                 "🏳️XX | vless | @freeconfigv2 | 3",
                 "🇩🇪DE | vless | @freeconfigv2 | 6",
@@ -195,7 +196,7 @@
                 "🇩🇪DE | vless | @v2logy | 4",
                 "🇩🇪DE | vless | @v2logy | 6",
                 "🇬🇧GB | vless | @V2rayNGn | 19",
-                "🇧🇪BE | vless | @v2rayngvpn | 9",
+                "🇫🇷FR | vless | @v2rayngvpn | 9",
                 "🏳️XX | vless | @FalconPolV2rayNG | 1",
                 "🇳🇱NL | vless | @FalconPolV2rayNG | 7",
                 "🇬🇧GB | vless | @v2ray_swhil | 35",
@@ -211,6 +212,7 @@
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
+                "🏳️XX | vless | @forwardv2ray | 10",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
                 "🏳️XX | vless | @vpn_go67 | 10",
                 "🏳️XX | vless | @vpn_go67 | 11",
@@ -226,8 +228,8 @@
                 "🏳️XX | vless | @vpn_go67 | 21",
                 "🏳️XX | vless | @vpn_go67 | 22",
                 "🏳️XX | vless | @vpn_go67 | 23",
-                "🇩🇪DE | vless | @GozargahVPN | 4",
-                "🏳️XX | vless | @GozargahVPN | 5",
+                "🇩🇪DE | vless | @GozargahVPN | 5",
+                "🏳️XX | vless | @GozargahVPN | 6",
                 "🇸🇪SE | vless | @freeconfigv2 | 1",
                 "🏳️XX | vless | @freeconfigv2 | 3",
                 "🇩🇪DE | vless | @freeconfigv2 | 6",
@@ -1006,7 +1008,7 @@
             }
         },
         {
-            "tag": "🇧🇪BE | vless | @v2rayngvpn | 9",
+            "tag": "🇫🇷FR | vless | @v2rayngvpn | 9",
             "type": "vless",
             "server": "5.135.21.191",
             "server_port": 8880,
@@ -1502,6 +1504,42 @@
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
                 }
+            }
+        },
+        {
+            "tag": "🏳️XX | vless | @forwardv2ray | 10",
+            "type": "vless",
+            "server": "v2logy.ddns.net",
+            "server_port": 443,
+            "uuid": "72859c41-15ac-4621-bfdf-ac4c3ac33ad4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "k6gu1t73hTdYK3PKNUwOqy2B7ZP-sek-dW2_-aGf9i4",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,Telegram:@V20REYNG,",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -2045,7 +2083,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @GozargahVPN | 4",
+            "tag": "🇩🇪DE | vless | @GozargahVPN | 5",
             "type": "vless",
             "server": "45.32.157.52",
             "server_port": 443,
@@ -2074,7 +2112,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @GozargahVPN | 5",
+            "tag": "🏳️XX | vless | @GozargahVPN | 6",
             "type": "vless",
             "server": "test.GozargahVPN.top",
             "server_port": 443,
