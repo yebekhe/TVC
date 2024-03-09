@@ -18,7 +18,7 @@ function getRandomIpFromRange($range) {
     $random_ip_bin = mt_rand(ip2long($ip . '/0'), ip2long($ip . '/32')) & $mask_bin;
 
     // Convert the random IP back to decimal and return it
-    return long2ip($random_ip_bin);
+    return strval(long2ip($random_ip_bin));
 }
 
 $ipRanges = [
