@@ -118,7 +118,7 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇷🇺RU | ss | @OutlineVpnOfficial | 17","type":"ss","server":"62.113.114.116","port":42320,"password":"dhXDSrO3HnkhOZWxNOrvII","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇸🇬SG | ss | @OutlineVpnOfficial | 17","type":"ss","server":"sg-ss.ipracevpn.com","port":2443,"password":"DvMeY/S8c3hsSQqrL1aWblaHscEVQ03l5lFgneMx56c=","cipher":"aes-256-gcm"}
   - {"name":"🇷🇺RU | ss | @proxy_mtm | 0","type":"ss","server":"103.113.68.27","port":2352,"password":"tErM3mZ22YFQspXVwX57xq","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -126,7 +126,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇷🇺RU | ss | @OutlineVpnOfficial | 17'
+      - '🇸🇬SG | ss | @OutlineVpnOfficial | 17'
       - '🇷🇺RU | ss | @proxy_mtm | 0'
   - name: URL-TEST
     type: url-test
@@ -134,14 +134,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇷🇺RU | ss | @OutlineVpnOfficial | 17'
+      - '🇸🇬SG | ss | @OutlineVpnOfficial | 17'
       - '🇷🇺RU | ss | @proxy_mtm | 0'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇷🇺RU | ss | @OutlineVpnOfficial | 17'
+      - '🇸🇬SG | ss | @OutlineVpnOfficial | 17'
       - '🇷🇺RU | ss | @proxy_mtm | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
