@@ -120,6 +120,7 @@ dns:
 proxies:
   - {"name":"🇩🇪DE | ss | @VmessProtocol | 16","type":"ss","server":"18.184.183.193","port":8080,"password":"3K9vIwvDuPm1D6q9jaZ94tvIwQBn65UZaR72scTUv8A=","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇷🇺RU | ss | @OutlineVpnOfficial | 17","type":"ss","server":"62.113.114.116","port":42320,"password":"dhXDSrO3HnkhOZWxNOrvII","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇩🇪DE | ss | @forwardv2ray | 6","type":"ss","server":"94.131.111.32","port":8388,"password":"NGQzMzQz","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +129,7 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | ss | @VmessProtocol | 16'
       - '🇷🇺RU | ss | @OutlineVpnOfficial | 17'
+      - '🇩🇪DE | ss | @forwardv2ray | 6'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -136,6 +138,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | ss | @VmessProtocol | 16'
       - '🇷🇺RU | ss | @OutlineVpnOfficial | 17'
+      - '🇩🇪DE | ss | @forwardv2ray | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -143,6 +146,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | ss | @VmessProtocol | 16'
       - '🇷🇺RU | ss | @OutlineVpnOfficial | 17'
+      - '🇩🇪DE | ss | @forwardv2ray | 6'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
