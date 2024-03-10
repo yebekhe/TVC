@@ -108,10 +108,10 @@
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇰🇷KR | vmess | @mftizi | 18",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 10",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
                 "🇩🇪DE | vmess | @prrofile_purple | 173",
                 "🇭🇰HK | vmess | @yaney_01 | 5",
-                "🇫🇮FI | vmess | @Hope_Net | 10",
+                "🇩🇪DE | vmess | @Hope_Net | 9",
                 "🇨🇦CA | vmess | @v2Line | 6",
                 "🇺🇸US | vmess | @nofiltering2 | 3",
                 "🇱🇹LT | vmess | @eliya_chiter0 | 4"
@@ -123,10 +123,10 @@
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇰🇷KR | vmess | @mftizi | 18",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 10",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
                 "🇩🇪DE | vmess | @prrofile_purple | 173",
                 "🇭🇰HK | vmess | @yaney_01 | 5",
-                "🇫🇮FI | vmess | @Hope_Net | 10",
+                "🇩🇪DE | vmess | @Hope_Net | 9",
                 "🇨🇦CA | vmess | @v2Line | 6",
                 "🇺🇸US | vmess | @nofiltering2 | 3",
                 "🇱🇹LT | vmess | @eliya_chiter0 | 4"
@@ -193,11 +193,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vmess | @oneclickvpnkeys | 10",
+            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
             "type": "vmess",
-            "server": "195.201.29.238",
-            "server_port": 24208,
-            "uuid": "1d244b9d-ce0f-49d5-99fd-da3f1e80ee59",
+            "server": "104.21.51.208",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -207,6 +207,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nina.bond",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "nina.bond"
+                }
             }
         },
         {
@@ -251,11 +268,11 @@
             }
         },
         {
-            "tag": "🇫🇮FI | vmess | @Hope_Net | 10",
+            "tag": "🇩🇪DE | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "65.109.206.159",
-            "server_port": 35445,
-            "uuid": "6115c344-e94b-4bf4-964b-2ee41e0e382c",
+            "server": "195.201.29.238",
+            "server_port": 24208,
+            "uuid": "1d244b9d-ce0f-49d5-99fd-da3f1e80ee59",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -265,13 +282,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
