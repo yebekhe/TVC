@@ -122,7 +122,6 @@ dns:
 proxies:
   - {"name":"🇬🇧GB | ss | @VmessProtocol | 10","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇸🇪SE | ss | @OutlineVpnOfficial | 18","type":"ss","server":"45.8.147.80","port":5741,"password":"Q5CEiebSuSl2qFkfE4ztG2","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇦🇹AT | ss | @forwardv2ray | 17","type":"ss","server":"vienna.telegavpn.com","port":61992,"password":"a0yugtYUKjy9EyQOwQ5Pbr","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇱NL | ss | @ROMAX_VPN | 9","type":"ss","server":"94.131.106.6","port":43743,"password":"5vPNG70j1ZqfEG5ee6aQGW","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -132,7 +131,6 @@ proxy-groups:
       - FALLBACK
       - '🇬🇧GB | ss | @VmessProtocol | 10'
       - '🇸🇪SE | ss | @OutlineVpnOfficial | 18'
-      - '🇦🇹AT | ss | @forwardv2ray | 17'
       - '🇳🇱NL | ss | @ROMAX_VPN | 9'
   - name: URL-TEST
     type: url-test
@@ -142,7 +140,6 @@ proxy-groups:
     proxies:
       - '🇬🇧GB | ss | @VmessProtocol | 10'
       - '🇸🇪SE | ss | @OutlineVpnOfficial | 18'
-      - '🇦🇹AT | ss | @forwardv2ray | 17'
       - '🇳🇱NL | ss | @ROMAX_VPN | 9'
   - name: FALLBACK
     type: fallback
@@ -151,7 +148,6 @@ proxy-groups:
     proxies:
       - '🇬🇧GB | ss | @VmessProtocol | 10'
       - '🇸🇪SE | ss | @OutlineVpnOfficial | 18'
-      - '🇦🇹AT | ss | @forwardv2ray | 17'
       - '🇳🇱NL | ss | @ROMAX_VPN | 9'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
