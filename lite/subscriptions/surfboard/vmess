@@ -13,11 +13,10 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇰🇷KR | vmess | @mftizi | 18 = vmess, 185.214.103.249, 8002, username = 1405f400-4d72-3cd2-88fc-5bfb9dd9120d, ws = true, tls = , vmess-aead = true, ws-path = /db00, ws-headers = Host:"data-hk-1.cn-db.top", skip-cert-verify = true, tfo = false
 🇪🇪EE | vmess | @v2Line | 6 = vmess, ee1.xv2ray.net, 80, username = 83018580-58ce-464f-b75c-2a1331a8f016, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ee1.xv2ray.net", skip-cert-verify = true, tfo = false
-🇱🇹LT | vmess | @eliya_chiter0 | 7 = vmess, lt2-vmess.sshmax.xyz, 80, username = a23a9cde-e563-4461-9b45-7843e7c28d00, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"lt2-vmess.sshmax.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇰🇷KR | vmess | @mftizi | 18,🇪🇪EE | vmess | @v2Line | 6,🇱🇹LT | vmess | @eliya_chiter0 | 7
-URL-TEST = url-test,🇰🇷KR | vmess | @mftizi | 18,🇪🇪EE | vmess | @v2Line | 6,🇱🇹LT | vmess | @eliya_chiter0 | 7
-FALLBACK = fallback,🇰🇷KR | vmess | @mftizi | 18,🇪🇪EE | vmess | @v2Line | 6,🇱🇹LT | vmess | @eliya_chiter0 | 7
+MANUAL = select,URL-TEST,FALLBACK,🇰🇷KR | vmess | @mftizi | 18,🇪🇪EE | vmess | @v2Line | 6
+URL-TEST = url-test,🇰🇷KR | vmess | @mftizi | 18,🇪🇪EE | vmess | @v2Line | 6
+FALLBACK = fallback,🇰🇷KR | vmess | @mftizi | 18,🇪🇪EE | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
