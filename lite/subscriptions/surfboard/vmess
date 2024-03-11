@@ -12,12 +12,13 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇰🇷KR | vmess | @mftizi | 18 = vmess, 185.214.103.249, 8002, username = 1405f400-4d72-3cd2-88fc-5bfb9dd9120d, ws = true, tls = , vmess-aead = true, ws-path = /db00, ws-headers = Host:"data-hk-1.cn-db.top", skip-cert-verify = true, tfo = false
-🇨🇦CA | vmess | @v2Line | 6 = vmess, ca-full.privateip.net, 443, username = e472d68b-3a7c-4087-9915-f7323ab0bac7, ws = true, tls = 1, vmess-aead = true, ws-path = /racevpn, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇺🇸US | vmess | @Hope_Net | 6 = vmess, 206.168.190.218, 8443, username = 7e348dc0-df7b-11ee-b235-205c6d5f5d78, ws = true, tls = 1, vmess-aead = true, ws-path = /@V2RayyNGvpn, ws-headers = Host:"ba24.ir", skip-cert-verify = true, tfo = false
+🇪🇪EE | vmess | @v2Line | 6 = vmess, ee1.xv2ray.net, 80, username = 83018580-58ce-464f-b75c-2a1331a8f016, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ee1.xv2ray.net", skip-cert-verify = true, tfo = false
 🇱🇹LT | vmess | @eliya_chiter0 | 6 = vmess, lt2-vmess.sshmax.xyz, 80, username = a23a9cde-e563-4461-9b45-7843e7c28d00, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"lt2-vmess.sshmax.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇰🇷KR | vmess | @mftizi | 18,🇨🇦CA | vmess | @v2Line | 6,🇱🇹LT | vmess | @eliya_chiter0 | 6
-URL-TEST = url-test,🇰🇷KR | vmess | @mftizi | 18,🇨🇦CA | vmess | @v2Line | 6,🇱🇹LT | vmess | @eliya_chiter0 | 6
-FALLBACK = fallback,🇰🇷KR | vmess | @mftizi | 18,🇨🇦CA | vmess | @v2Line | 6,🇱🇹LT | vmess | @eliya_chiter0 | 6
+MANUAL = select,URL-TEST,FALLBACK,🇰🇷KR | vmess | @mftizi | 18,🇺🇸US | vmess | @Hope_Net | 6,🇪🇪EE | vmess | @v2Line | 6,🇱🇹LT | vmess | @eliya_chiter0 | 6
+URL-TEST = url-test,🇰🇷KR | vmess | @mftizi | 18,🇺🇸US | vmess | @Hope_Net | 6,🇪🇪EE | vmess | @v2Line | 6,🇱🇹LT | vmess | @eliya_chiter0 | 6
+FALLBACK = fallback,🇰🇷KR | vmess | @mftizi | 18,🇺🇸US | vmess | @Hope_Net | 6,🇪🇪EE | vmess | @v2Line | 6,🇱🇹LT | vmess | @eliya_chiter0 | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
