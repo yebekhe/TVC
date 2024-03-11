@@ -120,6 +120,7 @@ dns:
 proxies:
   - {"name":"🇩🇪DE | trojan | @PrivateVPNs | 17","type":"trojan","server":"3.78.193.37","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
   - {"name":"🇩🇪DE | trojan | @DirectVPN | 17","type":"trojan","server":"18.156.60.205","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇨🇦CA | trojan | @forwardv2ray | 18","type":"trojan","server":"zula.ir","port":443,"udp":false,"password":"14025f10-101f-445d-a27a-692f8da3d4e7","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"at1.trojanvpn.de"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +129,7 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | trojan | @PrivateVPNs | 17'
       - '🇩🇪DE | trojan | @DirectVPN | 17'
+      - '🇨🇦CA | trojan | @forwardv2ray | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -136,6 +138,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | trojan | @PrivateVPNs | 17'
       - '🇩🇪DE | trojan | @DirectVPN | 17'
+      - '🇨🇦CA | trojan | @forwardv2ray | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -143,6 +146,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | trojan | @PrivateVPNs | 17'
       - '🇩🇪DE | trojan | @DirectVPN | 17'
+      - '🇨🇦CA | trojan | @forwardv2ray | 18'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
