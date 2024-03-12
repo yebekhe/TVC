@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇪🇪EE | vmess | @oneclickvpnkeys | 11 = vmess, ee1.xv2ray.net, 80, username = 83018580-58ce-464f-b75c-2a1331a8f016, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ee1.xv2ray.net", skip-cert-verify = true, tfo = false
-🇨🇦CA | vmess | @Hope_Net | 6 = vmess, 172.67.71.160, 443, username = 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"obdii.cfd", skip-cert-verify = true, tfo = false
+🇩🇪DE | vmess | @oneclickvpnkeys | 10 = vmess, 91.107.169.215, 36201, username = a780eb73-03ad-4097-a822-1b11c3b5011f, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇪🇪EE | vmess | @v2Line | 6 = vmess, ee1.xv2ray.net, 80, username = 83018580-58ce-464f-b75c-2a1331a8f016, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ee1.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇪🇪EE | vmess | @oneclickvpnkeys | 11,🇨🇦CA | vmess | @Hope_Net | 6,🇪🇪EE | vmess | @v2Line | 6
-URL-TEST = url-test,🇪🇪EE | vmess | @oneclickvpnkeys | 11,🇨🇦CA | vmess | @Hope_Net | 6,🇪🇪EE | vmess | @v2Line | 6
-FALLBACK = fallback,🇪🇪EE | vmess | @oneclickvpnkeys | 11,🇨🇦CA | vmess | @Hope_Net | 6,🇪🇪EE | vmess | @v2Line | 6
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | vmess | @oneclickvpnkeys | 10,🇪🇪EE | vmess | @v2Line | 6
+URL-TEST = url-test,🇩🇪DE | vmess | @oneclickvpnkeys | 10,🇪🇪EE | vmess | @v2Line | 6
+FALLBACK = fallback,🇩🇪DE | vmess | @oneclickvpnkeys | 10,🇪🇪EE | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
