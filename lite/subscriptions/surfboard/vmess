@@ -12,11 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇺🇸US | vmess | @DeamNet_Proxy | 18 = vmess, 206.168.190.218, 8443, username = 7e348dc0-df7b-11ee-b235-205c6d5f5d78, ws = true, tls = 1, vmess-aead = true, ws-path = /@V2RayyNGvpn, ws-headers = Host:"ba24.ir", skip-cert-verify = true, tfo = false
-🇺🇸US | vmess | @Hope_Net | 3 = vmess, 172.67.170.13, 443, username = 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"glweidf.sbs", skip-cert-verify = true, tfo = false
+🇩🇪DE | vmess | @Hope_Net | 2 = vmess, 80.71.157.105, 80, username = b656b441-2cfd-44b8-9b2e-646e9925f8f6, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"نام.کانال.تلگرام.VPNHTTPInjectorfree", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | vmess | @DeamNet_Proxy | 18,🇺🇸US | vmess | @Hope_Net | 3
-URL-TEST = url-test,🇺🇸US | vmess | @DeamNet_Proxy | 18,🇺🇸US | vmess | @Hope_Net | 3
-FALLBACK = fallback,🇺🇸US | vmess | @DeamNet_Proxy | 18,🇺🇸US | vmess | @Hope_Net | 3
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | vmess | @DeamNet_Proxy | 18,🇩🇪DE | vmess | @Hope_Net | 2
+URL-TEST = url-test,🇺🇸US | vmess | @DeamNet_Proxy | 18,🇩🇪DE | vmess | @Hope_Net | 2
+FALLBACK = fallback,🇺🇸US | vmess | @DeamNet_Proxy | 18,🇩🇪DE | vmess | @Hope_Net | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
