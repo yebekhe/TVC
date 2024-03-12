@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇰🇷KR | vmess | @mftizi | 18 = vmess, 185.214.103.249, 8002, username = 1405f400-4d72-3cd2-88fc-5bfb9dd9120d, ws = true, tls = , vmess-aead = true, ws-path = /db00, ws-headers = Host:"data-hk-1.cn-db.top", skip-cert-verify = true, tfo = false
-🇨🇦CA | vmess | @oneclickvpnkeys | 12 = vmess, 172.67.71.160, 443, username = 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"obdii.cfd", skip-cert-verify = true, tfo = false
+🏳️XX | vmess | @oneclickvpnkeys | 11 = vmess, tun.phoneshop98.ir, 80, username = c1fc73cd-4ed1-4a21-be81-7985ff3a3f7f, ws = true, tls = , vmess-aead = true, ws-path = /vtvy7le8CDlrjHLC5dUk5AZKyE, ws-headers = Host:"tun.phoneshop98.ir", skip-cert-verify = true, tfo = false
 🇪🇪EE | vmess | @v2Line | 6 = vmess, ee1.xv2ray.net, 80, username = 83018580-58ce-464f-b75c-2a1331a8f016, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"ee1.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇰🇷KR | vmess | @mftizi | 18,🇨🇦CA | vmess | @oneclickvpnkeys | 12,🇪🇪EE | vmess | @v2Line | 6
-URL-TEST = url-test,🇰🇷KR | vmess | @mftizi | 18,🇨🇦CA | vmess | @oneclickvpnkeys | 12,🇪🇪EE | vmess | @v2Line | 6
-FALLBACK = fallback,🇰🇷KR | vmess | @mftizi | 18,🇨🇦CA | vmess | @oneclickvpnkeys | 12,🇪🇪EE | vmess | @v2Line | 6
+MANUAL = select,URL-TEST,FALLBACK,🏳️XX | vmess | @oneclickvpnkeys | 11,🇪🇪EE | vmess | @v2Line | 6
+URL-TEST = url-test,🏳️XX | vmess | @oneclickvpnkeys | 11,🇪🇪EE | vmess | @v2Line | 6
+FALLBACK = fallback,🏳️XX | vmess | @oneclickvpnkeys | 11,🇪🇪EE | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
