@@ -11,12 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇺🇸US | vmess | @DeamNet_Proxy | 18 = vmess, 206.168.190.218, 8443, username = 7e348dc0-df7b-11ee-b235-205c6d5f5d78, ws = true, tls = 1, vmess-aead = true, ws-path = /@V2RayyNGvpn, ws-headers = Host:"ba24.ir", skip-cert-verify = true, tfo = false
 🇩🇪DE | vmess | @oneclickvpnkeys | 11 = vmess, 91.107.169.215, 36201, username = a780eb73-03ad-4097-a822-1b11c3b5011f, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
-🇺🇸US | vmess | @Hope_Net | 3 = vmess, cfcdn1.sanfencdn9.com, 2052, username = 8e0fc6e0-1313-4767-b51c-5506680d534e, ws = true, tls = , vmess-aead = true, ws-path = /video/QXjZG5u4F2, ws-headers = Host:"us3AJ8biuQx.fzbqfrse.xyz", skip-cert-verify = true, tfo = false
+🇨🇦CA | vmess | @Hope_Net | 3 = vmess, cfcdn1.sanfencdn9.com, 2052, username = 8e0fc6e0-1313-4767-b51c-5506680d534e, ws = true, tls = , vmess-aead = true, ws-path = /video/QXjZG5u4F2, ws-headers = Host:"us3AJ8biuQx.fzbqfrse.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | vmess | @oneclickvpnkeys | 11,🇺🇸US | vmess | @Hope_Net | 3
-URL-TEST = url-test,🇩🇪DE | vmess | @oneclickvpnkeys | 11,🇺🇸US | vmess | @Hope_Net | 3
-FALLBACK = fallback,🇩🇪DE | vmess | @oneclickvpnkeys | 11,🇺🇸US | vmess | @Hope_Net | 3
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | vmess | @DeamNet_Proxy | 18,🇩🇪DE | vmess | @oneclickvpnkeys | 11,🇨🇦CA | vmess | @Hope_Net | 3
+URL-TEST = url-test,🇺🇸US | vmess | @DeamNet_Proxy | 18,🇩🇪DE | vmess | @oneclickvpnkeys | 11,🇨🇦CA | vmess | @Hope_Net | 3
+FALLBACK = fallback,🇺🇸US | vmess | @DeamNet_Proxy | 18,🇩🇪DE | vmess | @oneclickvpnkeys | 11,🇨🇦CA | vmess | @Hope_Net | 3
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
