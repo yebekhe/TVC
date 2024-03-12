@@ -109,8 +109,9 @@
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇪🇪EE | vmess | @oneclickvpnkeys | 11",
+                "🇳🇱NL | vmess | @v2ray1_ng | 16",
                 "🇨🇳CN | vmess | @yaney_01 | 3",
-                "🇨🇦CA | vmess | @Hope_Net | 8",
+                "🇨🇦CA | vmess | @Hope_Net | 6",
                 "🇪🇪EE | vmess | @v2Line | 6",
                 "🇺🇸US | vmess | @nofiltering2 | 1",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 6"
@@ -123,8 +124,9 @@
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 18",
                 "🇪🇪EE | vmess | @oneclickvpnkeys | 11",
+                "🇳🇱NL | vmess | @v2ray1_ng | 16",
                 "🇨🇳CN | vmess | @yaney_01 | 3",
-                "🇨🇦CA | vmess | @Hope_Net | 8",
+                "🇨🇦CA | vmess | @Hope_Net | 6",
                 "🇪🇪EE | vmess | @v2Line | 6",
                 "🇺🇸US | vmess | @nofiltering2 | 1",
                 "🇨🇦CA | vmess | @eliya_chiter0 | 6"
@@ -208,6 +210,30 @@
             }
         },
         {
+            "tag": "🇳🇱NL | vmess | @v2ray1_ng | 16",
+            "type": "vmess",
+            "server": "bemyfortunes.com",
+            "server_port": 2095,
+            "uuid": "@v2ray_every_12_hours",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?@v2ray_every_12_hoursed=2048",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
             "tag": "🇨🇳CN | vmess | @yaney_01 | 3",
             "type": "vmess",
             "server": "dotu-usv1.03p4fad6vd.com",
@@ -225,11 +251,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 8",
+            "tag": "🇨🇦CA | vmess | @Hope_Net | 6",
             "type": "vmess",
-            "server": "162.159.11.32",
-            "server_port": 2052,
-            "uuid": "8e0fc6e0-1313-4767-b51c-5506680d534e",
+            "server": "172.67.71.160",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -240,11 +266,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/video\/GQ2qE5Us9g",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": ""
+                    "Host": "obdii.cfd"
                 }
             }
         },
