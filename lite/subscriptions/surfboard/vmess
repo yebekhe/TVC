@@ -11,10 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇭🇰HK | vmess | @v2Line | 6 = vmess, hk1.xv2ray.net, 80, username = 6f20c1ae-c712-4a26-a9f4-5e5b3c480b9d, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"hk1.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK
-URL-TEST = url-test
-FALLBACK = fallback
+MANUAL = select,URL-TEST,FALLBACK,🇭🇰HK | vmess | @v2Line | 6
+URL-TEST = url-test,🇭🇰HK | vmess | @v2Line | 6
+FALLBACK = fallback,🇭🇰HK | vmess | @v2Line | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
