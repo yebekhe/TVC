@@ -111,9 +111,8 @@
                 "🇺🇸US | vmess | @DeamNet_Proxy | 18",
                 "🇺🇦UA | vmess | @oneclickvpnkeys | 11",
                 "🇨🇳CN | vmess | @yaney_01 | 3",
-                "🇩🇪DE | vmess | @Hope_Net | 4",
+                "🇺🇸US | vmess | @Hope_Net | 3",
                 "🇨🇦CA | vmess | @v2Line | 4",
-                "🏳️XX | vmess | @forwardv2ray | 18",
                 "🇺🇸US | vmess | @nofiltering2 | 1"
             ]
         },
@@ -126,9 +125,8 @@
                 "🇺🇸US | vmess | @DeamNet_Proxy | 18",
                 "🇺🇦UA | vmess | @oneclickvpnkeys | 11",
                 "🇨🇳CN | vmess | @yaney_01 | 3",
-                "🇩🇪DE | vmess | @Hope_Net | 4",
+                "🇺🇸US | vmess | @Hope_Net | 3",
                 "🇨🇦CA | vmess | @v2Line | 4",
-                "🏳️XX | vmess | @forwardv2ray | 18",
                 "🇺🇸US | vmess | @nofiltering2 | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -264,11 +262,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vmess | @Hope_Net | 4",
+            "tag": "🇺🇸US | vmess | @Hope_Net | 3",
             "type": "vmess",
-            "server": "80.71.157.105",
-            "server_port": 80,
-            "uuid": "b656b441-2cfd-44b8-9b2e-646e9925f8f6",
+            "server": "172.67.131.186",
+            "server_port": 2083,
+            "uuid": "f7b15bca-0ae8-46d8-e50a-01c67dda9b30",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -279,11 +277,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "html.cdn-tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/vmess",
+                "path": "\/tws",
                 "headers": {
-                    "Host": ""
+                    "Host": "html.cdn-tgju.org"
                 }
             }
         },
@@ -308,40 +316,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🏳️XX | vmess | @forwardv2ray | 18",
-            "type": "vmess",
-            "server": "mci.mosi.mosipro.ml",
-            "server_port": 443,
-            "uuid": "0965bf43-24fc-4466-bba6-6c5a7416fa2b",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "Dusseldorf.kotick.site",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/speedtest",
-                "headers": {
-                    "Host": "Dusseldorf.kotick.site"
                 }
             }
         },
