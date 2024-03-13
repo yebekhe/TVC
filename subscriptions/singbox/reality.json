@@ -117,7 +117,8 @@
                 "🇩🇪DE | vless | @ipV2Ray | 7",
                 "🇩🇪DE | vless | @ipV2Ray | 8",
                 "🇩🇪DE | vless | @ipV2Ray | 9",
-                "🇩🇪DE | vless | @ARv2ray | 5",
+                "🇩🇪DE | vless | @ARv2ray | 0",
+                "🇩🇪DE | vless | @ARv2ray | 6",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
                 "🇫🇮FI | vless | @CUSTOMVPNSERVER | 6",
@@ -144,7 +145,6 @@
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇬🇧GB | vless | @forwardv2ray | 2",
                 "🇫🇮FI | vless | @mehrosaboran | 6",
                 "🇩🇪DE | vless | @kiava | 0",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
@@ -186,7 +186,8 @@
                 "🇩🇪DE | vless | @ipV2Ray | 7",
                 "🇩🇪DE | vless | @ipV2Ray | 8",
                 "🇩🇪DE | vless | @ipV2Ray | 9",
-                "🇩🇪DE | vless | @ARv2ray | 5",
+                "🇩🇪DE | vless | @ARv2ray | 0",
+                "🇩🇪DE | vless | @ARv2ray | 6",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
                 "🇫🇮FI | vless | @CUSTOMVPNSERVER | 6",
@@ -213,7 +214,6 @@
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇬🇧GB | vless | @forwardv2ray | 2",
                 "🇫🇮FI | vless | @mehrosaboran | 6",
                 "🇩🇪DE | vless | @kiava | 0",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
@@ -649,7 +649,43 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @ARv2ray | 5",
+            "tag": "🇩🇪DE | vless | @ARv2ray | 0",
+            "type": "vless",
+            "server": "5.75.203.32",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.mashti.link",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ERV7pjULTFsXHHRuSLrLY07f4Wl_gQpu_bkBHQfzMVU",
+                    "short_id": "827ad6ed"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @ARv2ray | 6",
             "type": "vless",
             "server": "91.107.186.175",
             "server_port": 443,
@@ -1506,42 +1542,6 @@
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
                 }
-            }
-        },
-        {
-            "tag": "🇬🇧GB | vless | @forwardv2ray | 2",
-            "type": "vless",
-            "server": "64.227.44.75",
-            "server_port": 443,
-            "uuid": "9aab567d-c1b9-4a33-9e7c-bba600ac5796",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dash.cloudflare.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "O5_bdsbHUkQNlWyJ0le3nijjlowhqrhSskVKiulLRwY",
-                    "short_id": "02a37375"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
