@@ -11,12 +11,10 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇨🇦CA | vmess | @DeamNet_Proxy | 19 = vmess, glweidf.cfd, 443, username = 1052f24e-7b09-45eb-b0c5-d858eb124192, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"glweidf.cfd", skip-cert-verify = true, tfo = false
-🇫🇷FR | vmess | @Hope_Net | 3 = vmess, fr2-full.privateip.net, 443, username = ff406666-f618-499a-8c0b-4d01af7e1340, ws = true, tls = 1, vmess-aead = true, ws-path = /RACEVPN, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇫🇷FR | vmess | @Hope_Net | 3
-URL-TEST = url-test,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇫🇷FR | vmess | @Hope_Net | 3
-FALLBACK = fallback,🇨🇦CA | vmess | @DeamNet_Proxy | 19,🇫🇷FR | vmess | @Hope_Net | 3
+MANUAL = select,URL-TEST,FALLBACK
+URL-TEST = url-test
+FALLBACK = fallback
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
