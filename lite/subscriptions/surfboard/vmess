@@ -11,11 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | vmess | @DeamNet_Proxy | 18 = vmess, 206.168.190.218, 8443, username = 7e348dc0-df7b-11ee-b235-205c6d5f5d78, ws = true, tls = 1, vmess-aead = true, ws-path = /@V2RayyNGvpn, ws-headers = Host:"ba24.ir", skip-cert-verify = true, tfo = false
+🇫🇷FR | vmess | @Hope_Net | 3 = vmess, fr2-full.privateip.net, 443, username = ff406666-f618-499a-8c0b-4d01af7e1340, ws = true, tls = 1, vmess-aead = true, ws-path = /RACEVPN, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | vmess | @DeamNet_Proxy | 18
-URL-TEST = url-test,🇺🇸US | vmess | @DeamNet_Proxy | 18
-FALLBACK = fallback,🇺🇸US | vmess | @DeamNet_Proxy | 18
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | vmess | @Hope_Net | 3
+URL-TEST = url-test,🇫🇷FR | vmess | @Hope_Net | 3
+FALLBACK = fallback,🇫🇷FR | vmess | @Hope_Net | 3
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
