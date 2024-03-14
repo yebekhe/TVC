@@ -145,7 +145,8 @@
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🏳️XX | vless | @forwardv2ray | 16",
+                "🇬🇧GB | vless | @forwardv2ray | 8",
+                "🏳️XX | vless | @forwardv2ray | 10",
                 "🇩🇪DE | vless | @kiava | 0",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
                 "🏳️XX | vless | @vpn_go67 | 10",
@@ -214,7 +215,8 @@
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🏳️XX | vless | @forwardv2ray | 16",
+                "🇬🇧GB | vless | @forwardv2ray | 8",
+                "🏳️XX | vless | @forwardv2ray | 10",
                 "🇩🇪DE | vless | @kiava | 0",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
                 "🏳️XX | vless | @vpn_go67 | 10",
@@ -1538,7 +1540,43 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @forwardv2ray | 16",
+            "tag": "🇬🇧GB | vless | @forwardv2ray | 8",
+            "type": "vless",
+            "server": "64.227.44.75",
+            "server_port": 443,
+            "uuid": "e756c7de-119e-4e10-b47d-7e17642b3630",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dash.cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VxGR0RVhAtwOcG-CzVRdAAEAzIliejG1m8Pt5Xg1AwQ",
+                    "short_id": "0cda412d1d"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl-@vpnowl",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🏳️XX | vless | @forwardv2ray | 10",
             "type": "vless",
             "server": "salam.sharkv2r.com",
             "server_port": 2053,
