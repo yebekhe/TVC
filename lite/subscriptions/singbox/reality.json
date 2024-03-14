@@ -106,22 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | vless | @NIM_VPN_ir | 5",
                 "🇩🇪DE | vless | @ipV2Ray | 12",
-                "🏳️XX | vless | @V2RayTz | 18",
                 "🇩🇪DE | vless | @fnet00 | 1",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🏳️XX | vless | @vpn_go67 | 23"
+                "🏳️XX | vless | @vpn_go67 | 23",
+                "🇮🇷IR | vless | @TVCminer | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | vless | @NIM_VPN_ir | 5",
                 "🇩🇪DE | vless | @ipV2Ray | 12",
-                "🏳️XX | vless | @V2RayTz | 18",
                 "🇩🇪DE | vless | @fnet00 | 1",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🏳️XX | vless | @vpn_go67 | 23"
+                "🏳️XX | vless | @vpn_go67 | 23",
+                "🇮🇷IR | vless | @TVCminer | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,6 +144,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | vless | @NIM_VPN_ir | 5",
+            "type": "vless",
+            "server": "78.46.233.103",
+            "server_port": 34883,
+            "uuid": "18b5be42-a440-4600-ba18-f6751f46a504",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fussenegger.pro",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1PNLCQnctUWXBFpRqOu4O7zOHnWM5kFdpSFpqvGW1Go",
+                    "short_id": "05cc0af9"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @ipV2Ray | 12",
@@ -174,42 +205,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🏳️XX | vless | @V2RayTz | 18",
-            "type": "vless",
-            "server": "[2a03:b0c0:1:d0::ca3:9001]",
-            "server_port": 2096,
-            "uuid": "5e369c5d-0e80-4ba9-98ff-b30573ba91b8",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sourceforge.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "AZHRvr2sWVN5gtUQOdcj2df0lIGluZZjADcG8aOJmyY",
-                    "short_id": "ae0c3f5c"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ZEDMODEON-@ZEDMODEON-@ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -314,6 +309,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇮🇷IR | vless | @TVCminer | 1",
+            "type": "vless",
+            "server": "xui24.meteorshoper.tech",
+            "server_port": 8080,
+            "uuid": "8561a52e-1c08-43d4-aa61-1e37bb0506f5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lONSKGopanXOWxNZMDZv4je6RVCjaiUhsMNjGXJH3C8",
+                    "short_id": "137c0031"
+                }
             }
         }
     ],
