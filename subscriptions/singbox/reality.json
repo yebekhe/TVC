@@ -126,6 +126,7 @@
                 "🇫🇷FR | vless | @CUSTOMVPNSERVER | 10",
                 "🇩🇪DE | vless | @v2logy | 6",
                 "🇩🇪DE | vless | @servermomo | 1",
+                "🇷🇺RU | vless | @customv2ray | 11",
                 "🇩🇪DE | vless | @v2rayNG_Matsuri | 0",
                 "🏳️XX | vless | @FalconPolV2rayNG | 1",
                 "🇳🇱NL | vless | @FalconPolV2rayNG | 7",
@@ -147,7 +148,6 @@
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇷🇺RU | vless | @forwardv2ray | 5",
                 "🇩🇪DE | vless | @kiava | 0",
                 "🇩🇪DE | vless | @kiava | 1",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
@@ -165,8 +165,8 @@
                 "🏳️XX | vless | @vpn_go67 | 21",
                 "🏳️XX | vless | @vpn_go67 | 22",
                 "🏳️XX | vless | @vpn_go67 | 23",
-                "🇩🇪DE | vless | @GozargahVPN | 5",
-                "🏳️XX | vless | @GozargahVPN | 6",
+                "🇩🇪DE | vless | @GozargahVPN | 6",
+                "🏳️XX | vless | @GozargahVPN | 7",
                 "🇸🇪SE | vless | @freeconfigv2 | 1",
                 "🏳️XX | vless | @freeconfigv2 | 3",
                 "🇩🇪DE | vless | @freeconfigv2 | 6",
@@ -198,6 +198,7 @@
                 "🇫🇷FR | vless | @CUSTOMVPNSERVER | 10",
                 "🇩🇪DE | vless | @v2logy | 6",
                 "🇩🇪DE | vless | @servermomo | 1",
+                "🇷🇺RU | vless | @customv2ray | 11",
                 "🇩🇪DE | vless | @v2rayNG_Matsuri | 0",
                 "🏳️XX | vless | @FalconPolV2rayNG | 1",
                 "🇳🇱NL | vless | @FalconPolV2rayNG | 7",
@@ -219,7 +220,6 @@
                 "🇩🇪DE | vless | @Capital_NET | 42",
                 "🏳️XX | vless | @Capital_NET | 44",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🇷🇺RU | vless | @forwardv2ray | 5",
                 "🇩🇪DE | vless | @kiava | 0",
                 "🇩🇪DE | vless | @kiava | 1",
                 "🇫🇮FI | vless | @vpn_go67 | 9",
@@ -237,8 +237,8 @@
                 "🏳️XX | vless | @vpn_go67 | 21",
                 "🏳️XX | vless | @vpn_go67 | 22",
                 "🏳️XX | vless | @vpn_go67 | 23",
-                "🇩🇪DE | vless | @GozargahVPN | 5",
-                "🏳️XX | vless | @GozargahVPN | 6",
+                "🇩🇪DE | vless | @GozargahVPN | 6",
+                "🏳️XX | vless | @GozargahVPN | 7",
                 "🇸🇪SE | vless | @freeconfigv2 | 1",
                 "🏳️XX | vless | @freeconfigv2 | 3",
                 "🇩🇪DE | vless | @freeconfigv2 | 6",
@@ -944,6 +944,35 @@
             }
         },
         {
+            "tag": "🇷🇺RU | vless | @customv2ray | 11",
+            "type": "vless",
+            "server": "saint-petersburg-03.ptu.ink",
+            "server_port": 443,
+            "uuid": "aa3cdc67-e3f4-4032-99e9-7764a58d1e1b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.microsoft.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "p1GJYEqIFZG-usLS30mHcVXYwHZbSULCabixH2jWf0c",
+                    "short_id": "cbcb4abf4d75f0c4"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | vless | @v2rayNG_Matsuri | 0",
             "type": "vless",
             "server": "35.156.202.181",
@@ -1616,35 +1645,6 @@
             }
         },
         {
-            "tag": "🇷🇺RU | vless | @forwardv2ray | 5",
-            "type": "vless",
-            "server": "saint-petersburg-03.ptu.ink",
-            "server_port": 443,
-            "uuid": "aa3cdc67-e3f4-4032-99e9-7764a58d1e1b",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.microsoft.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "p1GJYEqIFZG-usLS30mHcVXYwHZbSULCabixH2jWf0c",
-                    "short_id": "cbcb4abf4d75f0c4"
-                }
-            }
-        },
-        {
             "tag": "🇩🇪DE | vless | @kiava | 0",
             "type": "vless",
             "server": "35.156.202.181",
@@ -2257,7 +2257,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @GozargahVPN | 5",
+            "tag": "🇩🇪DE | vless | @GozargahVPN | 6",
             "type": "vless",
             "server": "45.32.157.52",
             "server_port": 443,
@@ -2286,7 +2286,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @GozargahVPN | 6",
+            "tag": "🏳️XX | vless | @GozargahVPN | 7",
             "type": "vless",
             "server": "test.GozargahVPN.top",
             "server_port": 443,
