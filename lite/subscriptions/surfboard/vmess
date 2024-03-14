@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇳🇱NL | vmess | @oneclickvpnkeys | 8 = vmess, 188.114.97.3, 443, username = f584de15-2034-4170-a723-f48c2bae5e0f, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"afrhms16v.bestxray.buzz", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @ShadowProxy66 | 14 = vmess, 104.21.24.72, 80, username = 5120d7e0-5ba9-4164-b61b-0f8fefabab34, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"no1.xv2ray.net", skip-cert-verify = true, tfo = false
 🇺🇸US | vmess | @FAKEOFTVC | 3 = vmess, gcore.com, 80, username = dffbbc86-4360-4727-9b36-91625369f6ad, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"filimo-movie.ir", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | vmess | @oneclickvpnkeys | 8,🇨🇦CA | vmess | @ShadowProxy66 | 14,🇺🇸US | vmess | @FAKEOFTVC | 3
-URL-TEST = url-test,🇳🇱NL | vmess | @oneclickvpnkeys | 8,🇨🇦CA | vmess | @ShadowProxy66 | 14,🇺🇸US | vmess | @FAKEOFTVC | 3
-FALLBACK = fallback,🇳🇱NL | vmess | @oneclickvpnkeys | 8,🇨🇦CA | vmess | @ShadowProxy66 | 14,🇺🇸US | vmess | @FAKEOFTVC | 3
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @ShadowProxy66 | 14,🇺🇸US | vmess | @FAKEOFTVC | 3
+URL-TEST = url-test,🇨🇦CA | vmess | @ShadowProxy66 | 14,🇺🇸US | vmess | @FAKEOFTVC | 3
+FALLBACK = fallback,🇨🇦CA | vmess | @ShadowProxy66 | 14,🇺🇸US | vmess | @FAKEOFTVC | 3
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
