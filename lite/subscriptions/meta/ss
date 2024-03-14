@@ -120,27 +120,35 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇵🇱PL | ss | @DeamNet_Proxy | 19","type":"ss","server":"54.36.174.181","port":7306,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
   - {"name":"🇦🇺AU | ss | @OutlineVpnOfficial | 19","type":"ss","server":"170.64.188.248","port":61073,"password":"3kgL53ljUrCdKoSH","cipher":"aes-256-gcm"}
+  - {"name":"🏳️XX | ss | @forwardv2ray | 17","type":"ss","server":"[::ffff:346:8c3]","port":2082,"password":"A2VfPtE/trZG42E+4UNjVYaP/nXF9dJm8A7p49T+57c=","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇵🇱PL | ss | @DeamNet_Proxy | 19'
       - '🇦🇺AU | ss | @OutlineVpnOfficial | 19'
+      - '🏳️XX | ss | @forwardv2ray | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - '🇵🇱PL | ss | @DeamNet_Proxy | 19'
       - '🇦🇺AU | ss | @OutlineVpnOfficial | 19'
+      - '🏳️XX | ss | @forwardv2ray | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇵🇱PL | ss | @DeamNet_Proxy | 19'
       - '🇦🇺AU | ss | @OutlineVpnOfficial | 19'
+      - '🏳️XX | ss | @forwardv2ray | 17'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
