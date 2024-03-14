@@ -11,12 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | vmess | @DeamNet_Proxy | 18 = vmess, 172.67.170.13, 443, username = 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"glweidf.sbs", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @ShadowProxy66 | 14 = vmess, 104.21.24.72, 80, username = 5120d7e0-5ba9-4164-b61b-0f8fefabab34, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"no1.xv2ray.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | vmess | @DeamNet_Proxy | 18,🇨🇦CA | vmess | @ShadowProxy66 | 14
-URL-TEST = url-test,🇺🇸US | vmess | @DeamNet_Proxy | 18,🇨🇦CA | vmess | @ShadowProxy66 | 14
-FALLBACK = fallback,🇺🇸US | vmess | @DeamNet_Proxy | 18,🇨🇦CA | vmess | @ShadowProxy66 | 14
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @ShadowProxy66 | 14
+URL-TEST = url-test,🇨🇦CA | vmess | @ShadowProxy66 | 14
+FALLBACK = fallback,🇨🇦CA | vmess | @ShadowProxy66 | 14
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
