@@ -12,10 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇦CA | vmess | @ShadowProxy66 | 14 = vmess, 104.21.24.72, 80, username = 5120d7e0-5ba9-4164-b61b-0f8fefabab34, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"no1.xv2ray.net", skip-cert-verify = true, tfo = false
+🇨🇦CA | vmess | @Hope_Net | 1 = vmess, 162.159.11.32, 2052, username = 8e0fc6e0-1313-4767-b51c-5506680d534e, ws = true, tls = , vmess-aead = false, ws-path = /video/GQ2qE5Us9g, ws-headers = Host:"tw1bQiWSE4x.fzbqfrse.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @ShadowProxy66 | 14
-URL-TEST = url-test,🇨🇦CA | vmess | @ShadowProxy66 | 14
-FALLBACK = fallback,🇨🇦CA | vmess | @ShadowProxy66 | 14
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @ShadowProxy66 | 14,🇨🇦CA | vmess | @Hope_Net | 1
+URL-TEST = url-test,🇨🇦CA | vmess | @ShadowProxy66 | 14,🇨🇦CA | vmess | @Hope_Net | 1
+FALLBACK = fallback,🇨🇦CA | vmess | @ShadowProxy66 | 14,🇨🇦CA | vmess | @Hope_Net | 1
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
