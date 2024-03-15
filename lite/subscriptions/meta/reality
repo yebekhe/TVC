@@ -124,6 +124,7 @@ proxies:
   - {"name":"🇩🇪DE | vless | @ipV2Ray | 12","type":"vless","server":"128.140.123.50","port":443,"udp":true,"uuid":"731b6dc7-d0d8-4cc5-a0fb-058250ca94df","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.dsp-redirect.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"CxYGgMKpE4FPtRnJYMCviyk9j8bTQ6iRWWy1ZVvcICs","short-id":"c7be06f8"}}
   - {"name":"🇩🇪DE | vless | @fnet00 | 1","type":"vless","server":"91.107.199.96","port":443,"udp":true,"uuid":"731b6dc7-d0d8-4cc5-a0fb-058250ca94df","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"*.hetzner.com","grpc-opts":{"grpc-service-name":"@ipV2Ray"},"reality-opts":{"public-key":"lCzFlKDzMEcuz4bD0Dxj-Bx6qoZZoTU7f-OLZbP42CQ","short-id":"c7be06f8"}}
   - {"name":"🇩🇪DE | vless | @Capital_NET | 45","type":"vless","server":"four.felinetest.site","port":443,"udp":true,"uuid":"fbe02c0b-775f-4431-8615-a9497255c876","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"none.felinetest.site","flow":"xtls-rprx-vision","reality-opts":{"public-key":"fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs","short-id":"6f9deca7"}}
+  - {"name":"🏳️XX | vless | @forwardv2ray | 17","type":"vless","server":"salam.sharkv2r.com","port":2053,"udp":true,"uuid":"20c1dd2c-5352-4975-b71b-1ad5b5593417","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"zula.ir","reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"}}
   - {"name":"🇮🇷IR | vless | @TVCminer | 1","type":"vless","server":"xui24.meteorshoper.tech","port":8080,"udp":true,"uuid":"8561a52e-1c08-43d4-aa61-1e37bb0506f5","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"www.speedtest.net","reality-opts":{"public-key":"lONSKGopanXOWxNZMDZv4je6RVCjaiUhsMNjGXJH3C8","short-id":"137c0031"}}
 proxy-groups:
   - name: MANUAL
@@ -135,6 +136,7 @@ proxy-groups:
       - '🇩🇪DE | vless | @ipV2Ray | 12'
       - '🇩🇪DE | vless | @fnet00 | 1'
       - '🇩🇪DE | vless | @Capital_NET | 45'
+      - '🏳️XX | vless | @forwardv2ray | 17'
       - '🇮🇷IR | vless | @TVCminer | 1'
   - name: URL-TEST
     type: url-test
@@ -146,6 +148,7 @@ proxy-groups:
       - '🇩🇪DE | vless | @ipV2Ray | 12'
       - '🇩🇪DE | vless | @fnet00 | 1'
       - '🇩🇪DE | vless | @Capital_NET | 45'
+      - '🏳️XX | vless | @forwardv2ray | 17'
       - '🇮🇷IR | vless | @TVCminer | 1'
   - name: FALLBACK
     type: fallback
@@ -156,6 +159,7 @@ proxy-groups:
       - '🇩🇪DE | vless | @ipV2Ray | 12'
       - '🇩🇪DE | vless | @fnet00 | 1'
       - '🇩🇪DE | vless | @Capital_NET | 45'
+      - '🏳️XX | vless | @forwardv2ray | 17'
       - '🇮🇷IR | vless | @TVCminer | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
