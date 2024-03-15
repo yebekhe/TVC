@@ -108,9 +108,9 @@
                 "URL-TEST",
                 "🇩🇪DE | vless | @NIM_VPN_ir | 5",
                 "🇩🇪DE | vless | @ipV2Ray | 12",
+                "🇹🇷TR | vless | @vless_vmess | 1",
                 "🇩🇪DE | vless | @fnet00 | 1",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🏳️XX | vless | @forwardv2ray | 17",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @TVCminer | 1"
             ]
@@ -121,9 +121,9 @@
             "outbounds": [
                 "🇩🇪DE | vless | @NIM_VPN_ir | 5",
                 "🇩🇪DE | vless | @ipV2Ray | 12",
+                "🇹🇷TR | vless | @vless_vmess | 1",
                 "🇩🇪DE | vless | @fnet00 | 1",
                 "🇩🇪DE | vless | @Capital_NET | 45",
-                "🏳️XX | vless | @forwardv2ray | 17",
                 "🏳️XX | vless | @vpn_go67 | 23",
                 "🇮🇷IR | vless | @TVCminer | 1"
             ],
@@ -213,6 +213,35 @@
             }
         },
         {
+            "tag": "🇹🇷TR | vless | @vless_vmess | 1",
+            "type": "vless",
+            "server": "turkey-01.ptu.ink",
+            "server_port": 443,
+            "uuid": "8633c34c-573a-4e2c-b3bf-1b6ea42101f0",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.microsoft.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "zGp41QGUA2TBVirEaFS34_n05w38JxQHKbqQxS-iHzM",
+                    "short_id": "cd2ccdd9761335d4"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | vless | @fnet00 | 1",
             "type": "vless",
             "server": "91.107.199.96",
@@ -274,35 +303,6 @@
                     "enabled": true,
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
-                }
-            }
-        },
-        {
-            "tag": "🏳️XX | vless | @forwardv2ray | 17",
-            "type": "vless",
-            "server": "salam.sharkv2r.com",
-            "server_port": 2053,
-            "uuid": "20c1dd2c-5352-4975-b71b-1ad5b5593417",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "zula.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-                    "short_id": ""
                 }
             }
         },
