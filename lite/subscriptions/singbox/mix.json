@@ -106,20 +106,22 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇪IE | trojan | @PrivateVPNs | 16",
-                "🇬🇧GB | trojan | @DirectVPN | 16",
+                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇬🇧GB | trojan | @DirectVPN | 18",
                 "🇦🇪AE | ss | @DeamNet_Proxy | 14",
-                "🇨🇦CA | ss | @OutlineVpnOfficial | 19"
+                "🇨🇦CA | ss | @OutlineVpnOfficial | 19",
+                "🇬🇧GB | ss | @forwardv2ray | 19"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇪IE | trojan | @PrivateVPNs | 16",
-                "🇬🇧GB | trojan | @DirectVPN | 16",
+                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇬🇧GB | trojan | @DirectVPN | 18",
                 "🇦🇪AE | ss | @DeamNet_Proxy | 14",
-                "🇨🇦CA | ss | @OutlineVpnOfficial | 19"
+                "🇨🇦CA | ss | @OutlineVpnOfficial | 19",
+                "🇬🇧GB | ss | @forwardv2ray | 19"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,7 +144,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 16",
+            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 18",
             "type": "trojan",
             "server": "54.216.78.69",
             "server_port": 22222,
@@ -164,7 +166,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | trojan | @DirectVPN | 16",
+            "tag": "🇬🇧GB | trojan | @DirectVPN | 18",
             "type": "trojan",
             "server": "18.169.30.21",
             "server_port": 22222,
@@ -202,6 +204,16 @@
             "server_port": 804,
             "method": "chacha20-ietf-poly1305",
             "password": "G!yBwPWH3Vao",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇬🇧GB | ss | @forwardv2ray | 19",
+            "type": "shadowsocks",
+            "server": "series-a2-mec.samanehha.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "u17T3BvpYaaiuW2c",
             "plugin": "",
             "plugin_opts": ""
         }
