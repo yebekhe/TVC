@@ -189,22 +189,21 @@
                 "🇫🇮FI | ss | @OutlineVpnOfficial | 14",
                 "🇪🇸ES | ss | @OutlineVpnOfficial | 15",
                 "🇪🇪EE | ss | @OutlineVpnOfficial | 16",
-                "🇨🇾CY | ss | @OutlineVpnOfficial | 18",
-                "🇨🇦CA | ss | @OutlineVpnOfficial | 19",
                 "🇺🇸US | vless | @v2rayng_config_amin | 1",
                 "🇳🇱NL | vless | @Capital_NET | 8",
                 "🇳🇱NL | vless | @Capital_NET | 18",
                 "🇳🇱NL | vless | @Capital_NET | 20",
                 "🏳️XX | vless | @Capital_NET | 24",
+                "inbox&type=tcp&flow=xtls-rprx-vision&sni=mail.google.com&sid=3a07dc6f#🇩🇪DE | vless | @forwardv2ray | 4",
+                "🇨🇭CH | ss | @forwardv2ray | 13",
+                "🇹🇷TR | ss | @forwardv2ray | 17",
                 "🇩🇪DE | vless | @GozargahVPN | 7",
                 "🏳️XX | vless | @GozargahVPN | 8",
                 "🇬🇧GB | ss | @ROMAX_VPN | 3",
-                "🇨🇭CH | ss | @ROMAX_VPN | 6",
-                "🇹🇷TR | ss | @ROMAX_VPN | 7",
                 "🇹🇷TR | ss | @ROMAX_VPN | 8",
                 "🇺🇸US | vless | @TVCminer | 0",
                 "🇺🇸US | vless | @TVCminer | 4",
-                "🇨🇦CA | vless | @TVCminer | 5"
+                "🇺🇸US | vless | @TVCminer | 5"
             ]
         },
         {
@@ -294,22 +293,21 @@
                 "🇫🇮FI | ss | @OutlineVpnOfficial | 14",
                 "🇪🇸ES | ss | @OutlineVpnOfficial | 15",
                 "🇪🇪EE | ss | @OutlineVpnOfficial | 16",
-                "🇨🇾CY | ss | @OutlineVpnOfficial | 18",
-                "🇨🇦CA | ss | @OutlineVpnOfficial | 19",
                 "🇺🇸US | vless | @v2rayng_config_amin | 1",
                 "🇳🇱NL | vless | @Capital_NET | 8",
                 "🇳🇱NL | vless | @Capital_NET | 18",
                 "🇳🇱NL | vless | @Capital_NET | 20",
                 "🏳️XX | vless | @Capital_NET | 24",
+                "inbox&type=tcp&flow=xtls-rprx-vision&sni=mail.google.com&sid=3a07dc6f#🇩🇪DE | vless | @forwardv2ray | 4",
+                "🇨🇭CH | ss | @forwardv2ray | 13",
+                "🇹🇷TR | ss | @forwardv2ray | 17",
                 "🇩🇪DE | vless | @GozargahVPN | 7",
                 "🏳️XX | vless | @GozargahVPN | 8",
                 "🇬🇧GB | ss | @ROMAX_VPN | 3",
-                "🇨🇭CH | ss | @ROMAX_VPN | 6",
-                "🇹🇷TR | ss | @ROMAX_VPN | 7",
                 "🇹🇷TR | ss | @ROMAX_VPN | 8",
                 "🇺🇸US | vless | @TVCminer | 0",
                 "🇺🇸US | vless | @TVCminer | 4",
-                "🇨🇦CA | vless | @TVCminer | 5"
+                "🇺🇸US | vless | @TVCminer | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -2099,26 +2097,6 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇾CY | ss | @OutlineVpnOfficial | 18",
-            "type": "shadowsocks",
-            "server": "85.239.40.69",
-            "server_port": 21205,
-            "method": "aes-256-gcm",
-            "password": "P84jEsm2JGaOIpEv",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇨🇦CA | ss | @OutlineVpnOfficial | 19",
-            "type": "shadowsocks",
-            "server": "134.195.196.178",
-            "server_port": 804,
-            "method": "chacha20-ietf-poly1305",
-            "password": "G!yBwPWH3Vao",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
             "tag": "🇺🇸US | vless | @v2rayng_config_amin | 1",
             "type": "vless",
             "server": "mtn--join.outline-vpn.cloud",
@@ -2266,6 +2244,55 @@
             }
         },
         {
+            "tag": "inbox&type=tcp&flow=xtls-rprx-vision&sni=mail.google.com&sid=3a07dc6f#🇩🇪DE | vless | @forwardv2ray | 4",
+            "type": "vless",
+            "server": "3.76.82.84",
+            "server_port": 2082,
+            "uuid": "527a5f50-dd61-46b8-b87f-93b6fbf85322",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "3.76.82.84",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Yx9mjMxSVMEjVd_m9_A-bXz4n_KyjRVooeUQ-DvNYno",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇨🇭CH | ss | @forwardv2ray | 13",
+            "type": "shadowsocks",
+            "server": "94.131.3.55",
+            "server_port": 46583,
+            "method": "chacha20-ietf-poly1305",
+            "password": "a8VeVNKbNeON2XL6PHCxdW",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇹🇷TR | ss | @forwardv2ray | 17",
+            "type": "shadowsocks",
+            "server": "45.89.52.197",
+            "server_port": 32058,
+            "method": "chacha20-ietf-poly1305",
+            "password": "Fgltbpm6cD9eHSFhKI6maC",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇩🇪DE | vless | @GozargahVPN | 7",
             "type": "vless",
             "server": "45.32.157.52",
@@ -2330,26 +2357,6 @@
             "server_port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "W74XFALLLuw6m5IA",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇨🇭CH | ss | @ROMAX_VPN | 6",
-            "type": "shadowsocks",
-            "server": "94.131.3.55",
-            "server_port": 46583,
-            "method": "chacha20-ietf-poly1305",
-            "password": "a8VeVNKbNeON2XL6PHCxdW",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇹🇷TR | ss | @ROMAX_VPN | 7",
-            "type": "shadowsocks",
-            "server": "45.89.52.197",
-            "server_port": 32058,
-            "method": "chacha20-ietf-poly1305",
-            "password": "Fgltbpm6cD9eHSFhKI6maC",
             "plugin": "",
             "plugin_opts": ""
         },
@@ -2426,7 +2433,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @TVCminer | 5",
+            "tag": "🇺🇸US | vless | @TVCminer | 5",
             "type": "vless",
             "server": "steel.footballlovernews.com",
             "server_port": 443,
