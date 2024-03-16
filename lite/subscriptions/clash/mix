@@ -118,10 +118,11 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇩🇪DE | trojan | @PrivateVPNs | 18","type":"trojan","server":"18.153.122.13","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇬🇧GB | trojan | @DirectVPN | 18","type":"trojan","server":"18.171.85.178","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇩🇪DE | trojan | @PrivateVPNs | 18","type":"trojan","server":"3.126.31.200","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇨🇦CA | trojan | @DirectVPN | 18","type":"trojan","server":"99.79.114.130","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇦🇪AE | ss | @DeamNet_Proxy | 14","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇨🇦CA | ss | @OutlineVpnOfficial | 19","type":"ss","server":"134.195.196.178","port":804,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇩🇪DE | ss | @forwardv2ray | 19","type":"ss","server":"3.77.155.174","port":2082,"password":"lbQ1lEmO8jVwoi6bgeKng7I8WVxR5h8bRRtzq4nwi/U=","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,9 +130,10 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | trojan | @PrivateVPNs | 18'
-      - '🇬🇧GB | trojan | @DirectVPN | 18'
+      - '🇨🇦CA | trojan | @DirectVPN | 18'
       - '🇦🇪AE | ss | @DeamNet_Proxy | 14'
       - '🇨🇦CA | ss | @OutlineVpnOfficial | 19'
+      - '🇩🇪DE | ss | @forwardv2ray | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -139,18 +141,20 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | trojan | @PrivateVPNs | 18'
-      - '🇬🇧GB | trojan | @DirectVPN | 18'
+      - '🇨🇦CA | trojan | @DirectVPN | 18'
       - '🇦🇪AE | ss | @DeamNet_Proxy | 14'
       - '🇨🇦CA | ss | @OutlineVpnOfficial | 19'
+      - '🇩🇪DE | ss | @forwardv2ray | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇩🇪DE | trojan | @PrivateVPNs | 18'
-      - '🇬🇧GB | trojan | @DirectVPN | 18'
+      - '🇨🇦CA | trojan | @DirectVPN | 18'
       - '🇦🇪AE | ss | @DeamNet_Proxy | 14'
       - '🇨🇦CA | ss | @OutlineVpnOfficial | 19'
+      - '🇩🇪DE | ss | @forwardv2ray | 19'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve

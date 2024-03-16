@@ -120,10 +120,12 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇩🇪DE | trojan | @PrivateVPNs | 18","type":"trojan","server":"18.153.122.13","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
-  - {"name":"🇬🇧GB | trojan | @DirectVPN | 18","type":"trojan","server":"18.171.85.178","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇩🇪DE | trojan | @PrivateVPNs | 18","type":"trojan","server":"3.126.31.200","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇨🇦CA | trojan | @DirectVPN | 18","type":"trojan","server":"99.79.114.130","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇦🇪AE | ss | @DeamNet_Proxy | 14","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇹🇷TR | vless | @DailyV2RY | 145","type":"vless","server":"turkey-01.ptu.ink","port":443,"udp":true,"uuid":"8633c34c-573a-4e2c-b3bf-1b6ea42101f0","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"www.microsoft.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"zGp41QGUA2TBVirEaFS34_n05w38JxQHKbqQxS-iHzM","short-id":"cd2ccdd9761335d4"}}
   - {"name":"🇨🇦CA | ss | @OutlineVpnOfficial | 19","type":"ss","server":"134.195.196.178","port":804,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇩🇪DE | ss | @forwardv2ray | 19","type":"ss","server":"3.77.155.174","port":2082,"password":"lbQ1lEmO8jVwoi6bgeKng7I8WVxR5h8bRRtzq4nwi/U=","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇨🇦CA | vless | @TVCminer | 5","type":"vless","server":"steel.footballlovernews.com","port":443,"udp":false,"uuid":"ec880e3c-2817-4b89-9887-ccc1fb7e3a52","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"steel.footballlovernews.com","ws-opts":{"path":"/steel"}}
 proxy-groups:
   - name: MANUAL
@@ -132,9 +134,11 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | trojan | @PrivateVPNs | 18'
-      - '🇬🇧GB | trojan | @DirectVPN | 18'
+      - '🇨🇦CA | trojan | @DirectVPN | 18'
       - '🇦🇪AE | ss | @DeamNet_Proxy | 14'
+      - '🇹🇷TR | vless | @DailyV2RY | 145'
       - '🇨🇦CA | ss | @OutlineVpnOfficial | 19'
+      - '🇩🇪DE | ss | @forwardv2ray | 19'
       - '🇨🇦CA | vless | @TVCminer | 5'
   - name: URL-TEST
     type: url-test
@@ -143,9 +147,11 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | trojan | @PrivateVPNs | 18'
-      - '🇬🇧GB | trojan | @DirectVPN | 18'
+      - '🇨🇦CA | trojan | @DirectVPN | 18'
       - '🇦🇪AE | ss | @DeamNet_Proxy | 14'
+      - '🇹🇷TR | vless | @DailyV2RY | 145'
       - '🇨🇦CA | ss | @OutlineVpnOfficial | 19'
+      - '🇩🇪DE | ss | @forwardv2ray | 19'
       - '🇨🇦CA | vless | @TVCminer | 5'
   - name: FALLBACK
     type: fallback
@@ -153,9 +159,11 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇩🇪DE | trojan | @PrivateVPNs | 18'
-      - '🇬🇧GB | trojan | @DirectVPN | 18'
+      - '🇨🇦CA | trojan | @DirectVPN | 18'
       - '🇦🇪AE | ss | @DeamNet_Proxy | 14'
+      - '🇹🇷TR | vless | @DailyV2RY | 145'
       - '🇨🇦CA | ss | @OutlineVpnOfficial | 19'
+      - '🇩🇪DE | ss | @forwardv2ray | 19'
       - '🇨🇦CA | vless | @TVCminer | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
