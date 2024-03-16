@@ -107,9 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | vless | @VPNCUSTOMIZE | 24",
-                "🇮🇪IE | trojan | @PrivateVPNs | 17",
-                "🇺🇸US | trojan | @DirectVPN | 17",
-                "🇦🇪AE | ss | @DeamNet_Proxy | 14",
+                "🇸🇪SE | trojan | @PrivateVPNs | 17",
+                "🇸🇪SE | trojan | @DirectVPN | 17",
                 "🇹🇷TR | vless | @DailyV2RY | 152",
                 "🇪🇪EE | ss | @OutlineVpnOfficial | 17",
                 "🇨🇦CA | vless | @TVCminer | 5"
@@ -120,9 +119,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | vless | @VPNCUSTOMIZE | 24",
-                "🇮🇪IE | trojan | @PrivateVPNs | 17",
-                "🇺🇸US | trojan | @DirectVPN | 17",
-                "🇦🇪AE | ss | @DeamNet_Proxy | 14",
+                "🇸🇪SE | trojan | @PrivateVPNs | 17",
+                "🇸🇪SE | trojan | @DirectVPN | 17",
                 "🇹🇷TR | vless | @DailyV2RY | 152",
                 "🇪🇪EE | ss | @OutlineVpnOfficial | 17",
                 "🇨🇦CA | vless | @TVCminer | 5"
@@ -172,33 +170,11 @@
             }
         },
         {
-            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 17",
+            "tag": "🇸🇪SE | trojan | @PrivateVPNs | 17",
             "type": "trojan",
-            "server": "99.81.36.133",
+            "server": "13.50.183.153",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.miwan.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | trojan | @DirectVPN | 17",
-            "type": "trojan",
-            "server": "54.201.59.59",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -216,14 +192,26 @@
             }
         },
         {
-            "tag": "🇦🇪AE | ss | @DeamNet_Proxy | 14",
-            "type": "shadowsocks",
-            "server": "series-a1.samanehha.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "W74XFALLLuw6m5IA",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇸🇪SE | trojan | @DirectVPN | 17",
+            "type": "trojan",
+            "server": "16.171.103.25",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
             "tag": "🇹🇷TR | vless | @DailyV2RY | 152",
