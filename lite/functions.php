@@ -82,6 +82,24 @@ function is_valid($input)
     return true;
 }
 
+function isEncrypted($input) {
+    $decodedConfig = configParse($input);
+    $configType = detect_type($input);
+
+    if ($configType === "vmess" && $decodedConfig['tls'] === "tls") {
+        return true;
+    } elseif (in_array($configType, ["vless", "trojan"]) && $decodedConfig['params']['security'] === "tls") {
+        return true;
+    } elseif ($configType === "ss") {
+        return true;
+    } elseif ($configType === "tuic" && $decodedConfig['params']['allow_insecure'] === 0) {
+        return true;
+    } elseif ($configType === "hy2" && $decodedConfig['params']['insecure'] === 0) {
+        return true;
+    }
+    return false;
+}
+
 function getFlags($country_code)
 {
     $flag = mb_convert_encoding(
