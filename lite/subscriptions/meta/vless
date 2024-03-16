@@ -120,7 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇹🇷TR | vless | @DailyV2RY | 145","type":"vless","server":"turkey-01.ptu.ink","port":443,"udp":true,"uuid":"8633c34c-573a-4e2c-b3bf-1b6ea42101f0","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"www.microsoft.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"zGp41QGUA2TBVirEaFS34_n05w38JxQHKbqQxS-iHzM","short-id":"cd2ccdd9761335d4"}}
+  - {"name":"🇹🇷TR | vless | @DailyV2RY | 152","type":"vless","server":"turkey-01.ptu.ink","port":443,"udp":true,"uuid":"8633c34c-573a-4e2c-b3bf-1b6ea42101f0","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"www.microsoft.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"zGp41QGUA2TBVirEaFS34_n05w38JxQHKbqQxS-iHzM","short-id":"cd2ccdd9761335d4"}}
   - {"name":"🇨🇦CA | vless | @TVCminer | 5","type":"vless","server":"steel.footballlovernews.com","port":443,"udp":false,"uuid":"ec880e3c-2817-4b89-9887-ccc1fb7e3a52","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"steel.footballlovernews.com","ws-opts":{"path":"/steel"}}
 proxy-groups:
   - name: MANUAL
@@ -128,7 +128,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇹🇷TR | vless | @DailyV2RY | 145'
+      - '🇹🇷TR | vless | @DailyV2RY | 152'
       - '🇨🇦CA | vless | @TVCminer | 5'
   - name: URL-TEST
     type: url-test
@@ -136,14 +136,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇹🇷TR | vless | @DailyV2RY | 145'
+      - '🇹🇷TR | vless | @DailyV2RY | 152'
       - '🇨🇦CA | vless | @TVCminer | 5'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇹🇷TR | vless | @DailyV2RY | 145'
+      - '🇹🇷TR | vless | @DailyV2RY | 152'
       - '🇨🇦CA | vless | @TVCminer | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
