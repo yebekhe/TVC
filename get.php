@@ -77,7 +77,7 @@ foreach ($configsList as $source => $configs) {
     echo "\n" . strval($tempSource) . "/" . strval($totalSources) . "\n";
 
     // Loop through each config in the configs array
-    $limitKey = count($configs) - 15;
+    $limitKey = count($configs) - 20;
     foreach (array_reverse($configs) as $key => $config) {
         // Calculate the percentage complete
         $percentage = ($tempCounter / $totalConfigs) * 100;
@@ -90,7 +90,7 @@ foreach ($configsList as $source => $configs) {
         $tempCounter++;
 
         // If the config is valid and the key is less than or equal to 15
-        if (is_valid($config) && $key >= $limitKey) {
+        if (is_valid($config) && isEncrypted($config) && $key >= $limitKey) {
             $type = detect_type($config);
             $configHash = $configsHash[$type];
             $configIp = $configsIp[$type];
