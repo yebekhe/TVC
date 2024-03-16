@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | vless | @VPNCUSTOMIZE | 24",
                 "🇹🇷TR | vless | @DailyV2RY | 152",
                 "🇨🇦CA | vless | @TVCminer | 5"
             ]
@@ -115,7 +114,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | vless | @VPNCUSTOMIZE | 24",
                 "🇹🇷TR | vless | @DailyV2RY | 152",
                 "🇨🇦CA | vless | @TVCminer | 5"
             ],
@@ -138,30 +136,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | vless | @VPNCUSTOMIZE | 24",
-            "type": "vless",
-            "server": "54.37.76.9",
-            "server_port": 443,
-            "uuid": "VPNCUSTOMIZE-TMCUSTOMIZE",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdn.kellekcollection.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
         },
         {
             "tag": "🇹🇷TR | vless | @DailyV2RY | 152",
