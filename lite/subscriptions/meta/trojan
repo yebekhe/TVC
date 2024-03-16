@@ -122,6 +122,7 @@ dns:
 proxies:
   - {"name":"🇩🇪DE | trojan | @PrivateVPNs | 17","type":"trojan","server":"18.157.126.35","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | trojan | @DirectVPN | 17","type":"trojan","server":"13.50.83.42","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇨🇦CA | trojan | @proxyymeliii | 19","type":"trojan","server":"flixeon.me","port":443,"udp":false,"password":"52701795-3c3b-46b4-b7cf-c5978b3a4cf2","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"hdfyc1.achaemenidempireofpersia.uk"}
   - {"name":"🇨🇦CA | trojan | @kingofilter | 9","type":"trojan","server":"104.16.123.175","port":2083,"udp":false,"password":"qG9K8AGnn9XH5jUqeFu96g","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cdn13.cdn2cdn.com"}
 proxy-groups:
   - name: MANUAL
@@ -131,6 +132,7 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | trojan | @PrivateVPNs | 17'
       - '🇸🇪SE | trojan | @DirectVPN | 17'
+      - '🇨🇦CA | trojan | @proxyymeliii | 19'
       - '🇨🇦CA | trojan | @kingofilter | 9'
   - name: URL-TEST
     type: url-test
@@ -140,6 +142,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | trojan | @PrivateVPNs | 17'
       - '🇸🇪SE | trojan | @DirectVPN | 17'
+      - '🇨🇦CA | trojan | @proxyymeliii | 19'
       - '🇨🇦CA | trojan | @kingofilter | 9'
   - name: FALLBACK
     type: fallback
@@ -148,6 +151,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | trojan | @PrivateVPNs | 17'
       - '🇸🇪SE | trojan | @DirectVPN | 17'
+      - '🇨🇦CA | trojan | @proxyymeliii | 19'
       - '🇨🇦CA | trojan | @kingofilter | 9'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
