@@ -106,22 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇬🇧GB | vless | @VPNCUSTOMIZE | 24",
+                "🇸🇪SE | trojan | @PrivateVPNs | 18",
                 "🇬🇧GB | trojan | @DirectVPN | 18",
                 "🇦🇪AE | ss | @DeamNet_Proxy | 14",
                 "🇨🇦CA | ss | @OutlineVpnOfficial | 19",
-                "🇬🇧GB | ss | @forwardv2ray | 19"
+                "🇨🇦CA | vless | @TVCminer | 5"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇬🇧GB | vless | @VPNCUSTOMIZE | 24",
+                "🇸🇪SE | trojan | @PrivateVPNs | 18",
                 "🇬🇧GB | trojan | @DirectVPN | 18",
                 "🇦🇪AE | ss | @DeamNet_Proxy | 14",
                 "🇨🇦CA | ss | @OutlineVpnOfficial | 19",
-                "🇬🇧GB | ss | @forwardv2ray | 19"
+                "🇨🇦CA | vless | @TVCminer | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -144,9 +146,33 @@
             "type": "dns"
         },
         {
-            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 18",
+            "tag": "🇬🇧GB | vless | @VPNCUSTOMIZE | 24",
+            "type": "vless",
+            "server": "57.128.163.215",
+            "server_port": 443,
+            "uuid": "93be551e-5445-45ad-857c-f07a93f95cac",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ns5.kellekcollection.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | trojan | @PrivateVPNs | 18",
             "type": "trojan",
-            "server": "54.216.78.69",
+            "server": "16.171.164.143",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -156,7 +182,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
+                "server_name": "trojan.miwan.co.uk",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -208,14 +234,35 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇬🇧GB | ss | @forwardv2ray | 19",
-            "type": "shadowsocks",
-            "server": "series-a2-mec.samanehha.co",
+            "tag": "🇨🇦CA | vless | @TVCminer | 5",
+            "type": "vless",
+            "server": "steel.footballlovernews.com",
             "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "u17T3BvpYaaiuW2c",
-            "plugin": "",
-            "plugin_opts": ""
+            "uuid": "ec880e3c-2817-4b89-9887-ccc1fb7e3a52",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "steel.footballlovernews.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/steel",
+                "headers": {
+                    "Host": "steel.footballlovernews.com"
+                }
+            }
         }
     ],
     "route": {
