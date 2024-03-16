@@ -88,13 +88,13 @@ function isEncrypted($input) {
 
     if ($configType === "vmess" && $decodedConfig['tls'] === "tls") {
         return true;
-    } elseif (in_array($configType, ["vless", "trojan"]) && $decodedConfig['params']['security'] === "tls") {
+    } elseif (in_array($configType, ["vless", "trojan"]) && !empty($decodedConfig['params']['security']) && $decodedConfig['params']['security'] !== "none") {
         return true;
     } elseif ($configType === "ss") {
         return true;
-    } elseif ($configType === "tuic" && $decodedConfig['params']['allow_insecure'] === 0) {
+    } elseif ($configType === "tuic" && $decodedConfig['params']['allow_insecure'] === "0" && !empty($decodedConfig['params']['allow_insecure'])) {
         return true;
-    } elseif ($configType === "hy2" && $decodedConfig['params']['insecure'] === 0) {
+    } elseif ($configType === "hy2" && $decodedConfig['params']['insecure'] === "0" && !empty($decodedConfig['params']['insecure'])) {
         return true;
     }
     return false;
