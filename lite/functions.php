@@ -86,7 +86,7 @@ function isEncrypted($input) {
     $decodedConfig = configParse($input);
     $configType = detect_type($input);
 
-    if ($configType === "vmess" && $decodedConfig['tls'] === "tls") {
+    if ($configType === "vmess" && $decodedConfig['tls'] !== "" && $decodedConfig['scy'] !== "none") {
         return true;
     } elseif (in_array($configType, ["vless", "trojan"]) && !empty($decodedConfig['params']['security']) && $decodedConfig['params']['security'] !== "none") {
         return true;
