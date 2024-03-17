@@ -125,7 +125,6 @@ proxies:
   - {"name":"🇫🇷FR | vmess | @proxystore11 | 9","type":"vmess","server":"46.226.166.88","port":"5042","cipher":"auto","uuid":"2525600f-c794-4517-acc7-13ac608a596e","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇸🇬SG | vmess | @yaney_01 | 2","type":"vmess","server":"8.222.154.110","port":"57035","cipher":"auto","uuid":"25ffd892-0ebf-4e29-98c5-dfba88fd714c","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇵🇱PL | vmess | @v2Line | 7","type":"vmess","server":"pl2-vmess.sshmax.xyz","port":"80","cipher":"auto","uuid":"18c6b542-e6f8-4476-872a-d3955f45d9f0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"pl2-vmess.sshmax.xyz"}}}
-  - {"name":"🇺🇸US | vmess | @forwardv2ray | 17","type":"vmess","server":"mahilu.site","port":"2052","cipher":"auto","uuid":"7a737f41-b792-4260-94ff-3d864da67b80","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mahilu.site"}}}
   - {"name":"🇺🇸US | vmess | @eliya_chiter0 | 0","type":"vmess","server":"zula.ir","port":"443","cipher":"auto","uuid":"36ae64b0-2fe1-4915-a50e-9108fcf6d84c","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"be3-vmess.sshmax.xyz"}}}
 proxy-groups:
   - name: MANUAL
@@ -138,7 +137,6 @@ proxy-groups:
       - '🇫🇷FR | vmess | @proxystore11 | 9'
       - '🇸🇬SG | vmess | @yaney_01 | 2'
       - '🇵🇱PL | vmess | @v2Line | 7'
-      - '🇺🇸US | vmess | @forwardv2ray | 17'
       - '🇺🇸US | vmess | @eliya_chiter0 | 0'
   - name: URL-TEST
     type: url-test
@@ -151,7 +149,6 @@ proxy-groups:
       - '🇫🇷FR | vmess | @proxystore11 | 9'
       - '🇸🇬SG | vmess | @yaney_01 | 2'
       - '🇵🇱PL | vmess | @v2Line | 7'
-      - '🇺🇸US | vmess | @forwardv2ray | 17'
       - '🇺🇸US | vmess | @eliya_chiter0 | 0'
   - name: FALLBACK
     type: fallback
@@ -163,7 +160,6 @@ proxy-groups:
       - '🇫🇷FR | vmess | @proxystore11 | 9'
       - '🇸🇬SG | vmess | @yaney_01 | 2'
       - '🇵🇱PL | vmess | @v2Line | 7'
-      - '🇺🇸US | vmess | @forwardv2ray | 17'
       - '🇺🇸US | vmess | @eliya_chiter0 | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
