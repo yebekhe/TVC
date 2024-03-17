@@ -120,11 +120,11 @@ dns:
 proxies:
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇳CN | vmess | @mftizi | 18","type":"vmess","server":"101.89.154.94","port":"19979","cipher":"auto","uuid":"941f470e-34e8-3bb0-9b1e-b2c0b4fdb212","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/db00","headers":{"host":"cache-hk-2.cn-db.top"}}}
-  - {"name":"🇸🇬SG | vmess | @V2rayng_Fast | 0","type":"vmess","server":"146.190.87.238","port":"19193","cipher":"auto","uuid":"0f94fdae-5653-4314-9c92-e57e5ec55513","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ow","headers":{"host":""}}}
   - {"name":"🇫🇷FR | vmess | @proxystore11 | 9","type":"vmess","server":"46.226.166.88","port":"5042","cipher":"auto","uuid":"2525600f-c794-4517-acc7-13ac608a596e","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇸🇬SG | vmess | @yaney_01 | 2","type":"vmess","server":"8.222.154.110","port":"57035","cipher":"auto","uuid":"25ffd892-0ebf-4e29-98c5-dfba88fd714c","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇵🇱PL | vmess | @v2Line | 7","type":"vmess","server":"pl2-vmess.sshmax.xyz","port":"80","cipher":"auto","uuid":"18c6b542-e6f8-4476-872a-d3955f45d9f0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"pl2-vmess.sshmax.xyz"}}}
-  - {"name":"🇨🇦CA | vmess | @eliya_chiter0 | 0","type":"vmess","server":"zula.ir","port":"443","cipher":"auto","uuid":"36ae64b0-2fe1-4915-a50e-9108fcf6d84c","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"be3-vmess.sshmax.xyz"}}}
+  - {"name":"🇺🇸US | vmess | @forwardv2ray | 17","type":"vmess","server":"mahilu.site","port":"2052","cipher":"auto","uuid":"7a737f41-b792-4260-94ff-3d864da67b80","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mahilu.site"}}}
+  - {"name":"🇺🇸US | vmess | @eliya_chiter0 | 0","type":"vmess","server":"zula.ir","port":"443","cipher":"auto","uuid":"36ae64b0-2fe1-4915-a50e-9108fcf6d84c","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"be3-vmess.sshmax.xyz"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -133,11 +133,11 @@ proxy-groups:
       - FALLBACK
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | vmess | @mftizi | 18'
-      - '🇸🇬SG | vmess | @V2rayng_Fast | 0'
       - '🇫🇷FR | vmess | @proxystore11 | 9'
       - '🇸🇬SG | vmess | @yaney_01 | 2'
       - '🇵🇱PL | vmess | @v2Line | 7'
-      - '🇨🇦CA | vmess | @eliya_chiter0 | 0'
+      - '🇺🇸US | vmess | @forwardv2ray | 17'
+      - '🇺🇸US | vmess | @eliya_chiter0 | 0'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -146,11 +146,11 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | vmess | @mftizi | 18'
-      - '🇸🇬SG | vmess | @V2rayng_Fast | 0'
       - '🇫🇷FR | vmess | @proxystore11 | 9'
       - '🇸🇬SG | vmess | @yaney_01 | 2'
       - '🇵🇱PL | vmess | @v2Line | 7'
-      - '🇨🇦CA | vmess | @eliya_chiter0 | 0'
+      - '🇺🇸US | vmess | @forwardv2ray | 17'
+      - '🇺🇸US | vmess | @eliya_chiter0 | 0'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -158,11 +158,11 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | vmess | @mftizi | 18'
-      - '🇸🇬SG | vmess | @V2rayng_Fast | 0'
       - '🇫🇷FR | vmess | @proxystore11 | 9'
       - '🇸🇬SG | vmess | @yaney_01 | 2'
       - '🇵🇱PL | vmess | @v2Line | 7'
-      - '🇨🇦CA | vmess | @eliya_chiter0 | 0'
+      - '🇺🇸US | vmess | @forwardv2ray | 17'
+      - '🇺🇸US | vmess | @eliya_chiter0 | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
