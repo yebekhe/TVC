@@ -106,16 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇹🇷TR | vless | @DailyV2RY | 152",
-                "🇨🇦CA | vless | @TVCminer | 5"
+                "🇺🇸US | vless | @TVCminer | 5"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇹🇷TR | vless | @DailyV2RY | 152",
-                "🇨🇦CA | vless | @TVCminer | 5"
+                "🇺🇸US | vless | @TVCminer | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,36 +136,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇹🇷TR | vless | @DailyV2RY | 152",
-            "type": "vless",
-            "server": "turkey-01.ptu.ink",
-            "server_port": 443,
-            "uuid": "8633c34c-573a-4e2c-b3bf-1b6ea42101f0",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.microsoft.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "zGp41QGUA2TBVirEaFS34_n05w38JxQHKbqQxS-iHzM",
-                    "short_id": "cd2ccdd9761335d4"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vless | @TVCminer | 5",
+            "tag": "🇺🇸US | vless | @TVCminer | 5",
             "type": "vless",
             "server": "steel.footballlovernews.com",
             "server_port": 443,
