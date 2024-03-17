@@ -14,11 +14,10 @@ DIRECT = direct
 🇩🇪DE | trojan | @PrivateVPNs | 17 = trojan, 35.157.75.13, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇩🇪DE | trojan | @DirectVPN | 17 = trojan, 3.66.149.146, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇪🇪EE | ss | @OutlineVpnOfficial | 17 = ss, 193.228.128.143, 27981, encrypt-method = chacha20-ietf-poly1305, password = pg6G3tuVQllmcS7zCo5Fce
-🏳️XX | trojan | @forwardv2ray | 18 = trojan, 127.0.0.1, 8080, password = ccbbaaa-aabc-acba-bcad-cabbabacaccb, udp-delay = true, skip-cert-verify = false, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | trojan | @PrivateVPNs | 17,🇩🇪DE | trojan | @DirectVPN | 17,🇪🇪EE | ss | @OutlineVpnOfficial | 17,🏳️XX | trojan | @forwardv2ray | 18
-URL-TEST = url-test,🇩🇪DE | trojan | @PrivateVPNs | 17,🇩🇪DE | trojan | @DirectVPN | 17,🇪🇪EE | ss | @OutlineVpnOfficial | 17,🏳️XX | trojan | @forwardv2ray | 18
-FALLBACK = fallback,🇩🇪DE | trojan | @PrivateVPNs | 17,🇩🇪DE | trojan | @DirectVPN | 17,🇪🇪EE | ss | @OutlineVpnOfficial | 17,🏳️XX | trojan | @forwardv2ray | 18
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | trojan | @PrivateVPNs | 17,🇩🇪DE | trojan | @DirectVPN | 17,🇪🇪EE | ss | @OutlineVpnOfficial | 17
+URL-TEST = url-test,🇩🇪DE | trojan | @PrivateVPNs | 17,🇩🇪DE | trojan | @DirectVPN | 17,🇪🇪EE | ss | @OutlineVpnOfficial | 17
+FALLBACK = fallback,🇩🇪DE | trojan | @PrivateVPNs | 17,🇩🇪DE | trojan | @DirectVPN | 17,🇪🇪EE | ss | @OutlineVpnOfficial | 17
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
