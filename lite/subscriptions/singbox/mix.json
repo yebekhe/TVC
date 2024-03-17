@@ -106,8 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇪IE | trojan | @PrivateVPNs | 16",
-                "🇮🇪IE | trojan | @DirectVPN | 16",
+                "🇩🇪DE | vless | @VPNCUSTOMIZE | 23",
+                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇮🇪IE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
@@ -124,8 +125,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇪IE | trojan | @PrivateVPNs | 16",
-                "🇮🇪IE | trojan | @DirectVPN | 16",
+                "🇩🇪DE | vless | @VPNCUSTOMIZE | 23",
+                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇮🇪IE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
@@ -158,7 +160,31 @@
             "type": "dns"
         },
         {
-            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 16",
+            "tag": "🇩🇪DE | vless | @VPNCUSTOMIZE | 23",
+            "type": "vless",
+            "server": "54.37.76.9",
+            "server_port": 443,
+            "uuid": "TMCUSTOMIZE-VPNCUSTOMIZE",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.kellekcollection.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 18",
             "type": "trojan",
             "server": "52.31.98.81",
             "server_port": 22222,
@@ -180,7 +206,7 @@
             }
         },
         {
-            "tag": "🇮🇪IE | trojan | @DirectVPN | 16",
+            "tag": "🇮🇪IE | trojan | @DirectVPN | 18",
             "type": "trojan",
             "server": "63.33.175.31",
             "server_port": 22222,
