@@ -118,27 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇫🇮FI | ss | @OutlineVpnOfficial | 15","type":"ss","server":"78.153.139.25","port":5636,"password":"spLaujVWfuUms5xzcCbA6z","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇷FR | ss | @OutlineVpnOfficial | 15","type":"ss","server":"149.202.82.172","port":8881,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
+  - {"name":"🇧🇭BH | ss | @forwardv2ray | 19","type":"ss","server":"series-a2-me.samanehha.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇮FI | ss | @OutlineVpnOfficial | 15'
+      - '🇫🇷FR | ss | @OutlineVpnOfficial | 15'
+      - '🇧🇭BH | ss | @forwardv2ray | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇮FI | ss | @OutlineVpnOfficial | 15'
+      - '🇫🇷FR | ss | @OutlineVpnOfficial | 15'
+      - '🇧🇭BH | ss | @forwardv2ray | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇫🇮FI | ss | @OutlineVpnOfficial | 15'
+      - '🇫🇷FR | ss | @OutlineVpnOfficial | 15'
+      - '🇧🇭BH | ss | @forwardv2ray | 19'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
