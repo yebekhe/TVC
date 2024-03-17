@@ -156,6 +156,10 @@ proxies:
   - {"name":"🇸🇪SE | trojan | @DirectVPN | 15","type":"trojan","server":"13.51.39.153","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | trojan | @DirectVPN | 16","type":"trojan","server":"16.171.76.149","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | trojan | @DirectVPN | 17","type":"trojan","server":"3.66.149.146","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇨🇳CN | trojan | @forwardv2ray | 2","type":"trojan","server":"223.113.130.26","port":13029,"udp":false,"password":"eb076ad6-9ba8-41b1-804e-66cf27fa6091","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cloudflare.node-ssl.cdn-alibaba.com"}
+  - {"name":"🇮🇪IE | trojan | @forwardv2ray | 4","type":"trojan","server":"52.30.23.192","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.miwan.co.uk"}
+  - {"name":"🇨🇦CA | trojan | @forwardv2ray | 6","type":"trojan","server":"104.21.4.113","port":2096,"udp":false,"password":"4db45bb4-dcca-4d37-a639-cb55213ee406","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"channel.v2bamdad.tech"}
+  - {"name":"🏳️XX | trojan | @forwardv2ray | 8","type":"trojan","server":"127.0.0.1","port":8080,"udp":false,"password":"accabba-acab-abac-cdab-babbacacabcc","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -198,6 +202,10 @@ proxy-groups:
       - '🇸🇪SE | trojan | @DirectVPN | 15'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
       - '🇩🇪DE | trojan | @DirectVPN | 17'
+      - '🇨🇳CN | trojan | @forwardv2ray | 2'
+      - '🇮🇪IE | trojan | @forwardv2ray | 4'
+      - '🇨🇦CA | trojan | @forwardv2ray | 6'
+      - '🏳️XX | trojan | @forwardv2ray | 8'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -240,6 +248,10 @@ proxy-groups:
       - '🇸🇪SE | trojan | @DirectVPN | 15'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
       - '🇩🇪DE | trojan | @DirectVPN | 17'
+      - '🇨🇳CN | trojan | @forwardv2ray | 2'
+      - '🇮🇪IE | trojan | @forwardv2ray | 4'
+      - '🇨🇦CA | trojan | @forwardv2ray | 6'
+      - '🏳️XX | trojan | @forwardv2ray | 8'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -281,6 +293,10 @@ proxy-groups:
       - '🇸🇪SE | trojan | @DirectVPN | 15'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
       - '🇩🇪DE | trojan | @DirectVPN | 17'
+      - '🇨🇳CN | trojan | @forwardv2ray | 2'
+      - '🇮🇪IE | trojan | @forwardv2ray | 4'
+      - '🇨🇦CA | trojan | @forwardv2ray | 6'
+      - '🏳️XX | trojan | @forwardv2ray | 8'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
