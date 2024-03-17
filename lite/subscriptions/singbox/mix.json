@@ -107,19 +107,19 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | vless | @V2rayNGn | 23",
-                "🇸🇪SE | trojan | @PrivateVPNs | 17",
-                "🇸🇪SE | trojan | @DirectVPN | 17",
+                "🇩🇪DE | trojan | @PrivateVPNs | 17",
+                "🇸🇪SE | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+                "🇨🇦CA | vmess | @customv2ray | 8",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 35",
                 "🇦🇪AE | ss | @OutlineVpnOfficial | 15",
                 "🇫🇷FR | vmess | @proxystore11 | 9",
                 "🇸🇬SG | vmess | @yaney_01 | 2",
                 "🇵🇱PL | vmess | @v2Line | 8",
-                "🇺🇸US | vmess | @forwardv2ray | 17",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
-                "🇨🇦CA | vless | @TVCminer | 9"
+                "🇺🇸US | vless | @TVCminer | 9"
             ]
         },
         {
@@ -127,19 +127,19 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | vless | @V2rayNGn | 23",
-                "🇸🇪SE | trojan | @PrivateVPNs | 17",
-                "🇸🇪SE | trojan | @DirectVPN | 17",
+                "🇩🇪DE | trojan | @PrivateVPNs | 17",
+                "🇸🇪SE | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 18",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 10",
+                "🇨🇦CA | vmess | @customv2ray | 8",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 35",
                 "🇦🇪AE | ss | @OutlineVpnOfficial | 15",
                 "🇫🇷FR | vmess | @proxystore11 | 9",
                 "🇸🇬SG | vmess | @yaney_01 | 2",
                 "🇵🇱PL | vmess | @v2Line | 8",
-                "🇺🇸US | vmess | @forwardv2ray | 17",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
-                "🇨🇦CA | vless | @TVCminer | 9"
+                "🇺🇸US | vless | @TVCminer | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -186,9 +186,9 @@
             }
         },
         {
-            "tag": "🇸🇪SE | trojan | @PrivateVPNs | 17",
+            "tag": "🇩🇪DE | trojan | @PrivateVPNs | 17",
             "type": "trojan",
-            "server": "51.21.77.215",
+            "server": "18.197.187.142",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -208,9 +208,9 @@
             }
         },
         {
-            "tag": "🇸🇪SE | trojan | @DirectVPN | 17",
+            "tag": "🇸🇪SE | trojan | @DirectVPN | 16",
             "type": "trojan",
-            "server": "16.171.119.228",
+            "server": "13.50.57.122",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -301,6 +301,40 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "vip2323.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @customv2ray | 8",
+            "type": "vmess",
+            "server": "zula.ir",
+            "server_port": 2096,
+            "uuid": "98b879fc-ed38-4537-f02f-e88e4892d48c",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "eu4.nlist.eu.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/liu",
+                "headers": {
+                    "Host": "eu4.nlist.eu.org"
                 }
             }
         },
@@ -407,30 +441,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @forwardv2ray | 17",
-            "type": "vmess",
-            "server": "172.67.229.33",
-            "server_port": 2086,
-            "uuid": "58fe1542-5290-40ad-815a-77707a81afe5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/IOebhLMhl1CTbFHbL95myfRX2",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
             "tag": "🇹🇷TR | ss | @ROMAX_VPN | 9",
             "type": "shadowsocks",
             "server": "95.164.11.94",
@@ -441,7 +451,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇦CA | vless | @TVCminer | 9",
+            "tag": "🇺🇸US | vless | @TVCminer | 9",
             "type": "vless",
             "server": "steel.footballlovernews.com",
             "server_port": 443,
