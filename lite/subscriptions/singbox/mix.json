@@ -106,18 +106,19 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | vless | @VPNCUSTOMIZE | 23",
-                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇩🇪DE | vless | @V2rayNGn | 23",
+                "🇸🇪SE | trojan | @PrivateVPNs | 18",
                 "🇮🇪IE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 9",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 45",
+                "🇸🇬SG | vmess | @V2rayng_Fast | 0",
                 "🇫🇷FR | ss | @OutlineVpnOfficial | 15",
                 "🇸🇬SG | vmess | @yaney_01 | 2",
-                "🇦🇪AE | vmess | @Hope_Net | 3",
+                "🏳️XX | vmess | @Hope_Net | 1",
                 "🇵🇱PL | vmess | @v2Line | 7",
-                "🇨🇦CA | vmess | @eliya_chiter0 | 0",
+                "🇺🇸US | vmess | @eliya_chiter0 | 0",
                 "🇨🇦CA | vless | @TVCminer | 9"
             ]
         },
@@ -125,18 +126,19 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | vless | @VPNCUSTOMIZE | 23",
-                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇩🇪DE | vless | @V2rayNGn | 23",
+                "🇸🇪SE | trojan | @PrivateVPNs | 18",
                 "🇮🇪IE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 18",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 9",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 45",
+                "🇸🇬SG | vmess | @V2rayng_Fast | 0",
                 "🇫🇷FR | ss | @OutlineVpnOfficial | 15",
                 "🇸🇬SG | vmess | @yaney_01 | 2",
-                "🇦🇪AE | vmess | @Hope_Net | 3",
+                "🏳️XX | vmess | @Hope_Net | 1",
                 "🇵🇱PL | vmess | @v2Line | 7",
-                "🇨🇦CA | vmess | @eliya_chiter0 | 0",
+                "🇺🇸US | vmess | @eliya_chiter0 | 0",
                 "🇨🇦CA | vless | @TVCminer | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -160,11 +162,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | vless | @VPNCUSTOMIZE | 23",
+            "tag": "🇩🇪DE | vless | @V2rayNGn | 23",
             "type": "vless",
             "server": "54.37.76.9",
             "server_port": 443,
-            "uuid": "TMCUSTOMIZE-VPNCUSTOMIZE",
+            "uuid": "VPNCUSTOMIZE-TMCUSTOMIZE",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -184,9 +186,9 @@
             }
         },
         {
-            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 18",
+            "tag": "🇸🇪SE | trojan | @PrivateVPNs | 18",
             "type": "trojan",
-            "server": "52.31.98.81",
+            "server": "51.21.108.22",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -196,7 +198,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
+                "server_name": "trojan.miwan.co.uk",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -269,7 +271,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
+            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 9",
             "type": "vmess",
             "server": "auth.speedtest.net",
             "server_port": 443,
@@ -337,6 +339,30 @@
             }
         },
         {
+            "tag": "🇸🇬SG | vmess | @V2rayng_Fast | 0",
+            "type": "vmess",
+            "server": "146.190.87.238",
+            "server_port": 19193,
+            "uuid": "0f94fdae-5653-4314-9c92-e57e5ec55513",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ow",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
             "tag": "🇫🇷FR | ss | @OutlineVpnOfficial | 15",
             "type": "shadowsocks",
             "server": "149.202.82.172",
@@ -364,11 +390,11 @@
             }
         },
         {
-            "tag": "🇦🇪AE | vmess | @Hope_Net | 3",
+            "tag": "🏳️XX | vmess | @Hope_Net | 1",
             "type": "vmess",
-            "server": "94.140.0.110",
-            "server_port": 8880,
-            "uuid": "0d1bf26a-ce97-4707-a270-7f4d2ae37334",
+            "server": "127.0.0.1",
+            "server_port": 8080,
+            "uuid": "bbacaac-acab-bcaa-badc-caaacbbabcbc",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -378,13 +404,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
@@ -412,7 +431,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @eliya_chiter0 | 0",
+            "tag": "🇺🇸US | vmess | @eliya_chiter0 | 0",
             "type": "vmess",
             "server": "zula.ir",
             "server_port": 443,
