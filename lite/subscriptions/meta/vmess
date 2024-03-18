@@ -122,10 +122,9 @@ dns:
 proxies:
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇳CN | vmess | @mftizi | 18","type":"vmess","server":"101.89.154.94","port":"19979","cipher":"auto","uuid":"941f470e-34e8-3bb0-9b1e-b2c0b4fdb212","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/db00","headers":{"host":"cache-hk-2.cn-db.top"}}}
-  - {"name":"🇳🇱NL | vmess | @oneclickvpnkeys | 8","type":"vmess","server":"188.114.99.150","port":"443","cipher":"auto","uuid":"e4c7e0ce-ed93-40d9-8f38-90497cb83864","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"fi1.xv2ray.net"}}}
   - {"name":"🇫🇷FR | vmess | @proxystore11 | 9","type":"vmess","server":"46.226.166.88","port":"5042","cipher":"auto","uuid":"2525600f-c794-4517-acc7-13ac608a596e","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇸🇬SG | vmess | @yaney_01 | 2","type":"vmess","server":"8.222.154.110","port":"57035","cipher":"auto","uuid":"25ffd892-0ebf-4e29-98c5-dfba88fd714c","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇵🇱PL | vmess | @v2Line | 8","type":"vmess","server":"pl2-vmess.sshmax.xyz","port":"80","cipher":"auto","uuid":"18c6b542-e6f8-4476-872a-d3955f45d9f0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"pl2-vmess.sshmax.xyz"}}}
+  - {"name":"🇺🇸US | vmess | @forwardv2ray | 15","type":"vmess","server":"137.184.189.25","port":8880,"cipher":"auto","uuid":"21b21ff8-d182-4d6b-a5ee-f48e58c043f7","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -134,10 +133,9 @@ proxy-groups:
       - FALLBACK
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | vmess | @mftizi | 18'
-      - '🇳🇱NL | vmess | @oneclickvpnkeys | 8'
       - '🇫🇷FR | vmess | @proxystore11 | 9'
       - '🇸🇬SG | vmess | @yaney_01 | 2'
-      - '🇵🇱PL | vmess | @v2Line | 8'
+      - '🇺🇸US | vmess | @forwardv2ray | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -146,10 +144,9 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | vmess | @mftizi | 18'
-      - '🇳🇱NL | vmess | @oneclickvpnkeys | 8'
       - '🇫🇷FR | vmess | @proxystore11 | 9'
       - '🇸🇬SG | vmess | @yaney_01 | 2'
-      - '🇵🇱PL | vmess | @v2Line | 8'
+      - '🇺🇸US | vmess | @forwardv2ray | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -157,10 +154,9 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | vmess | @mftizi | 18'
-      - '🇳🇱NL | vmess | @oneclickvpnkeys | 8'
       - '🇫🇷FR | vmess | @proxystore11 | 9'
       - '🇸🇬SG | vmess | @yaney_01 | 2'
-      - '🇵🇱PL | vmess | @v2Line | 8'
+      - '🇺🇸US | vmess | @forwardv2ray | 15'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
