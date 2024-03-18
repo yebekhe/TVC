@@ -12,13 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇳CN | vmess | @mftizi | 19 = vmess, 101.89.154.94, 19979, username = 941f470e-34e8-3bb0-9b1e-b2c0b4fdb212, ws = true, tls = , vmess-aead = true, ws-path = /db00, ws-headers = Host:"cache-hk-2.cn-db.top", skip-cert-verify = true, tfo = false
-🇧🇪BE | vmess | @DailyV2RY | 173 = vmess, be2-vmess.sshmax.xyz, 8080, username = a12724eb-0697-466d-8560-8951989609c6, ws = true, tls = , vmess-aead = true, ws-path = /vmess, ws-headers = Host:"be2-vmess.sshmax.xyz", skip-cert-verify = true, tfo = false
 🇨🇳CN | vmess | @yaney_01 | 1 = vmess, 221.131.165.179, 18048, username = 01b094d8-68f4-317c-99b9-ccd867603120, ws = true, tls = , vmess-aead = true, ws-path = /soda, ws-headers = Host:"cn.bing.com", skip-cert-verify = true, tfo = false
 🇨🇦CA | vmess | @SINABIGO | 2 = vmess, 172.67.71.160, 443, username = 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"obdii.cfd", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇳CN | vmess | @mftizi | 19,🇧🇪BE | vmess | @DailyV2RY | 173,🇨🇳CN | vmess | @yaney_01 | 1,🇨🇦CA | vmess | @SINABIGO | 2
-URL-TEST = url-test,🇨🇳CN | vmess | @mftizi | 19,🇧🇪BE | vmess | @DailyV2RY | 173,🇨🇳CN | vmess | @yaney_01 | 1,🇨🇦CA | vmess | @SINABIGO | 2
-FALLBACK = fallback,🇨🇳CN | vmess | @mftizi | 19,🇧🇪BE | vmess | @DailyV2RY | 173,🇨🇳CN | vmess | @yaney_01 | 1,🇨🇦CA | vmess | @SINABIGO | 2
+MANUAL = select,URL-TEST,FALLBACK,🇨🇳CN | vmess | @mftizi | 19,🇨🇳CN | vmess | @yaney_01 | 1,🇨🇦CA | vmess | @SINABIGO | 2
+URL-TEST = url-test,🇨🇳CN | vmess | @mftizi | 19,🇨🇳CN | vmess | @yaney_01 | 1,🇨🇦CA | vmess | @SINABIGO | 2
+FALLBACK = fallback,🇨🇳CN | vmess | @mftizi | 19,🇨🇳CN | vmess | @yaney_01 | 1,🇨🇦CA | vmess | @SINABIGO | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
