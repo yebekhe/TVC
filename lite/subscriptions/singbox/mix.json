@@ -108,11 +108,11 @@
                 "URL-TEST",
                 "🇪🇸ES | vless | @azadi_az_inja_migzare | 0",
                 "🇩🇪DE | vless | @V2rayNGn | 23",
-                "🇸🇪SE | trojan | @PrivateVPNs | 18",
+                "🇩🇪DE | trojan | @PrivateVPNs | 18",
                 "🇮🇪IE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 6",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 7",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 35",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇧🇪BE | vmess | @DailyV2RY | 173",
@@ -123,7 +123,7 @@
                 "🇬🇧GB | ss | @proxy_mtm | 6",
                 "🇨🇦CA | vmess | @SINABIGO | 2",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
-                "🇨🇦CA | vless | @TVCminer | 9"
+                "🇨🇦CA | vless | @TVCminer | 12"
             ]
         },
         {
@@ -132,11 +132,11 @@
             "outbounds": [
                 "🇪🇸ES | vless | @azadi_az_inja_migzare | 0",
                 "🇩🇪DE | vless | @V2rayNGn | 23",
-                "🇸🇪SE | trojan | @PrivateVPNs | 18",
+                "🇩🇪DE | trojan | @PrivateVPNs | 18",
                 "🇮🇪IE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 6",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 7",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 35",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇧🇪BE | vmess | @DailyV2RY | 173",
@@ -147,7 +147,7 @@
                 "🇬🇧GB | ss | @proxy_mtm | 6",
                 "🇨🇦CA | vmess | @SINABIGO | 2",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
-                "🇨🇦CA | vless | @TVCminer | 9"
+                "🇨🇦CA | vless | @TVCminer | 12"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -223,9 +223,9 @@
             }
         },
         {
-            "tag": "🇸🇪SE | trojan | @PrivateVPNs | 18",
+            "tag": "🇩🇪DE | trojan | @PrivateVPNs | 18",
             "type": "trojan",
-            "server": "51.20.219.225",
+            "server": "3.69.240.218",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -247,7 +247,7 @@
         {
             "tag": "🇮🇪IE | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "54.73.233.28",
+            "server": "52.17.139.242",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -308,11 +308,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vmess | @oneclickvpnkeys | 6",
+            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 7",
             "type": "vmess",
-            "server": "194.87.71.23",
-            "server_port": 23742,
-            "uuid": "e8706bdb-335e-4631-a2af-3052ad93b10d",
+            "server": "504.outline-vpn.cloud",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -323,11 +323,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "vip2323.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/wp-admin",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": ""
+                    "Host": "vip2323.cfd"
                 }
             }
         },
@@ -553,7 +563,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇦CA | vless | @TVCminer | 9",
+            "tag": "🇨🇦CA | vless | @TVCminer | 12",
             "type": "vless",
             "server": "steel.footballlovernews.com",
             "server_port": 443,
