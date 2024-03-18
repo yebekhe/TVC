@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇪🇸ES | vless | @azadi_az_inja_migzare | 0",
                 "🇩🇪DE | vless | @V2rayNGn | 23",
                 "🇨🇦CA | vless | @TVCminer | 9"
             ]
@@ -114,6 +115,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇪🇸ES | vless | @azadi_az_inja_migzare | 0",
                 "🇩🇪DE | vless | @V2rayNGn | 23",
                 "🇨🇦CA | vless | @TVCminer | 9"
             ],
@@ -136,6 +138,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇪🇸ES | vless | @azadi_az_inja_migzare | 0",
+            "type": "vless",
+            "server": "208.85.19.150",
+            "server_port": 443,
+            "uuid": "03107017-354b-4376-97e4-41cbe56e14c2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "GW8CCzXJ_5Nu6tHaYeY4TPKQVgPbt10jZy7GjU9_zXQ",
+                    "short_id": "73104ca0377c653f"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @V2rayNGn | 23",
