@@ -124,6 +124,7 @@ proxies:
   - {"name":"🇨🇳CN | vmess | @mftizi | 19","type":"vmess","server":"101.89.154.94","port":"19979","cipher":"auto","uuid":"941f470e-34e8-3bb0-9b1e-b2c0b4fdb212","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/db00","headers":{"host":"cache-hk-2.cn-db.top"}}}
   - {"name":"🇨🇳CN | vmess | @yaney_01 | 1","type":"vmess","server":"221.131.165.179","port":"18048","cipher":"auto","uuid":"01b094d8-68f4-317c-99b9-ccd867603120","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/soda","headers":{"host":"cn.bing.com"}}}
   - {"name":"🇵🇱PL | vmess | @v2Line | 9","type":"vmess","server":"pl2-vmess.sshmax.xyz","port":"80","cipher":"auto","uuid":"18c6b542-e6f8-4476-872a-d3955f45d9f0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"pl2-vmess.sshmax.xyz"}}}
+  - {"name":"🏳️XX | vmess | @forwardv2ray | 19","type":"vmess","server":"mci.mosi.mosipro.ml","port":"443","cipher":"auto","uuid":"2856351f-13b7-44a9-9a38-216c05a78762","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Dusseldorf.kotick.site"}}}
   - {"name":"🇨🇦CA | vmess | @SINABIGO | 2","type":"vmess","server":"172.67.71.160","port":"443","cipher":"auto","uuid":"05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"obdii.cfd"}}}
 proxy-groups:
   - name: MANUAL
@@ -135,6 +136,7 @@ proxy-groups:
       - '🇨🇳CN | vmess | @mftizi | 19'
       - '🇨🇳CN | vmess | @yaney_01 | 1'
       - '🇵🇱PL | vmess | @v2Line | 9'
+      - '🏳️XX | vmess | @forwardv2ray | 19'
       - '🇨🇦CA | vmess | @SINABIGO | 2'
   - name: URL-TEST
     type: url-test
@@ -146,6 +148,7 @@ proxy-groups:
       - '🇨🇳CN | vmess | @mftizi | 19'
       - '🇨🇳CN | vmess | @yaney_01 | 1'
       - '🇵🇱PL | vmess | @v2Line | 9'
+      - '🏳️XX | vmess | @forwardv2ray | 19'
       - '🇨🇦CA | vmess | @SINABIGO | 2'
   - name: FALLBACK
     type: fallback
@@ -156,6 +159,7 @@ proxy-groups:
       - '🇨🇳CN | vmess | @mftizi | 19'
       - '🇨🇳CN | vmess | @yaney_01 | 1'
       - '🇵🇱PL | vmess | @v2Line | 9'
+      - '🏳️XX | vmess | @forwardv2ray | 19'
       - '🇨🇦CA | vmess | @SINABIGO | 2'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
