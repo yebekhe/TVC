@@ -150,7 +150,6 @@ proxies:
   - {"name":"🇨🇦CA | vmess | @v2Line | 6","type":"vmess","server":"104.17.25.1","port":"80","cipher":"auto","uuid":"92aa3000-5758-41f5-9b7d-6a8394382931","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"njzvpn.inekokkk.top"}}}
   - {"name":"🇭🇰HK | vmess | @v2Line | 8","type":"vmess","server":"74.119.193.64","port":"443","cipher":"auto","uuid":"faa2d852-e7a4-40b3-a011-e028b8a21f3b","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
   - {"name":"🇵🇱PL | vmess | @v2Line | 9","type":"vmess","server":"pl2-vmess.sshmax.xyz","port":"80","cipher":"auto","uuid":"18c6b542-e6f8-4476-872a-d3955f45d9f0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"pl2-vmess.sshmax.xyz"}}}
-  - {"name":"🇫🇷FR | vmess | @forwardv2ray | 0","type":"vmess","server":"fr-v2ray.freevmess.com","port":"8442","cipher":"auto","uuid":"60df4ec6-7506-407e-998e-b1539fc0630f","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @SINABIGO | 2","type":"vmess","server":"172.67.71.160","port":"443","cipher":"auto","uuid":"05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"obdii.cfd"}}}
 proxy-groups:
   - name: MANUAL
@@ -188,7 +187,6 @@ proxy-groups:
       - '🇨🇦CA | vmess | @v2Line | 6'
       - '🇭🇰HK | vmess | @v2Line | 8'
       - '🇵🇱PL | vmess | @v2Line | 9'
-      - '🇫🇷FR | vmess | @forwardv2ray | 0'
       - '🇨🇦CA | vmess | @SINABIGO | 2'
   - name: URL-TEST
     type: url-test
@@ -226,7 +224,6 @@ proxy-groups:
       - '🇨🇦CA | vmess | @v2Line | 6'
       - '🇭🇰HK | vmess | @v2Line | 8'
       - '🇵🇱PL | vmess | @v2Line | 9'
-      - '🇫🇷FR | vmess | @forwardv2ray | 0'
       - '🇨🇦CA | vmess | @SINABIGO | 2'
   - name: FALLBACK
     type: fallback
@@ -263,7 +260,6 @@ proxy-groups:
       - '🇨🇦CA | vmess | @v2Line | 6'
       - '🇭🇰HK | vmess | @v2Line | 8'
       - '🇵🇱PL | vmess | @v2Line | 9'
-      - '🇫🇷FR | vmess | @forwardv2ray | 0'
       - '🇨🇦CA | vmess | @SINABIGO | 2'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
