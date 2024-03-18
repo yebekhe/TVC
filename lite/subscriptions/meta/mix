@@ -131,7 +131,7 @@ proxies:
   - {"name":"🇵🇱PL | vmess | @v2Line | 8","type":"vmess","server":"pl2-vmess.sshmax.xyz","port":"80","cipher":"auto","uuid":"18c6b542-e6f8-4476-872a-d3955f45d9f0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"pl2-vmess.sshmax.xyz"}}}
   - {"name":"🇬🇧GB | ss | @proxy_mtm | 1","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇹🇷TR | ss | @ROMAX_VPN | 9","type":"ss","server":"95.164.11.94","port":1080,"password":"6x8ogTsPzMnizbFkFndqAQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇦CA | vless | @TVCminer | 9","type":"vless","server":"steel.footballlovernews.com","port":443,"udp":false,"uuid":"ec880e3c-2817-4b89-9887-ccc1fb7e3a52","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"steel.footballlovernews.com","ws-opts":{"path":"/steel"}}
+  - {"name":"🇺🇸US | vless | @TVCminer | 9","type":"vless","server":"steel.footballlovernews.com","port":443,"udp":false,"uuid":"ec880e3c-2817-4b89-9887-ccc1fb7e3a52","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"steel.footballlovernews.com","ws-opts":{"path":"/steel"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -149,7 +149,7 @@ proxy-groups:
       - '🇵🇱PL | vmess | @v2Line | 8'
       - '🇬🇧GB | ss | @proxy_mtm | 1'
       - '🇹🇷TR | ss | @ROMAX_VPN | 9'
-      - '🇨🇦CA | vless | @TVCminer | 9'
+      - '🇺🇸US | vless | @TVCminer | 9'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -167,7 +167,7 @@ proxy-groups:
       - '🇵🇱PL | vmess | @v2Line | 8'
       - '🇬🇧GB | ss | @proxy_mtm | 1'
       - '🇹🇷TR | ss | @ROMAX_VPN | 9'
-      - '🇨🇦CA | vless | @TVCminer | 9'
+      - '🇺🇸US | vless | @TVCminer | 9'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -184,7 +184,7 @@ proxy-groups:
       - '🇵🇱PL | vmess | @v2Line | 8'
       - '🇬🇧GB | ss | @proxy_mtm | 1'
       - '🇹🇷TR | ss | @ROMAX_VPN | 9'
-      - '🇨🇦CA | vless | @TVCminer | 9'
+      - '🇺🇸US | vless | @TVCminer | 9'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
