@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🇪🇸ES | vless | @azadi_az_inja_migzare | 1",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
-                "🇸🇪SE | trojan | @PrivateVPNs | 18",
+                "🇩🇪DE | trojan | @PrivateVPNs | 18",
                 "🇮🇪IE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
@@ -117,11 +117,11 @@
                 "🇨🇦CA | vmess | @proxyymeliii | 12",
                 "🇭🇰HK | ss | @OutlineVpnOfficial | 17",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
-                "🏳️XX | vmess | @Hope_Net | 10",
+                "🏳️XX | vmess | @Hope_Net | 11",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🇨🇦CA | vmess | @SINABIGO | 2",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
-                "🇺🇸US | vless | @TVCminer | 12"
+                "🇨🇦CA | vless | @TVCminer | 12",
+                "🇨🇦CA | vmess | @OpenSSTPVpn | 1"
             ]
         },
         {
@@ -130,7 +130,7 @@
             "outbounds": [
                 "🇪🇸ES | vless | @azadi_az_inja_migzare | 1",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
-                "🇸🇪SE | trojan | @PrivateVPNs | 18",
+                "🇩🇪DE | trojan | @PrivateVPNs | 18",
                 "🇮🇪IE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
@@ -139,11 +139,11 @@
                 "🇨🇦CA | vmess | @proxyymeliii | 12",
                 "🇭🇰HK | ss | @OutlineVpnOfficial | 17",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
-                "🏳️XX | vmess | @Hope_Net | 10",
+                "🏳️XX | vmess | @Hope_Net | 11",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🇨🇦CA | vmess | @SINABIGO | 2",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
-                "🇺🇸US | vless | @TVCminer | 12"
+                "🇨🇦CA | vless | @TVCminer | 12",
+                "🇨🇦CA | vmess | @OpenSSTPVpn | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -219,9 +219,9 @@
             }
         },
         {
-            "tag": "🇸🇪SE | trojan | @PrivateVPNs | 18",
+            "tag": "🇩🇪DE | trojan | @PrivateVPNs | 18",
             "type": "trojan",
-            "server": "51.21.40.32",
+            "server": "3.65.178.44",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -243,7 +243,7 @@
         {
             "tag": "🇮🇪IE | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "18.202.87.142",
+            "server": "54.194.148.135",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -430,7 +430,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @Hope_Net | 10",
+            "tag": "🏳️XX | vmess | @Hope_Net | 11",
             "type": "vmess",
             "server": "127.0.0.1",
             "server_port": 8080,
@@ -471,7 +471,48 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @SINABIGO | 2",
+            "tag": "🇹🇷TR | ss | @ROMAX_VPN | 9",
+            "type": "shadowsocks",
+            "server": "95.164.11.94",
+            "server_port": 1080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "6x8ogTsPzMnizbFkFndqAQ",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇨🇦CA | vless | @TVCminer | 12",
+            "type": "vless",
+            "server": "steel.footballlovernews.com",
+            "server_port": 443,
+            "uuid": "ec880e3c-2817-4b89-9887-ccc1fb7e3a52",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "steel.footballlovernews.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/steel",
+                "headers": {
+                    "Host": "steel.footballlovernews.com"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @OpenSSTPVpn | 1",
             "type": "vmess",
             "server": "172.67.71.160",
             "server_port": 443,
@@ -501,47 +542,6 @@
                 "path": "\/linkws",
                 "headers": {
                     "Host": "obdii.cfd"
-                }
-            }
-        },
-        {
-            "tag": "🇹🇷TR | ss | @ROMAX_VPN | 9",
-            "type": "shadowsocks",
-            "server": "95.164.11.94",
-            "server_port": 1080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "6x8ogTsPzMnizbFkFndqAQ",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇺🇸US | vless | @TVCminer | 12",
-            "type": "vless",
-            "server": "steel.footballlovernews.com",
-            "server_port": 443,
-            "uuid": "ec880e3c-2817-4b89-9887-ccc1fb7e3a52",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "steel.footballlovernews.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/steel",
-                "headers": {
-                    "Host": "steel.footballlovernews.com"
                 }
             }
         }
