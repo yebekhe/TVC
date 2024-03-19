@@ -119,7 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇮🇪IE | ss | @OutlineVpnOfficial | 17","type":"ss","server":"52.178.209.160","port":2606,"password":"zh7ETDQRvHCsIIPIrSHwHa","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇧🇭BH | ss | @forwardv2ray | 14","type":"ss","server":"series-a2-me.samanehha.co","port":443,"password":"2LVVFxxHJSBMdGdl","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🏳️XX | ss | @forwardv2ray | 17","type":"ss","server":"[::ffff:34b:e914]","port":2087,"password":"9eX6xSlYi0d9whQoCegR4TW4x4csfv3rHfC4t7b6U5Q=","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -127,7 +127,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇮🇪IE | ss | @OutlineVpnOfficial | 17'
-      - '🇧🇭BH | ss | @forwardv2ray | 14'
+      - '🏳️XX | ss | @forwardv2ray | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,14 +135,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇮🇪IE | ss | @OutlineVpnOfficial | 17'
-      - '🇧🇭BH | ss | @forwardv2ray | 14'
+      - '🏳️XX | ss | @forwardv2ray | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇮🇪IE | ss | @OutlineVpnOfficial | 17'
-      - '🇧🇭BH | ss | @forwardv2ray | 14'
+      - '🏳️XX | ss | @forwardv2ray | 17'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
