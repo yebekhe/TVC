@@ -108,15 +108,15 @@
                 "URL-TEST",
                 "🇪🇸ES | vless | @azadi_az_inja_migzare | 0",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
-                "🇮🇪IE | trojan | @PrivateVPNs | 16",
-                "🇮🇪IE | trojan | @DirectVPN | 16",
+                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇮🇪IE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 8",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇭🇰HK | ss | @OutlineVpnOfficial | 17",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
-                "🏳️XX | vmess | @Hope_Net | 11",
+                "🇺🇸US | vmess | @Hope_Net | 11",
                 "🇵🇱PL | vmess | @v2Line | 9",
                 "🇨🇦CA | vmess | @SINABIGO | 2",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
@@ -129,15 +129,15 @@
             "outbounds": [
                 "🇪🇸ES | vless | @azadi_az_inja_migzare | 0",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
-                "🇮🇪IE | trojan | @PrivateVPNs | 16",
-                "🇮🇪IE | trojan | @DirectVPN | 16",
+                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇮🇪IE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 8",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇭🇰HK | ss | @OutlineVpnOfficial | 17",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
-                "🏳️XX | vmess | @Hope_Net | 11",
+                "🇺🇸US | vmess | @Hope_Net | 11",
                 "🇵🇱PL | vmess | @v2Line | 9",
                 "🇨🇦CA | vmess | @SINABIGO | 2",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
@@ -217,7 +217,7 @@
             }
         },
         {
-            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 16",
+            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 18",
             "type": "trojan",
             "server": "54.170.8.190",
             "server_port": 22222,
@@ -239,7 +239,7 @@
             }
         },
         {
-            "tag": "🇮🇪IE | trojan | @DirectVPN | 16",
+            "tag": "🇮🇪IE | trojan | @DirectVPN | 18",
             "type": "trojan",
             "server": "18.202.87.142",
             "server_port": 22222,
@@ -394,11 +394,11 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @Hope_Net | 11",
+            "tag": "🇺🇸US | vmess | @Hope_Net | 11",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "cbabaca-aacb-acba-dbca-baabcbabccca",
+            "server": "172.67.196.110",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -408,6 +408,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kellie.makeup",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "kellie.makeup"
+                }
             }
         },
         {
