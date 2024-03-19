@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇪🇸ES | vless | @azadi_az_inja_migzare | 0",
-                "🇺🇸US | vless | @TVCminer | 12"
+                "🇩🇪DE | vless | @V2rayNGn | 25",
+                "🇨🇦CA | vless | @TVCminer | 12"
             ]
         },
         {
@@ -115,7 +116,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇪🇸ES | vless | @azadi_az_inja_migzare | 0",
-                "🇺🇸US | vless | @TVCminer | 12"
+                "🇩🇪DE | vless | @V2rayNGn | 25",
+                "🇨🇦CA | vless | @TVCminer | 12"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -167,7 +169,31 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @TVCminer | 12",
+            "tag": "🇩🇪DE | vless | @V2rayNGn | 25",
+            "type": "vless",
+            "server": "54.37.76.9",
+            "server_port": 443,
+            "uuid": "VPNCUSTOMIZE-TMCUSTOMIZE",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.kellekcollection.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @TVCminer | 12",
             "type": "vless",
             "server": "steel.footballlovernews.com",
             "server_port": 443,
