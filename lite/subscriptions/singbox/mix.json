@@ -117,7 +117,7 @@
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 2",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🇺🇸US | ss | @forwardv2ray | 19",
+                "🇬🇧GB | trojan | @forwardv2ray | 8",
                 "🇨🇦CA | vmess | @SINABIGO | 2",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
                 "🇨🇦CA | vless | @TVCminer | 12"
@@ -138,7 +138,7 @@
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 2",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🇺🇸US | ss | @forwardv2ray | 19",
+                "🇬🇧GB | trojan | @forwardv2ray | 8",
                 "🇨🇦CA | vmess | @SINABIGO | 2",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
                 "🇨🇦CA | vless | @TVCminer | 12"
@@ -411,14 +411,26 @@
             }
         },
         {
-            "tag": "🇺🇸US | ss | @forwardv2ray | 19",
-            "type": "shadowsocks",
-            "server": "23.27.103.76",
-            "server_port": 44214,
-            "method": "aes-256-gcm",
-            "password": "fade2b35-7872-442e-a54e-6ccf9b970476",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇬🇧GB | trojan | @forwardv2ray | 8",
+            "type": "trojan",
+            "server": "18.130.80.210",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
             "tag": "🇨🇦CA | vmess | @SINABIGO | 2",
