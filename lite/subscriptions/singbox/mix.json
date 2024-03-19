@@ -108,18 +108,18 @@
                 "URL-TEST",
                 "🇪🇸ES | vless | @azadi_az_inja_migzare | 1",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
-                "🇫🇷FR | trojan | @PrivateVPNs | 18",
-                "🇨🇦CA | trojan | @DirectVPN | 18",
+                "🇬🇧GB | trojan | @PrivateVPNs | 17",
+                "🇺🇸US | trojan | @DirectVPN | 17",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 9",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇺🇸US | vmess | @DailyV2RY | 151",
                 "🇭🇰HK | ss | @OutlineVpnOfficial | 17",
+                "🇨🇦CA | vmess | @proxystore11 | 9",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
-                "🏳️XX | vmess | @Hope_Net | 10",
+                "🏳️XX | vmess | @Hope_Net | 11",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🇧🇭BH | ss | @forwardv2ray | 19",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
                 "🇨🇦CA | vless | @TVCminer | 12",
                 "🇨🇦CA | vmess | @OpenSSTPVpn | 1"
@@ -131,18 +131,18 @@
             "outbounds": [
                 "🇪🇸ES | vless | @azadi_az_inja_migzare | 1",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
-                "🇫🇷FR | trojan | @PrivateVPNs | 18",
-                "🇨🇦CA | trojan | @DirectVPN | 18",
+                "🇬🇧GB | trojan | @PrivateVPNs | 17",
+                "🇺🇸US | trojan | @DirectVPN | 17",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 9",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇺🇸US | vmess | @DailyV2RY | 151",
                 "🇭🇰HK | ss | @OutlineVpnOfficial | 17",
+                "🇨🇦CA | vmess | @proxystore11 | 9",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
-                "🏳️XX | vmess | @Hope_Net | 10",
+                "🏳️XX | vmess | @Hope_Net | 11",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🇧🇭BH | ss | @forwardv2ray | 19",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
                 "🇨🇦CA | vless | @TVCminer | 12",
                 "🇨🇦CA | vmess | @OpenSSTPVpn | 1"
@@ -221,9 +221,9 @@
             }
         },
         {
-            "tag": "🇫🇷FR | trojan | @PrivateVPNs | 18",
+            "tag": "🇬🇧GB | trojan | @PrivateVPNs | 17",
             "type": "trojan",
-            "server": "15.188.230.153",
+            "server": "13.43.82.74",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -243,9 +243,9 @@
             }
         },
         {
-            "tag": "🇨🇦CA | trojan | @DirectVPN | 18",
+            "tag": "🇺🇸US | trojan | @DirectVPN | 17",
             "type": "trojan",
-            "server": "3.97.185.72",
+            "server": "3.22.5.194",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -408,6 +408,40 @@
             "plugin_opts": ""
         },
         {
+            "tag": "🇨🇦CA | vmess | @proxystore11 | 9",
+            "type": "vmess",
+            "server": "104.21.75.244",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "janett.click",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "janett.click"
+                }
+            }
+        },
+        {
             "tag": "🇨🇳CN | vmess | @yaney_01 | 1",
             "type": "vmess",
             "server": "221.131.165.179",
@@ -432,11 +466,11 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @Hope_Net | 10",
+            "tag": "🏳️XX | vmess | @Hope_Net | 11",
             "type": "vmess",
             "server": "127.0.0.1",
             "server_port": 8080,
-            "uuid": "cacbaba-abac-acab-cdab-bacbaabacbcc",
+            "uuid": "bacaacb-caba-baac-bcad-acacaacbbcbb",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -471,16 +505,6 @@
                     "Host": ""
                 }
             }
-        },
-        {
-            "tag": "🇧🇭BH | ss | @forwardv2ray | 19",
-            "type": "shadowsocks",
-            "server": "fast_2ray_telchannelll2.fast2rayy.eu.org",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "Bog0ELmMM9DSxDdQ",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇹🇷TR | ss | @ROMAX_VPN | 9",
