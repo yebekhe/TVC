@@ -121,7 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇭🇰HK | ss | @OutlineVpnOfficial | 17","type":"ss","server":"141.98.234.19","port":44017,"password":"l9uKHMJTIbIlHFy7h8VyOQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇹🇷TR | ss | @ROMAX_VPN | 9","type":"ss","server":"95.164.11.94","port":1080,"password":"6x8ogTsPzMnizbFkFndqAQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇹🇷TR | ss | @ROMAX_VPN | 8","type":"ss","server":"45.89.52.197","port":32058,"password":"Fgltbpm6cD9eHSFhKI6maC","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +129,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇭🇰HK | ss | @OutlineVpnOfficial | 17'
-      - '🇹🇷TR | ss | @ROMAX_VPN | 9'
+      - '🇹🇷TR | ss | @ROMAX_VPN | 8'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -137,14 +137,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇭🇰HK | ss | @OutlineVpnOfficial | 17'
-      - '🇹🇷TR | ss | @ROMAX_VPN | 9'
+      - '🇹🇷TR | ss | @ROMAX_VPN | 8'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇭🇰HK | ss | @OutlineVpnOfficial | 17'
-      - '🇹🇷TR | ss | @ROMAX_VPN | 9'
+      - '🇹🇷TR | ss | @ROMAX_VPN | 8'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
