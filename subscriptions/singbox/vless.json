@@ -106,15 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇬🇧GB | vless | @XsV2ray | 1",
                 "🇩🇪DE | vless | @frev2ray | 12",
-                "🇺🇸US | vless | @rxv2ray | 4",
-                "🇺🇸US | vless | @rxv2ray | 5",
-                "🇺🇸US | vless | @rxv2ray | 8",
-                "🇺🇸US | vless | @rxv2ray | 9",
-                "🇺🇸US | vless | @rxv2ray | 12",
-                "🇺🇸US | vless | @rxv2ray | 13",
-                "🇺🇸US | vless | @rxv2ray | 16",
-                "🇺🇸US | vless | @rxv2ray | 17",
+                "🇨🇦CA | vless | @rxv2ray | 4",
+                "🇨🇦CA | vless | @rxv2ray | 5",
+                "🇨🇦CA | vless | @rxv2ray | 8",
+                "🇨🇦CA | vless | @rxv2ray | 9",
+                "🇨🇦CA | vless | @rxv2ray | 12",
+                "🇨🇦CA | vless | @rxv2ray | 13",
+                "🇨🇦CA | vless | @rxv2ray | 16",
+                "🇨🇦CA | vless | @rxv2ray | 17",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
                 "🇫🇮FI | vless | @CUSTOMVPNSERVER | 6",
@@ -137,22 +138,23 @@
                 "🇺🇸US | vless | @TVCminer | 8",
                 "🇨🇦CA | vless | @TVCminer | 9",
                 "🇨🇦CA | vless | @TVCminer | 10",
-                "🇺🇸US | vless | @TVCminer | 11"
+                "🇨🇦CA | vless | @TVCminer | 11"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇬🇧GB | vless | @XsV2ray | 1",
                 "🇩🇪DE | vless | @frev2ray | 12",
-                "🇺🇸US | vless | @rxv2ray | 4",
-                "🇺🇸US | vless | @rxv2ray | 5",
-                "🇺🇸US | vless | @rxv2ray | 8",
-                "🇺🇸US | vless | @rxv2ray | 9",
-                "🇺🇸US | vless | @rxv2ray | 12",
-                "🇺🇸US | vless | @rxv2ray | 13",
-                "🇺🇸US | vless | @rxv2ray | 16",
-                "🇺🇸US | vless | @rxv2ray | 17",
+                "🇨🇦CA | vless | @rxv2ray | 4",
+                "🇨🇦CA | vless | @rxv2ray | 5",
+                "🇨🇦CA | vless | @rxv2ray | 8",
+                "🇨🇦CA | vless | @rxv2ray | 9",
+                "🇨🇦CA | vless | @rxv2ray | 12",
+                "🇨🇦CA | vless | @rxv2ray | 13",
+                "🇨🇦CA | vless | @rxv2ray | 16",
+                "🇨🇦CA | vless | @rxv2ray | 17",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | vless | @CUSTOMVPNSERVER | 5",
                 "🇫🇮FI | vless | @CUSTOMVPNSERVER | 6",
@@ -175,7 +177,7 @@
                 "🇺🇸US | vless | @TVCminer | 8",
                 "🇨🇦CA | vless | @TVCminer | 9",
                 "🇨🇦CA | vless | @TVCminer | 10",
-                "🇺🇸US | vless | @TVCminer | 11"
+                "🇨🇦CA | vless | @TVCminer | 11"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -196,6 +198,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇬🇧GB | vless | @XsV2ray | 1",
+            "type": "vless",
+            "server": "lg.bo3kot.com",
+            "server_port": 46108,
+            "uuid": "9eddb316-a313-4e1d-b206-668bafdcd494",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "store.steampowered.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "jTLrdW3KffXc6JM6-s4FnROfjKpwxR-O2Gv8vfpqzkQ",
+                    "short_id": "da394326"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @frev2ray | 12",
@@ -222,7 +253,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @rxv2ray | 4",
+            "tag": "🇨🇦CA | vless | @rxv2ray | 4",
             "type": "vless",
             "server": "All.RxV2ray.online",
             "server_port": 2053,
@@ -253,7 +284,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @rxv2ray | 5",
+            "tag": "🇨🇦CA | vless | @rxv2ray | 5",
             "type": "vless",
             "server": "All.RxV2ray.online",
             "server_port": 2053,
@@ -284,7 +315,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @rxv2ray | 8",
+            "tag": "🇨🇦CA | vless | @rxv2ray | 8",
             "type": "vless",
             "server": "All.RxV2ray.online",
             "server_port": 2053,
@@ -315,7 +346,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @rxv2ray | 9",
+            "tag": "🇨🇦CA | vless | @rxv2ray | 9",
             "type": "vless",
             "server": "All.RxV2ray.online",
             "server_port": 2053,
@@ -346,7 +377,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @rxv2ray | 12",
+            "tag": "🇨🇦CA | vless | @rxv2ray | 12",
             "type": "vless",
             "server": "All.RxV2ray.online",
             "server_port": 2053,
@@ -377,7 +408,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @rxv2ray | 13",
+            "tag": "🇨🇦CA | vless | @rxv2ray | 13",
             "type": "vless",
             "server": "All.RxV2ray.online",
             "server_port": 2053,
@@ -408,7 +439,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @rxv2ray | 16",
+            "tag": "🇨🇦CA | vless | @rxv2ray | 16",
             "type": "vless",
             "server": "All.RxV2ray.online",
             "server_port": 2053,
@@ -439,7 +470,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @rxv2ray | 17",
+            "tag": "🇨🇦CA | vless | @rxv2ray | 17",
             "type": "vless",
             "server": "All.RxV2ray.online",
             "server_port": 2053,
@@ -1119,7 +1150,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @TVCminer | 11",
+            "tag": "🇨🇦CA | vless | @TVCminer | 11",
             "type": "vless",
             "server": "shaliest.toptechnonews.com",
             "server_port": 443,
