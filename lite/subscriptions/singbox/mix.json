@@ -115,12 +115,12 @@
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇭🇰HK | ss | @OutlineVpnOfficial | 17",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
-                "🏳️XX | vmess | @Hope_Net | 8",
+                "🏳️XX | vmess | @Hope_Net | 10",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🇩🇪DE | ss | @forwardv2ray | 18",
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
                 "🇨🇦CA | vmess | @SINABIGO | 2",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
-                "🇨🇦CA | vless | @TVCminer | 12"
+                "🇺🇸US | vless | @TVCminer | 12"
             ]
         },
         {
@@ -136,12 +136,12 @@
                 "🇨🇦CA | vmess | @V2rayng_Fast | 0",
                 "🇭🇰HK | ss | @OutlineVpnOfficial | 17",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
-                "🏳️XX | vmess | @Hope_Net | 8",
+                "🏳️XX | vmess | @Hope_Net | 10",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🇩🇪DE | ss | @forwardv2ray | 18",
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
                 "🇨🇦CA | vmess | @SINABIGO | 2",
                 "🇹🇷TR | ss | @ROMAX_VPN | 9",
-                "🇨🇦CA | vless | @TVCminer | 12"
+                "🇺🇸US | vless | @TVCminer | 12"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -360,7 +360,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @Hope_Net | 8",
+            "tag": "🏳️XX | vmess | @Hope_Net | 10",
             "type": "vmess",
             "server": "127.0.0.1",
             "server_port": 8080,
@@ -401,14 +401,38 @@
             }
         },
         {
-            "tag": "🇩🇪DE | ss | @forwardv2ray | 18",
-            "type": "shadowsocks",
-            "server": "94.131.111.32",
-            "server_port": 8388,
-            "method": "chacha20-ietf-poly1305",
-            "password": "NGQzMzQz",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "502.outline-vpn.cloud",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "glweidf.sbs"
+                }
+            }
         },
         {
             "tag": "🇨🇦CA | vmess | @SINABIGO | 2",
@@ -455,7 +479,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇦CA | vless | @TVCminer | 12",
+            "tag": "🇺🇸US | vless | @TVCminer | 12",
             "type": "vless",
             "server": "steel.footballlovernews.com",
             "server_port": 443,
