@@ -155,10 +155,8 @@ proxies:
   - {"name":"🇫🇷FR | trojan | @DirectVPN | 14","type":"trojan","server":"15.237.7.12","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | trojan | @DirectVPN | 15","type":"trojan","server":"51.21.20.80","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | trojan | @DirectVPN | 16","type":"trojan","server":"13.49.19.255","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🏳️XX | trojan | @forwardv2ray | 5","type":"trojan","server":"127.0.0.1","port":1080,"udp":false,"password":"baccbaa-baca-bcaa-cdba-abaacbacccbb","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🏳️XX | trojan | @forwardv2ray | 7","type":"trojan","server":"127.0.0.1","port":2080,"udp":false,"password":"acbacba-aacb-baac-dcab-bbccbcaacaab","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🇮🇪IE | trojan | @forwardv2ray | 9","type":"trojan","server":"52.17.85.93","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇸🇪SE | trojan | @forwardv2ray | 11","type":"trojan","server":"16.170.9.33","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🏳️XX | trojan | @forwardv2ray | 10","type":"trojan","server":"127.0.0.1","port":1080,"udp":false,"password":"aabbcac-aabc-baca-cadb-bacbaccbbcaa","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🏳️XX | trojan | @forwardv2ray | 12","type":"trojan","server":"127.0.0.1","port":2080,"udp":false,"password":"bbacaca-acab-baca-dcba-accbacbbbcaa","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -200,10 +198,8 @@ proxy-groups:
       - '🇫🇷FR | trojan | @DirectVPN | 14'
       - '🇸🇪SE | trojan | @DirectVPN | 15'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
-      - '🏳️XX | trojan | @forwardv2ray | 5'
-      - '🏳️XX | trojan | @forwardv2ray | 7'
-      - '🇮🇪IE | trojan | @forwardv2ray | 9'
-      - '🇸🇪SE | trojan | @forwardv2ray | 11'
+      - '🏳️XX | trojan | @forwardv2ray | 10'
+      - '🏳️XX | trojan | @forwardv2ray | 12'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -245,10 +241,8 @@ proxy-groups:
       - '🇫🇷FR | trojan | @DirectVPN | 14'
       - '🇸🇪SE | trojan | @DirectVPN | 15'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
-      - '🏳️XX | trojan | @forwardv2ray | 5'
-      - '🏳️XX | trojan | @forwardv2ray | 7'
-      - '🇮🇪IE | trojan | @forwardv2ray | 9'
-      - '🇸🇪SE | trojan | @forwardv2ray | 11'
+      - '🏳️XX | trojan | @forwardv2ray | 10'
+      - '🏳️XX | trojan | @forwardv2ray | 12'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -289,10 +283,8 @@ proxy-groups:
       - '🇫🇷FR | trojan | @DirectVPN | 14'
       - '🇸🇪SE | trojan | @DirectVPN | 15'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
-      - '🏳️XX | trojan | @forwardv2ray | 5'
-      - '🏳️XX | trojan | @forwardv2ray | 7'
-      - '🇮🇪IE | trojan | @forwardv2ray | 9'
-      - '🇸🇪SE | trojan | @forwardv2ray | 11'
+      - '🏳️XX | trojan | @forwardv2ray | 10'
+      - '🏳️XX | trojan | @forwardv2ray | 12'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
