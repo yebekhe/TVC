@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | vless | @frev2ray | 12",
                 "🇪🇸ES | vless | @azadi_az_inja_migzare | 1",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
                 "🏳️XX | vless | @GozargahVPN | 9",
@@ -116,6 +117,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | vless | @frev2ray | 12",
                 "🇪🇸ES | vless | @azadi_az_inja_migzare | 1",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
                 "🏳️XX | vless | @GozargahVPN | 9",
@@ -140,6 +142,30 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | vless | @frev2ray | 12",
+            "type": "vless",
+            "server": "54.37.76.9",
+            "server_port": 443,
+            "uuid": "TMCUSTOMIZE-VPNCUSTOMIZE",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.kellekcollection.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
             "tag": "🇪🇸ES | vless | @azadi_az_inja_migzare | 1",
