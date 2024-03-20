@@ -106,10 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇪🇸ES | vless | @azadi_az_inja_migzare | 1",
+                "🇨🇦CA | vless | @azadi_az_inja_migzare | 0",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
-                "🇬🇧GB | trojan | @PrivateVPNs | 16",
-                "🇬🇧GB | trojan | @DirectVPN | 16",
+                "🇮🇪IE | trojan | @PrivateVPNs | 16",
+                "🇮🇪IE | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 7",
@@ -128,10 +128,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇪🇸ES | vless | @azadi_az_inja_migzare | 1",
+                "🇨🇦CA | vless | @azadi_az_inja_migzare | 0",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
-                "🇬🇧GB | trojan | @PrivateVPNs | 16",
-                "🇬🇧GB | trojan | @DirectVPN | 16",
+                "🇮🇪IE | trojan | @PrivateVPNs | 16",
+                "🇮🇪IE | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 7",
@@ -166,12 +166,12 @@
             "type": "dns"
         },
         {
-            "tag": "🇪🇸ES | vless | @azadi_az_inja_migzare | 1",
+            "tag": "🇨🇦CA | vless | @azadi_az_inja_migzare | 0",
             "type": "vless",
-            "server": "208.85.19.150",
-            "server_port": 443,
-            "uuid": "03107017-354b-4376-97e4-41cbe56e14c2",
-            "flow": "xtls-rprx-vision",
+            "server": "shiatv.net",
+            "server_port": 2096,
+            "uuid": "87505434-a822-43e4-98bc-2f042cc49650",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -180,18 +180,20 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.speedtest.net",
+                "server_name": "channel.v2bamdad.tech",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "GW8CCzXJ_5Nu6tHaYeY4TPKQVgPbt10jZy7GjU9_zXQ",
-                    "short_id": "73104ca0377c653f"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "BBjszEZzABSQuqxj4FxIzvwxUDoX",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -219,9 +221,9 @@
             }
         },
         {
-            "tag": "🇬🇧GB | trojan | @PrivateVPNs | 16",
+            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 16",
             "type": "trojan",
-            "server": "3.8.225.89",
+            "server": "52.17.220.121",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -241,9 +243,9 @@
             }
         },
         {
-            "tag": "🇬🇧GB | trojan | @DirectVPN | 16",
+            "tag": "🇮🇪IE | trojan | @DirectVPN | 16",
             "type": "trojan",
-            "server": "18.135.59.43",
+            "server": "52.208.103.230",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
