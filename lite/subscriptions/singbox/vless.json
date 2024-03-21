@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | vless | @azadi_az_inja_migzare | 0",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ]
@@ -115,7 +114,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | vless | @azadi_az_inja_migzare | 0",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ],
@@ -138,37 +136,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇨🇦CA | vless | @azadi_az_inja_migzare | 0",
-            "type": "vless",
-            "server": "shiatv.net",
-            "server_port": 2096,
-            "uuid": "87505434-a822-43e4-98bc-2f042cc49650",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "channel.v2bamdad.tech",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "BBjszEZzABSQuqxj4FxIzvwxUDoX",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🇩🇪DE | vless | @V2rayNGn | 25",
