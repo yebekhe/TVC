@@ -106,19 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇮🇷IR | vmess | @azadi_az_inja_migzare | 2",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
-                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇸🇪SE | trojan | @PrivateVPNs | 18",
                 "🇨🇦CA | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇺🇸US | ss | @DeamNet_Proxy | 19",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
+                "🇦🇪AE | ss | @DeamNet_Proxy | 15",
+                "🇮🇳IN | vmess | @oneclickvpnkeys | 10",
+                "🇬🇧GB | ss | @VmessProtocol | 7",
                 "🇦🇪AE | ss | @OutlineVpnOfficial | 19",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🇧🇭BH | ss | @forwardv2ray | 18",
-                "🇷🇺RU | ss | @proxy_mtm | 1",
+                "🇷🇺RU | ss | @proxy_mtm | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1",
                 "🇨🇦CA | vmess | @OpenSSTPVpn | 1"
             ]
@@ -127,19 +128,20 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇮🇷IR | vmess | @azadi_az_inja_migzare | 2",
                 "🇩🇪DE | vless | @V2rayNGn | 25",
-                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇸🇪SE | trojan | @PrivateVPNs | 18",
                 "🇨🇦CA | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇺🇸US | ss | @DeamNet_Proxy | 19",
-                "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
+                "🇦🇪AE | ss | @DeamNet_Proxy | 15",
+                "🇮🇳IN | vmess | @oneclickvpnkeys | 10",
+                "🇬🇧GB | ss | @VmessProtocol | 7",
                 "🇦🇪AE | ss | @OutlineVpnOfficial | 19",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🇧🇭BH | ss | @forwardv2ray | 18",
-                "🇷🇺RU | ss | @proxy_mtm | 1",
+                "🇷🇺RU | ss | @proxy_mtm | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1",
                 "🇨🇦CA | vmess | @OpenSSTPVpn | 1"
             ],
@@ -162,6 +164,40 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇮🇷IR | vmess | @azadi_az_inja_migzare | 2",
+            "type": "vmess",
+            "server": "85.9.105.222",
+            "server_port": 443,
+            "uuid": "19b8ef18-6e52-4a03-9801-14231b24342d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ger_tor.ir.speed-azad4.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/files\/",
+                "headers": {
+                    "Host": "ger_tor.ir.speed-azad4.top"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | vless | @V2rayNGn | 25",
@@ -188,9 +224,9 @@
             }
         },
         {
-            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 18",
+            "tag": "🇸🇪SE | trojan | @PrivateVPNs | 18",
             "type": "trojan",
-            "server": "52.48.207.242",
+            "server": "13.49.123.244",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -273,21 +309,21 @@
             }
         },
         {
-            "tag": "🇺🇸US | ss | @DeamNet_Proxy | 19",
+            "tag": "🇦🇪AE | ss | @DeamNet_Proxy | 15",
             "type": "shadowsocks",
-            "server": "67.220.86.72",
-            "server_port": 8882,
-            "method": "aes-256-gcm",
-            "password": "kDWvXYZoTBcGkC4",
+            "server": "series-a1.samanehha.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "W74XFALLLuw6m5IA",
             "plugin": "",
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
+            "tag": "🇮🇳IN | vmess | @oneclickvpnkeys | 10",
             "type": "vmess",
-            "server": "504.outline-vpn.cloud",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "139.59.24.215",
+            "server_port": 3389,
+            "uuid": "9c050a86-d612-48f1-ec32-e573df08a1b7",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -297,24 +333,17 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "vip2323.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "vip2323.cfd"
-                }
             }
+        },
+        {
+            "tag": "🇬🇧GB | ss | @VmessProtocol | 7",
+            "type": "shadowsocks",
+            "server": "series-a2-mec.samanehha.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "u17T3BvpYaaiuW2c",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇦🇪AE | ss | @OutlineVpnOfficial | 19",
@@ -392,17 +421,7 @@
             }
         },
         {
-            "tag": "🇧🇭BH | ss | @forwardv2ray | 18",
-            "type": "shadowsocks",
-            "server": "series-a2-me.samanehha.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "Bog0ELmMM9DSxDdQ",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇷🇺RU | ss | @proxy_mtm | 1",
+            "tag": "🇷🇺RU | ss | @proxy_mtm | 10",
             "type": "shadowsocks",
             "server": "103.113.68.27",
             "server_port": 2352,
