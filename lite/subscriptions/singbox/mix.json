@@ -107,17 +107,16 @@
             "outbounds": [
                 "URL-TEST",
                 "🇮🇷IR | vmess | @azadi_az_inja_migzare | 2",
-                "🇬🇧GB | trojan | @PrivateVPNs | 17",
-                "🇺🇸US | trojan | @DirectVPN | 16",
+                "🇮🇪IE | trojan | @PrivateVPNs | 17",
+                "🇸🇪SE | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇮🇳IN | vmess | @oneclickvpnkeys | 11",
+                "🇺🇸US | vmess | @oneclickvpnkeys | 12",
                 "🇬🇧GB | ss | @VmessProtocol | 7",
                 "🇦🇪AE | ss | @OutlineVpnOfficial | 19",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🇳🇱NL | ss | @forwardv2ray | 18",
                 "🇷🇺RU | ss | @proxy_mtm | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1",
                 "🇸🇪SE | vmess | @SINABIGO | 0",
@@ -129,17 +128,16 @@
             "type": "urltest",
             "outbounds": [
                 "🇮🇷IR | vmess | @azadi_az_inja_migzare | 2",
-                "🇬🇧GB | trojan | @PrivateVPNs | 17",
-                "🇺🇸US | trojan | @DirectVPN | 16",
+                "🇮🇪IE | trojan | @PrivateVPNs | 17",
+                "🇸🇪SE | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
-                "🇮🇳IN | vmess | @oneclickvpnkeys | 11",
+                "🇺🇸US | vmess | @oneclickvpnkeys | 12",
                 "🇬🇧GB | ss | @VmessProtocol | 7",
                 "🇦🇪AE | ss | @OutlineVpnOfficial | 19",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🇳🇱NL | ss | @forwardv2ray | 18",
                 "🇷🇺RU | ss | @proxy_mtm | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1",
                 "🇸🇪SE | vmess | @SINABIGO | 0",
@@ -200,9 +198,9 @@
             }
         },
         {
-            "tag": "🇬🇧GB | trojan | @PrivateVPNs | 17",
+            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 17",
             "type": "trojan",
-            "server": "13.42.68.7",
+            "server": "52.213.40.128",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -222,9 +220,9 @@
             }
         },
         {
-            "tag": "🇺🇸US | trojan | @DirectVPN | 16",
+            "tag": "🇸🇪SE | trojan | @DirectVPN | 16",
             "type": "trojan",
-            "server": "52.89.127.98",
+            "server": "13.50.185.196",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -285,11 +283,11 @@
             }
         },
         {
-            "tag": "🇮🇳IN | vmess | @oneclickvpnkeys | 11",
+            "tag": "🇺🇸US | vmess | @oneclickvpnkeys | 12",
             "type": "vmess",
-            "server": "139.59.24.215",
-            "server_port": 3389,
-            "uuid": "9c050a86-d612-48f1-ec32-e573df08a1b7",
+            "server": "iran-011-join.outline-vpn.cloud",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -299,6 +297,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kittiy.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "kittiy.sbs"
+                }
             }
         },
         {
@@ -385,16 +400,6 @@
                     "Host": ""
                 }
             }
-        },
-        {
-            "tag": "🇳🇱NL | ss | @forwardv2ray | 18",
-            "type": "shadowsocks",
-            "server": "88.210.6.98",
-            "server_port": 60869,
-            "method": "chacha20-ietf-poly1305",
-            "password": "lPT3Mi25IXYP3iWzPJaryQ",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇷🇺RU | ss | @proxy_mtm | 10",
