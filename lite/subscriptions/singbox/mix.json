@@ -112,13 +112,12 @@
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 9",
-                "🇨🇦CA | vmess | @DailyV2RY | 131",
                 "🇦🇪AE | ss | @OutlineVpnOfficial | 19",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🏳️XX | vmess | @forwardv2ray | 18",
-                "🇮🇷IR | vless | @Good_V2rayy | 1"
+                "🇮🇷IR | vless | @Good_V2rayy | 1",
+                "🇨🇦CA | vmess | @OpenSSTPVpn | 1"
             ]
         },
         {
@@ -131,13 +130,12 @@
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 9",
-                "🇨🇦CA | vmess | @DailyV2RY | 131",
                 "🇦🇪AE | ss | @OutlineVpnOfficial | 19",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
                 "🇵🇱PL | vmess | @v2Line | 9",
-                "🏳️XX | vmess | @forwardv2ray | 18",
-                "🇮🇷IR | vless | @Good_V2rayy | 1"
+                "🇮🇷IR | vless | @Good_V2rayy | 1",
+                "🇨🇦CA | vmess | @OpenSSTPVpn | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -303,40 +301,6 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @DailyV2RY | 131",
-            "type": "vmess",
-            "server": "172.67.71.160",
-            "server_port": 443,
-            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "obdii.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws",
-                "headers": {
-                    "Host": "obdii.cfd"
-                }
-            }
-        },
-        {
             "tag": "🇦🇪AE | ss | @OutlineVpnOfficial | 19",
             "type": "shadowsocks",
             "server": "java.ct.arvancode.eu.org",
@@ -412,40 +376,6 @@
             }
         },
         {
-            "tag": "🏳️XX | vmess | @forwardv2ray | 18",
-            "type": "vmess",
-            "server": "mci.mosi.mosipro.ml",
-            "server_port": 443,
-            "uuid": "c97e216c-3f6f-4e4a-bdb3-b81615d98ff5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "Dusseldorf.kotick.site",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/speedtest",
-                "headers": {
-                    "Host": "Dusseldorf.kotick.site"
-                }
-            }
-        },
-        {
             "tag": "🇮🇷IR | vless | @Good_V2rayy | 1",
             "type": "vless",
             "server": "89.44.112.229",
@@ -471,6 +401,40 @@
                     "enabled": true,
                     "public_key": "D_1lbvqN7gAukXBMN4jgwQY8BO3LBW-tOyiTXx-zckI",
                     "short_id": "291ef87c"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @OpenSSTPVpn | 1",
+            "type": "vmess",
+            "server": "172.67.71.160",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "obdii.cfd"
                 }
             }
         }
