@@ -107,11 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🇮🇷IR | vmess | @azadi_az_inja_migzare | 2",
-                "🇩🇪DE | vless | @V2rayNGn | 25",
-                "🇩🇪DE | trojan | @PrivateVPNs | 18",
+                "🇫🇷FR | trojan | @PrivateVPNs | 18",
                 "🇺🇸US | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
+                "🇳🇱NL | vmess | @DeamNet_Proxy | 17",
                 "🇮🇳IN | vmess | @oneclickvpnkeys | 11",
                 "🇬🇧GB | ss | @VmessProtocol | 7",
                 "🇦🇪AE | ss | @OutlineVpnOfficial | 19",
@@ -129,11 +129,11 @@
             "type": "urltest",
             "outbounds": [
                 "🇮🇷IR | vmess | @azadi_az_inja_migzare | 2",
-                "🇩🇪DE | vless | @V2rayNGn | 25",
-                "🇩🇪DE | trojan | @PrivateVPNs | 18",
+                "🇫🇷FR | trojan | @PrivateVPNs | 18",
                 "🇺🇸US | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
+                "🇳🇱NL | vmess | @DeamNet_Proxy | 17",
                 "🇮🇳IN | vmess | @oneclickvpnkeys | 11",
                 "🇬🇧GB | ss | @VmessProtocol | 7",
                 "🇦🇪AE | ss | @OutlineVpnOfficial | 19",
@@ -200,33 +200,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vless | @V2rayNGn | 25",
-            "type": "vless",
-            "server": "54.37.76.9",
-            "server_port": 443,
-            "uuid": "TMCUSTOMIZE-VPNCUSTOMIZE",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdn.kellekcollection.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | trojan | @PrivateVPNs | 18",
+            "tag": "🇫🇷FR | trojan | @PrivateVPNs | 18",
             "type": "trojan",
-            "server": "18.157.101.156",
+            "server": "13.39.195.216",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -248,7 +224,7 @@
         {
             "tag": "🇺🇸US | trojan | @DirectVPN | 16",
             "type": "trojan",
-            "server": "3.137.127.245",
+            "server": "13.59.121.122",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -305,6 +281,40 @@
                 "path": "\/db00",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | vmess | @DeamNet_Proxy | 17",
+            "type": "vmess",
+            "server": "188.114.97.3",
+            "server_port": 443,
+            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "afrhms16v.bestxray.buzz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "afrhms16v.bestxray.buzz"
                 }
             }
         },
