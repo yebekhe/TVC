@@ -128,6 +128,7 @@ proxies:
   - {"name":"🇦🇪AE | ss | @OutlineVpnOfficial | 19","type":"ss","server":"java.ct.arvancode.eu.org","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇨🇳CN | vmess | @yaney_01 | 1","type":"vmess","server":"221.131.165.179","port":"18048","cipher":"auto","uuid":"01b094d8-68f4-317c-99b9-ccd867603120","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/soda","headers":{"host":"cn.bing.com"}}}
   - {"name":"🇵🇱PL | vmess | @v2Line | 9","type":"vmess","server":"pl2-vmess.sshmax.xyz","port":"80","cipher":"auto","uuid":"18c6b542-e6f8-4476-872a-d3955f45d9f0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"pl2-vmess.sshmax.xyz"}}}
+  - {"name":"🏳️XX | vmess | @forwardv2ray | 18","type":"vmess","server":"mci.mosi.mosipro.ml","port":"443","cipher":"auto","uuid":"c97e216c-3f6f-4e4a-bdb3-b81615d98ff5","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Dusseldorf.kotick.site"}}}
   - {"name":"🇮🇷IR | vless | @Good_V2rayy | 1","type":"vless","server":"89.44.112.229","port":2053,"udp":true,"uuid":"edd7f66d-74dc-45a0-8270-5df829cf1aa8","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"discord.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"D_1lbvqN7gAukXBMN4jgwQY8BO3LBW-tOyiTXx-zckI","short-id":"291ef87c"}}
 proxy-groups:
   - name: MANUAL
@@ -143,6 +144,7 @@ proxy-groups:
       - '🇦🇪AE | ss | @OutlineVpnOfficial | 19'
       - '🇨🇳CN | vmess | @yaney_01 | 1'
       - '🇵🇱PL | vmess | @v2Line | 9'
+      - '🏳️XX | vmess | @forwardv2ray | 18'
       - '🇮🇷IR | vless | @Good_V2rayy | 1'
   - name: URL-TEST
     type: url-test
@@ -158,6 +160,7 @@ proxy-groups:
       - '🇦🇪AE | ss | @OutlineVpnOfficial | 19'
       - '🇨🇳CN | vmess | @yaney_01 | 1'
       - '🇵🇱PL | vmess | @v2Line | 9'
+      - '🏳️XX | vmess | @forwardv2ray | 18'
       - '🇮🇷IR | vless | @Good_V2rayy | 1'
   - name: FALLBACK
     type: fallback
@@ -172,6 +175,7 @@ proxy-groups:
       - '🇦🇪AE | ss | @OutlineVpnOfficial | 19'
       - '🇨🇳CN | vmess | @yaney_01 | 1'
       - '🇵🇱PL | vmess | @v2Line | 9'
+      - '🏳️XX | vmess | @forwardv2ray | 18'
       - '🇮🇷IR | vless | @Good_V2rayy | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
