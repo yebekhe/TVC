@@ -107,7 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇮🇷IR | vmess | @azadi_az_inja_migzare | 2",
-                "🇩🇪DE | trojan | @PrivateVPNs | 16",
+                "🇩🇪DE | trojan | @PrivateVPNs | 17",
                 "🇸🇪SE | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
@@ -117,6 +117,7 @@
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
                 "🇵🇱PL | vmess | @v2Line | 9",
+                "🇨🇦CA | vless | @forwardv2ray | 7",
                 "🇷🇺RU | ss | @proxy_mtm | 17",
                 "🏳️XX | vless | @GozargahVPN | 9",
                 "🇮🇷IR | vless | @Good_V2rayy | 1",
@@ -129,7 +130,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇮🇷IR | vmess | @azadi_az_inja_migzare | 2",
-                "🇩🇪DE | trojan | @PrivateVPNs | 16",
+                "🇩🇪DE | trojan | @PrivateVPNs | 17",
                 "🇸🇪SE | trojan | @DirectVPN | 16",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
@@ -139,6 +140,7 @@
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
                 "🇵🇱PL | vmess | @v2Line | 9",
+                "🇨🇦CA | vless | @forwardv2ray | 7",
                 "🇷🇺RU | ss | @proxy_mtm | 17",
                 "🏳️XX | vless | @GozargahVPN | 9",
                 "🇮🇷IR | vless | @Good_V2rayy | 1",
@@ -200,9 +202,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | trojan | @PrivateVPNs | 16",
+            "tag": "🇩🇪DE | trojan | @PrivateVPNs | 17",
             "type": "trojan",
-            "server": "18.198.17.55",
+            "server": "3.126.176.185",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -400,6 +402,37 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @forwardv2ray | 7",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "edeae630-dc3e-438c-a514-b22fb5bcc77c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "video.allhubb.info",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ASD3uctxcak3",
+                "headers": {
+                    "Host": "video.allhubb.info"
                 }
             }
         },
