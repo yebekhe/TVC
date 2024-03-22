@@ -107,8 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇮🇷IR | vmess | @azadi_az_inja_migzare | 2",
-                "🇮🇪IE | trojan | @PrivateVPNs | 17",
-                "🇺🇸US | trojan | @DirectVPN | 17",
+                "🇸🇪SE | trojan | @PrivateVPNs | 17",
+                "🇸🇪SE | trojan | @DirectVPN | 17",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 11",
@@ -119,10 +119,10 @@
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
                 "🇵🇱PL | vmess | @v2Line | 10",
+                "🇺🇸US | vmess | @forwardv2ray | 18",
                 "🏳️XX | vless | @GozargahVPN | 9",
                 "🇮🇷IR | vless | @Good_V2rayy | 1",
                 "🇸🇪SE | vmess | @SINABIGO | 2",
-                "🇬🇧GB | ss | @ROMAX_VPN | 7",
                 "🇨🇦CA | vmess | @OpenSSTPVpn | 1"
             ]
         },
@@ -131,8 +131,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇮🇷IR | vmess | @azadi_az_inja_migzare | 2",
-                "🇮🇪IE | trojan | @PrivateVPNs | 17",
-                "🇺🇸US | trojan | @DirectVPN | 17",
+                "🇸🇪SE | trojan | @PrivateVPNs | 17",
+                "🇸🇪SE | trojan | @DirectVPN | 17",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 11",
@@ -143,10 +143,10 @@
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
                 "🇵🇱PL | vmess | @v2Line | 10",
+                "🇺🇸US | vmess | @forwardv2ray | 18",
                 "🏳️XX | vless | @GozargahVPN | 9",
                 "🇮🇷IR | vless | @Good_V2rayy | 1",
                 "🇸🇪SE | vmess | @SINABIGO | 2",
-                "🇬🇧GB | ss | @ROMAX_VPN | 7",
                 "🇨🇦CA | vmess | @OpenSSTPVpn | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -204,9 +204,9 @@
             }
         },
         {
-            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 17",
+            "tag": "🇸🇪SE | trojan | @PrivateVPNs | 17",
             "type": "trojan",
-            "server": "99.81.42.26",
+            "server": "13.53.120.12",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -226,9 +226,9 @@
             }
         },
         {
-            "tag": "🇺🇸US | trojan | @DirectVPN | 17",
+            "tag": "🇸🇪SE | trojan | @DirectVPN | 17",
             "type": "trojan",
-            "server": "44.234.217.104",
+            "server": "13.51.105.30",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -459,6 +459,40 @@
             }
         },
         {
+            "tag": "🇺🇸US | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "meroiy.icu",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "meroiy.icu",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "meroiy.icu"
+                }
+            }
+        },
+        {
             "tag": "🏳️XX | vless | @GozargahVPN | 9",
             "type": "vless",
             "server": "test.GozargahVPN.top",
@@ -539,16 +573,6 @@
                     "Host": ""
                 }
             }
-        },
-        {
-            "tag": "🇬🇧GB | ss | @ROMAX_VPN | 7",
-            "type": "shadowsocks",
-            "server": "13.42.169.32",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "W74XFALLLuw6m5IA",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇨🇦CA | vmess | @OpenSSTPVpn | 1",
