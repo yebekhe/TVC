@@ -128,13 +128,14 @@
                 "🇩🇪DE | vless | @ShadowProxy66 | 34",
                 "🇩🇪DE | vless | @Qv2rayDONATED | 0",
                 "🏳️XX | vless | @v2ray_swhil | 12",
-                "🇺🇸US | vless | @DailyV2RY | 101",
+                "🇨🇷CR | vless | @DailyV2RY | 101",
                 "🇺🇸US | vless | @v2rayng_config_amin | 1",
                 "🇳🇱NL | vless | @Capital_NET | 8",
                 "🇳🇱NL | vless | @Capital_NET | 18",
                 "🇳🇱NL | vless | @Capital_NET | 20",
                 "🏳️XX | vless | @Capital_NET | 24",
-                "🇨🇦CA | vless | @forwardv2ray | 7",
+                "🇨🇦CA | vless | @FreakConfig | 0",
+                "🇩🇪DE | vless | @forwardv2ray | 5",
                 "🇩🇪DE | vless | @GozargahVPN | 8",
                 "🏳️XX | vless | @GozargahVPN | 9",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
@@ -166,13 +167,14 @@
                 "🇩🇪DE | vless | @ShadowProxy66 | 34",
                 "🇩🇪DE | vless | @Qv2rayDONATED | 0",
                 "🏳️XX | vless | @v2ray_swhil | 12",
-                "🇺🇸US | vless | @DailyV2RY | 101",
+                "🇨🇷CR | vless | @DailyV2RY | 101",
                 "🇺🇸US | vless | @v2rayng_config_amin | 1",
                 "🇳🇱NL | vless | @Capital_NET | 8",
                 "🇳🇱NL | vless | @Capital_NET | 18",
                 "🇳🇱NL | vless | @Capital_NET | 20",
                 "🏳️XX | vless | @Capital_NET | 24",
-                "🇨🇦CA | vless | @forwardv2ray | 7",
+                "🇨🇦CA | vless | @FreakConfig | 0",
+                "🇩🇪DE | vless | @forwardv2ray | 5",
                 "🇩🇪DE | vless | @GozargahVPN | 8",
                 "🏳️XX | vless | @GozargahVPN | 9",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
@@ -857,7 +859,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | vless | @DailyV2RY | 101",
+            "tag": "🇨🇷CR | vless | @DailyV2RY | 101",
             "type": "vless",
             "server": "www.legendaryking.link",
             "server_port": 443,
@@ -1035,11 +1037,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @forwardv2ray | 7",
+            "tag": "🇨🇦CA | vless | @FreakConfig | 0",
             "type": "vless",
-            "server": "104.21.63.77",
-            "server_port": 2083,
-            "uuid": "79b12a6a-6c8b-4394-8f09-e97046de0a10",
+            "server": "104.21.51.208",
+            "server_port": 443,
+            "uuid": "ffffffff-eeae-4311-b37c-b2a67847fed2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1049,7 +1051,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "d.nonoall.com",
+                "server_name": "watashi.free.de.mnhacker.eu.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1058,11 +1060,42 @@
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "@v2ray_nonoal,@v2ray_nonoal,@v2ray_nonoal,@v2ray_nonoal,@v2ray_nonoal,@v2ray_nonoal,@v2ray_nonoal,@v2ray_nonoal,@v2ray_nonoal,@v2ray_nonoal,@v2ray_nonoal,@v2ray_nonoal,@v2ray_nonoal",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "watashi.free.de.mnhacker.eu.org"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | vless | @forwardv2ray | 5",
+            "type": "vless",
+            "server": "50.7.85.221",
+            "server_port": 443,
+            "uuid": "3af3a0f3-28ea-407c-a3df-2ae3b33fc174",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "salampesarm.sesewov745.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "salampesarm.sesewov745.workers.dev"
+                }
             }
         },
         {
