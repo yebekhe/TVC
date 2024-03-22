@@ -109,7 +109,7 @@
                 "🇮🇷IR | vmess | @azadi_az_inja_migzare | 2",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 11",
+                "🇮🇩ID | vmess | @oneclickvpnkeys | 11",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 61",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
@@ -125,7 +125,7 @@
                 "🇮🇷IR | vmess | @azadi_az_inja_migzare | 2",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 11",
+                "🇮🇩ID | vmess | @oneclickvpnkeys | 11",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 61",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
@@ -229,11 +229,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vmess | @oneclickvpnkeys | 11",
+            "tag": "🇮🇩ID | vmess | @oneclickvpnkeys | 11",
             "type": "vmess",
-            "server": "45.32.158.65",
-            "server_port": 27663,
-            "uuid": "5789382f-2bb4-4817-ba71-2e5f21a27268",
+            "server": "zxeeds.sannvpn.my.id",
+            "server_port": 443,
+            "uuid": "415db1e5-695d-44da-8b17-fbf2d8def97d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -243,6 +243,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zxeeds.sannvpn.my.id",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vmess",
+                "headers": {
+                    "Host": "zxeeds.sannvpn.my.id"
+                }
             }
         },
         {
