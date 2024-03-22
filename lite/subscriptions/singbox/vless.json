@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇺🇸US | vless | @forwardv2ray | 18",
                 "🏳️XX | vless | @GozargahVPN | 9",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ]
@@ -114,6 +115,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇺🇸US | vless | @forwardv2ray | 18",
                 "🏳️XX | vless | @GozargahVPN | 9",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ],
@@ -136,6 +138,37 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇺🇸US | vless | @forwardv2ray | 18",
+            "type": "vless",
+            "server": "172.67.204.84",
+            "server_port": 2053,
+            "uuid": "4045c6b7-1d53-4574-98cd-df21db40b0dc",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "itcenteriran.blog",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/p=19",
+                "headers": {
+                    "Host": "itcenteriran.blog"
+                }
+            }
         },
         {
             "tag": "🏳️XX | vless | @GozargahVPN | 9",
