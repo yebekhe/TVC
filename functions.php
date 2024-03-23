@@ -92,9 +92,9 @@ function isEncrypted($input) {
         return true;
     } elseif ($configType === "ss") {
         return true;
-    } elseif ($configType === "tuic" && $decodedConfig['params']['allow_insecure'] === "0" && !empty($decodedConfig['params']['allow_insecure'])) {
+    } elseif ($configType === "tuic" /*&& $decodedConfig['params']['allow_insecure'] === "0" && !empty($decodedConfig['params']['allow_insecure'])*/) {
         return true;
-    } elseif ($configType === "hy2" && $decodedConfig['params']['insecure'] === "0" && !empty($decodedConfig['params']['insecure'])) {
+    } elseif ($configType === "hy2" /*&& $decodedConfig['params']['insecure'] === "0" && !empty($decodedConfig['params']['insecure'])*/) {
         return true;
     }
     return false;
