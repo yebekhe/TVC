@@ -108,14 +108,14 @@
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
-                "🇺🇸US | vmess | @oneclickvpnkeys | 9",
+                "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
+                "🇺🇸US | vmess | @oneclickvpnkeys | 11",
                 "🇩🇪DE | vmess | @prrofile_purple | 159",
                 "🇺🇸US | vmess | @customv2ray | 14",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 61",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
-                "🇵🇱PL | vmess | @v2Line | 10",
-                "🇨🇦CA | vmess | @forwardv2ray | 15"
+                "🇵🇱PL | vmess | @v2Line | 10"
             ]
         },
         {
@@ -124,14 +124,14 @@
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
-                "🇺🇸US | vmess | @oneclickvpnkeys | 9",
+                "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
+                "🇺🇸US | vmess | @oneclickvpnkeys | 11",
                 "🇩🇪DE | vmess | @prrofile_purple | 159",
                 "🇺🇸US | vmess | @customv2ray | 14",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 61",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
-                "🇵🇱PL | vmess | @v2Line | 10",
-                "🇨🇦CA | vmess | @forwardv2ray | 15"
+                "🇵🇱PL | vmess | @v2Line | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -195,7 +195,41 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @oneclickvpnkeys | 9",
+            "tag": "🇨🇦CA | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "104.21.25.19",
+            "server_port": 443,
+            "uuid": "9eac2350-e4f0-11ee-b532-205c6d5f5d78",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "us-netflix.hihu.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@hopev2ray",
+                "headers": {
+                    "Host": "us-netflix.hihu.net"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | vmess | @oneclickvpnkeys | 11",
             "type": "vmess",
             "server": "wwww.outline-vpn.cloud",
             "server_port": 443,
@@ -375,40 +409,6 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | vmess | @forwardv2ray | 15",
-            "type": "vmess",
-            "server": "104.21.12.173",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "meroiy.icu",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "meroiy.icu"
                 }
             }
         }
