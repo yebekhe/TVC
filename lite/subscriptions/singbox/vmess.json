@@ -115,7 +115,7 @@
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
                 "🇵🇱PL | vmess | @v2Line | 10",
-                "🇸🇪SE | vmess | @SINABIGO | 4"
+                "🇨🇦CA | vmess | @forwardv2ray | 15"
             ]
         },
         {
@@ -131,7 +131,7 @@
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🏳️XX | vmess | @Hope_Net | 13",
                 "🇵🇱PL | vmess | @v2Line | 10",
-                "🇸🇪SE | vmess | @SINABIGO | 4"
+                "🇨🇦CA | vmess | @forwardv2ray | 15"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -379,11 +379,11 @@
             }
         },
         {
-            "tag": "🇸🇪SE | vmess | @SINABIGO | 4",
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 15",
             "type": "vmess",
-            "server": "185.146.173.59",
-            "server_port": 2052,
-            "uuid": "V2RAXX",
+            "server": "104.21.12.173",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -394,11 +394,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "meroiy.icu",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/@V2RAXX",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": ""
+                    "Host": "meroiy.icu"
                 }
             }
         }
