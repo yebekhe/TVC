@@ -155,6 +155,8 @@ proxies:
   - {"name":"🇫🇷FR | trojan | @DirectVPN | 14","type":"trojan","server":"52.47.122.174","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | trojan | @DirectVPN | 15","type":"trojan","server":"16.16.228.222","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | trojan | @DirectVPN | 16","type":"trojan","server":"16.170.36.7","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇺🇸US | trojan | @forwardv2ray | 4","type":"trojan","server":"us1.n305.dynu.net","port":16389,"udp":false,"password":"8258210b-4b61-4d96-be4f-4e6be911a6e7","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"us1.n305.dynu.net"}
+  - {"name":"🇺🇸US | trojan | @forwardv2ray | 6","type":"trojan","server":"us1.n305.dynu.net","port":16389,"udp":false,"password":"a2db6566-32c7-4e6e-89d7-b258ff55959f","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"us1.n305.dynu.net"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -196,6 +198,8 @@ proxy-groups:
       - '🇫🇷FR | trojan | @DirectVPN | 14'
       - '🇸🇪SE | trojan | @DirectVPN | 15'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇺🇸US | trojan | @forwardv2ray | 4'
+      - '🇺🇸US | trojan | @forwardv2ray | 6'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -237,6 +241,8 @@ proxy-groups:
       - '🇫🇷FR | trojan | @DirectVPN | 14'
       - '🇸🇪SE | trojan | @DirectVPN | 15'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇺🇸US | trojan | @forwardv2ray | 4'
+      - '🇺🇸US | trojan | @forwardv2ray | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -277,6 +283,8 @@ proxy-groups:
       - '🇫🇷FR | trojan | @DirectVPN | 14'
       - '🇸🇪SE | trojan | @DirectVPN | 15'
       - '🇸🇪SE | trojan | @DirectVPN | 16'
+      - '🇺🇸US | trojan | @forwardv2ray | 4'
+      - '🇺🇸US | trojan | @forwardv2ray | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
