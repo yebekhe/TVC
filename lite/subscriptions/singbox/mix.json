@@ -106,12 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇪IE | trojan | @PrivateVPNs | 19",
-                "🇬🇧GB | trojan | @DirectVPN | 19",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
+                "🇸🇪SE | trojan | @PrivateVPNs | 19",
+                "🇮🇪IE | trojan | @DirectVPN | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @DeamNet_Proxy | 17",
-                "🇵🇱PL | vmess | @oneclickvpnkeys | 11",
+                "🇵🇱PL | vmess | @oneclickvpnkeys | 12",
                 "🇺🇸US | vmess | @customv2ray | 14",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 41",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 0",
@@ -130,12 +131,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇪IE | trojan | @PrivateVPNs | 19",
-                "🇬🇧GB | trojan | @DirectVPN | 19",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
+                "🇸🇪SE | trojan | @PrivateVPNs | 19",
+                "🇮🇪IE | trojan | @DirectVPN | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @DeamNet_Proxy | 17",
-                "🇵🇱PL | vmess | @oneclickvpnkeys | 11",
+                "🇵🇱PL | vmess | @oneclickvpnkeys | 12",
                 "🇺🇸US | vmess | @customv2ray | 14",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 41",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 0",
@@ -170,9 +172,43 @@
             "type": "dns"
         },
         {
-            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 19",
+            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
+            "type": "vmess",
+            "server": "inna.cfd",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "inna.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "inna.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | trojan | @PrivateVPNs | 19",
             "type": "trojan",
-            "server": "52.19.13.53",
+            "server": "13.53.224.217",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -192,9 +228,9 @@
             }
         },
         {
-            "tag": "🇬🇧GB | trojan | @DirectVPN | 19",
+            "tag": "🇮🇪IE | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "18.171.3.252",
+            "server": "52.30.252.160",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -289,7 +325,7 @@
             }
         },
         {
-            "tag": "🇵🇱PL | vmess | @oneclickvpnkeys | 11",
+            "tag": "🇵🇱PL | vmess | @oneclickvpnkeys | 12",
             "type": "vmess",
             "server": "146.59.17.58",
             "server_port": 12960,
