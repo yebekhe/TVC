@@ -119,12 +119,13 @@ dns:
 
 proxies:
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇿CZ | vmess | @mftizi | 19","type":"vmess","server":"cfcdn3.sanfencdn9.com","port":"80","cipher":"auto","uuid":"9a557d02-12ff-4da8-8669-1824cfdefe1f","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/VDXcaM7r","headers":{"host":"GWYp69Yujp2.yofnhkfc.xyz"}}}
+  - {"name":"🇨🇦CA | vmess | @mftizi | 19","type":"vmess","server":"cfcdn3.sanfencdn9.com","port":"80","cipher":"auto","uuid":"9a557d02-12ff-4da8-8669-1824cfdefe1f","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/VDXcaM7r","headers":{"host":"GWYp69Yujp2.yofnhkfc.xyz"}}}
   - {"name":"🇬🇧GB | vmess | @oneclickvpnkeys | 11","type":"vmess","server":"172.99.190.12","port":"22324","cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇮🇷IR | vmess | @V2rayng_Fast | 0","type":"vmess","server":"31.14.118.164","port":"20883","cipher":"auto","uuid":"3120381d-eb39-4a5c-b4bc-4e220757d2b8","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @vless_vmess | 9","type":"vmess","server":"hms04.xmivideo.cfd","port":"443","cipher":"auto","uuid":"93ea486a-bada-42a4-ac38-d088b320fa1e","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"xmivideo.cfd"}}}
   - {"name":"🇨🇳CN | vmess | @yaney_01 | 1","type":"vmess","server":"221.131.165.179","port":"18048","cipher":"auto","uuid":"01b094d8-68f4-317c-99b9-ccd867603120","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/soda","headers":{"host":"cn.bing.com"}}}
   - {"name":"🇵🇱PL | vmess | @v2Line | 10","type":"vmess","server":"pl2-vmess.sshmax.xyz","port":"80","cipher":"auto","uuid":"18c6b542-e6f8-4476-872a-d3955f45d9f0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"pl2-vmess.sshmax.xyz"}}}
+  - {"name":"🇺🇸US | vmess | @forwardv2ray | 11","type":"vmess","server":"5.161.151.96","port":"8081","cipher":"auto","uuid":"314d60aa-768a-4646-9948-f6d6181c5475","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,12 +133,13 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
-      - '🇨🇿CZ | vmess | @mftizi | 19'
+      - '🇨🇦CA | vmess | @mftizi | 19'
       - '🇬🇧GB | vmess | @oneclickvpnkeys | 11'
       - '🇮🇷IR | vmess | @V2rayng_Fast | 0'
       - '🇨🇦CA | vmess | @vless_vmess | 9'
       - '🇨🇳CN | vmess | @yaney_01 | 1'
       - '🇵🇱PL | vmess | @v2Line | 10'
+      - '🇺🇸US | vmess | @forwardv2ray | 11'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -145,24 +147,26 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
-      - '🇨🇿CZ | vmess | @mftizi | 19'
+      - '🇨🇦CA | vmess | @mftizi | 19'
       - '🇬🇧GB | vmess | @oneclickvpnkeys | 11'
       - '🇮🇷IR | vmess | @V2rayng_Fast | 0'
       - '🇨🇦CA | vmess | @vless_vmess | 9'
       - '🇨🇳CN | vmess | @yaney_01 | 1'
       - '🇵🇱PL | vmess | @v2Line | 10'
+      - '🇺🇸US | vmess | @forwardv2ray | 11'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
-      - '🇨🇿CZ | vmess | @mftizi | 19'
+      - '🇨🇦CA | vmess | @mftizi | 19'
       - '🇬🇧GB | vmess | @oneclickvpnkeys | 11'
       - '🇮🇷IR | vmess | @V2rayng_Fast | 0'
       - '🇨🇦CA | vmess | @vless_vmess | 9'
       - '🇨🇳CN | vmess | @yaney_01 | 1'
       - '🇵🇱PL | vmess | @v2Line | 10'
+      - '🇺🇸US | vmess | @forwardv2ray | 11'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
