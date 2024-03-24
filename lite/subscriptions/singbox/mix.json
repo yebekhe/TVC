@@ -106,20 +106,21 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | trojan | @PrivateVPNs | 19",
-                "🇫🇷FR | trojan | @DirectVPN | 19",
+                "🇬🇧GB | trojan | @PrivateVPNs | 19",
+                "🇬🇧GB | trojan | @DirectVPN | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @DeamNet_Proxy | 17",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 9",
                 "🇺🇸US | vmess | @customv2ray | 14",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 41",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 0",
+                "🇨🇦CA | vmess | @vless_vmess | 9",
                 "🇧🇭BH | ss | @VmessProtocol | 9",
                 "🇮🇪IE | ss | @OutlineVpnOfficial | 19",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🇨🇦CA | vmess | @Hope_Net | 5",
                 "🇵🇱PL | vmess | @v2Line | 10",
+                "🇧🇷BR | ss | @forwardv2ray | 18",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ]
@@ -128,20 +129,21 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | trojan | @PrivateVPNs | 19",
-                "🇫🇷FR | trojan | @DirectVPN | 19",
+                "🇬🇧GB | trojan | @PrivateVPNs | 19",
+                "🇬🇧GB | trojan | @DirectVPN | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @DeamNet_Proxy | 17",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 9",
                 "🇺🇸US | vmess | @customv2ray | 14",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 41",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 0",
+                "🇨🇦CA | vmess | @vless_vmess | 9",
                 "🇧🇭BH | ss | @VmessProtocol | 9",
                 "🇮🇪IE | ss | @OutlineVpnOfficial | 19",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
                 "🇨🇦CA | vmess | @Hope_Net | 5",
                 "🇵🇱PL | vmess | @v2Line | 10",
+                "🇧🇷BR | ss | @forwardv2ray | 18",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ],
@@ -166,9 +168,9 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | trojan | @PrivateVPNs | 19",
+            "tag": "🇬🇧GB | trojan | @PrivateVPNs | 19",
             "type": "trojan",
-            "server": "15.236.138.175",
+            "server": "35.179.21.184",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -188,9 +190,9 @@
             }
         },
         {
-            "tag": "🇫🇷FR | trojan | @DirectVPN | 19",
+            "tag": "🇬🇧GB | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "15.188.126.96",
+            "server": "18.171.3.252",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -285,23 +287,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vmess | @oneclickvpnkeys | 9",
-            "type": "vmess",
-            "server": "209.38.192.199",
-            "server_port": 45088,
-            "uuid": "b6f04489-fba1-4429-8fdf-8c9a7c87b325",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇺🇸US | vmess | @customv2ray | 14",
             "type": "vmess",
             "server": "505.outline-vpn.cloud",
@@ -374,6 +359,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @vless_vmess | 9",
+            "type": "vmess",
+            "server": "hms04.xmivideo.cfd",
+            "server_port": 443,
+            "uuid": "93ea486a-bada-42a4-ac38-d088b320fa1e",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "xmivideo.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "xmivideo.cfd"
+                }
             }
         },
         {
@@ -477,6 +496,16 @@
                     "Host": ""
                 }
             }
+        },
+        {
+            "tag": "🇧🇷BR | ss | @forwardv2ray | 18",
+            "type": "shadowsocks",
+            "server": "fell.dogsvpn.top",
+            "server_port": 7702,
+            "method": "aes-256-gcm",
+            "password": "8339446a-30e7-43a0-a25d-dfe59d47fa9f",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🏳️XX | vless | @GozargahVPN | 10",
