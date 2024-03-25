@@ -112,13 +112,13 @@
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
-                "🇵🇱PL | vmess | @oneclickvpnkeys | 9",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 1",
                 "🇸🇬SG | ss | @OutlineVpnOfficial | 17",
                 "🇨🇦CA | vmess | @yaney_01 | 1",
                 "🇨🇦CA | vmess | @Hope_Net | 18",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 9",
+                "🇺🇸US | vmess | @forwardv2ray | 13",
                 "🇦🇪AE | ss | @FAKEOFTVC | 1",
                 "🇦🇪AE | ss | @proxy_mtm | 5",
                 "🏳️XX | vless | @GozargahVPN | 10",
@@ -135,13 +135,13 @@
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
-                "🇵🇱PL | vmess | @oneclickvpnkeys | 9",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 1",
                 "🇸🇬SG | ss | @OutlineVpnOfficial | 17",
                 "🇨🇦CA | vmess | @yaney_01 | 1",
                 "🇨🇦CA | vmess | @Hope_Net | 18",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 9",
+                "🇺🇸US | vmess | @forwardv2ray | 13",
                 "🇦🇪AE | ss | @FAKEOFTVC | 1",
                 "🇦🇪AE | ss | @proxy_mtm | 5",
                 "🏳️XX | vless | @GozargahVPN | 10",
@@ -318,23 +318,6 @@
             }
         },
         {
-            "tag": "🇵🇱PL | vmess | @oneclickvpnkeys | 9",
-            "type": "vmess",
-            "server": "146.59.17.58",
-            "server_port": 12960,
-            "uuid": "48a86563-63c5-4218-e887-d752f801ae82",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇮🇷IR | vmess | @V2rayng_Fast | 1",
             "type": "vmess",
             "server": "31.14.118.164",
@@ -388,9 +371,9 @@
         {
             "tag": "🇨🇦CA | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "104.21.237.70",
-            "server_port": 80,
-            "uuid": "d31c39e0-e614-11ee-b333-205c6d5f5d78",
+            "server": "www.visa.co.jp",
+            "server_port": 8080,
+            "uuid": "e184e964-518c-4ddf-ab05-f0a2ecff2f42",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -464,6 +447,40 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "marien.motorcycles"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | vmess | @forwardv2ray | 13",
+            "type": "vmess",
+            "server": "iran-011-join.outline-vpn.cloud",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kittiy.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "kittiy.sbs"
                 }
             }
         },
