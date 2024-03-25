@@ -119,12 +119,9 @@ dns:
 
 proxies:
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇩🇪DE | vmess | @ShadowProxy66 | 13","type":"vmess","server":"45.45.152.12","port":"8099","cipher":"auto","uuid":"fa1897db-1925-4c86-a495-939a959af900","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇮🇷IR | vmess | @V2rayng_Fast | 0","type":"vmess","server":"31.14.118.164","port":"20883","cipher":"auto","uuid":"3120381d-eb39-4a5c-b4bc-4e220757d2b8","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @yaney_01 | 1","type":"vmess","server":"www.visa.com.hk","port":"80","cipher":"auto","uuid":"e184e964-518c-4ddf-ab05-f0a2ecff2f42","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ydmmamd2.mac2win.top"}}}
-  - {"name":"🇨🇦CA | vmess | @Hope_Net | 19","type":"vmess","server":"russia.com","port":"80","cipher":"auto","uuid":"bd8c41a8-7598-4c28-9965-522545e14892","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"ssrsub.v03.ssrsub.com"}}}
   - {"name":"🇮🇷IR | vmess | @MrV2Ray | 0","type":"vmess","server":"185.83.90.50","port":"41254","cipher":"auto","uuid":"39a94956-8a49-4f82-a3a4-93f7d17521d4","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
-  - {"name":"🇭🇰HK | vmess | @v2Line | 10","type":"vmess","server":"74.119.193.64","port":"443","cipher":"auto","uuid":"faa2d852-e7a4-40b3-a011-e028b8a21f3b","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,12 +129,9 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
-      - '🇩🇪DE | vmess | @ShadowProxy66 | 13'
       - '🇮🇷IR | vmess | @V2rayng_Fast | 0'
       - '🇨🇦CA | vmess | @yaney_01 | 1'
-      - '🇨🇦CA | vmess | @Hope_Net | 19'
       - '🇮🇷IR | vmess | @MrV2Ray | 0'
-      - '🇭🇰HK | vmess | @v2Line | 10'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -145,24 +139,18 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
-      - '🇩🇪DE | vmess | @ShadowProxy66 | 13'
       - '🇮🇷IR | vmess | @V2rayng_Fast | 0'
       - '🇨🇦CA | vmess | @yaney_01 | 1'
-      - '🇨🇦CA | vmess | @Hope_Net | 19'
       - '🇮🇷IR | vmess | @MrV2Ray | 0'
-      - '🇭🇰HK | vmess | @v2Line | 10'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
-      - '🇩🇪DE | vmess | @ShadowProxy66 | 13'
       - '🇮🇷IR | vmess | @V2rayng_Fast | 0'
       - '🇨🇦CA | vmess | @yaney_01 | 1'
-      - '🇨🇦CA | vmess | @Hope_Net | 19'
       - '🇮🇷IR | vmess | @MrV2Ray | 0'
-      - '🇭🇰HK | vmess | @v2Line | 10'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
