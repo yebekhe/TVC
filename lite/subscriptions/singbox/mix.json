@@ -106,20 +106,22 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
                 "🇩🇪DE | trojan | @PrivateVPNs | 17",
                 "🇩🇪DE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
-                "🇨🇦CA | vmess | @mftizi | 19",
+                "🇨🇿CZ | vmess | @mftizi | 19",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 9",
-                "🇨🇦CA | vmess | @customv2ray | 12",
+                "🇺🇸US | vmess | @customv2ray | 12",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 55",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 0",
                 "🇨🇦CA | vmess | @vless_vmess | 9",
                 "🇧🇭BH | ss | @VmessProtocol | 9",
                 "🇮🇪IE | ss | @OutlineVpnOfficial | 19",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
-                "🇺🇸US | vmess | @Hope_Net | 6",
+                "🇨🇦CA | vmess | @Hope_Net | 7",
                 "🇵🇱PL | vmess | @v2Line | 10",
+                "🏳️XX | vless | @forwardv2ray | 14",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ]
@@ -128,20 +130,22 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
                 "🇩🇪DE | trojan | @PrivateVPNs | 17",
                 "🇩🇪DE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
-                "🇨🇦CA | vmess | @mftizi | 19",
+                "🇨🇿CZ | vmess | @mftizi | 19",
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 9",
-                "🇨🇦CA | vmess | @customv2ray | 12",
+                "🇺🇸US | vmess | @customv2ray | 12",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 55",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 0",
                 "🇨🇦CA | vmess | @vless_vmess | 9",
                 "🇧🇭BH | ss | @VmessProtocol | 9",
                 "🇮🇪IE | ss | @OutlineVpnOfficial | 19",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
-                "🇺🇸US | vmess | @Hope_Net | 6",
+                "🇨🇦CA | vmess | @Hope_Net | 7",
                 "🇵🇱PL | vmess | @v2Line | 10",
+                "🏳️XX | vless | @forwardv2ray | 14",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ],
@@ -164,6 +168,40 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
+            "type": "vmess",
+            "server": "inna.cfd",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "inna.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "inna.cfd"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | trojan | @PrivateVPNs | 17",
@@ -227,7 +265,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @mftizi | 19",
+            "tag": "🇨🇿CZ | vmess | @mftizi | 19",
             "type": "vmess",
             "server": "cfcdn3.sanfencdn9.com",
             "server_port": 80,
@@ -268,7 +306,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @customv2ray | 12",
+            "tag": "🇺🇸US | vmess | @customv2ray | 12",
             "type": "vmess",
             "server": "meroiy.icu",
             "server_port": 443,
@@ -421,11 +459,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @Hope_Net | 6",
+            "tag": "🇨🇦CA | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "149.28.236.44",
-            "server_port": 47507,
-            "uuid": "dd37f6da-0bed-4344-a88a-1744dcacc26b",
+            "server": "104.21.21.35",
+            "server_port": 443,
+            "uuid": "757dc1d3-c0fd-456e-9426-2e9221584d40",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -435,6 +473,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hu2.xv2ray.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "hu2.xv2ray.net"
+                }
             }
         },
         {
@@ -458,6 +513,30 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🏳️XX | vless | @forwardv2ray | 14",
+            "type": "vless",
+            "server": "127.0.0.1",
+            "server_port": 1080,
+            "uuid": "aaccbab-caba-bcaa-bcad-bbbacbccaaca",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "127.0.0.1",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
