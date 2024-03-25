@@ -106,34 +106,32 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 9",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
                 "🇺🇸US | vmess | @customv2ray | 12",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 55",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 0",
                 "🇨🇦CA | vmess | @vless_vmess | 9",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
-                "🇨🇦CA | vmess | @Hope_Net | 13",
-                "🇵🇱PL | vmess | @v2Line | 10"
+                "🇨🇦CA | vmess | @Hope_Net | 15",
+                "🇭🇰HK | vmess | @v2Line | 10"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | vmess | @mftizi | 19",
-                "🇩🇪DE | vmess | @oneclickvpnkeys | 9",
+                "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
                 "🇺🇸US | vmess | @customv2ray | 12",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 55",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 0",
                 "🇨🇦CA | vmess | @vless_vmess | 9",
                 "🇨🇳CN | vmess | @yaney_01 | 1",
-                "🇨🇦CA | vmess | @Hope_Net | 13",
-                "🇵🇱PL | vmess | @v2Line | 10"
+                "🇨🇦CA | vmess | @Hope_Net | 15",
+                "🇭🇰HK | vmess | @v2Line | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -154,40 +152,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
-            "type": "vmess",
-            "server": "inna.cfd",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "inna.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "inna.cfd"
-                }
-            }
         },
         {
             "tag": "🇫🇷FR | vmess | @v2ray_outlineir | 0",
@@ -231,11 +195,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | vmess | @oneclickvpnkeys | 9",
+            "tag": "🇨🇦CA | vmess | @oneclickvpnkeys | 8",
             "type": "vmess",
-            "server": "104.164.11.115",
-            "server_port": 38264,
-            "uuid": "b67a0801-f298-4e1b-a80a-f538cdb32845",
+            "server": "cxc--join.outline-vpn.cloud",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -245,6 +209,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "obdii.cfd"
+                }
             }
         },
         {
@@ -381,7 +362,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @Hope_Net | 13",
+            "tag": "🇨🇦CA | vmess | @Hope_Net | 15",
             "type": "vmess",
             "server": "104.21.231.39",
             "server_port": 80,
@@ -405,11 +386,11 @@
             }
         },
         {
-            "tag": "🇵🇱PL | vmess | @v2Line | 10",
+            "tag": "🇭🇰HK | vmess | @v2Line | 10",
             "type": "vmess",
-            "server": "pl2-vmess.sshmax.xyz",
-            "server_port": 80,
-            "uuid": "18c6b542-e6f8-4476-872a-d3955f45d9f0",
+            "server": "74.119.193.64",
+            "server_port": 443,
+            "uuid": "faa2d852-e7a4-40b3-a011-e028b8a21f3b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -420,9 +401,19 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/vmess",
+                "path": "\/",
                 "headers": {
                     "Host": ""
                 }
