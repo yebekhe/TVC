@@ -112,10 +112,9 @@
                 "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 1",
                 "🇨🇦CA | vmess | @yaney_01 | 1",
-                "🇺🇸US | vmess | @Hope_Net | 18",
+                "🇨🇦CA | vmess | @Hope_Net | 18",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
-                "🇺🇸US | vmess | @v2Line | 9",
-                "🇺🇸US | vmess | @forwardv2ray | 12"
+                "🇺🇸US | vmess | @v2Line | 9"
             ]
         },
         {
@@ -128,10 +127,9 @@
                 "🇨🇦CA | vmess | @DeamNet_Proxy | 19",
                 "🇮🇷IR | vmess | @V2rayng_Fast | 1",
                 "🇨🇦CA | vmess | @yaney_01 | 1",
-                "🇺🇸US | vmess | @Hope_Net | 18",
+                "🇨🇦CA | vmess | @Hope_Net | 18",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
-                "🇺🇸US | vmess | @v2Line | 9",
-                "🇺🇸US | vmess | @forwardv2ray | 12"
+                "🇺🇸US | vmess | @v2Line | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -304,11 +302,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @Hope_Net | 18",
+            "tag": "🇨🇦CA | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "140.82.41.20",
-            "server_port": 25023,
-            "uuid": "1306606e-9dc8-4c99-fbb2-d046fc17dc5e",
+            "server": "104.19.255.51",
+            "server_port": 443,
+            "uuid": "3ed9ac53-ce00-4aa5-9f7a-a2e6fab0e14a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -318,6 +316,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "Rockp.Blanku.Me",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/wss49406",
+                "headers": {
+                    "Host": "Rockp.Blanku.Me"
+                }
             }
         },
         {
@@ -376,23 +391,6 @@
                 "headers": {
                     "Host": "marien.motorcycles"
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | vmess | @forwardv2ray | 12",
-            "type": "vmess",
-            "server": "205.234.231.148",
-            "server_port": 35000,
-            "uuid": "260877c8-e970-44b5-97fe-9ef0052158d5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         }
     ],
