@@ -106,10 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇪IE | trojan | @PrivateVPNs | 18",
-                "🇺🇸US | trojan | @DirectVPN | 18",
+                "🇮🇪IE | trojan | @PrivateVPNs | 19",
+                "🇸🇪SE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
-                "🇨🇦CA | vmess | @mftizi | 19",
+                "🇺🇸US | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 10",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 1",
                 "🇷🇺RU | ss | @OutlineVpnOfficial | 15",
@@ -117,7 +117,7 @@
                 "🇨🇦CA | vmess | @Hope_Net | 19",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 10",
-                "🇨🇦CA | vless | @FreakConfig | 6",
+                "🇳🇱NL | vless | @forwardv2ray | 17",
                 "🇺🇸US | vmess | @FAKEOFTVC | 2",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
@@ -127,10 +127,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇪IE | trojan | @PrivateVPNs | 18",
-                "🇺🇸US | trojan | @DirectVPN | 18",
+                "🇮🇪IE | trojan | @PrivateVPNs | 19",
+                "🇸🇪SE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
-                "🇨🇦CA | vmess | @mftizi | 19",
+                "🇺🇸US | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 10",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 1",
                 "🇷🇺RU | ss | @OutlineVpnOfficial | 15",
@@ -138,7 +138,7 @@
                 "🇨🇦CA | vmess | @Hope_Net | 19",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 10",
-                "🇨🇦CA | vless | @FreakConfig | 6",
+                "🇳🇱NL | vless | @forwardv2ray | 17",
                 "🇺🇸US | vmess | @FAKEOFTVC | 2",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
@@ -164,7 +164,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 18",
+            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 19",
             "type": "trojan",
             "server": "3.255.33.65",
             "server_port": 22222,
@@ -186,9 +186,9 @@
             }
         },
         {
-            "tag": "🇺🇸US | trojan | @DirectVPN | 18",
+            "tag": "🇸🇪SE | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "3.135.23.23",
+            "server": "13.49.114.121",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -225,7 +225,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @mftizi | 19",
+            "tag": "🇺🇸US | vmess | @mftizi | 19",
             "type": "vmess",
             "server": "cfcdn3.sanfencdn9.com",
             "server_port": 2052,
@@ -416,12 +416,12 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @FreakConfig | 6",
+            "tag": "🇳🇱NL | vless | @forwardv2ray | 17",
             "type": "vless",
-            "server": "162.159.135.79",
-            "server_port": 443,
-            "uuid": "d672ec4f-afba-4f61-af09-eec872f97e99",
-            "flow": "",
+            "server": "allrevolt.r8volt.com",
+            "server_port": 8443,
+            "uuid": "ae5aed77-be23-4f6c-bd51-c73745038952",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -430,19 +430,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "test30.pages.dev",
+                "server_name": "maps.google.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "test30.pages.dev"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "NbtOWq_km9k_SKgCJatXla3Jl7gGKVbjQ-GAtGg4bEk",
+                    "short_id": "bfde1c85a6a4112a"
                 }
             }
         },

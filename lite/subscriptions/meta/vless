@@ -121,7 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇨🇦CA | vless | @vpn_xw | 2","type":"vless","server":"104.16.61.8","port":2053,"udp":false,"uuid":"36a8a97b-9380-4cfb-9248-4f71a09f454c","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"ag.YaKariim.com"}
-  - {"name":"🇨🇦CA | vless | @FreakConfig | 6","type":"vless","server":"162.159.135.79","port":443,"udp":false,"uuid":"d672ec4f-afba-4f61-af09-eec872f97e99","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"test30.pages.dev","ws-opts":{"path":"/","headers":{"host":"test30.pages.dev"}}}
+  - {"name":"🇳🇱NL | vless | @forwardv2ray | 17","type":"vless","server":"allrevolt.r8volt.com","port":8443,"udp":true,"uuid":"ae5aed77-be23-4f6c-bd51-c73745038952","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"maps.google.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"NbtOWq_km9k_SKgCJatXla3Jl7gGKVbjQ-GAtGg4bEk","short-id":"bfde1c85a6a4112a"}}
   - {"name":"🇮🇷IR | vless | @Good_V2rayy | 1","type":"vless","server":"89.44.112.229","port":2053,"udp":true,"uuid":"edd7f66d-74dc-45a0-8270-5df829cf1aa8","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"discord.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"D_1lbvqN7gAukXBMN4jgwQY8BO3LBW-tOyiTXx-zckI","short-id":"291ef87c"}}
 proxy-groups:
   - name: MANUAL
@@ -130,7 +130,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇦CA | vless | @vpn_xw | 2'
-      - '🇨🇦CA | vless | @FreakConfig | 6'
+      - '🇳🇱NL | vless | @forwardv2ray | 17'
       - '🇮🇷IR | vless | @Good_V2rayy | 1'
   - name: URL-TEST
     type: url-test
@@ -139,7 +139,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇦CA | vless | @vpn_xw | 2'
-      - '🇨🇦CA | vless | @FreakConfig | 6'
+      - '🇳🇱NL | vless | @forwardv2ray | 17'
       - '🇮🇷IR | vless | @Good_V2rayy | 1'
   - name: FALLBACK
     type: fallback
@@ -147,7 +147,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇨🇦CA | vless | @vpn_xw | 2'
-      - '🇨🇦CA | vless | @FreakConfig | 6'
+      - '🇳🇱NL | vless | @forwardv2ray | 17'
       - '🇮🇷IR | vless | @Good_V2rayy | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}

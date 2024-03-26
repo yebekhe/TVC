@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | vless | @FreakConfig | 6",
+                "🇳🇱NL | vless | @forwardv2ray | 17",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ]
@@ -115,7 +115,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | vless | @FreakConfig | 6",
+                "🇳🇱NL | vless | @forwardv2ray | 17",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ],
@@ -140,12 +140,12 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | vless | @FreakConfig | 6",
+            "tag": "🇳🇱NL | vless | @forwardv2ray | 17",
             "type": "vless",
-            "server": "162.159.135.79",
-            "server_port": 443,
-            "uuid": "d672ec4f-afba-4f61-af09-eec872f97e99",
-            "flow": "",
+            "server": "allrevolt.r8volt.com",
+            "server_port": 8443,
+            "uuid": "ae5aed77-be23-4f6c-bd51-c73745038952",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -154,19 +154,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "test30.pages.dev",
+                "server_name": "maps.google.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "test30.pages.dev"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "NbtOWq_km9k_SKgCJatXla3Jl7gGKVbjQ-GAtGg4bEk",
+                    "short_id": "bfde1c85a6a4112a"
                 }
             }
         },
