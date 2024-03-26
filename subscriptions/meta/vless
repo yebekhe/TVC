@@ -152,6 +152,7 @@ proxies:
   - {"name":"🇨🇦CA | vless | @FreakConfig | 0","type":"vless","server":"172.66.44.197","port":443,"udp":false,"uuid":"d3a12e79-ef42-4268-b367-42eeb3494e60","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"Hagh.PaGes.DEv","ws-opts":{"path":"/","headers":{"host":"Hagh.PaGes.DEv"}}}
   - {"name":"🇨🇦CA | vless | @FreakConfig | 1","type":"vless","server":"23.227.60.7","port":443,"udp":false,"uuid":"d672ec4f-afba-4f61-af09-eec872f97e99","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"test43.pages.dev","ws-opts":{"path":"/","headers":{"host":"test43.pages.dev"}}}
   - {"name":"🇺🇸US | vless | @FreakConfig | 6","type":"vless","server":"162.159.135.79","port":443,"udp":false,"uuid":"d672ec4f-afba-4f61-af09-eec872f97e99","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"test30.pages.dev","ws-opts":{"path":"/","headers":{"host":"test30.pages.dev"}}}
+  - {"name":"🇬🇧GB | vless | @forwardv2ray | 0","type":"vless","server":"en.standardmap.onflashdrive.app","port":47028,"udp":true,"uuid":"3be088a4-5444-4c06-869b-6d324378a18e","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"forward.standardmap.onflashdrive.app","flow":"xtls-rprx-vision","reality-opts":{"public-key":"VMA0JhQXljJsSr6Pq0-gOthdtAtUkOHzvMeSttbGKEQ","short-id":"61b36b49"}}
   - {"name":"🇮🇷IR | vless | @Good_V2rayy | 1","type":"vless","server":"89.44.112.229","port":2053,"udp":true,"uuid":"edd7f66d-74dc-45a0-8270-5df829cf1aa8","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"discord.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"D_1lbvqN7gAukXBMN4jgwQY8BO3LBW-tOyiTXx-zckI","short-id":"291ef87c"}}
 proxy-groups:
   - name: MANUAL
@@ -191,6 +192,7 @@ proxy-groups:
       - '🇨🇦CA | vless | @FreakConfig | 0'
       - '🇨🇦CA | vless | @FreakConfig | 1'
       - '🇺🇸US | vless | @FreakConfig | 6'
+      - '🇬🇧GB | vless | @forwardv2ray | 0'
       - '🇮🇷IR | vless | @Good_V2rayy | 1'
   - name: URL-TEST
     type: url-test
@@ -230,6 +232,7 @@ proxy-groups:
       - '🇨🇦CA | vless | @FreakConfig | 0'
       - '🇨🇦CA | vless | @FreakConfig | 1'
       - '🇺🇸US | vless | @FreakConfig | 6'
+      - '🇬🇧GB | vless | @forwardv2ray | 0'
       - '🇮🇷IR | vless | @Good_V2rayy | 1'
   - name: FALLBACK
     type: fallback
@@ -268,6 +271,7 @@ proxy-groups:
       - '🇨🇦CA | vless | @FreakConfig | 0'
       - '🇨🇦CA | vless | @FreakConfig | 1'
       - '🇺🇸US | vless | @FreakConfig | 6'
+      - '🇬🇧GB | vless | @forwardv2ray | 0'
       - '🇮🇷IR | vless | @Good_V2rayy | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
