@@ -118,7 +118,7 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇵🇱PL | ss | @DeamNet_Proxy | 14","type":"ss","server":"54.36.174.181","port":6679,"password":"TEzjfAYq2IjtuoS","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US | ss | @DeamNet_Proxy | 4","type":"ss","server":"205.134.180.147","port":443,"password":"9Bvkw5aupNy8","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇩🇪DE | ss | @VmessProtocol | 0","type":"ss","server":"18.159.252.71","port":2087,"password":"VeU08K3XooFPKyaszR2k+vL8clIlwuctf5SaDabfvIo=","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇩🇪DE | ss | @VmessProtocol | 1","type":"ss","server":"3.70.18.26","port":2087,"password":"LvaBI83AuvAKv3hWmGXE5lVwrdM10uAtGCvdODCmod4=","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇩🇪DE | ss | @VmessProtocol | 4","type":"ss","server":"18.185.59.146","port":2087,"password":"/Ty5rY3O4szP4YT7kDDRa9zck7j/dpgQ1aepGq+dViQ=","cipher":"chacha20-ietf-poly1305"}
@@ -140,9 +140,6 @@ proxies:
   - {"name":"🇺🇸US | ss | @OutlineVpnOfficial | 13","type":"ss","server":"38.68.134.9","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
   - {"name":"🇷🇺RU | ss | @OutlineVpnOfficial | 14","type":"ss","server":"62.113.115.180","port":21309,"password":"mpKoYQtkF4Xz3TrZ","cipher":"aes-256-gcm"}
   - {"name":"🇵🇱PL | ss | @OutlineVpnOfficial | 15","type":"ss","server":"51.77.53.200","port":9101,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
-  - {"name":"🇹🇷TR | ss | @forwardv2ray | 13","type":"ss","server":"45.89.52.197","port":32058,"password":"Fgltbpm6cD9eHSFhKI6maC","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇦🇪AE | ss | @forwardv2ray | 14","type":"ss","server":"51.112.5.55","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB | ss | @forwardv2ray | 17","type":"ss","server":"51.145.116.125","port":55227,"password":"d2A9Z5Os3tlpRuBzABjVT7","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🏳️XX | ss | @ROMAX_VPN | 4","type":"ss","server":"[2a12:5940:5237::2]","port":7261,"password":"pZvwP17Nlz2z6jsYnVgZgf","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -150,7 +147,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇵🇱PL | ss | @DeamNet_Proxy | 14'
+      - '🇺🇸US | ss | @DeamNet_Proxy | 4'
       - '🇩🇪DE | ss | @VmessProtocol | 0'
       - '🇩🇪DE | ss | @VmessProtocol | 1'
       - '🇩🇪DE | ss | @VmessProtocol | 4'
@@ -172,9 +169,6 @@ proxy-groups:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 13'
       - '🇷🇺RU | ss | @OutlineVpnOfficial | 14'
       - '🇵🇱PL | ss | @OutlineVpnOfficial | 15'
-      - '🇹🇷TR | ss | @forwardv2ray | 13'
-      - '🇦🇪AE | ss | @forwardv2ray | 14'
-      - '🇬🇧GB | ss | @forwardv2ray | 17'
       - '🏳️XX | ss | @ROMAX_VPN | 4'
   - name: URL-TEST
     type: url-test
@@ -182,7 +176,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇵🇱PL | ss | @DeamNet_Proxy | 14'
+      - '🇺🇸US | ss | @DeamNet_Proxy | 4'
       - '🇩🇪DE | ss | @VmessProtocol | 0'
       - '🇩🇪DE | ss | @VmessProtocol | 1'
       - '🇩🇪DE | ss | @VmessProtocol | 4'
@@ -204,16 +198,13 @@ proxy-groups:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 13'
       - '🇷🇺RU | ss | @OutlineVpnOfficial | 14'
       - '🇵🇱PL | ss | @OutlineVpnOfficial | 15'
-      - '🇹🇷TR | ss | @forwardv2ray | 13'
-      - '🇦🇪AE | ss | @forwardv2ray | 14'
-      - '🇬🇧GB | ss | @forwardv2ray | 17'
       - '🏳️XX | ss | @ROMAX_VPN | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇵🇱PL | ss | @DeamNet_Proxy | 14'
+      - '🇺🇸US | ss | @DeamNet_Proxy | 4'
       - '🇩🇪DE | ss | @VmessProtocol | 0'
       - '🇩🇪DE | ss | @VmessProtocol | 1'
       - '🇩🇪DE | ss | @VmessProtocol | 4'
@@ -235,9 +226,6 @@ proxy-groups:
       - '🇺🇸US | ss | @OutlineVpnOfficial | 13'
       - '🇷🇺RU | ss | @OutlineVpnOfficial | 14'
       - '🇵🇱PL | ss | @OutlineVpnOfficial | 15'
-      - '🇹🇷TR | ss | @forwardv2ray | 13'
-      - '🇦🇪AE | ss | @forwardv2ray | 14'
-      - '🇬🇧GB | ss | @forwardv2ray | 17'
       - '🏳️XX | ss | @ROMAX_VPN | 4'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
