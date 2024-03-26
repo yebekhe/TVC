@@ -121,7 +121,6 @@ dns:
 
 proxies:
   - {"name":"🇵🇱PL | ss | @OutlineVpnOfficial | 15","type":"ss","server":"51.77.53.200","port":9101,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
-  - {"name":"🏳️XX | ss | @proxy_mtm | 5","type":"ss","server":"java.ct.arvancode.eu.org","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +128,6 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇵🇱PL | ss | @OutlineVpnOfficial | 15'
-      - '🏳️XX | ss | @proxy_mtm | 5'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -137,14 +135,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇵🇱PL | ss | @OutlineVpnOfficial | 15'
-      - '🏳️XX | ss | @proxy_mtm | 5'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇵🇱PL | ss | @OutlineVpnOfficial | 15'
-      - '🏳️XX | ss | @proxy_mtm | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}

@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🇨🇦CA | vless | @azadi_az_inja_migzare | 1",
                 "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
-                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇸🇪SE | trojan | @PrivateVPNs | 18",
                 "🇮🇪IE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 19",
@@ -120,8 +120,8 @@
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 10",
                 "🇨🇦CA | vless | @FreakConfig | 6",
+                "🇮🇷IR | vmess | @forwardv2ray | 17",
                 "🇺🇸US | vmess | @FAKEOFTVC | 2",
-                "🏳️XX | ss | @proxy_mtm | 5",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ]
@@ -132,7 +132,7 @@
             "outbounds": [
                 "🇨🇦CA | vless | @azadi_az_inja_migzare | 1",
                 "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
-                "🇮🇪IE | trojan | @PrivateVPNs | 18",
+                "🇸🇪SE | trojan | @PrivateVPNs | 18",
                 "🇮🇪IE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 19",
@@ -144,8 +144,8 @@
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 10",
                 "🇨🇦CA | vless | @FreakConfig | 6",
+                "🇮🇷IR | vmess | @forwardv2ray | 17",
                 "🇺🇸US | vmess | @FAKEOFTVC | 2",
-                "🏳️XX | ss | @proxy_mtm | 5",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ],
@@ -235,9 +235,9 @@
             }
         },
         {
-            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 18",
+            "tag": "🇸🇪SE | trojan | @PrivateVPNs | 18",
             "type": "trojan",
-            "server": "34.243.6.170",
+            "server": "13.48.101.25",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -535,6 +535,30 @@
             }
         },
         {
+            "tag": "🇮🇷IR | vmess | @forwardv2ray | 17",
+            "type": "vmess",
+            "server": "62.60.135.13",
+            "server_port": 8080,
+            "uuid": "4dba618a-a752-40b5-a583-8b0ed0724009",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | vmess | @FAKEOFTVC | 2",
             "type": "vmess",
             "server": "gcore.com",
@@ -557,16 +581,6 @@
                     "Host": ""
                 }
             }
-        },
-        {
-            "tag": "🏳️XX | ss | @proxy_mtm | 5",
-            "type": "shadowsocks",
-            "server": "java.ct.arvancode.eu.org",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "W74XFALLLuw6m5IA",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🏳️XX | vless | @GozargahVPN | 10",
