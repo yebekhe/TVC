@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇦CA | vless | @azadi_az_inja_migzare | 1",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
                 "🇸🇪SE | trojan | @PrivateVPNs | 18",
                 "🇩🇪DE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
@@ -115,10 +116,10 @@
                 "🇮🇷IR | vmess | @V2rayng_Fast | 1",
                 "🇸🇬SG | ss | @OutlineVpnOfficial | 17",
                 "🇨🇦CA | vmess | @yaney_01 | 1",
-                "🇦🇪AE | vmess | @Hope_Net | 18",
+                "🇺🇸US | vmess | @Hope_Net | 18",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇳🇱NL | ss | @forwardv2ray | 11",
+                "🇺🇸US | vmess | @forwardv2ray | 12",
                 "🇦🇪AE | ss | @FAKEOFTVC | 1",
                 "🏳️XX | ss | @proxy_mtm | 5",
                 "🏳️XX | vless | @GozargahVPN | 10",
@@ -130,6 +131,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇦CA | vless | @azadi_az_inja_migzare | 1",
+                "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
                 "🇸🇪SE | trojan | @PrivateVPNs | 18",
                 "🇩🇪DE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
@@ -138,10 +140,10 @@
                 "🇮🇷IR | vmess | @V2rayng_Fast | 1",
                 "🇸🇬SG | ss | @OutlineVpnOfficial | 17",
                 "🇨🇦CA | vmess | @yaney_01 | 1",
-                "🇦🇪AE | vmess | @Hope_Net | 18",
+                "🇺🇸US | vmess | @Hope_Net | 18",
                 "🇮🇷IR | vmess | @MrV2Ray | 0",
                 "🇺🇸US | vmess | @v2Line | 9",
-                "🇳🇱NL | ss | @forwardv2ray | 11",
+                "🇺🇸US | vmess | @forwardv2ray | 12",
                 "🇦🇪AE | ss | @FAKEOFTVC | 1",
                 "🏳️XX | ss | @proxy_mtm | 5",
                 "🏳️XX | vless | @GozargahVPN | 10",
@@ -196,6 +198,40 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vmess | @V2rayCollectorDonate | 21",
+            "type": "vmess",
+            "server": "inna.cfd",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "inna.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "inna.cfd"
+                }
             }
         },
         {
@@ -369,11 +405,11 @@
             }
         },
         {
-            "tag": "🇦🇪AE | vmess | @Hope_Net | 18",
+            "tag": "🇺🇸US | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "94.140.0.110",
-            "server_port": 8880,
-            "uuid": "0d1bf26a-ce97-4707-a270-7f4d2ae37334",
+            "server": "140.82.41.20",
+            "server_port": 25023,
+            "uuid": "1306606e-9dc8-4c99-fbb2-d046fc17dc5e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -383,13 +419,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
@@ -451,14 +480,21 @@
             }
         },
         {
-            "tag": "🇳🇱NL | ss | @forwardv2ray | 11",
-            "type": "shadowsocks",
-            "server": "94.131.106.6",
-            "server_port": 43743,
-            "method": "chacha20-ietf-poly1305",
-            "password": "5vPNG70j1ZqfEG5ee6aQGW",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇺🇸US | vmess | @forwardv2ray | 12",
+            "type": "vmess",
+            "server": "205.234.231.148",
+            "server_port": 35000,
+            "uuid": "260877c8-e970-44b5-97fe-9ef0052158d5",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "🇦🇪AE | ss | @FAKEOFTVC | 1",

@@ -123,8 +123,8 @@ proxies:
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇮🇷IR | vmess | @V2rayng_Fast | 1","type":"vmess","server":"31.14.118.164","port":"20883","cipher":"auto","uuid":"3120381d-eb39-4a5c-b4bc-4e220757d2b8","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @yaney_01 | 1","type":"vmess","server":"www.visa.com.hk","port":"80","cipher":"auto","uuid":"e184e964-518c-4ddf-ab05-f0a2ecff2f42","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ydmmamd2.mac2win.top"}}}
-  - {"name":"🇦🇪AE | vmess | @Hope_Net | 18","type":"vmess","server":"94.140.0.110","port":"8880","cipher":"auto","uuid":"0d1bf26a-ce97-4707-a270-7f4d2ae37334","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"food.zhaal.ir"}}}
   - {"name":"🇮🇷IR | vmess | @MrV2Ray | 0","type":"vmess","server":"185.83.90.50","port":"41254","cipher":"auto","uuid":"39a94956-8a49-4f82-a3a4-93f7d17521d4","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
+  - {"name":"🇺🇸US | vmess | @forwardv2ray | 12","type":"vmess","server":"205.234.231.148","port":"35000","cipher":"auto","uuid":"260877c8-e970-44b5-97fe-9ef0052158d5","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -134,8 +134,8 @@ proxy-groups:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇮🇷IR | vmess | @V2rayng_Fast | 1'
       - '🇨🇦CA | vmess | @yaney_01 | 1'
-      - '🇦🇪AE | vmess | @Hope_Net | 18'
       - '🇮🇷IR | vmess | @MrV2Ray | 0'
+      - '🇺🇸US | vmess | @forwardv2ray | 12'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -145,8 +145,8 @@ proxy-groups:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇮🇷IR | vmess | @V2rayng_Fast | 1'
       - '🇨🇦CA | vmess | @yaney_01 | 1'
-      - '🇦🇪AE | vmess | @Hope_Net | 18'
       - '🇮🇷IR | vmess | @MrV2Ray | 0'
+      - '🇺🇸US | vmess | @forwardv2ray | 12'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -155,8 +155,8 @@ proxy-groups:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
       - '🇮🇷IR | vmess | @V2rayng_Fast | 1'
       - '🇨🇦CA | vmess | @yaney_01 | 1'
-      - '🇦🇪AE | vmess | @Hope_Net | 18'
       - '🇮🇷IR | vmess | @MrV2Ray | 0'
+      - '🇺🇸US | vmess | @forwardv2ray | 12'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}

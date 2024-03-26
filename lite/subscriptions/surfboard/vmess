@@ -12,12 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇦CA | vmess | @yaney_01 | 1 = vmess, www.visa.com.hk, 80, username = e184e964-518c-4ddf-ab05-f0a2ecff2f42, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"ydmmamd2.mac2win.top", skip-cert-verify = true, tfo = false
-🇦🇪AE | vmess | @Hope_Net | 18 = vmess, 94.140.0.110, 8880, username = 0d1bf26a-ce97-4707-a270-7f4d2ae37334, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"food.zhaal.ir", skip-cert-verify = true, tfo = false
 🇮🇷IR | vmess | @MrV2Ray | 0 = vmess, 185.83.90.50, 41254, username = 39a94956-8a49-4f82-a3a4-93f7d17521d4, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @yaney_01 | 1,🇦🇪AE | vmess | @Hope_Net | 18,🇮🇷IR | vmess | @MrV2Ray | 0
-URL-TEST = url-test,🇨🇦CA | vmess | @yaney_01 | 1,🇦🇪AE | vmess | @Hope_Net | 18,🇮🇷IR | vmess | @MrV2Ray | 0
-FALLBACK = fallback,🇨🇦CA | vmess | @yaney_01 | 1,🇦🇪AE | vmess | @Hope_Net | 18,🇮🇷IR | vmess | @MrV2Ray | 0
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | vmess | @yaney_01 | 1,🇮🇷IR | vmess | @MrV2Ray | 0
+URL-TEST = url-test,🇨🇦CA | vmess | @yaney_01 | 1,🇮🇷IR | vmess | @MrV2Ray | 0
+FALLBACK = fallback,🇨🇦CA | vmess | @yaney_01 | 1,🇮🇷IR | vmess | @MrV2Ray | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
