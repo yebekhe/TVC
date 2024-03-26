@@ -121,8 +121,8 @@ dns:
 
 proxies:
   - {"name":"🇨🇦CA | vless | @vpn_xw | 2","type":"vless","server":"104.16.61.8","port":2053,"udp":false,"uuid":"36a8a97b-9380-4cfb-9248-4f71a09f454c","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"ag.YaKariim.com"}
-  - {"name":"🇨🇦CA | vless | @azadi_az_inja_migzare | 1","type":"vless","server":"shiatv.net","port":2096,"udp":false,"uuid":"350f2a4a-7065-4e7e-a6ad-0e344c9d7436","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"channel.v2bamdad.tech","grpc-opts":{"grpc-service-name":"BBjszEZzABSQuqxj4FxIzvwxUDoX"}}
   - {"name":"🇨🇦CA | vless | @FreakConfig | 6","type":"vless","server":"162.159.135.79","port":443,"udp":false,"uuid":"d672ec4f-afba-4f61-af09-eec872f97e99","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"test30.pages.dev","ws-opts":{"path":"/","headers":{"host":"test30.pages.dev"}}}
+  - {"name":"🇨🇦CA | vless | @forwardv2ray | 18","type":"vless","server":"172.66.44.197","port":443,"udp":false,"uuid":"d3a12e79-ef42-4268-b367-42eeb3494e60","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"Hagh.PaGes.DEv","ws-opts":{"path":"/","headers":{"host":"Hagh.PaGes.DEv"}}}
   - {"name":"🇮🇷IR | vless | @Good_V2rayy | 1","type":"vless","server":"89.44.112.229","port":2053,"udp":true,"uuid":"edd7f66d-74dc-45a0-8270-5df829cf1aa8","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"discord.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"D_1lbvqN7gAukXBMN4jgwQY8BO3LBW-tOyiTXx-zckI","short-id":"291ef87c"}}
 proxy-groups:
   - name: MANUAL
@@ -131,8 +131,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇦CA | vless | @vpn_xw | 2'
-      - '🇨🇦CA | vless | @azadi_az_inja_migzare | 1'
       - '🇨🇦CA | vless | @FreakConfig | 6'
+      - '🇨🇦CA | vless | @forwardv2ray | 18'
       - '🇮🇷IR | vless | @Good_V2rayy | 1'
   - name: URL-TEST
     type: url-test
@@ -141,8 +141,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇦CA | vless | @vpn_xw | 2'
-      - '🇨🇦CA | vless | @azadi_az_inja_migzare | 1'
       - '🇨🇦CA | vless | @FreakConfig | 6'
+      - '🇨🇦CA | vless | @forwardv2ray | 18'
       - '🇮🇷IR | vless | @Good_V2rayy | 1'
   - name: FALLBACK
     type: fallback
@@ -150,8 +150,8 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇨🇦CA | vless | @vpn_xw | 2'
-      - '🇨🇦CA | vless | @azadi_az_inja_migzare | 1'
       - '🇨🇦CA | vless | @FreakConfig | 6'
+      - '🇨🇦CA | vless | @forwardv2ray | 18'
       - '🇮🇷IR | vless | @Good_V2rayy | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
