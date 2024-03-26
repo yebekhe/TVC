@@ -136,8 +136,8 @@
                 "🇳🇱NL | vless | @Capital_NET | 20",
                 "🏳️XX | vless | @Capital_NET | 24",
                 "🇨🇦CA | vless | @FreakConfig | 0",
-                "🇨🇦CA | vless | @FreakConfig | 5",
-                "🇨🇷CR | vless | @forwardv2ray | 8",
+                "🇨🇦CA | vless | @FreakConfig | 1",
+                "🇺🇸US | vless | @FreakConfig | 6",
                 "🇩🇪DE | vless | @GozargahVPN | 9",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
@@ -177,8 +177,8 @@
                 "🇳🇱NL | vless | @Capital_NET | 20",
                 "🏳️XX | vless | @Capital_NET | 24",
                 "🇨🇦CA | vless | @FreakConfig | 0",
-                "🇨🇦CA | vless | @FreakConfig | 5",
-                "🇨🇷CR | vless | @forwardv2ray | 8",
+                "🇨🇦CA | vless | @FreakConfig | 1",
+                "🇺🇸US | vless | @FreakConfig | 6",
                 "🇩🇪DE | vless | @GozargahVPN | 9",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
@@ -1083,6 +1083,37 @@
         {
             "tag": "🇨🇦CA | vless | @FreakConfig | 0",
             "type": "vless",
+            "server": "172.66.44.197",
+            "server_port": 443,
+            "uuid": "d3a12e79-ef42-4268-b367-42eeb3494e60",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "Hagh.PaGes.DEv",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "Hagh.PaGes.DEv"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @FreakConfig | 1",
+            "type": "vless",
             "server": "23.227.60.7",
             "server_port": 443,
             "uuid": "d672ec4f-afba-4f61-af09-eec872f97e99",
@@ -1112,7 +1143,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vless | @FreakConfig | 5",
+            "tag": "🇺🇸US | vless | @FreakConfig | 6",
             "type": "vless",
             "server": "162.159.135.79",
             "server_port": 443,
@@ -1139,37 +1170,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "test30.pages.dev"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇷CR | vless | @forwardv2ray | 8",
-            "type": "vless",
-            "server": "190.93.247.155",
-            "server_port": 443,
-            "uuid": "d672ec4f-afba-4f61-af09-eec872f97e99",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "test50.pages.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "test50.pages.dev"
                 }
             }
         },
