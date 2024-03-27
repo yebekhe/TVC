@@ -106,10 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | trojan | @PrivateVPNs | 19",
+                "🇮🇪IE | trojan | @PrivateVPNs | 19",
                 "🇬🇧GB | trojan | @DirectVPN | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
-                "🇨🇦CA | vmess | @mftizi | 19",
+                "🇺🇸US | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 7",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 15",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 1",
@@ -117,6 +117,7 @@
                 "🇨🇦CA | vmess | @yaney_01 | 1",
                 "🇨🇦CA | vmess | @Hope_Net | 19",
                 "🇨🇦CA | vmess | @v2Line | 10",
+                "🇺🇸US | vmess | @FAKEOFTVC | 3",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ]
@@ -125,10 +126,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | trojan | @PrivateVPNs | 19",
+                "🇮🇪IE | trojan | @PrivateVPNs | 19",
                 "🇬🇧GB | trojan | @DirectVPN | 19",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
-                "🇨🇦CA | vmess | @mftizi | 19",
+                "🇺🇸US | vmess | @mftizi | 19",
                 "🇺🇸US | vmess | @oneclickvpnkeys | 7",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 15",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 1",
@@ -136,6 +137,7 @@
                 "🇨🇦CA | vmess | @yaney_01 | 1",
                 "🇨🇦CA | vmess | @Hope_Net | 19",
                 "🇨🇦CA | vmess | @v2Line | 10",
+                "🇺🇸US | vmess | @FAKEOFTVC | 3",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ],
@@ -160,9 +162,9 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | trojan | @PrivateVPNs | 19",
+            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 19",
             "type": "trojan",
-            "server": "18.135.14.44",
+            "server": "3.255.39.98",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -221,7 +223,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @mftizi | 19",
+            "tag": "🇺🇸US | vmess | @mftizi | 19",
             "type": "vmess",
             "server": "cfcdn3.sanfencdn9.com",
             "server_port": 2052,
@@ -400,6 +402,30 @@
             "server": "104.17.25.1",
             "server_port": 80,
             "uuid": "92aa3000-5758-41f5-9b7d-6a8394382931",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | vmess | @FAKEOFTVC | 3",
+            "type": "vmess",
+            "server": "gcore.com",
+            "server_port": 80,
+            "uuid": "22fe5bd3-0c45-44c2-93c1-01074b400633",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
