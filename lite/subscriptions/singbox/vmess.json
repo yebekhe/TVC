@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 19",
-                "🇺🇸US | vmess | @oneclickvpnkeys | 9",
+                "🇺🇸US | vmess | @oneclickvpnkeys | 7",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 15",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 1",
                 "🇨🇦CA | vmess | @yaney_01 | 1",
@@ -124,7 +124,7 @@
             "outbounds": [
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | vmess | @mftizi | 19",
-                "🇺🇸US | vmess | @oneclickvpnkeys | 9",
+                "🇺🇸US | vmess | @oneclickvpnkeys | 7",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 15",
                 "🇨🇦CA | vmess | @V2rayng_Fast | 1",
                 "🇨🇦CA | vmess | @yaney_01 | 1",
@@ -195,11 +195,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | vmess | @oneclickvpnkeys | 9",
+            "tag": "🇺🇸US | vmess | @oneclickvpnkeys | 7",
             "type": "vmess",
-            "server": "66.42.100.187",
-            "server_port": 50131,
-            "uuid": "5afaa575-704c-43d2-a639-dd4b87cfd28a",
+            "server": "iran-011-join.outline-vpn.cloud",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -209,6 +209,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kittiy.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "kittiy.sbs"
+                }
             }
         },
         {
