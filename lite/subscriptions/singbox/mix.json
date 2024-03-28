@@ -107,8 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | vless | @V2rayCollectorDonate | 21",
-                "🇫🇷FR | trojan | @PrivateVPNs | 18",
-                "🇫🇷FR | trojan | @DirectVPN | 18",
+                "🇬🇧GB | trojan | @PrivateVPNs | 18",
+                "🇬🇧GB | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇻🇳VN | vmess | @DeamNet_Proxy | 19",
@@ -120,7 +120,8 @@
                 "🇨🇦CA | vmess | @Hope_Net | 19",
                 "🇨🇦CA | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @FreakConfig | 5",
-                "🇫🇮FI | ss | @proxy_mtm | 0",
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
+                "🇫🇮FI | ss | @proxy_mtm | 3",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ]
@@ -130,8 +131,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | vless | @V2rayCollectorDonate | 21",
-                "🇫🇷FR | trojan | @PrivateVPNs | 18",
-                "🇫🇷FR | trojan | @DirectVPN | 18",
+                "🇬🇧GB | trojan | @PrivateVPNs | 18",
+                "🇬🇧GB | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇻🇳VN | vmess | @DeamNet_Proxy | 19",
@@ -143,7 +144,8 @@
                 "🇨🇦CA | vmess | @Hope_Net | 19",
                 "🇨🇦CA | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @FreakConfig | 5",
-                "🇫🇮FI | ss | @proxy_mtm | 0",
+                "🇨🇦CA | vmess | @forwardv2ray | 18",
+                "🇫🇮FI | ss | @proxy_mtm | 3",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ],
@@ -199,9 +201,9 @@
             }
         },
         {
-            "tag": "🇫🇷FR | trojan | @PrivateVPNs | 18",
+            "tag": "🇬🇧GB | trojan | @PrivateVPNs | 18",
             "type": "trojan",
-            "server": "13.37.67.77",
+            "server": "18.168.246.125",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -221,9 +223,9 @@
             }
         },
         {
-            "tag": "🇫🇷FR | trojan | @DirectVPN | 18",
+            "tag": "🇬🇧GB | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "13.39.129.14",
+            "server": "18.168.166.125",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -506,7 +508,41 @@
             }
         },
         {
-            "tag": "🇫🇮FI | ss | @proxy_mtm | 0",
+            "tag": "🇨🇦CA | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "104.26.9.202",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vip2323.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "vip2323.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | ss | @proxy_mtm | 3",
             "type": "shadowsocks",
             "server": "185.77.217.121",
             "server_port": 443,
