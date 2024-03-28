@@ -121,10 +121,11 @@ dns:
 
 proxies:
   - {"name":"🇫🇷FR | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇦CA | vmess | @mftizi | 19","type":"vmess","server":"cfcdn3.sanfencdn9.com","port":"2052","cipher":"auto","uuid":"de6969ab-ec16-4263-8c11-9187e8ca0782","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/Zo98PYfE","headers":{"host":"kvjqqknzjp6.yofnhkfc.xyz"}}}
+  - {"name":"🇺🇸US | vmess | @mftizi | 19","type":"vmess","server":"cfcdn3.sanfencdn9.com","port":"2052","cipher":"auto","uuid":"de6969ab-ec16-4263-8c11-9187e8ca0782","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/Zo98PYfE","headers":{"host":"kvjqqknzjp6.yofnhkfc.xyz"}}}
   - {"name":"🇩🇪DE | vmess | @oneclickvpnkeys | 12","type":"vmess","server":"80.71.157.105","port":"80","cipher":"auto","uuid":"b656b441-2cfd-44b8-9b2e-646e9925f8f6","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":""}}}
   - {"name":"🇩🇪DE | vmess | @V2rayng_Fast | 2","type":"vmess","server":"104.164.11.115","port":"38264","cipher":"auto","uuid":"b67a0801-f298-4e1b-a80a-f538cdb32845","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇦CA | vmess | @yaney_01 | 1","type":"vmess","server":"www.visa.com.hk","port":"80","cipher":"auto","uuid":"e184e964-518c-4ddf-ab05-f0a2ecff2f42","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ydmmamd2.mac2win.top"}}}
+  - {"name":"🇨🇦CA | vmess | @forwardv2ray | 19","type":"vmess","server":"104.21.4.6","port":"443","cipher":"auto","uuid":"1052f24e-7b09-45eb-b0c5-d858eb124192","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"glweidf.cfd"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,10 +133,11 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
-      - '🇨🇦CA | vmess | @mftizi | 19'
+      - '🇺🇸US | vmess | @mftizi | 19'
       - '🇩🇪DE | vmess | @oneclickvpnkeys | 12'
       - '🇩🇪DE | vmess | @V2rayng_Fast | 2'
       - '🇨🇦CA | vmess | @yaney_01 | 1'
+      - '🇨🇦CA | vmess | @forwardv2ray | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -143,20 +145,22 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
-      - '🇨🇦CA | vmess | @mftizi | 19'
+      - '🇺🇸US | vmess | @mftizi | 19'
       - '🇩🇪DE | vmess | @oneclickvpnkeys | 12'
       - '🇩🇪DE | vmess | @V2rayng_Fast | 2'
       - '🇨🇦CA | vmess | @yaney_01 | 1'
+      - '🇨🇦CA | vmess | @forwardv2ray | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇫🇷FR | vmess | @v2ray_outlineir | 0'
-      - '🇨🇦CA | vmess | @mftizi | 19'
+      - '🇺🇸US | vmess | @mftizi | 19'
       - '🇩🇪DE | vmess | @oneclickvpnkeys | 12'
       - '🇩🇪DE | vmess | @V2rayng_Fast | 2'
       - '🇨🇦CA | vmess | @yaney_01 | 1'
+      - '🇨🇦CA | vmess | @forwardv2ray | 19'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
