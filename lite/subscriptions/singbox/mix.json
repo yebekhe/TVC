@@ -114,10 +114,11 @@
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 12",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 46",
                 "🇩🇪DE | vmess | @V2rayng_Fast | 2",
-                "🇨🇦CA | ss | @OutlineVpnOfficial | 14",
+                "🇩🇪DE | ss | @OutlineVpnOfficial | 14",
                 "🇨🇦CA | vmess | @yaney_01 | 1",
                 "🇨🇦CA | vmess | @Hope_Net | 19",
-                "🇨🇦CA | vmess | @v2Line | 11",
+                "🇺🇸US | vmess | @v2Line | 10",
+                "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇫🇮FI | ss | @proxy_mtm | 0",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
@@ -135,10 +136,11 @@
                 "🇩🇪DE | vmess | @oneclickvpnkeys | 12",
                 "🇨🇦CA | vmess | @ShadowProxy66 | 46",
                 "🇩🇪DE | vmess | @V2rayng_Fast | 2",
-                "🇨🇦CA | ss | @OutlineVpnOfficial | 14",
+                "🇩🇪DE | ss | @OutlineVpnOfficial | 14",
                 "🇨🇦CA | vmess | @yaney_01 | 1",
                 "🇨🇦CA | vmess | @Hope_Net | 19",
-                "🇨🇦CA | vmess | @v2Line | 11",
+                "🇺🇸US | vmess | @v2Line | 10",
+                "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇫🇮FI | ss | @proxy_mtm | 0",
                 "🏳️XX | vless | @GozargahVPN | 10",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
@@ -345,12 +347,12 @@
             }
         },
         {
-            "tag": "🇨🇦CA | ss | @OutlineVpnOfficial | 14",
+            "tag": "🇩🇪DE | ss | @OutlineVpnOfficial | 14",
             "type": "shadowsocks",
-            "server": "134.195.196.178",
-            "server_port": 807,
-            "method": "chacha20-ietf-poly1305",
-            "password": "G!yBwPWH3Vao",
+            "server": "217.182.198.219",
+            "server_port": 2375,
+            "method": "aes-256-gcm",
+            "password": "faBAoD54k87UJG7",
             "plugin": "",
             "plugin_opts": ""
         },
@@ -403,11 +405,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | vmess | @v2Line | 11",
+            "tag": "🇺🇸US | vmess | @v2Line | 10",
             "type": "vmess",
-            "server": "104.17.25.1",
-            "server_port": 80,
-            "uuid": "92aa3000-5758-41f5-9b7d-6a8394382931",
+            "server": "198.41.202.5",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -418,11 +420,52 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "kittiy.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "kittiy.sbs"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | vless | @FreakConfig | 5",
+            "type": "vless",
+            "server": "23.227.60.7",
+            "server_port": 443,
+            "uuid": "d672ec4f-afba-4f61-af09-eec872f97e99",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "test43.pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": ""
+                    "Host": "test43.pages.dev"
                 }
             }
         },
