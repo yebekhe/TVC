@@ -106,8 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇪IE | trojan | @PrivateVPNs | 18",
-                "🇺🇸US | trojan | @DirectVPN | 18",
+                "🇺🇸US | vless | @V2rayCollectorDonate | 21",
+                "🇮🇪IE | trojan | @PrivateVPNs | 19",
+                "🇸🇪SE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 11",
@@ -119,7 +120,7 @@
                 "🇨🇦CA | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vmess | @FAKEOFTVC | 2",
-                "🏳️XX | vless | @GozargahVPN | 10",
+                "🏳️XX | vless | @GozargahVPN | 11",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ]
         },
@@ -127,8 +128,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇪IE | trojan | @PrivateVPNs | 18",
-                "🇺🇸US | trojan | @DirectVPN | 18",
+                "🇺🇸US | vless | @V2rayCollectorDonate | 21",
+                "🇮🇪IE | trojan | @PrivateVPNs | 19",
+                "🇸🇪SE | trojan | @DirectVPN | 18",
                 "🇫🇷FR | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | vmess | @mftizi | 19",
                 "🇨🇦CA | vmess | @oneclickvpnkeys | 11",
@@ -140,7 +142,7 @@
                 "🇨🇦CA | vmess | @v2Line | 9",
                 "🇨🇦CA | vless | @FreakConfig | 5",
                 "🇨🇦CA | vmess | @FAKEOFTVC | 2",
-                "🏳️XX | vless | @GozargahVPN | 10",
+                "🏳️XX | vless | @GozargahVPN | 11",
                 "🇮🇷IR | vless | @Good_V2rayy | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -164,7 +166,38 @@
             "type": "dns"
         },
         {
-            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 18",
+            "tag": "🇺🇸US | vless | @V2rayCollectorDonate | 21",
+            "type": "vless",
+            "server": "www.legendaryking.link",
+            "server_port": 443,
+            "uuid": "7096f6c0-c5f7-418b-909a-cf8fcc03483b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "console.snapfooding.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇮🇪IE | trojan | @PrivateVPNs | 19",
             "type": "trojan",
             "server": "46.137.94.116",
             "server_port": 22222,
@@ -186,9 +219,9 @@
             }
         },
         {
-            "tag": "🇺🇸US | trojan | @DirectVPN | 18",
+            "tag": "🇸🇪SE | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "3.21.110.43",
+            "server": "51.21.94.182",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -481,7 +514,7 @@
             }
         },
         {
-            "tag": "🏳️XX | vless | @GozargahVPN | 10",
+            "tag": "🏳️XX | vless | @GozargahVPN | 11",
             "type": "vless",
             "server": "test.GozargahVPN.top",
             "server_port": 443,
