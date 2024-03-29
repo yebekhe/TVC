@@ -77,7 +77,7 @@ foreach ($configsList as $source => $configs) {
     echo "\n" . strval($tempSource) . "/" . strval($totalSources) . "\n";
 
     // Loop through each config in the configs array
-    $limitKey = count($configs) - 1;
+    $limitKey = count($configs) - 2;
     foreach (array_reverse($configs) as $key => $config) {
         // Calculate the percentage complete
         $percentage = ($tempCounter / $totalConfigs) * 100;
