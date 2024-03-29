@@ -83,8 +83,10 @@ function ip_info($ip)
 
 function is_cloudflare_ip($ip)
 {
-    // Cloudflare IP ranges (example, replace with actual ranges)
-    $cloudflare_ranges = explode("\n", file_get_contents("https://raw.githubusercontent.com/ircfspace/cf-ip-ranges/main/export.ipv4"));
+    // Get the Cloudflare IP ranges
+    $cloudflare_ranges = file_get_contents('https://www.cloudflare.com/ips-v4');
+    $cloudflare_ranges = array_merge($cloudflare_ranges, file_get_contents('https://www.cloudflare.com/ips-v6'));
+    $cloudflare_ranges = explode("\n", $cloudflare_ranges);
 
     foreach ($cloudflare_ranges as $range) {
         if (ipv4_in_range($ip, $range) || ipv6_in_range($ip, $range)) {
