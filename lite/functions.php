@@ -85,11 +85,10 @@ function is_cloudflare_ip($ip)
 {
     // Get the Cloudflare IP ranges
     $cloudflare_ranges = file_get_contents('https://www.cloudflare.com/ips-v4');
-    $cloudflare_ranges = array_merge($cloudflare_ranges, file_get_contents('https://www.cloudflare.com/ips-v6'));
     $cloudflare_ranges = explode("\n", $cloudflare_ranges);
 
     foreach ($cloudflare_ranges as $range) {
-        if (ipv4_in_range($ip, $range) || ipv6_in_range($ip, $range)) {
+        if (ipv4_in_range($ip, $range)) {
             return true;
         }
     }
@@ -99,33 +98,14 @@ function is_cloudflare_ip($ip)
 
 function ipv4_in_range($ip, $range)
 {
-    if (strpos($range, '/') === false) {
-        $range .= '/32';
-    }
-    list($range, $netmask) = explode('/', $range, 2);
-    $range_decimal = ip2long($range);
-    $ip_decimal = ip2long($ip);
-    $wildcard_decimal = pow(2, (32 - $netmask)) - 1;
-    $netmask_decimal = ~$wildcard_decimal;
+    $rangeArray = explode("\n", $range);
+    $ipArray = explode("\n", $ip);
 
-    return (bool) (($ip_decimal & $netmask_decimal) == ($range_decimal & $netmask_decimal));
-}
+    if ($ipArray[0] === $rangeArray[0] && $ipArray[1] === $rangeArray[1] && $ipArray[2] === $rangeArray[2]) {
+        return true;
+    }
 
-function ipv6_in_range($ip, $range)
-{
-    if (strpos($range, '/') === false) {
-        $range .= '/128';
-    }
-    list($range, $netmask) = explode('/', $range, 2);
-    $ip = inet_pton($ip);
-    $range = inet_pton($range);
-    $binMask = str_repeat("f", $netmask / 4);
-    for ($i = 0; $i < 4; $i++) {
-        if (($ip[$i] & ~pack("H*", $binMask)) != ($range[$i] & ~pack("H*", $binMask))) {
-            return false;
-        }
-    }
-    return true;
+    return false;
 }
 
 function is_valid($input)
