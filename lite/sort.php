@@ -18,10 +18,10 @@ foreach ($configsArray as $config) {
     // Detect the type of the configuration
     $configType = detect_type($config);
     // Add the configuration to the corresponding array in sortArray
-    $sortArray[$configType][] = $config;
+    $sortArray[$configType][] = urldecode($config);
     // If the configuration is of type "vless" and is a reality, add it to the "reality" array
     if ($configType === "vless" && is_reality($config)) {
-        $sortArray["reality"][] = $config;
+        $sortArray["reality"][] = urldecode($config);
     }
 }
 
