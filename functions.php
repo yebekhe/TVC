@@ -88,7 +88,7 @@ function is_cloudflare_ip($ip)
     $cloudflare_ranges = explode("\n", $cloudflare_ranges);
 
     foreach ($cloudflare_ranges as $range) {
-        if (ipv4_in_range($ip, $range)) {
+        if (cidr_match($ip, $range)) {
             return true;
         }
     }
@@ -96,16 +96,16 @@ function is_cloudflare_ip($ip)
     return false;
 }
 
-function ipv4_in_range($ip, $range)
-{
-    $rangeArray = explode("\n", $range);
-    $ipArray = explode("\n", $ip);
-
-    if ($ipArray[0] === $rangeArray[0] && $ipArray[1] === $rangeArray[1] && $ipArray[2] === $rangeArray[2]) {
-        return true;
+function cidr_match($ip, $range) {
+    list($subnet, $bits) = explode('/', $range);
+    if ($bits === null) {
+        $bits = 32;
     }
-
-    return false;
+    $ip = ip2long($ip);
+    $subnet = ip2long($subnet);
+    $mask = -1 << (32 - $bits);
+    $subnet &= $mask;
+    return ($ip & $mask) == $subnet;
 }
 
 function is_valid($input)
