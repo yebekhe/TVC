@@ -111,8 +111,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 12",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 13",
-                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 57",
-                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 58",
+                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 64",
+                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 65",
                 "🇨🇦CA | 🟢 | vmess | @V2rayng_Fast | 0",
                 "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 5",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 0",
@@ -121,7 +121,6 @@
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 19",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 9",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
-                "🇹🇼TW | 🟢 | vmess | @forwardv2ray | 17",
                 "🇺🇸US | 🟢 | vmess | @forwardv2ray | 18",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 0"
             ]
@@ -135,8 +134,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 12",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 13",
-                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 57",
-                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 58",
+                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 64",
+                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 65",
                 "🇨🇦CA | 🟢 | vmess | @V2rayng_Fast | 0",
                 "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 5",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 0",
@@ -145,7 +144,6 @@
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 19",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 9",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
-                "🇹🇼TW | 🟢 | vmess | @forwardv2ray | 17",
                 "🇺🇸US | 🟢 | vmess | @forwardv2ray | 18",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 0"
             ],
@@ -272,7 +270,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 57",
+            "tag": "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 64",
             "type": "vmess",
             "server": "208.167.245.10",
             "server_port": 30835,
@@ -289,7 +287,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 58",
+            "tag": "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 65",
             "type": "vmess",
             "server": "140.82.4.81",
             "server_port": 45970,
@@ -558,28 +556,11 @@
             }
         },
         {
-            "tag": "🇹🇼TW | 🟢 | vmess | @forwardv2ray | 17",
-            "type": "vmess",
-            "server": "nb24.ntbq.dynu.net",
-            "server_port": 4443,
-            "uuid": "1cc969d3-1df8-4794-a5cc-9231fe0e4710",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇺🇸US | 🟢 | vmess | @forwardv2ray | 18",
             "type": "vmess",
-            "server": "129.146.113.254",
-            "server_port": 43121,
-            "uuid": "d53b39e2-925e-45b6-9389-46b9fa95878b",
+            "server": "172.67.184.11",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -590,11 +571,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "janett.click",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": "129.146.113.254"
+                    "Host": "janett.click"
                 }
             }
         },
