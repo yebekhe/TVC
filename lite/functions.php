@@ -12,6 +12,13 @@ function is_ip($string)
 
 function ip_info($ip)
 {
+    // Check if the IP is from Cloudflare
+    if (is_cloudflare_ip($ip)) {
+        return (object) [
+            "country" => "CF",
+        ];
+    }
+
     if (is_ip($ip) === false) {
         $ip_address_array = dns_get_record($ip, DNS_A);
         if (empty($ip_address_array)) {
@@ -72,6 +79,51 @@ function ip_info($ip)
     }
 
     return $result;
+}
+
+function is_cloudflare_ip($ip)
+{
+    // Cloudflare IP ranges (example, replace with actual ranges)
+    $cloudflare_ranges = explode("\n", file_get_contents("https://raw.githubusercontent.com/ircfspace/cf-ip-ranges/main/export.ipv4"));
+
+    foreach ($cloudflare_ranges as $range) {
+        if (ipv4_in_range($ip, $range) || ipv6_in_range($ip, $range)) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function ipv4_in_range($ip, $range)
+{
+    if (strpos($range, '/') === false) {
+        $range .= '/32';
+    }
+    list($range, $netmask) = explode('/', $range, 2);
+    $range_decimal = ip2long($range);
+    $ip_decimal = ip2long($ip);
+    $wildcard_decimal = pow(2, (32 - $netmask)) - 1;
+    $netmask_decimal = ~$wildcard_decimal;
+
+    return (bool) (($ip_decimal & $netmask_decimal) == ($range_decimal & $netmask_decimal));
+}
+
+function ipv6_in_range($ip, $range)
+{
+    if (strpos($range, '/') === false) {
+        $range .= '/128';
+    }
+    list($range, $netmask) = explode('/', $range, 2);
+    $ip = inet_pton($ip);
+    $range = inet_pton($range);
+    $binMask = str_repeat("f", $netmask / 4);
+    for ($i = 0; $i < 4; $i++) {
+        if (($ip[$i] & ~pack("H*", $binMask)) != ($range[$i] & ~pack("H*", $binMask))) {
+            return false;
+        }
+    }
+    return true;
 }
 
 function is_valid($input)
