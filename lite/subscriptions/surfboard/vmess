@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🚩CF | 🟢 | vmess | @V2rayng_Fast | 1 = vmess, 129.146.113.254, 43121, username = d53b39e2-925e-45b6-9389-46b9fa95878b, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
-🚩CF | 🟢 | vmess | @yaney_01 | 1 = vmess, www.visa.com.hk, 80, username = e184e964-518c-4ddf-ab05-f0a2ecff2f42, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"ydmmamd2.mac2win.top", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @V2rayng_Fast | 1 = vmess, 129.146.113.254, 43121, username = d53b39e2-925e-45b6-9389-46b9fa95878b, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇨🇦CA | 🟢 | vmess | @yaney_01 | 1 = vmess, www.visa.com.hk, 80, username = e184e964-518c-4ddf-ab05-f0a2ecff2f42, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"ydmmamd2.mac2win.top", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🚩CF | 🟢 | vmess | @V2rayng_Fast | 1,🚩CF | 🟢 | vmess | @yaney_01 | 1
-URL-TEST = url-test,🚩CF | 🟢 | vmess | @V2rayng_Fast | 1,🚩CF | 🟢 | vmess | @yaney_01 | 1
-FALLBACK = fallback,🚩CF | 🟢 | vmess | @V2rayng_Fast | 1,🚩CF | 🟢 | vmess | @yaney_01 | 1
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @V2rayng_Fast | 1,🇨🇦CA | 🟢 | vmess | @yaney_01 | 1
+URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @V2rayng_Fast | 1,🇨🇦CA | 🟢 | vmess | @yaney_01 | 1
+FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @V2rayng_Fast | 1,🇨🇦CA | 🟢 | vmess | @yaney_01 | 1
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

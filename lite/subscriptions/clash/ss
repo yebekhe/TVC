@@ -118,27 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🚩CF | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"95.164.9.144","port":2927,"password":"ug4Fu79SEREdFGlt2sUyT4","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇦🇪AE | 🟢 | ss | @proxyymeliii | 10","type":"ss","server":"account.emofid.co","port":443,"password":"e6QAeE5R24iFZKLG","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇦🇹AT | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"95.164.9.144","port":2927,"password":"ug4Fu79SEREdFGlt2sUyT4","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🚩CF | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇦🇪AE | 🟢 | ss | @proxyymeliii | 10'
+      - '🇦🇹AT | 🟢 | ss | @OutlineVpnOfficial | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🚩CF | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇦🇪AE | 🟢 | ss | @proxyymeliii | 10'
+      - '🇦🇹AT | 🟢 | ss | @OutlineVpnOfficial | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🚩CF | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇦🇪AE | 🟢 | ss | @proxyymeliii | 10'
+      - '🇦🇹AT | 🟢 | ss | @OutlineVpnOfficial | 18'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
