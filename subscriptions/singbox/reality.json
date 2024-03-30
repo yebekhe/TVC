@@ -115,8 +115,9 @@
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇫🇷FR | 🟢 | vless | @CUSTOMVPNSERVER | 10",
                 "🇩🇪DE | 🔴 | vless | @v2logy | 6",
-                "❔XX | 🔴 | vless | @V2rayCollectorDonate | 14",
+                "❔XX | 🔴 | vless | @V2rayCollectorDonate | 15",
                 "🇩🇪DE | 🔴 | vless | @v2ray_swhil | 21",
+                "🇩🇪DE | 🔴 | vless | @V2RayTz | 1",
                 "❔XX | 🟢 | vless | @DailyV2RY | 153",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
@@ -166,7 +167,6 @@
                 "❔XX | 🔴 | vless | @vpn_go67 | 22",
                 "❔XX | 🔴 | vless | @vpn_go67 | 23",
                 "🇩🇪DE | 🟢 | vless | @GozargahVPN | 10",
-                "❔XX | 🟢 | vless | @GozargahVPN | 11",
                 "🇸🇪SE | 🔴 | vless | @freeconfigv2 | 1",
                 "❔XX | 🔴 | vless | @freeconfigv2 | 3",
                 "🇩🇪DE | 🔴 | vless | @freeconfigv2 | 6",
@@ -187,8 +187,9 @@
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇫🇷FR | 🟢 | vless | @CUSTOMVPNSERVER | 10",
                 "🇩🇪DE | 🔴 | vless | @v2logy | 6",
-                "❔XX | 🔴 | vless | @V2rayCollectorDonate | 14",
+                "❔XX | 🔴 | vless | @V2rayCollectorDonate | 15",
                 "🇩🇪DE | 🔴 | vless | @v2ray_swhil | 21",
+                "🇩🇪DE | 🔴 | vless | @V2RayTz | 1",
                 "❔XX | 🟢 | vless | @DailyV2RY | 153",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
@@ -238,7 +239,6 @@
                 "❔XX | 🔴 | vless | @vpn_go67 | 22",
                 "❔XX | 🔴 | vless | @vpn_go67 | 23",
                 "🇩🇪DE | 🟢 | vless | @GozargahVPN | 10",
-                "❔XX | 🟢 | vless | @GozargahVPN | 11",
                 "🇸🇪SE | 🔴 | vless | @freeconfigv2 | 1",
                 "❔XX | 🔴 | vless | @freeconfigv2 | 3",
                 "🇩🇪DE | 🔴 | vless | @freeconfigv2 | 6",
@@ -555,7 +555,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2rayCollectorDonate | 14",
+            "tag": "❔XX | 🔴 | vless | @V2rayCollectorDonate | 15",
             "type": "vless",
             "server": "[2a01:4f8:1c1b:14f0::52]",
             "server_port": 443,
@@ -621,6 +621,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Telegram",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @V2RayTz | 1",
+            "type": "vless",
+            "server": "91.107.175.167",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "E-ZwyOsyGNNgqG3cA_BN0pegm4RwD2IGPzFN9yLL3TQ",
+                    "short_id": "a742e690"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -2219,35 +2255,6 @@
                     "enabled": true,
                     "public_key": "WU05h8s5l6VKCtawHNsNLrTLAU_lAznVudsiBKywQDM",
                     "short_id": "ed"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vless | @GozargahVPN | 11",
-            "type": "vless",
-            "server": "test.GozargahVPN.top",
-            "server_port": 443,
-            "uuid": "GozargahVPN-GozargahVPN",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mci.loba.lol",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "LL9qDhlc3ZqjdzMYahZ-F-l75238UGnCKhuggBz9On8",
-                    "short_id": "90"
                 }
             }
         },
