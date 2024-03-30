@@ -109,7 +109,6 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇭🇰HK | 🟢 | vmess | @mftizi | 19",
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 14",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 13",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 14",
                 "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 177",
@@ -121,8 +120,7 @@
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 19",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 9",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
-                "🇹🇼TW | 🟢 | vmess | @forwardv2ray | 18",
-                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 19",
+                "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 18",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 1"
             ]
         },
@@ -133,7 +131,6 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇭🇰HK | 🟢 | vmess | @mftizi | 19",
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 14",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 13",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 14",
                 "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 177",
@@ -145,8 +142,7 @@
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 19",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 9",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
-                "🇹🇼TW | 🟢 | vmess | @forwardv2ray | 18",
-                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 19",
+                "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 18",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -225,40 +221,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 14",
-            "type": "vmess",
-            "server": "janett.click",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "janett.click",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "janett.click"
-                }
             }
         },
         {
@@ -565,28 +527,11 @@
             }
         },
         {
-            "tag": "🇹🇼TW | 🟢 | vmess | @forwardv2ray | 18",
+            "tag": "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 18",
             "type": "vmess",
-            "server": "nb24.ntbq.dynu.net",
-            "server_port": 4443,
-            "uuid": "1cc969d3-1df8-4794-a5cc-9231fe0e4710",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @forwardv2ray | 19",
-            "type": "vmess",
-            "server": "129.146.113.254",
-            "server_port": 43121,
-            "uuid": "d53b39e2-925e-45b6-9389-46b9fa95878b",
+            "server": "cloudflare.b4a-devs.org",
+            "server_port": 2083,
+            "uuid": "0a40bceb-6a30-4da2-b90b-2ae5ed018e98",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -597,11 +542,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "cloudflare.b4a-devs.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/cloudflare",
                 "headers": {
-                    "Host": "129.146.113.254"
+                    "Host": "cloudflare.b4a-devs.org"
                 }
             }
         },
