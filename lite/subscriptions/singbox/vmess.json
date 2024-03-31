@@ -116,10 +116,12 @@
                 "🇨🇦CA | 🟢 | vmess | @vless_vmess | 10",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 19",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
-                "🇨🇦CA | 🟢 | vmess | @v2Line | 11"
+                "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
+                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 18",
+                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 19"
             ]
         },
         {
@@ -136,10 +138,12 @@
                 "🇨🇦CA | 🟢 | vmess | @vless_vmess | 10",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 19",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
-                "🇨🇦CA | 🟢 | vmess | @v2Line | 11"
+                "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
+                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 18",
+                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 19"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -421,7 +425,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
             "server": "mohsen.gamse.ir",
             "server_port": 443,
@@ -543,6 +547,64 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "129.146.113.254",
+            "server_port": 43121,
+            "uuid": "d53b39e2-925e-45b6-9389-46b9fa95878b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "129.146.113.254"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @forwardv2ray | 19",
+            "type": "vmess",
+            "server": "198.41.202.5",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kittiy.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "kittiy.sbs"
                 }
             }
         }
