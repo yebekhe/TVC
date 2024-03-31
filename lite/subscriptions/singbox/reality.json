@@ -107,7 +107,6 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @v2logy | 6",
-                "❔XX | 🟢 | vless | @DailyV2RY | 160",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
@@ -125,7 +124,6 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @v2logy | 6",
-                "❔XX | 🟢 | vless | @DailyV2RY | 160",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
@@ -188,42 +186,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vless | @DailyV2RY | 160",
-            "type": "vless",
-            "server": "botguard.net.dalidom.com",
-            "server_port": 443,
-            "uuid": "@Ventila_makarov_filadersv2",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "Icloud.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "yQH9oAdJcjWHs-jFo7VLP99n-j8do6EJiRNgLPRyQkY",
-                    "short_id": "4cb42196"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "SRD",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
