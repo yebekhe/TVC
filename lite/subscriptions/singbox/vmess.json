@@ -111,14 +111,16 @@
                 "🇭🇰HK | 🟢 | vmess | @mftizi | 19",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 10",
-                "🇨🇿CZ | 🟢 | vmess | @ShadowProxy66 | 23",
+                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 25",
+                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 26",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
-                "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2"
+                "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
+                "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0"
             ]
         },
         {
@@ -130,14 +132,16 @@
                 "🇭🇰HK | 🟢 | vmess | @mftizi | 19",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 10",
-                "🇨🇿CZ | 🟢 | vmess | @ShadowProxy66 | 23",
+                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 25",
+                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 26",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
-                "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2"
+                "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
+                "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -286,11 +290,11 @@
             }
         },
         {
-            "tag": "🇨🇿CZ | 🟢 | vmess | @ShadowProxy66 | 23",
+            "tag": "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 25",
             "type": "vmess",
-            "server": "94.131.97.127",
-            "server_port": 80,
-            "uuid": "3669d547-ee0c-477d-8e47-c4400965db74",
+            "server": "23.224.33.23",
+            "server_port": 20259,
+            "uuid": "c001cb39-162c-491c-8a76-8d2e15236b6f",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -300,13 +304,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vmess",
-                "headers": {
-                    "Host": ""
-                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 26",
+            "type": "vmess",
+            "server": "205.234.232.189",
+            "server_port": 50129,
+            "uuid": "d3d91368-c7bc-4f2f-890b-09710fb9f0ec",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
@@ -508,6 +522,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0",
+            "type": "vmess",
+            "server": "104.26.9.202",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vip2323.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "vip2323.cfd"
+                }
             }
         }
     ],
