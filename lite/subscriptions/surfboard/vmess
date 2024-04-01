@@ -12,11 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇦CA | 🟢 | vmess | @yaney_01 | 1 = vmess, www.visa.com.hk, 80, username = e184e964-518c-4ddf-ab05-f0a2ecff2f42, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"ydmmamd2.mac2win.top", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @forwardv2ray | 18 = vmess, hms082.gwdef.sbs, 443, username = bc864078-dcf3-4bf4-8dbf-ca9f200b56be, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"gwdef.sbs", skip-cert-verify = true, tfo = false
 🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0 = vmess, hms182.glweidf.sbs, 443, username = 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"glweidf.sbs", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | vmess | @yaney_01 | 1,🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0
-URL-TEST = url-test,🇨🇦CA | 🟢 | vmess | @yaney_01 | 1,🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0
-FALLBACK = fallback,🇨🇦CA | 🟢 | vmess | @yaney_01 | 1,🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @forwardv2ray | 18,🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0
+URL-TEST = url-test,🇨🇦CA | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @forwardv2ray | 18,🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0
+FALLBACK = fallback,🇨🇦CA | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @forwardv2ray | 18,🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

@@ -109,6 +109,7 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇭🇰HK | 🟢 | vmess | @mftizi | 19",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 10",
                 "🇬🇧GB | 🟢 | vmess | @ShadowProxy66 | 25",
@@ -119,6 +120,7 @@
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
+                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 18",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0",
                 "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 1"
@@ -131,6 +133,7 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇭🇰HK | 🟢 | vmess | @mftizi | 19",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 10",
                 "🇬🇧GB | 🟢 | vmess | @ShadowProxy66 | 25",
@@ -141,6 +144,7 @@
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
+                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 18",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0",
                 "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 1"
@@ -221,6 +225,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
+            "type": "vmess",
+            "server": "muriel.makeup",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "muriel.makeup",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "muriel.makeup"
+                }
             }
         },
         {
@@ -386,9 +424,9 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "149.28.236.6",
-            "server_port": 44464,
-            "uuid": "5242158a-61ed-4282-9de8-743850f1a77f",
+            "server": "149.28.36.167",
+            "server_port": 37664,
+            "uuid": "116217e3-be8b-4a11-826c-b32479f67166",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -403,9 +441,9 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "205.234.233.102",
-            "server_port": 52922,
-            "uuid": "38bcf322-585c-4aa6-8e5b-c654b83983a2",
+            "server": "66.135.28.252",
+            "server_port": 41414,
+            "uuid": "06709c48-9843-4940-a536-cdf909285efc",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -482,6 +520,40 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "hms082.gwdef.sbs",
+            "server_port": 443,
+            "uuid": "bc864078-dcf3-4bf4-8dbf-ca9f200b56be",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "gwdef.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "gwdef.sbs"
                 }
             }
         },

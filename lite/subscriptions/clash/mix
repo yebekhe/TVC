@@ -130,8 +130,9 @@ proxies:
   - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"149.202.82.172","port":8091,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
   - {"name":"🇫🇮FI | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"95.164.113.64","port":7150,"password":"btzmpL7aOs7YbcLS4In6YX","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇨🇦CA | 🟢 | vmess | @yaney_01 | 1","type":"vmess","server":"www.visa.com.hk","port":"80","cipher":"auto","uuid":"e184e964-518c-4ddf-ab05-f0a2ecff2f42","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ydmmamd2.mac2win.top"}}}
-  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 17","type":"vmess","server":"149.28.236.6","port":"44464","cipher":"auto","uuid":"5242158a-61ed-4282-9de8-743850f1a77f","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 18","type":"vmess","server":"205.234.233.102","port":"52922","cipher":"auto","uuid":"38bcf322-585c-4aa6-8e5b-c654b83983a2","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 17","type":"vmess","server":"149.28.36.167","port":37664,"cipher":"auto","uuid":"116217e3-be8b-4a11-826c-b32479f67166","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 18","type":"vmess","server":"66.135.28.252","port":"41414","cipher":"auto","uuid":"06709c48-9843-4940-a536-cdf909285efc","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸US | 🟢 | vmess | @forwardv2ray | 18","type":"vmess","server":"hms082.gwdef.sbs","port":"443","cipher":"auto","uuid":"bc864078-dcf3-4bf4-8dbf-ca9f200b56be","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"gwdef.sbs"}}}
   - {"name":"🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0","type":"vmess","server":"hms182.glweidf.sbs","port":"443","cipher":"auto","uuid":"76221bfb-e92f-4e80-81c5-6fe48f50ac0b","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"glweidf.sbs"}}}
 proxy-groups:
   - name: MANUAL
@@ -153,6 +154,7 @@ proxy-groups:
       - '🇨🇦CA | 🟢 | vmess | @yaney_01 | 1'
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 17'
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 18'
+      - '🇺🇸US | 🟢 | vmess | @forwardv2ray | 18'
       - '🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0'
   - name: URL-TEST
     type: url-test
@@ -174,6 +176,7 @@ proxy-groups:
       - '🇨🇦CA | 🟢 | vmess | @yaney_01 | 1'
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 17'
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 18'
+      - '🇺🇸US | 🟢 | vmess | @forwardv2ray | 18'
       - '🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0'
   - name: FALLBACK
     type: fallback
@@ -194,6 +197,7 @@ proxy-groups:
       - '🇨🇦CA | 🟢 | vmess | @yaney_01 | 1'
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 17'
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 18'
+      - '🇺🇸US | 🟢 | vmess | @forwardv2ray | 18'
       - '🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
