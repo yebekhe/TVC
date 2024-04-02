@@ -115,7 +115,7 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 26",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 17",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
@@ -137,7 +137,7 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 26",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 17",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
@@ -367,11 +367,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "107.191.42.205",
-            "server_port": 42290,
-            "uuid": "5f624cca-5ebc-487b-c740-3fa7f8a0fdc5",
+            "server": "104.21.13.222",
+            "server_port": 2053,
+            "uuid": "0f1b29b8-0f0f-431a-b6d1-035803a95c32",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -381,14 +381,31 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "v2ray.ibgfw.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vVNUJOgb\/",
+                "headers": {
+                    "Host": "v2ray.ibgfw.top"
+                }
             }
         },
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "207.148.31.167",
-            "server_port": 30587,
-            "uuid": "55219214-9f2d-4914-fbaf-b1b444c85b0e",
+            "server": "45.152.84.131",
+            "server_port": 38409,
+            "uuid": "d66c585d-a91b-42a5-ca25-c1c331c23d09",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -398,6 +415,13 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
