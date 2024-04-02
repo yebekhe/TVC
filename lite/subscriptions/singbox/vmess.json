@@ -115,10 +115,12 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 26",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 17",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
+                "🇺🇸US | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
+                "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 15",
+                "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 16",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0",
                 "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 1"
@@ -137,10 +139,12 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 26",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 17",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
+                "🇺🇸US | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
+                "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 15",
+                "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 16",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0",
                 "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 1"
@@ -367,7 +371,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 17",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
             "server": "104.21.13.222",
             "server_port": 2053,
@@ -425,7 +429,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
+            "tag": "🇺🇸US | 🟢 | vmess | @v2Line | 10",
             "type": "vmess",
             "server": "104.20.231.21",
             "server_port": 443,
@@ -489,6 +493,74 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 15",
+            "type": "vmess",
+            "server": "172.67.166.31",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "inna.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "inna.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 16",
+            "type": "vmess",
+            "server": "104.26.9.202",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vip2323.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "vip2323.cfd"
                 }
             }
         },
