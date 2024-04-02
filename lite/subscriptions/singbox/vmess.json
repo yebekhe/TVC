@@ -115,12 +115,10 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 26",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 17",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
-                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 9",
-                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 10",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0",
                 "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 1"
@@ -139,12 +137,10 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 26",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 17",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
-                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 9",
-                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 10",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0",
                 "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 1"
@@ -371,11 +367,11 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 17",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "85.133.137.36",
-            "server_port": 12580,
-            "uuid": "f7eb5f03-63a2-426c-ac76-847f211af6c0",
+            "server": "208.167.242.162",
+            "server_port": 23930,
+            "uuid": "338c0fda-6e48-4a0c-d2d1-f59bddcb9bac",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -388,11 +384,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "162.159.1.33",
-            "server_port": 8080,
-            "uuid": "ef8c954e-014f-4b36-8273-9b5086afab34",
+            "server": "104.21.69.44",
+            "server_port": 8443,
+            "uuid": "616eaf5d-72b1-4dc8-8c58-b800b8d9f8fe",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -403,12 +399,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/ef8c954e-014f-4b36-8273-9b5086afab34-vm",
-                "headers": {
-                    "Host": ""
+            "tls": {
+                "enabled": true,
+                "server_name": "fragment.karop.homes",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "VPNHOMES",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -476,74 +482,6 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @forwardv2ray | 9",
-            "type": "vmess",
-            "server": "172.67.152.214",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "meroiy.icu",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "meroiy.icu"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @forwardv2ray | 10",
-            "type": "vmess",
-            "server": "nelly.homes",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "nelly.homes",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "nelly.homes"
                 }
             }
         },
