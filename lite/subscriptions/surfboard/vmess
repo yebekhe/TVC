@@ -11,15 +11,16 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18 = vmess, linde06.indiavideo.sbs, 443, username = edbb1059-1633-4271-b66e-ed4fba47a1bf, ws = true, tls = 1, vmess-aead = false, ws-path = /linkws, ws-headers = Host:"linde06.indiavideo.sbs", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18 = vmess, linde06.indiavideo.sbs, 443, username = edbb1059-1633-4271-b66e-ed4fba47a1bf, ws = true, tls = 1, vmess-aead = false, ws-path = /linkws, ws-headers = Host:"linde06.indiavideo.sbs", skip-cert-verify = true, tfo = false
 🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 10 = vmess, cf.iepl.live, 2086, username = 3960f128-1163-40a3-8dd7-7c91176e14a5, ws = true, tls = , vmess-aead = true, ws-path = /ws, ws-headers = Host:"us01.appleid.bf", skip-cert-verify = true, tfo = false
+🇮🇷IR | 🟢 | vmess | @prrofile_purple | 170 = vmess, 62.60.135.13, 8080, username = 4dba618a-a752-40b5-a583-8b0ed0724009, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"google.com", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 0 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
 🇨🇦CA | 🟢 | vmess | @v2Line | 9 = vmess, 104.21.30.254, 443, username = 6d9911b0-4e14-44fb-8883-52d14f550cca, ws = true, tls = 1, vmess-aead = true, ws-path = /vmess, ws-headers = Host:"be2-vmess.sshmax.xyz", skip-cert-verify = true, tfo = false
 🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0 = vmess, hms182.glweidf.sbs, 443, username = 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"glweidf.sbs", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18,🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 10,❔XX | 🟢 | vmess | @yaney_01 | 0,🇨🇦CA | 🟢 | vmess | @v2Line | 9,🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0
-URL-TEST = url-test,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18,🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 10,❔XX | 🟢 | vmess | @yaney_01 | 0,🇨🇦CA | 🟢 | vmess | @v2Line | 9,🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0
-FALLBACK = fallback,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18,🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 10,❔XX | 🟢 | vmess | @yaney_01 | 0,🇨🇦CA | 🟢 | vmess | @v2Line | 9,🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18,🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 10,🇮🇷IR | 🟢 | vmess | @prrofile_purple | 170,❔XX | 🟢 | vmess | @yaney_01 | 0,🇨🇦CA | 🟢 | vmess | @v2Line | 9,🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0
+URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18,🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 10,🇮🇷IR | 🟢 | vmess | @prrofile_purple | 170,❔XX | 🟢 | vmess | @yaney_01 | 0,🇨🇦CA | 🟢 | vmess | @v2Line | 9,🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0
+FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18,🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 10,🇮🇷IR | 🟢 | vmess | @prrofile_purple | 170,❔XX | 🟢 | vmess | @yaney_01 | 0,🇨🇦CA | 🟢 | vmess | @v2Line | 9,🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
