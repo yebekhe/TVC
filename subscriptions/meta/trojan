@@ -163,8 +163,6 @@ proxies:
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"13.50.220.245","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇷🇺RU | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com","port":1007,"udp":false,"password":"85bce006-4885-11ee-8792-f23c9164ca5d","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🚩CF | 🔴 | trojan | @v2ray_swhil | 28","type":"trojan","server":"104.16.123.175","port":2083,"udp":false,"password":"qG9K8AGnn9XH5jUqeFu96g","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cdn13.cdn2cdn.com"}
-  - {"name":"🇸🇬SG | 🟢 | trojan | @forwardv2ray | 13","type":"trojan","server":"group.vpnking.online","port":443,"udp":false,"password":"nkHoiOqLis","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"m.zoom.us"}
-  - {"name":"🇸🇬SG | 🔴 | trojan | @forwardv2ray | 14","type":"trojan","server":"group.vpnking.online","port":443,"udp":false,"password":"nkHoiOqLis","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"aka.ms"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -214,8 +212,6 @@ proxy-groups:
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 19'
       - '🇷🇺RU | 🔴 | trojan | @oneclickvpnkeys | 10'
       - '🚩CF | 🔴 | trojan | @v2ray_swhil | 28'
-      - '🇸🇬SG | 🟢 | trojan | @forwardv2ray | 13'
-      - '🇸🇬SG | 🔴 | trojan | @forwardv2ray | 14'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -265,8 +261,6 @@ proxy-groups:
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 19'
       - '🇷🇺RU | 🔴 | trojan | @oneclickvpnkeys | 10'
       - '🚩CF | 🔴 | trojan | @v2ray_swhil | 28'
-      - '🇸🇬SG | 🟢 | trojan | @forwardv2ray | 13'
-      - '🇸🇬SG | 🔴 | trojan | @forwardv2ray | 14'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -315,8 +309,6 @@ proxy-groups:
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 19'
       - '🇷🇺RU | 🔴 | trojan | @oneclickvpnkeys | 10'
       - '🚩CF | 🔴 | trojan | @v2ray_swhil | 28'
-      - '🇸🇬SG | 🟢 | trojan | @forwardv2ray | 13'
-      - '🇸🇬SG | 🔴 | trojan | @forwardv2ray | 14'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
