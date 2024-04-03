@@ -122,7 +122,6 @@ proxies:
   - {"name":"🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19","type":"trojan","server":"16.171.89.111","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"3.67.57.153","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"13.50.220.245","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇨🇦CA | 🔴 | trojan | @forwardv2ray | 17","type":"trojan","server":"104.21.51.242","port":2087,"udp":false,"password":"241f01b9-8dfc-474f-8342-3fbd5c46417e","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"grpcfr.arminhadadi.site"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -133,7 +132,6 @@ proxy-groups:
       - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇨🇦CA | 🔴 | trojan | @forwardv2ray | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -144,7 +142,6 @@ proxy-groups:
       - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇨🇦CA | 🔴 | trojan | @forwardv2ray | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -154,7 +151,6 @@ proxy-groups:
       - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇨🇦CA | 🔴 | trojan | @forwardv2ray | 17'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
