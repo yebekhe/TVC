@@ -114,10 +114,11 @@
                 "🇮🇷IR | 🟢 | vmess | @prrofile_purple | 170",
                 "❔XX | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 6",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 7",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 8",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 9",
+                "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 16",
                 "🇺🇸US | 🟢 | vmess | @eliya_chiter0 | 1",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | 🟢 | vmess | @ROMAX_VPN | 8"
@@ -135,10 +136,11 @@
                 "🇮🇷IR | 🟢 | vmess | @prrofile_purple | 170",
                 "❔XX | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 6",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 7",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 8",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 9",
+                "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 16",
                 "🇺🇸US | 🟢 | vmess | @eliya_chiter0 | 1",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | 🟢 | vmess | @ROMAX_VPN | 8"
@@ -362,7 +364,31 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 6",
+            "type": "vmess",
+            "server": "cf.iepl.live",
+            "server_port": 2086,
+            "uuid": "3960f128-1163-40a3-8dd7-7c91176e14a5",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ws",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
             "server": "caretaker.com",
             "server_port": 443,
@@ -392,30 +418,6 @@
                 "path": "\/ivideos.sbs\/linkws",
                 "headers": {
                     "Host": "mikasa.yaemiko.cloudns.org"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
-            "type": "vmess",
-            "server": "172.67.116.48",
-            "server_port": 80,
-            "uuid": "22a13aa2-4854-44cb-e090-ec71ab84b1ff",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
                 }
             }
         },
@@ -484,6 +486,40 @@
                 "path": "\/vmess",
                 "headers": {
                     "Host": "be2-vmess.sshmax.xyz"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 16",
+            "type": "vmess",
+            "server": "104.21.32.223",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "muriel.makeup",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "muriel.makeup"
                 }
             }
         },
