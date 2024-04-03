@@ -109,17 +109,17 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
-                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 8",
-                "🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 9",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 6",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7",
                 "🇮🇷IR | 🟢 | vmess | @prrofile_purple | 180",
                 "🇺🇸US | 🟢 | vmess | @customv2ray | 12",
-                "🇨🇦CA | 🟢 | vmess | @v2ray_swhil | 22",
                 "❔XX | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 8",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 7",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 8",
+                "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 18",
                 "🇺🇸US | 🟢 | vmess | @eliya_chiter0 | 1",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | 🟢 | vmess | @ROMAX_VPN | 8"
@@ -132,17 +132,17 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
-                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 8",
-                "🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 9",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 6",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7",
                 "🇮🇷IR | 🟢 | vmess | @prrofile_purple | 180",
                 "🇺🇸US | 🟢 | vmess | @customv2ray | 12",
-                "🇨🇦CA | 🟢 | vmess | @v2ray_swhil | 22",
                 "❔XX | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 8",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 7",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 8",
+                "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 18",
                 "🇺🇸US | 🟢 | vmess | @eliya_chiter0 | 1",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | 🟢 | vmess | @ROMAX_VPN | 8"
@@ -226,11 +226,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 8",
+            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 6",
             "type": "vmess",
-            "server": "0:0:0:0:0:ffff:b2d0:5790",
-            "server_port": 45015,
-            "uuid": "21f54c15-c624-460a-d6f3-95bb2041ea4a",
+            "server": "104.16.216.241",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -241,20 +241,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "nelly.homes",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": ""
+                    "Host": "nelly.homes"
                 }
             }
         },
         {
-            "tag": "🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 9",
+            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7",
             "type": "vmess",
-            "server": "27.50.48.72",
-            "server_port": 2086,
-            "uuid": "3960f128-1163-40a3-8dd7-7c91176e14a5",
+            "server": "172.67.71.160",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -265,11 +275,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "nelly.homes",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/ws",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": ""
+                    "Host": "nelly.homes"
                 }
             }
         },
@@ -318,40 +338,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🟢 | vmess | @v2ray_swhil | 22",
-            "type": "vmess",
-            "server": "172.67.71.160",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "nelly.homes",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "nelly.homes"
                 }
             }
         },
@@ -414,7 +400,24 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+            "type": "vmess",
+            "server": "107.172.25.132",
+            "server_port": 18117,
+            "uuid": "e2cfd504-b51f-42a4-cc18-665f82f2549c",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 10",
             "type": "vmess",
             "server": "cf.iepl.live",
             "server_port": 2086,
@@ -434,40 +437,6 @@
                 "path": "\/ws",
                 "headers": {
                     "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
-            "type": "vmess",
-            "server": "caretaker.com",
-            "server_port": 443,
-            "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mikasa.yaemiko.cloudns.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ivideos.sbs\/linkws",
-                "headers": {
-                    "Host": "mikasa.yaemiko.cloudns.org"
                 }
             }
         },
@@ -536,6 +505,40 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "vip2323.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 18",
+            "type": "vmess",
+            "server": "inna.cfd",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "inna.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "inna.cfd"
                 }
             }
         },
