@@ -14,11 +14,10 @@ DIRECT = direct
 🇮🇷IR | 🟢 | vmess | @prrofile_purple | 180 = vmess, 62.60.135.13, 8080, username = 4dba618a-a752-40b5-a583-8b0ed0724009, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"google.com", skip-cert-verify = true, tfo = false
 🇺🇸US | 🟢 | vmess | @customv2ray | 12 = vmess, s1c.v2.v001sss.xyz, 2082, username = 112ac36f-3f53-4e26-8371-d25c028e1b9a, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"s1c.v2.v001sss.xyz", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 0 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇨🇦CA | 🟢 | vmess | @Hope_Net | 10 = vmess, cf.iepl.live, 2086, username = 3960f128-1163-40a3-8dd7-7c91176e14a5, ws = true, tls = , vmess-aead = true, ws-path = /ws, ws-headers = Host:"us01.appleid.bf", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇮🇷IR | 🟢 | vmess | @prrofile_purple | 180,🇺🇸US | 🟢 | vmess | @customv2ray | 12,❔XX | 🟢 | vmess | @yaney_01 | 0,🇨🇦CA | 🟢 | vmess | @Hope_Net | 10
-URL-TEST = url-test,🇮🇷IR | 🟢 | vmess | @prrofile_purple | 180,🇺🇸US | 🟢 | vmess | @customv2ray | 12,❔XX | 🟢 | vmess | @yaney_01 | 0,🇨🇦CA | 🟢 | vmess | @Hope_Net | 10
-FALLBACK = fallback,🇮🇷IR | 🟢 | vmess | @prrofile_purple | 180,🇺🇸US | 🟢 | vmess | @customv2ray | 12,❔XX | 🟢 | vmess | @yaney_01 | 0,🇨🇦CA | 🟢 | vmess | @Hope_Net | 10
+MANUAL = select,URL-TEST,FALLBACK,🇮🇷IR | 🟢 | vmess | @prrofile_purple | 180,🇺🇸US | 🟢 | vmess | @customv2ray | 12,❔XX | 🟢 | vmess | @yaney_01 | 0
+URL-TEST = url-test,🇮🇷IR | 🟢 | vmess | @prrofile_purple | 180,🇺🇸US | 🟢 | vmess | @customv2ray | 12,❔XX | 🟢 | vmess | @yaney_01 | 0
+FALLBACK = fallback,🇮🇷IR | 🟢 | vmess | @prrofile_purple | 180,🇺🇸US | 🟢 | vmess | @customv2ray | 12,❔XX | 🟢 | vmess | @yaney_01 | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
