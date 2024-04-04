@@ -115,11 +115,12 @@
                 "🇨🇦CA | 🟢 | vmess | @customv2ray | 11",
                 "❔XX | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 16",
+                "🇻🇳VN | 🟢 | vmess | @Hope_Net | 15",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 9",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
-                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 6"
+                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 6",
+                "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0"
             ]
         },
         {
@@ -135,11 +136,12 @@
                 "🇨🇦CA | 🟢 | vmess | @customv2ray | 11",
                 "❔XX | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 16",
+                "🇻🇳VN | 🟢 | vmess | @Hope_Net | 15",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 9",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
-                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 6"
+                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 6",
+                "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -414,13 +416,13 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 16",
+            "tag": "🇻🇳VN | 🟢 | vmess | @Hope_Net | 15",
             "type": "vmess",
-            "server": "hms04.xmivideo.cfd",
-            "server_port": 443,
-            "uuid": "93ea486a-bada-42a4-ac38-d088b320fa1e",
+            "server": "vn18.4gchill.com",
+            "server_port": 80,
+            "uuid": "67d5296e-a2ee-4a9f-89e6-365da540c55d",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 23379904,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -429,21 +431,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/linkws",
+                "path": "\/4gchill.com",
                 "headers": {
-                    "Host": ""
+                    "Host": "vn18.4gchill.com"
                 }
             }
         },
@@ -563,6 +555,40 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "meroiy.icu"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @OpenSSTPVpn | 0",
+            "type": "vmess",
+            "server": "afrhms16v.bestxray.buzz",
+            "server_port": 443,
+            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "afrhms16v.bestxray.buzz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "afrhms16v.bestxray.buzz"
                 }
             }
         }
