@@ -112,15 +112,14 @@
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 6",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7",
                 "🇮🇷IR | 🟢 | vmess | @prrofile_purple | 180",
-                "🇺🇸US | 🟢 | vmess | @customv2ray | 12",
+                "🇨🇦CA | 🟢 | vmess | @customv2ray | 13",
                 "❔XX | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 13",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
+                "❔XX | 🟢 | vmess | @Hope_Net | 13",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 9",
-                "🇺🇸US | 🟢 | vmess | @v2Line | 10",
-                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 16",
+                "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 17",
+                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 18",
                 "🇺🇸US | 🟢 | vmess | @eliya_chiter0 | 1",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | 🟢 | vmess | @ROMAX_VPN | 8"
@@ -136,15 +135,14 @@
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 6",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7",
                 "🇮🇷IR | 🟢 | vmess | @prrofile_purple | 180",
-                "🇺🇸US | 🟢 | vmess | @customv2ray | 12",
+                "🇨🇦CA | 🟢 | vmess | @customv2ray | 13",
                 "❔XX | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 13",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
+                "❔XX | 🟢 | vmess | @Hope_Net | 13",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 9",
-                "🇺🇸US | 🟢 | vmess | @v2Line | 10",
-                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 16",
+                "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 17",
+                "🇺🇸US | 🟢 | vmess | @forwardv2ray | 18",
                 "🇺🇸US | 🟢 | vmess | @eliya_chiter0 | 1",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
                 "🇨🇦CA | 🟢 | vmess | @ROMAX_VPN | 8"
@@ -320,11 +318,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @customv2ray | 12",
+            "tag": "🇨🇦CA | 🟢 | vmess | @customv2ray | 13",
             "type": "vmess",
-            "server": "s1c.v2.v001sss.xyz",
-            "server_port": 2082,
-            "uuid": "112ac36f-3f53-4e26-8371-d25c028e1b9a",
+            "server": "auth.speedtest.net",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -335,11 +333,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "nelly.homes",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": ""
+                    "Host": "nelly.homes"
                 }
             }
         },
@@ -402,37 +410,13 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 13",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 13",
             "type": "vmess",
-            "server": "ying.appleid.bf",
-            "server_port": 2082,
-            "uuid": "9972e893-335f-49d5-a7a1-d520826e58ac",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ws",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
-            "type": "vmess",
-            "server": "172.67.152.200",
+            "server": "0316ro.fans8.xyz",
             "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "uuid": "5c70da5d-e641-3bf8-b7dc-5babd843ff3c",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 2,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -443,7 +427,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "meroiy.icu",
+                "server_name": "0316ro.fans8.xyz",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -453,9 +437,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/nl",
                 "headers": {
-                    "Host": "meroiy.icu"
+                    "Host": "0316ro.fans8.xyz"
                 }
             }
         },
@@ -494,7 +478,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @v2Line | 10",
+            "tag": "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
             "type": "vmess",
             "server": "104.21.30.254",
             "server_port": 443,
@@ -528,11 +512,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @forwardv2ray | 16",
+            "tag": "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 17",
             "type": "vmess",
-            "server": "172.67.116.48",
-            "server_port": 80,
-            "uuid": "22a13aa2-4854-44cb-e090-ec71ab84b1ff",
+            "server": "104.21.11.133",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -543,20 +527,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "inna.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": ""
+                    "Host": "inna.cfd"
                 }
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @forwardv2ray | 17",
+            "tag": "🇺🇸US | 🟢 | vmess | @forwardv2ray | 18",
             "type": "vmess",
-            "server": "172.67.223.242",
-            "server_port": 2086,
-            "uuid": "7d93e992-48cf-42d4-84f8-75768e815a4c",
+            "server": "afrhms16v.bestxray.buzz",
+            "server_port": 443,
+            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -567,11 +561,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "afrhms16v.bestxray.buzz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": ""
+                    "Host": "afrhms16v.bestxray.buzz"
                 }
             }
         },
