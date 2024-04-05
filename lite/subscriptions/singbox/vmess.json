@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇨🇦CA | 🟢 | vmess | @azadi_az_inja_migzare | 0",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
@@ -115,10 +116,9 @@
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 6",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 0",
-                "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
-                "🇻🇳VN | 🟢 | vmess | @Hope_Net | 18",
-                "🇨🇦CA | 🟢 | vmess | @v2Line | 9",
+                "🇺🇸US | 🟢 | vmess | @yaney_01 | 1",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
+                "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇺🇸US | 🟢 | vmess | @eliya_chiter0 | 1",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
@@ -131,6 +131,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇨🇦CA | 🟢 | vmess | @azadi_az_inja_migzare | 0",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
@@ -140,10 +141,9 @@
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 6",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 0",
-                "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
-                "🇻🇳VN | 🟢 | vmess | @Hope_Net | 18",
-                "🇨🇦CA | 🟢 | vmess | @v2Line | 9",
+                "🇺🇸US | 🟢 | vmess | @yaney_01 | 1",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
+                "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇺🇸US | 🟢 | vmess | @eliya_chiter0 | 1",
                 "🇵🇱PL | 🟢 | vmess | @eliya_chiter0 | 2",
@@ -170,6 +170,40 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @azadi_az_inja_migzare | 0",
+            "type": "vmess",
+            "server": "zula.ir",
+            "server_port": 8443,
+            "uuid": "2f2a7a62-3a15-41c4-98c3-ba062e291d24",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fragment2.karop.homes",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "VPNHOMES",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
@@ -390,7 +424,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
+            "tag": "🇺🇸US | 🟢 | vmess | @yaney_01 | 1",
             "type": "vmess",
             "server": "104.26.8.210",
             "server_port": 443,
@@ -424,11 +458,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "50.114.86.38",
-            "server_port": 20530,
-            "uuid": "261c9fcb-b7b5-4086-88ff-66e0b1b08aa6",
+            "server": "fcdn.flha.ru",
+            "server_port": 2095,
+            "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -441,38 +475,14 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/261c9fcb",
+                "path": "\/",
                 "headers": {
                     "Host": ""
                 }
             }
         },
         {
-            "tag": "🇻🇳VN | 🟢 | vmess | @Hope_Net | 18",
-            "type": "vmess",
-            "server": "bs1.loadingip.com",
-            "server_port": 80,
-            "uuid": "9e5999ba-870a-46b1-8500-37c640371ec6",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/bs",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🟢 | vmess | @v2Line | 9",
+            "tag": "🇺🇸US | 🟢 | vmess | @v2Line | 9",
             "type": "vmess",
             "server": "meroiy.icu",
             "server_port": 443,
