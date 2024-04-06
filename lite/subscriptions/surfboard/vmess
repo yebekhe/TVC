@@ -11,12 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇺🇸US | 🟢 | vmess | @azadi_az_inja_migzare | 0 = vmess, zula.ir, 2096, username = 856fcf9c-d86b-4d31-8af7-a88f06cafc13, ws = true, tls = 1, vmess-aead = true, ws-path = /VPNHOMES, ws-headers = Host:"fragment2.karop.homes", skip-cert-verify = true, tfo = false
 🇨🇦CA | 🟢 | vmess | @mftizi | 18 = vmess, cfcdn2.sanfencdn9.com, 2052, username = 6ad77d6b-7a45-4ed3-b65d-1c3ec0226603, ws = true, tls = , vmess-aead = true, ws-path = /video/u4eCZTxW, ws-headers = Host:"jpafzyhfsg3.yofnhkfc.xyz", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 0 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
+🇸🇬SG | 🟢 | vmess | @Hope_Net | 19 = vmess, 146.190.84.34, 26012, username = 695bc422-4dc8-4d8c-8457-26e18c2421b4, ws = true, tls = , vmess-aead = false, ws-path = /, ws-headers = Host:"tiktok.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | vmess | @mftizi | 18,❔XX | 🟢 | vmess | @yaney_01 | 0
-URL-TEST = url-test,🇨🇦CA | 🟢 | vmess | @mftizi | 18,❔XX | 🟢 | vmess | @yaney_01 | 0
-FALLBACK = fallback,🇨🇦CA | 🟢 | vmess | @mftizi | 18,❔XX | 🟢 | vmess | @yaney_01 | 0
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @azadi_az_inja_migzare | 0,🇨🇦CA | 🟢 | vmess | @mftizi | 18,❔XX | 🟢 | vmess | @yaney_01 | 0,🇸🇬SG | 🟢 | vmess | @Hope_Net | 19
+URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @azadi_az_inja_migzare | 0,🇨🇦CA | 🟢 | vmess | @mftizi | 18,❔XX | 🟢 | vmess | @yaney_01 | 0,🇸🇬SG | 🟢 | vmess | @Hope_Net | 19
+FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @azadi_az_inja_migzare | 0,🇨🇦CA | 🟢 | vmess | @mftizi | 18,❔XX | 🟢 | vmess | @yaney_01 | 0,🇸🇬SG | 🟢 | vmess | @Hope_Net | 19
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
