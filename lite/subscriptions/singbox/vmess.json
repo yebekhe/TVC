@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🟢 | vmess | @azadi_az_inja_migzare | 0",
+                "🇺🇸US | 🟢 | vmess | @azadi_az_inja_migzare | 0",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 18",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 19",
@@ -114,8 +114,8 @@
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 27",
                 "❔XX | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
+                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 18",
+                "🇫🇮FI | 🟢 | vmess | @Hope_Net | 19",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
                 "🇺🇸US | 🟢 | vmess | @eliya_chiter0 | 1",
@@ -130,7 +130,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🟢 | vmess | @azadi_az_inja_migzare | 0",
+                "🇺🇸US | 🟢 | vmess | @azadi_az_inja_migzare | 0",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 18",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 19",
@@ -138,8 +138,8 @@
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 27",
                 "❔XX | 🟢 | vmess | @yaney_01 | 0",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 1",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
+                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 18",
+                "🇫🇮FI | 🟢 | vmess | @Hope_Net | 19",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 11",
                 "🇺🇸US | 🟢 | vmess | @eliya_chiter0 | 1",
@@ -170,7 +170,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @azadi_az_inja_migzare | 0",
+            "tag": "🇺🇸US | 🟢 | vmess | @azadi_az_inja_migzare | 0",
             "type": "vmess",
             "server": "zula.ir",
             "server_port": 2096,
@@ -378,11 +378,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇷🇺RU | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "149.28.76.66",
-            "server_port": 22957,
-            "uuid": "1c2ae221-53fb-4d56-d832-751da2287008",
+            "server": "77.221.159.224",
+            "server_port": 8081,
+            "uuid": "bfa9be17-9150-4231-95a9-1a048f6faa5d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -395,13 +395,13 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
+            "tag": "🇫🇮FI | 🟢 | vmess | @Hope_Net | 19",
             "type": "vmess",
-            "server": "107.172.25.132",
-            "server_port": 18117,
-            "uuid": "e2cfd504-b51f-42a4-cc18-665f82f2549c",
+            "server": "77.91.103.47",
+            "server_port": 80,
+            "uuid": "09e35fe0-2efd-44c1-96fb-46b7b3cc28eb",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": -1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -409,6 +409,13 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vmess",
+                "headers": {
+                    "Host": "77.91.103.47"
+                }
             }
         },
         {
