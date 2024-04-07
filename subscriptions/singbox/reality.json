@@ -124,9 +124,11 @@
                 "🇮🇪IE | 🟢 | vless | @v2rayNG_Matsuri | 6",
                 "🇩🇪DE | 🔴 | vless | @v2ray_swhil | 1",
                 "🇳🇱NL | 🟢 | vless | @v2ray_swhil | 12",
-                "🇫🇮FI | 🔴 | vless | @V2RayTz | 11",
+                "🇫🇮FI | 🔴 | vless | @V2RayTz | 13",
                 "❔XX | 🟢 | vless | @DailyV2RY | 118",
                 "❔XX | 🟢 | vless | @DailyV2RY | 119",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 14",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 15",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -205,9 +207,11 @@
                 "🇮🇪IE | 🟢 | vless | @v2rayNG_Matsuri | 6",
                 "🇩🇪DE | 🔴 | vless | @v2ray_swhil | 1",
                 "🇳🇱NL | 🟢 | vless | @v2ray_swhil | 12",
-                "🇫🇮FI | 🔴 | vless | @V2RayTz | 11",
+                "🇫🇮FI | 🔴 | vless | @V2RayTz | 13",
                 "❔XX | 🟢 | vless | @DailyV2RY | 118",
                 "❔XX | 🟢 | vless | @DailyV2RY | 119",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 14",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 15",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -862,7 +866,7 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @V2RayTz | 11",
+            "tag": "🇫🇮FI | 🔴 | vless | @V2RayTz | 13",
             "type": "vless",
             "server": "65.21.50.31",
             "server_port": 443,
@@ -957,6 +961,78 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 14",
+            "type": "vless",
+            "server": "178.63.150.65",
+            "server_port": 443,
+            "uuid": "67ad1c8d-d52e-4c23-b18f-eaf686aae940",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.discordapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "B48aKMzJEyC-CFBhCyrlGemcy-7mW3jSX799x8p9agU",
+                    "short_id": "99452b17e087bcc0"
+                }
+            },
+            "transport": {
+                "type": "http",
+                "host": [
+                    "cdn.discordapp.com"
+                ],
+                "path": "\/"
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 15",
+            "type": "vless",
+            "server": "88.198.129.119",
+            "server_port": 443,
+            "uuid": "880bc3aa-1829-4a7e-9b8c-3ae453160664",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.discordapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "KzPAp0x12i9Cs8Didfqx45slAEw1dT1M5zzgkGiLbzk",
+                    "short_id": "3840216a829798c9"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "443vless",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
