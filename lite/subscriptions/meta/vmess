@@ -122,9 +122,11 @@ dns:
 proxies:
   - {"name":"🇺🇸US | 🟢 | vmess | @azadi_az_inja_migzare | 0","type":"vmess","server":"zula.ir","port":"2096","cipher":"auto","uuid":"856fcf9c-d86b-4d31-8af7-a88f06cafc13","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/VPNHOMES","headers":{"host":"fragment2.karop.homes"}}}
   - {"name":"🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸US | 🟢 | vmess | @mftizi | 18","type":"vmess","server":"cfcdn2.sanfencdn9.com","port":"2052","cipher":"auto","uuid":"6ad77d6b-7a45-4ed3-b65d-1c3ec0226603","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/u4eCZTxW","headers":{"host":"jpafzyhfsg3.yofnhkfc.xyz"}}}
+  - {"name":"🇨🇦CA | 🟢 | vmess | @mftizi | 18","type":"vmess","server":"cfcdn2.sanfencdn9.com","port":"2052","cipher":"auto","uuid":"6ad77d6b-7a45-4ed3-b65d-1c3ec0226603","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/u4eCZTxW","headers":{"host":"jpafzyhfsg3.yofnhkfc.xyz"}}}
   - {"name":"🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 27","type":"vmess","server":"172.234.17.218","port":"53734","cipher":"auto","uuid":"7231f458-3553-45c0-8167-c0400ec5e0c1","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 0","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"🇻🇳VN | 🟢 | vmess | @Hope_Net | 18","type":"vmess","server":"103.173.254.106","port":"1850","cipher":"auto","uuid":"c6c1f641-651f-4781-b9e2-c4e4858a619a","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/zh-cn","headers":{"host":"www.microsoft.com"}}}
+  - {"name":"🇮🇷IR | 🟢 | vmess | @Hope_Net | 19","type":"vmess","server":"79.175.129.88","port":"56266","cipher":"auto","uuid":"371f992e-4035-440b-a838-513299915623","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -133,9 +135,11 @@ proxy-groups:
       - FALLBACK
       - '🇺🇸US | 🟢 | vmess | @azadi_az_inja_migzare | 0'
       - '🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0'
-      - '🇺🇸US | 🟢 | vmess | @mftizi | 18'
+      - '🇨🇦CA | 🟢 | vmess | @mftizi | 18'
       - '🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 27'
       - '❔XX | 🟢 | vmess | @yaney_01 | 0'
+      - '🇻🇳VN | 🟢 | vmess | @Hope_Net | 18'
+      - '🇮🇷IR | 🟢 | vmess | @Hope_Net | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -144,9 +148,11 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🟢 | vmess | @azadi_az_inja_migzare | 0'
       - '🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0'
-      - '🇺🇸US | 🟢 | vmess | @mftizi | 18'
+      - '🇨🇦CA | 🟢 | vmess | @mftizi | 18'
       - '🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 27'
       - '❔XX | 🟢 | vmess | @yaney_01 | 0'
+      - '🇻🇳VN | 🟢 | vmess | @Hope_Net | 18'
+      - '🇮🇷IR | 🟢 | vmess | @Hope_Net | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -154,9 +160,11 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🟢 | vmess | @azadi_az_inja_migzare | 0'
       - '🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0'
-      - '🇺🇸US | 🟢 | vmess | @mftizi | 18'
+      - '🇨🇦CA | 🟢 | vmess | @mftizi | 18'
       - '🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 27'
       - '❔XX | 🟢 | vmess | @yaney_01 | 0'
+      - '🇻🇳VN | 🟢 | vmess | @Hope_Net | 18'
+      - '🇮🇷IR | 🟢 | vmess | @Hope_Net | 19'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
