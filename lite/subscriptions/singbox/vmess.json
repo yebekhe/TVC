@@ -111,7 +111,6 @@
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 19",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 10",
-                "🇮🇷IR | 🟢 | vmess | @v2ray1_ng | 9",
                 "❔XX | 🟢 | vmess | @yaney_01 | 1",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 2",
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 17",
@@ -135,7 +134,6 @@
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 19",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 10",
-                "🇮🇷IR | 🟢 | vmess | @v2ray1_ng | 9",
                 "❔XX | 🟢 | vmess | @yaney_01 | 1",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 2",
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 17",
@@ -293,30 +291,6 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🟢 | vmess | @v2ray1_ng | 9",
-            "type": "vmess",
-            "server": "79.175.151.112",
-            "server_port": 58271,
-            "uuid": "6e83ef0f-70a7-4be8-979a-8bc7a41f4224",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/rohv2ray",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
             "tag": "❔XX | 🟢 | vmess | @yaney_01 | 1",
             "type": "vmess",
             "server": "ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub",
@@ -377,9 +351,9 @@
         {
             "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "198.57.27.212",
-            "server_port": 22324,
-            "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+            "server": "104.21.69.44",
+            "server_port": 2096,
+            "uuid": "4087464e-dd42-4abb-8452-2ba2338bae69",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -389,14 +363,31 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fragment2.karop.homes",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/VPNHOMES",
+                "headers": {
+                    "Host": "fragment2.karop.homes"
+                }
             }
         },
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "149.28.46.147",
-            "server_port": 25875,
-            "uuid": "19c2e1dc-8dd7-43e3-8ad1-201d41aa605c",
+            "server": "207.246.110.118",
+            "server_port": 53698,
+            "uuid": "235f1753-4e65-4465-ecb2-08f643eb3182",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
