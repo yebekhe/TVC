@@ -136,6 +136,7 @@
                 "🇩🇪DE | 🔴 | vless | @DailyV2RY | 105",
                 "❔XX | 🟢 | vless | @DailyV2RY | 113",
                 "🇩🇪DE | 🔴 | vless | @DailyV2RY | 116",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 6",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -157,10 +158,11 @@
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 36",
                 "❔XX | 🔴 | vless | @Capital_NET | 37",
                 "❔XX | 🔴 | vless | @Capital_NET | 39",
-                "🇨🇦CA | 🔴 | vless | @Capital_NET | 41",
+                "🇳🇱NL | 🔴 | vless | @Capital_NET | 41",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 42",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
+                "🇬🇧GB | 🟢 | vless | @iP_CF | 0",
                 "inbox&type=tcp&headerType=none#🇩🇪DE | 🔴 | vless | @kiava | 3",
                 "🇩🇪DE | 🔴 | vless | @kiava | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
@@ -225,6 +227,7 @@
                 "🇩🇪DE | 🔴 | vless | @DailyV2RY | 105",
                 "❔XX | 🟢 | vless | @DailyV2RY | 113",
                 "🇩🇪DE | 🔴 | vless | @DailyV2RY | 116",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 6",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -246,10 +249,11 @@
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 36",
                 "❔XX | 🔴 | vless | @Capital_NET | 37",
                 "❔XX | 🔴 | vless | @Capital_NET | 39",
-                "🇨🇦CA | 🔴 | vless | @Capital_NET | 41",
+                "🇳🇱NL | 🔴 | vless | @Capital_NET | 41",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 42",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
+                "🇬🇧GB | 🟢 | vless | @iP_CF | 0",
                 "inbox&type=tcp&headerType=none#🇩🇪DE | 🔴 | vless | @kiava | 3",
                 "🇩🇪DE | 🔴 | vless | @kiava | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
@@ -1254,6 +1258,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 6",
+            "type": "vless",
+            "server": "88.198.129.119",
+            "server_port": 443,
+            "uuid": "880bc3aa-1829-4a7e-9b8c-3ae453160664",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.discordapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "KzPAp0x12i9Cs8Didfqx45slAEw1dT1M5zzgkGiLbzk",
+                    "short_id": "3840216a829798c9"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "443vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
             "type": "vless",
             "server": "143.110.169.55",
@@ -1891,7 +1931,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @Capital_NET | 41",
+            "tag": "🇳🇱NL | 🔴 | vless | @Capital_NET | 41",
             "type": "vless",
             "server": "194.5.97.158",
             "server_port": 443,
@@ -2003,6 +2043,35 @@
                     "enabled": true,
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vless | @iP_CF | 0",
+            "type": "vless",
+            "server": "51.195.157.103",
+            "server_port": 45102,
+            "uuid": "de85f08e-b381-4d54-931d-f8a24f49b3ed",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "icloud.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "FZ9taGSf9n6JNSUnjR7kilCKmfXMZHbbOf7skIDNUSQ",
+                    "short_id": "9f935adfaf516589"
                 }
             }
         },
