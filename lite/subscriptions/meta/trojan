@@ -120,10 +120,10 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 18","type":"trojan","server":"16.171.107.242","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 19","type":"trojan","server":"176.34.179.227","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"52.16.115.169","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇬🇧GB | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"35.178.208.90","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 18","type":"trojan","server":"3.65.248.51","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19","type":"trojan","server":"51.20.150.76","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"63.33.151.5","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"52.16.115.169","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇬🇧GB | 🔴 | trojan | @oneclickvpnkeys | 8","type":"trojan","server":"45.76.130.173","port":443,"udp":false,"password":"wkmY1R4EcP","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"z-v2-003289.kailib.com"}
 proxy-groups:
   - name: MANUAL
@@ -131,10 +131,10 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 18'
-      - '🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 19'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 18'
+      - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
-      - '🇬🇧GB | 🟢 | trojan | @DirectVPN | 19'
+      - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
       - '🇬🇧GB | 🔴 | trojan | @oneclickvpnkeys | 8'
   - name: URL-TEST
     type: url-test
@@ -142,20 +142,20 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 18'
-      - '🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 19'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 18'
+      - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
-      - '🇬🇧GB | 🟢 | trojan | @DirectVPN | 19'
+      - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
       - '🇬🇧GB | 🔴 | trojan | @oneclickvpnkeys | 8'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 18'
-      - '🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 19'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 18'
+      - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
-      - '🇬🇧GB | 🟢 | trojan | @DirectVPN | 19'
+      - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
       - '🇬🇧GB | 🔴 | trojan | @oneclickvpnkeys | 8'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
