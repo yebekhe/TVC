@@ -109,13 +109,15 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
+                "🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "🇫🇮FI | 🟢 | vmess | @oneclickvpnkeys | 10",
                 "🇫🇮FI | 🟢 | vmess | @oneclickvpnkeys | 11",
                 "🇮🇷IR | 🟢 | vmess | @v2ray1_ng | 11",
                 "❔XX | 🟢 | vmess | @yaney_01 | 1",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 2",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 19",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇻🇳VN | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
                 "🇺🇸US | 🟢 | vmess | @nofiltering2 | 3",
@@ -132,13 +134,15 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
+                "🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "🇫🇮FI | 🟢 | vmess | @oneclickvpnkeys | 10",
                 "🇫🇮FI | 🟢 | vmess | @oneclickvpnkeys | 11",
                 "🇮🇷IR | 🟢 | vmess | @v2ray1_ng | 11",
                 "❔XX | 🟢 | vmess | @yaney_01 | 1",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 2",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 19",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇻🇳VN | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
                 "🇺🇸US | 🟢 | vmess | @nofiltering2 | 3",
@@ -223,6 +227,64 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "185.74.222.245",
+            "server_port": 80,
+            "uuid": "6f20c1ae-c712-4a26-a9f4-5e5b3c480b9d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vmess",
+                "headers": {
+                    "Host": "185.74.222.245"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 19",
+            "type": "vmess",
+            "server": "104.21.28.62",
+            "server_port": 443,
+            "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "glweidf.cfd"
+                }
             }
         },
         {
@@ -344,9 +406,9 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "107.172.25.132",
-            "server_port": 18117,
-            "uuid": "e2cfd504-b51f-42a4-cc18-665f82f2549c",
+            "server": "172.67.152.170",
+            "server_port": 2095,
+            "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -356,40 +418,30 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 19",
-            "type": "vmess",
-            "server": "104.21.31.189",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kittiy.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/",
                 "headers": {
-                    "Host": "kittiy.sbs"
+                    "Host": ""
                 }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
+            "type": "vmess",
+            "server": "64.176.199.51",
+            "server_port": 23534,
+            "uuid": "d7da6369-ea95-4ccf-c721-85200794a62e",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
