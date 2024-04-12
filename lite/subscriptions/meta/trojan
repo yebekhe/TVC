@@ -124,7 +124,6 @@ proxies:
   - {"name":"🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19","type":"trojan","server":"13.50.70.157","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"13.53.111.39","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"51.21.84.214","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇸🇪SE | 🔴 | trojan | @V2RayTz | 11","type":"trojan","server":"185.146.173.66","port":80,"udp":false,"password":"dGKXcHgs3P","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇨🇦CA | 🔴 | trojan | @iP_CF | 0","type":"trojan","server":"den.irgfw.fun","port":2083,"udp":false,"password":"3F98apiP9b","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"heueuhe37u12jebe34b.irgfw.fun"}
 proxy-groups:
   - name: MANUAL
@@ -136,7 +135,6 @@ proxy-groups:
       - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 18'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇸🇪SE | 🔴 | trojan | @V2RayTz | 11'
       - '🇨🇦CA | 🔴 | trojan | @iP_CF | 0'
   - name: URL-TEST
     type: url-test
@@ -148,7 +146,6 @@ proxy-groups:
       - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 18'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇸🇪SE | 🔴 | trojan | @V2RayTz | 11'
       - '🇨🇦CA | 🔴 | trojan | @iP_CF | 0'
   - name: FALLBACK
     type: fallback
@@ -159,7 +156,6 @@ proxy-groups:
       - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 18'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇸🇪SE | 🔴 | trojan | @V2RayTz | 11'
       - '🇨🇦CA | 🔴 | trojan | @iP_CF | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
