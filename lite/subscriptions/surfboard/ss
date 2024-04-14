@@ -11,13 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇦🇪AE | 🟢 | ss | @VmessProtocol | 15 = ss, series-a2.samanehha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = mps3FwmDjLrWaOVg
 🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 16 = ss, 134.195.196.178, 805, encrypt-method = chacha20-ietf-poly1305, password = G!yBwPWH3Vao
 🇦🇹AT | 🟢 | ss | @OutlineVpnOfficial | 17 = ss, 212.113.106.243, 13022, encrypt-method = chacha20-ietf-poly1305, password = w5drAL7PfCIwQ2ycUuoDsV2Ls
-🇦🇪AE | 🟢 | ss | @iP_CF | 3 = ss, series-a2.samanehha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = mps3FwmDjLrWaOVg
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 16,🇦🇹AT | 🟢 | ss | @OutlineVpnOfficial | 17,🇦🇪AE | 🟢 | ss | @iP_CF | 3
-URL-TEST = url-test,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 16,🇦🇹AT | 🟢 | ss | @OutlineVpnOfficial | 17,🇦🇪AE | 🟢 | ss | @iP_CF | 3
-FALLBACK = fallback,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 16,🇦🇹AT | 🟢 | ss | @OutlineVpnOfficial | 17,🇦🇪AE | 🟢 | ss | @iP_CF | 3
+MANUAL = select,URL-TEST,FALLBACK,🇦🇪AE | 🟢 | ss | @VmessProtocol | 15,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 16,🇦🇹AT | 🟢 | ss | @OutlineVpnOfficial | 17
+URL-TEST = url-test,🇦🇪AE | 🟢 | ss | @VmessProtocol | 15,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 16,🇦🇹AT | 🟢 | ss | @OutlineVpnOfficial | 17
+FALLBACK = fallback,🇦🇪AE | 🟢 | ss | @VmessProtocol | 15,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 16,🇦🇹AT | 🟢 | ss | @OutlineVpnOfficial | 17
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
