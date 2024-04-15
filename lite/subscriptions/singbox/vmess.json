@@ -116,8 +116,8 @@
                 "🇳🇱NL | 🟢 | vmess | @proxystore11 | 14",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 4",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 19",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 19",
                 "🇻🇳VN | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @nofiltering2 | 1",
@@ -138,8 +138,8 @@
                 "🇳🇱NL | 🟢 | vmess | @proxystore11 | 14",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
                 "🇨🇦CA | 🟢 | vmess | @yaney_01 | 4",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 19",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 19",
                 "🇻🇳VN | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
                 "🇨🇦CA | 🟢 | vmess | @nofiltering2 | 1",
@@ -418,11 +418,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "64.23.190.208",
-            "server_port": 59703,
-            "uuid": "6748ac8e-91a2-46d6-ec84-e629ae21edea",
+            "server": "104.21.35.6",
+            "server_port": 8443,
+            "uuid": "6fec22f5-c6b5-4d51-ac54-ec0b6b5f2ab0",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -432,23 +432,33 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hamrah3.ourkurdistan.us",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": ""
+                    "Host": "hamrah3.ourkurdistan.us"
                 }
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 19",
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 19",
             "type": "vmess",
-            "server": "104.18.24.143",
-            "server_port": 2052,
-            "uuid": "3d840eb7-9400-4caf-a511-e4724a003ec4",
+            "server": "39.103.165.178",
+            "server_port": 52033,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 64,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -456,13 +466,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/video\/GQ2qE5Us9g",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
