@@ -121,7 +121,7 @@
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 6",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇫🇷FR | 🟢 | vless | @CUSTOMVPNSERVER | 10",
-                "🇩🇪DE | 🔴 | vless | @V2rayCollectorDonate | 11",
+                "🇩🇪DE | 🔴 | vless | @V2rayCollectorDonate | 12",
                 "🇫🇷FR | 🟢 | vless | @v2rayNG_Matsuri | 13",
                 "🇹🇷TR | 🔴 | vless | @v2rayNG_Matsuri | 14",
                 "🇮🇪IE | 🔴 | vless | @ShadowProxy66 | 26",
@@ -132,6 +132,7 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 130",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 131",
                 "🇩🇪DE | 🔴 | vless | @DailyV2RY | 133",
+                "🇹🇷TR | 🟢 | vless | @ConfigsHUB | 15",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -202,7 +203,7 @@
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 6",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇫🇷FR | 🟢 | vless | @CUSTOMVPNSERVER | 10",
-                "🇩🇪DE | 🔴 | vless | @V2rayCollectorDonate | 11",
+                "🇩🇪DE | 🔴 | vless | @V2rayCollectorDonate | 12",
                 "🇫🇷FR | 🟢 | vless | @v2rayNG_Matsuri | 13",
                 "🇹🇷TR | 🔴 | vless | @v2rayNG_Matsuri | 14",
                 "🇮🇪IE | 🔴 | vless | @ShadowProxy66 | 26",
@@ -213,6 +214,7 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 130",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 131",
                 "🇩🇪DE | 🔴 | vless | @DailyV2RY | 133",
+                "🇹🇷TR | 🟢 | vless | @ConfigsHUB | 15",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -789,7 +791,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @V2rayCollectorDonate | 11",
+            "tag": "🇩🇪DE | 🔴 | vless | @V2rayCollectorDonate | 12",
             "type": "vless",
             "server": "116.202.28.94",
             "server_port": 2083,
@@ -1144,6 +1146,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇹🇷TR | 🟢 | vless | @ConfigsHUB | 15",
+            "type": "vless",
+            "server": "185.17.136.169",
+            "server_port": 8443,
+            "uuid": "4f3a30ab-87cc-45a5-972f-f4631f11c914",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "wordpress.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "J0CUj7Ae6z0sq16diTikhJUTi_NIRc4jaEUH-4khoCc",
+                    "short_id": "876b28ef"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Monjamed",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
