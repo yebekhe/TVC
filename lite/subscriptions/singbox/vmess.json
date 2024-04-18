@@ -109,6 +109,7 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 10",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 29",
@@ -117,8 +118,8 @@
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 8",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
                 "❔XX | 🟢 | vmess | @Hope_Net | 8",
-                "❔XX | 🟢 | vmess | @Hope_Net | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 11",
                 "🇺🇸US | 🟢 | vmess | @nofiltering2 | 3"
@@ -131,6 +132,7 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 10",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 29",
@@ -139,8 +141,8 @@
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 8",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
                 "❔XX | 🟢 | vmess | @Hope_Net | 8",
-                "❔XX | 🟢 | vmess | @Hope_Net | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 11",
                 "🇺🇸US | 🟢 | vmess | @nofiltering2 | 3"
@@ -221,6 +223,23 @@
                 "headers": {
                     "Host": ""
                 }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
+            "type": "vmess",
+            "server": "2.58.87.221",
+            "server_port": 46628,
+            "uuid": "f6ba9e5a-711c-496f-be60-ac5464dec2b8",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
@@ -449,6 +468,40 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
+            "type": "vmess",
+            "server": "cold-dawn-9246.fly.dev",
+            "server_port": 443,
+            "uuid": "ea4909ef-7ca6-4b46-bf2e-6c07896ef338",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cold-dawn-9246.fly.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm",
+                "headers": {
+                    "Host": "cold-dawn-9246.fly.dev"
+                }
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
             "server": "novia.makeup",
@@ -479,40 +532,6 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "novia.makeup"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 9",
-            "type": "vmess",
-            "server": "v2-1.godlight.xyz",
-            "server_port": 12230,
-            "uuid": "719d4cec-82a8-4a65-ad01-32cf08f2c988",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "v2-1.godlight.xyz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/j75g1461x",
-                "headers": {
-                    "Host": "v2-1.godlight.xyz"
                 }
             }
         },
