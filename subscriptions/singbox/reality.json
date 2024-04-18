@@ -106,10 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @EliV2ray | 3",
-                "🇫🇷FR | 🔴 | vless | @EliV2ray | 4",
-                "🇮🇸IS | 🔴 | vless | @EliV2ray | 5",
-                "🇹🇷TR | 🔴 | vless | @EliV2ray | 15",
+                "🇩🇪DE | 🔴 | vless | @EliV2ray | 6",
+                "🇫🇷FR | 🔴 | vless | @EliV2ray | 7",
+                "🇮🇸IS | 🔴 | vless | @EliV2ray | 8",
                 "❔XX | 🔴 | vless | @V2pedia | 14",
                 "❔XX | 🔴 | vless | @V2pedia | 19",
                 "❔XX | 🔴 | vless | @V2pedia | 37",
@@ -125,8 +124,8 @@
                 "🇹🇷TR | 🔴 | vless | @v2rayNG_Matsuri | 17",
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 3",
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 10",
-                "🇩🇪DE | 🟢 | vless | @DailyV2RY | 86",
-                "❔XX | 🔴 | vless | @DailyV2RY | 90",
+                "🇩🇪DE | 🟢 | vless | @DailyV2RY | 93",
+                "❔XX | 🔴 | vless | @DailyV2RY | 97",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -182,10 +181,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @EliV2ray | 3",
-                "🇫🇷FR | 🔴 | vless | @EliV2ray | 4",
-                "🇮🇸IS | 🔴 | vless | @EliV2ray | 5",
-                "🇹🇷TR | 🔴 | vless | @EliV2ray | 15",
+                "🇩🇪DE | 🔴 | vless | @EliV2ray | 6",
+                "🇫🇷FR | 🔴 | vless | @EliV2ray | 7",
+                "🇮🇸IS | 🔴 | vless | @EliV2ray | 8",
                 "❔XX | 🔴 | vless | @V2pedia | 14",
                 "❔XX | 🔴 | vless | @V2pedia | 19",
                 "❔XX | 🔴 | vless | @V2pedia | 37",
@@ -201,8 +199,8 @@
                 "🇹🇷TR | 🔴 | vless | @v2rayNG_Matsuri | 17",
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 3",
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 10",
-                "🇩🇪DE | 🟢 | vless | @DailyV2RY | 86",
-                "❔XX | 🔴 | vless | @DailyV2RY | 90",
+                "🇩🇪DE | 🟢 | vless | @DailyV2RY | 93",
+                "❔XX | 🔴 | vless | @DailyV2RY | 97",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -274,7 +272,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @EliV2ray | 3",
+            "tag": "🇩🇪DE | 🔴 | vless | @EliV2ray | 6",
             "type": "vless",
             "server": "91.107.190.188",
             "server_port": 53738,
@@ -310,7 +308,7 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🔴 | vless | @EliV2ray | 4",
+            "tag": "🇫🇷FR | 🔴 | vless | @EliV2ray | 7",
             "type": "vless",
             "server": "185.234.64.35",
             "server_port": 8443,
@@ -346,7 +344,7 @@
             }
         },
         {
-            "tag": "🇮🇸IS | 🔴 | vless | @EliV2ray | 5",
+            "tag": "🇮🇸IS | 🔴 | vless | @EliV2ray | 8",
             "type": "vless",
             "server": "89.221.224.166",
             "server_port": 8443,
@@ -376,42 +374,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "grpc",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇹🇷TR | 🔴 | vless | @EliV2ray | 15",
-            "type": "vless",
-            "server": "216.9.226.229",
-            "server_port": 443,
-            "uuid": "5aca7eb3-a3a0-40a0-a793-df5aafe9b4c7",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "icloud.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "xhUiZLkRCdO3b06Sfl4CMAkzwufpHbZcTYhLAA036R8",
-                    "short_id": "bbe53393d02629b8"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "vless",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -895,7 +857,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @DailyV2RY | 86",
+            "tag": "🇩🇪DE | 🟢 | vless | @DailyV2RY | 93",
             "type": "vless",
             "server": "www.morfin.bio",
             "server_port": 443,
@@ -931,7 +893,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @DailyV2RY | 90",
+            "tag": "❔XX | 🔴 | vless | @DailyV2RY | 97",
             "type": "vless",
             "server": "[2a00:b703:fff1:215::1]",
             "server_port": 25365,
