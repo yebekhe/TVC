@@ -126,6 +126,7 @@
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 6",
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 13",
                 "❔XX | 🔴 | vless | @DailyV2RY | 103",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 0",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -202,6 +203,7 @@
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 6",
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 13",
                 "❔XX | 🔴 | vless | @DailyV2RY | 103",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 0",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -925,6 +927,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ZEDMODEON-@ZEDMODEON-ZEDMODEON@ZEDMODEON-@ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 0",
+            "type": "vless",
+            "server": "v62.rid2.tech",
+            "server_port": 53738,
+            "uuid": "e07535d7-a53a-42a2-a43b-f93113b09485",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "-dm1-4Eqpep-XzWg5h7KYrgsKADuNMN0FCAU1vrheH8",
+                    "short_id": "24424cdb"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "r",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
