@@ -109,16 +109,16 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
-                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 10",
-                "🇹🇷TR | 🟢 | vmess | @oneclickvpnkeys | 11",
-                "🇨🇦CA | 🟢 | vmess | @prrofile_purple | 185",
+                "🇳🇱NL | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 10",
+                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 11",
+                "🇨🇦CA | 🟢 | vmess | @prrofile_purple | 195",
                 "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 23",
                 "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 24",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇿🇦ZA | 🟢 | vmess | @Hope_Net | 15",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+                "🇿🇦ZA | 🟢 | vmess | @Hope_Net | 17",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇫🇷FR | 🟢 | vmess | @v2Line | 9",
                 "🇵🇱PL | 🟢 | vmess | @v2Line | 10",
                 "🇺🇸US | 🟢 | vmess | @nofiltering2 | 3"
@@ -131,16 +131,16 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
-                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 10",
-                "🇹🇷TR | 🟢 | vmess | @oneclickvpnkeys | 11",
-                "🇨🇦CA | 🟢 | vmess | @prrofile_purple | 185",
+                "🇳🇱NL | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 10",
+                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 11",
+                "🇨🇦CA | 🟢 | vmess | @prrofile_purple | 195",
                 "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 23",
                 "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 24",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇿🇦ZA | 🟢 | vmess | @Hope_Net | 15",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+                "🇿🇦ZA | 🟢 | vmess | @Hope_Net | 17",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇫🇷FR | 🟢 | vmess | @v2Line | 9",
                 "🇵🇱PL | 🟢 | vmess | @v2Line | 10",
                 "🇺🇸US | 🟢 | vmess | @nofiltering2 | 3"
@@ -224,11 +224,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
+            "tag": "🇳🇱NL | 🟢 | vmess | @DeamNet_Proxy | 18",
             "type": "vmess",
-            "server": "64.23.190.208",
-            "server_port": 59703,
-            "uuid": "6748ac8e-91a2-46d6-ec84-e629ae21edea",
+            "server": "188.114.97.7",
+            "server_port": 443,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -239,16 +239,60 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "linde06.indiavideo.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": "64.23.190.208"
+                    "Host": "linde06.indiavideo.sbs"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 10",
+            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 10",
+            "type": "vmess",
+            "server": "martina.quest",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "martina.quest",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "martina.quest"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 11",
             "type": "vmess",
             "server": "199.247.3.99",
             "server_port": 2185,
@@ -265,24 +309,7 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🟢 | vmess | @oneclickvpnkeys | 11",
-            "type": "vmess",
-            "server": "154.53.164.40",
-            "server_port": 54503,
-            "uuid": "a3ec8a6e-bd2d-43d7-f056-97042778e4ec",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🟢 | vmess | @prrofile_purple | 185",
+            "tag": "🇨🇦CA | 🟢 | vmess | @prrofile_purple | 195",
             "type": "vmess",
             "server": "172.67.71.160",
             "server_port": 443,
@@ -442,7 +469,7 @@
             }
         },
         {
-            "tag": "🇿🇦ZA | 🟢 | vmess | @Hope_Net | 15",
+            "tag": "🇿🇦ZA | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
             "server": "129.151.164.152",
             "server_port": 55600,
@@ -466,7 +493,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
             "server": "172.67.174.42",
             "server_port": 443,
