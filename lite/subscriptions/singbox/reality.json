@@ -106,7 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇹🇷TR | 🔴 | vless | @v2rayNG_Matsuri | 20",
+                "🇹🇷TR | 🔴 | vless | @v2rayNG_Matsuri | 23",
+                "🇩🇪DE | 🔴 | vless | @VmessProtocol | 13",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
@@ -122,7 +123,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇹🇷TR | 🔴 | vless | @v2rayNG_Matsuri | 20",
+                "🇹🇷TR | 🔴 | vless | @v2rayNG_Matsuri | 23",
+                "🇩🇪DE | 🔴 | vless | @VmessProtocol | 13",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
@@ -154,7 +156,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇹🇷TR | 🔴 | vless | @v2rayNG_Matsuri | 20",
+            "tag": "🇹🇷TR | 🔴 | vless | @v2rayNG_Matsuri | 23",
             "type": "vless",
             "server": "216.9.226.229",
             "server_port": 443,
@@ -187,6 +189,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @VmessProtocol | 13",
+            "type": "vless",
+            "server": "95.164.68.37",
+            "server_port": 8443,
+            "uuid": "ce3f2a75-28fe-48f0-a35c-56166017f8d3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "104.21.70.42",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UPDaAp6tkfjOWDDIAJXNtNqRRriaSQm_C8mcAQQP8nw",
+                    "short_id": "fabb696169ae2a95"
+                }
             }
         },
         {
