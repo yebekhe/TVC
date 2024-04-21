@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇹🇷TR | 🔴 | vless | @v2rayNG_Matsuri | 23",
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 14",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
@@ -123,7 +122,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇹🇷TR | 🔴 | vless | @v2rayNG_Matsuri | 23",
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 14",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
@@ -154,42 +152,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇹🇷TR | 🔴 | vless | @v2rayNG_Matsuri | 23",
-            "type": "vless",
-            "server": "216.9.226.229",
-            "server_port": 443,
-            "uuid": "5aca7eb3-a3a0-40a0-a793-df5aafe9b4c7",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "icloud.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "xhUiZLkRCdO3b06Sfl4CMAkzwufpHbZcTYhLAA036R8",
-                    "short_id": "bbe53393d02629b8"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🇩🇪DE | 🔴 | vless | @VmessProtocol | 14",
