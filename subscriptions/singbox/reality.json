@@ -111,18 +111,18 @@
                 "❔XX | 🔴 | vless | @V2pedia | 41",
                 "❔XX | 🔴 | vless | @V2pedia | 44",
                 "❔XX | 🔴 | vless | @V2pedia | 50",
+                "🇩🇪DE | 🔴 | vless | @vpn_xw | 0",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 5",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 6",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇫🇷FR | 🟢 | vless | @CUSTOMVPNSERVER | 10",
-                "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 4",
-                "🇬🇧GB | 🔴 | vless | @v2rayNG_Matsuri | 6",
+                "🇩🇪DE | 🟢 | vless | @v2rayNG_Matsuri | 1",
+                "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 6",
+                "🇬🇧GB | 🔴 | vless | @v2rayNG_Matsuri | 8",
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 9",
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 16",
-                "🇫🇮FI | 🟢 | vless | @DailyV2RY | 92",
-                "🇫🇮FI | 🟢 | vless | @DailyV2RY | 122",
-                "🇩🇪DE | 🟢 | vless | @DailyV2RY | 123",
+                "🇫🇮FI | 🟢 | vless | @DailyV2RY | 95",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -184,18 +184,18 @@
                 "❔XX | 🔴 | vless | @V2pedia | 41",
                 "❔XX | 🔴 | vless | @V2pedia | 44",
                 "❔XX | 🔴 | vless | @V2pedia | 50",
+                "🇩🇪DE | 🔴 | vless | @vpn_xw | 0",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 5",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 6",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇫🇷FR | 🟢 | vless | @CUSTOMVPNSERVER | 10",
-                "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 4",
-                "🇬🇧GB | 🔴 | vless | @v2rayNG_Matsuri | 6",
+                "🇩🇪DE | 🟢 | vless | @v2rayNG_Matsuri | 1",
+                "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 6",
+                "🇬🇧GB | 🔴 | vless | @v2rayNG_Matsuri | 8",
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 9",
                 "🇩🇪DE | 🔴 | vless | @VmessProtocol | 16",
-                "🇫🇮FI | 🟢 | vless | @DailyV2RY | 92",
-                "🇫🇮FI | 🟢 | vless | @DailyV2RY | 122",
-                "🇩🇪DE | 🟢 | vless | @DailyV2RY | 123",
+                "🇫🇮FI | 🟢 | vless | @DailyV2RY | 95",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -448,6 +448,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🔴 | vless | @vpn_xw | 0",
+            "type": "vless",
+            "server": "94.130.109.163",
+            "server_port": 443,
+            "uuid": "R4D",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "wordpress.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5i0MySa9-gIBPyHSJ-jVDxpOSRnXqtXc9ZsalSaa-Hk",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 2",
             "type": "vless",
             "server": "49.13.113.114",
@@ -593,7 +629,36 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 4",
+            "tag": "🇩🇪DE | 🟢 | vless | @v2rayNG_Matsuri | 1",
+            "type": "vless",
+            "server": "116.202.28.240",
+            "server_port": 777,
+            "uuid": "d7c2237c-92f5-45a2-b310-cfe22736726c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "arzdigital.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "4pxcGlqn0FB5Wx71r7OkGxiGf2XJga2ZB9awcVW6_zg",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 6",
             "type": "vless",
             "server": "5.75.192.24",
             "server_port": 53738,
@@ -629,7 +694,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @v2rayNG_Matsuri | 6",
+            "tag": "🇬🇧GB | 🔴 | vless | @v2rayNG_Matsuri | 8",
             "type": "vless",
             "server": "45.140.167.94",
             "server_port": 8443,
@@ -723,7 +788,7 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🟢 | vless | @DailyV2RY | 92",
+            "tag": "🇫🇮FI | 🟢 | vless | @DailyV2RY | 95",
             "type": "vless",
             "server": "dl.snapfooding.com",
             "server_port": 443,
@@ -748,78 +813,6 @@
                     "enabled": true,
                     "public_key": "m-lsR1q8bnIMVvz6uT0uje-cOTH682rXGkIq_SxuAC0",
                     "short_id": "6272695d"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇫🇮FI | 🟢 | vless | @DailyV2RY | 122",
-            "type": "vless",
-            "server": "form.morfin.bio",
-            "server_port": 443,
-            "uuid": "ItsLegendaryking",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fontserver.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "GV3jmAodhgFC_GbUX7aHQf8CkXeqwgn8dj3eNrvV6Wo",
-                    "short_id": "4fa6e72c"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @DailyV2RY | 123",
-            "type": "vless",
-            "server": "www.morfin.bio",
-            "server_port": 443,
-            "uuid": "ItsLegendaryking",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "wordpress.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "eWuP3flkuVXsVpJzLDPOUDG1fJFC1fd3ouZPznMIShM",
-                    "short_id": "b157c54e"
                 }
             },
             "transport": {
