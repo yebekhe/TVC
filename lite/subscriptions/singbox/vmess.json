@@ -372,9 +372,9 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
             "type": "vmess",
-            "server": "beijing.mfa.ee",
-            "server_port": 80,
-            "uuid": "d39a347a-00c9-4f91-9255-7f536c07c5a8",
+            "server": "149.28.120.218",
+            "server_port": 24721,
+            "uuid": "538f45a8-cfeb-4c29-9903-f8ccec575160",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -384,21 +384,14 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/aries",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "104.20.26.40",
-            "server_port": 8080,
-            "uuid": "82cb93a3-65a9-4dac-a2a7-d997b6c26d6a",
+            "server": "139.144.237.248",
+            "server_port": 8543,
+            "uuid": "5a177bf3-a3e1-4eb2-bbdf-17c49f584650",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -409,11 +402,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "cloud-us2.veadev.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm",
+                "path": "\/download",
                 "headers": {
-                    "Host": ""
+                    "Host": "cloud-us2.veadev.com"
                 }
             }
         },
