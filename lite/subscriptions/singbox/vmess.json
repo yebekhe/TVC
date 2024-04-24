@@ -118,7 +118,7 @@
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 19",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇳🇱NL | 🟢 | vmess | @Hope_Net | 18",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
@@ -142,7 +142,7 @@
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 19",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇳🇱NL | 🟢 | vmess | @Hope_Net | 18",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
@@ -473,11 +473,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇳🇱NL | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "2.58.87.221",
-            "server_port": 46628,
-            "uuid": "f6ba9e5a-711c-496f-be60-ac5464dec2b8",
+            "server": "156.253.5.63",
+            "server_port": 15843,
+            "uuid": "63d39605-332b-4e67-aa33-aa142d897730",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -492,9 +492,9 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
             "type": "vmess",
-            "server": "45.77.218.99",
-            "server_port": 12810,
-            "uuid": "469daa04-235a-47be-fdf8-41a9a72f8be2",
+            "server": "104.21.3.206",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -504,6 +504,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maxin.beauty",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "maxin.beauty"
+                }
             }
         },
         {
