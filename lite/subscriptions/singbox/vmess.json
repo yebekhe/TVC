@@ -116,11 +116,11 @@
                 "🇷🇺RU | 🟢 | vmess | @oneclickvpnkeys | 10",
                 "🇳🇱NL | 🟢 | vmess | @ShadowProxy66 | 4",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 5",
-                "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 18",
+                "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇸🇪SE | 🟢 | vmess | @Hope_Net | 18",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
                 "🇺🇸US | 🟢 | vmess | @FreakConfig | 3",
@@ -141,11 +141,11 @@
                 "🇷🇺RU | 🟢 | vmess | @oneclickvpnkeys | 10",
                 "🇳🇱NL | 🟢 | vmess | @ShadowProxy66 | 4",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 5",
-                "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 18",
+                "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇸🇪SE | 🟢 | vmess | @Hope_Net | 18",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
                 "🇺🇸US | 🟢 | vmess | @FreakConfig | 3",
@@ -390,7 +390,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 18",
+            "tag": "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 18",
             "type": "vmess",
             "server": "104.21.15.212",
             "server_port": 443,
@@ -484,9 +484,9 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "64.176.216.199",
-            "server_port": 36159,
-            "uuid": "4826d728-48f9-43d1-aa1f-27b6850cd8a1",
+            "server": "207.148.8.155",
+            "server_port": 37814,
+            "uuid": "5998e8aa-67ad-4167-ecf2-7e767926e8b0",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -499,11 +499,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇸🇪SE | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "207.148.10.248",
-            "server_port": 47918,
-            "uuid": "232aeb1e-7d67-4a91-9379-4da1f4917691",
+            "server": "185.146.173.59",
+            "server_port": 2083,
+            "uuid": "587fe4b8-5ed8-46a1-8ae4-0a07efd35855",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -513,6 +513,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "doolboor.nintendodns.shop",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "2083vmess",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
