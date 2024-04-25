@@ -110,13 +110,13 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇭🇰HK | 🟢 | vmess | @mftizi | 19",
                 "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 8",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "🇳🇱NL | 🟢 | vmess | @ShadowProxy66 | 4",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 5",
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 21",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 18",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
@@ -132,13 +132,13 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇭🇰HK | 🟢 | vmess | @mftizi | 19",
                 "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 8",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "🇳🇱NL | 🟢 | vmess | @ShadowProxy66 | 4",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 5",
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 21",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 18",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
@@ -251,7 +251,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 8",
+            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 9",
             "type": "vmess",
             "server": "104.18.36.119",
             "server_port": 2052,
@@ -418,28 +418,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "207.148.31.167",
-            "server_port": 30587,
-            "uuid": "55219214-9f2d-4914-fbaf-b1b444c85b0e",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
-            "type": "vmess",
-            "server": "172.67.199.185",
-            "server_port": 8080,
-            "uuid": "b551aa22-22af-11ee-b8d8-f23c932eb68d",
+            "server": "47.74.6.16",
+            "server_port": 80,
+            "uuid": "5d815dc6-a795-44ff-aeb6-7ee16a7a1c57",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -452,9 +435,43 @@
             },
             "transport": {
                 "type": "ws",
+                "path": "\/needay",
+                "headers": {
+                    "Host": "47.74.6.16"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
+            "type": "vmess",
+            "server": "cm.zhongzhuan.fnyun.cyou",
+            "server_port": 443,
+            "uuid": "3c39f959-6e2c-4d2b-973d-a471719990c9",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cm.zhongzhuan.fnyun.cyou",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": ""
+                    "Host": "cm.zhongzhuan.fnyun.cyou"
                 }
             }
         },
