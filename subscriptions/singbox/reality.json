@@ -120,8 +120,9 @@
                 "🇩🇪DE | 🟢 | vless | @v2rayNG_Matsuri | 9",
                 "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 14",
                 "🇬🇧GB | 🔴 | vless | @v2rayNG_Matsuri | 16",
-                "🇩🇪DE | 🟢 | vless | @VmessProtocol | 5",
-                "🇩🇪DE | 🟢 | vless | @DailyV2RY | 126",
+                "🇩🇪DE | 🟢 | vless | @VmessProtocol | 6",
+                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 123",
+                "🇩🇪DE | 🟢 | vless | @DailyV2RY | 134",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -189,8 +190,9 @@
                 "🇩🇪DE | 🟢 | vless | @v2rayNG_Matsuri | 9",
                 "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 14",
                 "🇬🇧GB | 🔴 | vless | @v2rayNG_Matsuri | 16",
-                "🇩🇪DE | 🟢 | vless | @VmessProtocol | 5",
-                "🇩🇪DE | 🟢 | vless | @DailyV2RY | 126",
+                "🇩🇪DE | 🟢 | vless | @VmessProtocol | 6",
+                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 123",
+                "🇩🇪DE | 🟢 | vless | @DailyV2RY | 134",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -722,7 +724,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @VmessProtocol | 5",
+            "tag": "🇩🇪DE | 🟢 | vless | @VmessProtocol | 6",
             "type": "vless",
             "server": "23.88.38.184",
             "server_port": 2096,
@@ -751,7 +753,43 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @DailyV2RY | 126",
+            "tag": "🇩🇪DE | 🔴 | vless | @DailyV2RY | 123",
+            "type": "vless",
+            "server": "VPN-MIKEY.Myftp.org",
+            "server_port": 2096,
+            "uuid": "345ae055-ad65-42f2-99d0-55935ab2d02f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ysY9mzeUDDr5SoCkMZ_BMdBTwfBxiOw-wmzXo0dCrFE",
+                    "short_id": "d584e915"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@Vpn_Mikey،@Vpn_Mikey",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @DailyV2RY | 134",
             "type": "vless",
             "server": "dl.snapfooding.com",
             "server_port": 443,
