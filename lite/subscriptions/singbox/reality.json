@@ -108,6 +108,7 @@
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @vpn_xw | 2",
                 "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 17",
+                "🇩🇪DE | 🔴 | vless | @V2RayTz | 18",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
@@ -123,6 +124,7 @@
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @vpn_xw | 2",
                 "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 17",
+                "🇩🇪DE | 🔴 | vless | @V2RayTz | 18",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
@@ -218,6 +220,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "r",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @V2RayTz | 18",
+            "type": "vless",
+            "server": "49.13.91.58",
+            "server_port": 443,
+            "uuid": "ItsLegendaryking",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "wordpress.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "WaNuABQNLt0p7hL-HOG6_icU58Jx9Rmmx0B3o3NotSg",
+                    "short_id": "73c81a86"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
