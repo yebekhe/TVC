@@ -12,12 +12,15 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇺🇸US | 🟢 | vmess | @mftizi | 19 = vmess, 45.92.218.249, 29928, username = ceb251d4-277d-4f43-b381-c5103172a990, ws = true, tls = , vmess-aead = true, ws-path = /ceb251d4, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16 = vmess, 172.67.170.13, 443, username = edbb1059-1633-4271-b66e-ed4fba47a1bf, ws = true, tls = 1, vmess-aead = false, ws-path = /linkws, ws-headers = Host:"linde06.indiavideo.sbs", skip-cert-verify = true, tfo = false
+🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7 = vmess, 172.67.161.77, 443, username = edbb1059-1633-4271-b66e-ed4fba47a1bf, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"linde06.indiavideo.sbs", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @proxyymeliii | 20 = vmess, www.gov.se, 8443, username = ba9f34d1-ae47-4bd0-9f9e-d5dd5460e4f1, ws = true, tls = 1, vmess-aead = true, ws-path = /@asrnovin_ir, ws-headers = Host:"ipvv6.asrenet.ru", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 17 = vmess, 188.114.97.3, 443, username = f584de15-2034-4170-a723-f48c2bae5e0f, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"afrhms16v.bestxray.buzz", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 17 = vmess, 172.67.174.42, 443, username = bc864078-dcf3-4bf4-8dbf-ca9f200b56be, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"gwdef.sbs", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @mftizi | 19,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 17
-URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @mftizi | 19,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 17
-FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @mftizi | 19,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 17
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @mftizi | 19,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16,🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7,🇺🇸US | 🟢 | vmess | @proxyymeliii | 20,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 17
+URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @mftizi | 19,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16,🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7,🇺🇸US | 🟢 | vmess | @proxyymeliii | 20,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 17
+FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @mftizi | 19,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16,🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7,🇺🇸US | 🟢 | vmess | @proxyymeliii | 20,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 17
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
