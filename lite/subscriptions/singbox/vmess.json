@@ -115,7 +115,7 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇧🇷BR | 🟢 | vmess | @Hope_Net | 19",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
                 "🇬🇧GB | 🟢 | vmess | @iP_CF | 0",
@@ -136,7 +136,7 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇧🇷BR | 🟢 | vmess | @Hope_Net | 19",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
                 "🇬🇧GB | 🟢 | vmess | @iP_CF | 0",
@@ -382,11 +382,11 @@
             }
         },
         {
-            "tag": "🇧🇷BR | 🟢 | vmess | @Hope_Net | 19",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
             "type": "vmess",
-            "server": "95.164.4.51",
-            "server_port": 8442,
-            "uuid": "9e919472-c8af-41db-acdf-e0db57c451eb",
+            "server": "172.67.207.26",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -396,6 +396,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "glweidf.sbs"
+                }
             }
         },
         {
