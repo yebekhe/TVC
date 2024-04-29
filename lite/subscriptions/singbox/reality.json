@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @vpn_xw | 3",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
@@ -120,7 +119,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @vpn_xw | 3",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
@@ -148,42 +146,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @vpn_xw | 3",
-            "type": "vless",
-            "server": "94.130.109.163",
-            "server_port": 443,
-            "uuid": "R4D",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "wordpress.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "5i0MySa9-gIBPyHSJ-jVDxpOSRnXqtXc9ZsalSaa-Hk",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @Capital_NET | 44",
