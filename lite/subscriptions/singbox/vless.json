@@ -203,7 +203,8 @@
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
                 "🇩🇪DE | 🔴 | vless | @kiava | 6",
-                "🇸🇪SE | 🔴 | vless | @proxy_mtm | 1",
+                "🇸🇪SE | 🔴 | vless | @proxy_mtm | 5",
+                "🇺🇸US | 🔴 | vless | @proxy_mtm | 6",
                 "❔XX | 🔴 | vless | @vpn_go67 | 22",
                 "❔XX | 🔴 | vless | @vpn_go67 | 23",
                 "❔XX | 🔴 | vless | @kingofilter | 6",
@@ -325,7 +326,8 @@
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
                 "🇩🇪DE | 🔴 | vless | @kiava | 6",
-                "🇸🇪SE | 🔴 | vless | @proxy_mtm | 1",
+                "🇸🇪SE | 🔴 | vless | @proxy_mtm | 5",
+                "🇺🇸US | 🔴 | vless | @proxy_mtm | 6",
                 "❔XX | 🔴 | vless | @vpn_go67 | 22",
                 "❔XX | 🔴 | vless | @vpn_go67 | 23",
                 "❔XX | 🔴 | vless | @kingofilter | 6",
@@ -2830,11 +2832,11 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @proxy_mtm | 1",
+            "tag": "🇸🇪SE | 🔴 | vless | @proxy_mtm | 5",
             "type": "vless",
             "server": "185.146.173.94",
-            "server_port": 443,
-            "uuid": "de70c2ab-3b16-44c2-8579-9b05fedc3b36",
+            "server_port": 8880,
+            "uuid": "5b0dd122-e997-40ad-e38f-534fb5dc08bf",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2842,21 +2844,32 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "pardazeshvpn-tg3.pages.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/@LIGHTNING6 TEL  @LIGHTNING6 TEL  @LIGHTNING6 TEL  @LIGHTNING6 JOIN @LIGHTNING6 TEL  @LIGHTNING6 JOIN @LIGHTNING6 TEL  @LIGHTNING6 TEL  @LIGHTNING6 JOIN @LIGHTNING6 TEL  @LIGHTNING6 @LiV2ray",
+                "headers": {
+                    "Host": "185.146.173.94"
                 }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @proxy_mtm | 6",
+            "type": "vless",
+            "server": "172.66.213.5",
+            "server_port": 80,
+            "uuid": "Telegram-ipV2Ray-vro",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
-                "path": "\/telegram-proxy_mtmtelegram-proxy_mtm?ed",
+                "path": "\/Telegram-ipV2Ray",
                 "headers": {
-                    "Host": "pardazeshvpn-tg3.pages.dev"
+                    "Host": "172.66.213.5"
                 }
             }
         },
