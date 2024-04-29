@@ -164,8 +164,8 @@
                 "🇨🇦CA | 🔴 | vless | @ShadowProxy66 | 11",
                 "🇨🇦CA | 🔴 | vless | @ServerNett | 16",
                 "🇨🇦CA | 🔴 | vless | @Qv2rayDONATED | 6",
-                "🇨🇦CA | 🔴 | vless | @Qv2rayDONATED | 7",
-                "🇨🇦CA | 🔴 | vless | @v2ray_swhil | 20",
+                "🇺🇸US | 🔴 | vless | @Qv2rayDONATED | 7",
+                "🇺🇸US | 🔴 | vless | @v2ray_swhil | 20",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 21",
                 "🇸🇪SE | 🔴 | vless | @proxyymeliii | 20",
                 "🇨🇷CR | 🔴 | vless | @v2ray1_ng | 3",
@@ -195,7 +195,8 @@
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
                 "🇺🇸US | 🔴 | vless | @Capoit | 16",
                 "🇸🇪SE | 🔴 | vless | @Capoit | 17",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 24",
+                "🇸🇪SE | 🔴 | vless | @flyv2ray | 21",
+                "🇸🇪SE | 🔴 | vless | @flyv2ray | 22",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 8",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
                 "🇩🇪DE | 🔴 | vless | @kiava | 6",
@@ -281,8 +282,8 @@
                 "🇨🇦CA | 🔴 | vless | @ShadowProxy66 | 11",
                 "🇨🇦CA | 🔴 | vless | @ServerNett | 16",
                 "🇨🇦CA | 🔴 | vless | @Qv2rayDONATED | 6",
-                "🇨🇦CA | 🔴 | vless | @Qv2rayDONATED | 7",
-                "🇨🇦CA | 🔴 | vless | @v2ray_swhil | 20",
+                "🇺🇸US | 🔴 | vless | @Qv2rayDONATED | 7",
+                "🇺🇸US | 🔴 | vless | @v2ray_swhil | 20",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 21",
                 "🇸🇪SE | 🔴 | vless | @proxyymeliii | 20",
                 "🇨🇷CR | 🔴 | vless | @v2ray1_ng | 3",
@@ -312,7 +313,8 @@
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
                 "🇺🇸US | 🔴 | vless | @Capoit | 16",
                 "🇸🇪SE | 🔴 | vless | @Capoit | 17",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 24",
+                "🇸🇪SE | 🔴 | vless | @flyv2ray | 21",
+                "🇸🇪SE | 🔴 | vless | @flyv2ray | 22",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 8",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
                 "🇩🇪DE | 🔴 | vless | @kiava | 6",
@@ -1828,7 +1830,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @Qv2rayDONATED | 7",
+            "tag": "🇺🇸US | 🔴 | vless | @Qv2rayDONATED | 7",
             "type": "vless",
             "server": "104.16.188.173",
             "server_port": 443,
@@ -1859,7 +1861,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @v2ray_swhil | 20",
+            "tag": "🇺🇸US | 🔴 | vless | @v2ray_swhil | 20",
             "type": "vless",
             "server": "172.64.229.28",
             "server_port": 8443,
@@ -2406,9 +2408,9 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 18",
             "type": "vless",
-            "server": "172.66.213.5",
-            "server_port": 80,
-            "uuid": "Telegram-ipV2Ray-cdo",
+            "server": "forwarder.aurorainiceland.com",
+            "server_port": 443,
+            "uuid": "669ad826-af8a-434b-8e61-d8d7caa230c2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2416,11 +2418,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "forwarder.aurorainiceland.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram-ipV2Ray",
+                "path": "\/nimws",
                 "headers": {
-                    "Host": "172.66.213.5"
+                    "Host": "forwarder.aurorainiceland.com"
                 }
             }
         },
@@ -2429,7 +2441,7 @@
             "type": "vless",
             "server": "172.66.213.5",
             "server_port": 80,
-            "uuid": "Telegram-ipV2Ray-rzw",
+            "uuid": "Telegram-ipV2Ray-cdo",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2619,11 +2631,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 24",
+            "tag": "🇸🇪SE | 🔴 | vless | @flyv2ray | 21",
             "type": "vless",
-            "server": "zula.ir",
+            "server": "185.146.173.59",
             "server_port": 2095,
-            "uuid": "f6f45d58-fa33-473b-a3c6-7eb5c81046e5",
+            "uuid": "b7b6c5d3-f4cb-42af-87dd-321aee28e6d0",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2635,7 +2647,28 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "zula.ir"
+                    "Host": "185.146.173.59"
+                }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | 🔴 | vless | @flyv2ray | 22",
+            "type": "vless",
+            "server": "185.146.173.58",
+            "server_port": 2095,
+            "uuid": "-MsV2ray-MsV2ray-MsV2ray-",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/MsV2ray-MsV2ray-MsV2ray-MsV2ray",
+                "headers": {
+                    "Host": "185.146.173.58"
                 }
             }
         },
