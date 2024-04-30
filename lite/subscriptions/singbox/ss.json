@@ -106,16 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🟢 | ss | @VmessProtocol | 17",
-                "🇷🇺RU | 🟢 | ss | @OutlineVpnOfficial | 17"
+                "🇷🇺RU | 🟢 | ss | @OutlineVpnOfficial | 17",
+                "🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🟢 | ss | @VmessProtocol | 17",
-                "🇷🇺RU | 🟢 | ss | @OutlineVpnOfficial | 17"
+                "🇷🇺RU | 🟢 | ss | @OutlineVpnOfficial | 17",
+                "🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,22 +138,22 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @VmessProtocol | 17",
-            "type": "shadowsocks",
-            "server": "series-a2-mec.samanehha.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "u17T3BvpYaaiuW2c",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
             "tag": "🇷🇺RU | 🟢 | ss | @OutlineVpnOfficial | 17",
             "type": "shadowsocks",
             "server": "45.139.24.63",
             "server_port": 57456,
             "method": "chacha20-ietf-poly1305",
             "password": "3fbeb668f48414f6",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0",
+            "type": "shadowsocks",
+            "server": "series-a2-mec.samanehha.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "u17T3BvpYaaiuW2c",
             "plugin": "",
             "plugin_opts": ""
         }
