@@ -107,10 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
-                "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
-                "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
+                "🇭🇰HK | 🟢 | vmess | @mftizi | 18",
+                "🇨🇦CA | 🟢 | vmess | @mftizi | 19",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7",
+                "🇺🇸US | 🟢 | vmess | @vless_vmess | 6",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇰🇷KR | 🟢 | vmess | @Hope_Net | 18",
@@ -125,10 +126,11 @@
             "type": "urltest",
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
-                "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
-                "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
+                "🇭🇰HK | 🟢 | vmess | @mftizi | 18",
+                "🇨🇦CA | 🟢 | vmess | @mftizi | 19",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7",
+                "🇺🇸US | 🟢 | vmess | @vless_vmess | 6",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇰🇷KR | 🟢 | vmess | @Hope_Net | 18",
@@ -175,7 +177,41 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
+            "tag": "🇭🇰HK | 🟢 | vmess | @mftizi | 18",
+            "type": "vmess",
+            "server": "185.244.208.61",
+            "server_port": 8080,
+            "uuid": "bdd22841-c4d2-4aa8-acf2-95aa9125f159",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hk-17.trollfunny.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "hk-17.trollfunny.net"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @mftizi | 19",
             "type": "vmess",
             "server": "104.21.224.221",
             "server_port": 80,
@@ -193,30 +229,6 @@
             "transport": {
                 "type": "ws",
                 "path": "\/",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
-            "type": "vmess",
-            "server": "223.113.130.58",
-            "server_port": 50080,
-            "uuid": "842bca7e-7fae-3e92-ba62-8c5e010c24cf",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/db00",
                 "headers": {
                     "Host": ""
                 }
@@ -270,6 +282,40 @@
                 "path": "\/linkws",
                 "headers": {
                     "Host": "xmivideo.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @vless_vmess | 6",
+            "type": "vmess",
+            "server": "104.21.83.208",
+            "server_port": 443,
+            "uuid": "f92628e9-c245-4dca-be18-b4a3b8fdb511",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hayedeh.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "hayedeh.top"
                 }
             }
         },
