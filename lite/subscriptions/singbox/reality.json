@@ -208,6 +208,35 @@
         {
             "tag": "🇩🇪DE | 🔴 | vless | @kiava | 5",
             "type": "vless",
+            "server": "3.66.226.207",
+            "server_port": 2082,
+            "uuid": "adabaaf2-600f-4223-991a-3c3add5176cf",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mail.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vaCJNNqruwoMBKFZJWJzyd6fBd5LE-28oLHMTrs6ryM",
+                    "short_id": "8e230eb7"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @kiava | 6",
+            "type": "vless",
             "server": "35.156.202.181",
             "server_port": 2082,
             "uuid": "87c86835-d800-40d1-8903-6676869884d6",
@@ -236,42 +265,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "kiava",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @kiava | 6",
-            "type": "vless",
-            "server": "3.77.151.153",
-            "server_port": 2087,
-            "uuid": "4882ab86-4383-4ce3-96dc-edde92ab7b6e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "randomized"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "eiX6rafEOu1xTvqWtOR__vMD3UimIyb05mK_9UeqcBg",
-                    "short_id": "e0a50eb1"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "www.tgju.org",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
