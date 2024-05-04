@@ -145,8 +145,8 @@
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
                 "🇳🇱NL | 🟢 | vless | @Capoit | 6",
-                "inbox&type=tcp&headerType=none#🇩🇪DE | 🔴 | vless | @kiava | 3",
-                "🇩🇪DE | 🔴 | vless | @kiava | 4",
+                "🇩🇪DE | 🔴 | vless | @kiava | 0",
+                "inbox&type=tcp&headerType=none#🇩🇪DE | 🔴 | vless | @kiava | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
                 "🇩🇪DE | 🔴 | vless | @kiava | 6",
                 "🇫🇮FI | 🔴 | vless | @vpn_go67 | 7",
@@ -212,8 +212,8 @@
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
                 "🇳🇱NL | 🟢 | vless | @Capoit | 6",
-                "inbox&type=tcp&headerType=none#🇩🇪DE | 🔴 | vless | @kiava | 3",
-                "🇩🇪DE | 🔴 | vless | @kiava | 4",
+                "🇩🇪DE | 🔴 | vless | @kiava | 0",
+                "inbox&type=tcp&headerType=none#🇩🇪DE | 🔴 | vless | @kiava | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
                 "🇩🇪DE | 🔴 | vless | @kiava | 6",
                 "🇫🇮FI | 🔴 | vless | @vpn_go67 | 7",
@@ -1464,7 +1464,36 @@
             }
         },
         {
-            "tag": "inbox&type=tcp&headerType=none#🇩🇪DE | 🔴 | vless | @kiava | 3",
+            "tag": "🇩🇪DE | 🔴 | vless | @kiava | 0",
+            "type": "vless",
+            "server": "cloud.kiava.fun",
+            "server_port": 443,
+            "uuid": "49768462-8561-46f0-8ca7-495662ebd3cc",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "-W8Mhzp4V6X51zwAAEThgqTB6D_kIJA3ldyaEYFffyA",
+                    "short_id": "378f6149de8c1b46"
+                }
+            }
+        },
+        {
+            "tag": "inbox&type=tcp&headerType=none#🇩🇪DE | 🔴 | vless | @kiava | 4",
             "type": "vless",
             "server": "3.76.82.84",
             "server_port": 2082,
@@ -1493,7 +1522,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @kiava | 4",
+            "tag": "🇩🇪DE | 🔴 | vless | @kiava | 5",
             "type": "vless",
             "server": "3.66.226.207",
             "server_port": 2082,
@@ -1522,7 +1551,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @kiava | 5",
+            "tag": "🇩🇪DE | 🔴 | vless | @kiava | 6",
             "type": "vless",
             "server": "35.156.202.181",
             "server_port": 2082,
@@ -1552,42 +1581,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "kiava",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @kiava | 6",
-            "type": "vless",
-            "server": "3.77.151.153",
-            "server_port": 2087,
-            "uuid": "4882ab86-4383-4ce3-96dc-edde92ab7b6e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "randomized"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "eiX6rafEOu1xTvqWtOR__vMD3UimIyb05mK_9UeqcBg",
-                    "short_id": "e0a50eb1"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "www.tgju.org",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
