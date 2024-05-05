@@ -118,8 +118,8 @@
                 "🇩🇪DE | 🟢 | vmess | @V2rayng_Fast | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 17",
-                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 18",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
                 "❔XX | 🟢 | vmess | @ROMAX_VPN | 1"
@@ -141,8 +141,8 @@
                 "🇩🇪DE | 🟢 | vmess | @V2rayng_Fast | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 17",
-                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 18",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
                 "❔XX | 🟢 | vmess | @ROMAX_VPN | 1"
@@ -245,9 +245,9 @@
         {
             "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
             "type": "vmess",
-            "server": "18arcims.ir",
+            "server": "cargeek.ir",
             "server_port": 80,
-            "uuid": "1c1e3ff5-2b54-4315-a5bb-7796e51505ca",
+            "uuid": "e2c01833-0892-4d3f-9c57-69839ad4f899",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -262,7 +262,7 @@
                 "type": "ws",
                 "path": "\/vmess",
                 "headers": {
-                    "Host": "18arcims.ir"
+                    "Host": "cargeek.ir"
                 }
             }
         },
@@ -271,7 +271,7 @@
             "type": "vmess",
             "server": "18arcims.ir",
             "server_port": 80,
-            "uuid": "dac9edf5-b4eb-489d-bb9c-8b94c761d2a9",
+            "uuid": "1c1e3ff5-2b54-4315-a5bb-7796e51505ca",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -485,11 +485,11 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 17",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "51.195.140.87",
-            "server_port": 35995,
-            "uuid": "28f08493-de6d-486e-84f5-5abe092ff78b",
+            "server": "144.202.59.26",
+            "server_port": 57061,
+            "uuid": "e90a1709-fd94-44d3-f809-8849837cc2d3",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -502,11 +502,11 @@
             }
         },
         {
-            "tag": "🇸🇬SG | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "146.190.86.66",
-            "server_port": 35010,
-            "uuid": "9fbd6d59-dee1-4f1a-be58-53f0ed32356a",
+            "server": "188.114.96.6",
+            "server_port": 443,
+            "uuid": "5b0a489e-e9eb-41b1-902e-d4acad667ba6",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -517,12 +517,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
+            "tls": {
+                "enabled": true,
+                "server_name": "accessories8.freeairlaines.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "argo",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
