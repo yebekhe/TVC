@@ -107,11 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @V2rayNGmat | 0",
-                "❔XX | 🔴 | vless | @DailyV2RY | 164",
+                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 164",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
+                "inbox&type=tcp&headerType=none#🇩🇪DE | 🔴 | vless | @kiava | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
-                "🇩🇪DE | 🔴 | vless | @kiava | 6",
                 "❔XX | 🔴 | vless | @vpn_go67 | 22",
                 "❔XX | 🔴 | vless | @vpn_go67 | 23",
                 "🇮🇷IR | 🟢 | vless | @Good_V2rayy | 1"
@@ -122,11 +122,11 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @V2rayNGmat | 0",
-                "❔XX | 🔴 | vless | @DailyV2RY | 164",
+                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 164",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
+                "inbox&type=tcp&headerType=none#🇩🇪DE | 🔴 | vless | @kiava | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
-                "🇩🇪DE | 🔴 | vless | @kiava | 6",
                 "❔XX | 🔴 | vless | @vpn_go67 | 22",
                 "❔XX | 🔴 | vless | @vpn_go67 | 23",
                 "🇮🇷IR | 🟢 | vless | @Good_V2rayy | 1"
@@ -188,7 +188,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @DailyV2RY | 164",
+            "tag": "🇩🇪DE | 🔴 | vless | @DailyV2RY | 164",
             "type": "vless",
             "server": "super-man.poshakbany.ir",
             "server_port": 41918,
@@ -282,6 +282,35 @@
             }
         },
         {
+            "tag": "inbox&type=tcp&headerType=none#🇩🇪DE | 🔴 | vless | @kiava | 4",
+            "type": "vless",
+            "server": "3.76.82.84",
+            "server_port": 2082,
+            "uuid": "527a5f50-dd61-46b8-b87f-93b6fbf85322",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mail.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Yx9mjMxSVMEjVd_m9_A-bXz4n_KyjRVooeUQ-DvNYno",
+                    "short_id": "3a07dc6f"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🔴 | vless | @kiava | 5",
             "type": "vless",
             "server": "3.66.226.207",
@@ -308,42 +337,6 @@
                     "public_key": "vaCJNNqruwoMBKFZJWJzyd6fBd5LE-28oLHMTrs6ryM",
                     "short_id": "8e230eb7"
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @kiava | 6",
-            "type": "vless",
-            "server": "35.156.202.181",
-            "server_port": 2082,
-            "uuid": "87c86835-d800-40d1-8903-6676869884d6",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mail.google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "af0bgH4-m3NbjsyY0k1ffXn3bE3rrcK2lZNo5vmJxHQ",
-                    "short_id": "6d1a3ecd"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "kiava",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
