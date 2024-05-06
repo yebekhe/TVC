@@ -114,6 +114,7 @@
                 "❔XX | 🔴 | vless | @V2pedia | 34",
                 "❔XX | 🔴 | vless | @V2pedia | 44",
                 "🇩🇪DE | 🔴 | vless | @V2rayNGmat | 0",
+                "🇩🇪DE | 🔴 | vless | @V2rayNGmat | 1",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 5",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 6",
@@ -145,7 +146,7 @@
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 42",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
-                "🇳🇱NL | 🟢 | vless | @Capoit | 15",
+                "🇳🇱NL | 🟢 | vless | @Capoit | 17",
                 "❔XX | 🔴 | vless | @kiava | 0",
                 "inbox&type=tcp&headerType=none#🇩🇪DE | 🔴 | vless | @kiava | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
@@ -181,6 +182,7 @@
                 "❔XX | 🔴 | vless | @V2pedia | 34",
                 "❔XX | 🔴 | vless | @V2pedia | 44",
                 "🇩🇪DE | 🔴 | vless | @V2rayNGmat | 0",
+                "🇩🇪DE | 🔴 | vless | @V2rayNGmat | 1",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 5",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 6",
@@ -212,7 +214,7 @@
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 42",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
-                "🇳🇱NL | 🟢 | vless | @Capoit | 15",
+                "🇳🇱NL | 🟢 | vless | @Capoit | 17",
                 "❔XX | 🔴 | vless | @kiava | 0",
                 "inbox&type=tcp&headerType=none#🇩🇪DE | 🔴 | vless | @kiava | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 5",
@@ -509,6 +511,42 @@
         },
         {
             "tag": "🇩🇪DE | 🔴 | vless | @V2rayNGmat | 0",
+            "type": "vless",
+            "server": "ch.9cel.com",
+            "server_port": 443,
+            "uuid": "TelegrammmServerNewV2rayNgMat",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "TMvWIFx-7woAYvmHG96kOWtngJl1myR9k1-57TLnmQY",
+                    "short_id": "692edaba"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram,@V2rayNgMat،Telegram,@V2rayNgMat ,Telegram,@V2rayNgMat         ,@V2rayNgMat",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @V2rayNGmat | 1",
             "type": "vless",
             "server": "ch.9cel.com",
             "server_port": 443,
@@ -1471,7 +1509,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @Capoit | 15",
+            "tag": "🇳🇱NL | 🟢 | vless | @Capoit | 17",
             "type": "vless",
             "server": "185.142.238.222",
             "server_port": 8443,
