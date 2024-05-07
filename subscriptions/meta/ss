@@ -120,7 +120,8 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇫🇷FR | 🟢 | ss | @VmessProtocol | 5","type":"ss","server":"149.202.82.172","port":3389,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @VmessProtocol | 3","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇷FR | 🟢 | ss | @VmessProtocol | 9","type":"ss","server":"149.202.82.172","port":3389,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
   - {"name":"🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 0","type":"ss","server":"205.134.180.151","port":443,"password":"5cp9Z3iWnJZ2","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 1","type":"ss","server":"23.162.200.181","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
   - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 2","type":"ss","server":"51.178.87.37","port":804,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
@@ -139,14 +140,14 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 16","type":"ss","server":"142.202.48.99","port":8091,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
   - {"name":"🇸🇬SG | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"91.192.81.21","port":8388,"password":"1q7RNKaIk2wYO8fEPmEX0vWQ7Va+QRTA","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇷🇺RU | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"146.185.198.44","port":51348,"password":"Zu5sVdhPITkII1Rf9bUTjt0ws1nks4vgBoHhe7QxwEk0j3Ai","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇷FR | 🟢 | ss | @VmessProtocol | 5'
+      - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 3'
+      - '🇫🇷FR | 🟢 | ss | @VmessProtocol | 9'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 0'
       - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 1'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 2'
@@ -165,14 +166,14 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇸🇬SG | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇷🇺RU | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇷FR | 🟢 | ss | @VmessProtocol | 5'
+      - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 3'
+      - '🇫🇷FR | 🟢 | ss | @VmessProtocol | 9'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 0'
       - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 1'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 2'
@@ -191,13 +192,13 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇸🇬SG | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇷🇺RU | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇫🇷FR | 🟢 | ss | @VmessProtocol | 5'
+      - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 3'
+      - '🇫🇷FR | 🟢 | ss | @VmessProtocol | 9'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 0'
       - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 1'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 2'
@@ -216,7 +217,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇸🇬SG | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇷🇺RU | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
