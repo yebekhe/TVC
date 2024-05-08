@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇷FR | 🟢 | vless | @EliV2ray | 1",
                 "❔XX | 🔴 | vless | @V2pedia | 14",
                 "❔XX | 🔴 | vless | @V2pedia | 18",
                 "❔XX | 🔴 | vless | @V2pedia | 21",
@@ -121,6 +122,8 @@
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇫🇷FR | 🟢 | vless | @CUSTOMVPNSERVER | 10",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 2",
+                "🇹🇷TR | 🔴 | vless | @DailyV2RY | 134",
+                "🇹🇷TR | 🔴 | vless | @DailyV2RY | 135",
                 "🇬🇧GB | 🔴 | vless | @v2rayng_vpnrog | 0",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
@@ -174,6 +177,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇷FR | 🟢 | vless | @EliV2ray | 1",
                 "❔XX | 🔴 | vless | @V2pedia | 14",
                 "❔XX | 🔴 | vless | @V2pedia | 18",
                 "❔XX | 🔴 | vless | @V2pedia | 21",
@@ -189,6 +193,8 @@
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇫🇷FR | 🟢 | vless | @CUSTOMVPNSERVER | 10",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 2",
+                "🇹🇷TR | 🔴 | vless | @DailyV2RY | 134",
+                "🇹🇷TR | 🔴 | vless | @DailyV2RY | 135",
                 "🇬🇧GB | 🔴 | vless | @v2rayng_vpnrog | 0",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
@@ -256,6 +262,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vless | @EliV2ray | 1",
+            "type": "vless",
+            "server": "86.104.74.224",
+            "server_port": 8443,
+            "uuid": "4a3d9d02-f003-423c-80b4-8c5d89147281",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "discordapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @V2pedia | 14",
@@ -753,6 +788,78 @@
                     "public_key": "yiHA11T4BplJbQxAfsQkiiAzAmyxWau-KR7dQptwjDU",
                     "short_id": "c741ad33"
                 }
+            }
+        },
+        {
+            "tag": "🇹🇷TR | 🔴 | vless | @DailyV2RY | 134",
+            "type": "vless",
+            "server": "kill-down.poshakbany.ir",
+            "server_port": 41918,
+            "uuid": "9f46aad4-ed78-4056-cce3-a99cb1f30443",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.discordapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "sA-6BjG-RHcUogBfBKhZAFArxmt8J2H3ZZkjhoS8lmg",
+                    "short_id": "a5741965"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇹🇷TR | 🔴 | vless | @DailyV2RY | 135",
+            "type": "vless",
+            "server": "super-man.poshakbany.ir",
+            "server_port": 41918,
+            "uuid": "9f46aad4-ed78-4056-cce3-a99cb1f30443",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.discordapp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "sA-6BjG-RHcUogBfBKhZAFArxmt8J2H3ZZkjhoS8lmg",
+                    "short_id": "a5741965"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023\/@v2rayng12023",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
