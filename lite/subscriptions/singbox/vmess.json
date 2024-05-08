@@ -116,8 +116,8 @@
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 10",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
-                "🇱🇹LT | 🟢 | vmess | @Hope_Net | 12",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
                 "🇺🇸US | 🟢 | vmess | @nofiltering2 | 1",
@@ -138,8 +138,8 @@
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 10",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
-                "🇱🇹LT | 🟢 | vmess | @Hope_Net | 12",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
                 "🇺🇸US | 🟢 | vmess | @nofiltering2 | 1",
@@ -398,11 +398,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
+            "tag": "🇫🇷FR | 🟢 | vmess | @Hope_Net | 10",
             "type": "vmess",
-            "server": "cfcdn1.sanfencdn9.com",
-            "server_port": 2052,
-            "uuid": "3fdef482-3fba-47f9-af67-b3f5bf93ec4c",
+            "server": "fr-full.privateip.net",
+            "server_port": 443,
+            "uuid": "f25be958-7d9d-4e4b-a3e4-d82c3b06d16a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -413,20 +413,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/video\/GQ2qE5Us9g",
+                "path": "\/RACEVPN",
                 "headers": {
-                    "Host": ""
+                    "Host": "fr-full.privateip.net"
                 }
             }
         },
         {
-            "tag": "🇱🇹LT | 🟢 | vmess | @Hope_Net | 12",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
             "type": "vmess",
-            "server": "94.131.13.110",
-            "server_port": 80,
-            "uuid": "d3e40d59-b53c-4f4e-8867-bb598be864d2",
+            "server": "172.252.193.222",
+            "server_port": 42358,
+            "uuid": "4494a26e-6c20-447e-8535-54c9cbd89423",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -436,13 +446,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vmess",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
