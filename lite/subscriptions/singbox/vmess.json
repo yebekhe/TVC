@@ -325,9 +325,9 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
             "type": "vmess",
-            "server": "104.19.43.138",
-            "server_port": 80,
-            "uuid": "c0453a16-67e9-4eab-bdc9-b9624ad6bd29",
+            "server": "104.19.250.20",
+            "server_port": 443,
+            "uuid": "3ed9ac53-ce00-4aa5-9f7a-a2e6fab0e14a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -338,11 +338,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "Rockp.Blanku.Me",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/wss49406",
                 "headers": {
-                    "Host": "104.19.43.138"
+                    "Host": "Rockp.Blanku.Me"
                 }
             }
         },
