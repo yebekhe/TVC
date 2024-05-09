@@ -108,12 +108,12 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 2",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 4",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 14",
-                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 15",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
+                "❔XX | 🟢 | vmess | @Hope_Net | 15",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @nofiltering2 | 1",
@@ -127,12 +127,12 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 2",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 4",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 14",
-                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 15",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
+                "❔XX | 🟢 | vmess | @Hope_Net | 15",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @nofiltering2 | 1",
@@ -201,7 +201,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 2",
+            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
             "type": "vmess",
             "server": "104.21.44.106",
             "server_port": 443,
@@ -235,7 +235,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
+            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 4",
             "type": "vmess",
             "server": "104.21.83.108",
             "server_port": 443,
@@ -327,13 +327,13 @@
             }
         },
         {
-            "tag": "🇭🇰HK | 🟢 | vmess | @Hope_Net | 14",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
             "type": "vmess",
-            "server": "20.24.77.204",
-            "server_port": 60028,
-            "uuid": "9d7fb490-f159-3b56-8e8a-614c45c299d1",
+            "server": "172.67.214.33",
+            "server_port": 2095,
+            "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
             "security": "auto",
-            "alter_id": 2,
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -346,18 +346,18 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "20.24.77.204"
+                    "Host": ""
                 }
             }
         },
         {
-            "tag": "🇭🇰HK | 🟢 | vmess | @Hope_Net | 15",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 15",
             "type": "vmess",
-            "server": "20.24.77.204",
-            "server_port": 60031,
-            "uuid": "9d7fb490-f159-3b56-8e8a-614c45c299d1",
+            "server": "xa.ex306.buzz",
+            "server_port": 443,
+            "uuid": "E725D31D-BBBF-3330-7A40-C92DEEA3B1CF",
             "security": "auto",
-            "alter_id": 2,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -366,11 +366,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "xa.ex306.buzz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/ray",
                 "headers": {
-                    "Host": "20.24.77.204"
+                    "Host": "xa.ex306.buzz"
                 }
             }
         },
