@@ -110,7 +110,6 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 2",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
-                "🇺🇸US | 🟢 | vmess | @vless_vmess | 16",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
@@ -130,7 +129,6 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 2",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
-                "🇺🇸US | 🟢 | vmess | @vless_vmess | 16",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
@@ -271,30 +269,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @vless_vmess | 16",
-            "type": "vmess",
-            "server": "205.164.28.228",
-            "server_port": 29655,
-            "uuid": "bdd7d510-f28f-4d76-c236-11336fa0386e",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/bdd7d510",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
             "tag": "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
             "type": "vmess",
             "server": "ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub",
@@ -355,6 +329,40 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
             "type": "vmess",
+            "server": "us-full.privateip.net",
+            "server_port": 443,
+            "uuid": "b4561965-3487-4701-b604-8c0347d8b3d4",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "us-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/RACEVPN",
+                "headers": {
+                    "Host": "us-full.privateip.net"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+            "type": "vmess",
             "server": "www.speedtest.net",
             "server_port": 443,
             "uuid": "f9f916cd-2297-45b8-bfd2-7cd0f1b2e408",
@@ -383,30 +391,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "elahe.hayedeh.top"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
-            "type": "vmess",
-            "server": "173.82.251.240",
-            "server_port": 2233,
-            "uuid": "1e3847e6-755a-4964-9845-4ac53e39b23c",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "173.82.251.240"
                 }
             }
         },
