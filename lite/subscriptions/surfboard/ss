@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | 🟢 | ss | @VmessProtocol | 11 = ss, 3.72.232.229, 8080, encrypt-method = chacha20-ietf-poly1305, password = MyAYj8PEWhdnehQcv0sITcEUh5w7twmj5a5XuaFStIs=
 🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18 = ss, 134.195.196.178, 808, encrypt-method = chacha20-ietf-poly1305, password = G!yBwPWH3Vao
 🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0 = ss, series-a2-mec.samanehha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = u17T3BvpYaaiuW2c
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | ss | @VmessProtocol | 11,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18,🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0
-URL-TEST = url-test,🇩🇪DE | 🟢 | ss | @VmessProtocol | 11,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18,🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0
-FALLBACK = fallback,🇩🇪DE | 🟢 | ss | @VmessProtocol | 11,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18,🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18,🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0
+URL-TEST = url-test,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18,🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0
+FALLBACK = fallback,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18,🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
