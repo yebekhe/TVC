@@ -113,7 +113,7 @@
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 6",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇵🇱PL | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
@@ -132,7 +132,7 @@
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 6",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇵🇱PL | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
@@ -344,28 +344,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "172.233.164.32",
-            "server_port": 39841,
-            "uuid": "4242d74d-b748-4e74-a7c2-2bfb9d6ed121",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
-            "type": "vmess",
-            "server": "172.67.164.207",
-            "server_port": 8443,
-            "uuid": "fc0a3f44-adf4-4fd2-8023-46d4aa528892",
+            "server": "23.227.39.47",
+            "server_port": 2083,
+            "uuid": "c24f822f-8233-4996-9183-8caad5a3d19e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -378,7 +361,41 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "cdn.baraye-azadi-info.com",
+                "server_name": "behtarinfr.turkalphapro.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "23.227.39.47",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
+            "type": "vmess",
+            "server": "188.114.97.79",
+            "server_port": 443,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "linde06.indiavideo.sbs",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -388,9 +405,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/download",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": "cdn.baraye-azadi-info.com"
+                    "Host": "linde06.indiavideo.sbs"
                 }
             }
         },
