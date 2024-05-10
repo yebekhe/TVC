@@ -120,6 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇩🇪DE | 🟢 | ss | @VmessProtocol | 11","type":"ss","server":"3.72.232.229","port":8080,"password":"MyAYj8PEWhdnehQcv0sITcEUh5w7twmj5a5XuaFStIs=","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"134.195.196.178","port":808,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
@@ -128,6 +129,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇩🇪DE | 🟢 | ss | @VmessProtocol | 11'
       - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18'
       - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0'
   - name: URL-TEST
@@ -136,6 +138,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇩🇪DE | 🟢 | ss | @VmessProtocol | 11'
       - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18'
       - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0'
   - name: FALLBACK
@@ -143,6 +146,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇩🇪DE | 🟢 | ss | @VmessProtocol | 11'
       - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18'
       - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0'
 rule-providers:
