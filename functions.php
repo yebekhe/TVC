@@ -10,12 +10,44 @@ function is_ip($string)
     }
 }
 
+function convertToJson($input) {
+    // Split the input string by newline
+    $lines = explode("\n", $input);
+
+    // Initialize an empty array to store the key-value pairs
+    $data = [];
+
+    // Loop through each line
+    foreach ($lines as $line) {
+        // Split the line by the equals sign
+        $parts = explode("=", $line);
+
+        // If the line has an equals sign and is not empty
+        if (count($parts) == 2 && !empty($parts[0]) && !empty($parts[1])) {
+            // Trim any whitespace from the key and value
+            $key = trim($parts[0]);
+            $value = trim($parts[1]);
+
+            // Add the key-value pair to the data array
+            $data[$key] = $value;
+        }
+    }
+
+    // Convert the data array to a JSON string
+    $json = json_encode($data);
+
+    return $json;
+}
+
 function ip_info($ip)
 {
     // Check if the IP is from Cloudflare
     if (is_cloudflare_ip($ip)) {
+        $traceUrl = "http://$ip/cdn-cgi/trace";
+        $traceData = convertToJson(file_get_contents($traceUrl));
+        $country = $traceData['loc'] ?? "CF";
         return (object) [
-            "country" => "CF",
+            "country" => $country,
         ];
     }
 
