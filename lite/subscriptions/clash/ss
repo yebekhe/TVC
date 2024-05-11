@@ -118,9 +118,10 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇨🇦CA | 🟢 | ss | @VmessProtocol | 10","type":"ss","server":"23.162.200.189","port":9090,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇨🇦CA | 🟢 | ss | @VmessProtocol | 11","type":"ss","server":"23.162.200.189","port":9090,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
   - {"name":"🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"38.121.43.65","port":3306,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
   - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19","type":"ss","server":"51.178.87.37","port":800,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇧🇭BH | 🟢 | ss | @kingofilter | 1","type":"ss","server":"series-a2-me.varzesh360.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -128,9 +129,10 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 10'
+      - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 11'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 18'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19'
+      - '🇧🇭BH | 🟢 | ss | @kingofilter | 1'
       - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0'
   - name: URL-TEST
     type: url-test
@@ -138,18 +140,20 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 10'
+      - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 11'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 18'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19'
+      - '🇧🇭BH | 🟢 | ss | @kingofilter | 1'
       - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 10'
+      - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 11'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 18'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19'
+      - '🇧🇭BH | 🟢 | ss | @kingofilter | 1'
       - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
