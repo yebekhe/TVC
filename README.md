@@ -17,8 +17,6 @@
 
 To use this project, simply import the subscription links into your preferred client. Ensure that your client supports at least SHADOWSOCKS, VLESS, VMESS, TROJAN, TUIC and HYSTERIA2.
 
-You can access the project's subscription links through our Telegram bot: [TVC BOT](https://t.me/V2rayCollectorBot) or use Tables bellow.
-
 | Core | Mix |
 | --- | --- | 
 | Xray | [Group Mix Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/normal/mix) |
@@ -36,16 +34,6 @@ You can access the project's subscription links through our Telegram bot: [TVC B
 | Clash | [VMess Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/clash/vmess) | VLess Not Supported | Reality Not Supported | [Trojan Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/clash/trojan) | [Shadowsocks Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/clash/ss) | Tuic Not Supported | Hysteria2 Not Supported |
 | Clash.Meta | [VMess Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/meta/vmess) | [VLess Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/meta/vless) | [Reality Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/meta/reality) | [Trojan Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/meta/trojan) | [Shadowsocks Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/meta/ss) | Tuic Not Supported  | Hysteria2 Not Supported  |
 | Surfboard | [VMess Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/surfboard/vmess) | VLess Not Supported  | Reality Not Supported  | [Trojan Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/surfboard/trojan) | [Shadowsocks Link](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/surfboard/ss) | Tuic Not Supported  | Hysteria2 Not Supported  |
-
-## Node Sources
-
-This project currently utilizes Channels as the source of v2ray nodes.
-
-You can access the Channels list through our Telegram bot: [TVC BOT](https://t.me/V2rayCollectorBot).
-
-## Contribution
-
-If you have a Channel and you want to add it to this project or you know Channels that can be used in this project, you can ask for addition in the Issues section or in our [Telegram group](https://t.me/V2rayCollectorGroup).
 
 ## License
 
