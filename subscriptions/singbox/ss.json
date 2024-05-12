@@ -106,7 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🟢 | ss | @VmessProtocol | 0",
+                "🇬🇧GB | 🟢 | ss | @VmessProtocol | 0",
+                "🇨🇦CA | 🟢 | ss | @VmessProtocol | 1",
                 "🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 0",
                 "🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 1",
                 "🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 2",
@@ -128,15 +129,15 @@
                 "🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18",
                 "🇯🇵JP | 🟢 | ss | @OutlineVpnOfficial | 19",
                 "🇩🇪DE | 🟢 | ss | @proxy_mtm | 1",
-                "🇧🇭BH | 🟢 | ss | @kingofilter | 2",
-                "🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0"
+                "🇧🇭BH | 🟢 | ss | @kingofilter | 2"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🟢 | ss | @VmessProtocol | 0",
+                "🇬🇧GB | 🟢 | ss | @VmessProtocol | 0",
+                "🇨🇦CA | 🟢 | ss | @VmessProtocol | 1",
                 "🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 0",
                 "🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 1",
                 "🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 2",
@@ -158,8 +159,7 @@
                 "🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18",
                 "🇯🇵JP | 🟢 | ss | @OutlineVpnOfficial | 19",
                 "🇩🇪DE | 🟢 | ss | @proxy_mtm | 1",
-                "🇧🇭BH | 🟢 | ss | @kingofilter | 2",
-                "🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0"
+                "🇧🇭BH | 🟢 | ss | @kingofilter | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -182,7 +182,17 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🟢 | ss | @VmessProtocol | 0",
+            "tag": "🇬🇧GB | 🟢 | ss | @VmessProtocol | 0",
+            "type": "shadowsocks",
+            "server": "series-a2-mec.samanehha.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "u17T3BvpYaaiuW2c",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | ss | @VmessProtocol | 1",
             "type": "shadowsocks",
             "server": "23.162.200.189",
             "server_port": 443,
@@ -408,16 +418,6 @@
             "server_port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "Bog0ELmMM9DSxDdQ",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 0",
-            "type": "shadowsocks",
-            "server": "series-a2-mec.samanehha.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "u17T3BvpYaaiuW2c",
             "plugin": "",
             "plugin_opts": ""
         }
