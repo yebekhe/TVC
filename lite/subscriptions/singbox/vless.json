@@ -141,8 +141,8 @@
                 "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇦CA | 🔴 | vless | @DigiV2ray | 14",
                 "🇸🇪SE | 🔴 | vless | @DigiV2ray | 15",
-                "🇨🇦CA | 🔴 | vless | @proxy_kafee | 0",
                 "🇮🇷IR | 🔴 | vless | @proxy_kafee | 1",
+                "🇳🇱NL | 🔴 | vless | @proxy_kafee | 2",
                 "🇺🇸US | 🔴 | vless | @v2logy | 15",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 16",
                 "🇮🇷IR | 🔴 | vless | @servermomo | 4",
@@ -268,8 +268,8 @@
                 "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 14",
                 "🇨🇦CA | 🔴 | vless | @DigiV2ray | 14",
                 "🇸🇪SE | 🔴 | vless | @DigiV2ray | 15",
-                "🇨🇦CA | 🔴 | vless | @proxy_kafee | 0",
                 "🇮🇷IR | 🔴 | vless | @proxy_kafee | 1",
+                "🇳🇱NL | 🔴 | vless | @proxy_kafee | 2",
                 "🇺🇸US | 🔴 | vless | @v2logy | 15",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 16",
                 "🇮🇷IR | 🔴 | vless | @servermomo | 4",
@@ -1237,27 +1237,6 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @proxy_kafee | 0",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "e40d8272-abb6-451c-eddd-4f69cf3cec0e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/V2ray",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
             "tag": "🇮🇷IR | 🔴 | vless | @proxy_kafee | 1",
             "type": "vless",
             "server": "tnl5.radmehrmax.ir",
@@ -1269,6 +1248,37 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @proxy_kafee | 2",
+            "type": "vless",
+            "server": "188.114.97.141",
+            "server_port": 443,
+            "uuid": "d7bbfe83-b037-48ae-996c-b98ed0441ba2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "e10c0e4b.oodaeq2.pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "e10c0e4b.oodaeq2.pages.dev"
+                }
             }
         },
         {
