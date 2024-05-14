@@ -122,9 +122,9 @@ dns:
 proxies:
   - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 17","type":"trojan","server":"35.181.206.235","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 18","type":"trojan","server":"18.199.45.47","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 17","type":"trojan","server":"13.48.54.113","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"13.49.124.78","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇨🇦CA | 🔴 | trojan | @VmessProtocol | 15","type":"trojan","server":"p2.v2raybrasil.cloud","port":2096,"udp":false,"password":"Ck0nkbbsur","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"tls.redbullplus.xyz"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 17","type":"trojan","server":"35.181.217.117","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"13.48.54.113","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @VmessProtocol | 15","type":"trojan","server":"p2.v2raybrasil.cloud","port":2096,"udp":false,"password":"Ck0nkbbsur","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"tls.redbullplus.xyz"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -133,9 +133,9 @@ proxy-groups:
       - FALLBACK
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 17'
       - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 18'
-      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 17'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 17'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 18'
-      - '🇨🇦CA | 🔴 | trojan | @VmessProtocol | 15'
+      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -144,9 +144,9 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 17'
       - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 18'
-      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 17'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 17'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 18'
-      - '🇨🇦CA | 🔴 | trojan | @VmessProtocol | 15'
+      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -154,9 +154,9 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 17'
       - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 18'
-      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 17'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 17'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 18'
-      - '🇨🇦CA | 🔴 | trojan | @VmessProtocol | 15'
+      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 15'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
