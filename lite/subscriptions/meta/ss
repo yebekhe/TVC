@@ -122,7 +122,6 @@ dns:
 proxies:
   - {"name":"🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"23.162.200.181","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
   - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"51.178.87.37","port":804,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇧🇭BH | 🟢 | ss | @kingofilter | 2","type":"ss","server":"series-a2-me.varzesh360.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 1","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -132,7 +131,6 @@ proxy-groups:
       - FALLBACK
       - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇧🇭BH | 🟢 | ss | @kingofilter | 2'
       - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 1'
   - name: URL-TEST
     type: url-test
@@ -142,7 +140,6 @@ proxy-groups:
     proxies:
       - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇧🇭BH | 🟢 | ss | @kingofilter | 2'
       - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 1'
   - name: FALLBACK
     type: fallback
@@ -151,7 +148,6 @@ proxy-groups:
     proxies:
       - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇧🇭BH | 🟢 | ss | @kingofilter | 2'
       - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
