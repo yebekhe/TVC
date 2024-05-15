@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 7",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇺🇸US | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @vpn_go67 | 22",
@@ -118,7 +117,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 7",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇺🇸US | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @vpn_go67 | 22",
@@ -144,35 +142,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 7",
-            "type": "vless",
-            "server": "141.95.75.212",
-            "server_port": 443,
-            "uuid": "200e059b-51ec-4825-8e95-5e49db5d22ad",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "analytics.google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "yiHA11T4BplJbQxAfsQkiiAzAmyxWau-KR7dQptwjDU",
-                    "short_id": "c741ad33"
-                }
-            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @Capital_NET | 44",
