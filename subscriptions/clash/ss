@@ -118,8 +118,8 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇬🇧GB | 🟢 | ss | @VmessProtocol | 9","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇦CA | 🟢 | ss | @VmessProtocol | 10","type":"ss","server":"23.162.200.189","port":443,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @VmessProtocol | 10","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇨🇦CA | 🟢 | ss | @VmessProtocol | 11","type":"ss","server":"23.162.200.189","port":443,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
   - {"name":"🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 0","type":"ss","server":"38.75.137.71","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
   - {"name":"🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 1","type":"ss","server":"145.239.6.202","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
   - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 2","type":"ss","server":"51.178.87.37","port":810,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
@@ -139,15 +139,14 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 16","type":"ss","server":"205.134.180.151","port":443,"password":"5cp9Z3iWnJZ2","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"23.162.200.181","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
   - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"51.178.87.37","port":804,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇧🇭BH | 🟢 | ss | @kingofilter | 2","type":"ss","server":"series-a2-me.varzesh360.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 9'
-      - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 10'
+      - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 10'
+      - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 11'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 0'
       - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 1'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 2'
@@ -167,15 +166,14 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇧🇭BH | 🟢 | ss | @kingofilter | 2'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 9'
-      - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 10'
+      - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 10'
+      - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 11'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 0'
       - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 1'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 2'
@@ -195,14 +193,13 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇧🇭BH | 🟢 | ss | @kingofilter | 2'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 9'
-      - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 10'
+      - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 10'
+      - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 11'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 0'
       - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 1'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 2'
@@ -222,7 +219,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇧🇭BH | 🟢 | ss | @kingofilter | 2'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
