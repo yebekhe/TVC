@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @EliV2ray | 9",
                 "❔XX | 🔴 | vless | @V2pedia | 3",
                 "❔XX | 🔴 | vless | @V2pedia | 5",
                 "❔XX | 🔴 | vless | @V2pedia | 7",
@@ -176,7 +175,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @EliV2ray | 9",
                 "❔XX | 🔴 | vless | @V2pedia | 3",
                 "❔XX | 🔴 | vless | @V2pedia | 5",
                 "❔XX | 🔴 | vless | @V2pedia | 7",
@@ -260,35 +258,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @EliV2ray | 9",
-            "type": "vless",
-            "server": "91.107.133.107",
-            "server_port": 8080,
-            "uuid": "cb0c566c-413b-40f0-eff0-e4200d06bdac",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mdundo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "r2wbFJJEArYV2LdDkDId_b8pJB3iKE4S1J0O33FfDkg",
-                    "short_id": "dbf8a4"
-                }
-            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @V2pedia | 3",
