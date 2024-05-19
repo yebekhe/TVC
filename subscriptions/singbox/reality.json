@@ -120,6 +120,7 @@
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
+                "🇸🇪SE | 🔴 | vless | @v2rayNG_Matsuri | 0",
                 "🇳🇱NL | 🟢 | vless | @ServerNett | 12",
                 "🇩🇪DE | 🟢 | vless | @v2ray_swhil | 8",
                 "🇸🇪SE | 🔴 | vless | @sinabigo | 1",
@@ -188,6 +189,7 @@
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
+                "🇸🇪SE | 🔴 | vless | @v2rayNG_Matsuri | 0",
                 "🇳🇱NL | 🟢 | vless | @ServerNett | 12",
                 "🇩🇪DE | 🟢 | vless | @v2ray_swhil | 8",
                 "🇸🇪SE | 🔴 | vless | @sinabigo | 1",
@@ -738,6 +740,42 @@
                     "public_key": "rFZOWxVcsZn5--1yLku3SGglZ0Y2Ban0buZIN3-vFwU",
                     "short_id": "cfef326c"
                 }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | 🔴 | vless | @v2rayNG_Matsuri | 0",
+            "type": "vless",
+            "server": "46.226.161.206",
+            "server_port": 443,
+            "uuid": "0af6e123-2905-401f-8e9f-5c6139c7f3ff",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "discord.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vBSZs-Ilw6q3HHMNEFtLecQRybygOCUs6ZwYS_vY8z0",
+                    "short_id": "c0232b11"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@set_v2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
