@@ -106,17 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🔴 | vless | @V2pedia | 3",
-                "❔XX | 🔴 | vless | @V2pedia | 5",
-                "❔XX | 🔴 | vless | @V2pedia | 7",
-                "❔XX | 🔴 | vless | @V2pedia | 9",
-                "❔XX | 🔴 | vless | @V2pedia | 11",
-                "❔XX | 🔴 | vless | @V2pedia | 13",
-                "❔XX | 🔴 | vless | @V2pedia | 16",
-                "❔XX | 🔴 | vless | @V2pedia | 19",
-                "❔XX | 🔴 | vless | @V2pedia | 27",
-                "❔XX | 🔴 | vless | @V2pedia | 30",
-                "❔XX | 🔴 | vless | @V2pedia | 34",
+                "❔XX | 🔴 | vless | @V2pedia | 2",
+                "❔XX | 🔴 | vless | @V2pedia | 4",
+                "❔XX | 🔴 | vless | @V2pedia | 6",
+                "❔XX | 🔴 | vless | @V2pedia | 8",
+                "❔XX | 🔴 | vless | @V2pedia | 10",
+                "❔XX | 🔴 | vless | @V2pedia | 12",
+                "❔XX | 🔴 | vless | @V2pedia | 14",
+                "❔XX | 🔴 | vless | @V2pedia | 17",
+                "❔XX | 🔴 | vless | @V2pedia | 20",
+                "❔XX | 🔴 | vless | @V2pedia | 28",
+                "❔XX | 🔴 | vless | @V2pedia | 31",
+                "❔XX | 🔴 | vless | @V2pedia | 35",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
@@ -176,17 +177,18 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🔴 | vless | @V2pedia | 3",
-                "❔XX | 🔴 | vless | @V2pedia | 5",
-                "❔XX | 🔴 | vless | @V2pedia | 7",
-                "❔XX | 🔴 | vless | @V2pedia | 9",
-                "❔XX | 🔴 | vless | @V2pedia | 11",
-                "❔XX | 🔴 | vless | @V2pedia | 13",
-                "❔XX | 🔴 | vless | @V2pedia | 16",
-                "❔XX | 🔴 | vless | @V2pedia | 19",
-                "❔XX | 🔴 | vless | @V2pedia | 27",
-                "❔XX | 🔴 | vless | @V2pedia | 30",
-                "❔XX | 🔴 | vless | @V2pedia | 34",
+                "❔XX | 🔴 | vless | @V2pedia | 2",
+                "❔XX | 🔴 | vless | @V2pedia | 4",
+                "❔XX | 🔴 | vless | @V2pedia | 6",
+                "❔XX | 🔴 | vless | @V2pedia | 8",
+                "❔XX | 🔴 | vless | @V2pedia | 10",
+                "❔XX | 🔴 | vless | @V2pedia | 12",
+                "❔XX | 🔴 | vless | @V2pedia | 14",
+                "❔XX | 🔴 | vless | @V2pedia | 17",
+                "❔XX | 🔴 | vless | @V2pedia | 20",
+                "❔XX | 🔴 | vless | @V2pedia | 28",
+                "❔XX | 🔴 | vless | @V2pedia | 31",
+                "❔XX | 🔴 | vless | @V2pedia | 35",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
@@ -262,7 +264,43 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 3",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 2",
+            "type": "vless",
+            "server": "[2a0d:5940:102:2::]",
+            "server_port": 25365,
+            "uuid": "8f3915f7-4635-43ac-9f2d-9c92b6d9c846",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "A1BOlkoNkPrAJteSRa3B8Y_ritBIWqfBIDXAYY_KU3c",
+                    "short_id": "41fa71b9"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 4",
             "type": "vless",
             "server": "[2a0d:5940:48:11::]",
             "server_port": 2096,
@@ -298,7 +336,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 5",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 6",
             "type": "vless",
             "server": "[2a05:541:133:7::1]",
             "server_port": 25365,
@@ -334,7 +372,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 7",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 8",
             "type": "vless",
             "server": "[2a13:9f40:0:7f::a]",
             "server_port": 25365,
@@ -370,7 +408,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 9",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 10",
             "type": "vless",
             "server": "[2a0d:5940:38:1c::]",
             "server_port": 25365,
@@ -406,7 +444,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 11",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 12",
             "type": "vless",
             "server": "[2a0d:5940:48:11::]",
             "server_port": 25365,
@@ -442,7 +480,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 13",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 14",
             "type": "vless",
             "server": "[2a0d:5940:48:11::]",
             "server_port": 25365,
@@ -478,7 +516,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 16",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 17",
             "type": "vless",
             "server": "[2a0d:5940:48:11::]",
             "server_port": 25365,
@@ -514,7 +552,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 19",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 20",
             "type": "vless",
             "server": "[2a0d:5940:48:11::]",
             "server_port": 25365,
@@ -550,7 +588,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 27",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 28",
             "type": "vless",
             "server": "[2a0d:5940:48:11::]",
             "server_port": 25365,
@@ -586,7 +624,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 30",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 31",
             "type": "vless",
             "server": "[2a00:b703:fff1:215::1]",
             "server_port": 25365,
@@ -622,7 +660,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 34",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 35",
             "type": "vless",
             "server": "[2a00:b703:fff1:215::1]",
             "server_port": 25365,
