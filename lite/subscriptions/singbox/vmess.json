@@ -114,8 +114,8 @@
                 "🇷🇺RU | 🟢 | vmess | @ShadowProxy66 | 5",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇳🇱NL | 🟢 | vmess | @Hope_Net | 4",
-                "❔XX | 🟢 | vmess | @Hope_Net | 5",
+                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 2",
+                "❔XX | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 4",
                 "🇵🇱PL | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
@@ -136,8 +136,8 @@
                 "🇷🇺RU | 🟢 | vmess | @ShadowProxy66 | 5",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇳🇱NL | 🟢 | vmess | @Hope_Net | 4",
-                "❔XX | 🟢 | vmess | @Hope_Net | 5",
+                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 2",
+                "❔XX | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 4",
                 "🇵🇱PL | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
@@ -360,11 +360,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "🇩🇪DE | 🟢 | vmess | @Hope_Net | 2",
             "type": "vmess",
-            "server": "nl-full.privateip.net",
-            "server_port": 443,
-            "uuid": "3f867231-561b-4bcd-acc0-d60a96c390ba",
+            "server": "172.104.240.164",
+            "server_port": 123,
+            "uuid": "edc67a7a-4925-407f-9ff7-1a8a2295eaca",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -375,30 +375,20 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "nl-full.privateip.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "ws",
-                "path": "\/RACEVPN",
-                "headers": {
-                    "Host": "nl-full.privateip.net"
-                }
+                "type": "grpc",
+                "service_name": "@ConfigPositive@ConfigPositive@ConfigPositive@ConfigPositive@ConfigPositive@ConfigPositive@ConfigPositive",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 3",
             "type": "vmess",
-            "server": "us-ny-rn.licom.ga",
-            "server_port": 62008,
-            "uuid": "f81e990e-1283-48f9-9eff-acacad6fb661",
+            "server": "zzcm09.bdate.xyz",
+            "server_port": 1580,
+            "uuid": "b9ecdb44-236b-30a7-94f2-f464993d84cf",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -409,21 +399,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "us-ny-rn.licom.ga",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/hls\/cctv5phd.m3u8",
                 "headers": {
-                    "Host": "us-ny-rn.licom.ga"
+                    "Host": "zzcm09.bdate.xyz"
                 }
             }
         },
