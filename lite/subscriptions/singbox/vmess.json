@@ -114,8 +114,8 @@
                 "🇷🇺RU | 🟢 | vmess | @ShadowProxy66 | 5",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 4",
                 "🇵🇱PL | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
@@ -136,8 +136,8 @@
                 "🇷🇺RU | 🟢 | vmess | @ShadowProxy66 | 5",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 4",
                 "🇵🇱PL | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
@@ -360,11 +360,11 @@
             }
         },
         {
-            "tag": "🇭🇰HK | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
-            "server": "z-cn2.mceee.xyz",
-            "server_port": 25933,
-            "uuid": "bca2b267-61ac-3152-9525-ea1757f8d9f2",
+            "server": "jahfkjha.cfd",
+            "server_port": 443,
+            "uuid": "950db6aa-4926-4616-816e-ec0312dcb87b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -375,20 +375,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/download",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": "z-cn2.mceee.xyz"
+                    "Host": ""
                 }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "🇫🇷FR | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
-            "server": "zzcm09.bdate.xyz",
-            "server_port": 1580,
-            "uuid": "b9ecdb44-236b-30a7-94f2-f464993d84cf",
+            "server": "fr-full.privateip.net",
+            "server_port": 443,
+            "uuid": "d8062a4c-4fe9-49cf-b273-dfcdd78bca0a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -399,11 +409,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/hls\/cctv5phd.m3u8",
+                "path": "\/RACEVPN",
                 "headers": {
-                    "Host": "zzcm09.bdate.xyz"
+                    "Host": "fr-full.privateip.net"
                 }
             }
         },
