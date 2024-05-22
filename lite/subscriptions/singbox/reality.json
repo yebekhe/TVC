@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "❔XX | 🔴 | vless | @V2pedia | 14",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇸🇪SE | 🔴 | vless | @v2rayNG_Matsuri | 8",
                 "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 8",
@@ -120,6 +121,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "❔XX | 🔴 | vless | @V2pedia | 14",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇸🇪SE | 🔴 | vless | @v2rayNG_Matsuri | 8",
                 "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 8",
@@ -148,6 +150,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 14",
+            "type": "vless",
+            "server": "[2a0d:5940:48:11::]",
+            "server_port": 25365,
+            "uuid": "e4d3db1e-cc4a-4140-bf5b-3f8565ecda0b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0yvVYJZ4y9zv2c6pHdjwLPGzSI6IucXRevTU57h7MW4",
+                    "short_id": "40446024"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
