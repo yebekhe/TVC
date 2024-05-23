@@ -106,17 +106,19 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🔴 | vless | @V2pedia | 4",
-                "❔XX | 🔴 | vless | @V2pedia | 6",
-                "❔XX | 🔴 | vless | @V2pedia | 8",
-                "❔XX | 🔴 | vless | @V2pedia | 10",
-                "❔XX | 🔴 | vless | @V2pedia | 12",
+                "❔XX | 🔴 | vless | @V2pedia | 1",
+                "❔XX | 🔴 | vless | @V2pedia | 7",
+                "❔XX | 🔴 | vless | @V2pedia | 9",
+                "❔XX | 🔴 | vless | @V2pedia | 11",
+                "❔XX | 🔴 | vless | @V2pedia | 13",
+                "❔XX | 🔴 | vless | @V2pedia | 15",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇸🇪SE | 🔴 | vless | @v2rayNG_Matsuri | 11",
                 "🇮🇷IR | 🟢 | vless | @proxyymeliii | 12",
-                "🇹🇷TR | 🔴 | vless | @VmessProtocol | 1",
+                "🇳🇱NL | 🟢 | vless | @VmessProtocol | 1",
+                "🇹🇷TR | 🔴 | vless | @VmessProtocol | 3",
                 "🇸🇪SE | 🔴 | vless | @sinabigo | 3",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
@@ -168,17 +170,19 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🔴 | vless | @V2pedia | 4",
-                "❔XX | 🔴 | vless | @V2pedia | 6",
-                "❔XX | 🔴 | vless | @V2pedia | 8",
-                "❔XX | 🔴 | vless | @V2pedia | 10",
-                "❔XX | 🔴 | vless | @V2pedia | 12",
+                "❔XX | 🔴 | vless | @V2pedia | 1",
+                "❔XX | 🔴 | vless | @V2pedia | 7",
+                "❔XX | 🔴 | vless | @V2pedia | 9",
+                "❔XX | 🔴 | vless | @V2pedia | 11",
+                "❔XX | 🔴 | vless | @V2pedia | 13",
+                "❔XX | 🔴 | vless | @V2pedia | 15",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇸🇪SE | 🔴 | vless | @v2rayNG_Matsuri | 11",
                 "🇮🇷IR | 🟢 | vless | @proxyymeliii | 12",
-                "🇹🇷TR | 🔴 | vless | @VmessProtocol | 1",
+                "🇳🇱NL | 🟢 | vless | @VmessProtocol | 1",
+                "🇹🇷TR | 🔴 | vless | @VmessProtocol | 3",
                 "🇸🇪SE | 🔴 | vless | @sinabigo | 3",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
@@ -246,7 +250,43 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 4",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 1",
+            "type": "vless",
+            "server": "[2a0d:5940:102:2::]",
+            "server_port": 25365,
+            "uuid": "8f3915f7-4635-43ac-9f2d-9c92b6d9c846",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YCk55W3WP_ogseTEKZUb0GChttrTtJrr2gOGGk_iXDA",
+                    "short_id": "41fa71b9"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 7",
             "type": "vless",
             "server": "[2a0d:5940:102:2::]",
             "server_port": 25365,
@@ -282,7 +322,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 6",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 9",
             "type": "vless",
             "server": "[2a0d:5940:48:11::]",
             "server_port": 2096,
@@ -318,7 +358,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 8",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 11",
             "type": "vless",
             "server": "[2a05:541:133:7::1]",
             "server_port": 25365,
@@ -354,7 +394,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 10",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 13",
             "type": "vless",
             "server": "[2a13:9f40:0:7f::a]",
             "server_port": 25365,
@@ -390,7 +430,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 12",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 15",
             "type": "vless",
             "server": "[2a0d:5940:38:1c::]",
             "server_port": 25365,
@@ -578,7 +618,36 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🔴 | vless | @VmessProtocol | 1",
+            "tag": "🇳🇱NL | 🟢 | vless | @VmessProtocol | 1",
+            "type": "vless",
+            "server": "185.142.238.222",
+            "server_port": 8443,
+            "uuid": "ae5aed77-be23-4f6c-bd51-c73745038952",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maps.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "NbtOWq_km9k_SKgCJatXla3Jl7gGKVbjQ-GAtGg4bEk",
+                    "short_id": "bfde1c85a6a4112a"
+                }
+            }
+        },
+        {
+            "tag": "🇹🇷TR | 🔴 | vless | @VmessProtocol | 3",
             "type": "vless",
             "server": "85.237.223.97",
             "server_port": 18455,
