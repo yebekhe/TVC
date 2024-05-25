@@ -106,14 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🔴 | vless | @V2pedia | 7",
-                "❔XX | 🔴 | vless | @V2pedia | 9",
+                "❔XX | 🔴 | vless | @V2pedia | 8",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇸🇪SE | 🔴 | vless | @v2rayNG_Matsuri | 3",
-                "🇳🇱NL | 🟢 | vless | @VmessProtocol | 10",
-                "🇹🇷TR | 🔴 | vless | @VmessProtocol | 12",
+                "🇳🇱NL | 🟢 | vless | @VmessProtocol | 11",
+                "🇹🇷TR | 🔴 | vless | @VmessProtocol | 13",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -135,7 +134,7 @@
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 36",
                 "❔XX | 🔴 | vless | @Capital_NET | 37",
                 "❔XX | 🔴 | vless | @Capital_NET | 39",
-                "🇳🇱NL | 🔴 | vless | @Capital_NET | 41",
+                "🇨🇦CA | 🔴 | vless | @Capital_NET | 41",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 42",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇺🇸US | 🔴 | vless | @Capital_NET | 45",
@@ -164,14 +163,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🔴 | vless | @V2pedia | 7",
-                "❔XX | 🔴 | vless | @V2pedia | 9",
+                "❔XX | 🔴 | vless | @V2pedia | 8",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇸🇪SE | 🔴 | vless | @v2rayNG_Matsuri | 3",
-                "🇳🇱NL | 🟢 | vless | @VmessProtocol | 10",
-                "🇹🇷TR | 🔴 | vless | @VmessProtocol | 12",
+                "🇳🇱NL | 🟢 | vless | @VmessProtocol | 11",
+                "🇹🇷TR | 🔴 | vless | @VmessProtocol | 13",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -193,7 +191,7 @@
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 36",
                 "❔XX | 🔴 | vless | @Capital_NET | 37",
                 "❔XX | 🔴 | vless | @Capital_NET | 39",
-                "🇳🇱NL | 🔴 | vless | @Capital_NET | 41",
+                "🇨🇦CA | 🔴 | vless | @Capital_NET | 41",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 42",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇺🇸US | 🔴 | vless | @Capital_NET | 45",
@@ -238,7 +236,7 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 7",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 8",
             "type": "vless",
             "server": "[2a0d:5940:102:2::]",
             "server_port": 25365,
@@ -268,42 +266,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 9",
-            "type": "vless",
-            "server": "[2a0d:5940:48:11::]",
-            "server_port": 2096,
-            "uuid": "d3100eb9-8f39-4e05-9e4a-52f2882f993f",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sourceforge.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "9HWaR32kYaEr1s6HmzlebfaAHdlo2K0qEhx5UxpxwX4",
-                    "short_id": "0f4ad338"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -433,7 +395,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @VmessProtocol | 10",
+            "tag": "🇳🇱NL | 🟢 | vless | @VmessProtocol | 11",
             "type": "vless",
             "server": "185.142.238.222",
             "server_port": 8443,
@@ -462,7 +424,7 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🔴 | vless | @VmessProtocol | 12",
+            "tag": "🇹🇷TR | 🔴 | vless | @VmessProtocol | 13",
             "type": "vless",
             "server": "85.237.223.97",
             "server_port": 18455,
@@ -1135,7 +1097,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @Capital_NET | 41",
+            "tag": "🇨🇦CA | 🔴 | vless | @Capital_NET | 41",
             "type": "vless",
             "server": "194.5.97.158",
             "server_port": 443,
