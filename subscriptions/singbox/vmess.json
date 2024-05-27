@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🚩CF | 🟢 | vmess | @azadi_az_inja_migzare | 0",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 1",
@@ -155,6 +156,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🚩CF | 🟢 | vmess | @azadi_az_inja_migzare | 0",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 1",
@@ -218,6 +220,30 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @azadi_az_inja_migzare | 0",
+            "type": "vmess",
+            "server": "104.22.30.97",
+            "server_port": 80,
+            "uuid": "baec1a72-8a19-49c9-acb9-09db4f694311",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vmess",
+                "headers": {
+                    "Host": "ai.cloudflare.com"
+                }
+            }
         },
         {
             "tag": "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
