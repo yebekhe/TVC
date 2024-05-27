@@ -115,6 +115,7 @@
                 "🇺🇸US | 🟢 | vmess | @mftizi | 13",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 14",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
+                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 5",
                 "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 1",
                 "🇫🇷FR | 🟢 | vmess | @oneclickvpnkeys | 2",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 3",
@@ -161,6 +162,7 @@
                 "🇺🇸US | 🟢 | vmess | @mftizi | 13",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 14",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
+                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 5",
                 "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 1",
                 "🇫🇷FR | 🟢 | vmess | @oneclickvpnkeys | 2",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 3",
@@ -392,6 +394,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 5",
+            "type": "vmess",
+            "server": "188.114.97.210",
+            "server_port": 443,
+            "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mikasa.yaemiko.cloudns.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ivideos.sbs\/linkws",
+                "headers": {
+                    "Host": "mikasa.yaemiko.cloudns.org"
+                }
             }
         },
         {
