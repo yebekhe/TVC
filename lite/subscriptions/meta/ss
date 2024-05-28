@@ -120,8 +120,8 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 15","type":"ss","server":"149.202.82.172","port":5600,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
   - {"name":"🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 16","type":"ss","server":"217.182.198.219","port":3306,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
-  - {"name":"🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"23.162.200.181","port":8008,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
   - {"name":"🇮🇷IR | 🟢 | ss | @iP_CF | 0","type":"ss","server":"eu-legion-10.kevinzone.online","port":31158,"password":"0ac82bf5f8b22ec","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -129,8 +129,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 15'
       - '🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 16'
-      - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇮🇷IR | 🟢 | ss | @iP_CF | 0'
   - name: URL-TEST
     type: url-test
@@ -138,16 +138,16 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 15'
       - '🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 16'
-      - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇮🇷IR | 🟢 | ss | @iP_CF | 0'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 15'
       - '🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 16'
-      - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇮🇷IR | 🟢 | ss | @iP_CF | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
