@@ -127,7 +127,7 @@
                 "🇸🇪SE | 🔴 | vless | @shh_proxy | 27",
                 "🇨🇦CA | 🔴 | vless | @Lockey_vpn | 16",
                 "🇨🇦CA | 🔴 | vless | @Lockey_vpn | 17",
-                "🇸🇪SE | 🔴 | vless | @free_v2rayyy | 16",
+                "🇸🇪SE | 🔴 | vless | @free_v2rayyy | 18",
                 "🇨🇷CR | 🔴 | vless | @lightning6 | 14",
                 "🇸🇪SE | 🔴 | vless | @lightning6 | 15",
                 "🇨🇦CA | 🔴 | vless | @V2rayNGmat | 7",
@@ -166,7 +166,8 @@
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 11",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 12",
                 "🇸🇪SE | 🔴 | vless | @proxyymeliii | 18",
-                "🇩🇪DE | 🔴 | vless | @MsV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @MsV2ray | 5",
+                "🇩🇪DE | 🔴 | vless | @MsV2ray | 6",
                 "🇺🇸US | 🔴 | vless | @v2ray1_ng | 7",
                 "🇸🇪SE | 🔴 | vless | @v2ray1_ng | 8",
                 "🇮🇷IR | 🔴 | vless | @vless_vmess | 9",
@@ -243,7 +244,7 @@
                 "🇸🇪SE | 🔴 | vless | @shh_proxy | 27",
                 "🇨🇦CA | 🔴 | vless | @Lockey_vpn | 16",
                 "🇨🇦CA | 🔴 | vless | @Lockey_vpn | 17",
-                "🇸🇪SE | 🔴 | vless | @free_v2rayyy | 16",
+                "🇸🇪SE | 🔴 | vless | @free_v2rayyy | 18",
                 "🇨🇷CR | 🔴 | vless | @lightning6 | 14",
                 "🇸🇪SE | 🔴 | vless | @lightning6 | 15",
                 "🇨🇦CA | 🔴 | vless | @V2rayNGmat | 7",
@@ -282,7 +283,8 @@
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 11",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 12",
                 "🇸🇪SE | 🔴 | vless | @proxyymeliii | 18",
-                "🇩🇪DE | 🔴 | vless | @MsV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @MsV2ray | 5",
+                "🇩🇪DE | 🔴 | vless | @MsV2ray | 6",
                 "🇺🇸US | 🔴 | vless | @v2ray1_ng | 7",
                 "🇸🇪SE | 🔴 | vless | @v2ray1_ng | 8",
                 "🇮🇷IR | 🔴 | vless | @vless_vmess | 9",
@@ -828,11 +830,11 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @free_v2rayyy | 16",
+            "tag": "🇸🇪SE | 🔴 | vless | @free_v2rayyy | 18",
             "type": "vless",
             "server": "185.146.173.58",
             "server_port": 80,
-            "uuid": "d4ee1c23-9c92-4017-916c-ccad2c50a333",
+            "uuid": "f920c3dd-fcb4-4d6a-ad30-8c2d30e41a6b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1768,7 +1770,38 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @MsV2ray | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @MsV2ray | 5",
+            "type": "vless",
+            "server": "xS.QaFighter.Org.",
+            "server_port": 443,
+            "uuid": "Telegram-MsV2ray-MsV2ray",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "xS.QaFighter.Org.",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "MsV2ray-MsV2ray-MsV2ray-MsV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @MsV2ray | 6",
             "type": "vless",
             "server": "162.55.188.244",
             "server_port": 29947,
