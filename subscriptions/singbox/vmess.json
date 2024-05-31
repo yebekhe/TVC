@@ -160,13 +160,14 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🚩CF | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 1",
-                "🚩CF | 🟢 | vmess | @Hope_Net | 2",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
+                "❔XX | 🟢 | vmess | @Hope_Net | 2",
                 "🚩CF | 🟢 | vmess | @v2rayng_config_amin | 0",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 0",
                 "🚩CF | 🟢 | vmess | @v2Line | 1",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 2",
+                "🚩CF | 🟢 | vmess | @v2Line | 3",
                 "🇮🇳IN | 🟢 | vmess | @v2Line | 4",
                 "🚩CF | 🟢 | vmess | @v2Line | 5",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 6",
@@ -234,13 +235,14 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🚩CF | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 1",
-                "🚩CF | 🟢 | vmess | @Hope_Net | 2",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
+                "❔XX | 🟢 | vmess | @Hope_Net | 2",
                 "🚩CF | 🟢 | vmess | @v2rayng_config_amin | 0",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 0",
                 "🚩CF | 🟢 | vmess | @v2Line | 1",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 2",
+                "🚩CF | 🟢 | vmess | @v2Line | 3",
                 "🇮🇳IN | 🟢 | vmess | @v2Line | 4",
                 "🚩CF | 🟢 | vmess | @v2Line | 5",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 6",
@@ -1738,7 +1740,31 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 1",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
+            "type": "vmess",
+            "server": "c2.v2raybrasil.cloud",
+            "server_port": 2082,
+            "uuid": "60bcbd52-0c88-4da3-aee2-cc1f9d5ca224",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 2",
             "type": "vmess",
             "server": "nnv.chitacdn.xyz",
             "server_port": 54242,
@@ -1752,40 +1778,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🚩CF | 🟢 | vmess | @Hope_Net | 2",
-            "type": "vmess",
-            "server": "104.21.83.108",
-            "server_port": 443,
-            "uuid": "6c168fcc-2231-4f3b-8c1e-f6391692df4a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hms02.fxiaomi.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/link",
-                "headers": {
-                    "Host": "hms02.fxiaomi.sbs"
-                }
             }
         },
         {
@@ -1945,6 +1937,40 @@
                 "path": "\/v118-fccxmxm35",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @v2Line | 3",
+            "type": "vmess",
+            "server": "104.21.83.108",
+            "server_port": 443,
+            "uuid": "6c168fcc-2231-4f3b-8c1e-f6391692df4a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hms02.fxiaomi.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/link",
+                "headers": {
+                    "Host": "hms02.fxiaomi.sbs"
                 }
             }
         },
