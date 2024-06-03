@@ -110,6 +110,7 @@
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 19",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇺🇸US | 🔴 | vless | @Capital_NET | 45",
+                "🇩🇪DE | 🔴 | vless | @iP_CF | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 22",
                 "❔XX | 🔴 | vless | @vpn_go67 | 23"
             ]
@@ -122,6 +123,7 @@
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 19",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇺🇸US | 🔴 | vless | @Capital_NET | 45",
+                "🇩🇪DE | 🔴 | vless | @iP_CF | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 22",
                 "❔XX | 🔴 | vless | @vpn_go67 | 23"
             ],
@@ -259,6 +261,42 @@
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @iP_CF | 1",
+            "type": "vless",
+            "server": "join.myteamjetpack.xyz",
+            "server_port": 34173,
+            "uuid": "ee85e2f9-74c2-467a-8894-c4c9a49c076b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "test.myteamjetpack.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3LackkwyrYQqbIp71C5_Qy3gwgHGcJV2b6laNsKJDS4",
+                    "short_id": "0566c622"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "JoinJetPackService",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
