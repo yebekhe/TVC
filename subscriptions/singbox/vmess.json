@@ -130,7 +130,6 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🚩CF | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
                 "🚩CF | 🟢 | vmess | @v2rayng_config_amin | 0",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🚩CF | 🟢 | vmess | @v2Line | 0",
@@ -143,9 +142,10 @@
                 "🇺🇸US | 🟢 | vmess | @v2Line | 7",
                 "🚩CF | 🟢 | vmess | @v2Line | 10",
                 "🚩CF | 🟢 | vmess | @FreakConfig | 8",
-                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 0",
-                "🚩CF | 🟢 | vmess | @ROMAX_VPN | 3",
-                "🚩CF | 🟢 | vmess | @ROMAX_VPN | 5"
+                "🚩CF | 🟢 | vmess | @ROMAX_VPN | 0",
+                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 1",
+                "🚩CF | 🟢 | vmess | @ROMAX_VPN | 4",
+                "🚩CF | 🟢 | vmess | @ROMAX_VPN | 6"
             ]
         },
         {
@@ -176,7 +176,6 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🚩CF | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
                 "🚩CF | 🟢 | vmess | @v2rayng_config_amin | 0",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🚩CF | 🟢 | vmess | @v2Line | 0",
@@ -189,9 +188,10 @@
                 "🇺🇸US | 🟢 | vmess | @v2Line | 7",
                 "🚩CF | 🟢 | vmess | @v2Line | 10",
                 "🚩CF | 🟢 | vmess | @FreakConfig | 8",
-                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 0",
-                "🚩CF | 🟢 | vmess | @ROMAX_VPN | 3",
-                "🚩CF | 🟢 | vmess | @ROMAX_VPN | 5"
+                "🚩CF | 🟢 | vmess | @ROMAX_VPN | 0",
+                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 1",
+                "🚩CF | 🟢 | vmess | @ROMAX_VPN | 4",
+                "🚩CF | 🟢 | vmess | @ROMAX_VPN | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -852,23 +852,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
-            "type": "vmess",
-            "server": "2.58.87.221",
-            "server_port": 46628,
-            "uuid": "f6ba9e5a-711c-496f-be60-ac5464dec2b8",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🚩CF | 🟢 | vmess | @v2rayng_config_amin | 0",
             "type": "vmess",
             "server": "188.114.97.3",
@@ -1250,7 +1233,41 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 0",
+            "tag": "🚩CF | 🟢 | vmess | @ROMAX_VPN | 0",
+            "type": "vmess",
+            "server": "172.67.74.4",
+            "server_port": 443,
+            "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mikasa.yaemiko.cloudns.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ivideos.sbs\/linkws",
+                "headers": {
+                    "Host": "mikasa.yaemiko.cloudns.org"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 1",
             "type": "vmess",
             "server": "zula.ir",
             "server_port": 443,
@@ -1284,7 +1301,7 @@
             }
         },
         {
-            "tag": "🚩CF | 🟢 | vmess | @ROMAX_VPN | 3",
+            "tag": "🚩CF | 🟢 | vmess | @ROMAX_VPN | 4",
             "type": "vmess",
             "server": "172.67.71.160",
             "server_port": 443,
@@ -1318,7 +1335,7 @@
             }
         },
         {
-            "tag": "🚩CF | 🟢 | vmess | @ROMAX_VPN | 5",
+            "tag": "🚩CF | 🟢 | vmess | @ROMAX_VPN | 6",
             "type": "vmess",
             "server": "172.67.166.192",
             "server_port": 80,
