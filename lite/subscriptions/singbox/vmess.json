@@ -108,8 +108,8 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 5",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "🇺🇸US | 🟢 | vmess | @vless_vmess | 5",
                 "🇨🇷CR | 🟢 | vmess | @vless_vmess | 6",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -129,8 +129,8 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 5",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "🇺🇸US | 🟢 | vmess | @vless_vmess | 5",
                 "🇨🇷CR | 🟢 | vmess | @vless_vmess | 6",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -205,7 +205,41 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 5",
+            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
+            "type": "vmess",
+            "server": "104.21.55.234",
+            "server_port": 443,
+            "uuid": "bc864078-dcf3-4bf4-8dbf-ca9f200b56be",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "gwdef.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "gwdef.sbs"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
             "type": "vmess",
             "server": "188.114.97.79",
             "server_port": 443,
@@ -235,40 +269,6 @@
                 "path": "\/linkws",
                 "headers": {
                     "Host": "linde06.indiavideo.sbs"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6",
-            "type": "vmess",
-            "server": "caretaker.com",
-            "server_port": 443,
-            "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mikasa.yaemiko.cloudns.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ivideos.sbs\/linkws",
-                "headers": {
-                    "Host": "mikasa.yaemiko.cloudns.org"
                 }
             }
         },
