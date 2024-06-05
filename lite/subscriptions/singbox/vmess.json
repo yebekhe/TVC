@@ -113,8 +113,8 @@
                 "🇨🇷CR | 🟢 | vmess | @vless_vmess | 7",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
-                "🇮🇹IT | 🟢 | vmess | @Hope_Net | 4",
+                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 3",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 5",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
@@ -133,8 +133,8 @@
                 "🇨🇷CR | 🟢 | vmess | @vless_vmess | 7",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
-                "🇮🇹IT | 🟢 | vmess | @Hope_Net | 4",
+                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 3",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 5",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 10",
@@ -353,7 +353,41 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
+            "tag": "🇫🇷FR | 🟢 | vmess | @Hope_Net | 3",
+            "type": "vmess",
+            "server": "fr-full.privateip.net",
+            "server_port": 443,
+            "uuid": "d8d9a946-c231-426a-8170-069cc2f0df2f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/RACEVPN",
+                "headers": {
+                    "Host": "fr-full.privateip.net"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
             "type": "vmess",
             "server": "104.16.61.8",
             "server_port": 2083,
@@ -383,40 +417,6 @@
                 "path": "\/linde06.indiavideo.sbs\/linkws",
                 "headers": {
                     "Host": "worker-lingering-fog-c021.gesofog870.workers.dev"
-                }
-            }
-        },
-        {
-            "tag": "🇮🇹IT | 🟢 | vmess | @Hope_Net | 4",
-            "type": "vmess",
-            "server": "it-full.privateip.net",
-            "server_port": 443,
-            "uuid": "509fd5aa-5859-4618-8de8-428b38c269ec",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "it-full.privateip.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/RACEVPN",
-                "headers": {
-                    "Host": "it-full.privateip.net"
                 }
             }
         },
