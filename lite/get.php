@@ -9,7 +9,7 @@ require "functions.php";
 
 // Fetch the JSON data from the API and decode it into an associative array
 $sourcesArray = json_decode(
-    file_get_contents("https://api.yebekhe.link/tvc-channels/channels.json"),
+    file_get_contents("channels.json"),
     true
 );
 
