@@ -109,16 +109,17 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 2",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 18",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 19",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇪🇸ES | 🟢 | vmess | @Hope_Net | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 5",
                 "🇮🇳IN | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
-                "🇹🇷TR | 🟢 | vmess | @FreakConfig | 2",
+                "🇹🇷TR | 🟢 | vmess | @FreakConfig | 3",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 6"
             ]
         },
@@ -129,16 +130,17 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 2",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 18",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 19",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇪🇸ES | 🟢 | vmess | @Hope_Net | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 5",
                 "🇮🇳IN | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
-                "🇹🇷TR | 🟢 | vmess | @FreakConfig | 2",
+                "🇹🇷TR | 🟢 | vmess | @FreakConfig | 3",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -230,7 +232,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 2",
+            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
             "type": "vmess",
             "server": "172.67.164.164",
             "server_port": 443,
@@ -380,11 +382,11 @@
             }
         },
         {
-            "tag": "🇪🇸ES | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
             "type": "vmess",
-            "server": "172.233.107.38",
-            "server_port": 15104,
-            "uuid": "729fe7ee-3804-4c7c-bf28-4cf24be43f9c",
+            "server": "104.21.15.212",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -394,6 +396,57 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "glweidf.sbs"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
+            "type": "vmess",
+            "server": "104.16.60.8",
+            "server_port": 8443,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "subhk.osafari599.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linde06.indiavideo.sbs\/linkws",
+                "headers": {
+                    "Host": "subhk.osafari599.workers.dev"
+                }
             }
         },
         {
@@ -499,7 +552,7 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🟢 | vmess | @FreakConfig | 2",
+            "tag": "🇹🇷TR | 🟢 | vmess | @FreakConfig | 3",
             "type": "vmess",
             "server": "213.142.149.116",
             "server_port": 41858,
