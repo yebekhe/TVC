@@ -145,14 +145,15 @@
                 "🚩CF | 🟢 | vmess | @vmess_vless_v2rayng | 24",
                 "🚩CF | 🟢 | vmess | @vmess_vless_v2rayng | 28",
                 "🚩CF | 🟢 | vmess | @vmess_vless_v2rayng | 40",
-                "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 13",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🚩CF | 🟢 | vmess | @yaney_01 | 5",
-                "🚩CF | 🟢 | vmess | @Hope_Net | 0",
-                "🚩CF | 🟢 | vmess | @Hope_Net | 1",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
+                "❔XX | 🟢 | vmess | @Hope_Net | 1",
+                "🚩CF | 🟢 | vmess | @Hope_Net | 2",
+                "🚩CF | 🟢 | vmess | @Hope_Net | 3",
                 "🚩CF | 🟢 | vmess | @v2rayng_config_amin | 0",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🇬🇧GB | 🟢 | vmess | @v2Line | 0",
@@ -214,14 +215,15 @@
                 "🚩CF | 🟢 | vmess | @vmess_vless_v2rayng | 24",
                 "🚩CF | 🟢 | vmess | @vmess_vless_v2rayng | 28",
                 "🚩CF | 🟢 | vmess | @vmess_vless_v2rayng | 40",
-                "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 13",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🚩CF | 🟢 | vmess | @yaney_01 | 5",
-                "🚩CF | 🟢 | vmess | @Hope_Net | 0",
-                "🚩CF | 🟢 | vmess | @Hope_Net | 1",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
+                "❔XX | 🟢 | vmess | @Hope_Net | 1",
+                "🚩CF | 🟢 | vmess | @Hope_Net | 2",
+                "🚩CF | 🟢 | vmess | @Hope_Net | 3",
                 "🚩CF | 🟢 | vmess | @v2rayng_config_amin | 0",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🇬🇧GB | 🟢 | vmess | @v2Line | 0",
@@ -1269,23 +1271,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 13",
-            "type": "vmess",
-            "server": "5.75.202.76",
-            "server_port": 46377,
-            "uuid": "0db30fb2-f972-4096-be43-9c01c2796150",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
             "type": "vmess",
             "server": "45.199.138.217",
@@ -1436,7 +1421,68 @@
             }
         },
         {
-            "tag": "🚩CF | 🟢 | vmess | @Hope_Net | 0",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
+            "type": "vmess",
+            "server": "51.81.223.19",
+            "server_port": 443,
+            "uuid": "c0156451-4efb-45e2-84fc-8d315c4650db",
+            "security": "auto",
+            "alter_id": 32,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "51.81.223.19",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 1",
+            "type": "vmess",
+            "server": "v3.ssrsub.com",
+            "server_port": 18443,
+            "uuid": "f736834f-1fc8-4738-9884-9afe0eb0d818",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "v3.ssrsub.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/api\/v3\/download.getFile",
+                "headers": {
+                    "Host": "v3.ssrsub.com"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @Hope_Net | 2",
             "type": "vmess",
             "server": "104.21.15.212",
             "server_port": 443,
@@ -1470,7 +1516,7 @@
             }
         },
         {
-            "tag": "🚩CF | 🟢 | vmess | @Hope_Net | 1",
+            "tag": "🚩CF | 🟢 | vmess | @Hope_Net | 3",
             "type": "vmess",
             "server": "104.16.60.8",
             "server_port": 8443,
