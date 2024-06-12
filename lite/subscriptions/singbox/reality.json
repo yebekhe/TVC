@@ -108,6 +108,8 @@
                 "URL-TEST",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "❔XX | 🔴 | vless | @customv2ray | 14",
+                "🇸🇬SG | 🟢 | vless | @v2rayNG_Matsuri | 24",
+                "🇫🇮FI | 🟢 | vless | @v2rayNG_Matsuri | 25",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇺🇸US | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -120,6 +122,8 @@
             "outbounds": [
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "❔XX | 🔴 | vless | @customv2ray | 14",
+                "🇸🇬SG | 🟢 | vless | @v2rayNG_Matsuri | 24",
+                "🇫🇮FI | 🟢 | vless | @v2rayNG_Matsuri | 25",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇺🇸US | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -208,6 +212,64 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇸🇬SG | 🟢 | vless | @v2rayNG_Matsuri | 24",
+            "type": "vless",
+            "server": "172.104.163.203",
+            "server_port": 56702,
+            "uuid": "71a162cc-7fad-409d-87fa-5ca9e13474fb",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "addons.mozilla.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8",
+                    "short_id": "792147b8"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🟢 | vless | @v2rayNG_Matsuri | 25",
+            "type": "vless",
+            "server": "135.181.202.101",
+            "server_port": 10559,
+            "uuid": "44b1db28-a819-4914-9c6f-ee7c7599a894",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "JTt7Au4cLeKLnQfD8O-yO19nS5u2CgP3fIO1DHlej1c",
+                    "short_id": "c5f1f156"
+                }
             }
         },
         {
