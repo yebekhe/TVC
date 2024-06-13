@@ -111,12 +111,12 @@
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 19",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 0",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 1",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 5",
                 "🇮🇳IN | 🟢 | vmess | @v2Line | 8",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
-                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 5",
-                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 6"
+                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 4"
             ]
         },
         {
@@ -128,12 +128,12 @@
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 19",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 0",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 1",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 5",
                 "🇮🇳IN | 🟢 | vmess | @v2Line | 8",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
-                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 5",
-                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 6"
+                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -272,7 +272,41 @@
             }
         },
         {
-            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 0",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
+            "type": "vmess",
+            "server": "172.67.170.13",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "glweidf.sbs"
+                }
+            }
+        },
+        {
+            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 1",
             "type": "vmess",
             "server": "jp-full.privateip.net",
             "server_port": 443,
@@ -408,7 +442,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 5",
+            "tag": "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 4",
             "type": "vmess",
             "server": "zula.ir",
             "server_port": 443,
@@ -438,40 +472,6 @@
                 "path": "\/linkws",
                 "headers": {
                     "Host": "jahfkjha.cfd"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 6",
-            "type": "vmess",
-            "server": "188.114.99.183",
-            "server_port": 443,
-            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "linde06.indiavideo.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws",
-                "headers": {
-                    "Host": "linde06.indiavideo.sbs"
                 }
             }
         }
