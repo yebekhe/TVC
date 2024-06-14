@@ -108,12 +108,13 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 8",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 8",
                 "🇸🇪SE | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 5",
                 "🇮🇳IN | 🟢 | vmess | @v2Line | 8",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
@@ -126,12 +127,13 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 8",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 8",
                 "🇸🇪SE | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 5",
                 "🇮🇳IN | 🟢 | vmess | @v2Line | 8",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 9",
@@ -192,7 +194,31 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 8",
+            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "us3e-mmnnfr9dop0.v2freevpn.com",
+            "server_port": 80,
+            "uuid": "2a8a10fb-9ca3-367e-a234-cf09f841be4f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/v118-fccxmxm35",
+                "headers": {
+                    "Host": "us3e-mmnnfr9dop0.v2freevpn.com"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 8",
             "type": "vmess",
             "server": "104.21.44.106",
             "server_port": 443,
@@ -308,6 +334,33 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
+            "type": "vmess",
+            "server": "51.81.223.22",
+            "server_port": 443,
+            "uuid": "c0156451-4efb-45e2-84fc-8d315c4650db",
+            "security": "auto",
+            "alter_id": 32,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "51.81.223.22",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
             "server": "fake.id.workers.dev",
@@ -338,40 +391,6 @@
                 "path": "\/afrhms16v.bestxray.buzz\/linkws",
                 "headers": {
                     "Host": "mysan2.jaquay22.workers.dev"
-                }
-            }
-        },
-        {
-            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 6",
-            "type": "vmess",
-            "server": "jp-full.privateip.net",
-            "server_port": 443,
-            "uuid": "7c8c641f-c970-471b-9785-08817a305b0a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "jp-full.privateip.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/RACEVPN",
-                "headers": {
-                    "Host": "jp-full.privateip.net"
                 }
             }
         },
