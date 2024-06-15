@@ -140,6 +140,7 @@ proxies:
   - {"name":"🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 16","type":"ss","server":"51.77.53.200","port":6679,"password":"TEzjfAYq2IjtuoS","cipher":"aes-256-gcm"}
   - {"name":"🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"185.229.65.157","port":8234,"password":"u6RYZyNId5RmoWTNTum0nz","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"51.68.206.229","port":8080,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @proxy_mtm | 1","type":"ss","server":"45.158.171.138","port":8080,"password":"a8bt9fY0QsLS6eLnXUe0Ym","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -166,6 +167,7 @@ proxy-groups:
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇳🇱NL | 🟢 | ss | @proxy_mtm | 1'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -192,6 +194,7 @@ proxy-groups:
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇳🇱NL | 🟢 | ss | @proxy_mtm | 1'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -217,6 +220,7 @@ proxy-groups:
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇳🇱NL | 🟢 | ss | @proxy_mtm | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
