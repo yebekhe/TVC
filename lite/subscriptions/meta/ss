@@ -120,7 +120,6 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"134.195.196.178","port":811,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"185.229.65.157","port":8234,"password":"u6RYZyNId5RmoWTNTum0nz","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"51.68.206.229","port":8080,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
 proxy-groups:
@@ -129,7 +128,6 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18'
   - name: URL-TEST
@@ -138,7 +136,6 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18'
   - name: FALLBACK
@@ -146,7 +143,6 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18'
 rule-providers:
