@@ -165,6 +165,9 @@ proxies:
   - {"name":"🇳🇱NL | 🟢 | trojan | @VmessProtocol | 9","type":"trojan","server":"51.158.217.161","port":43118,"udp":false,"password":"ypDt8RkT7J","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"tewmk.phooeyunfold.com"}
   - {"name":"🇳🇱NL | 🟢 | trojan | @VmessProtocol | 12","type":"trojan","server":"51.158.217.195","port":43118,"udp":false,"password":"ypDt8RkT7J","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"wnbtg.phooeyunfold.com"}
   - {"name":"🇺🇸US | 🟢 | trojan | @VmessProtocol | 14","type":"trojan","server":"138.199.41.25","port":43118,"udp":false,"password":"ypDt8RkT7J","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"dngn.phooeyunfold.com"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @ConfigsHUB | 13","type":"trojan","server":"usfree1.jiantian.xyz","port":23425,"udp":false,"password":"7cb64c49-2ce5-4fa6-9b79-9c02eb54735c","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"usfree1.jiantian.xyz"}
+  - {"name":"🚩CF | 🔴 | trojan | @ConfigsHUB | 14","type":"trojan","server":"104.18.15.166","port":8443,"udp":false,"password":"auto","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"e9464f45.trauma-2r4.pages.dev"}
+  - {"name":"🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16","type":"trojan","server":"3.11.133.139","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -216,6 +219,9 @@ proxy-groups:
       - '🇳🇱NL | 🟢 | trojan | @VmessProtocol | 9'
       - '🇳🇱NL | 🟢 | trojan | @VmessProtocol | 12'
       - '🇺🇸US | 🟢 | trojan | @VmessProtocol | 14'
+      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 13'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 14'
+      - '🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -267,6 +273,9 @@ proxy-groups:
       - '🇳🇱NL | 🟢 | trojan | @VmessProtocol | 9'
       - '🇳🇱NL | 🟢 | trojan | @VmessProtocol | 12'
       - '🇺🇸US | 🟢 | trojan | @VmessProtocol | 14'
+      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 13'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 14'
+      - '🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -317,6 +326,9 @@ proxy-groups:
       - '🇳🇱NL | 🟢 | trojan | @VmessProtocol | 9'
       - '🇳🇱NL | 🟢 | trojan | @VmessProtocol | 12'
       - '🇺🇸US | 🟢 | trojan | @VmessProtocol | 14'
+      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 13'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 14'
+      - '🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
