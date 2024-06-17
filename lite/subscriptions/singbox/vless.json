@@ -173,8 +173,8 @@
                 "🇺🇸US | 🔴 | vless | @sinabigo | 4",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 22",
                 "🇸🇪SE | 🔴 | vless | @lrnbymaa | 23",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
-                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 19",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 6",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 0",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 3",
@@ -188,8 +188,8 @@
                 "🇺🇸US | 🔴 | vless | @Capital_NET | 45",
                 "🇺🇸US | 🔴 | vless | @Capoit | 16",
                 "🇺🇸US | 🔴 | vless | @Capoit | 17",
-                "🇸🇪SE | 🔴 | vless | @FreakConfig | 2",
                 "🇺🇸US | 🟢 | vless | @FreakConfig | 3",
+                "🇺🇸US | 🟢 | vless | @FreakConfig | 4",
                 "🇸🇪SE | 🔴 | vless | @flyv2ray | 11",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
                 "🇨🇳CN | 🔴 | vless | @mehrosaboran | 1",
@@ -281,8 +281,8 @@
                 "🇺🇸US | 🔴 | vless | @sinabigo | 4",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 22",
                 "🇸🇪SE | 🔴 | vless | @lrnbymaa | 23",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
-                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 19",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 6",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 0",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 3",
@@ -296,8 +296,8 @@
                 "🇺🇸US | 🔴 | vless | @Capital_NET | 45",
                 "🇺🇸US | 🔴 | vless | @Capoit | 16",
                 "🇺🇸US | 🔴 | vless | @Capoit | 17",
-                "🇸🇪SE | 🔴 | vless | @FreakConfig | 2",
                 "🇺🇸US | 🟢 | vless | @FreakConfig | 3",
+                "🇺🇸US | 🟢 | vless | @FreakConfig | 4",
                 "🇸🇪SE | 🔴 | vless | @flyv2ray | 11",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
                 "🇨🇳CN | 🔴 | vless | @mehrosaboran | 1",
@@ -1910,31 +1910,65 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
+            "tag": "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
             "type": "vless",
-            "server": "35.159.153.57",
-            "server_port": 8880,
-            "uuid": "6ee42f60-cd65-4ab8-bb79-991d12ae877f",
+            "server": "104.18.13.229",
+            "server_port": 8443,
+            "uuid": "f3dc958a-1f2c-4d10-b781-b2deeaabecce",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "free1.fylink.tech",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/TELEGRAM-MARAMBASHI\/",
+                "headers": {
+                    "Host": "free1.fylink.tech"
+                }
             }
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 19",
+            "tag": "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "135.181.101.223",
-            "server_port": 8080,
-            "uuid": "b16721a5-b18e-4517-afff-b59c1db7da55",
+            "server": "146.70.169.118",
+            "server_port": 443,
+            "uuid": "76ddbbc0-e7d8-404f-8a2e-761b7226ce65",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "chanel----selinc----selinc----selinc.hutzwrrj.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "chanel----selinc----selinc----selinc.hutzwrrj.workers.dev"
+                }
             }
         },
         {
@@ -2287,27 +2321,6 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @FreakConfig | 2",
-            "type": "vless",
-            "server": "VPNCUSTOMIZE.Elmahstyle.ir",
-            "server_port": 8080,
-            "uuid": "-_VPNCUSTOMIZE_-",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "VPNCUSTOMIZE.Elmahstyle.ir"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🟢 | vless | @FreakConfig | 3",
             "type": "vless",
             "server": "172.64.143.172",
@@ -2335,6 +2348,37 @@
                 "path": "\/",
                 "headers": {
                     "Host": "mmdv2.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vless | @FreakConfig | 4",
+            "type": "vless",
+            "server": "188.114.96.3",
+            "server_port": 443,
+            "uuid": "c064eb24-643c-405f-a222-043d29e151bf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "faRAHDIba.pagES.DEV",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "faRAHDIba.pagES.DEV"
                 }
             }
         },
