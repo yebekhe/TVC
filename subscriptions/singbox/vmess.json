@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🚩CF | 🟢 | vmess | @V2rayCollectorDonate | 0",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 0",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 4",
@@ -136,7 +137,10 @@
                 "🚩CF | 🟢 | vmess | @DailyV2RY | 40",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 47",
                 "🚩CF | 🟢 | vmess | @DailyV2RY | 54",
-                "🚩CF | 🟢 | vmess | @ConfigsHUB | 2",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 13",
+                "🇮🇷IR | 🟢 | vmess | @ConfigsHUB | 17",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 18",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 19",
                 "🚩CF | 🟢 | vmess | @proxystore11 | 10",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
@@ -167,6 +171,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🚩CF | 🟢 | vmess | @V2rayCollectorDonate | 0",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 0",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 4",
@@ -197,7 +202,10 @@
                 "🚩CF | 🟢 | vmess | @DailyV2RY | 40",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 47",
                 "🚩CF | 🟢 | vmess | @DailyV2RY | 54",
-                "🚩CF | 🟢 | vmess | @ConfigsHUB | 2",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 13",
+                "🇮🇷IR | 🟢 | vmess | @ConfigsHUB | 17",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 18",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 19",
                 "🚩CF | 🟢 | vmess | @proxystore11 | 10",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
@@ -242,6 +250,40 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @V2rayCollectorDonate | 0",
+            "type": "vmess",
+            "server": "172.67.71.160",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "obdii.cfd"
+                }
+            }
         },
         {
             "tag": "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
@@ -963,11 +1005,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🟢 | vmess | @ConfigsHUB | 2",
+            "tag": "🚩CF | 🟢 | vmess | @ConfigsHUB | 13",
             "type": "vmess",
-            "server": "104.21.44.106",
+            "server": "188.114.97.79",
             "server_port": 443,
-            "uuid": "93ea486a-bada-42a4-ac38-d088b320fa1e",
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -980,7 +1022,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "xmivideo.cfd",
+                "server_name": "linde06.indiavideo.sbs",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -992,7 +1034,92 @@
                 "type": "ws",
                 "path": "\/linkws",
                 "headers": {
-                    "Host": "xmivideo.cfd"
+                    "Host": "linde06.indiavideo.sbs"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🟢 | vmess | @ConfigsHUB | 17",
+            "type": "vmess",
+            "server": "94.182.150.230",
+            "server_port": 80,
+            "uuid": "2b7ce1d2-0372-4104-aa06-f7d999f26e1d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @ConfigsHUB | 18",
+            "type": "vmess",
+            "server": "104.21.83.108",
+            "server_port": 443,
+            "uuid": "6c168fcc-2231-4f3b-8c1e-f6391692df4a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hms02.fxiaomi.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/link",
+                "headers": {
+                    "Host": "hms02.fxiaomi.sbs"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @ConfigsHUB | 19",
+            "type": "vmess",
+            "server": "172.67.170.13",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "glweidf.sbs"
                 }
             }
         },
