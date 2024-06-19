@@ -113,10 +113,11 @@
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 2",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇺🇸US | 🟢 | vmess | @v2ray_swhil | 11",
-                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 4",
                 "🇺🇸US | 🟢 | vmess | @proxystore11 | 7",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 9",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
@@ -135,10 +136,11 @@
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 2",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇺🇸US | 🟢 | vmess | @v2ray_swhil | 11",
-                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 4",
                 "🇺🇸US | 🟢 | vmess | @proxystore11 | 7",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 9",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
@@ -360,23 +362,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 4",
-            "type": "vmess",
-            "server": "2.58.87.221",
-            "server_port": 46628,
-            "uuid": "f6ba9e5a-711c-496f-be60-ac5464dec2b8",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇺🇸US | 🟢 | vmess | @proxystore11 | 7",
             "type": "vmess",
             "server": "188.114.99.183",
@@ -465,6 +450,64 @@
                 "path": "\/66",
                 "headers": {
                     "Host": "104.26.8.210"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 9",
+            "type": "vmess",
+            "server": "83.142.225.59",
+            "server_port": 30000,
+            "uuid": "5267ca71-97e6-44c8-8fb5-9fe4afe0954e",
+            "security": "auto",
+            "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/path\/292806223002",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
+            "type": "vmess",
+            "server": "104.19.38.62",
+            "server_port": 2086,
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/29eebb60-b27b-4a9d-bba5-947763d9205e-vm",
+                "headers": {
+                    "Host": "104.19.38.62"
                 }
             }
         },
