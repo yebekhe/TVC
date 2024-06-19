@@ -170,12 +170,12 @@
                 "🇺🇸US | 🔴 | vless | @MTConfig | 9",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 6",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 7",
+                "🇮🇷IR | 🔴 | vless | @V2RayTz | 17",
                 "🇸🇪SE | 🔴 | vless | @V2RayTz | 18",
-                "🇸🇪SE | 🔴 | vless | @V2RayTz | 19",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 9",
                 "🇺🇸US | 🔴 | vless | @sinabigo | 4",
                 "🇺🇸US | 🔴 | vless | @sinabigo | 5",
-                "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 18",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
                 "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 8",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 0",
@@ -279,12 +279,12 @@
                 "🇺🇸US | 🔴 | vless | @MTConfig | 9",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 6",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 7",
+                "🇮🇷IR | 🔴 | vless | @V2RayTz | 17",
                 "🇸🇪SE | 🔴 | vless | @V2RayTz | 18",
-                "🇸🇪SE | 🔴 | vless | @V2RayTz | 19",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 9",
                 "🇺🇸US | 🔴 | vless | @sinabigo | 4",
                 "🇺🇸US | 🔴 | vless | @sinabigo | 5",
-                "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 18",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
                 "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 8",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 0",
@@ -1824,6 +1824,37 @@
             }
         },
         {
+            "tag": "🇮🇷IR | 🔴 | vless | @V2RayTz | 17",
+            "type": "vless",
+            "server": "2.189.59.2",
+            "server_port": 443,
+            "uuid": "dafa0b54-901a-4dc2-bc13-82ec7ca04fb7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mci.unlimiteddev-vpn.Com.",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Channel:@UnlimitedDev",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇸🇪SE | 🔴 | vless | @V2RayTz | 18",
             "type": "vless",
             "server": "185.146.173.18",
@@ -1841,27 +1872,6 @@
                 "path": "\/Telegram:@UnlimitedDev-Telegram:@UnlimitedDev?ed=8080",
                 "headers": {
                     "Host": "185.146.173.18"
-                }
-            }
-        },
-        {
-            "tag": "🇸🇪SE | 🔴 | vless | @V2RayTz | 19",
-            "type": "vless",
-            "server": "185.146.173.95",
-            "server_port": 2095,
-            "uuid": "945c13d2-4a94-4f25-ae6b-8c4e1389cc9f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "185.146.173.95"
                 }
             }
         },
@@ -1949,32 +1959,11 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 18",
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
             "type": "vless",
-            "server": "dnsh.lyra-st.ir",
-            "server_port": 2052,
-            "uuid": "f2ad7f50-7f9e-4b46-be48-521a322e3df0",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/@Mehran-v2ray-@LookiVpn?ed=1024",
-                "headers": {
-                    "Host": "dnsh.lyra-st.ir"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
-            "type": "vless",
-            "server": "w3.org",
+            "server": "188.114.96.6",
             "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "uuid": "52b15ac7-8d4d-4250-ba8c-200d52bc4af0",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1984,7 +1973,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "56897854.PaGeS.DEv",
+                "server_name": "DisVpn.us.kg",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1994,9 +1983,40 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/TELEGRAM-MARAMBASHI\/?ed=2560",
+                "path": "\/---------DisVpn---------DisVpn---------DisVpn",
                 "headers": {
-                    "Host": "56897854.PaGeS.DEv"
+                    "Host": "DisVpn.us.kg"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
+            "type": "vless",
+            "server": "188.114.96.3",
+            "server_port": 443,
+            "uuid": "52b15ac7-8d4d-4250-ba8c-200d52bc4af0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "join-v2rey.pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/---------DisVpn---------DisVpn---------DisVpn",
+                "headers": {
+                    "Host": "join-v2rey.pages.dev"
                 }
             }
         },
