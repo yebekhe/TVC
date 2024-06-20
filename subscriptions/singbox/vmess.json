@@ -138,7 +138,7 @@
                 "🚩CF | 🟢 | vmess | @DailyV2RY | 41",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 48",
                 "🚩CF | 🟢 | vmess | @DailyV2RY | 55",
-                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 5",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 11",
                 "🚩CF | 🟢 | vmess | @proxystore11 | 10",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
@@ -149,7 +149,6 @@
                 "🚩CF | 🟢 | vmess | @Hope_Net | 1",
                 "🚩CF | 🟢 | vmess | @Hope_Net | 2",
                 "❔XX | 🟢 | vmess | @Hope_Net | 4",
-                "🚩CF | 🟢 | vmess | @Hope_Net | 8",
                 "🚩CF | 🟢 | vmess | @v2rayng_config_amin | 0",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🚩CF | 🟢 | vmess | @v2Line | 0",
@@ -203,7 +202,7 @@
                 "🚩CF | 🟢 | vmess | @DailyV2RY | 41",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 48",
                 "🚩CF | 🟢 | vmess | @DailyV2RY | 55",
-                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 5",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 11",
                 "🚩CF | 🟢 | vmess | @proxystore11 | 10",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
@@ -214,7 +213,6 @@
                 "🚩CF | 🟢 | vmess | @Hope_Net | 1",
                 "🚩CF | 🟢 | vmess | @Hope_Net | 2",
                 "❔XX | 🟢 | vmess | @Hope_Net | 4",
-                "🚩CF | 🟢 | vmess | @Hope_Net | 8",
                 "🚩CF | 🟢 | vmess | @v2rayng_config_amin | 0",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🚩CF | 🟢 | vmess | @v2Line | 0",
@@ -1039,11 +1037,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 5",
+            "tag": "🚩CF | 🟢 | vmess | @ConfigsHUB | 11",
             "type": "vmess",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "c091fd40-ec78-4f43-b17f-a14155676e92",
+            "server": "188.114.97.6",
+            "server_port": 443,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1054,11 +1052,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "linde06.indiavideo.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": ""
+                    "Host": "linde06.indiavideo.sbs"
                 }
             }
         },
@@ -1369,30 +1377,6 @@
                 "path": "\/speedtest",
                 "headers": {
                     "Host": "Dusseldorf.kotick.site"
-                }
-            }
-        },
-        {
-            "tag": "🚩CF | 🟢 | vmess | @Hope_Net | 8",
-            "type": "vmess",
-            "server": "104.19.50.201",
-            "server_port": 2082,
-            "uuid": "94ddc411-85d7-4850-b545-acf889333997",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/cctv&Telegram🇨🇳 @WangCai2",
-                "headers": {
-                    "Host": "104.19.50.201"
                 }
             }
         },
