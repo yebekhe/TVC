@@ -120,6 +120,7 @@ dns:
 proxies:
   - {"name":"🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"5.42.72.241","port":30482,"password":"2gUQ2cQTPtBGNjbCXKMKeH","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"51.77.53.200","port":6679,"password":"TEzjfAYq2IjtuoS","cipher":"aes-256-gcm"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @proxy_mtm | 1","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +129,7 @@ proxy-groups:
       - FALLBACK
       - '🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇬🇧GB | 🟢 | ss | @proxy_mtm | 1'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -136,6 +138,7 @@ proxy-groups:
     proxies:
       - '🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇬🇧GB | 🟢 | ss | @proxy_mtm | 1'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -143,6 +146,7 @@ proxy-groups:
     proxies:
       - '🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 17'
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇬🇧GB | 🟢 | ss | @proxy_mtm | 1'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
