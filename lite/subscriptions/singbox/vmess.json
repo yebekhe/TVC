@@ -108,6 +108,7 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "🇳🇱NL | 🟢 | vmess | @proxystore11 | 8",
                 "🇺🇸US | 🟢 | vmess | @proxystore11 | 9",
@@ -128,6 +129,7 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "🇳🇱NL | 🟢 | vmess | @proxystore11 | 8",
                 "🇺🇸US | 🟢 | vmess | @proxystore11 | 9",
@@ -193,6 +195,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 19",
+            "type": "vmess",
+            "server": "hms24.ivideos.sbs",
+            "server_port": 443,
+            "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hms24.ivideos.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "hms24.ivideos.sbs"
+                }
             }
         },
         {
