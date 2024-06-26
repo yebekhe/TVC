@@ -109,7 +109,7 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 9",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @Hope_Net | 7",
@@ -128,7 +128,7 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 9",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @Hope_Net | 7",
@@ -228,11 +228,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 9",
+            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 7",
             "type": "vmess",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "81b75444-c7fc-485f-aad0-9489e87b0ff1",
+            "server": "104.26.0.95",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -243,11 +243,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": ""
+                    "Host": "obdii.cfd"
                 }
             }
         },
