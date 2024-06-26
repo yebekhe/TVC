@@ -173,7 +173,8 @@
                 "🇺🇸US | 🔴 | vless | @sinabigo | 3",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 43",
                 "🇸🇪SE | 🔴 | vless | @lrnbymaa | 44",
-                "🇮🇷IR | 🔴 | vless | @ConfigsHUB | 18",
+                "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 17",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
                 "🇲🇾MY | 🔴 | vless | @free1_vpn | 0",
                 "🇸🇪SE | 🔴 | vless | @fnet00 | 8",
                 "🇸🇪SE | 🔴 | vless | @fnet00 | 9",
@@ -279,7 +280,8 @@
                 "🇺🇸US | 🔴 | vless | @sinabigo | 3",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 43",
                 "🇸🇪SE | 🔴 | vless | @lrnbymaa | 44",
-                "🇮🇷IR | 🔴 | vless | @ConfigsHUB | 18",
+                "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 17",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
                 "🇲🇾MY | 🔴 | vless | @free1_vpn | 0",
                 "🇸🇪SE | 🔴 | vless | @fnet00 | 8",
                 "🇸🇪SE | 🔴 | vless | @fnet00 | 9",
@@ -1906,17 +1908,55 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @ConfigsHUB | 18",
+            "tag": "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "94.101.177.98",
-            "server_port": 8443,
-            "uuid": "15ad9c8c-16f3-472a-a5fb-3e48682c058b",
+            "server": "185.146.173.37",
+            "server_port": 2095,
+            "uuid": "9cf7b6fe-3011-4c2e-8eee-7a5db54672bc",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "185.146.173.37"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "joinmahdiserver.rmgqthp.workers.dev",
+            "server_port": 443,
+            "uuid": "d7602ecf-954c-4ac6-9477-46e080bbae1f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "joinmahdiserver.rmgqthp.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "joinmahdiserver.rmgqthp.workers.dev"
+                }
             }
         },
         {
