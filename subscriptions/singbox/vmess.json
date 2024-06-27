@@ -130,6 +130,8 @@
                 "🇮🇷IR | 🟢 | vmess | @ShadowProxy66 | 4",
                 "🇮🇷IR | 🟢 | vmess | @vless_vmess | 5",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 100",
+                "🇵🇭PH | 🟢 | vmess | @ConfigsHUB | 3",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 14",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -188,6 +190,8 @@
                 "🇮🇷IR | 🟢 | vmess | @ShadowProxy66 | 4",
                 "🇮🇷IR | 🟢 | vmess | @vless_vmess | 5",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 100",
+                "🇵🇭PH | 🟢 | vmess | @ConfigsHUB | 3",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 14",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -760,6 +764,64 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇵🇭PH | 🟢 | vmess | @ConfigsHUB | 3",
+            "type": "vmess",
+            "server": "38.54.80.63",
+            "server_port": 44428,
+            "uuid": "388de77b-9709-4e75-b791-5702867a1202",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/arki",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @ConfigsHUB | 14",
+            "type": "vmess",
+            "server": "104.26.0.95",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "obdii.cfd"
+                }
             }
         },
         {
