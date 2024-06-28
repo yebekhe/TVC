@@ -112,6 +112,7 @@
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇰🇷KR | 🔴 | vless | @Watashi_VPN | 0",
                 "❔XX | 🟢 | vless | @prrofile_purple | 160",
+                "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 18",
                 "🇸🇪SE | 🔴 | vless | @Outlinev2rayNG | 0",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 1",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
@@ -169,6 +170,7 @@
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇰🇷KR | 🔴 | vless | @Watashi_VPN | 0",
                 "❔XX | 🟢 | vless | @prrofile_purple | 160",
+                "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 18",
                 "🇸🇪SE | 🔴 | vless | @Outlinev2rayNG | 0",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 1",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
@@ -414,6 +416,42 @@
                     "public_key": "dNe4OxcGciB37rwo1LC93YxvhJ8rsFrlzHevw474j1c",
                     "short_id": "2b56e6ff"
                 }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 18",
+            "type": "vless",
+            "server": "212.113.102.146",
+            "server_port": 443,
+            "uuid": "0c088282-4099-4f54-a985-72a8f8eeb7e3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "discord.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Z14NuyQwLw0znnRR3eu3xd7yGDwwaBc8SGibyqQUkkM",
+                    "short_id": "aa1a1932"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@set_v2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
