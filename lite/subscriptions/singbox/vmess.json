@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
-                "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
+                "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
+                "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 4",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -117,8 +118,8 @@
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
+                "🇺🇸US | 🟢 | vmess | @iP_CF | 1",
                 "🇺🇸US | 🟢 | vmess | @iP_CF | 2",
-                "🇺🇸US | 🟢 | vmess | @iP_CF | 3",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 4",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 5"
             ]
@@ -128,7 +129,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
-                "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
+                "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
+                "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 4",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -138,8 +140,8 @@
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 8",
+                "🇺🇸US | 🟢 | vmess | @iP_CF | 1",
                 "🇺🇸US | 🟢 | vmess | @iP_CF | 2",
-                "🇺🇸US | 🟢 | vmess | @iP_CF | 3",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 4",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 5"
             ],
@@ -181,7 +183,31 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
+            "tag": "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
+            "type": "vmess",
+            "server": "cfcdn1.sanfencdn9.com",
+            "server_port": 2052,
+            "uuid": "bb1af7d3-9526-44f1-9155-788773cc629e",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/video\/GQ2qE5Us9g",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
             "type": "vmess",
             "server": "183.232.199.28",
             "server_port": 15605,
@@ -474,9 +500,9 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @iP_CF | 2",
+            "tag": "🇺🇸US | 🟢 | vmess | @iP_CF | 1",
             "type": "vmess",
-            "server": "104.20.103.155",
+            "server": "104.20.247.40",
             "server_port": 80,
             "uuid": "078c86a6-8dde-4dcc-a08e-378990a8b3b2",
             "security": "auto",
@@ -498,11 +524,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @iP_CF | 3",
+            "tag": "🇺🇸US | 🟢 | vmess | @iP_CF | 2",
             "type": "vmess",
-            "server": "188.114.97.3",
-            "server_port": 443,
-            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
+            "server": "104.20.103.155",
+            "server_port": 80,
+            "uuid": "078c86a6-8dde-4dcc-a08e-378990a8b3b2",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -513,21 +539,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "afrhms16v.bestxray.buzz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/linkws",
+                "path": "\/RACEVPN",
                 "headers": {
-                    "Host": "afrhms16v.bestxray.buzz"
+                    "Host": ""
                 }
             }
         },
