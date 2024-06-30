@@ -183,7 +183,8 @@
                 "🇸🇪SE | 🔴 | vless | @lrnbymaa | 41",
                 "🇫🇮FI | 🟢 | ss | @OutlineVpnOfficial | 16",
                 "🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 17",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 12",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 15",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 16",
                 "❔XX | 🔴 | vless | @proxystore11 | 11",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 12",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -312,7 +313,8 @@
                 "🇸🇪SE | 🔴 | vless | @lrnbymaa | 41",
                 "🇫🇮FI | 🟢 | ss | @OutlineVpnOfficial | 16",
                 "🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 17",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 12",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 15",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 16",
                 "❔XX | 🔴 | vless | @proxystore11 | 11",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 12",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -2121,33 +2123,43 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 12",
-            "type": "vless",
-            "server": "104.21.3.182",
-            "server_port": 443,
-            "uuid": "f8f5dce2-e66b-45bd-957e-53c1ecdda37a",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 15",
+            "type": "vmess",
+            "server": "50.114.243.61",
+            "server_port": 43834,
+            "uuid": "b246e34d-bbd1-4016-8f74-ea461c37e411",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 16",
+            "type": "vmess",
+            "server": "172.67.130.140",
+            "server_port": 2082,
+            "uuid": "112ac36f-3f53-4e26-8371-d25c028e1b9a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "jAVIdshAh.PageS.deV",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram-------V2rayi_net_-_-_-_-Telegram-------V2rayi_net\/?ed=2560",
+                "path": "\/",
                 "headers": {
-                    "Host": "jAVIdshAh.PageS.deV"
+                    "Host": ""
                 }
             }
         },
