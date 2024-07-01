@@ -118,35 +118,35 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 16","type":"ss","server":"54.36.174.181","port":8009,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
-  - {"name":"🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"45.158.171.10","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇦🇪AE | 🟢 | ss | @proxy_mtm | 12","type":"ss","server":"series-a2-mec.varzesh360.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 16","type":"ss","server":"94.228.165.234","port":15214,"password":"DmMQUmI7pgQDnrWqLXC00L","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"54.36.174.181","port":8009,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
+  - {"name":"🇦🇪AE | 🟢 | ss | @proxy_mtm | 2","type":"ss","server":"series-a2-mec.varzesh360.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 16'
-      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
-      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 12'
+      - '🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 16'
+      - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 2'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 16'
-      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
-      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 12'
+      - '🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 16'
+      - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 2'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 16'
-      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
-      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 12'
+      - '🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 16'
+      - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 2'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
