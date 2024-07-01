@@ -116,10 +116,12 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 5",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 6",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 7",
-                "🇺🇸US | 🟢 | vmess | @mftizi | 13",
+                "🇨🇦CA | 🟢 | vmess | @mftizi | 13",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 14",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 19",
+                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 1",
+                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 4",
                 "🇭🇰HK | 🟢 | vmess | @oneclickvpnkeys | 2",
                 "🚩CF | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6",
@@ -159,7 +161,7 @@
                 "🇹🇷TR | 🟢 | vmess | @v2Line | 4",
                 "🇯🇵JP | 🟢 | vmess | @v2Line | 6",
                 "🇺🇸US | 🟢 | vmess | @SINABIGO | 0",
-                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 0",
+                "🇨🇦CA | 🟢 | vmess | @ROMAX_VPN | 0",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 2",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 3",
                 "🚩CF | 🟢 | vmess | @ROMAX_VPN | 4"
@@ -179,10 +181,12 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 5",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 6",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 7",
-                "🇺🇸US | 🟢 | vmess | @mftizi | 13",
+                "🇨🇦CA | 🟢 | vmess | @mftizi | 13",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 14",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 19",
+                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 1",
+                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 4",
                 "🇭🇰HK | 🟢 | vmess | @oneclickvpnkeys | 2",
                 "🚩CF | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6",
@@ -222,7 +226,7 @@
                 "🇹🇷TR | 🟢 | vmess | @v2Line | 4",
                 "🇯🇵JP | 🟢 | vmess | @v2Line | 6",
                 "🇺🇸US | 🟢 | vmess | @SINABIGO | 0",
-                "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 0",
+                "🇨🇦CA | 🟢 | vmess | @ROMAX_VPN | 0",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 2",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 3",
                 "🚩CF | 🟢 | vmess | @ROMAX_VPN | 4"
@@ -463,7 +467,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @mftizi | 13",
+            "tag": "🇨🇦CA | 🟢 | vmess | @mftizi | 13",
             "type": "vmess",
             "server": "cfd.ipa.monster",
             "server_port": 8080,
@@ -548,6 +552,64 @@
                 "path": "\/video\/GQ2qE5Us9g",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 1",
+            "type": "vmess",
+            "server": "172.67.71.160",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "obdii.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 4",
+            "type": "vmess",
+            "server": "172.67.185.62",
+            "server_port": 8080,
+            "uuid": "b551aa22-22af-11ee-b8d8-f23c932eb68d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "172.67.185.62"
                 }
             }
         },
@@ -1588,7 +1650,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 0",
+            "tag": "🇨🇦CA | 🟢 | vmess | @ROMAX_VPN | 0",
             "type": "vmess",
             "server": "nodejs.org",
             "server_port": 443,
