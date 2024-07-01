@@ -106,8 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🔴 | vless | @V2pedia | 1",
-                "❔XX | 🔴 | vless | @V2pedia | 5",
+                "❔XX | 🔴 | vless | @V2pedia | 2",
+                "❔XX | 🔴 | vless | @V2pedia | 6",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
@@ -118,6 +118,7 @@
                 "🇩🇪DE | 🔴 | vless | @V2RayTz | 7",
                 "🇸🇪SE | 🔴 | vless | @VmessProtocol | 3",
                 "🇳🇴NO | 🟢 | vless | @VmessProtocol | 4",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -165,8 +166,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🔴 | vless | @V2pedia | 1",
-                "❔XX | 🔴 | vless | @V2pedia | 5",
+                "❔XX | 🔴 | vless | @V2pedia | 2",
+                "❔XX | 🔴 | vless | @V2pedia | 6",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
@@ -177,6 +178,7 @@
                 "🇩🇪DE | 🔴 | vless | @V2RayTz | 7",
                 "🇸🇪SE | 🔴 | vless | @VmessProtocol | 3",
                 "🇳🇴NO | 🟢 | vless | @VmessProtocol | 4",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -240,7 +242,7 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 1",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 2",
             "type": "vless",
             "server": "[2a0d:5940:97:3::]",
             "server_port": 25365,
@@ -276,7 +278,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 5",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 6",
             "type": "vless",
             "server": "[2a0d:5940:97:3::]",
             "server_port": 25365,
@@ -620,6 +622,42 @@
                     "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "short_id": ""
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "162.55.209.252",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "s101.divarcdn.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "R9-WcDz73E1EgxYvB5_ZNi-zsCY2T8uPor54k6dBeBU",
+                    "short_id": "c6450785"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
