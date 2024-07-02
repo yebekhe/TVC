@@ -15,10 +15,12 @@ DIRECT = direct
 🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 16 = trojan, 108.128.13.131, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇸🇪SE | 🟢 | trojan | @DirectVPN | 14 = trojan, 13.49.128.93, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇸🇪SE | 🟢 | trojan | @DirectVPN | 15 = trojan, 16.16.153.97, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, hidd2.afsharidempire.uk, 443, password = 19c80ce9-0935-41b9-b077-277621316a87, udp-delay = true, skip-cert-verify = false, sni = hidd2.afsharidempire.uk, ws = false
+🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 5 = trojan, hidd2.sassanidempire.com, 443, password = 19c80ce9-0935-41b9-b077-277621316a87, udp-delay = true, skip-cert-verify = false, sni = hidd2.sassanidempire.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 15,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 16,🇸🇪SE | 🟢 | trojan | @DirectVPN | 14,🇸🇪SE | 🟢 | trojan | @DirectVPN | 15
-URL-TEST = url-test,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 15,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 16,🇸🇪SE | 🟢 | trojan | @DirectVPN | 14,🇸🇪SE | 🟢 | trojan | @DirectVPN | 15
-FALLBACK = fallback,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 15,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 16,🇸🇪SE | 🟢 | trojan | @DirectVPN | 14,🇸🇪SE | 🟢 | trojan | @DirectVPN | 15
+MANUAL = select,URL-TEST,FALLBACK,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 15,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 16,🇸🇪SE | 🟢 | trojan | @DirectVPN | 14,🇸🇪SE | 🟢 | trojan | @DirectVPN | 15,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 4,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 5
+URL-TEST = url-test,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 15,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 16,🇸🇪SE | 🟢 | trojan | @DirectVPN | 14,🇸🇪SE | 🟢 | trojan | @DirectVPN | 15,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 4,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 5
+FALLBACK = fallback,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 15,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 16,🇸🇪SE | 🟢 | trojan | @DirectVPN | 14,🇸🇪SE | 🟢 | trojan | @DirectVPN | 15,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 4,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
