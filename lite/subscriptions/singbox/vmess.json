@@ -115,8 +115,8 @@
                 "❔XX | 🟢 | vmess | @Hope_Net | 7",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
+                "🇺🇸US | 🟢 | vmess | @v2Line | 5",
                 "🇯🇵JP | 🟢 | vmess | @v2Line | 6",
-                "🇬🇧GB | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @SINABIGO | 0",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 4",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 5"
@@ -135,8 +135,8 @@
                 "❔XX | 🟢 | vmess | @Hope_Net | 7",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
+                "🇺🇸US | 🟢 | vmess | @v2Line | 5",
                 "🇯🇵JP | 🟢 | vmess | @v2Line | 6",
-                "🇬🇧GB | 🟢 | vmess | @v2Line | 7",
                 "🇺🇸US | 🟢 | vmess | @SINABIGO | 0",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 4",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 5"
@@ -394,6 +394,40 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | vmess | @v2Line | 5",
+            "type": "vmess",
+            "server": "104.21.83.108",
+            "server_port": 443,
+            "uuid": "6c168fcc-2231-4f3b-8c1e-f6391692df4a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hms02.fxiaomi.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/link",
+                "headers": {
+                    "Host": "hms02.fxiaomi.sbs"
+                }
+            }
+        },
+        {
             "tag": "🇯🇵JP | 🟢 | vmess | @v2Line | 6",
             "type": "vmess",
             "server": "jp-full.privateip.net",
@@ -422,30 +456,6 @@
             "transport": {
                 "type": "ws",
                 "path": "\/RACEVPN",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | vmess | @v2Line | 7",
-            "type": "vmess",
-            "server": "217.160.45.31",
-            "server_port": 8880,
-            "uuid": "4e186678-fcca-4325-e4bc-b2916bdf6708",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
                 "headers": {
                     "Host": ""
                 }
