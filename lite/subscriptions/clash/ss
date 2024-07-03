@@ -119,8 +119,8 @@ dns:
 
 proxies:
   - {"name":"🇦🇪AE | 🟢 | ss | @VmessProtocol | 8","type":"ss","server":"series-a2-mec.varzesh360.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇩🇰DK | 🟢 | ss | @OutlineVpnOfficial | 16","type":"ss","server":"95.164.10.184","port":10430,"password":"61TfjZsloIEuanRSAeBIjj","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"23.158.56.196","port":8882,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
+  - {"name":"🇪🇸ES | 🟢 | ss | @OutlineVpnOfficial | 16","type":"ss","server":"194.87.45.189","port":40076,"password":"ECjp87TIkUiJ5AhRZglZ9E","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇩🇰DK | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"95.164.10.184","port":10430,"password":"61TfjZsloIEuanRSAeBIjj","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,8 +128,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇦🇪AE | 🟢 | ss | @VmessProtocol | 8'
-      - '🇩🇰DK | 🟢 | ss | @OutlineVpnOfficial | 16'
-      - '🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇪🇸ES | 🟢 | ss | @OutlineVpnOfficial | 16'
+      - '🇩🇰DK | 🟢 | ss | @OutlineVpnOfficial | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -137,16 +137,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇦🇪AE | 🟢 | ss | @VmessProtocol | 8'
-      - '🇩🇰DK | 🟢 | ss | @OutlineVpnOfficial | 16'
-      - '🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇪🇸ES | 🟢 | ss | @OutlineVpnOfficial | 16'
+      - '🇩🇰DK | 🟢 | ss | @OutlineVpnOfficial | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇦🇪AE | 🟢 | ss | @VmessProtocol | 8'
-      - '🇩🇰DK | 🟢 | ss | @OutlineVpnOfficial | 16'
-      - '🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇪🇸ES | 🟢 | ss | @OutlineVpnOfficial | 16'
+      - '🇩🇰DK | 🟢 | ss | @OutlineVpnOfficial | 17'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
