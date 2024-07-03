@@ -140,6 +140,7 @@
                 "❔XX | 🟢 | vmess | @DailyV2RY | 55",
                 "🇺🇸US | 🟢 | vmess | @DailyV2RY | 61",
                 "🇺🇸US | 🟢 | vmess | @DailyV2RY | 79",
+                "🇮🇷IR | 🟢 | vmess | @ConfigsHUB | 5",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -207,6 +208,7 @@
                 "❔XX | 🟢 | vmess | @DailyV2RY | 55",
                 "🇺🇸US | 🟢 | vmess | @DailyV2RY | 61",
                 "🇺🇸US | 🟢 | vmess | @DailyV2RY | 79",
+                "🇮🇷IR | 🟢 | vmess | @ConfigsHUB | 5",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -1041,6 +1043,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🟢 | vmess | @ConfigsHUB | 5",
+            "type": "vmess",
+            "server": "2.189.59.2",
+            "server_port": 443,
+            "uuid": "62aa5f80-0328-4004-a375-7f5a59df4022",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram\/XV2ray",
+                "headers": {
+                    "Host": "pages.dev"
+                }
             }
         },
         {
