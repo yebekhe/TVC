@@ -108,6 +108,9 @@
                 "URL-TEST",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇰🇷KR | 🔴 | vless | @Watashi_VPN | 0",
+                "🇩🇪DE | 🔴 | vless | @V2RayTz | 19",
+                "🇳🇴NO | 🔴 | vless | @ConfigsHUB | 18",
+                "🇷🇺RU | 🔴 | vless | @ConfigsHUB | 19",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇺🇸US | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -120,6 +123,9 @@
             "outbounds": [
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇰🇷KR | 🔴 | vless | @Watashi_VPN | 0",
+                "🇩🇪DE | 🔴 | vless | @V2RayTz | 19",
+                "🇳🇴NO | 🔴 | vless | @ConfigsHUB | 18",
+                "🇷🇺RU | 🔴 | vless | @ConfigsHUB | 19",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇺🇸US | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -200,6 +206,100 @@
                     "enabled": true,
                     "public_key": "fGc5_76xeIvGaobieJalJow4MRsVX7LJsand8O2ZlU4",
                     "short_id": "5c53b7e0"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @V2RayTz | 19",
+            "type": "vless",
+            "server": "128.140.103.6",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_Cqsa8jf_2YBoWdxAViZxrAYCHWv-upptFNJFUro7D4",
+                    "short_id": "21de9eac"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇳🇴NO | 🔴 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "185.125.171.13",
+            "server_port": 443,
+            "uuid": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "partner.g2.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇷🇺RU | 🔴 | vless | @ConfigsHUB | 19",
+            "type": "vless",
+            "server": "45.67.32.147",
+            "server_port": 15595,
+            "uuid": "e2b52ca2-8a86-4d3f-b95e-ff1743e99ab7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "qS7RgmrDJXhMiqsMBTmmQCRpDMgqfNRm7WJcRdOq7mI",
+                    "short_id": "f04c5e3b"
                 }
             }
         },
