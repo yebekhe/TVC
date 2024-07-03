@@ -106,8 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🔴 | vless | @V2pedia | 1",
-                "❔XX | 🔴 | vless | @V2pedia | 6",
+                "❔XX | 🔴 | vless | @V2pedia | 0",
+                "❔XX | 🔴 | vless | @V2pedia | 5",
+                "❔XX | 🔴 | vless | @V2pedia | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
@@ -117,7 +118,6 @@
                 "🇩🇪DE | 🔴 | vless | @V2RayTz | 6",
                 "🇸🇪SE | 🔴 | vless | @VmessProtocol | 5",
                 "🇳🇴NO | 🟢 | vless | @VmessProtocol | 6",
-                "🇫🇮FI | 🟢 | vless | @ConfigsHUB | 18",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -166,8 +166,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🔴 | vless | @V2pedia | 1",
-                "❔XX | 🔴 | vless | @V2pedia | 6",
+                "❔XX | 🔴 | vless | @V2pedia | 0",
+                "❔XX | 🔴 | vless | @V2pedia | 5",
+                "❔XX | 🔴 | vless | @V2pedia | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
@@ -177,7 +178,6 @@
                 "🇩🇪DE | 🔴 | vless | @V2RayTz | 6",
                 "🇸🇪SE | 🔴 | vless | @VmessProtocol | 5",
                 "🇳🇴NO | 🟢 | vless | @VmessProtocol | 6",
-                "🇫🇮FI | 🟢 | vless | @ConfigsHUB | 18",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
                 "🇩🇪DE | 🔴 | vless | @Capital_NET | 9",
@@ -242,7 +242,7 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 1",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 0",
             "type": "vless",
             "server": "[2a0d:5940:48:11::]",
             "server_port": 25365,
@@ -278,7 +278,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 6",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 5",
             "type": "vless",
             "server": "[2a0d:5940:97:3::]",
             "server_port": 25365,
@@ -303,6 +303,42 @@
                     "enabled": true,
                     "public_key": "eL9g0pO8fpS5L317XTbM07yHeIj1fzueEndBl1ZG3GA",
                     "short_id": "bc797289"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 9",
+            "type": "vless",
+            "server": "[2a0d:5940:97:3::]",
+            "server_port": 25365,
+            "uuid": "join--ZEDMODEON",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "gZy1RsjBobDUgQzbqAFeULC6ejBwbKyqvSGW6gDdtg8",
+                    "short_id": "2f624feb"
                 }
             },
             "transport": {
@@ -586,42 +622,6 @@
                     "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "short_id": ""
                 }
-            }
-        },
-        {
-            "tag": "🇫🇮FI | 🟢 | vless | @ConfigsHUB | 18",
-            "type": "vless",
-            "server": "realgod.gamebestir.ir",
-            "server_port": 2093,
-            "uuid": "953a7b6e-d5bb-472c-843b-4c73514e1b15",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "7kjyM2dPWAj_zy6VnB88fevwjT4m3XRna6H2rfSEdH0",
-                    "short_id": "d710e2b9"
-                }
-            },
-            "transport": {
-                "type": "http",
-                "host": [
-                    "stackoverflow.com"
-                ],
-                "path": "\/"
             }
         },
         {
