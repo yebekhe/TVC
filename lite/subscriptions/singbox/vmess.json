@@ -109,10 +109,10 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 4",
-                "🇨🇦CA | 🟢 | vmess | @customv2ray | 17",
-                "🇺🇸US | 🟢 | vmess | @DailyV2RY | 84",
+                "🇺🇸US | 🟢 | vmess | @customv2ray | 17",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 4",
                 "❔XX | 🟢 | vmess | @Hope_Net | 5",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🇳🇱NL | 🟢 | vmess | @v2Line | 4",
@@ -131,10 +131,10 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 4",
-                "🇨🇦CA | 🟢 | vmess | @customv2ray | 17",
-                "🇺🇸US | 🟢 | vmess | @DailyV2RY | 84",
+                "🇺🇸US | 🟢 | vmess | @customv2ray | 17",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 4",
                 "❔XX | 🟢 | vmess | @Hope_Net | 5",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🇳🇱NL | 🟢 | vmess | @v2Line | 4",
@@ -217,7 +217,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @customv2ray | 17",
+            "tag": "🇺🇸US | 🟢 | vmess | @customv2ray | 17",
             "type": "vmess",
             "server": "104.16.219.108",
             "server_port": 80,
@@ -238,23 +238,6 @@
                 "headers": {
                     "Host": ""
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @DailyV2RY | 84",
-            "type": "vmess",
-            "server": "216.128.136.23",
-            "server_port": 8881,
-            "uuid": "db5afae4-ac23-41a6-8378-f307a9a47436",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -312,6 +295,40 @@
                 "path": "\/66",
                 "headers": {
                     "Host": "104.26.8.210"
+                }
+            }
+        },
+        {
+            "tag": "🇸🇬SG | 🟢 | vmess | @Hope_Net | 4",
+            "type": "vmess",
+            "server": "sg-full.privateip.net",
+            "server_port": 443,
+            "uuid": "ecb90d6e-1bbf-42ec-a742-822fad6936da",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sg-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/RACEVPN",
+                "headers": {
+                    "Host": "sg-full.privateip.net"
                 }
             }
         },
