@@ -110,6 +110,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇺🇸US | 🟢 | vmess | @customv2ray | 17",
+                "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 6",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 18",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇸🇬SG | 🟢 | vmess | @Hope_Net | 4",
@@ -131,6 +133,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇺🇸US | 🟢 | vmess | @customv2ray | 17",
+                "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 6",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 18",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇸🇬SG | 🟢 | vmess | @Hope_Net | 4",
@@ -240,6 +244,64 @@
             "transport": {
                 "type": "ws",
                 "path": "\/Telegram\/XV2ray",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 6",
+            "type": "vmess",
+            "server": "172.67.175.56",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "obdii.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 18",
+            "type": "vmess",
+            "server": "188.114.97.3",
+            "server_port": 80,
+            "uuid": "b79a6959-6feb-43ba-b3c7-f1afae9ea32c",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vmess",
                 "headers": {
                     "Host": ""
                 }

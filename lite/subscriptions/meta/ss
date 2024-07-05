@@ -122,7 +122,6 @@ dns:
 proxies:
   - {"name":"🇮🇹IT | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"147.45.51.15","port":1080,"password":"3pURuTUf-lFgg5qWg8euFA","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇮🇪IE | 🟢 | ss | @OutlineVpnOfficial | 19","type":"ss","server":"52.169.37.198","port":5351,"password":"CXmScWyHfrz8vfwAvd7dJ7","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @iP_CF | 10","type":"ss","server":"205.134.180.139","port":443,"password":"lWaGPVFjmnag","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,7 +130,6 @@ proxy-groups:
       - FALLBACK
       - '🇮🇹IT | 🟢 | ss | @OutlineVpnOfficial | 18'
       - '🇮🇪IE | 🟢 | ss | @OutlineVpnOfficial | 19'
-      - '🇺🇸US | 🟢 | ss | @iP_CF | 10'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -140,7 +138,6 @@ proxy-groups:
     proxies:
       - '🇮🇹IT | 🟢 | ss | @OutlineVpnOfficial | 18'
       - '🇮🇪IE | 🟢 | ss | @OutlineVpnOfficial | 19'
-      - '🇺🇸US | 🟢 | ss | @iP_CF | 10'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -148,7 +145,6 @@ proxy-groups:
     proxies:
       - '🇮🇹IT | 🟢 | ss | @OutlineVpnOfficial | 18'
       - '🇮🇪IE | 🟢 | ss | @OutlineVpnOfficial | 19'
-      - '🇺🇸US | 🟢 | ss | @iP_CF | 10'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
