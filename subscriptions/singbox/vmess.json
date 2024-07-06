@@ -109,7 +109,7 @@
                 "🚩CF | 🟢 | vmess | @V2rayCollectorDonate | 2",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 0",
-                "🇺🇸US | 🟢 | vmess | @mftizi | 1",
+                "🇨🇷CR | 🟢 | vmess | @mftizi | 1",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 2",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 4",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 5",
@@ -134,6 +134,7 @@
                 "❔XX | 🟢 | vmess | @DailyV2RY | 58",
                 "🇺🇸US | 🟢 | vmess | @DailyV2RY | 64",
                 "🇺🇸US | 🟢 | vmess | @DailyV2RY | 81",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 8",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -146,7 +147,6 @@
                 "🚩CF | 🟢 | vmess | @v2rayng_config_amin | 0",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🚩CF | 🟢 | vmess | @v2Line | 1",
-                "🇩🇪DE | 🟢 | vmess | @v2Line | 3",
                 "🇸🇪SE | 🟢 | vmess | @FreakConfig | 1",
                 "🇺🇸US | 🟢 | vmess | @kingofilter | 1",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 0",
@@ -162,7 +162,7 @@
                 "🚩CF | 🟢 | vmess | @V2rayCollectorDonate | 2",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 0",
-                "🇺🇸US | 🟢 | vmess | @mftizi | 1",
+                "🇨🇷CR | 🟢 | vmess | @mftizi | 1",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 2",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 4",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 5",
@@ -187,6 +187,7 @@
                 "❔XX | 🟢 | vmess | @DailyV2RY | 58",
                 "🇺🇸US | 🟢 | vmess | @DailyV2RY | 64",
                 "🇺🇸US | 🟢 | vmess | @DailyV2RY | 81",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 8",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -199,7 +200,6 @@
                 "🚩CF | 🟢 | vmess | @v2rayng_config_amin | 0",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
                 "🚩CF | 🟢 | vmess | @v2Line | 1",
-                "🇩🇪DE | 🟢 | vmess | @v2Line | 3",
                 "🇸🇪SE | 🟢 | vmess | @FreakConfig | 1",
                 "🇺🇸US | 🟢 | vmess | @kingofilter | 1",
                 "🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 0",
@@ -296,7 +296,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @mftizi | 1",
+            "tag": "🇨🇷CR | 🟢 | vmess | @mftizi | 1",
             "type": "vmess",
             "server": "cfcdn1.sanfencdn9.com",
             "server_port": 2052,
@@ -859,6 +859,30 @@
             }
         },
         {
+            "tag": "🚩CF | 🟢 | vmess | @ConfigsHUB | 8",
+            "type": "vmess",
+            "server": "104.25.228.174",
+            "server_port": 80,
+            "uuid": "5ea4a644-07e9-4ad0-860d-50bd9b6e7f94",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vmess",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
             "tag": "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
             "type": "vmess",
             "server": "45.199.138.217",
@@ -1216,30 +1240,6 @@
                 "path": "\/linkws",
                 "headers": {
                     "Host": "obdii.cfd"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vmess | @v2Line | 3",
-            "type": "vmess",
-            "server": "217.160.45.31",
-            "server_port": 8880,
-            "uuid": "4e186678-fcca-4325-e4bc-b2916bdf6708",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
                 }
             }
         },
