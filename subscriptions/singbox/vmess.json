@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🚩CF | 🟢 | vmess | @V2rayCollectorDonate | 2",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
-                "🇨🇷CR | 🟢 | vmess | @mftizi | 0",
+                "🇺🇸US | 🟢 | vmess | @mftizi | 0",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 1",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 3",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 4",
@@ -131,7 +131,9 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 3",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 7",
                 "🚩CF | 🟢 | vmess | @v2ray1_ng | 9",
-                "❔XX | 🟢 | vmess | @DailyV2RY | 63",
+                "❔XX | 🟢 | vmess | @DailyV2RY | 69",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 1",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 5",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -162,7 +164,7 @@
             "outbounds": [
                 "🚩CF | 🟢 | vmess | @V2rayCollectorDonate | 2",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
-                "🇨🇷CR | 🟢 | vmess | @mftizi | 0",
+                "🇺🇸US | 🟢 | vmess | @mftizi | 0",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 1",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 3",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 4",
@@ -185,7 +187,9 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 3",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 7",
                 "🚩CF | 🟢 | vmess | @v2ray1_ng | 9",
-                "❔XX | 🟢 | vmess | @DailyV2RY | 63",
+                "❔XX | 🟢 | vmess | @DailyV2RY | 69",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 1",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 5",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -281,7 +285,7 @@
             }
         },
         {
-            "tag": "🇨🇷CR | 🟢 | vmess | @mftizi | 0",
+            "tag": "🇺🇸US | 🟢 | vmess | @mftizi | 0",
             "type": "vmess",
             "server": "cfcdn1.sanfencdn9.com",
             "server_port": 2052,
@@ -810,7 +814,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @DailyV2RY | 63",
+            "tag": "❔XX | 🟢 | vmess | @DailyV2RY | 69",
             "type": "vmess",
             "server": null,
             "server_port": 0,
@@ -824,6 +828,74 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 1",
+            "type": "vmess",
+            "server": "zula.ir",
+            "server_port": 443,
+            "uuid": "950db6aa-4926-4616-816e-ec0312dcb87b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "jahfkjha.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "jahfkjha.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @ConfigsHUB | 5",
+            "type": "vmess",
+            "server": "104.19.48.17",
+            "server_port": 8443,
+            "uuid": "39135a39-e6ca-43df-a360-d859eea58d86",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hk01.linkitnow.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "hk01.linkitnow.net"
+                }
             }
         },
         {
