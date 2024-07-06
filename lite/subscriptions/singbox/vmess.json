@@ -109,6 +109,7 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇫🇷FR | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇺🇸US | 🟢 | vmess | @customv2ray | 17",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -129,6 +130,7 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇫🇷FR | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇺🇸US | 🟢 | vmess | @customv2ray | 17",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -217,6 +219,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "linde06.indiavideo.sbs",
+            "server_port": 443,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "linde06.indiavideo.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "linde06.indiavideo.sbs"
+                }
             }
         },
         {
