@@ -133,6 +133,7 @@
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 19",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 69",
                 "🇺🇸US | 🟢 | vmess | @DailyV2RY | 76",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 13",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -144,6 +145,7 @@
                 "🇸🇬SG | 🟢 | vmess | @Hope_Net | 4",
                 "🚩CF | 🟢 | vmess | @v2rayng_config_amin | 0",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
+                "🚩CF | 🟢 | vmess | @v2Line | 0",
                 "🇸🇪SE | 🟢 | vmess | @FreakConfig | 3",
                 "🚩CF | 🟢 | vmess | @kingofilter | 1",
                 "🇺🇸US | 🟢 | vmess | @kingofilter | 3",
@@ -186,6 +188,7 @@
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 19",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 69",
                 "🇺🇸US | 🟢 | vmess | @DailyV2RY | 76",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 13",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -197,6 +200,7 @@
                 "🇸🇬SG | 🟢 | vmess | @Hope_Net | 4",
                 "🚩CF | 🟢 | vmess | @v2rayng_config_amin | 0",
                 "🇺🇸US | 🟢 | vmess | @v2rayng_config_amin | 3",
+                "🚩CF | 🟢 | vmess | @v2Line | 0",
                 "🇸🇪SE | 🟢 | vmess | @FreakConfig | 3",
                 "🚩CF | 🟢 | vmess | @kingofilter | 1",
                 "🇺🇸US | 🟢 | vmess | @kingofilter | 3",
@@ -876,6 +880,40 @@
             }
         },
         {
+            "tag": "🚩CF | 🟢 | vmess | @ConfigsHUB | 13",
+            "type": "vmess",
+            "server": "104.19.47.213",
+            "server_port": 8443,
+            "uuid": "39135a39-e6ca-43df-a360-d859eea58d86",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hk01.linkitnow.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "hk01.linkitnow.net"
+                }
+            }
+        },
+        {
             "tag": "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
             "type": "vmess",
             "server": "45.199.138.217",
@@ -1199,6 +1237,40 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "kellie.makeup"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @v2Line | 0",
+            "type": "vmess",
+            "server": "172.67.175.56",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "obdii.cfd"
                 }
             }
         },
