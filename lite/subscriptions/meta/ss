@@ -120,8 +120,8 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"149.202.82.172","port":8008,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
-  - {"name":"🇪🇸ES | 🟢 | ss | @OutlineVpnOfficial | 19","type":"ss","server":"es-full.privateip.net","port":8443,"password":"241f9bb7-186b-4161-a517-84bece5b54a1","cipher":"aes-256-gcm"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"145.239.6.202","port":6679,"password":"TEzjfAYq2IjtuoS","cipher":"aes-256-gcm"}
+  - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19","type":"ss","server":"149.202.82.172","port":8008,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
   - {"name":"🇦🇪AE | 🟢 | ss | @kingofilter | 14","type":"ss","server":"40.172.1.97","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -129,8 +129,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇪🇸ES | 🟢 | ss | @OutlineVpnOfficial | 19'
+      - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19'
       - '🇦🇪AE | 🟢 | ss | @kingofilter | 14'
   - name: URL-TEST
     type: url-test
@@ -138,16 +138,16 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇪🇸ES | 🟢 | ss | @OutlineVpnOfficial | 19'
+      - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19'
       - '🇦🇪AE | 🟢 | ss | @kingofilter | 14'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇪🇸ES | 🟢 | ss | @OutlineVpnOfficial | 19'
+      - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19'
       - '🇦🇪AE | 🟢 | ss | @kingofilter | 14'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
