@@ -184,8 +184,8 @@
                 "🇳🇱NL | 🔴 | vless | @sinabigo | 2",
                 "🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17",
                 "🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 18",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
-                "🇭🇰HK | 🔴 | vless | @ConfigsHUB | 19",
+                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 18",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🔴 | vless | @proxystore11 | 1",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -310,8 +310,8 @@
                 "🇳🇱NL | 🔴 | vless | @sinabigo | 2",
                 "🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17",
                 "🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 18",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
-                "🇭🇰HK | 🔴 | vless | @ConfigsHUB | 19",
+                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 18",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🔴 | vless | @proxystore11 | 1",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -2201,32 +2201,40 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
+            "tag": "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 18",
             "type": "vless",
-            "server": "104.19.8.222",
-            "server_port": 8880,
-            "uuid": "b9430690-525b-4774-9efa-42f163d3fe5b",
-            "flow": "",
+            "server": "23.88.102.54",
+            "server_port": 443,
+            "uuid": "b028c0d0-836b-4ab2-b14e-cb6c30c3f583",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "104.19.8.222"
+            "tls": {
+                "enabled": true,
+                "server_name": "anti-theft.eset.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "6vsUZQo30UItdxPYQ-qHMsIRNsFVqQhXnByG8ZGyAF8",
+                    "short_id": "a4fa963d"
                 }
             }
         },
         {
-            "tag": "🇭🇰HK | 🔴 | vless | @ConfigsHUB | 19",
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "8.217.49.34",
-            "server_port": 8080,
-            "uuid": "f32a99e8-05dd-478a-82c0-7688848121bd",
+            "server": "104.21.79.64",
+            "server_port": 443,
+            "uuid": "c8e6e9d4-4339-4ee2-830b-8ece0f78f46b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2234,11 +2242,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "selincselincselincselincselincselincselincselinc.selincselinc.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/@vpnAndroid2\/",
                 "headers": {
-                    "Host": "8.217.49.34"
+                    "Host": "selincselincselincselincselincselincselincselinc.selincselinc.workers.dev"
                 }
             }
         },
