@@ -161,7 +161,8 @@
                 "🇸🇪SE | 🔴 | vless | @customv2ray | 17",
                 "🇺🇸US | 🔴 | vless | @UnlimitedDev | 23",
                 "🇺🇸US | 🔴 | vless | @UnlimitedDev | 24",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 9",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 10",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 11",
                 "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 3",
                 "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 4",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 30",
@@ -183,10 +184,10 @@
                 "🇸🇪SE | 🔴 | vless | @DailyV2RY | 153",
                 "🇸🇪SE | 🔴 | vless | @sinabigo | 1",
                 "🇳🇱NL | 🔴 | vless | @sinabigo | 2",
-                "🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17",
-                "🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 18",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
+                "🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17",
+                "🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 18",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🔴 | vless | @proxystore11 | 1",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -288,7 +289,8 @@
                 "🇸🇪SE | 🔴 | vless | @customv2ray | 17",
                 "🇺🇸US | 🔴 | vless | @UnlimitedDev | 23",
                 "🇺🇸US | 🔴 | vless | @UnlimitedDev | 24",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 9",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 10",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 11",
                 "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 3",
                 "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 4",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 30",
@@ -310,10 +312,10 @@
                 "🇸🇪SE | 🔴 | vless | @DailyV2RY | 153",
                 "🇸🇪SE | 🔴 | vless | @sinabigo | 1",
                 "🇳🇱NL | 🔴 | vless | @sinabigo | 2",
-                "🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17",
-                "🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 18",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
+                "🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17",
+                "🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 18",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🔴 | vless | @proxystore11 | 1",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -1683,11 +1685,32 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 9",
+            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 10",
             "type": "vless",
             "server": "104.16.229.250",
             "server_port": 8080,
             "uuid": "a3cbe9f1-6299-4777-b757-010418e97495",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram:@vmessorg-Telegram:@vmessorg-Telegram:@vmessorg?ed=8080",
+                "headers": {
+                    "Host": "104.16.229.250"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 11",
+            "type": "vless",
+            "server": "104.16.229.250",
+            "server_port": 8080,
+            "uuid": "1b3c9373-5013-4409-b5e7-b10a1a076f21",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2207,7 +2230,17 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17",
+            "tag": "🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 17",
+            "type": "shadowsocks",
+            "server": "38.111.114.133",
+            "server_port": 8118,
+            "method": "aes-256-gcm",
+            "password": "cdBIDV42DCwnfIN",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 18",
             "type": "shadowsocks",
             "server": "38.86.135.31",
             "server_port": 7001,
@@ -2217,21 +2250,11 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 18",
-            "type": "shadowsocks",
-            "server": "217.196.103.206",
-            "server_port": 29312,
-            "method": "chacha20-ietf-poly1305",
-            "password": "qgpdyzHj8rZW9fDxxkUHRI",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
+            "tag": "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
             "type": "vless",
-            "server": "104.20.3.147",
-            "server_port": 8080,
-            "uuid": "33d4eb72-a45b-41c9-9f2c-24b5394437d2",
+            "server": "63.141.128.112",
+            "server_port": 443,
+            "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2239,20 +2262,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "kkg.ylks.link",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/blue",
                 "headers": {
-                    "Host": "104.20.3.147"
+                    "Host": "kkg.ylks.link"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
+            "tag": "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "104.17.159.239",
-            "server_port": 80,
-            "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
+            "server": "188.42.88.120",
+            "server_port": 443,
+            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2260,11 +2293,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "cfed.tgzdyz2.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/tg@zdyz2",
                 "headers": {
-                    "Host": "104.17.159.239"
+                    "Host": "cfed.tgzdyz2.top"
                 }
             }
         },
