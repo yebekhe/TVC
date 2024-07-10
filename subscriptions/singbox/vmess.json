@@ -110,8 +110,8 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 0",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 1",
-                "🇺🇸US | 🟢 | vmess | @mftizi | 2",
-                "🇺🇸US | 🟢 | vmess | @mftizi | 4",
+                "🇩🇪DE | 🟢 | vmess | @mftizi | 2",
+                "🇩🇪DE | 🟢 | vmess | @mftizi | 4",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 5",
                 "🇭🇰HK | 🟢 | vmess | @mftizi | 6",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 7",
@@ -148,6 +148,7 @@
                 "🇺🇸US | 🟢 | vmess | @DailyV2RY | 120",
                 "🚩CF | 🟢 | vmess | @DailyV2RY | 122",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 148",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 0",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -177,8 +178,8 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 0",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 1",
-                "🇺🇸US | 🟢 | vmess | @mftizi | 2",
-                "🇺🇸US | 🟢 | vmess | @mftizi | 4",
+                "🇩🇪DE | 🟢 | vmess | @mftizi | 2",
+                "🇩🇪DE | 🟢 | vmess | @mftizi | 4",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 5",
                 "🇭🇰HK | 🟢 | vmess | @mftizi | 6",
                 "🇺🇸US | 🟢 | vmess | @mftizi | 7",
@@ -215,6 +216,7 @@
                 "🇺🇸US | 🟢 | vmess | @DailyV2RY | 120",
                 "🚩CF | 🟢 | vmess | @DailyV2RY | 122",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 148",
+                "🚩CF | 🟢 | vmess | @ConfigsHUB | 0",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -348,7 +350,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @mftizi | 2",
+            "tag": "🇩🇪DE | 🟢 | vmess | @mftizi | 2",
             "type": "vmess",
             "server": "cfcdn2.sanfencdn9.com",
             "server_port": 2052,
@@ -372,7 +374,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @mftizi | 4",
+            "tag": "🇩🇪DE | 🟢 | vmess | @mftizi | 4",
             "type": "vmess",
             "server": "cfcdn2.sanfencdn9.com",
             "server_port": 2052,
@@ -1327,6 +1329,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @ConfigsHUB | 0",
+            "type": "vmess",
+            "server": "104.21.15.212",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "glweidf.sbs"
+                }
             }
         },
         {
