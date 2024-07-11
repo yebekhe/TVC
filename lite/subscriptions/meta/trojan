@@ -120,10 +120,10 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16","type":"trojan","server":"13.39.114.139","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17","type":"trojan","server":"18.153.172.137","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇨🇦CA | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"99.79.14.175","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇨🇦CA | 🟢 | trojan | @DirectVPN | 17","type":"trojan","server":"3.99.74.121","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16","type":"trojan","server":"15.188.107.34","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 17","type":"trojan","server":"13.39.114.139","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇺🇸US | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"18.221.59.254","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇨🇦CA | 🟢 | trojan | @DirectVPN | 17","type":"trojan","server":"99.79.14.175","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,8 +131,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16'
-      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17'
-      - '🇨🇦CA | 🟢 | trojan | @DirectVPN | 16'
+      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 17'
+      - '🇺🇸US | 🟢 | trojan | @DirectVPN | 16'
       - '🇨🇦CA | 🟢 | trojan | @DirectVPN | 17'
   - name: URL-TEST
     type: url-test
@@ -141,8 +141,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16'
-      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17'
-      - '🇨🇦CA | 🟢 | trojan | @DirectVPN | 16'
+      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 17'
+      - '🇺🇸US | 🟢 | trojan | @DirectVPN | 16'
       - '🇨🇦CA | 🟢 | trojan | @DirectVPN | 17'
   - name: FALLBACK
     type: fallback
@@ -150,8 +150,8 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16'
-      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17'
-      - '🇨🇦CA | 🟢 | trojan | @DirectVPN | 16'
+      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 17'
+      - '🇺🇸US | 🟢 | trojan | @DirectVPN | 16'
       - '🇨🇦CA | 🟢 | trojan | @DirectVPN | 17'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
