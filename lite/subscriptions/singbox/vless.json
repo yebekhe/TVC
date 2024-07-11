@@ -106,8 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇷IR | 🔴 | vless | @EliV2ray | 18",
-                "🇨🇦CA | 🔴 | vless | @EliV2ray | 19",
+                "🇨🇦CA | 🔴 | vless | @EliV2ray | 17",
                 "🇨🇦CA | 🔴 | vless | @Parsashonam | 3",
                 "🇨🇦CA | 🔴 | vless | @NIM_VPN_ir | 7",
                 "🇨🇦CA | 🔴 | vless | @NIM_VPN_ir | 8",
@@ -133,7 +132,7 @@
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇨🇦CA | 🔴 | vless | @DigiV2ray | 28",
                 "🇸🇪SE | 🔴 | vless | @DigiV2ray | 29",
-                "🇨🇦CA | 🔴 | vless | @proxy_kafee | 2",
+                "🇨🇦CA | 🔴 | vless | @proxy_kafee | 3",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 10",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 11",
                 "🇰🇷KR | 🔴 | vless | @Watashi_VPN | 0",
@@ -171,7 +170,8 @@
                 "🇳🇱NL | 🔴 | vless | @sinabigo | 2",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 16",
                 "🇸🇪SE | 🔴 | vless | @lrnbymaa | 17",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 2",
+                "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 18",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 2",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 0",
@@ -210,8 +210,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇷IR | 🔴 | vless | @EliV2ray | 18",
-                "🇨🇦CA | 🔴 | vless | @EliV2ray | 19",
+                "🇨🇦CA | 🔴 | vless | @EliV2ray | 17",
                 "🇨🇦CA | 🔴 | vless | @Parsashonam | 3",
                 "🇨🇦CA | 🔴 | vless | @NIM_VPN_ir | 7",
                 "🇨🇦CA | 🔴 | vless | @NIM_VPN_ir | 8",
@@ -237,7 +236,7 @@
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇨🇦CA | 🔴 | vless | @DigiV2ray | 28",
                 "🇸🇪SE | 🔴 | vless | @DigiV2ray | 29",
-                "🇨🇦CA | 🔴 | vless | @proxy_kafee | 2",
+                "🇨🇦CA | 🔴 | vless | @proxy_kafee | 3",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 10",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 11",
                 "🇰🇷KR | 🔴 | vless | @Watashi_VPN | 0",
@@ -275,7 +274,8 @@
                 "🇳🇱NL | 🔴 | vless | @sinabigo | 2",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 16",
                 "🇸🇪SE | 🔴 | vless | @lrnbymaa | 17",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 2",
+                "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 18",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 2",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 0",
@@ -330,42 +330,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @EliV2ray | 18",
-            "type": "vless",
-            "server": "2.189.59.2",
-            "server_port": 443,
-            "uuid": "199a85a7-20ba-4014-8b95-fb1043521f6e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mci.unlimiteddev-vpn.Com.",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Channel:@UnlimitedDev",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @EliV2ray | 19",
+            "tag": "🇨🇦CA | 🔴 | vless | @EliV2ray | 17",
             "type": "vless",
             "server": "iranserver.com",
             "server_port": 8080,
-            "uuid": "cbd0bb00-295e-448f-b07f-47164e8e8196",
+            "uuid": "ae52d7a4-57bd-48f1-9343-f4557444071e",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -931,7 +900,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @proxy_kafee | 2",
+            "tag": "🇨🇦CA | 🔴 | vless | @proxy_kafee | 3",
             "type": "vless",
             "server": "zula.ir",
             "server_port": 2095,
@@ -1859,11 +1828,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 2",
+            "tag": "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 18",
             "type": "vless",
-            "server": "104.17.98.63",
-            "server_port": 80,
-            "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
+            "server": "185.146.173.68",
+            "server_port": 2095,
+            "uuid": "-----DIGIV2RAY----",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1873,9 +1842,40 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/DigiconnecT?ed=1024",
                 "headers": {
-                    "Host": "104.17.98.63"
+                    "Host": "185.146.173.68"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
+            "type": "vless",
+            "server": "104.21.3.182",
+            "server_port": 443,
+            "uuid": "f8f5dce2-e66b-45bd-957e-53c1ecdda37a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "jAVIdshAh.PageS.deV",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram-------V2rayi_net_-_-_-_-Telegram-------V2rayi_net\/?ed=2560",
+                "headers": {
+                    "Host": "jAVIdshAh.PageS.deV"
                 }
             }
         },
@@ -2221,6 +2221,27 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 7",
             "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "Telegram-ipV2Ray-ziq",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram-ipV2Ray",
+                "headers": {
+                    "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 8",
+            "type": "vless",
             "server": "www.parsvds.ir",
             "server_port": 8080,
             "uuid": "dc8d6d5d-0696-480b-8676-ef76e025f7ed",
@@ -2236,27 +2257,6 @@
                 "path": "\/SHHPROXY?ed=8080",
                 "headers": {
                     "Host": "www.parsvds.ir"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 8",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 8080,
-            "uuid": "0be4c9a8-c427-477e-8c54-228b95bfd39d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/SHHPROXY?ed=8080",
-                "headers": {
-                    "Host": "www.speedtest.net"
                 }
             }
         },
