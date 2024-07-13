@@ -513,6 +513,9 @@
                 "🚩CF | 🔴 | vless | @DailyV2RY | 99",
                 "🚩CF | 🔴 | vless | @DailyV2RY | 100",
                 "🚩CF | 🔴 | vless | @DailyV2RY | 101",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 0",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 1",
+                "🚩CF | 🔴 | vless | @ConfigsHUB | 2",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 2",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 0",
@@ -524,7 +527,6 @@
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 2",
                 "🚩CF | 🔴 | vless | @Outlinev2rayNG | 3",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 4",
-                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 6",
                 "🚩CF | 🔴 | vless | @Outlinev2rayNG | 7",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 10",
                 "🚩CF | 🔴 | vless | @Outlinev2rayNG | 13",
@@ -1050,6 +1052,9 @@
                 "🚩CF | 🔴 | vless | @DailyV2RY | 99",
                 "🚩CF | 🔴 | vless | @DailyV2RY | 100",
                 "🚩CF | 🔴 | vless | @DailyV2RY | 101",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 0",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 1",
+                "🚩CF | 🔴 | vless | @ConfigsHUB | 2",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 2",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 0",
@@ -1061,7 +1066,6 @@
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 2",
                 "🚩CF | 🔴 | vless | @Outlinev2rayNG | 3",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 4",
-                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 6",
                 "🚩CF | 🔴 | vless | @Outlinev2rayNG | 7",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 10",
                 "🚩CF | 🔴 | vless | @Outlinev2rayNG | 13",
@@ -11082,6 +11086,89 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 0",
+            "type": "vless",
+            "server": "151.101.0.0",
+            "server_port": 80,
+            "uuid": "cefffd1d-cc58-4560-b4d1-44f1af528f30",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "151.101.0.0"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 1",
+            "type": "vless",
+            "server": "medium.com",
+            "server_port": 443,
+            "uuid": "8905178c-8d5b-451f-bcdb-5f47fa554fdf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "DisVpn.us.kg",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/---------DisVpn---------DisVpn---------DisVpn",
+                "headers": {
+                    "Host": "DisVpn.us.kg"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @ConfigsHUB | 2",
+            "type": "vless",
+            "server": "162.159.152.152",
+            "server_port": 443,
+            "uuid": "8905178c-8d5b-451f-bcdb-5f47fa554fdf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "join-v2rey.pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/---------DisVpn---------DisVpn---------DisVpn",
+                "headers": {
+                    "Host": "join-v2rey.pages.dev"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @proxystore11 | 2",
             "type": "vless",
             "server": "www.Speedtest.Net",
@@ -11329,27 +11416,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "www.paypal.com.cn"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 6",
-            "type": "vless",
-            "server": "151.101.0.0",
-            "server_port": 80,
-            "uuid": "cefffd1d-cc58-4560-b4d1-44f1af528f30",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "151.101.0.0"
                 }
             }
         },
