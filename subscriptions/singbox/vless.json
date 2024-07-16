@@ -627,13 +627,14 @@
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 1",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 2",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 3",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 4",
-                "🇺🇸US | 🔴 | vless | @SvnTeam | 8",
+                "🇺🇸US | 🔴 | vless | @SvnTeam | 4",
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 5",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 9",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 10",
-                "🇺🇸US | 🔴 | vless | @SvnTeam | 14",
+                "🇺🇸US | 🔴 | vless | @SvnTeam | 11",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 15",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 16",
+                "🇺🇸US | 🔴 | vless | @SvnTeam | 17",
                 "❔XX | 🔴 | vless | @IBv2ray | 1",
                 "❔XX | 🔴 | vless | @IBv2ray | 2",
                 "🇸🇪SE | 🔴 | vless | @IBv2ray | 3",
@@ -1176,13 +1177,14 @@
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 1",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 2",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 3",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 4",
-                "🇺🇸US | 🔴 | vless | @SvnTeam | 8",
+                "🇺🇸US | 🔴 | vless | @SvnTeam | 4",
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 5",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 9",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 10",
-                "🇺🇸US | 🔴 | vless | @SvnTeam | 14",
+                "🇺🇸US | 🔴 | vless | @SvnTeam | 11",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 15",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 16",
+                "🇺🇸US | 🔴 | vless | @SvnTeam | 17",
                 "❔XX | 🔴 | vless | @IBv2ray | 1",
                 "❔XX | 🔴 | vless | @IBv2ray | 2",
                 "🇸🇪SE | 🔴 | vless | @IBv2ray | 3",
@@ -14285,6 +14287,37 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @SvnTeam | 0",
             "type": "vless",
+            "server": "speedtest.net",
+            "server_port": 443,
+            "uuid": "SVNTEAM",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=1024",
+                "headers": {
+                    "Host": "speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @SvnTeam | 1",
+            "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 2095,
             "uuid": "SVNTEAMm",
@@ -14304,7 +14337,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @SvnTeam | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @SvnTeam | 2",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 2087,
@@ -14325,7 +14358,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @SvnTeam | 2",
+            "tag": "🇺🇸US | 🔴 | vless | @SvnTeam | 3",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 2095,
@@ -14346,7 +14379,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @SvnTeam | 3",
+            "tag": "🇺🇸US | 🔴 | vless | @SvnTeam | 4",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 2095,
@@ -14367,7 +14400,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 4",
+            "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 5",
             "type": "vless",
             "server": "xn--tr8h.snappfoodi.com.",
             "server_port": 8081,
@@ -14392,27 +14425,6 @@
                     "enabled": true,
                     "public_key": "0eHwd7gjc3HkKzk1mCWhSt-Yt2efpwH4gA6bFZ7IRCA",
                     "short_id": "eab22c4c"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @SvnTeam | 8",
-            "type": "vless",
-            "server": "mtn.VPNPROSEC.com",
-            "server_port": 80,
-            "uuid": "SVNTEAM",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=443",
-                "headers": {
-                    "Host": "mtn.VPNPROSEC.com"
                 }
             }
         },
@@ -14459,11 +14471,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @SvnTeam | 14",
+            "tag": "🇺🇸US | 🔴 | vless | @SvnTeam | 11",
             "type": "vless",
             "server": "mtn.VPNPROSEC.com",
             "server_port": 80,
-            "uuid": "SVNTEAMa",
+            "uuid": "SVNTEAM",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -14502,6 +14514,27 @@
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @SvnTeam | 16",
+            "type": "vless",
+            "server": "mtn.VPNPROSEC.com",
+            "server_port": 80,
+            "uuid": "SVNTEAMa",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=443",
+                "headers": {
+                    "Host": "mtn.VPNPROSEC.com"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @SvnTeam | 17",
             "type": "vless",
             "server": "mtn.VPNPROSEC.com",
             "server_port": 80,
