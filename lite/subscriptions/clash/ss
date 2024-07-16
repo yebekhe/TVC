@@ -118,27 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"paris.telegavpn.com","port":9802,"password":"EdgGhxDpnk1FCdsr48p0Jx","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"188.212.132.20","port":52952,"password":"XRUwpkSouW5HCTUFUxErfnL5AmahofrjznVrAu2iNFMFGUCrChznAULhuHGAQdC463mzcgo2jV546Ut5HKhk3pz956cHYYyc","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19","type":"ss","server":"paris.telegavpn.com","port":9802,"password":"EdgGhxDpnk1FCdsr48p0Jx","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
