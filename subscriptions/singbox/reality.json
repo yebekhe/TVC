@@ -107,7 +107,6 @@
             "outbounds": [
                 "URL-TEST",
                 "❔XX | 🔴 | vless | @V2pedia | 0",
-                "🇩🇪DE | 🔴 | vless | @V2pedia | 14",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
@@ -176,7 +175,6 @@
             "type": "urltest",
             "outbounds": [
                 "❔XX | 🔴 | vless | @V2pedia | 0",
-                "🇩🇪DE | 🔴 | vless | @V2pedia | 14",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
@@ -290,42 +288,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @V2pedia | 14",
-            "type": "vless",
-            "server": "91.107.251.73",
-            "server_port": 443,
-            "uuid": "07b69c6a-57ea-45d7-b399-c75a983d4c1e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.speedtest.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "TdqtXgOizzI3vpIL00_6mKRXq7mjRvJ2_dBbycfwzmg",
-                    "short_id": "3afb1b63"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
