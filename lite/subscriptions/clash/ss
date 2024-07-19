@@ -118,31 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 16","type":"ss","server":"188.212.132.20","port":52952,"password":"LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"paris.telegavpn.com","port":9802,"password":"aSsoG8kTeefvH0s5A7tchH","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 16","type":"ss","server":"205.134.180.137","port":443,"password":"g13S7doXar0A","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"188.212.132.20","port":52952,"password":"LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 16'
-      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 16'
+      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 16'
-      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 16'
+      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 16'
-      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 16'
+      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
