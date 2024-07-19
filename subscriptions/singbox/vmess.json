@@ -123,10 +123,10 @@
                 "❔XX | 🟢 | vmess | @mftizi | 14",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 15",
                 "❔XX | 🟢 | vmess | @mftizi | 16",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 4",
-                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 13",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 15",
-                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 6",
+                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 7",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 11",
+                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 0",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 1",
                 "🚩CF | 🟢 | vmess | @oneclickvpnkeys | 2",
@@ -144,7 +144,7 @@
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 9",
                 "🇩🇪DE | 🟢 | vmess | @vless_vmess | 0",
                 "🇺🇸US | 🟢 | vmess | @vless_vmess | 1",
-                "❔XX | 🟢 | vmess | @DailyV2RY | 145",
+                "❔XX | 🟢 | vmess | @DailyV2RY | 154",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -185,10 +185,10 @@
                 "❔XX | 🟢 | vmess | @mftizi | 14",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 15",
                 "❔XX | 🟢 | vmess | @mftizi | 16",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 4",
-                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 13",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 15",
-                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 6",
+                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 7",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 11",
+                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 0",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 1",
                 "🚩CF | 🟢 | vmess | @oneclickvpnkeys | 2",
@@ -206,7 +206,7 @@
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 9",
                 "🇩🇪DE | 🟢 | vmess | @vless_vmess | 0",
                 "🇺🇸US | 🟢 | vmess | @vless_vmess | 1",
-                "❔XX | 🟢 | vmess | @DailyV2RY | 145",
+                "❔XX | 🟢 | vmess | @DailyV2RY | 154",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -601,11 +601,35 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 4",
+            "tag": "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 6",
             "type": "vmess",
-            "server": "obdii.cfd",
+            "server": "172.67.169.90",
+            "server_port": 8080,
+            "uuid": "b551aa22-22af-11ee-b8d8-f23c932eb68d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "172.67.169.90"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 7",
+            "type": "vmess",
+            "server": "172.67.156.22",
             "server_port": 443,
-            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -618,7 +642,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "obdii.cfd",
+                "server_name": "nezuko.raidenshogun.cloudns.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -628,16 +652,40 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/linkws",
+                "path": "\/linkws\/afrhms16v.bestxray.buzz",
                 "headers": {
-                    "Host": "obdii.cfd"
+                    "Host": "nezuko.raidenshogun.cloudns.org"
                 }
             }
         },
         {
-            "tag": "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 13",
+            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 11",
             "type": "vmess",
-            "server": "104.19.47.228",
+            "server": "192.210.231.217",
+            "server_port": 80,
+            "uuid": "19d01a72-b30e-40d3-e87b-d16114368040",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/aa",
+                "headers": {
+                    "Host": "192.210.231.217"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 17",
+            "type": "vmess",
+            "server": "104.19.47.187",
             "server_port": 8080,
             "uuid": "b551aa22-22af-11ee-b8d8-f23c932eb68d",
             "security": "auto",
@@ -654,65 +702,7 @@
                 "type": "ws",
                 "path": "\/&Telegram🇨🇳 @WangCai2",
                 "headers": {
-                    "Host": "104.19.47.228"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 15",
-            "type": "vmess",
-            "server": "speed.cloudflare.com",
-            "server_port": 443,
-            "uuid": "2a8a10fb-9ca3-367e-a234-cf09f841be4f",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "us2e-20240116.v2freevpn.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/us2ekjds3nay",
-                "headers": {
-                    "Host": "us2e-20240116.v2freevpn.com"
-                }
-            }
-        },
-        {
-            "tag": "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 18",
-            "type": "vmess",
-            "server": "104.19.47.142",
-            "server_port": 8080,
-            "uuid": "b551aa22-22af-11ee-b8d8-f23c932eb68d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/&Telegram🇨🇳 @WangCai2",
-                "headers": {
-                    "Host": "104.19.47.142"
+                    "Host": "104.19.47.187"
                 }
             }
         },
@@ -1160,7 +1150,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @DailyV2RY | 145",
+            "tag": "❔XX | 🟢 | vmess | @DailyV2RY | 154",
             "type": "vmess",
             "server": null,
             "server_port": 0,
