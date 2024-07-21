@@ -123,6 +123,7 @@ proxies:
   - {"name":"🇦🇪AE | 🟢 | ss | @VmessProtocol | 13","type":"ss","server":"irancell.xn--g28h.dns-dynamic.net.cdn.cloudflare.net","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 16","type":"ss","server":"paris.telegavpn.com","port":9802,"password":"VXM5pQTNAgSr2j9sYow8k9","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"23.157.40.47","port":3389,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇦🇪AE | 🟢 | ss | @proxy_mtm | 3","type":"ss","server":"series-a2-mec.varzesh360.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,6 +133,7 @@ proxy-groups:
       - '🇦🇪AE | 🟢 | ss | @VmessProtocol | 13'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 3'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -141,6 +143,7 @@ proxy-groups:
       - '🇦🇪AE | 🟢 | ss | @VmessProtocol | 13'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 3'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -149,6 +152,7 @@ proxy-groups:
       - '🇦🇪AE | 🟢 | ss | @VmessProtocol | 13'
       - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 3'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
