@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇦🇪AE | 🟢 | ss | @OutlineVpnOfficial | 18 = ss, irancell.xn--g28h.dns-dynamic.net.cdn.cloudflare.net, 443, encrypt-method = chacha20-ietf-poly1305, password = u17T3BvpYaaiuW2c
+🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18 = ss, paris.telegavpn.com, 9802, encrypt-method = chacha20-ietf-poly1305, password = RWs00WOsemhUiPV0q9wFIZ
+🇦🇪AE | 🟢 | ss | @OutlineVpnOfficial | 19 = ss, irancell.xn--g28h.dns-dynamic.net.cdn.cloudflare.net, 443, encrypt-method = chacha20-ietf-poly1305, password = u17T3BvpYaaiuW2c
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇦🇪AE | 🟢 | ss | @OutlineVpnOfficial | 18
-URL-TEST = url-test,🇦🇪AE | 🟢 | ss | @OutlineVpnOfficial | 18
-FALLBACK = fallback,🇦🇪AE | 🟢 | ss | @OutlineVpnOfficial | 18
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18,🇦🇪AE | 🟢 | ss | @OutlineVpnOfficial | 19
+URL-TEST = url-test,🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18,🇦🇪AE | 🟢 | ss | @OutlineVpnOfficial | 19
+FALLBACK = fallback,🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 18,🇦🇪AE | 🟢 | ss | @OutlineVpnOfficial | 19
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
