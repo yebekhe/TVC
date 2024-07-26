@@ -109,8 +109,7 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "❔XX | 🟢 | vmess | @mftizi | 19",
-                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 3",
-                "🇺🇸US | 🟢 | vmess | @customv2ray | 14",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇮🇷IR | 🟢 | vmess | @proxystore11 | 3",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
@@ -128,8 +127,7 @@
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "❔XX | 🟢 | vmess | @mftizi | 19",
-                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 3",
-                "🇺🇸US | 🟢 | vmess | @customv2ray | 14",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇮🇷IR | 🟢 | vmess | @proxystore11 | 3",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
@@ -211,28 +209,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 3",
+            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 3",
             "type": "vmess",
-            "server": "128.140.117.167",
-            "server_port": 2086,
-            "uuid": "FILTERSHCAN",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @customv2ray | 14",
-            "type": "vmess",
-            "server": "speed.cloudflare.com",
-            "server_port": 8080,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "104.21.82.17",
+            "server_port": 443,
+            "uuid": "bc864078-dcf3-4bf4-8dbf-ca9f200b56be",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -243,11 +224,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "gwdef.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram\/XV2ray",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": ""
+                    "Host": "gwdef.sbs"
                 }
             }
         },
