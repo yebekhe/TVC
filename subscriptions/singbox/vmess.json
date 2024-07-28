@@ -151,7 +151,7 @@
                 "🚩CF | 🟢 | vmess | @Hope_Net | 2",
                 "🚩CF | 🟢 | vmess | @v2Line | 0",
                 "🚩CF | 🟢 | vmess | @v2Line | 1",
-                "🚩CF | 🟢 | vmess | @v2Line | 4",
+                "🚩CF | 🟢 | vmess | @v2Line | 2",
                 "🇺🇸US | 🟢 | vmess | @FreakConfig | 0",
                 "🇺🇸US | 🟢 | vmess | @FreakConfig | 12",
                 "🇺🇸US | 🟢 | vmess | @kingofilter | 1",
@@ -209,7 +209,7 @@
                 "🚩CF | 🟢 | vmess | @Hope_Net | 2",
                 "🚩CF | 🟢 | vmess | @v2Line | 0",
                 "🚩CF | 🟢 | vmess | @v2Line | 1",
-                "🚩CF | 🟢 | vmess | @v2Line | 4",
+                "🚩CF | 🟢 | vmess | @v2Line | 2",
                 "🇺🇸US | 🟢 | vmess | @FreakConfig | 0",
                 "🇺🇸US | 🟢 | vmess | @FreakConfig | 12",
                 "🇺🇸US | 🟢 | vmess | @kingofilter | 1",
@@ -1277,6 +1277,40 @@
         {
             "tag": "🚩CF | 🟢 | vmess | @v2Line | 0",
             "type": "vmess",
+            "server": "172.67.156.22",
+            "server_port": 443,
+            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nezuko.raidenshogun.cloudns.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws\/afrhms16v.bestxray.buzz",
+                "headers": {
+                    "Host": "nezuko.raidenshogun.cloudns.org"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @v2Line | 1",
+            "type": "vmess",
             "server": "172.67.219.194",
             "server_port": 443,
             "uuid": "b321fd5d-e6ec-4293-a644-164e3885f52e",
@@ -1309,7 +1343,7 @@
             }
         },
         {
-            "tag": "🚩CF | 🟢 | vmess | @v2Line | 1",
+            "tag": "🚩CF | 🟢 | vmess | @v2Line | 2",
             "type": "vmess",
             "server": "172.67.175.56",
             "server_port": 443,
@@ -1339,40 +1373,6 @@
                 "path": "\/linkws",
                 "headers": {
                     "Host": "obdii.cfd"
-                }
-            }
-        },
-        {
-            "tag": "🚩CF | 🟢 | vmess | @v2Line | 4",
-            "type": "vmess",
-            "server": "172.67.156.22",
-            "server_port": 443,
-            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "nezuko.raidenshogun.cloudns.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws\/afrhms16v.bestxray.buzz",
-                "headers": {
-                    "Host": "nezuko.raidenshogun.cloudns.org"
                 }
             }
         },
