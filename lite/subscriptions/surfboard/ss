@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 18 = ss, 185.65.202.99, 49318, encrypt-method = chacha20-ietf-poly1305, password = cNnrPBakDwICGyoxsDcLy5
-🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 19 = ss, 193.29.139.162, 8080, encrypt-method = chacha20-ietf-poly1305, password = a8bt9fY0QsLS6eLnXUe0Ym
+🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18 = ss, 23.162.200.28, 3389, encrypt-method = aes-256-gcm, password = Y6R9pAtvxxzmGC
+🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 19 = ss, 185.65.202.99, 49318, encrypt-method = chacha20-ietf-poly1305, password = cNnrPBakDwICGyoxsDcLy5
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 18,🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 19
-URL-TEST = url-test,🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 18,🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 19
-FALLBACK = fallback,🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 18,🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 19
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18,🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 19
+URL-TEST = url-test,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18,🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 19
+FALLBACK = fallback,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18,🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 19
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
