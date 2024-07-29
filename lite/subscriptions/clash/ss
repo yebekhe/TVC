@@ -118,8 +118,8 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"51.77.53.200","port":8881,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
-  - {"name":"🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 19","type":"ss","server":"167.71.77.212","port":62062,"password":"UeCtaK8vx4M5UfYOXzCXt5","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"77.83.246.74","port":33320,"password":"4Zwn5rmrUddm1PcGThN114","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 19","type":"ss","server":"51.77.53.200","port":8881,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -127,7 +127,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 19'
+      - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,14 +135,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 19'
+      - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 18'
-      - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 19'
+      - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 19'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
