@@ -114,8 +114,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
-                "🇺🇸US | 🟢 | vmess | @v2Line | 1",
-                "🇺🇸US | 🟢 | vmess | @v2Line | 2"
+                "🇺🇸US | 🟢 | vmess | @v2Line | 0",
+                "🇺🇸US | 🟢 | vmess | @v2Line | 1"
             ]
         },
         {
@@ -130,8 +130,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
-                "🇺🇸US | 🟢 | vmess | @v2Line | 1",
-                "🇺🇸US | 🟢 | vmess | @v2Line | 2"
+                "🇺🇸US | 🟢 | vmess | @v2Line | 0",
+                "🇺🇸US | 🟢 | vmess | @v2Line | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -372,6 +372,40 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | vmess | @v2Line | 0",
+            "type": "vmess",
+            "server": "172.67.156.22",
+            "server_port": 443,
+            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nezuko.raidenshogun.cloudns.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws\/afrhms16v.bestxray.buzz",
+                "headers": {
+                    "Host": "nezuko.raidenshogun.cloudns.org"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🟢 | vmess | @v2Line | 1",
             "type": "vmess",
             "server": "172.67.219.194",
@@ -402,40 +436,6 @@
                 "path": "\/linkws",
                 "headers": {
                     "Host": "adenc36v.xtooltech.cfd"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @v2Line | 2",
-            "type": "vmess",
-            "server": "172.67.175.56",
-            "server_port": 443,
-            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "obdii.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws",
-                "headers": {
-                    "Host": "obdii.cfd"
                 }
             }
         }
