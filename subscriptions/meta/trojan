@@ -156,9 +156,9 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"54.88.194.130","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇺🇸US | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"3.134.127.84","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇨🇦CA | 🟢 | trojan | @DirectVPN | 17","type":"trojan","server":"3.97.89.226","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇸🇪SE | 🟢 | trojan | @proxystore11 | 4","type":"trojan","server":"13.51.244.45","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇸🇪SE | 🟢 | trojan | @proxystore11 | 5","type":"trojan","server":"51.20.210.67","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @proxystore11 | 6","type":"trojan","server":"18.199.43.21","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇸🇪SE | 🟢 | trojan | @proxystore11 | 5","type":"trojan","server":"13.51.244.45","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇸🇪SE | 🟢 | trojan | @proxystore11 | 6","type":"trojan","server":"51.20.210.67","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @proxystore11 | 7","type":"trojan","server":"18.199.43.21","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -201,9 +201,9 @@ proxy-groups:
       - '🇺🇸US | 🟢 | trojan | @DirectVPN | 15'
       - '🇺🇸US | 🟢 | trojan | @DirectVPN | 16'
       - '🇨🇦CA | 🟢 | trojan | @DirectVPN | 17'
-      - '🇸🇪SE | 🟢 | trojan | @proxystore11 | 4'
       - '🇸🇪SE | 🟢 | trojan | @proxystore11 | 5'
-      - '🇩🇪DE | 🟢 | trojan | @proxystore11 | 6'
+      - '🇸🇪SE | 🟢 | trojan | @proxystore11 | 6'
+      - '🇩🇪DE | 🟢 | trojan | @proxystore11 | 7'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -246,9 +246,9 @@ proxy-groups:
       - '🇺🇸US | 🟢 | trojan | @DirectVPN | 15'
       - '🇺🇸US | 🟢 | trojan | @DirectVPN | 16'
       - '🇨🇦CA | 🟢 | trojan | @DirectVPN | 17'
-      - '🇸🇪SE | 🟢 | trojan | @proxystore11 | 4'
       - '🇸🇪SE | 🟢 | trojan | @proxystore11 | 5'
-      - '🇩🇪DE | 🟢 | trojan | @proxystore11 | 6'
+      - '🇸🇪SE | 🟢 | trojan | @proxystore11 | 6'
+      - '🇩🇪DE | 🟢 | trojan | @proxystore11 | 7'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -290,9 +290,9 @@ proxy-groups:
       - '🇺🇸US | 🟢 | trojan | @DirectVPN | 15'
       - '🇺🇸US | 🟢 | trojan | @DirectVPN | 16'
       - '🇨🇦CA | 🟢 | trojan | @DirectVPN | 17'
-      - '🇸🇪SE | 🟢 | trojan | @proxystore11 | 4'
       - '🇸🇪SE | 🟢 | trojan | @proxystore11 | 5'
-      - '🇩🇪DE | 🟢 | trojan | @proxystore11 | 6'
+      - '🇸🇪SE | 🟢 | trojan | @proxystore11 | 6'
+      - '🇩🇪DE | 🟢 | trojan | @proxystore11 | 7'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
