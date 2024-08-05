@@ -121,8 +121,8 @@
                 "🇺🇸US | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
                 "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 12",
+                "🚩CF | 🟢 | vmess | @prrofile_purple | 132",
                 "🇺🇸US | 🟢 | vmess | @prrofile_purple | 164",
-                "🇺🇸US | 🟢 | vmess | @prrofile_purple | 175",
                 "❔XX | 🟢 | vmess | @customv2ray | 5",
                 "🚩CF | 🟢 | vmess | @v2ray1_ng | 6",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 219",
@@ -165,8 +165,8 @@
                 "🇺🇸US | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 19",
                 "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 12",
+                "🚩CF | 🟢 | vmess | @prrofile_purple | 132",
                 "🇺🇸US | 🟢 | vmess | @prrofile_purple | 164",
-                "🇺🇸US | 🟢 | vmess | @prrofile_purple | 175",
                 "❔XX | 🟢 | vmess | @customv2ray | 5",
                 "🚩CF | 🟢 | vmess | @v2ray1_ng | 6",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 219",
@@ -541,6 +541,40 @@
             }
         },
         {
+            "tag": "🚩CF | 🟢 | vmess | @prrofile_purple | 132",
+            "type": "vmess",
+            "server": "104.17.147.22",
+            "server_port": 443,
+            "uuid": "62aa5f80-0328-4004-a375-7f5a59df4022",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/d3",
+                "headers": {
+                    "Host": "pages.dev"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🟢 | vmess | @prrofile_purple | 164",
             "type": "vmess",
             "server": "zula.ir",
@@ -571,30 +605,6 @@
                 "path": "\/TaHa-Is-ThE-BeSt-AstroVPN_Official",
                 "headers": {
                     "Host": "fr1.vmess.site"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @prrofile_purple | 175",
-            "type": "vmess",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "3e5cda0a-6122-4f54-9e3c-3f49e7a526f9",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
                 }
             }
         },
