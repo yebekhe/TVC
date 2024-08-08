@@ -118,8 +118,9 @@
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 4",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 6",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 10",
-                "🇺🇸US | 🟢 | vless | @VmessProtocol | 13",
-                "🇺🇸US | 🔴 | vless | @VmessProtocol | 14",
+                "🇳🇴NO | 🔴 | vless | @VmessProtocol | 0",
+                "🇺🇸US | 🟢 | vless | @VmessProtocol | 14",
+                "🇺🇸US | 🔴 | vless | @VmessProtocol | 15",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 308",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 309",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 310",
@@ -196,8 +197,9 @@
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 4",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 6",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 10",
-                "🇺🇸US | 🟢 | vless | @VmessProtocol | 13",
-                "🇺🇸US | 🔴 | vless | @VmessProtocol | 14",
+                "🇳🇴NO | 🔴 | vless | @VmessProtocol | 0",
+                "🇺🇸US | 🟢 | vless | @VmessProtocol | 14",
+                "🇺🇸US | 🔴 | vless | @VmessProtocol | 15",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 308",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 309",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 310",
@@ -594,7 +596,43 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vless | @VmessProtocol | 13",
+            "tag": "🇳🇴NO | 🔴 | vless | @VmessProtocol | 0",
+            "type": "vless",
+            "server": "185.125.171.13",
+            "server_port": 8443,
+            "uuid": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "partner.g2.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "g2com",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vless | @VmessProtocol | 14",
             "type": "vless",
             "server": "67.205.179.1",
             "server_port": 443,
@@ -623,7 +661,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @VmessProtocol | 14",
+            "tag": "🇺🇸US | 🔴 | vless | @VmessProtocol | 15",
             "type": "vless",
             "server": "167.172.137.111",
             "server_port": 12345,
