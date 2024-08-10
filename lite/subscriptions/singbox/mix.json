@@ -149,13 +149,13 @@
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 19",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
-                "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
+                "🇺🇸US | 🟢 | vmess | @mftizi | 18",
                 "🇨🇦CA | 🔴 | vless | @customv2ray | 13",
                 "🇨🇦CA | 🔴 | vless | @customv2ray | 14",
                 "🇨🇦CA | 🔴 | vless | @UnlimitedDev | 3",
                 "🇨🇦CA | 🔴 | vless | @UnlimitedDev | 4",
                 "🇨🇦CA | 🔴 | vless | @vmessorg | 13",
-                "🇨🇦CA | 🔴 | vless | @vmessorg | 14",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 14",
                 "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 10",
                 "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 11",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 12",
@@ -268,13 +268,13 @@
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 19",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
-                "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
+                "🇺🇸US | 🟢 | vmess | @mftizi | 18",
                 "🇨🇦CA | 🔴 | vless | @customv2ray | 13",
                 "🇨🇦CA | 🔴 | vless | @customv2ray | 14",
                 "🇨🇦CA | 🔴 | vless | @UnlimitedDev | 3",
                 "🇨🇦CA | 🔴 | vless | @UnlimitedDev | 4",
                 "🇨🇦CA | 🔴 | vless | @vmessorg | 13",
-                "🇨🇦CA | 🔴 | vless | @vmessorg | 14",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 14",
                 "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 10",
                 "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 11",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 12",
@@ -1317,7 +1317,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @mftizi | 18",
+            "tag": "🇺🇸US | 🟢 | vmess | @mftizi | 18",
             "type": "vmess",
             "server": "cfcdn2.sanfencdn9.com",
             "server_port": 2052,
@@ -1432,7 +1432,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @vmessorg | 14",
+            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 14",
             "type": "vless",
             "server": "104.19.127.200",
             "server_port": 8080,
@@ -1913,9 +1913,9 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 346",
             "type": "vless",
-            "server": "104.21.51.208",
-            "server_port": 443,
-            "uuid": "cb4fca5f-edf8-415b-aa8f-ac52f415296a",
+            "server": "SpeeDTeST.OrG",
+            "server_port": 80,
+            "uuid": "610d7d20-ba6c-43a3-889d-7e4958791ee9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1923,30 +1923,20 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "de-02.tradex2080.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "gPGhgE3kwHBXqebAryGsQ",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "SpeeDTeST.OrG"
+                }
             }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 347",
             "type": "vless",
-            "server": "104.16.4.103",
-            "server_port": 443,
-            "uuid": "d2c6ddc0-891a-4435-ac0a-4a5cdb78cb7d",
+            "server": "SpeeDTeST.OrG",
+            "server_port": 80,
+            "uuid": "610d7d20-ba6c-43a3-889d-7e4958791ee9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1954,21 +1944,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "fl1.tradex2080.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/uy4vb8KcMmQqnkXOdFN4WJ",
+                "path": "\/",
                 "headers": {
-                    "Host": "fl1.tradex2080.com"
+                    "Host": "SpeeDTeST.OrG"
                 }
             }
         },
