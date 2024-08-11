@@ -118,7 +118,8 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"us-ain.yangon.club","port":443,"password":"g13S7doXar0A","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"194.87.45.189","port":40076,"password":"sOJ7Wo6yHqWQv8FUEq3BKV","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 14","type":"ss","server":"64.227.144.190","port":50690,"password":"jQahQBlN1Xdu1uhwUKrE7k","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇦🇪AE | 🟢 | ss | @VmessProtocol | 7","type":"ss","server":"series-a2-mec.samanehha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 0","type":"ss","server":"217.196.103.206","port":29312,"password":"qgpdyzHj8rZW9fDxxkUHRI","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 1","type":"ss","server":"51.77.53.200","port":8080,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
@@ -147,7 +148,7 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 27","type":"ss","server":"38.86.135.225","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
   - {"name":"🇸🇬SG | 🟢 | ss | @OutlineVpnOfficial | 28","type":"ss","server":"159.65.129.128","port":18814,"password":"ZdWZ9QvFlbOOGreMoE3Bq8","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 29","type":"ss","server":"77.83.246.74","port":33320,"password":"sFxAYglxQ6oMAWVam55UmA","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇧🇭BH | 🟢 | ss | @proxy_mtm | 1","type":"ss","server":"series-a2-me.varzesh360.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇧🇭BH | 🟢 | ss | @proxy_mtm | 2","type":"ss","server":"series-a2-me.varzesh360.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 2","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -155,7 +156,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4'
+      - '🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 4'
+      - '🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 14'
       - '🇦🇪AE | 🟢 | ss | @VmessProtocol | 7'
       - '🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 0'
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 1'
@@ -184,7 +186,7 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 27'
       - '🇸🇬SG | 🟢 | ss | @OutlineVpnOfficial | 28'
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 29'
-      - '🇧🇭BH | 🟢 | ss | @proxy_mtm | 1'
+      - '🇧🇭BH | 🟢 | ss | @proxy_mtm | 2'
       - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 2'
   - name: URL-TEST
     type: url-test
@@ -192,7 +194,8 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4'
+      - '🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 4'
+      - '🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 14'
       - '🇦🇪AE | 🟢 | ss | @VmessProtocol | 7'
       - '🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 0'
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 1'
@@ -221,14 +224,15 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 27'
       - '🇸🇬SG | 🟢 | ss | @OutlineVpnOfficial | 28'
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 29'
-      - '🇧🇭BH | 🟢 | ss | @proxy_mtm | 1'
+      - '🇧🇭BH | 🟢 | ss | @proxy_mtm | 2'
       - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 2'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4'
+      - '🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 4'
+      - '🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 14'
       - '🇦🇪AE | 🟢 | ss | @VmessProtocol | 7'
       - '🇸🇪SE | 🟢 | ss | @OutlineVpnOfficial | 0'
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 1'
@@ -257,7 +261,7 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 27'
       - '🇸🇬SG | 🟢 | ss | @OutlineVpnOfficial | 28'
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 29'
-      - '🇧🇭BH | 🟢 | ss | @proxy_mtm | 1'
+      - '🇧🇭BH | 🟢 | ss | @proxy_mtm | 2'
       - '🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 2'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
