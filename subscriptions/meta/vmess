@@ -145,8 +145,8 @@ proxies:
   - {"name":"🚩CF | 🟢 | vmess | @v2Line | 1","type":"vmess","server":"104.26.15.148","port":"80","cipher":"auto","uuid":"6965a407-7549-436e-8064-22e3d3d2e7cd","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/V2LINE-TELEGRAM-CHANNEL-VMESS-WS","headers":{"host":"58892877706648357761980405045364.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou"}}}
   - {"name":"🚩CF | 🟢 | vmess | @v2Line | 2","type":"vmess","server":"104.17.148.22","port":"80","cipher":"auto","uuid":"3e5cda0a-6122-4f54-9e3c-3f49e7a526f9","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"nlch.blueberrynetwork.store"}}}
   - {"name":"🇹🇷TR | 🟢 | vmess | @iP_CF | 0","type":"vmess","server":"185.226.92.138","port":"30749","cipher":"auto","uuid":"58c87e56-2887-468b-8c9d-63faeb8735e6","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸US | 🟢 | vmess | @kingofilter | 5","type":"vmess","server":"zula.ir","port":2096,"cipher":"auto","uuid":"723d7523-8740-4d09-9ea6-230e77c46d15","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cloud.hightechservice.ir"}}}
-  - {"name":"🇺🇸US | 🟢 | vmess | @kingofilter | 7","type":"vmess","server":"zula.ir","port":2096,"cipher":"auto","uuid":"f849605a-be3e-4a22-95ec-a2662a684de2","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cloud.hightechservice.ir"}}}
+  - {"name":"🇺🇸US | 🟢 | vmess | @kingofilter | 0","type":"vmess","server":"www.speedtest.net","port":"80","cipher":"auto","uuid":"22be0df7-fe1d-4ce6-9e98-209318865bfe","alterId":"0","tls":false,"skip-cert-verify":true,"network":"httpupgrade"}
+  - {"name":"🇺🇸US | 🟢 | vmess | @kingofilter | 6","type":"vmess","server":"zula.ir","port":2096,"cipher":"auto","uuid":"723d7523-8740-4d09-9ea6-230e77c46d15","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cloud.hightechservice.ir"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -178,8 +178,8 @@ proxy-groups:
       - '🚩CF | 🟢 | vmess | @v2Line | 1'
       - '🚩CF | 🟢 | vmess | @v2Line | 2'
       - '🇹🇷TR | 🟢 | vmess | @iP_CF | 0'
-      - '🇺🇸US | 🟢 | vmess | @kingofilter | 5'
-      - '🇺🇸US | 🟢 | vmess | @kingofilter | 7'
+      - '🇺🇸US | 🟢 | vmess | @kingofilter | 0'
+      - '🇺🇸US | 🟢 | vmess | @kingofilter | 6'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -211,8 +211,8 @@ proxy-groups:
       - '🚩CF | 🟢 | vmess | @v2Line | 1'
       - '🚩CF | 🟢 | vmess | @v2Line | 2'
       - '🇹🇷TR | 🟢 | vmess | @iP_CF | 0'
-      - '🇺🇸US | 🟢 | vmess | @kingofilter | 5'
-      - '🇺🇸US | 🟢 | vmess | @kingofilter | 7'
+      - '🇺🇸US | 🟢 | vmess | @kingofilter | 0'
+      - '🇺🇸US | 🟢 | vmess | @kingofilter | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -243,8 +243,8 @@ proxy-groups:
       - '🚩CF | 🟢 | vmess | @v2Line | 1'
       - '🚩CF | 🟢 | vmess | @v2Line | 2'
       - '🇹🇷TR | 🟢 | vmess | @iP_CF | 0'
-      - '🇺🇸US | 🟢 | vmess | @kingofilter | 5'
-      - '🇺🇸US | 🟢 | vmess | @kingofilter | 7'
+      - '🇺🇸US | 🟢 | vmess | @kingofilter | 0'
+      - '🇺🇸US | 🟢 | vmess | @kingofilter | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
