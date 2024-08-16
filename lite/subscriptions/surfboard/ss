@@ -11,13 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🟢 | ss | @OutlineVpnOfficial | 31 = ss, 81.19.141.45, 52873, encrypt-method = chacha20-ietf-poly1305, password = x13Cv63IdnCZCBNwY0E9dQ
-❔XX | 🟢 | ss | @OutlineVpnOfficial | 32 = ss, ca225.vpnbook.com, 80, encrypt-method = chacha20-ietf-poly1305, password = JIhN6rBKkaEboLNXVSv5rq
-❔XX | 🟢 | ss | @ROMAX_VPN | 2 = ss, series-a1.samanehha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = W74XFALLLuw6m5IA
+🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 31 = ss, 81.19.141.45, 52873, encrypt-method = chacha20-ietf-poly1305, password = x13Cv63IdnCZCBNwY0E9dQ
+🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 32 = ss, ca225.vpnbook.com, 80, encrypt-method = chacha20-ietf-poly1305, password = JIhN6rBKkaEboLNXVSv5rq
+🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 2 = ss, series-a1.samanehha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = W74XFALLLuw6m5IA
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @OutlineVpnOfficial | 31,❔XX | 🟢 | ss | @OutlineVpnOfficial | 32,❔XX | 🟢 | ss | @ROMAX_VPN | 2
-URL-TEST = url-test,❔XX | 🟢 | ss | @OutlineVpnOfficial | 31,❔XX | 🟢 | ss | @OutlineVpnOfficial | 32,❔XX | 🟢 | ss | @ROMAX_VPN | 2
-FALLBACK = fallback,❔XX | 🟢 | ss | @OutlineVpnOfficial | 31,❔XX | 🟢 | ss | @OutlineVpnOfficial | 32,❔XX | 🟢 | ss | @ROMAX_VPN | 2
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 31,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 32,🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 2
+URL-TEST = url-test,🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 31,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 32,🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 2
+FALLBACK = fallback,🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 31,🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 32,🇬🇧GB | 🟢 | ss | @ROMAX_VPN | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
