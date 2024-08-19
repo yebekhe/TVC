@@ -176,7 +176,7 @@
                 "🇮🇷IR | 🔴 | vless | @VmessProtocol | 10",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 11",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 278",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 279",
+                "🇷🇺RU | 🔴 | vless | @DailyV2RY | 279",
                 "🇺🇸US | 🔴 | vless | @sinabigo | 0",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 4",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 5",
@@ -298,7 +298,7 @@
                 "🇮🇷IR | 🔴 | vless | @VmessProtocol | 10",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 11",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 278",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 279",
+                "🇷🇺RU | 🔴 | vless | @DailyV2RY | 279",
                 "🇺🇸US | 🔴 | vless | @sinabigo | 0",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 4",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 5",
@@ -1772,9 +1772,9 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 278",
             "type": "vless",
-            "server": "104.26.12.255",
-            "server_port": 8080,
-            "uuid": "855c5f2f-c42c-41e2-bbb2-35cd09bc55ab",
+            "server": "172.66.213.38",
+            "server_port": 443,
+            "uuid": "f533e37c-9da5-4955-a218-a7886e5719b6",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1782,20 +1782,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "nl88.tradex2080.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/pURR7fXWnkIMyATWmx5f6MblN",
                 "headers": {
-                    "Host": "104.26.12.255"
+                    "Host": "nl88.tradex2080.com"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 279",
+            "tag": "🇷🇺RU | 🔴 | vless | @DailyV2RY | 279",
             "type": "vless",
-            "server": "SpeeDTeST.OrG",
-            "server_port": 80,
-            "uuid": "855c5f2f-c42c-41e2-bbb2-35cd09bc55ab",
+            "server": "185.148.105.52",
+            "server_port": 443,
+            "uuid": "4c1983a8-1802-46f1-8837-aaf33958ed46",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1803,11 +1813,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "fln1.novinping.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/MgFwdcE2Hs2cgQYI0W",
                 "headers": {
-                    "Host": "SpeeDTeST.OrG"
+                    "Host": "fln1.novinping.com"
                 }
             }
         },
