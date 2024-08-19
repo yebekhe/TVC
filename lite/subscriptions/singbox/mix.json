@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @EliV2ray | 10",
                 "🇨🇦CA | 🔴 | vless | @EliV2ray | 11",
                 "🇸🇪SE | 🔴 | vless | @Parsashonam | 12",
                 "🇨🇦CA | 🔴 | vless | @XsV2ray | 0",
@@ -182,8 +181,7 @@
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 5",
                 "🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 33",
                 "🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 34",
-                "🇺🇸US | 🟢 | vmess | @proxystore11 | 4",
-                "🇺🇸US | 🟢 | vmess | @proxystore11 | 5",
+                "🇺🇸US | 🟢 | vmess | @proxystore11 | 3",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
@@ -228,7 +226,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @EliV2ray | 10",
                 "🇨🇦CA | 🔴 | vless | @EliV2ray | 11",
                 "🇸🇪SE | 🔴 | vless | @Parsashonam | 12",
                 "🇨🇦CA | 🔴 | vless | @XsV2ray | 0",
@@ -304,8 +301,7 @@
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 5",
                 "🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 33",
                 "🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 34",
-                "🇺🇸US | 🟢 | vmess | @proxystore11 | 4",
-                "🇺🇸US | 🟢 | vmess | @proxystore11 | 5",
+                "🇺🇸US | 🟢 | vmess | @proxystore11 | 3",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
@@ -366,25 +362,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @EliV2ray | 10",
+            "tag": "🇨🇦CA | 🔴 | vless | @EliV2ray | 11",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
             "uuid": "b4f69d4a-9343-46c9-af77-d2b0cd105b0f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @EliV2ray | 11",
-            "type": "vless",
-            "server": "104.26.12.255",
-            "server_port": 8080,
-            "uuid": "f291f882-7145-4a8e-9699-8831cf0ac7c7",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1908,7 +1890,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @proxystore11 | 4",
+            "tag": "🇺🇸US | 🟢 | vmess | @proxystore11 | 3",
             "type": "vmess",
             "server": "104.21.9.236",
             "server_port": 443,
@@ -1938,30 +1920,6 @@
                 "path": "\/linkws",
                 "headers": {
                     "Host": "hms19.best-tizi.top"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @proxystore11 | 5",
-            "type": "vmess",
-            "server": "104.26.15.148",
-            "server_port": 80,
-            "uuid": "6965a407-7549-436e-8064-22e3d3d2e7cd",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
-                "headers": {
-                    "Host": ""
                 }
             }
         },
