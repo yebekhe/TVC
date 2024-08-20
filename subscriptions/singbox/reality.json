@@ -106,8 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🔴 | vless | @V2pedia | 1",
-                "❔XX | 🔴 | vless | @V2pedia | 6",
+                "❔XX | 🔴 | vless | @V2pedia | 0",
+                "❔XX | 🔴 | vless | @V2pedia | 4",
+                "❔XX | 🔴 | vless | @V2pedia | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
@@ -119,7 +120,7 @@
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 6",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 10",
                 "🇦🇪AE | 🟢 | vless | @VmessProtocol | 7",
-                "🇹🇷TR | 🟢 | vless | @DailyV2RY | 275",
+                "🇹🇷TR | 🟢 | vless | @DailyV2RY | 295",
                 "🇩🇪DE | 🟢 | vless | @proxystore11 | 1",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
@@ -168,8 +169,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🔴 | vless | @V2pedia | 1",
-                "❔XX | 🔴 | vless | @V2pedia | 6",
+                "❔XX | 🔴 | vless | @V2pedia | 0",
+                "❔XX | 🔴 | vless | @V2pedia | 4",
+                "❔XX | 🔴 | vless | @V2pedia | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
@@ -181,7 +183,7 @@
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 6",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 10",
                 "🇦🇪AE | 🟢 | vless | @VmessProtocol | 7",
-                "🇹🇷TR | 🟢 | vless | @DailyV2RY | 275",
+                "🇹🇷TR | 🟢 | vless | @DailyV2RY | 295",
                 "🇩🇪DE | 🟢 | vless | @proxystore11 | 1",
                 "🇬🇧GB | 🔴 | vless | @Capital_NET | 6",
                 "🇳🇱NL | 🟢 | vless | @Capital_NET | 8",
@@ -246,7 +248,43 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 1",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 0",
+            "type": "vless",
+            "server": "[2a0d:5940:94:1::]",
+            "server_port": 25365,
+            "uuid": "biato--ZEDMODEON",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "eset.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "DzXRCJ_0SLSHtbPibhev2kH9LCY5lfM8qusfKJM1yk4",
+                    "short_id": "099aba90"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 4",
             "type": "vless",
             "server": "[2a0d:5940:47:31::]",
             "server_port": 25365,
@@ -282,7 +320,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @V2pedia | 6",
+            "tag": "❔XX | 🔴 | vless | @V2pedia | 9",
             "type": "vless",
             "server": "[2a12:5940:aa41::2]",
             "server_port": 25366,
@@ -584,7 +622,7 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🟢 | vless | @DailyV2RY | 275",
+            "tag": "🇹🇷TR | 🟢 | vless | @DailyV2RY | 295",
             "type": "vless",
             "server": "tr1.tradex2080.com",
             "server_port": 443,
