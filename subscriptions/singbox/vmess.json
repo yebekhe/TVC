@@ -115,7 +115,6 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 6",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 8",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 10",
-                "🚩CF | 🟢 | vmess | @customv2ray | 11",
                 "🇹🇷TR | 🟢 | vmess | @ShadowProxy66 | 1",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 15",
                 "🇹🇷TR | 🟢 | vmess | @DailyV2RY | 253",
@@ -135,6 +134,7 @@
                 "🚩CF | 🟢 | vmess | @v2Line | 2",
                 "🚩CF | 🟢 | vmess | @v2Line | 3",
                 "🚩CF | 🟢 | vmess | @v2Line | 4",
+                "🚩CF | 🟢 | vmess | @FreakConfig | 9",
                 "🇮🇷IR | 🟢 | vmess | @FreakConfig | 12",
                 "🇺🇸US | 🟢 | vmess | @kingofilter | 4",
                 "🇺🇸US | 🟢 | vmess | @kingofilter | 10"
@@ -153,7 +153,6 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 6",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 8",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 10",
-                "🚩CF | 🟢 | vmess | @customv2ray | 11",
                 "🇹🇷TR | 🟢 | vmess | @ShadowProxy66 | 1",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 15",
                 "🇹🇷TR | 🟢 | vmess | @DailyV2RY | 253",
@@ -173,6 +172,7 @@
                 "🚩CF | 🟢 | vmess | @v2Line | 2",
                 "🚩CF | 🟢 | vmess | @v2Line | 3",
                 "🚩CF | 🟢 | vmess | @v2Line | 4",
+                "🚩CF | 🟢 | vmess | @FreakConfig | 9",
                 "🇮🇷IR | 🟢 | vmess | @FreakConfig | 12",
                 "🇺🇸US | 🟢 | vmess | @kingofilter | 4",
                 "🇺🇸US | 🟢 | vmess | @kingofilter | 10"
@@ -393,40 +393,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🚩CF | 🟢 | vmess | @customv2ray | 11",
-            "type": "vmess",
-            "server": "198.41.202.5",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "pages.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ca1",
-                "headers": {
-                    "Host": "pages.dev"
-                }
             }
         },
         {
@@ -928,6 +894,40 @@
                 "path": "\/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @FreakConfig | 9",
+            "type": "vmess",
+            "server": "198.41.202.5",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ca1",
+                "headers": {
+                    "Host": "pages.dev"
                 }
             }
         },
