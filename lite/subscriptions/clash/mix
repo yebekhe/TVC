@@ -136,7 +136,6 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | vmess | @v2Line | 4","type":"vmess","server":"104.26.15.148","port":"80","cipher":"auto","uuid":"6965a407-7549-436e-8064-22e3d3d2e7cd","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/V2LINE-TELEGRAM-CHANNEL-VMESS-WS","headers":{"host":"58892877706648357761980405045364.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou"}}}
   - {"name":"🇮🇷IR | 🟢 | vmess | @FreakConfig | 15","type":"vmess","server":"79.127.69.120","port":"8443","cipher":"auto","uuid":"56dab4b2-62b6-43ce-96fc-6d87ac43f652","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇹🇷TR | 🟢 | vmess | @iP_CF | 19","type":"vmess","server":"185.226.92.138","port":"30749","cipher":"auto","uuid":"58c87e56-2887-468b-8c9d-63faeb8735e6","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇷🇺RU | 🟢 | ss | @iP_CF | 20","type":"ss","server":"195.2.76.71","port":60422,"password":"9CZ99gRHmzp4SlKF2NxaxR","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -161,7 +160,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | vmess | @v2Line | 4'
       - '🇮🇷IR | 🟢 | vmess | @FreakConfig | 15'
       - '🇹🇷TR | 🟢 | vmess | @iP_CF | 19'
-      - '🇷🇺RU | 🟢 | ss | @iP_CF | 20'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -186,7 +184,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | vmess | @v2Line | 4'
       - '🇮🇷IR | 🟢 | vmess | @FreakConfig | 15'
       - '🇹🇷TR | 🟢 | vmess | @iP_CF | 19'
-      - '🇷🇺RU | 🟢 | ss | @iP_CF | 20'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -210,7 +207,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | vmess | @v2Line | 4'
       - '🇮🇷IR | 🟢 | vmess | @FreakConfig | 15'
       - '🇹🇷TR | 🟢 | vmess | @iP_CF | 19'
-      - '🇷🇺RU | 🟢 | ss | @iP_CF | 20'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
