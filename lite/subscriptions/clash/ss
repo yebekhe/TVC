@@ -120,7 +120,6 @@ dns:
 proxies:
   - {"name":"🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 36","type":"ss","server":"77.83.246.74","port":33320,"password":"Hd2nY5MZaKGVyoTHcgLpjX","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 37","type":"ss","server":"51.77.53.200","port":8882,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
-  - {"name":"🇫🇮FI | 🟢 | ss | @iP_CF | 13","type":"ss","server":"141.98.169.248","port":25757,"password":"kywNKLOlAakmgRxa9xqvHU","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +128,6 @@ proxy-groups:
       - FALLBACK
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 36'
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 37'
-      - '🇫🇮FI | 🟢 | ss | @iP_CF | 13'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,7 +136,6 @@ proxy-groups:
     proxies:
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 36'
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 37'
-      - '🇫🇮FI | 🟢 | ss | @iP_CF | 13'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -146,7 +143,6 @@ proxy-groups:
     proxies:
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 36'
       - '🇵🇱PL | 🟢 | ss | @OutlineVpnOfficial | 37'
-      - '🇫🇮FI | 🟢 | ss | @iP_CF | 13'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
