@@ -116,8 +116,6 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 7",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 9",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 11",
-                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 2",
-                "🇹🇷TR | 🟢 | vmess | @DeamNet_Proxy | 14",
                 "🇺🇸US | 🟢 | vmess | @customv2ray | 0",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 0",
                 "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 1",
@@ -145,6 +143,7 @@
                 "🚩CF | 🟢 | vmess | @v2Line | 2",
                 "🚩CF | 🟢 | vmess | @v2Line | 3",
                 "🚩CF | 🟢 | vmess | @v2Line | 4",
+                "🚩CF | 🟢 | vmess | @v2Line | 5",
                 "🇸🇪SE | 🟢 | vmess | @kingofilter | 6"
             ]
         },
@@ -162,8 +161,6 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 7",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 9",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 11",
-                "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 2",
-                "🇹🇷TR | 🟢 | vmess | @DeamNet_Proxy | 14",
                 "🇺🇸US | 🟢 | vmess | @customv2ray | 0",
                 "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 0",
                 "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 1",
@@ -191,6 +188,7 @@
                 "🚩CF | 🟢 | vmess | @v2Line | 2",
                 "🚩CF | 🟢 | vmess | @v2Line | 3",
                 "🚩CF | 🟢 | vmess | @v2Line | 4",
+                "🚩CF | 🟢 | vmess | @v2Line | 5",
                 "🇸🇪SE | 🟢 | vmess | @kingofilter | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -426,47 +424,6 @@
                 "headers": {
                     "Host": ""
                 }
-            }
-        },
-        {
-            "tag": "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 2",
-            "type": "vmess",
-            "server": "104.16.60.8",
-            "server_port": 2095,
-            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/obdii.cfd\/linkws",
-                "headers": {
-                    "Host": "104.16.60.8"
-                }
-            }
-        },
-        {
-            "tag": "🇹🇷TR | 🟢 | vmess | @DeamNet_Proxy | 14",
-            "type": "vmess",
-            "server": "45.89.52.114",
-            "server_port": 13701,
-            "uuid": "86a0c17d-1871-40e3-db65-2b9bf1a7650e",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -1154,6 +1111,30 @@
             "server": "104.26.14.85",
             "server_port": 80,
             "uuid": "c0f3f890-d329-42fc-8311-16ae31c22c6b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @v2Line | 5",
+            "type": "vmess",
+            "server": "172.67.73.163",
+            "server_port": 80,
+            "uuid": "a8d18d17-6eb0-4384-b3b0-558de7765686",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
