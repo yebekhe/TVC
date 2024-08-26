@@ -140,7 +140,7 @@
                 "🇨🇦CA | 🔴 | vless | @V2rayCollectorDonate | 18",
                 "🇨🇦CA | 🔴 | vless | @V2rayCollectorDonate | 19",
                 "🇺🇸US | 🔴 | vless | @ProxyForOpeta | 1",
-                "🇨🇦CA | 🔴 | vless | @V2rayNGn | 1",
+                "🇨🇦CA | 🔴 | vless | @V2rayNGn | 0",
                 "🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 16",
                 "🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 16",
@@ -179,8 +179,8 @@
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 15",
                 "🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 36",
                 "🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 37",
+                "🇺🇸US | 🟢 | vmess | @proxystore11 | 6",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 7",
-                "🇸🇪SE | 🟢 | trojan | @proxystore11 | 8",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
@@ -253,7 +253,7 @@
                 "🇨🇦CA | 🔴 | vless | @V2rayCollectorDonate | 18",
                 "🇨🇦CA | 🔴 | vless | @V2rayCollectorDonate | 19",
                 "🇺🇸US | 🔴 | vless | @ProxyForOpeta | 1",
-                "🇨🇦CA | 🔴 | vless | @V2rayNGn | 1",
+                "🇨🇦CA | 🔴 | vless | @V2rayNGn | 0",
                 "🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 16",
                 "🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 16",
@@ -292,8 +292,8 @@
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 15",
                 "🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 36",
                 "🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 37",
+                "🇺🇸US | 🟢 | vmess | @proxystore11 | 6",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 7",
-                "🇸🇪SE | 🟢 | trojan | @proxystore11 | 8",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
@@ -1081,7 +1081,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @V2rayNGn | 1",
+            "tag": "🇨🇦CA | 🔴 | vless | @V2rayNGn | 0",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 8880,
@@ -1911,6 +1911,40 @@
             "plugin_opts": ""
         },
         {
+            "tag": "🇺🇸US | 🟢 | vmess | @proxystore11 | 6",
+            "type": "vmess",
+            "server": "172.67.220.83",
+            "server_port": 443,
+            "uuid": "39cec18f-a439-427c-9a4e-aeb6fcdf6f53",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "linja05.hwcar.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "linja05.hwcar.sbs"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @proxystore11 | 7",
             "type": "vless",
             "server": "www.parspack.com",
@@ -1928,28 +1962,6 @@
                 "path": "\/Digi-Tel-Digiv-Digicnc-saaaalaaaam-?ed=1024",
                 "headers": {
                     "Host": "www.parspack.com"
-                }
-            }
-        },
-        {
-            "tag": "🇸🇪SE | 🟢 | trojan | @proxystore11 | 8",
-            "type": "trojan",
-            "server": "13.49.99.44",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
                 }
             }
         },
