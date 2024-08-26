@@ -118,9 +118,12 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 12",
                 "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 5",
                 "🇺🇸US | 🟢 | vmess | @customv2ray | 0",
-                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 0",
-                "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 1",
-                "🇹🇷TR | 🟢 | vmess | @ShadowProxy66 | 2",
+                "🇮🇸IS | 🟢 | vmess | @ShadowProxy66 | 0",
+                "🚩CF | 🟢 | vmess | @ShadowProxy66 | 1",
+                "🚩CF | 🟢 | vmess | @ShadowProxy66 | 2",
+                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 8",
+                "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 9",
+                "🇹🇷TR | 🟢 | vmess | @ShadowProxy66 | 10",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 196",
                 "🚩CF | 🟢 | vmess | @proxystore11 | 0",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
@@ -156,9 +159,12 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 12",
                 "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 5",
                 "🇺🇸US | 🟢 | vmess | @customv2ray | 0",
-                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 0",
-                "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 1",
-                "🇹🇷TR | 🟢 | vmess | @ShadowProxy66 | 2",
+                "🇮🇸IS | 🟢 | vmess | @ShadowProxy66 | 0",
+                "🚩CF | 🟢 | vmess | @ShadowProxy66 | 1",
+                "🚩CF | 🟢 | vmess | @ShadowProxy66 | 2",
+                "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 8",
+                "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 9",
+                "🇹🇷TR | 🟢 | vmess | @ShadowProxy66 | 10",
                 "❔XX | 🟢 | vmess | @DailyV2RY | 196",
                 "🚩CF | 🟢 | vmess | @proxystore11 | 0",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
@@ -464,7 +470,99 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 0",
+            "tag": "🇮🇸IS | 🟢 | vmess | @ShadowProxy66 | 0",
+            "type": "vmess",
+            "server": "91.194.161.15",
+            "server_port": 8880,
+            "uuid": "6cff58a7-59d9-4404-8754-ad8f19818fa5",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vmess",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @ShadowProxy66 | 1",
+            "type": "vmess",
+            "server": "104.21.74.239",
+            "server_port": 443,
+            "uuid": "a1655f51-1e20-4a92-8a11-b7ca30a7a353",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "afrhms07.xfixedfloat.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "afrhms07.xfixedfloat.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🟢 | vmess | @ShadowProxy66 | 2",
+            "type": "vmess",
+            "server": "104.21.95.165",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sareikela.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "sareikela.com"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 8",
             "type": "vmess",
             "server": "50.114.243.61",
             "server_port": 43834,
@@ -481,7 +579,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 1",
+            "tag": "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 9",
             "type": "vmess",
             "server": "23.162.200.182",
             "server_port": 22324,
@@ -498,7 +596,7 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🟢 | vmess | @ShadowProxy66 | 2",
+            "tag": "🇹🇷TR | 🟢 | vmess | @ShadowProxy66 | 10",
             "type": "vmess",
             "server": "45.89.52.114",
             "server_port": 13701,
