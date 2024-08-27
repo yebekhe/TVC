@@ -105,13 +105,16 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "🇹🇷TR | 🟢 | hy2 | @iP_CF | 7"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇹🇷TR | 🟢 | hy2 | @iP_CF | 7"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -131,6 +134,29 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇹🇷TR | 🟢 | hy2 | @iP_CF | 7",
+            "type": "hysteria2",
+            "server": "free.netmh3.pro",
+            "server_port": 443,
+            "up_mbps": 0,
+            "down_mbps": 0,
+            "password": "4c559a537ab2b12e",
+            "network": "tcp",
+            "obfs": {
+                "type": "salamander",
+                "password": "159836e3"
+            },
+            "tls": {
+                "enabled": true,
+                "disable_sni": true,
+                "server_name": "",
+                "insecure": true,
+                "alpn": [
+                    "h3"
+                ]
+            }
         }
     ],
     "route": {
