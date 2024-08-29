@@ -118,31 +118,23 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 31","type":"ss","server":"107.173.192.238","port":9875,"password":"BoiX102924","cipher":"aes-256-gcm"}
-  - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 32","type":"ss","server":"149.202.82.172","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 31'
-      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 32'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 31'
-      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 32'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 31'
-      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 32'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
